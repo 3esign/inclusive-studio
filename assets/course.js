@@ -3,13 +3,11 @@
 // !Projekti/Univerzitet/nastava/beograd-unt-fgm/pud/ (SILABUS.md, PROJEKTNI_ZADATAK.md), read 2026-10-01.
 // Anything still unverified against the accreditation booklet is listed in course.unconfirmed.
 
+import { identity } from './identity.js';
+
 export const course = {
-  title: { en: 'Principles of Universal Design', sr: 'Principi univerzalnog dizajna' },
-  short: { en: 'Universal Design', sr: 'Univerzalni dizajn' },
-  institution: { en: 'Union — Nikola Tesla University, Belgrade', sr: 'Univerzitet „Union — Nikola Tesla”, Beograd' },
-  faculty: { en: 'Faculty of Construction Management', sr: 'Fakultet za graditeljski menadžment' },
-  teacher: { en: 'Assist. Prof. Semir Poturak, PhD', sr: 'doc. dr Semir Poturak' },
-  term: { en: '2026/2027 · first (winter) semester · third year', sr: '2026/2027 · prvi (zimski) semestar · treća godina' },
+  // Identity lives in one place, assets/identity.js: the band, the page titles and every export read it there.
+  ...identity,
   programmes: [
     { name: { en: 'Architecture and Urbanism 2023', sr: 'Arhitektura i urbanizam 2023' }, code: '22.OA0068', semester: 5, ects: 5, type: { en: 'elective', sr: 'izborni' } },
     { name: { en: 'Architecture and Urbanism 2016', sr: 'Arhitektura i urbanizam 2016' }, code: 'OAIPUD', semester: 6, ects: 4, type: { en: 'elective', sr: 'izborni' } }

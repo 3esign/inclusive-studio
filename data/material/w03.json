@@ -1,0 +1,39 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 3,
+  "state": "draft",
+  "updated": "2026-10-01",
+  "title": { "en": "Measure your own faculty", "sr": "Izmeri sopstveni fakultet" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "You can produce a measurement table in which every row names its instrument and its uncertainty, and you can say which rows break the Pravilnik.",
+    "sr": "Umeš da napraviš tabelu mera u kojoj svaki red navodi instrument i nesigurnost, i umeš da kažeš koji redovi ruše Pravilnik."
+  },
+  "bring": [
+    { "en": "A tape measure, a spirit level or a phone inclinometer, and a printed plan of the floor you measure.", "sr": "Metar, libela ili inklinometar na telefonu i štampana osnova sprata koji meriš." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "The building you are in is the first case study", "sr": "Zgrada u kojoj si je prva studija slučaja" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "A draft. We measure doors, corridors, thresholds, slopes, handle and switch heights, the accessible toilet and the lift car. Every row carries the instrument and its resolution. A value without an uncertainty is not a measurement, it is an impression.",
+        "sr": "Nacrt. Merimo vrata, hodnike, pragove, nagibe, visine kvaka i prekidača, pristupačni toalet i kabinu lifta. Svaki red nosi instrument i njegovu rezoluciju. Vrednost bez nesigurnosti nije mera nego utisak."
+      }
+    },
+    { "kind": "exercise", "ref": "measure-your-faculty" },
+    { "kind": "lab", "ref": "prolaz" },
+    {
+      "kind": "decision",
+      "text": {
+        "en": "The room agrees one thing: which measured failure we take to the faculty, and in what form.",
+        "sr": "Sala se dogovara o jednoj stvari: koji izmereni propust nosimo fakultetu i u kom obliku."
+      }
+    }
+  ]
+}

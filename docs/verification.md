@@ -2,6 +2,48 @@
 
 This is a bounded implementation check, not WCAG certification or a claim of educational validation.
 
+## The working week, the laboratory, day one and mobile — 2026-10-01T21:18:03.204Z
+
+- **137/137 headless-Chrome checks passed** across **fourteen pages at 320, 360, 768 and 1440 CSS pixels**: one `h1` and a complete navigation per page, no horizontal scroll at any of the four widths, every visible control at least 24 × 24 px on a 360 px phone (WCAG 2.2 — 2.5.8; links inside prose are exempt and were excluded), the Serbian switch across shell and material, simple view, reduced motion, and the no-JavaScript baseline on the three new pages. No uncaught exception anywhere.
+- **70/70 Node tests passed** (`node --test tests/*.test.mjs`): the week format and the files on disk (14), the lab arithmetic against WCAG 2.2 and Pravilnik RS 22/2015 (17), the calendar (14), portable drafts (6), the course record (8) and the consistency of the fourteen page shells (11).
+- **The labs are measured, not asserted.** Contrast is checked against the known extremes (21:1 black on white, 4,54:1 for #767676 on white); target size against 24 px and the spacing exception; the plan geometry reports an exact 90 cm pinch on its 10 cm grid, refuses a sealed room as unreachable rather than narrow, and only passes when the route exists, the narrowest point holds and a 150 cm circle fits where you arrive; the ramp arithmetic reproduces 450 m of run and 49 landings for 22,5 m at 5 %.
+- **The editor enforces the site's own rules in the browser:** an image block without a description disables the commit button and names the reason; a valid week is shown as the file that will be committed and previewed exactly as the room will see it.
+- **Weight and memory, measured over local HTTP without compression, with every dynamic import settled:**
+
+| Page | Transferred | JS heap |
+|---|---|---|
+| `standard.html` | 224.5 kB | 4.0 MB |
+| `program.html` | 224.4 kB | 4.0 MB |
+| `predmet.html` | 224.4 kB | 3.5 MB |
+| `studio.html` | 224.2 kB | 3.1 MB |
+| `resources.html` | 224.1 kB | 4.9 MB |
+| `pristupacnost.html` | 224.1 kB | 5.9 MB |
+| `etika.html` | 224.1 kB | 5.5 MB |
+| `ucestvuj.html` | 224.1 kB | 5.0 MB |
+| `vezbe.html` | 223.9 kB | 4.5 MB |
+| `index.html` | 144.3 kB | 1.3 MB |
+| `uredi.html` | 143.0 kB | 2.4 MB |
+| `predavanje.html` | 141.9 kB | 1.8 MB |
+| `laboratorija.html` | 138.5 kB | 1.4 MB |
+| `zadatak.html` | 75.0 kB | 1.9 MB |
+
+  The four rebuilt pages share `assets/core.js` and load one view module; the nine inherited pages still load the legacy bundle. A week pulls the exercise bank or the lab engine only when its material references one — which week 1 does.
+
+### Defects the checks found, which inspection had not
+
+- The editor threw on first paint: the shell is drawn before the week file is read, and `view()` dereferenced a null week. The page now says it is opening the material.
+- Changing the "add entry" selector re-rendered the editor and threw the choice away. That control no longer triggers a re-render.
+- Checkboxes were 21 × 21 px and footer links 22 px high — both below the 24 px minimum. Both corrected, and the check now runs on every page at 360 px.
+- The task page had no links in its static markup, so without JavaScript it was a dead end. The page generator now guarantees a way onward on every page.
+
+### Still not checked
+
+A real screen reader (NVDA, JAWS, VoiceOver, TalkBack), a real switch device, a real student hand-in,
+the accreditation booklet, and any session with disabled coauthors. The labs reproduce what a tool
+does to an interface; they are not evidence about anybody's experience, and the site says so on
+every lab page. Serbian regulation values were read on 01.10.2026 from the legal database
+paragraf.rs, not from Službeni glasnik itself; week 4 cross-checks them against the official text.
+
 ## Course identity, course page, exercise bank and week plan — 2026-10-01T19:48:25.286Z
 
 - **111/111 isolated Chrome checks passed** in the existing suite (now covering nine pages, including the two new ones), plus **67/67 new checks** in `verify-course-pages.cjs`: the course band and document title on every page, the official programme table, the unverified-items notice, the teacher record, the link groups, the Serbian switch, the sixteen exercise cards each with hand-in and check, the fifteen numbered weeks with milestones, the measured site figures with their reconnaissance caveat, both programmes totalling 100 points on screen, reflow at 1440/1024/768/390/320 CSS pixels, enlarged text at 320, heading order and table semantics. No JavaScript exceptions.

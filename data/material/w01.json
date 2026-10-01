@@ -1,0 +1,162 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 1,
+  "state": "published",
+  "updated": "2026-10-01",
+  "title": { "en": "Mismatch, not deficit", "sr": "Nesklad, a ne nedostatak" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "By the end of the session you can say where a space excludes someone and why, using a measurement or an observation — not an impression. And you have designed, on paper, the first three screens of an application for one person.",
+    "sr": "Na kraju časa umeš da kažeš gde prostor isključuje nekoga i zašto, pozivajući se na meru ili zapažanje — ne na utisak. I na papiru si projektovao prva tri ekrana aplikacije za jednu osobu."
+  },
+  "bring": [
+    { "en": "A pencil, an eraser and two sheets of A4 — the first task is drawn by hand.", "sr": "Olovka, gumica i dva lista A4 — prvi zadatak se crta rukom." },
+    { "en": "A phone, if you have one: we use it as a measuring instrument and as a screen to test, not as a notebook.", "sr": "Telefon, ako ga imaš: koristimo ga kao merni instrument i kao ekran za proveru, ne kao notes." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "A door is 78 cm wide. Who is disabled — the person or the door?", "sr": "Vrata su široka 78 cm. Ko je ovde nesposoban — osoba ili vrata?" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "Universal design does not start from a person's diagnosis. It starts from the distance between what a body does and what a space demands. That distance is designed, which means it can be designed differently. Ronald Mace, who named the field in 1985, was an architect and a wheelchair user; he refused the word \"special\" because a separate solution announces who it was not built for.",
+        "sr": "Univerzalni dizajn ne počinje od dijagnoze. Počinje od razmaka između onoga što telo može i onoga što prostor zahteva. Taj razmak je projektovan, što znači da može biti projektovan drugačije. Ronald Mejs, koji je 1985. dao ime ovoj oblasti, bio je arhitekta i korisnik invalidskih kolica; odbijao je reč „specijalno“ jer odvojeno rešenje objavljuje za koga nije pravljeno."
+      }
+    },
+    {
+      "kind": "list",
+      "items": [
+        { "en": "The medical model: the person has a problem, the person is treated.", "sr": "Medicinski model: osoba ima problem, osoba se tretira." },
+        { "en": "The social model: the environment creates the disability, the environment is changed.", "sr": "Socijalni model: okruženje stvara invaliditet, okruženje se menja." },
+        { "en": "The mismatch model (the one we design with): a specific body meets a specific detail, and the detail loses.", "sr": "Model neslaganja (po njemu projektujemo): konkretno telo sretne konkretan detalj, i detalj je taj koji gubi." }
+      ]
+    },
+    {
+      "kind": "quote",
+      "text": {
+        "en": "Disability is not a personal health condition. It is a mismatch between a person and their environment.",
+        "sr": "Invaliditet nije lično zdravstveno stanje. To je neslaganje između osobe i njenog okruženja."
+      },
+      "source": "Microsoft Inclusive Design Toolkit (2015, 2nd ed. 2023)"
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "The same toolkit counts one need across three states: permanent, temporary and situational. For one-handed use it reports roughly 26.000 arm amputations a year, 13 million wrist injuries and 8 million people holding a baby. Treat those figures as the toolkit's own, not as measured truth — but keep the structure: the number of people who need a detail is always larger than the number of people who are registered as disabled.",
+        "sr": "Isti priručnik računa jednu potrebu kroz tri stanja: trajno, privremeno i situaciono. Za rad jednom rukom navodi oko 26.000 amputacija ruke godišnje, 13 miliona povreda ručja i 8 miliona ljudi koji drže bebu. Te brojke uzmi kao njihov navod, ne kao izmerenu istinu — ali zadrži strukturu: broj ljudi kojima detalj treba uvek je veći od broja ljudi koji su upisani kao osobe sa invaliditetom."
+      }
+    },
+    {
+      "kind": "heading",
+      "text": { "en": "Seven principles, and what they are for", "sr": "Sedam principa, i čemu služe" }
+    },
+    {
+      "kind": "list",
+      "items": [
+        { "en": "01 Equitable use — the same entrance, not a separate one.", "sr": "01 Ravnopravna upotreba — isti ulaz, ne poseban." },
+        { "en": "02 Flexibility in use — more than one way to do the same thing.", "sr": "02 Fleksibilna upotreba — više načina da se uradi isto." },
+        { "en": "03 Simple and intuitive use — understood without instruction.", "sr": "03 Jednostavna i intuitivna upotreba — razume se bez uputstva." },
+        { "en": "04 Perceptible information — at least two channels carry it.", "sr": "04 Uočljiva informacija — nose je najmanje dva kanala." },
+        { "en": "05 Tolerance for error — a mistake does not become an accident.", "sr": "05 Tolerancija na grešku — greška ne postaje nesreća." },
+        { "en": "06 Low physical effort — the normal route is not an effort.", "sr": "06 Mali fizički napor — normalan put nije napor." },
+        { "en": "07 Size and space for approach and use — the body fits, with its equipment.", "sr": "07 Veličina i prostor za pristup i upotrebu — telo staje, sa svojom opremom." }
+      ]
+    },
+    {
+      "kind": "link",
+      "href": "https://design.ncsu.edu/research/center-for-universal-design/",
+      "text": { "en": "The Principles of Universal Design, version 2.0 — Center for Universal Design, NC State, 1997", "sr": "Principi univerzalnog dizajna, verzija 2.0 — Center for Universal Design, NC State, 1997" }
+    },
+    {
+      "kind": "heading",
+      "text": { "en": "Numbers you will be held to", "sr": "Brojevi po kojima ćete biti pitani" }
+    },
+    {
+      "kind": "list",
+      "items": [
+        { "en": "Ramp slope: max 5 % (1:20); exceptionally 8,3 % (1:12) over short runs up to 6 m — Art. 7.", "sr": "Nagib rampe: najviše 5 % (1:20); izuzetno 8,3 % (1:12) na kratkim rastojanjima do 6 m — čl. 7." },
+        { "en": "Clear door width: at least 80 cm; 90 cm where a wheelchair has to turn — Art. 17.", "sr": "Svetla širina vrata: najmanje 80 cm; 90 cm gde kolica moraju da se okreću — čl. 17." },
+        { "en": "Corridor: at least 180 cm for two-way movement, 90 cm one-way — Art. 14.", "sr": "Hodnik: najmanje 180 cm za dvosmerno kretanje, 90 cm za jednosmerno — čl. 14." },
+        { "en": "Turning space: a free circle of 150 cm diameter — Art. 19.", "sr": "Prostor za okretanje: slobodan krug prečnika 150 cm — čl. 19." },
+        { "en": "Threshold: max 2 cm, with rounded edges — Art. 18.", "sr": "Prag: najviše 2 cm, zaobljenih ivica — čl. 18." },
+        { "en": "Light switch at 90 cm, door handle at about 80 cm from the floor — Art. 23.", "sr": "Prekidač za svetlo na 90 cm, kvaka na oko 80 cm od poda — čl. 23." },
+        { "en": "Accessible parking space: at least 370 × 480 cm — Art. 36.", "sr": "Pristupačno parking mesto: najmanje 370 × 480 cm — čl. 36." }
+      ]
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "Source: Pravilnik o tehničkim standardima planiranja, projektovanja i izgradnje objekata kojima se osigurava nesmetano kretanje i pristup osobama sa invaliditetom, deci i starim osobama, Službeni glasnik RS 22/2015. These values were read on 01.10.2026 from the legal database paragraf.rs, not from the Official Gazette itself. Week 4 cross-checks them against the official text — if a number here is wrong, that is a finding, and it gets corrected in this file.",
+        "sr": "Izvor: Pravilnik o tehničkim standardima planiranja, projektovanja i izgradnje objekata kojima se osigurava nesmetano kretanje i pristup osobama sa invaliditetom, deci i starim osobama, Službeni glasnik RS 22/2015. Ove vrednosti su 01.10.2026. pročitane iz pravne baze paragraf.rs, a ne iz samog Službenog glasnika. Četvrta nedelja ih proverava u zvaničnom tekstu — ako je broj ovde pogrešan, to je nalaz, i ispravlja se u ovom fajlu."
+      }
+    },
+    {
+      "kind": "measure",
+      "text": { "en": "Our site, Živimo zajedno: height difference over a straight line of 151 m", "sr": "Naša lokacija, Živimo zajedno: visinska razlika na vazdušnoj liniji od 151 m" },
+      "value": "22,5 m / 151 m = 14,9 %",
+      "instrument": { "en": "Phone GNSS, declared accuracy 1,5–2,5 m horizontal and 2–3 m vertical, 151 points, EPSG:32634, measured 24.11.2025. Reconnaissance, not a survey.", "sr": "Telefonski GNSS, deklarisana tačnost 1,5–2,5 m horizontalno i 2–3 m vertikalno, 151 tačka, EPSG:32634, mereno 24.11.2025. Rekognosciranje, ne geodetski snimak." }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "A 5 % ramp for 22,5 m of height is 450 m of walking. At the regulatory exception of 8,3 % it is 271 m, plus landings. The plot is roughly 129 × 131 m. The ramp does not fit, and that is the task: you are not designing a ramp, you are designing how the height is overcome so that everyone uses the same route.",
+        "sr": "Rampa od 5 % za 22,5 m visine je 450 m hoda. Na graničnih 8,3 % to je 271 m, plus odmorišta. Parcela je oko 129 × 131 m. Rampa ne staje, i to je zadatak: ne projektujete rampu nego način da se visina savlada tako da isti put koriste svi."
+      }
+    },
+    {
+      "kind": "heading",
+      "text": { "en": "Why we will not blindfold anyone", "sr": "Zašto nikome ne stavljamo povez na oči" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "Disability simulation is the oldest exercise in this field and the one with the worst results. After simulations people report more empathy but also more pity and discomfort, they judge themselves less capable, and they are not more willing to work with disabled people on an accessibility project. What does work is measured: structured exercises with the actual tools, with a debrief — and direct work with disabled people as coauthors and testers. So: in this studio we test tools and interfaces, not people's lives.",
+        "sr": "Simulacija invaliditeta je najstarija vežba u ovoj oblasti i ona sa najgorim rezultatima. Posle simulacija ljudi prijavljuju više empatije, ali i više sažaljenja i nelagode, sebe procenjuju manje sposobnim, i nisu spremniji da sa osobama sa invaliditetom rade na projektu pristupačnosti. Ono što radi je izmereno: strukturirane vežbe sa stvarnim alatima, uz debrif — i direktan rad sa osobama sa invaliditetom kao koautorima i proveravačima. Zato: u ovom studiju proveravamo alate i interfejse, ne tuđe živote."
+      }
+    },
+    {
+      "kind": "link",
+      "href": "https://www.researchgate.net/publication/314968962_Crip_for_a_Day_The_Unintended_Negative_Consequences_of_Disability_Simulations",
+      "text": { "en": "Nario-Redmond, Gospodinov & Cobb, \"Crip for a Day\", Rehabilitation Psychology, 2017", "sr": "Nario-Redmond, Gospodinov i Cobb, „Crip for a Day“, Rehabilitation Psychology, 2017" }
+    },
+    {
+      "kind": "lab",
+      "ref": "citac",
+      "text": {
+        "en": "Fifteen minutes in the laboratory: the same announcement, read twice by the machine. Count the steps.",
+        "sr": "Petnaest minuta u laboratoriji: isto obaveštenje, dva puta pročitano mašinski. Prebroj korake."
+      }
+    },
+    {
+      "kind": "heading",
+      "text": { "en": "The first task: an application for one person", "sr": "Prvi zadatak: aplikacija za jednu osobu" }
+    },
+    {
+      "kind": "exercise",
+      "ref": "app-for-one",
+      "text": {
+        "en": "Drawn by hand, three screens, one person, one situation you have observed. The phone is the smallest building we design.",
+        "sr": "Crta se rukom, tri ekrana, jedna osoba, jedna situacija koju si posmatrao. Telefon je najmanja zgrada koju projektujemo."
+      }
+    },
+    {
+      "kind": "question",
+      "items": [
+        { "en": "Name a place you use every day where you already know someone cannot follow you. How do you know?", "sr": "Navedi mesto koje koristiš svaki dan, a na kom znaš da neko ne može za tobom. Odakle to znaš?" },
+        { "en": "Where in that place is the information carried by only one channel?", "sr": "Gde na tom mestu informaciju nosi samo jedan kanal?" },
+        { "en": "Which of the seven principles does your own phone fail, right now, in this room?", "sr": "Koji od sedam principa tvoj telefon ruši, sada, u ovoj sali?" }
+      ]
+    },
+    {
+      "kind": "decision",
+      "text": {
+        "en": "Each team records one line today: the place we will work on, and the one thing we will measure first.",
+        "sr": "Svaki tim danas upisuje jedan red: mesto na kom radimo i jednu stvar koju prvo merimo."
+      }
+    }
+  ]
+}

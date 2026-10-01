@@ -3,14 +3,9 @@ import { course, outcomes, weeks, blocks, site, themes, deliverables, assessment
 import { exercises, ideas } from './exercises.js';
 import { exportDraft, importDraft, issueDraftLink } from './contributions.js';
 import { validateSchedule, formatDate, createICS } from './calendar.js';
+import { $, $$, esc, read, save, lang, setLanguage, tr, tx, number, link, arrow, announce, download, chrome, applyComfort } from './core.js';
 
 const REPO = 'https://github.com/3esign/inclusive-studio';
-const $ = (selector, root = document) => root.querySelector(selector);
-const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function read(key, fallback) { try { return JSON.parse(localStorage.getItem('is3:' + key)) ?? fallback; } catch { return fallback; } }
-function save(key, value) { try { localStorage.setItem('is3:' + key, JSON.stringify(value)); return true; } catch { return false; } }
-let lang = read('language', 'en') === 'sr' ? 'sr' : 'en';
 let role = read('role','student') === 'partner' ? 'partner' : 'student';
 const queryStage = Number(new URLSearchParams(location.search).get('stage'));
 const validStage = n => Number.isInteger(n) && n >= 1 && n <= 6;
@@ -21,36 +16,8 @@ let schedule = { status:'unconfirmed', institution:'', course:'', term:'', timez
 let scheduleError = false;
 let calendarMonth = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
 const view = document.body.dataset.view || 'studio';
-const tr = (en, sr) => lang === 'sr' ? sr : en;
-const tx = object => object[lang];
-const number = id => String(id).padStart(2, '0');
-const link = (href,label,cls='') => `<a class="${cls}" href="${esc(href)}">${label}</a>`;
-const arrow = '<span class="arrow" aria-hidden="true">↗</span>';
 const pageMeta = () => `<div class="page-meta"><span class="eyebrow">${tr('Architecture / Year 03','Arhitektura / Godina 03')}</span><span class="status">${tr('Pilot in preparation','Pilot u pripremi')}</span><span class="small muted">${course.term ? esc(tx(course.term)) : tr('Teaching dates to be confirmed','Termini nastave čekaju potvrdu')}</span></div>`;
-function announce(message) { $('#announcements').textContent = message; }
-function download(name, content, type='text/plain;charset=utf-8') {
-  const url = URL.createObjectURL(new Blob([content], {type}));
-  const anchor = document.createElement('a'); anchor.href=url; anchor.download=name; anchor.click();
-  setTimeout(() => URL.revokeObjectURL(url), 30000);
-}
-function updateChrome() {
-  $('#language-toggle').hidden=false; $('#reading-toggle').hidden=false;
-  document.documentElement.lang = lang === 'sr' ? 'sr-Latn' : 'en';
-  const labels = {studio:tr('Studio','Studio'),subject:tr('The course','Predmet'),schedule:tr('Calendar','Kalendar'),brief:tr('The brief','Zadatak'),work:tr('Exercises','Vežbe'),library:tr('Library','Biblioteka'),participate:tr('Pinboard','Tabla')};
-  $$('[data-nav]').forEach(a => {a.textContent=labels[a.dataset.nav];a.toggleAttribute('aria-current',a.dataset.nav===view);if(a.dataset.nav===view)a.setAttribute('aria-current','page');});
-  $('#language-toggle').textContent=tr('Srpski','English'); $('#language-toggle').lang=tr('sr-Latn','en');
-  $('#language-toggle').setAttribute('aria-label',tr('Prebaci na srpski','Switch to English'));
-  $('#reading-toggle').textContent=tr('Simple view','Jednostavan prikaz');
-  $('#reading-toggle').setAttribute('aria-pressed',document.body.classList.contains('reading-mode'));
-  $('#skip-link').textContent=tr('Skip to content','Pređi na sadržaj');
-  $('.main-nav').setAttribute('aria-label',tr('Main navigation','Glavna navigacija'));
-  $('#footer-note').textContent=tr('A shared architecture studio. A pilot, open to revision.','Zajednički arhitektonski studio. Pilot otvoren za doradu.');
-  $('#footer-access').textContent=tr('Accessibility','Pristupačnost'); $('#footer-ethics').textContent=tr('Working together','Kako sarađujemo');
-  const courseLine = $('#course-line');
-  if (courseLine) courseLine.innerHTML = `<strong>${esc(tx(course.title))}</strong> <span>${esc(tx(course.institution))} · ${esc(tx(course.faculty))}</span> <span>${esc(tx(course.teacher))}</span> <span>${esc(tx(course.term))}</span>`;
-  const title = labels[view] || (view==='ethics'?tr('Working together','Kako sarađujemo'):tr('Accessibility','Pristupačnost'));
-  document.title = title + ' — ' + tx(course.title) + ' · ' + tr('Union — Nikola Tesla University', 'Univerzitet Union — Nikola Tesla');
-}
+function updateChrome() { chrome(view); }
 function stageRail(){return `<ol class="process" aria-label="${tr('Project stages — proposed sequence','Faze projekta — predloženi redosled')}">${stages.map(s=>`<li><button type="button" data-stage="${s.id}" aria-pressed="${s.id===selected}"><span class="process-number">${number(s.id)}</span><span class="process-name">${esc(tx(s.title))}</span></button></li>`).join('')}</ol>`;}
 function studioMark(){return `<div class="studio-mark">${pageMeta()}<svg viewBox="0 0 310 134" aria-hidden="true"><path d="M16 23H111V65M111 94V118H16V23M111 23H224V118H111M224 23H291V52M291 86V118H224" fill="none" stroke="currentColor" stroke-width="2"/><path d="M27 110V83Q27 71 42 71H134Q147 71 147 56V44H211" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/><circle cx="27" cy="110" r="7" fill="#d9f88d" stroke="currentColor"/><circle cx="147" cy="44" r="7" fill="#d9f88d" stroke="currentColor"/><circle cx="258" cy="70" r="24" fill="none" stroke="currentColor"/><path d="M245 70h26M258 57v26M69 14v113M7 102h294" stroke="currentColor" opacity=".22"/><path d="M236 36l-12-13m-4 1h9v9" stroke="currentColor" fill="none"/></svg><p class="diagram-caption">${tr('Journey → Place → Detail','Putanja → Mesto → Detalj')}<span>${tr('Three scales of inquiry','Tri razmere istraživanja')}</span></p></div>`;}
 function studio() {
@@ -149,10 +116,8 @@ function bindContributions(){
 function setupSketch(){const canvas=$('#sketch'),ctx=canvas.getContext('2d');const draw=()=>{ctx.fillStyle='#ffffff';ctx.fillRect(0,0,1000,500);ctx.strokeStyle='#192e27';ctx.lineWidth=4;ctx.lineCap='round';ctx.lineJoin='round';for(const stroke of sketchStrokes){ctx.beginPath();stroke.forEach((p,i)=>i?ctx.lineTo(...p):ctx.moveTo(...p));ctx.stroke();}};draw();const point=e=>{const r=canvas.getBoundingClientRect();return [(e.clientX-r.left)*1000/r.width,(e.clientY-r.top)*500/r.height];};canvas.addEventListener('pointerdown',e=>{if(e.button!==0)return;activeStroke=[point(e)];sketchStrokes.push(activeStroke);canvas.setPointerCapture(e.pointerId);$('#publish-preview').hidden=true;draw();});canvas.addEventListener('pointermove',e=>{if(activeStroke){activeStroke.push(point(e));draw();}});const finish=()=>{activeStroke=null;};canvas.addEventListener('pointerup',finish);canvas.addEventListener('pointercancel',finish);canvas.addEventListener('lostpointercapture',finish);$('#undo-sketch').addEventListener('click',()=>{sketchStrokes.pop();draw();$('#publish-preview').hidden=true;announce(tr('Last stroke removed.','Poslednji potez uklonjen.'));});$('#download-sketch').addEventListener('click',()=>{canvas.toBlob(blob=>{if(!blob)return;const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='studio-sketch.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);announce(tr('Sketch downloaded.','Skica preuzeta.'));},'image/png');});}
 async function loadBoard(){const button=$('#load-board');button.disabled=true;$('#board-status').textContent=tr('Loading public contributions…','Učitavanje javnih priloga…');try{const response=await fetch('https://api.github.com/repos/3esign/inclusive-studio/issues?state=open&per_page=60',{headers:{Accept:'application/vnd.github+json'},signal:AbortSignal.timeout(12000)});if(!response.ok)throw new Error('HTTP '+response.status);const data=await response.json();if(!Array.isArray(data))throw new Error('Invalid response');const issues=data.filter(i=>!i.pull_request&&i.labels?.some(l=>['idea','submission'].includes(l.name)));$('#board-results').innerHTML=issues.map(i=>{const url=new URL(i.html_url);if(url.origin!=='https://github.com'||!url.pathname.startsWith('/3esign/inclusive-studio/issues/'))return '';const text=String(i.body||'').replace(/!\[[^\]]*\]\([^)]*\)/g,'').replace(/[#*_`>]/g,'').slice(0,230);return `<article class="board-item"><p class="meta">#${Number(i.number)} · ${i.labels.some(l=>l.name==='submission')?tr('Submission','Predaja'):tr('Idea','Ideja')}</p><h3>${link(url.href,esc(i.title))}</h3><p>${esc(text)}${text.length===230?'…':''}</p><span class="meta">${Number(i.comments)} ${tr('comments','komentara')}</span></article>`;}).join('');$('#board-status').textContent=issues.length?issues.length+' '+tr('public contributions loaded. Showing up to 60 recent open issues.','javnih priloga učitano. Prikaz obuhvata do 60 poslednjih otvorenih objava.'):tr('No open ideas or submissions yet.','Još nema otvorenih ideja ili predaja.');}catch{$('#board-status').textContent=tr('The board could not be loaded. Retry or use “View on GitHub” above. Your draft is unaffected.','Tabla nije učitana. Pokušaj ponovo ili koristi „Pogledaj na GitHubu” iznad. Tvoj nacrt je sačuvan odvojeno.');}finally{button.disabled=false;}}
 function toggleReading(){document.body.classList.toggle('reading-mode');save('reading',document.body.classList.contains('reading-mode'));updateChrome();announce(tr('View updated.','Prikaz je promenjen.'));}
-document.body.classList.toggle('reading-mode',read('reading',false)===true);
-document.documentElement.classList.toggle('large-text',read('largeText',false)===true);
-document.documentElement.classList.toggle('strong-contrast',read('contrast',false)===true);
-$('#language-toggle').addEventListener('click',()=>{lang=lang==='en'?'sr':'en';save('language',lang);render();$('#language-toggle').focus();announce(tr('English interface.','Interfejs na srpskom.'));});
+applyComfort();
+$('#language-toggle').addEventListener('click',()=>{setLanguage(lang==='en'?'sr':'en');render();$('#language-toggle').focus();announce(tr('English interface.','Interfejs na srpskom.'));});
 $('#reading-toggle').addEventListener('click',toggleReading);
 // Read the public, explicitly dated source before rendering timetable-dependent views.
 try { const response=await fetch('data/schedule.json',{signal:AbortSignal.timeout(6000)});if(!response.ok)throw new Error('Missing schedule');const data=await response.json();if(validateSchedule(data).length)throw new Error('Invalid schedule');schedule=data;const first=schedule.events.find(e=>e.status==='confirmed');if(first)calendarMonth=new Date(Number(first.start.slice(0,4)),Number(first.start.slice(5,7))-1,1); } catch { scheduleError=true; }

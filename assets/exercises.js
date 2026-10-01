@@ -4,6 +4,14 @@
 
 export const exercises = [
   {
+    id: 'app-for-one', week: 1, stage: 1, kind: 'drawing',
+    title: { en: 'An application for one person', sr: 'Aplikacija za jednu osobu' },
+    task: { en: 'Day one, by hand. Choose one person and one situation you have actually observed — a stop, a counter, an entrance, a corridor, a form. Design the first three screens of a phone application that does one thing for that person in that situation. Draw the screens at real size, write what each element is for, and name the one thing the application refuses to do.', sr: 'Prvi dan, rukom. Izaberi jednu osobu i jednu situaciju koju si stvarno video — stanicu, pult, ulaz, hodnik, formular. Projektuj prva tri ekrana telefonske aplikacije koja za tu osobu u toj situaciji radi jednu stvar. Nacrtaj ekrane u pravoj meri, napiši čemu služi svaki element i navedi jednu stvar koju aplikacija odbija da radi.' },
+    hand: { en: 'One A4 with three screens at real size (about 7 × 15 cm each), plus six lines of text: the person, the situation, the one sentence of purpose, the constraint, what it does not do, and three questions for the person.', sr: 'Jedan A4 sa tri ekrana u pravoj meri (oko 7 × 15 cm svaki) i šest redova teksta: osoba, situacija, jedna rečenica svrhe, ograničenje, šta ne radi i tri pitanja za tu osobu.' },
+    check: { en: 'An invented user does not count: write where and when you observed the situation. A screen without a stated purpose for every element does not count. If the application does everything, it has no purpose — the refusal is part of the design.', sr: 'Izmišljen korisnik se ne priznaje: upiši gde i kada si situaciju posmatrao. Ekran bez upisane svrhe za svaki element se ne priznaje. Ako aplikacija radi sve, nema svrhu — odbijanje je deo projekta.' },
+    source: { label: 'Microsoft Inclusive Design Toolkit — solve for one, extend to many', url: 'https://inclusive.microsoft.design/' }
+  },
+  {
     id: 'seven-principles-audit', week: 2, stage: 1, kind: 'drawing',
     title: { en: 'Seven principles, one building', sr: 'Sedam principa, jedna zgrada' },
     task: { en: 'Take one building you can enter. Walk it once as a visitor and once as an auditor. Judge it against all seven principles, in order. For each principle give one photograph or sketch, one sentence of evidence and a verdict: met, partly met, failed.', sr: 'Izaberi zgradu u koju možeš da uđeš. Prođi je jednom kao posetilac, jednom kao ispitivač. Oceni je po svih sedam principa, redom. Za svaki princip daj jednu fotografiju ili skicu, jednu rečenicu dokaza i ocenu: ispunjen, delimično, pao.' },

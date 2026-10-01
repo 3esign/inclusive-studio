@@ -1,12 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
 
 // The site is dependency-free and has no package.json; load its browser ES modules directly.
-const load = async name => {
-  const source = await readFile(new URL(`../assets/${name}`, import.meta.url), 'utf8');
-  return import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
-};
+// assets/package.json declares these files as ES modules, so Node imports them straight from disk.
+const load = name => import(new URL(`../assets/${name}`, import.meta.url).href);
 const courseModule = await load('course.js');
 const exerciseModule = await load('exercises.js');
 const contentModule = await load('content.js');

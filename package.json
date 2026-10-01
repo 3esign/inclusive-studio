@@ -1,0 +1,6 @@
+{
+  "name": "inclusive-studio",
+  "private": true,
+  "type": "module",
+  "description": "No dependencies. This file only declares that the browser modules in assets/ are ES modules, so Node can run the tests directly."
+}

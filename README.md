@@ -4,22 +4,47 @@
 Assist. Prof. Semir Poturak, PhD · 2026/2027, first (winter) semester · third year
 Study programmes: Architecture and Urbanism 2023 (`22.OA0068`, 5 ECTS) and 2016 (`OAIPUD`, 4 ECTS)
 
-**One place, six stages, shared architectural decisions.**
+**One working week on the front page. Eight labs that measure. One task, drawn by hand.**
 
 [Open the studio](https://3esign.github.io/inclusive-studio/) · [Srpski](README.sr.md)
 
 A working environment for third-year architecture students and disability association coauthors. The institution, course, programme codes, credits, grading scale and the measured site come from the faculty record and the course dossier. Still open and labelled as such on the site: contact hours, teaching dates, the room, the field visit and the partner association. The fifteen-week plan is the dossier working version, not an approved syllabus text.
 
-## Work in the studio
+## How the site is organised
 
-- **The course:** official course data, learning outcomes, house rules, the teacher's record and the link list — with everything still unverified listed as unverified. Provenance: [course-source.md](docs/course-source.md).
-- **Exercises:** sixteen exercises, each naming its week, what is handed in and the check it must pass, plus six longer pieces of work.
-- **Studio:** six project stages with student/coauthor tasks, architectural deliverables, private checklists, critique prompts and optional AI guidance.
-- **Calendar:** the fifteen teaching weeks in three blocks, linked to the project stages — a sequence, not a timetable. Plus explicitly dated meetings, fieldwork, reviews, deadlines and breaks; month and list views; confirmed-event ICS export. A stage can contain several meetings. Stages are not assumed to be weeks.
-- **The brief:** purpose, learning outcomes, connected spatial scales and a proposed evidence-based review rubric.
-- **Library:** seventeen selected primary-source entries, searchable and related to stages.
-- **Pinboard:** local text drafts, optional file preview and freehand sketch, text/PNG download, review and deliberate public sharing through GitHub.
-- **Working together / Accessibility:** participation agreement, consent, known platform limitations and ways to use the interface.
+The front page is **the working week**: the material the teacher put in for this session, the task
+and the labs it points at. Everything else — the course, the calendar, the project, the exercises,
+the library, the pinboard, the stages — sits behind it as material.
+
+- **This week** (`index.html`) — title, aim, what to bring, and the session's material, read from
+  `data/material/wNN.json`. No file, no week: the page says so instead of inventing a lesson.
+- **Lecture** (`predavanje.html`) — the same material cut into slides at every heading. Arrows,
+  Space, Home, End; swipe on a phone; "show everything" for reading and printing. Nothing moves on
+  its own.
+- **Labs** (`laboratorija.html`) — eight short labs. A screen reader reading your markup; the
+  keyboard path through a form with and without a focus trap; one switch with an automatic scan;
+  contrast, target size and reflow measured against WCAG 2.2; who does not get the alarm; a plan on
+  a 10 cm grid checked against Art. 14, 17 and 19 of the Pravilnik; the arithmetic of 22,5 m of
+  height; and a countdown over an administrative sentence. Each lab produces a number and then asks
+  for the design decision that follows from it.
+- **Task** (`zadatak.html`) — day one: an application for one person, drawn by hand, with a drawn
+  constraint card and an optional phone-sized sketchpad that keeps showing the real minimum sizes.
+- **Prepare material** (`uredi.html`) — the teacher writes a week, the tool checks it against the
+  site's own rules and hands over the file to commit. See [docs/gradivo.md](docs/gradivo.md).
+
+Behind those: **the course** (official data, outcomes, house rules, the teacher's record, links),
+**exercises** (sixteen, each with its week, its hand-in and its check, plus six longer works),
+**the studio** (six project stages), **the calendar** (fifteen teaching weeks as a sequence, plus
+dated meetings and ICS export of confirmed events), **the brief**, **the library** (seventeen
+sources), **the pinboard**, and **working together / accessibility**.
+
+### No disability simulation
+
+The labs test tools, interfaces and geometry — never a person, and nobody is blindfolded. After
+disability simulations people report more empathy but also more pity and discomfort, and they are
+not more willing to work with disabled people on an accessibility project (Nario-Redmond, Gospodinov
+& Cobb, *Rehabilitation Psychology*, 2017). What measurably helps is a structured exercise with the
+real tool plus a debrief; what changes a project is a disabled coauthor. The labs are the warm-up.
 
 ## Publishing and privacy
 
@@ -33,27 +58,38 @@ Edit [data/schedule.json](data/schedule.json); see [the schedule guide](docs/cal
 
 ## Implementation and validation
 
-Zero runtime or build dependencies: semantic HTML, CSS, JavaScript modules and optional Canvas. No fonts, trackers or media CDNs. Static bilingual introductions and direct links remain without JavaScript. This is not an offline application. A simple view, responsive layouts, visible focus, language switching, reduced motion and a calendar list support alternative ways of using the site.
+Zero runtime and build dependencies: semantic HTML, CSS and ES modules, with optional Canvas.
+No fonts, trackers or media CDNs. `package.json` declares nothing but `"type": "module"`, so Node
+can run the tests against the same files the browser loads.
 
-Serve the repository using any static HTTP server. Open index.html through that server. Run the calendar suite with:
+Every page loads `assets/core.js` — the one shell: navigation, language, comfort settings, storage
+— plus its own view module. A week pulls the exercise bank or the lab engine only if its material
+references one. Measured over local HTTP, uncompressed, with every dynamic import settled:
+
+| Page | Transferred | JS heap |
+|---|---|---|
+| `zadatak.html` | 75 kB | 1,9 MB |
+| `laboratorija.html` | 139 kB | 1,4 MB |
+| `predavanje.html` | 142 kB | 1,8 MB |
+| `index.html` | 144 kB | 1,3 MB |
+| the nine inherited pages | 224 kB | 3,1–5,9 MB |
+
+The labs keep that modest: one lab is mounted at a time and torn down on the way out, so no
+interval, animation frame or canvas backing store survives a lab you have left; canvases cap the
+device pixel ratio at 2.
+
+Serve the repository with any static HTTP server and open `index.html` through it.
 
 ```sh
-node --test tests/calendar.test.mjs
+node --test tests/*.test.mjs
 ```
 
-WCAG 2.2 AA is a target, not a certification claim. Assistive-technology user testing and partner review are pending. The optional canvas needs a pointer; text is an independent participation route. See [accessibility](https://3esign.github.io/inclusive-studio/pristupacnost.html).
+70 Node tests cover the week format, the lab arithmetic, the calendar, portable drafts, the course
+record and the consistency of the fourteen page shells. A browser suite
+(headless Chrome, 137 checks at 320/360/768/1440 px) covers the pages, the labs, the editor, the
+language switch, the no-JavaScript baseline and the measured weight. Results:
+[docs/verification.md](docs/verification.md).
 
-## Design
-
-An architectural working sheet: a quiet field, green ink, one yellow-green signal, a numbered process rail and a small journey/place/detail diagram. Work comes before supporting material. No simulated student work, invented dates, decorative motion or grade dashboards. English is the initial interface; Serbian is available throughout.
-
-The former brochure and its research references remain recoverable in Git history at commit 0821088. The rebuilt brief removes unconfirmed credits, schedules, staffing and accreditation implications. Reference titles and descriptions were checked against primary sources on 1 October 2026; the reading list does not establish building-code compliance.
-
-## License
-
-Original site content: CC BY 4.0 · Code: MIT. Source media and third-party works retain their own rights. The Živimo zajedno source sketch is excluded from the general content licence; further reuse requires a separate rights check.
-
-
-## New teaching and access tools
-
-The library contains one reviewed architectural source sketch, four source-linked fieldwork exercises and a downloadable route worksheet. The access page adds larger text, stronger contrast and an explicitly triggered short vibration experiment with a complete text fallback. The pinboard explains sign-in and storage, supports versioned text-only JSON transfer and uses GitHub templates without privileged label parameters. [Storage details](docs/storage.md).
+WCAG 2.2 AA is a target, not a certification claim. Testing with assistive-technology users and
+partner review are still pending; the optional canvas needs a pointer, and text and paper are
+independent routes. See [accessibility](https://3esign.github.io/inclusive-studio/pristupacnost.html).

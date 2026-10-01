@@ -1,0 +1,38 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 2,
+  "state": "draft",
+  "updated": "2026-10-01",
+  "title": { "en": "Seven principles on one building", "sr": "Sedam principa na jednoj zgradi" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "You can judge a real building against all seven principles and defend each verdict with a photograph, a sketch or a measurement.",
+    "sr": "Umeš da oceniš stvarnu zgradu po svih sedam principa i da svaku ocenu odbraniš fotografijom, skicom ili merom."
+  },
+  "bring": [
+    { "en": "A tape measure, a phone, and the building you chose last week.", "sr": "Metar, telefon i zgrada koju si izabrao prošle nedelje." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "A verdict without evidence is a brochure", "sr": "Ocena bez dokaza je prospekt" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "This session is a draft. The structure is fixed: each principle gets one piece of evidence and one verdict — met, partly met, failed. At least two principles must fail; if nothing failed, you reviewed the brochure and not the building.",
+        "sr": "Ovaj čas je nacrt. Struktura je određena: svaki princip dobija jedan dokaz i jednu ocenu — ispunjen, delimično, pao. Bar dva principa moraju da padnu; ako ništa nije palo, ocenio si prospekt, a ne zgradu."
+      }
+    },
+    { "kind": "exercise", "ref": "seven-principles-audit" },
+    { "kind": "lab", "ref": "kanali" },
+    {
+      "kind": "question",
+      "items": [
+        { "en": "Which principle was hardest to judge, and what would you have had to measure to be sure?", "sr": "Koji princip je bio najteži za ocenu i šta bi morao da izmeriš da budeš siguran?" }
+      ]
+    }
+  ]
+}

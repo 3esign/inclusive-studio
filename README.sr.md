@@ -19,3 +19,27 @@ Engleski i srpski interfejs, jednostavan prikaz, tastatura, vidljiv fokus, lista
 Stvarni termini unose se u [data/schedule.json](data/schedule.json), prema [uputstvu](docs/calendar.md). Nepotvrđeni datumi se ne izmišljaju. Tehničke pojedinosti i ograničenja su u engleskom README-u.
 
 Biblioteka sada ima 17 izvora, četiri arhitektonske vežbe i jednu pregledanu skicu iz zbirke „Živimo zajedno”, sa opisom i označenim nepoznatim podacima. Tekstualni nacrt može da se preuzme i ponovo uveze kao JSON. Dostupni su veći tekst, jači kontrast i neobavezan haptički ogled sa tekstualnim odgovorom. [Čuvanje i prijava](docs/storage.md).
+
+## Kako je sajt uređen
+
+Prva strana je **radna nedelja**: građa koju je nastavnik uneo za taj čas, zadatak i ogledi na koje
+upućuje. Sve ostalo — predmet, kalendar, projekat, vežbe, biblioteka, tabla, faze — stoji iza nje.
+
+- **Nedelja** (`index.html`) — naslov, cilj, šta se donosi i građa časa, iz `data/material/wNN.json`.
+  Nema fajla, nema nedelje: strana to kaže umesto da izmisli čas.
+- **Predavanje** (`predavanje.html`) — ista građa isečena na slajdove na svakom naslovu. Strelice,
+  Space, Home, End; na telefonu i prevlačenje. Ništa se ne pomera samo.
+- **Laboratorija** (`laboratorija.html`) — osam kratkih ogleda: čitač ekrana nad tvojim kodom; put
+  tastaturom kroz formu sa zamkom fokusa i bez nje; jedan prekidač sa automatskim skeniranjem;
+  kontrast, veličina cilja i prelom po WCAG 2.2; ko ne dobija alarm; osnova na mreži od 10 cm po
+  čl. 14, 17 i 19 Pravilnika; aritmetika 22,5 m visine; i odbrojavanje nad administrativnom
+  rečenicom. Svaki ogled daje broj i onda traži projektantsku odluku.
+- **Zadatak** (`zadatak.html`) — prvi dan: aplikacija za jednu osobu, rukom, uz izvučenu karticu
+  ograničenja i neobavezno platno u veličini telefona koje stalno pokazuje stvarne minimume.
+- **Pripremi gradivo** (`uredi.html`) — nastavnik piše nedelju, alat je proverava po pravilima samog
+  sajta i predaje fajl za upis. Uputstvo: [docs/gradivo.md](docs/gradivo.md).
+
+**Bez simulacije invaliditeta.** Ogledi proveravaju alate, interfejse i geometriju — nikad osobu.
+Posle simulacija ljudi prijavljuju više empatije, ali i više sažaljenja i nelagode, i nisu spremniji
+da sa osobama sa invaliditetom rade na projektu pristupačnosti (Nario-Redmond i dr., 2017). Pomaže
+strukturirana vežba sa stvarnim alatom i debrif; projekat menja koautor sa invaliditetom.
