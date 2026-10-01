@@ -1,15 +1,21 @@
 # Inclusive Studio
 
+**Principles of Universal Design** · Union — Nikola Tesla University, Belgrade · Faculty of Construction Management
+Assist. Prof. Semir Poturak, PhD · 2026/2027, first (winter) semester · third year
+Study programmes: Architecture and Urbanism 2023 (`22.OA0068`, 5 ECTS) and 2016 (`OAIPUD`, 4 ECTS)
+
 **One place, six stages, shared architectural decisions.**
 
 [Open the studio](https://3esign.github.io/inclusive-studio/) · [Srpski](README.sr.md)
 
-A working environment for third-year architecture students and disability association coauthors. The pilot is a proposal: institution, course, partner, site, teaching dates, credits and official assessment have not yet been agreed.
+A working environment for third-year architecture students and disability association coauthors. The institution, course, programme codes, credits, grading scale and the measured site come from the faculty record and the course dossier. Still open and labelled as such on the site: contact hours, teaching dates, the room, the field visit and the partner association. The fifteen-week plan is the dossier working version, not an approved syllabus text.
 
 ## Work in the studio
 
+- **The course:** official course data, learning outcomes, house rules, the teacher's record and the link list — with everything still unverified listed as unverified. Provenance: [course-source.md](docs/course-source.md).
+- **Exercises:** sixteen exercises, each naming its week, what is handed in and the check it must pass, plus six longer pieces of work.
 - **Studio:** six project stages with student/coauthor tasks, architectural deliverables, private checklists, critique prompts and optional AI guidance.
-- **Calendar:** explicitly dated meetings, fieldwork, reviews, deadlines and breaks; month and list views; confirmed-event ICS export. A stage can contain several meetings. Stages are not assumed to be weeks.
+- **Calendar:** the fifteen teaching weeks in three blocks, linked to the project stages — a sequence, not a timetable. Plus explicitly dated meetings, fieldwork, reviews, deadlines and breaks; month and list views; confirmed-event ICS export. A stage can contain several meetings. Stages are not assumed to be weeks.
 - **The brief:** purpose, learning outcomes, connected spatial scales and a proposed evidence-based review rubric.
 - **Library:** seventeen selected primary-source entries, searchable and related to stages.
 - **Pinboard:** local text drafts, optional file preview and freehand sketch, text/PNG download, review and deliberate public sharing through GitHub.

@@ -36,3 +36,96 @@ html.large-text{font-size:20px}html.strong-contrast{--paper:#fff;--white:#fff;--
 @layer responsive{.field-material{margin-top:3rem;padding-top:1rem;border-top:2px solid var(--ink)}.field-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:2rem}.field-grid figure{margin:0}.field-grid img{display:block;width:100%;height:auto;border:1px solid var(--line)}.field-grid figcaption{font-size:.875rem;color:var(--muted);margin-top:.75rem}.exercise-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}.exercise{border-top:1px solid var(--line);padding-top:1.3rem}.exercise>a{display:inline-flex;align-items:center;min-height:44px}.exercise .mini-link{display:flex}.reading-mode .field-grid,.reading-mode .exercise-grid{grid-template-columns:1fr}@media(max-width:800px){.field-grid{grid-template-columns:1fr}}@media(max-width:520px){.exercise-grid{grid-template-columns:1fr}}}
 
 @layer responsive{.filter-bar>div{min-width:0;max-width:100%}.filter-bar select{width:100%}@media(max-width:520px){.filter-bar>div{width:100%}}}
+
+/* Course identity band, course page, exercise bank, week plan and site facts. */
+.course-band{border-bottom:1px solid var(--line);background:var(--wash)}
+#course-line{max-width:1280px;margin:0 auto;padding:.55rem 2rem;font-size:.82rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:.3rem 1.1rem;line-height:1.45}
+#course-line strong{color:var(--ink);font-weight:700}
+#course-line span{position:relative}
+#course-line span+span:before{content:'';position:absolute;left:-.6rem;top:.35em;width:3px;height:3px;border-radius:50%;background:var(--line)}
+@media print{.course-band{background:none}}
+
+.table-wrap{overflow-x:auto;margin:1.2rem 0;border:1px solid var(--line);background:var(--white)}
+.table-wrap table{border-collapse:collapse;width:100%;min-width:34rem;font-size:.94rem}
+.table-wrap caption{text-align:left;padding:.75rem 1rem;color:var(--muted);font-size:.85rem}
+.table-wrap th,.table-wrap td{text-align:left;padding:.7rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
+.table-wrap thead th{background:var(--wash);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.table-wrap tfoot th,.table-wrap tfoot td{font-weight:700;border-bottom:0}
+.table-wrap tbody tr:last-child td,.table-wrap tbody tr:last-child th{border-bottom:0}
+
+.week-table{min-width:46rem}
+.week-table th[scope=row]{font-variant-numeric:tabular-nums;width:3.2rem;color:var(--muted);font-weight:400}
+.week-table .block-row th{background:var(--ink);color:var(--white);font-size:.82rem;text-transform:uppercase;letter-spacing:.06em;padding:.6rem 1rem}
+.week-table tr.milestone th[scope=row]{color:var(--ink);font-weight:700}
+.week-table tr.milestone{background:#fbfdf4}
+.week-table .mini-link{display:inline-flex;border-bottom:0;padding:0;min-height:44px;align-items:center}
+
+.thesis{margin:2rem 0;padding:1.4rem 1.6rem;border-left:5px solid var(--ink);background:var(--white)}
+.thesis p{margin:0;font-size:1.15rem;line-height:1.6}
+
+.outcome-list{list-style:none;padding:0;margin:1rem 0}
+.outcome-list li{display:grid;grid-template-columns:2.6rem 1fr;gap:1rem;padding:.9rem 0;border-top:1px solid var(--line);margin:0}
+.outcome-list .num{color:var(--muted);font-variant-numeric:tabular-nums}
+.rule-list{padding-left:1.2rem}
+.rule-list li{margin:.6rem 0}
+
+.era-list{display:grid;gap:0;margin:1.2rem 0}
+.era{border-top:1px solid var(--line);padding:1.3rem 0}
+.era-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem 1rem}
+.era-head h3{margin:0;font-size:1.25rem}
+.era p{margin:.6rem 0 0;max-width:78ch}
+
+.link-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem 2.5rem}
+.link-group h3{font-size:1.1rem;margin:0 0 .4rem}
+.link-list{list-style:none;padding:0;margin:0}
+.link-list li{margin:0;border-top:1px solid var(--line)}
+.link-list a{display:flex;align-items:center;min-height:44px;padding:.5rem 0;gap:.6rem}
+
+.exercise-block{margin-top:2.5rem}
+.exercise-head{display:flex;align-items:baseline;justify-content:space-between;gap:.8rem}
+.exercise-head .meta-label{margin-bottom:0}
+.exercise h3{margin:.5rem 0 .6rem;font-size:1.25rem}
+.exercise-meta{margin:1rem 0 .8rem;padding:.9rem 1rem;background:var(--wash);font-size:.92rem}
+.exercise-meta dt{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.exercise-meta dd{margin:.2rem 0 .8rem}
+.exercise-meta dd:last-child{margin-bottom:0}
+.exercise-links{font-size:.88rem;margin:0}
+.exercise-links a{display:inline-flex;align-items:center;min-height:44px}
+
+.idea-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem 2.5rem}
+.idea{border-top:1px solid var(--line);padding-top:1.2rem}
+.idea h3{margin:.3rem 0 .5rem;font-size:1.2rem}
+
+.figure-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:1.3rem 0}
+.figure{background:var(--white);padding:.95rem 1rem}
+.figure dt{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.figure dd{margin:.3rem 0 0;font-size:1.3rem;font-variant-numeric:tabular-nums}
+
+.theme-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}
+.theme{border-top:3px solid var(--ink);padding-top:1rem}
+.theme .meta-label{font-size:1.4rem;color:var(--ink);margin-bottom:.2rem}
+.theme h3{margin:.2rem 0 .5rem;font-size:1.15rem}
+
+.deliverable-list{padding-left:0;list-style:none}
+.deliverable-list li{padding:.8rem 0;border-top:1px solid var(--line);margin:0}
+.deliverable-list li.core{border-left:4px solid var(--ink);padding-left:.9rem}
+
+.reading-mode .link-grid,.reading-mode .idea-grid,.reading-mode .theme-grid,.reading-mode .figure-grid{grid-template-columns:1fr}
+.reading-mode #course-line{flex-direction:column;gap:.15rem}
+.reading-mode #course-line span+span:before{display:none}
+html.strong-contrast .week-table tr.milestone{background:var(--wash)}
+
+@media(max-width:900px){
+  .link-grid,.idea-grid{grid-template-columns:1fr}
+  .theme-grid{grid-template-columns:1fr}
+  .figure-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:600px){
+  #course-line{padding:.55rem 1rem;flex-direction:column;gap:.1rem}
+  #course-line span+span:before{display:none}
+  .figure-grid{grid-template-columns:1fr}
+}
+/* A wide table inside a grid track must not push the page wider than the viewport. */
+.document>*,.shell>*,.content-grid>*{min-width:0}
+.table-wrap{min-width:0;max-width:100%}
+.exercise-links .mini-link{display:inline-flex;border-bottom:0;padding:0;justify-content:flex-start}

@@ -15,9 +15,15 @@ const schedule = (events = [], overrides = {}) => ({
 });
 const unfold = text => text.replace(/\r\n /g, '');
 
-test('the published schedule has no invented calendar facts', async () => {
+test('the published schedule names the course but invents no dates', async () => {
   const data = JSON.parse(await readFile(new URL('../data/schedule.json', import.meta.url), 'utf8'));
-  assert.deepEqual(data, schedule());
+  // Course identity comes from the faculty examination record (27.08.2026); teaching dates do not exist yet.
+  assert.equal(data.status, 'unconfirmed');
+  assert.equal(data.timezone, 'Europe/Belgrade');
+  assert.match(data.institution, /Union . Nikola Tesla/);
+  assert.match(data.course, /Principi univerzalnog dizajna/);
+  assert.ok(data.term.startsWith('2026/2027'), data.term);
+  assert.deepEqual(data.events, []);
   assert.deepEqual(validateSchedule(data), []);
 });
 

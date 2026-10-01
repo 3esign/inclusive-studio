@@ -1,5 +1,9 @@
 # Inclusive Studio
 
+**Principi univerzalnog dizajna** · Univerzitet „Union — Nikola Tesla”, Beograd · Fakultet za graditeljski menadžment
+doc. dr Semir Poturak · 2026/2027, prvi (zimski) semestar · treća godina
+Studijski programi: Arhitektura i urbanizam 2023 (`22.OA0068`, 5 ESPB) i 2016 (`OAIPUD`, 4 ESPB)
+
 **Jedno mesto, šest faza, zajedničke arhitektonske odluke.**
 
 [Otvori studio](https://3esign.github.io/inclusive-studio/) · [English](README.md)

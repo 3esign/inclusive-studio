@@ -2,6 +2,24 @@
 
 This is a bounded implementation check, not WCAG certification or a claim of educational validation.
 
+## Course identity, course page, exercise bank and week plan — 2026-10-01T19:48:25.286Z
+
+- **111/111 isolated Chrome checks passed** in the existing suite (now covering nine pages, including the two new ones), plus **67/67 new checks** in `verify-course-pages.cjs`: the course band and document title on every page, the official programme table, the unverified-items notice, the teacher record, the link groups, the Serbian switch, the sixteen exercise cards each with hand-in and check, the fifteen numbered weeks with milestones, the measured site figures with their reconnaissance caveat, both programmes totalling 100 points on screen, reflow at 1440/1024/768/390/320 CSS pixels, enlarged text at 320, heading order and table semantics. No JavaScript exceptions.
+- **28/28 Node tests passed**: 14 calendar cases, six draft/URL cases, eight new course-data cases (`tests/course.test.mjs`) asserting the programme codes, that the unverified caveats cannot be deleted silently, fifteen weeks in three blocks, every exercise bound to a real week with a hand-in and a check, the site figures against the problem statement, both programmes summing to 100, the four compulsory hand-in items, and bilingual completeness of outcomes, themes, eras, ideas and links.
+- **A real defect was found and fixed by the checks, not by inspection:** the brief page overflowed horizontally at 390 and 320 CSS pixels because a wide table inside a grid track pushed the document to 564 px. Grid items are now `min-width: 0` and the table scrolls inside its own wrapper.
+- `data/schedule.json` now carries the course identity from the examination record and still carries **no events**. The calendar test was rewritten to assert exactly that: the course may be named, the dates may not be invented.
+- Screenshots inspected: course page desktop, course page in Serbian, course page mobile, exercises desktop and mobile, week plan, brief with site facts.
+
+### What is published as verified, and what as proposed
+
+- **Verified:** institution, teacher, both programme codes with semester and ECTS, grading scale (faculty examination record, 27.08.2026); the site measurements of 22,5 m over 151 m and the declared device accuracy (recomputed from source files, 30.09.2026); the teacher's file counts per era (archive census, 16.08.2026).
+- **Proposed:** the fifteen-week plan, outcomes, hand-in requirements, points and criteria — the course dossier working version, labelled as such on the page itself.
+- **Declared unknown:** contact hours, teaching dates, room, field visit, and the partner association.
+
+### Not checked in this round
+
+Real screen-reader use, a real student submission, and the accreditation booklet. The accessibility statement remains a claim about intent and implementation, not evidence from assistive-technology users.
+
 ## Accessibility, material and storage update — 2026-10-01T17:43:50.601Z
 
 - **99/99 isolated Chrome checks passed**, including the previous routes and new template handoff, no privileged label URL parameter, reviewed text import, stale-import races, image-description synchronization, enlarged-text reflow at 320 CSS pixels in English and Serbian, forced-colors selection outline, text-spacing override, haptic fallback and explicit-request semantics. No JavaScript exceptions recorded.
