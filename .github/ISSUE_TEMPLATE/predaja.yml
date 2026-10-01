@@ -1,32 +1,45 @@
-name: "📐 Predaja nedeljnog zadatka / Weekly submission"
-description: "Predaj zadatak za jednu od šest nedelja · Submit a task for one of the six weeks"
-title: "[Nedelja ?] "
+name: "Project work / Projektantski rad"
+description: "Share evidence from a project stage / Podeli dokaze iz faze projekta"
+title: "[Stage / Faza] "
 labels: ["submission"]
 body:
+  - type: markdown
+    attributes:
+      value: "This is public project sharing, not an official course hand-in or grade. / Ovo je javno deljenje rada, ne zvanična predaja na predmetu ili ocena."
   - type: dropdown
-    id: nedelja
+    id: stage
     attributes:
-      label: "Nedelja / Week"
+      label: "Project stage / Faza projekta"
       options:
-        - "1 — Posmatraj / Observe"
-        - "2 — Upoznaj / Meet"
-        - "3 — Izmeri / Measure"
-        - "4 — Zamisli / Imagine"
-        - "5 — Razradi / Develop"
-        - "6 — Pokaži / Present"
+        - "01 — Trace a journey / Istraži putanju"
+        - "02 — Agree the brief / Dogovori projektni zadatak"
+        - "03 — Compare spatial options / Uporedi prostorna rešenja"
+        - "04 — Test at full scale / Proveri u punoj razmeri"
+        - "05 — Resolve the project / Razradi projekat"
+        - "06 — Return it to the community / Vrati rezultat zajednici"
     validations:
       required: true
   - type: textarea
-    id: rad
+    id: evidence
     attributes:
-      label: "Rad / Work"
-      description: "Tekst, beleške, mere. Fotografije, crteže i skice prevuci direktno u ovo polje. · Text, notes, measurements. Drag photos, drawings and sketches directly into this field."
+      label: "Evidence and question / Dokazi i pitanje"
+      description: "Describe the decision, measurements, changes and uncertainty. Attach drawings here. / Opiši odluku, mere, promene i neizvesnosti. Ovde priloži crteže."
     validations:
       required: true
   - type: textarea
-    id: ucesnici
+    id: descriptions
     attributes:
-      label: "Ko je učestvovao? / Who took part?"
-      description: "Imena ili GitHub nalozi svih koautora — i studenata i članova udruženja. · Names or GitHub handles of all co-authors — students and association members alike."
-    validations:
-      required: true
+      label: "Drawing descriptions / Opisi crteža"
+      description: "Describe the meaning of every attachment in text; include scale, levels and spatial relationships where relevant. / Opiši smisao svakog priloga tekstom; navedi razmeru, kote i prostorne odnose gde su važni."
+  - type: textarea
+    id: credits
+    attributes:
+      label: "Agreed credits (optional) / Dogovoreni potpisi (neobavezno)"
+      description: "Name people only with their permission; roles or agreed pseudonyms are fine. / Navedi ljude samo uz njihovu dozvolu; mogu uloge ili dogovoreni pseudonimi."
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: "Public sharing / Javno deljenje"
+      options:
+        - label: "I removed private information and have permission to publish this material. / Uklonio/la sam privatne podatke i imam dozvolu za objavu ovog materijala."
+          required: true

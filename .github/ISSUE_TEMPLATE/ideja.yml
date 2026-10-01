@@ -1,33 +1,26 @@
-name: "💡 Ideja / Idea"
-description: "Podeli ideju za pristupačniji prostor · Share an idea for a more accessible space"
-title: "[Ideja] "
+name: "Idea / Ideja"
+description: "Share a spatial observation or idea / Podeli prostorno zapažanje ili ideju"
+title: "[Idea / Ideja] "
 labels: ["idea"]
 body:
   - type: markdown
     attributes:
-      value: |
-        Hvala! Piši slobodno — srpski ili engleski, tekst ili skica. · Thank you! Write freely — Serbian or English, text or sketch.
-  - type: dropdown
-    id: uloga
+      value: "This conversation is public. Do not include diagnoses, private interviews or home addresses. / Ovaj razgovor je javan. Ne navodi dijagnoze, privatne razgovore ili kućne adrese."
+  - type: textarea
+    id: idea
     attributes:
-      label: "Ko si? / Who are you?"
-      options:
-        - "Student arhitekture / Architecture student"
-        - "Član udruženja / Association member"
-        - "Nastavnik / Teacher"
-        - "Drugo / Other"
+      label: "What did you notice or propose? / Šta si primetio ili predložio?"
+      description: "Describe the place, situation and question. Text is enough; attach a sketch if useful. / Opiši mesto, situaciju i pitanje. Tekst je dovoljan; priloži skicu ako pomaže."
     validations:
       required: true
   - type: textarea
-    id: ideja
+    id: description
     attributes:
-      label: "Ideja / Idea"
-      description: "Koji prostor, koji problem, šta predlažeš? Skicu ili fotografiju prevuci direktno u ovo polje. · Which space, which problem, what do you propose? Drag a sketch or photo directly into this field."
-      placeholder: "Npr: Ulaz u biblioteku ima 3 stepenika i tešku drvenu kapiju..."
-    validations:
-      required: true
-  - type: input
-    id: mesto
+      label: "Attachment description (if any) / Opis priloga (ako postoji)"
+  - type: checkboxes
+    id: permission
     attributes:
-      label: "Mesto / Location (opciono · optional)"
-      placeholder: "Npr: Bulevar kralja Aleksandra 73, Beograd"
+      label: "Public sharing / Javno deljenje"
+      options:
+        - label: "I removed private information and have permission to publish this material. / Uklonio/la sam privatne podatke i imam dozvolu za objavu ovog materijala."
+          required: true

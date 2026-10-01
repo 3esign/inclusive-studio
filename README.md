@@ -1,32 +1,48 @@
 # Inclusive Studio
 
-**Live site: https://3esign.github.io/inclusive-studio/**
+**One place, six stages, shared architectural decisions.**
 
-A collaborative universal design studio where 3rd-year architecture students and members of a disability association co-design accessible spaces — six weeks, one real place, users as co-authors and reviewers (not "cases").
+[Open the studio](https://3esign.github.io/inclusive-studio/) · [Srpski](README.sr.md)
 
-*Srpska verzija: [README.sr.md](README.sr.md)*
+A working environment for third-year architecture students and disability association coauthors. The pilot is a proposal: institution, course, partner, site, teaching dates, credits and official assessment have not yet been agreed.
 
-## The suite
+## Work in the studio
 
-| Page | What it holds |
-|---|---|
-| [Home](https://3esign.github.io/inclusive-studio/) | Purpose in brief, how it works, live idea board |
-| [Standard & purpose](https://3esign.github.io/inclusive-studio/standard.html) | What the studio binds itself to — every claim sourced: Biesta's three functions of education, Magna Charta 2020, EHEA social dimension (Rome 2020 / Tirana 2024), SDG 4, CRPD art. 24, EU Directive 2005/36 art. 46, UNESCO/UIA Charter 2026, NAAB/RIBA accreditation criteria — and what we explicitly refuse (student-as-consumer, jury-driven crits, disability simulations, sleepless studio culture) |
-| [Programme & syllabus](https://3esign.github.io/inclusive-studio/program.html) | Learning outcomes at EQF level 6, public ECTS arithmetic (78 h ≈ 3 ECTS), constructive alignment table, six weeks with binary public submission criteria (specifications grading), assessment, AI policy derived from the outcomes, required reading |
-| [Ethics](https://3esign.github.io/inclusive-studio/etika.html) | Participation above tokenism (Arnstein), consent and data minimisation, recognition of members' work, limits of the method |
-| [Participate](https://3esign.github.io/inclusive-studio/ucestvuj.html) | Three steps to join, accessible issue forms, sketchpad with equal text alternative |
-| [Accessibility](https://3esign.github.io/inclusive-studio/pristupacnost.html) | W3C-format accessibility statement (target WCAG 2.2 AA) with honestly listed known limitations, and a map of the 7 principles of universal design demonstrated on the site itself |
+- **Studio:** six project stages with student/coauthor tasks, architectural deliverables, private checklists, critique prompts and optional AI guidance.
+- **Calendar:** explicitly dated meetings, fieldwork, reviews, deadlines and breaks; month and list views; confirmed-event ICS export. A stage can contain several meetings. Stages are not assumed to be weeks.
+- **The brief:** purpose, learning outcomes, connected spatial scales and a proposed evidence-based review rubric.
+- **Library:** ten selected primary-source entries, searchable and related to stages.
+- **Pinboard:** local text drafts, optional file preview and freehand sketch, text/PNG download, review and deliberate public sharing through GitHub.
+- **Working together / Accessibility:** participation agreement, consent, known platform limitations and ways to use the interface.
 
-## Platform
-- All **ideas and weekly submissions** are GitHub Issues via structured issue forms — text, photos and sketches (drag & drop). Everything is public and open for comments.
-- The idea board reads live from the Issues API; no backend, no build step, **zero dependencies**.
-- The site is bilingual (Serbian/English, per-fragment `lang` attributes), light/dark via `prefers-color-scheme`, fully keyboard-operable, and is itself meant as a worked example of universal design.
+## Publishing and privacy
 
-## Grounding
-The pedagogy follows the evidence: direct, equal collaboration with disabled people is the active ingredient of accessibility education; passive disability simulations are avoided (they measurably worsen attitudes). Format models: MIT 6.811 (semester-long work with a real client), Sheffield Live Projects, the science-shop model, UW CSE 493E (competency-based grading). The full source base lives on the Standard page — every normative claim links to its document.
+The site has no server-side submission service. Text drafts remain in the current browser when storage is permitted. Selected files and sketches remain in memory and are not automatically saved. A file preview is not an upload. Attach the selected file or downloaded PNG yourself in GitHub. For long drafts the interface requests downloaded text to be pasted into GitHub.
 
-## Contributing
-Open an issue: [💡 Idea](../../issues/new?template=ideja.yml) · [📐 Weekly submission](../../issues/new?template=predaja.yml)
+The final link opens an editable GitHub draft; publication happens when the participant submits on GitHub. GitHub requires an account. Public posting does not register an official course hand-in or a grade. Never publish private interview material or a contributor's identifying information without specific permission. Supported submission through a course contact still needs an appointed owner.
+
+## Configure the real timetable
+
+Edit [data/schedule.json](data/schedule.json); see [the schedule guide](docs/calendar.md). Keep dates absent until confirmed. The site validates date reality, timezone/DST, unique identifiers, event kinds, statuses and start/end order. Invalid data produces an explicit unavailable state, never guessed dates. ICS uses UTC timestamps and includes confirmed events only.
+
+## Implementation and validation
+
+Zero runtime or build dependencies: semantic HTML, CSS, JavaScript modules and optional Canvas. No fonts, trackers or media CDNs. Static bilingual introductions and direct links remain without JavaScript. This is not an offline application. A simple view, responsive layouts, visible focus, language switching, reduced motion and a calendar list support alternative ways of using the site.
+
+Serve the repository using any static HTTP server. Open index.html through that server. Run the calendar suite with:
+
+```sh
+node --test tests/calendar.test.mjs
+```
+
+WCAG 2.2 AA is a target, not a certification claim. Assistive-technology user testing and partner review are pending. The optional canvas needs a pointer; text is an independent participation route. See [accessibility](https://3esign.github.io/inclusive-studio/pristupacnost.html).
+
+## Design
+
+An architectural working sheet: a quiet field, green ink, one yellow-green signal, a numbered process rail and a small journey/place/detail diagram. Work comes before supporting material. No simulated student work, invented dates, decorative motion or grade dashboards. English is the initial interface; Serbian is available throughout.
+
+The former brochure and its research references remain recoverable in Git history at commit 0821088. The rebuilt brief removes unconfirmed credits, schedules, staffing and accreditation implications. Reference titles and descriptions were checked against primary sources on 1 October 2026; the reading list does not establish building-code compliance.
 
 ## License
+
 Content: CC BY 4.0 · Code: MIT

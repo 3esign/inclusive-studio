@@ -1,30 +1,15 @@
 # Inclusive Studio
 
-**Sajt: https://3esign.github.io/inclusive-studio/**
+**Jedno mesto, šest faza, zajedničke arhitektonske odluke.**
 
-Kolaborativni studio univerzalnog dizajna: studenti 3. godine arhitekture i članovi udruženja osoba sa invaliditetom zajedno projektuju pristupačne prostore — šest nedelja, jedno stvarno mesto, korisnici kao koautori i recenzenti (ne „slučajevi").
+[Otvori studio](https://3esign.github.io/inclusive-studio/) · [English](README.md)
 
-## Celina sajta
+Radni prostor za studente treće godine arhitekture i koautore iz udruženja osoba sa invaliditetom. Pilot je predlog; fakultet, predmet, udruženje, lokacija, raspored, bodovi i zvanično ocenjivanje još nisu potvrđeni.
 
-| Strana | Šta nosi |
-|---|---|
-| [Početna](https://3esign.github.io/inclusive-studio/) | Svrha ukratko, kako radi, živa tabla ideja |
-| [Standard i svrha](https://3esign.github.io/inclusive-studio/standard.html) | Na šta se studio obavezuje — svaka tvrdnja sa izvorom: Biestine tri funkcije obrazovanja, Magna Charta 2020, socijalna dimenzija EHEA (Rim 2020 / Tirana 2024), SDG 4, CRPD čl. 24, EU Direktiva 2005/36 čl. 46, UNESCO/UIA povelja 2026, NAAB/RIBA kriterijumi — i šta izričito odbijamo (student-potrošač, projektovanje za žiri, simulacije invaliditeta, kultura nespavanja) |
-| [Program i silabus](https://3esign.github.io/inclusive-studio/program.html) | Ishodi učenja na nivou EQF 6, javna ECTS računica (78 h ≈ 3 ECTS), tabela poravnanja, šest nedelja sa binarnim javnim kriterijumima predaje (specifications grading), ocenjivanje, AI politika izvedena iz ishoda, obavezno čitanje |
-| [Etika](https://3esign.github.io/inclusive-studio/etika.html) | Učešće iznad tokenizma (Arnstein), saglasnost i minimum podataka, priznanje rada članova, granice metode |
-| [Učestvuj](https://3esign.github.io/inclusive-studio/ucestvuj.html) | Tri koraka do učešća, pristupačne forme, skicirnica sa ravnopravnom tekstualnom alternativom |
-| [Pristupačnost](https://3esign.github.io/inclusive-studio/pristupacnost.html) | Izjava o pristupačnosti po W3C formatu (cilj WCAG 2.2 AA) sa pošteno navedenim ograničenjima i mapom 7 principa univerzalnog dizajna demonstriranih na samom sajtu |
+Studio povezuje konkretne zadatke, arhitektonske rezultate, proveru rada, kalendar, biblioteku i javnu tablu. Šest faza nije šest nastavnih nedelja. Jedna faza može imati više susreta, konsultacija i rokova.
 
-## Platforma
-- Sve **ideje i nedeljne predaje** su GitHub Issues kroz strukturirane forme — tekst, fotografije i skice (prevuci sliku u formular). Sve je javno i otvoreno za komentare.
-- Tabla ideja čita uživo sa Issues API-ja; bez servera, bez build koraka, **nula zavisnosti**.
-- Sajt je dvojezičan (srpski/engleski, `lang` atributi po odeljku), svetla/tamna tema po podešavanju sistema, u celini upotrebljiv tastaturom — i sam je zamišljen kao radni primer univerzalnog dizajna.
+Tekst nacrta čuva se u pregledaču kada je to dozvoljeno. Slike i skice se ne čuvaju automatski. Izbor fajla daje lokalni pregled; fajl ili preuzetu PNG skicu samostalno prilažeš u GitHub nacrt. Javno objavljivanje zahteva GitHub nalog i dešava se tek tamo. Objavljivanje ne registruje zvaničnu predaju na predmetu ni ocenu. Kontakt za podržanu predaju još treba imenovati.
 
-## Uporište
-Pedagogija prati dokaze: direktan, ravnopravan rad sa osobama sa invaliditetom je aktivni sastojak nastave pristupačnosti; pasivne simulacije invaliditeta se izbegavaju (merljivo pogoršavaju stavove). Uzori formata: MIT 6.811 (ceo semestar sa stvarnim klijentom), Sheffield Live Projects, science shop model, UW CSE 493E (ocenjivanje po kompetencijama). Puna baza izvora je na strani Standard — svaka normativna tvrdnja vodi na svoj dokument.
+Engleski i srpski interfejs, jednostavan prikaz, tastatura, vidljiv fokus, lista događaja uz kalendar i tekstualni put nezavisan od crtanja. WCAG 2.2 AA je cilj; provera sa korisnicima asistivnih tehnologija još predstoji. Sajt nije oflajn aplikacija.
 
-## Učestvuj
-[💡 Ideja](../../issues/new?template=ideja.yml) · [📐 Nedeljna predaja](../../issues/new?template=predaja.yml)
-
-## Licenca
-Sadržaj: CC BY 4.0 · Kod: MIT
+Stvarni termini unose se u [data/schedule.json](data/schedule.json), prema [uputstvu](docs/calendar.md). Nepotvrđeni datumi se ne izmišljaju. Tehničke pojedinosti i ograničenja su u engleskom README-u.
