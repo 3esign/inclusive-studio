@@ -11,7 +11,7 @@ A working environment for third-year architecture students and disability associ
 - **Studio:** six project stages with student/coauthor tasks, architectural deliverables, private checklists, critique prompts and optional AI guidance.
 - **Calendar:** explicitly dated meetings, fieldwork, reviews, deadlines and breaks; month and list views; confirmed-event ICS export. A stage can contain several meetings. Stages are not assumed to be weeks.
 - **The brief:** purpose, learning outcomes, connected spatial scales and a proposed evidence-based review rubric.
-- **Library:** ten selected primary-source entries, searchable and related to stages.
+- **Library:** seventeen selected primary-source entries, searchable and related to stages.
 - **Pinboard:** local text drafts, optional file preview and freehand sketch, text/PNG download, review and deliberate public sharing through GitHub.
 - **Working together / Accessibility:** participation agreement, consent, known platform limitations and ways to use the interface.
 
@@ -19,7 +19,7 @@ A working environment for third-year architecture students and disability associ
 
 The site has no server-side submission service. Text drafts remain in the current browser when storage is permitted. Selected files and sketches remain in memory and are not automatically saved. A file preview is not an upload. Attach the selected file or downloaded PNG yourself in GitHub. For long drafts the interface requests downloaded text to be pasted into GitHub.
 
-The final link opens an editable GitHub draft; publication happens when the participant submits on GitHub. GitHub requires an account. Public posting does not register an official course hand-in or a grade. Never publish private interview material or a contributor's identifying information without specific permission. Supported submission through a course contact still needs an appointed owner.
+The final link opens an editable GitHub draft; issue text is published when submitted on GitHub. Files added to its editor upload immediately and are publicly accessible. GitHub requires an account. Public posting does not register an official course hand-in or a grade. Never publish private interview material or a contributor's identifying information without specific permission. Supported submission through a course contact still needs an appointed owner.
 
 ## Configure the real timetable
 
@@ -45,4 +45,9 @@ The former brochure and its research references remain recoverable in Git histor
 
 ## License
 
-Content: CC BY 4.0 · Code: MIT
+Original site content: CC BY 4.0 · Code: MIT. Source media and third-party works retain their own rights. The Živimo zajedno source sketch is excluded from the general content licence; further reuse requires a separate rights check.
+
+
+## New teaching and access tools
+
+The library contains one reviewed architectural source sketch, four source-linked fieldwork exercises and a downloadable route worksheet. The access page adds larger text, stronger contrast and an explicitly triggered short vibration experiment with a complete text fallback. The pinboard explains sign-in and storage, supports versioned text-only JSON transfer and uses GitHub templates without privileged label parameters. [Storage details](docs/storage.md).

@@ -5,6 +5,9 @@ labels: ["idea"]
 body:
   - type: markdown
     attributes:
+      value: "Files added to this editor upload immediately, before you submit, and are public. / Fajlovi dodati u ovaj editor šalju se odmah, pre objave, i javno su dostupni."
+  - type: markdown
+    attributes:
       value: "This conversation is public. Do not include diagnoses, private interviews or home addresses. / Ovaj razgovor je javan. Ne navodi dijagnoze, privatne razgovore ili kućne adrese."
   - type: textarea
     id: idea

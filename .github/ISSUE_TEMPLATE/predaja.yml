@@ -5,6 +5,9 @@ labels: ["submission"]
 body:
   - type: markdown
     attributes:
+      value: "Files added to this editor upload immediately, before you submit, and are public. / Fajlovi dodati u ovaj editor šalju se odmah, pre objave, i javno su dostupni."
+  - type: markdown
+    attributes:
       value: "This is public project sharing, not an official course hand-in or grade. / Ovo je javno deljenje rada, ne zvanična predaja na predmetu ili ocena."
   - type: dropdown
     id: stage

@@ -24,3 +24,15 @@
 }
 
 @layer responsive{.contribute-layout>*{min-width:0}.two-col{grid-template-columns:repeat(2,minmax(0,1fr))}.composer select{width:100%}.composer input[type=file]{width:100%;min-width:0}.actions>*,.row>*{max-width:100%}.button{overflow-wrap:anywhere}@media(max-width:520px){.two-col{grid-template-columns:minmax(0,1fr)}.composer .button{gap:.7rem}.composer .actions{align-items:stretch;flex-direction:column}}}
+
+/* User-controlled comfort without an accessibility overlay. */
+@layer responsive {
+html.large-text{font-size:20px}html.strong-contrast{--paper:#fff;--white:#fff;--ink:#102219;--muted:#263f31;--line:#536657;--wash:#f1f5ed}
+.storage-guide{margin-bottom:2rem;border-bottom:1px solid var(--line)}.storage-guide>div{max-width:85ch}.storage-steps li{padding-left:.3rem}.storage-steps p{margin:.3rem 0 1rem}.draft-transfer{margin-top:1rem}.draft-transfer label{margin-top:1.1rem}.comfort-tools{padding:1.5rem 0 2rem}.comfort-tools button[aria-pressed=true]{border:2px solid var(--ink);font-weight:700;background:var(--signal)}.comfort-tools button[aria-pressed=true]:after{content:' ✓';speak:never}.reading-mode .document,.reading-mode .aside{display:block}.reading-mode .document-index{margin-bottom:1.5rem}
+@media(forced-colors:active){.comfort-tools button[aria-pressed=true]{outline:2px solid Highlight}:focus-visible{outline-color:Highlight}}
+@media(prefers-contrast:more){:root{--muted:#263f31;--line:#536657}}
+}
+
+@layer responsive{.field-material{margin-top:3rem;padding-top:1rem;border-top:2px solid var(--ink)}.field-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:2rem}.field-grid figure{margin:0}.field-grid img{display:block;width:100%;height:auto;border:1px solid var(--line)}.field-grid figcaption{font-size:.875rem;color:var(--muted);margin-top:.75rem}.exercise-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}.exercise{border-top:1px solid var(--line);padding-top:1.3rem}.exercise>a{display:inline-flex;align-items:center;min-height:44px}.exercise .mini-link{display:flex}.reading-mode .field-grid,.reading-mode .exercise-grid{grid-template-columns:1fr}@media(max-width:800px){.field-grid{grid-template-columns:1fr}}@media(max-width:520px){.exercise-grid{grid-template-columns:1fr}}}
+
+@layer responsive{.filter-bar>div{min-width:0;max-width:100%}.filter-bar select{width:100%}@media(max-width:520px){.filter-bar>div{width:100%}}}
