@@ -1,0 +1,32 @@
+name: "📐 Predaja nedeljnog zadatka / Weekly submission"
+description: "Predaj zadatak za jednu od šest nedelja · Submit a task for one of the six weeks"
+title: "[Nedelja ?] "
+labels: ["submission"]
+body:
+  - type: dropdown
+    id: nedelja
+    attributes:
+      label: "Nedelja / Week"
+      options:
+        - "1 — Posmatraj / Observe"
+        - "2 — Upoznaj / Meet"
+        - "3 — Izmeri / Measure"
+        - "4 — Zamisli / Imagine"
+        - "5 — Razradi / Develop"
+        - "6 — Pokaži / Present"
+    validations:
+      required: true
+  - type: textarea
+    id: rad
+    attributes:
+      label: "Rad / Work"
+      description: "Tekst, beleške, mere. Fotografije, crteže i skice prevuci direktno u ovo polje. · Text, notes, measurements. Drag photos, drawings and sketches directly into this field."
+    validations:
+      required: true
+  - type: textarea
+    id: ucesnici
+    attributes:
+      label: "Ko je učestvovao? / Who took part?"
+      description: "Imena ili GitHub nalozi svih koautora — i studenata i članova udruženja. · Names or GitHub handles of all co-authors — students and association members alike."
+    validations:
+      required: true

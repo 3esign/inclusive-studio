@@ -1,0 +1,33 @@
+name: "💡 Ideja / Idea"
+description: "Podeli ideju za pristupačniji prostor · Share an idea for a more accessible space"
+title: "[Ideja] "
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hvala! Piši slobodno — srpski ili engleski, tekst ili skica. · Thank you! Write freely — Serbian or English, text or sketch.
+  - type: dropdown
+    id: uloga
+    attributes:
+      label: "Ko si? / Who are you?"
+      options:
+        - "Student arhitekture / Architecture student"
+        - "Član udruženja / Association member"
+        - "Nastavnik / Teacher"
+        - "Drugo / Other"
+    validations:
+      required: true
+  - type: textarea
+    id: ideja
+    attributes:
+      label: "Ideja / Idea"
+      description: "Koji prostor, koji problem, šta predlažeš? Skicu ili fotografiju prevuci direktno u ovo polje. · Which space, which problem, what do you propose? Drag a sketch or photo directly into this field."
+      placeholder: "Npr: Ulaz u biblioteku ima 3 stepenika i tešku drvenu kapiju..."
+    validations:
+      required: true
+  - type: input
+    id: mesto
+    attributes:
+      label: "Mesto / Location (opciono · optional)"
+      placeholder: "Npr: Bulevar kralja Aleksandra 73, Beograd"
