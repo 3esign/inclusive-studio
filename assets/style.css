@@ -1,6 +1,18 @@
+/* Inclusive Studio — zero-dependency stylesheet.
+   The site must itself pass what it teaches: WCAG 2.2 AA.
+   Light/dark via prefers-color-scheme; all sizes in rem; no fixed heights
+   so WCAG 1.4.12 text-spacing overrides cannot break layout. */
 :root{
   --paper:#faf7f2; --ink:#1b1b1f; --accent:#1f4e8c; --accent-ink:#163a69;
-  --line:#ddd6cb; --card:#ffffff; --muted:#5a564e;
+  --line:#ddd6cb; --card:#ffffff; --muted:#5a564e; --mark:#ffd37a;
+  --ok-bg:#eef6ee; --ok-line:#2e7d4f; --note-bg:#fff8e6;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#16161a; --ink:#ece9e2; --accent:#8ab4e8; --accent-ink:#a8c8ef;
+    --line:#3a3a44; --card:#1f1f26; --muted:#b3aea4; --mark:#d9b25f;
+    --ok-bg:#1d2a20; --ok-line:#6fbf8f; --note-bg:#2a2619;
+  }
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -11,53 +23,83 @@ body{
 }
 .wrap{max-width:62rem; margin:0 auto; padding:0 1.25rem}
 
-/* language toggle: exactly one language visible */
+/* language toggle: exactly one language visible; .en spans carry lang="en" */
 .en{display:none}
 body.lang-en .en{display:inline}
 body.lang-en .sr{display:none}
-body.lang-en div.en, body.lang-en p.en{display:block}
+body.lang-en div.en, body.lang-en p.en, body.lang-en li.en{display:block}
 
-.skip{position:absolute; left:-999px; top:0; background:var(--accent); color:#fff; padding:.6rem 1rem; z-index:10}
+.skip{position:absolute; left:-999px; top:0; background:var(--accent-ink); color:var(--paper); padding:.6rem 1rem; z-index:10}
+@media (prefers-color-scheme: dark){ .skip{color:#10131a} }
 .skip:focus{left:0}
 
 a{color:var(--accent-ink)}
-a:focus-visible, button:focus-visible{outline:3px solid var(--accent); outline-offset:2px; border-radius:2px}
+a:focus-visible, button:focus-visible, summary:focus-visible{outline:3px solid var(--accent); outline-offset:2px; border-radius:2px}
+/* WCAG 2.4.11: anchored headings must not hide under the sticky header */
+:target, [id]{scroll-margin-top:5.5rem}
 
-.top{background:var(--ink); color:#fff; position:sticky; top:0; z-index:5}
-.bar{display:flex; align-items:center; gap:1.2rem; flex-wrap:wrap; padding:.6rem 1.25rem}
-.brand{font-size:1.15rem; letter-spacing:.02em}
-.brand strong{color:#ffd37a}
-.top nav{display:flex; gap:1rem; flex-wrap:wrap; margin-left:auto}
-.top a{color:#fff; text-decoration:none; padding:.25rem 0; border-bottom:2px solid transparent}
-.top a:hover{border-bottom-color:#ffd37a}
-#langToggle{background:transparent; color:#fff; border:1.5px solid #fff; border-radius:4px; padding:.25rem .7rem; font:inherit; cursor:pointer}
-#langToggle:hover{background:#fff; color:var(--ink)}
+.top{background:#1b1b1f; color:#fff; position:sticky; top:0; z-index:5}
+.bar{display:flex; align-items:center; gap:1rem; flex-wrap:wrap; padding:.55rem 1.25rem}
+.brand{font-size:1.1rem; letter-spacing:.02em; color:#fff; text-decoration:none}
+.brand strong{color:var(--mark)}
+.top nav{display:flex; gap:.2rem .9rem; flex-wrap:wrap; margin-left:auto}
+/* WCAG 2.5.8: every target ≥24px */
+.top nav a{color:#fff; text-decoration:none; padding:.45rem .15rem; border-bottom:3px solid transparent; min-height:1.5rem}
+.top nav a:hover{border-bottom-color:var(--mark)}
+.top nav a[aria-current="page"]{border-bottom-color:var(--mark); font-weight:600}
+#langToggle{background:transparent; color:#fff; border:1.5px solid #fff; border-radius:4px; padding:.35rem .8rem; font:inherit; cursor:pointer; min-height:2rem}
+#langToggle:hover{background:#fff; color:#1b1b1f}
 
-.hero{padding:3.5rem 1.25rem 2rem}
-.hero h1{font-size:clamp(1.7rem, 4vw, 2.6rem); line-height:1.25; margin:0 0 1rem; max-width:40ch}
-.hero em{font-style:normal; color:var(--accent); border-bottom:4px solid #ffd37a}
+.hero{padding:3rem 1.25rem 1.6rem}
+.hero h1{font-size:clamp(1.6rem, 4vw, 2.5rem); line-height:1.25; margin:0 0 1rem; max-width:44ch}
+.hero em{font-style:normal; color:var(--accent); border-bottom:4px solid var(--mark)}
 .lead{font-size:1.15rem; max-width:60ch; color:var(--muted)}
-.actions{display:flex; gap:.8rem; flex-wrap:wrap; margin-top:1.5rem}
+.actions{display:flex; gap:.8rem; flex-wrap:wrap; margin-top:1.4rem}
 
 .btn{display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:.65rem 1.2rem; border-radius:6px; border:2px solid var(--accent); font-weight:600}
-.btn:hover{background:var(--accent-ink); border-color:var(--accent-ink)}
+@media (prefers-color-scheme: dark){ .btn{color:#10131a} }
+.btn:hover{filter:brightness(.88)}
 .btn.ghost{background:transparent; color:var(--accent-ink)}
-.btn.ghost:hover{background:var(--accent); color:#fff}
-.btn.small{padding:.4rem .9rem; font-size:.95rem}
+.btn.ghost:hover{background:var(--accent); color:#fff; filter:none}
+@media (prefers-color-scheme: dark){ .btn.ghost:hover{color:#10131a} }
+.btn.small{padding:.45rem .9rem; font-size:.95rem}
 
-section{padding:2.2rem 0}
-h2{font-size:1.6rem; border-bottom:3px solid var(--line); padding-bottom:.4rem; max-width:40ch}
+section{padding:1.9rem 0}
+h2{font-size:1.55rem; border-bottom:3px solid var(--line); padding-bottom:.4rem; max-width:44ch}
+h3{font-size:1.15rem}
+p, li{max-width:75ch}
+
+/* "Ukratko" — plain-language summary per COGA: key page in short sentences first */
+.ukratko{background:var(--ok-bg); border-left:5px solid var(--ok-line); border-radius:0 8px 8px 0; padding:.9rem 1.2rem; margin:1.4rem 0}
+.ukratko h2{border:none; font-size:1.05rem; margin:.1rem 0 .5rem; padding:0}
+.ukratko p, .ukratko li{font-size:1rem}
+
 .cols{display:grid; gap:1.2rem; grid-template-columns:repeat(auto-fit, minmax(16rem,1fr))}
 .cols article{background:var(--card); border:1px solid var(--line); border-radius:8px; padding:1rem 1.2rem}
 .cols h3{margin:.2rem 0 .5rem; font-size:1.08rem}
-.note{background:#fff8e6; border-left:4px solid #ffd37a; padding:.7rem 1rem; max-width:62ch}
+.note{background:var(--note-bg); border-left:4px solid var(--mark); padding:.7rem 1rem; max-width:62ch}
 
-.weeks{list-style:none; counter-reset:w; padding:0; display:grid; gap:1.2rem}
+.weeks{list-style:none; padding:0; display:grid; gap:1.2rem}
 .weeks > li{background:var(--card); border:1px solid var(--line); border-left:6px solid var(--accent); border-radius:8px; padding:1rem 1.4rem}
 .weeks h3{margin:.2rem 0 .6rem; font-size:1.2rem}
-.weeks p{margin:.45rem 0; max-width:75ch}
+.weeks p{margin:.45rem 0}
 .weeks .goal{color:var(--accent-ink)}
 .weeks .deliver{background:var(--paper); padding:.4rem .7rem; border-radius:4px; display:inline-block}
+
+/* specifications (binary criteria) — Nilson-style public contract */
+.specs{background:var(--paper); border:1px dashed var(--line); border-radius:6px; padding:.6rem .9rem; margin:.5rem 0}
+.specs ul{margin:.3rem 0 .2rem; padding-left:1.3rem}
+.specs li{margin:.25rem 0}
+
+table{border-collapse:collapse; width:100%; margin:1rem 0; font-size:.98rem}
+caption{text-align:left; font-weight:600; padding-bottom:.4rem}
+th, td{border:1px solid var(--line); padding:.5rem .7rem; text-align:left; vertical-align:top}
+th{background:var(--card)}
+.tablewrap{overflow-x:auto}  /* reflow: table scrolls inside itself, page never does */
+
+details{background:var(--card); border:1px solid var(--line); border-radius:8px; padding:.6rem 1rem; margin:.7rem 0}
+summary{cursor:pointer; font-weight:600; padding:.35rem 0; min-height:1.5rem}
+details[open] summary{margin-bottom:.4rem}
 
 #ideasBoard{display:grid; gap:1rem; grid-template-columns:repeat(auto-fill, minmax(17rem,1fr)); margin-top:1.2rem}
 .idea{background:var(--card); border:1px solid var(--line); border-radius:8px; padding:.9rem 1.1rem; display:flex; flex-direction:column; gap:.4rem}
@@ -65,16 +107,24 @@ h2{font-size:1.6rem; border-bottom:3px solid var(--line); padding-bottom:.4rem; 
 .idea h3 a{text-decoration:none}
 .idea h3 a:hover{text-decoration:underline}
 .idea .meta{font-size:.85rem; color:var(--muted); margin-top:auto}
-.idea .body{font-size:.95rem; color:var(--ink); white-space:pre-line}
+.idea .body{font-size:.95rem; white-space:pre-line}
 .muted{color:var(--muted)}
 
 .pad{background:var(--card); border:1px solid var(--line); border-radius:8px; padding:.8rem; margin-top:1rem}
 .tools{display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; margin-bottom:.7rem}
-.tools button{font:inherit; background:var(--paper); border:1.5px solid var(--line); border-radius:6px; padding:.35rem .7rem; cursor:pointer; min-height:2.4rem}
+.tools button{font:inherit; color:var(--ink); background:var(--paper); border:1.5px solid var(--line); border-radius:6px; padding:.4rem .75rem; cursor:pointer; min-height:2.4rem; min-width:2.4rem}
 .tools button:hover{border-color:var(--accent)}
-.tools button[aria-pressed="true"]{border:2.5px solid var(--accent); background:#eef3fa}
-.tool .dot{display:inline-block; width:1.1rem; height:1.1rem; border-radius:50%; vertical-align:middle}
+.tools button[aria-pressed="true"]{border:2.5px solid var(--accent); background:var(--ok-bg)}
+.tool .dot{display:inline-block; width:1.1rem; height:1.1rem; border-radius:50%; vertical-align:middle; border:1px solid var(--line)}
 .sep{width:1px; height:1.6rem; background:var(--line)}
 #padCanvas{width:100%; height:auto; background:#fff; border:1px dashed var(--line); border-radius:4px; touch-action:none; cursor:crosshair}
 
-.foot{padding:2rem 1.25rem 3rem; color:var(--muted); border-top:3px solid var(--line); margin-top:2rem}
+.foot{padding:2rem 1.25rem 3rem; color:var(--muted); border-top:3px solid var(--line); margin-top:2rem; font-size:.95rem}
+.foot p{margin:.4rem 0}
+
+@media print{
+  .top, .skip, .actions, .btn, .pad, #ideasBoard{display:none}
+  body{background:#fff; color:#000; font-size:11pt}
+  a{color:#000; text-decoration:underline}
+  section{padding:.6rem 0}
+}

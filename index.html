@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="sr-Latn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Inclusive Studio — pilot</title>
-<meta name="description" content="Collaborative pilot platform: 3rd-year architecture students and disability association members co-design accessible spaces, week by week.">
+<title>Inclusive Studio — kolaborativni studio univerzalnog dizajna</title>
+<meta name="description" content="A collaborative universal design studio: 3rd-year architecture students and disability association members co-design accessible spaces. Open syllabus, open standard, open platform.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="lang-sr">
-<a class="skip" href="#main"><span class="sr">Preskoči na sadržaj</span><span class="en">Skip to content</span></a>
+<a class="skip" href="#main"><span class="sr">Preskoči na sadržaj</span><span class="en" lang="en">Skip to content</span></a>
 
 <header class="top">
   <div class="wrap bar">
-    <div class="brand">Inclusive <strong>Studio</strong></div>
+    <a class="brand" href="index.html">Inclusive <strong>Studio</strong></a>
     <nav aria-label="Glavna navigacija">
-      <a href="#o-pilotu"><span class="sr">O pilotu</span><span class="en">About</span></a>
-      <a href="#nedelje"><span class="sr">Nedelje</span><span class="en">Weeks</span></a>
-      <a href="#ideje"><span class="sr">Ideje</span><span class="en">Ideas</span></a>
-      <a href="#skicirnica"><span class="sr">Skicirnica</span><span class="en">Sketchpad</span></a>
+      <a href="index.html" aria-current="page"><span class="sr">Početna</span><span class="en" lang="en">Home</span></a>
+      <a href="standard.html"><span class="sr">Standard</span><span class="en" lang="en">Standard</span></a>
+      <a href="program.html"><span class="sr">Program</span><span class="en" lang="en">Programme</span></a>
+      <a href="etika.html"><span class="sr">Etika</span><span class="en" lang="en">Ethics</span></a>
+      <a href="ucestvuj.html"><span class="sr">Učestvuj</span><span class="en" lang="en">Participate</span></a>
+      <a href="pristupacnost.html"><span class="sr">Pristupačnost</span><span class="en" lang="en">Accessibility</span></a>
     </nav>
-    <button id="langToggle" type="button" aria-label="Switch language">EN</button>
+    <button id="langToggle" type="button" lang="en" aria-label="Switch to English">English</button>
   </div>
 </header>
 
@@ -27,145 +29,100 @@
   <section class="hero wrap">
     <h1>
       <span class="sr">Studenti arhitekture i članovi udruženja projektuju <em>zajedno</em>.</span>
-      <span class="en">Architecture students and disability association members design <em>together</em>.</span>
+      <span class="en" lang="en">Architecture students and disability association members design <em>together</em>.</span>
     </h1>
     <p class="lead">
-      <span class="sr">Šestonedeljni pilot univerzalnog dizajna za 3. godinu arhitekture. Pravilo broj jedan: ništa o nama bez nas — korisnici nisu „slučaj", nego koautori.</span>
-      <span class="en">A six-week universal design pilot for 3rd-year architecture students. Rule number one: nothing about us without us — users are co-authors, not "cases".</span>
+      <span class="sr">Inclusive Studio je kolaborativni studio univerzalnog dizajna za 3. godinu arhitekture: šest nedelja, stvaran prostor, stvarni korisnici kao koautori i recenzenti. Otvoren silabus, otvoren standard, otvorena platforma.</span>
+      <span class="en" lang="en">Inclusive Studio is a collaborative universal design studio for 3rd-year architecture students: six weeks, a real place, real users as co-authors and reviewers. Open syllabus, open standard, open platform.</span>
     </p>
     <p class="actions">
-      <a class="btn" href="#nedelje"><span class="sr">Pogledaj nedelje</span><span class="en">See the weeks</span></a>
-      <a class="btn ghost" id="newIdeaBtn" href="#" rel="noopener"><span class="sr">Dodaj ideju</span><span class="en">Share an idea</span></a>
+      <a class="btn" href="program.html"><span class="sr">Program i silabus</span><span class="en" lang="en">Programme &amp; syllabus</span></a>
+      <a class="btn ghost" href="standard.html"><span class="sr">Standard i svrha</span><span class="en" lang="en">Standard &amp; purpose</span></a>
+      <a class="btn ghost" data-new-idea href="#" rel="noopener"><span class="sr">Dodaj ideju</span><span class="en" lang="en">Share an idea</span></a>
     </p>
   </section>
 
-  <section id="o-pilotu" class="wrap">
-    <h2><span class="sr">Kako radi</span><span class="en">How it works</span></h2>
+  <div class="wrap">
+    <aside class="ukratko" aria-labelledby="ukratko-h">
+      <h2 id="ukratko-h"><span class="sr">Ukratko (lako čitanje)</span><span class="en" lang="en">In short (easy read)</span></h2>
+      <ul>
+        <li><span class="sr">Ovo je zajednički rad studenata arhitekture i osoba sa invaliditetom.</span><span class="en" lang="en">This is joint work by architecture students and persons with disabilities.</span></li>
+        <li><span class="sr">Traje šest nedelja. Svake nedelje ima jedan jasan zadatak.</span><span class="en" lang="en">It lasts six weeks. Each week has one clear task.</span></li>
+        <li><span class="sr">Osobe sa invaliditetom odlučuju zajedno sa studentima. Njihova ocena je deo ocene.</span><span class="en" lang="en">Persons with disabilities decide together with students. Their verdict is part of the grade.</span></li>
+        <li><span class="sr">Sve je besplatno i javno. Treba samo GitHub nalog.</span><span class="en" lang="en">Everything is free and public. You only need a GitHub account.</span></li>
+      </ul>
+    </aside>
+  </div>
+
+  <section id="svrha" class="wrap">
+    <h2><span class="sr">Zašto ovaj studio postoji</span><span class="en" lang="en">Why this studio exists</span></h2>
     <div class="cols">
       <article>
-        <h3>1 · <span class="sr">Pridruži se</span><span class="en">Join</span></h3>
-        <p><span class="sr">Napravi besplatan GitHub nalog. Sve predaje, ideje i skice idu kroz ovu platformu — javno, sa imenom autora.</span>
-        <span class="en">Create a free GitHub account. All submissions, ideas and sketches go through this platform — public, with the author's name.</span></p>
+        <h3><span class="sr">Zanat</span><span class="en" lang="en">Craft</span></h3>
+        <p><span class="sr">Student uči da izmeri barijeru, napiše proverljiv projektni zadatak i sintetiše rešenje koje služi svima — veštine koje evropski okvir obrazovanja arhitekata izričito traži.</span>
+        <span class="en" lang="en">Students learn to measure a barrier, write a verifiable brief and synthesise a design that serves everyone — skills the European framework for architectural education explicitly requires.</span></p>
       </article>
       <article>
-        <h3>2 · <span class="sr">Radi nedeljne zadatke</span><span class="en">Do the weekly tasks</span></h3>
-        <p><span class="sr">Svaka nedelja ima cilj, zadatak za studente, ulogu za članove udruženja i jasnu predaju. Predaješ tekst, fotografije ili skicu — dugmetom na dnu svake nedelje.</span>
-        <span class="en">Each week has a goal, a task for students, a role for association members and a clear deliverable. You submit text, photos or a sketch — via the button under each week.</span></p>
+        <h3><span class="sr">Zajednica</span><span class="en" lang="en">Community</span></h3>
+        <p><span class="sr">Univerzitet ima obavezu angažmana sa zajednicom — ovde se ona izvodi: udruženje donosi stvarna pitanja, studio vraća proverene odgovore.</span>
+        <span class="en" lang="en">Universities have a duty of community engagement — here it is practised: the association brings real questions, the studio returns verified answers.</span></p>
       </article>
       <article>
-        <h3>3 · <span class="sr">Deli i komentariši</span><span class="en">Share and discuss</span></h3>
-        <p><span class="sr">Svaka ideja i predaja je otvorena za komentare. Najbolje ideje rastu kroz razgovor studenata i korisnika.</span>
-        <span class="en">Every idea and submission is open for comments. The best ideas grow through conversation between students and users.</span></p>
+        <h3><span class="sr">Subjekt, ne slučaj</span><span class="en" lang="en">Subject, not case</span></h3>
+        <p><span class="sr">Niko ovde nije „korisnik usluge" ni „studija slučaja". Članovi udruženja su koautori sa pravom veta; studenti su istraživači, ne izvođači tuđeg zadatka.</span>
+        <span class="en" lang="en">Nobody here is a "service user" or a "case study". Association members are co-authors with a right of veto; students are researchers, not executors of someone else's task.</span></p>
+      </article>
+    </div>
+    <p><span class="sr">Ceo temelj — od Humbolta i Djuija do Bolonjske socijalne dimenzije i Konvencije UN o pravima osoba sa invaliditetom — ispisan je na strani <a href="standard.html">Standard i svrha</a>.</span>
+    <span class="en" lang="en">The full foundation — from Humboldt and Dewey to the Bologna social dimension and the UN CRPD — is written out on the <a href="standard.html">Standard &amp; purpose</a> page.</span></p>
+  </section>
+
+  <section id="kako" class="wrap">
+    <h2><span class="sr">Kako radi</span><span class="en" lang="en">How it works</span></h2>
+    <div class="cols">
+      <article>
+        <h3>1 · <span class="sr">Pridruži se</span><span class="en" lang="en">Join</span></h3>
+        <p><span class="sr">Napravi besplatan GitHub nalog. Sve predaje, ideje i skice idu kroz ovu platformu — javno, sa imenom autora. Uputstvo je na strani <a href="ucestvuj.html">Učestvuj</a>.</span>
+        <span class="en" lang="en">Create a free GitHub account. All submissions, ideas and sketches go through this platform — public, with the author's name. Instructions are on the <a href="ucestvuj.html">Participate</a> page.</span></p>
+      </article>
+      <article>
+        <h3>2 · <span class="sr">Radi po programu</span><span class="en" lang="en">Follow the programme</span></h3>
+        <p><span class="sr">Šest nedelja: Posmatraj → Upoznaj → Izmeri → Zamisli → Razradi → Pokaži. Svaka nedelja ima ishode, zadatak, ulogu za članove udruženja i javne kriterijume predaje.</span>
+        <span class="en" lang="en">Six weeks: Observe → Meet → Measure → Imagine → Develop → Present. Each week has outcomes, a task, a role for association members and public submission criteria.</span></p>
+      </article>
+      <article>
+        <h3>3 · <span class="sr">Deli i recenziraj</span><span class="en" lang="en">Share and review</span></h3>
+        <p><span class="sr">Svaka ideja i predaja je otvorena za komentare. Koncept koji ne prođe proveru korisnika vraća se na doradu — to je pravilo programa, ne učtivost.</span>
+        <span class="en" lang="en">Every idea and submission is open for comments. A concept that fails the user's check goes back for rework — that is a programme rule, not a courtesy.</span></p>
       </article>
     </div>
     <p class="note">
-      <span class="sr">Bez simulacija invaliditeta „na pola sata" — merenja pokazuju da pogoršavaju stavove. Aktivni sastojak je direktan, ravnopravan rad sa ljudima.</span>
-      <span class="en">No half-hour "disability simulations" — evidence shows they worsen attitudes. The active ingredient is direct, equal collaboration with people.</span>
+      <span class="sr">Bez simulacija invaliditeta „na pola sata" — merenja pokazuju da pogoršavaju stavove. Aktivni sastojak je direktan, ravnopravan rad sa ljudima. Zato je svaka nedelja građena oko stvarnog susreta, a ne oko poveza preko očiju.</span>
+      <span class="en" lang="en">No half-hour "disability simulations" — evidence shows they worsen attitudes. The active ingredient is direct, equal collaboration with people. That is why every week is built around a real encounter, not a blindfold.</span>
     </p>
-  </section>
-
-  <section id="nedelje" class="wrap">
-    <h2><span class="sr">Šest nedelja</span><span class="en">Six weeks</span></h2>
-    <ol class="weeks">
-      <li>
-        <h3><span class="sr">Nedelja 1 — Posmatraj</span><span class="en">Week 1 — Observe</span></h3>
-        <p class="goal"><span class="sr"><strong>Cilj:</strong> razumeti 7 principa univerzalnog dizajna i socijalni model invaliditeta.</span><span class="en"><strong>Goal:</strong> understand the 7 principles of universal design and the social model of disability.</span></p>
-        <p><span class="sr"><strong>Studenti:</strong> izaberi jedan javni objekat koji dobro poznaješ i prođi ga sa ček-listom 7 principa. Fotografiši 5 mesta gde dizajn isključuje.</span><span class="en"><strong>Students:</strong> pick a public building you know well and walk it with the 7-principles checklist. Photograph 5 places where the design excludes.</span></p>
-        <p><span class="sr"><strong>Članovi udruženja:</strong> opiši jedan prostor u gradu koji ti pravi najviše problema — i jedan koji je dobro rešen.</span><span class="en"><strong>Association members:</strong> describe one place in the city that gives you the most trouble — and one that is well solved.</span></p>
-        <p class="deliver"><span class="sr"><strong>Predaja:</strong> fotografije + kratke beleške.</span><span class="en"><strong>Deliverable:</strong> photos + short notes.</span></p>
-        <p><a class="btn small submit-week" data-week="1" href="#"><span class="sr">Predaj za nedelju 1</span><span class="en">Submit for week 1</span></a></p>
-      </li>
-      <li>
-        <h3><span class="sr">Nedelja 2 — Upoznaj</span><span class="en">Week 2 — Meet</span></h3>
-        <p class="goal"><span class="sr"><strong>Cilj:</strong> naučiti da slušaš pre nego što projektuješ.</span><span class="en"><strong>Goal:</strong> learn to listen before you design.</span></p>
-        <p><span class="sr"><strong>Studenti:</strong> razgovor u paru sa članom udruženja (45 min, vodič za razgovor je u repou). Pitaš o svakodnevnim putanjama, ne o dijagnozi.</span><span class="en"><strong>Students:</strong> a paired conversation with an association member (45 min, interview guide is in the repo). Ask about daily routes, not diagnoses.</span></p>
-        <p><span class="sr"><strong>Članovi udruženja:</strong> ti vodiš — tvoje iskustvo je građa. Imaš pravo da ne odgovoriš na bilo šta.</span><span class="en"><strong>Association members:</strong> you lead — your experience is the material. You may decline any question.</span></p>
-        <p class="deliver"><span class="sr"><strong>Predaja:</strong> mapa barijera iz razgovora (tekst ili skica).</span><span class="en"><strong>Deliverable:</strong> a barrier map from the conversation (text or sketch).</span></p>
-        <p><a class="btn small submit-week" data-week="2" href="#"><span class="sr">Predaj za nedelju 2</span><span class="en">Submit for week 2</span></a></p>
-      </li>
-      <li>
-        <h3><span class="sr">Nedelja 3 — Izmeri</span><span class="en">Week 3 — Measure</span></h3>
-        <p class="goal"><span class="sr"><strong>Cilj:</strong> barijera postaje broj: nagib, širina, visina, svetlo, zvuk.</span><span class="en"><strong>Goal:</strong> a barrier becomes a number: slope, width, height, light, sound.</span></p>
-        <p><span class="sr"><strong>Studenti:</strong> zajednička šetnja sa korisnikom kroz izabrani prostor. Meri sve što korisnik označi kao prepreku.</span><span class="en"><strong>Students:</strong> a joint walk with the user through the chosen space. Measure everything the user flags as an obstacle.</span></p>
-        <p><span class="sr"><strong>Članovi udruženja:</strong> vodič kroz sopstvenu putanju — pokaži gde staje, gde zaobilaziš, gde odustaješ.</span><span class="en"><strong>Association members:</strong> guide your own route — show where it stops you, where you detour, where you give up.</span></p>
-        <p class="deliver"><span class="sr"><strong>Predaja:</strong> crtež postojećeg stanja sa ucrtanim barijerama i merama.</span><span class="en"><strong>Deliverable:</strong> an as-built drawing with barriers and measurements marked.</span></p>
-        <p><a class="btn small submit-week" data-week="3" href="#"><span class="sr">Predaj za nedelju 3</span><span class="en">Submit for week 3</span></a></p>
-      </li>
-      <li>
-        <h3><span class="sr">Nedelja 4 — Zamisli</span><span class="en">Week 4 — Imagine</span></h3>
-        <p class="goal"><span class="sr"><strong>Cilj:</strong> ko-dizajn: ideje nastaju za stolom za kojim sede i student i korisnik.</span><span class="en"><strong>Goal:</strong> co-design: ideas are born at a table where both student and user sit.</span></p>
-        <p><span class="sr"><strong>Studenti i članovi zajedno:</strong> radionica skiciranja — 3 ideje za izabrani prostor. Korisnik crta ili diktira ravnopravno; skicirnica na ovom sajtu radi i na telefonu.</span><span class="en"><strong>Students and members together:</strong> a sketching workshop — 3 ideas for the chosen space. The user draws or dictates as an equal; the sketchpad on this site works on a phone too.</span></p>
-        <p class="deliver"><span class="sr"><strong>Predaja:</strong> 3 skice sa po jednom rečenicom: kome još ovo pomaže?</span><span class="en"><strong>Deliverable:</strong> 3 sketches, each with one sentence: who else does this help?</span></p>
-        <p><a class="btn small submit-week" data-week="4" href="#"><span class="sr">Predaj za nedelju 4</span><span class="en">Submit for week 4</span></a></p>
-      </li>
-      <li>
-        <h3><span class="sr">Nedelja 5 — Razradi</span><span class="en">Week 5 — Develop</span></h3>
-        <p class="goal"><span class="sr"><strong>Cilj:</strong> jedan koncept u razmeri, proveren sa korisnikom pre crtanja finala.</span><span class="en"><strong>Goal:</strong> one concept at scale, checked with the user before the final drawing.</span></p>
-        <p><span class="sr"><strong>Studenti:</strong> razrada izabranog koncepta (osnova, presek, detalj). Svaka odluka nosi odgovor na: da li ovo služi svima, ili pravi poseban ulaz „za invalide"?</span><span class="en"><strong>Students:</strong> develop the chosen concept (plan, section, detail). Every decision answers: does this serve everyone, or does it create a separate "disabled entrance"?</span></p>
-        <p><span class="sr"><strong>Članovi udruženja:</strong> recenzent si — koncept koji ne prođe tvoju proveru vraća se na doradu.</span><span class="en"><strong>Association members:</strong> you are the reviewer — a concept that fails your check goes back for rework.</span></p>
-        <p class="deliver"><span class="sr"><strong>Predaja:</strong> crteži + kratak opis rešenja.</span><span class="en"><strong>Deliverable:</strong> drawings + a short description of the solution.</span></p>
-        <p><a class="btn small submit-week" data-week="5" href="#"><span class="sr">Predaj za nedelju 5</span><span class="en">Submit for week 5</span></a></p>
-      </li>
-      <li>
-        <h3><span class="sr">Nedelja 6 — Pokaži</span><span class="en">Week 6 — Present</span></h3>
-        <p class="goal"><span class="sr"><strong>Cilj:</strong> prezentacija pred korisnicima; korisnost ocenjuju oni, ne žiri.</span><span class="en"><strong>Goal:</strong> presentation before the users; usefulness is judged by them, not a jury.</span></p>
-        <p><span class="sr"><strong>Studenti:</strong> finalni pano + refleksija: šta si naučio što nijedna knjiga ne bi rekla?</span><span class="en"><strong>Students:</strong> final board + reflection: what did you learn that no book would tell you?</span></p>
-        <p><span class="sr"><strong>Članovi udruženja:</strong> ocena po jednom pitanju: da li bi ovo stvarno koristio?</span><span class="en"><strong>Association members:</strong> one-question verdict: would you actually use this?</span></p>
-        <p class="deliver"><span class="sr"><strong>Predaja:</strong> pano (slika) + refleksija (tekst).</span><span class="en"><strong>Deliverable:</strong> board (image) + reflection (text).</span></p>
-        <p><a class="btn small submit-week" data-week="6" href="#"><span class="sr">Predaj za nedelju 6</span><span class="en">Submit for week 6</span></a></p>
-      </li>
-    </ol>
   </section>
 
   <section id="ideje" class="wrap">
-    <h2><span class="sr">Tabla ideja</span><span class="en">Idea board</span></h2>
+    <h2><span class="sr">Tabla ideja</span><span class="en" lang="en">Idea board</span></h2>
     <p>
       <span class="sr">Ideje svih učesnika, uživo sa platforme. Dodaj svoju — tekst, fotografija ili skica.</span>
-      <span class="en">Ideas from all participants, live from the platform. Add yours — text, photo or sketch.</span>
-      <a class="btn small" id="newIdeaBtn2" href="#" rel="noopener"><span class="sr">+ Nova ideja</span><span class="en">+ New idea</span></a>
+      <span class="en" lang="en">Ideas from all participants, live from the platform. Add yours — text, photo or sketch.</span>
+      <a class="btn small" data-new-idea href="#" rel="noopener"><span class="sr">+ Nova ideja</span><span class="en" lang="en">+ New idea</span></a>
     </p>
     <div id="ideasBoard" aria-live="polite">
-      <p class="muted"><span class="sr">Učitavam ideje…</span><span class="en">Loading ideas…</span></p>
+      <p class="muted"><span class="sr">Učitavam ideje…</span><span class="en" lang="en">Loading ideas…</span></p>
     </div>
-  </section>
-
-  <section id="skicirnica" class="wrap">
-    <h2><span class="sr">Skicirnica</span><span class="en">Sketchpad</span></h2>
-    <p>
-      <span class="sr">Nacrtaj ideju prstom ili mišem, preuzmi je kao sliku, pa je priloži uz ideju ili predaju (prevuci sliku u polje za tekst). Skica nije obavezna — tekst vredi jednako.</span>
-      <span class="en">Draw an idea with a finger or mouse, download it as an image, then attach it to an idea or submission (drag the image into the text field). A sketch is optional — text counts just as much.</span>
-    </p>
-    <div class="pad">
-      <div class="tools" role="toolbar" aria-label="Alati za crtanje">
-        <button type="button" class="tool" data-color="#1b1b1f" aria-pressed="true" title="Crna / Black"><span class="dot" style="background:#1b1b1f"></span></button>
-        <button type="button" class="tool" data-color="#1f4e8c" aria-pressed="false" title="Plava / Blue"><span class="dot" style="background:#1f4e8c"></span></button>
-        <button type="button" class="tool" data-color="#b5492f" aria-pressed="false" title="Crvena / Red"><span class="dot" style="background:#b5492f"></span></button>
-        <button type="button" class="tool" data-color="#2e7d4f" aria-pressed="false" title="Zelena / Green"><span class="dot" style="background:#2e7d4f"></span></button>
-        <span class="sep" aria-hidden="true"></span>
-        <button type="button" id="sizeBtn" title="Debljina linije / Line width"><span class="sr">Debljina: </span><span class="en">Width: </span><span id="sizeVal">3</span></button>
-        <button type="button" id="eraserBtn" aria-pressed="false"><span class="sr">Gumica</span><span class="en">Eraser</span></button>
-        <span class="sep" aria-hidden="true"></span>
-        <button type="button" id="undoBtn"><span class="sr">Vrati</span><span class="en">Undo</span></button>
-        <button type="button" id="clearBtn"><span class="sr">Obriši sve</span><span class="en">Clear</span></button>
-        <button type="button" id="saveBtn" class="btn small"><span class="sr">Preuzmi PNG</span><span class="en">Download PNG</span></button>
-      </div>
-      <canvas id="padCanvas" width="900" height="560" aria-label="Površina za skiciranje. Alternativa: opiši ideju tekstom u predaji."></canvas>
-    </div>
-  </section>
-
-  <section id="pristupacnost" class="wrap">
-    <h2><span class="sr">Pristupačnost ovog sajta</span><span class="en">Accessibility of this site</span></h2>
-    <p>
-      <span class="sr">Platforma o univerzalnom dizajnu mora i sama biti univerzalna: semantički HTML, kontrast AA, pun rad sa tastature, vidljiv fokus, poštovanje smanjenog kretanja, bez ijedne spoljne biblioteke. Skicirnica ima ravnopravnu tekstualnu alternativu. Nađeš li barijeru — to je ideja za tablu.</span>
-      <span class="en">A platform about universal design must be universal itself: semantic HTML, AA contrast, full keyboard operation, visible focus, reduced-motion respected, zero external libraries. The sketchpad has an equal text alternative. If you find a barrier — that is an idea for the board.</span>
-    </p>
   </section>
 </main>
 
 <footer class="wrap foot">
   <p>
-    <span class="sr">Pilot · univerzalni dizajn u arhitekturi · <a id="repoLink" href="#">repo platforme</a></span>
-    <span class="en">Pilot · universal design in architecture · <a id="repoLink2" href="#">platform repo</a></span>
+    <span class="sr">Inclusive Studio · pilot kolaborativnog studija univerzalnog dizajna · <a data-repo-link href="#">repo platforme</a> · <a href="pristupacnost.html">izjava o pristupačnosti</a></span>
+    <span class="en" lang="en">Inclusive Studio · a collaborative universal design studio pilot · <a data-repo-link href="#">platform repo</a> · <a href="pristupacnost.html">accessibility statement</a></span>
+  </p>
+  <p>
+    <span class="sr">Sadržaj je otvoren obrazovni resurs pod licencom <a href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN" rel="license">CC BY 4.0</a> — koristi, prilagodi, podeli, uz navođenje izvora.</span>
+    <span class="en" lang="en">Content is an open educational resource under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a> — use, adapt, share, with attribution.</span>
   </p>
 </footer>
 
