@@ -66,7 +66,7 @@ const DOC_GOOD = [
   { role: 'landmark', name: { en: 'Main content', sr: 'Glavni sadržaj' } },
   { role: 'heading', level: 1, name: { en: 'Enrolment of the winter semester', sr: 'Upis zimskog semestra' } },
   { role: 'text', name: { en: 'Enrolment is done at the student office, ground floor.', sr: 'Upis se obavlja u studentskoj službi, u prizemlju.' } },
-  { role: 'image', name: { en: 'Floor plan: the student office is the second door on the right of the entrance hall.', sr: 'Osnova: studentska služba su druga vrata desno od ulaznog hola.' } },
+  { role: 'image', name: { en: 'Floor plan: the student office is the second door on the right of the entrance hall.', sr: 'Osnova: studentska služba je kroz druga vrata desno od ulaznog hola.' } },
   { role: 'heading', level: 2, name: { en: 'Deadline', sr: 'Rok' } },
   { role: 'text', name: { en: 'Documents are submitted until 15 October, 14:00.', sr: 'Dokumenti se predaju do 15. oktobra, 14.00.' } },
   { role: 'heading', level: 2, name: { en: 'What you bring', sr: 'Šta donosiš' } },
@@ -104,7 +104,7 @@ const readerLab = {
       <p class="lab-question"><strong>${tr('Find this:', 'Nađi ovo:')}</strong> ${tr('until when are the documents submitted?', 'do kada se predaju dokumenti?')}</p>
       <div class="reader-shell">
         <p class="meta-label">${tr('What the machine says', 'Šta mašina izgovara')}</p>
-        <p class="reader-utterance" id="utterance" role="status" aria-live="assertive">${s.cursor < 0 ? tr('Press “next” to start.', 'Pritisni „sledeće“ da počneš.') : esc(speak(nodes[s.cursor], lang))}</p>
+        <p class="reader-utterance" id="utterance" role="status" aria-live="assertive">${s.cursor < 0 ? tr('Press “next” to start.', 'Pritisni „sledeće” da počneš.') : esc(speak(nodes[s.cursor], lang))}</p>
         <p class="help">${tr('Position', 'Pozicija')} ${s.cursor < 0 ? 0 : s.cursor + 1}/${nodes.length} · ${tr('steps used', 'iskorišćeno koraka')}: <strong>${s.steps}</strong></p>
       </div>
       <fieldset class="lab-modes"><legend>${tr('How do you move?', 'Kako se pomeraš?')}</legend>
@@ -116,7 +116,7 @@ const readerLab = {
     <div class="lab-side">
       <fieldset><legend>${tr('Which version?', 'Koja verzija?')}</legend>
       <div class="role-choice"><button type="button" data-version="good" aria-pressed="${s.version === 'good'}">${tr('With structure', 'Sa strukturom')}</button><button type="button" data-version="bad" aria-pressed="${s.version === 'bad'}">${tr('As it is usually made', 'Kako se obično pravi')}</button></div></fieldset>
-      <p class="help">${tr('The cheapest route in this version:', 'Najjeftiniji put u ovoj verziji:')} <strong>${optimal.steps}</strong> ${tr('steps, using', 'koraka, režimom')} “${esc(optimal.mode)}”.</p>
+      <p class="help">${tr('The cheapest route in this version:', 'Najjeftiniji put u ovoj verziji:')} <strong>${optimal.steps}</strong> ${tr('steps, using', 'koraka, režimom')} ${tr('“', '„')}${esc(optimal.mode)}”.</p>
       <h3>${tr('What the machine exposes', 'Šta mašina otkriva')}</h3>
       ${audit.length ? `<ul class="lab-problems">${audit.map(problem => `<li>${esc(problemText(problem))}</li>`).join('')}</ul>` : `<p class="success">${tr('Nothing missing in this version.', 'U ovoj verziji ništa ne manjka.')}</p>`}
       <p class="small muted">${tr('This is how the markup sounds, not a recording of a screen reader. NVDA, JAWS, VoiceOver and TalkBack each differ. A test with someone who uses one every day is the measure.', 'Ovako zvuči kod, nije snimak čitača ekrana. NVDA, JAWS, VoiceOver i TalkBack se razlikuju. Mera je proba sa nekim ko ga koristi svaki dan.')}</p>

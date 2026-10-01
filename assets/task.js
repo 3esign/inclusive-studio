@@ -47,7 +47,7 @@ function brief() {
   return `<section class="brief-sheet">
   <h2>${tr('What is handed in', 'Šta se predaje')}</h2>
   <ol class="deliverables">
-    <li>${tr('One A4, drawn by hand: three screens at real size, about 7 × 15 cm each.', 'Jedan A4, crtan rukom: tri ekrana u pravoj meri, oko 7 × 15 cm svaki.')}</li>
+    <li>${tr('One A3, drawn by hand: three screens at real size, about 7 × 15 cm each.', 'Jedan A3, crtan rukom: tri ekrana u pravoj meri, oko 7 × 15 cm svaki.')}</li>
     <li>${tr('A purpose written next to every element on the screen. An element with no purpose is removed.', 'Svrha upisana uz svaki element na ekranu. Element bez svrhe se briše.')}</li>
     <li>${tr('The person and the observed situation — where, when, what you saw.', 'Osoba i posmatrana situacija — gde, kada, šta si video.')}</li>
     <li>${tr('The constraint card you drew, and how the design obeys it.', 'Kartica ograničenja koju si izvukao i kako je projekat ispunjava.')}</li>
@@ -59,7 +59,7 @@ function brief() {
     <li>${tr('An invented user fails. Write where and when you observed the situation.', 'Izmišljen korisnik pada. Upiši gde i kada si situaciju posmatrao.')}</li>
     <li>${tr('An application that does everything fails. The refusal is part of the design.', 'Aplikacija koja radi sve pada. Odbijanje je deo projekta.')}</li>
     <li>${tr('A screen that only works with a drawing fails: say it out loud, in one line, and it must still hold.', 'Ekran koji radi samo kao slika pada: izgovori ga naglas, u jednoj liniji, i mora da drži.')}</li>
-    <li>${tr('“An app for the blind” fails. One person, one situation, one thing.', '„Aplikacija za slepe“ pada. Jedna osoba, jedna situacija, jedna stvar.')}</li>
+    <li>${tr('“An app for the blind” fails. One person, one situation, one thing.', '„Aplikacija za slepe” pada. Jedna osoba, jedna situacija, jedna stvar.')}</li>
   </ul>
   <div class="notice"><p>${tr('Today you design for someone, not with someone — and that is the weakness of day one, not a method. In week two the person is in the room, and the questions you wrote are what you ask.', 'Danas projektuješ za nekoga, a ne sa nekim — i to je slabost prvog dana, ne metod. U drugoj nedelji je osoba u sali, i pitanja koja si napisao su ono što pitaš.')}</p></div>
   </section>`;
@@ -110,7 +110,7 @@ function pad() {
 function render() {
   $('#main').innerHTML = `<div class="page-top"><div><p class="eyebrow">${tr('Week 1 / Day one / By hand', 'Nedelja 1 / Prvi dan / Rukom')}</p><h1>${tr('An application<br>for one person.', 'Aplikacija<br>za jednu osobu.')}</h1><p class="lede">${tr('Not an app for a group, not an app for a diagnosis. One person you have watched in one situation, and the first three screens of something that does one thing for them.', 'Ne aplikacija za grupu, ne aplikacija za dijagnozu. Jedna osoba koju si gledao u jednoj situaciji, i prva tri ekrana nečega što za nju radi jednu stvar.')}</p>
   <div class="actions"><a class="button secondary" href="index.html">${tr('Back to the week', 'Natrag na nedelju')}</a><a class="button secondary" href="vezbe.html">${tr('All exercises', 'Sve vežbe')}</a></div></div>
-  <div class="page-meta"><span class="meta-label">${tr('Time', 'Vreme')}</span><span>${tr('90 minutes in the studio', '90 minuta u studiju')}</span><span class="meta-label">${tr('Medium', 'Medij')}</span><span>${tr('pencil, A4', 'olovka, A4')}</span></div></div>
+  <div class="page-meta"><span class="meta-label">${tr('Time', 'Vreme')}</span><span>${tr('90 minutes in the studio', '90 minuta u studiju')}</span><span class="meta-label">${tr('Medium', 'Medij')}</span><span>${tr('pencil, A3', 'olovka, A3')}</span></div></div>
   ${brief()}${cardBox()}${notes()}${pad()}`;
   bind();
 }
@@ -139,7 +139,7 @@ function bind() {
     const lines = [`# ${tr('An application for one person', 'Aplikacija za jednu osobu')}`, '',
       `${tr('Constraint', 'Ograničenje')}: ${card ? tr(card.en, card.sr) : '—'}`, ''];
     for (const field of FIELDS) lines.push(`## ${tr(field.en, field.sr)}`, ($('#field-' + field.id).value.trim() || '—'), '');
-    lines.push(`_${tr('Three screens are drawn by hand on A4. This file is the text that goes with them.', 'Tri ekrana se crtaju rukom na A4. Ovaj fajl je tekst koji ide sa njima.')}_`);
+    lines.push(`_${tr('Three screens are drawn by hand on A3. This file is the text that goes with them.', 'Tri ekrana se crtaju rukom na A3. Ovaj fajl je tekst koji ide sa njima.')}_`);
     download('zadatak-01.md', lines.join('\n'), 'text/markdown;charset=utf-8');
   });
 

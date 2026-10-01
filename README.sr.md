@@ -32,7 +32,7 @@ upućuje. Sve ostalo — predmet, kalendar, projekat, vežbe, biblioteka, tabla,
 - **Laboratorija** (`laboratorija.html`) — osam kratkih ogleda: čitač ekrana nad tvojim kodom; put
   tastaturom kroz formu sa zamkom fokusa i bez nje; jedan prekidač sa automatskim skeniranjem;
   kontrast, veličina cilja i prelom po WCAG 2.2; ko ne dobija alarm; osnova na mreži od 10 cm po
-  čl. 14, 17 i 19 Pravilnika; aritmetika 22,5 m visine; i odbrojavanje nad administrativnom
+  čl. 14, 17, 18 i 19 Pravilnika; aritmetika 22,5 m visine; i odbrojavanje nad administrativnom
   rečenicom. Svaki ogled daje broj i onda traži projektantsku odluku.
 - **Zadatak** (`zadatak.html`) — prvi dan: aplikacija za jednu osobu, rukom, uz izvučenu karticu
   ograničenja i neobavezno platno u veličini telefona koje stalno pokazuje stvarne minimume.

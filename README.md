@@ -24,7 +24,7 @@ the library, the pinboard, the stages — sits behind it as material.
 - **Labs** (`laboratorija.html`) — eight short labs. A screen reader reading your markup; the
   keyboard path through a form with and without a focus trap; one switch with an automatic scan;
   contrast, target size and reflow measured against WCAG 2.2; who does not get the alarm; a plan on
-  a 10 cm grid checked against Art. 14, 17 and 19 of the Pravilnik; the arithmetic of 22,5 m of
+  a 10 cm grid checked against Art. 14, 17, 18 and 19 of the Pravilnik; the arithmetic of 22,5 m of
   height; and a countdown over an administrative sentence. Each lab produces a number and then asks
   for the design decision that follows from it.
 - **Task** (`zadatak.html`) — day one: an application for one person, drawn by hand, with a drawn

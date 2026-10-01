@@ -21,7 +21,7 @@ nema, strana to kaže; ne izmišlja čas.
 
 **1. Kroz uređivač (preporučeno):** [`uredi.html`](../uredi.html) → upiši naslov, cilj, šta se donosi
 i upise (naslov, pasus, lista, citat, mera, slika, veza, fajl, ogled, vežba, pitanja, odluka) →
-„Prolazi li?“ pokazuje šta blokira → „Prekopiraj fajl“ → „Napravi fajl na GitHubu“ i upiši.
+„Prolazi li?” pokazuje šta blokira → „Prekopiraj fajl” → „Napravi fajl na GitHubu” i upiši.
 Nacrt se čuva u pregledaču dok radiš.
 
 **2. Direktno na GitHubu:** otvori `data/material/wNN.json`, izmeni, upiši. Isti fajl, isti rezultat.
@@ -46,7 +46,7 @@ Ova pravila sprovodi i uređivač i test (`tests/material.test.mjs`) — nisu pr
 
 Svaki **naslov** (`heading`) počinje nov slajd; sve ispod njega pada na taj slajd. Građa bez
 naslova je jedan slajd. Ništa se ne gubi — to proverava test. U predavanju rade strelice, Space,
-Home i End, na telefonu i prevlačenje; ništa se ne pomera samo. „Prikaži sve“ daje istu građu kao
+Home i End, na telefonu i prevlačenje; ništa se ne pomera samo. „Prikaži sve” daje istu građu kao
 jedan dokument (i za štampu).
 
 ## Slike i fajlovi

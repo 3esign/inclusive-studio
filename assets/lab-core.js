@@ -395,7 +395,7 @@ export const labs = [
     standard: 'Principle 04; ISO 21542; Pravilnik RS 22/2015'
   },
   {
-    id: 'prolaz', minutes: 20, tests: { en: 'your plan against Art. 14, 17 and 19', sr: 'tvoju osnovu po čl. 14, 17 i 19' },
+    id: 'prolaz', minutes: 20, tests: { en: 'your plan against Art. 14, 17, 18 and 19', sr: 'tvoju osnovu po čl. 14, 17, 18 i 19' },
     title: { en: 'Does the chair get there, and does it turn', sr: 'Da li kolica stižu i da li se okreću' },
     aim: { en: 'A real-size plan on a 10 cm grid. Move the walls and widen the doors until the route exists, the narrowest point holds and a 150 cm circle fits where you arrive. Fewer moves is a better score.', sr: 'Osnova u pravoj meri na mreži od 10 cm. Pomeraj zidove i širi vrata dok putanja ne postoji, dok najuža tačka ne drži i dok krug od 150 cm ne stane tamo gde se stiže. Manje poteza je bolji rezultat.' },
     measures: { en: 'narrowest point, turning circle, number of moves', sr: 'najužu tačku, obrtni krug i broj poteza' },

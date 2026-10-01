@@ -12,7 +12,7 @@
     "sr": "Na kraju časa umeš da kažeš gde prostor isključuje nekoga i zašto, pozivajući se na meru ili zapažanje — ne na utisak. I na papiru si projektovao prva tri ekrana aplikacije za jednu osobu."
   },
   "bring": [
-    { "en": "A pencil, an eraser and two sheets of A4 — the first task is drawn by hand.", "sr": "Olovka, gumica i dva lista A4 — prvi zadatak se crta rukom." },
+    { "en": "A pencil, an eraser and one sheet of A3 — the first task is drawn by hand.", "sr": "Olovka, gumica i jedan list A3 — prvi zadatak se crta rukom." },
     { "en": "A phone, if you have one: we use it as a measuring instrument and as a screen to test, not as a notebook.", "sr": "Telefon, ako ga imaš: koristimo ga kao merni instrument i kao ekran za proveru, ne kao notes." }
   ],
   "blocks": [
@@ -24,7 +24,7 @@
       "kind": "text",
       "text": {
         "en": "Universal design does not start from a person's diagnosis. It starts from the distance between what a body does and what a space demands. That distance is designed, which means it can be designed differently. Ronald Mace, who named the field in 1985, was an architect and a wheelchair user; he refused the word \"special\" because a separate solution announces who it was not built for.",
-        "sr": "Univerzalni dizajn ne počinje od dijagnoze. Počinje od razmaka između onoga što telo može i onoga što prostor zahteva. Taj razmak je projektovan, što znači da može biti projektovan drugačije. Ronald Mejs, koji je 1985. dao ime ovoj oblasti, bio je arhitekta i korisnik invalidskih kolica; odbijao je reč „specijalno“ jer odvojeno rešenje objavljuje za koga nije pravljeno."
+        "sr": "Univerzalni dizajn ne počinje od dijagnoze. Počinje od razmaka između onoga što telo može i onoga što prostor zahteva. Taj razmak je projektovan, što znači da može biti projektovan drugačije. Ronald Mejs, koji je 1985. dao ime ovoj oblasti, bio je arhitekta i korisnik invalidskih kolica; odbijao je reč „specijalno” jer odvojeno rešenje objavljuje za koga nije pravljeno."
       }
     },
     {
@@ -47,7 +47,7 @@
       "kind": "text",
       "text": {
         "en": "The same toolkit counts one need across three states: permanent, temporary and situational. For one-handed use it reports roughly 26.000 arm amputations a year, 13 million wrist injuries and 8 million people holding a baby. Treat those figures as the toolkit's own, not as measured truth — but keep the structure: the number of people who need a detail is always larger than the number of people who are registered as disabled.",
-        "sr": "Isti priručnik računa jednu potrebu kroz tri stanja: trajno, privremeno i situaciono. Za rad jednom rukom navodi oko 26.000 amputacija ruke godišnje, 13 miliona povreda ručja i 8 miliona ljudi koji drže bebu. Te brojke uzmi kao njihov navod, ne kao izmerenu istinu — ali zadrži strukturu: broj ljudi kojima detalj treba uvek je veći od broja ljudi koji su upisani kao osobe sa invaliditetom."
+        "sr": "Isti priručnik računa jednu potrebu kroz tri stanja: trajno, privremeno i situaciono. Za rad jednom rukom navodi oko 26.000 amputacija ruke godišnje, 13 miliona povreda ručnog zgloba i 8 miliona ljudi koji drže bebu. Te brojke uzmi kao njihov navod, ne kao izmerenu istinu — ali zadrži strukturu: broj ljudi kojima detalj treba uvek je veći od broja ljudi koji su upisani kao osobe sa invaliditetom."
       }
     },
     {
@@ -121,7 +121,7 @@
     {
       "kind": "link",
       "href": "https://www.researchgate.net/publication/314968962_Crip_for_a_Day_The_Unintended_Negative_Consequences_of_Disability_Simulations",
-      "text": { "en": "Nario-Redmond, Gospodinov & Cobb, \"Crip for a Day\", Rehabilitation Psychology, 2017", "sr": "Nario-Redmond, Gospodinov i Cobb, „Crip for a Day“, Rehabilitation Psychology, 2017" }
+      "text": { "en": "Nario-Redmond, Gospodinov & Cobb, \"Crip for a Day\", Rehabilitation Psychology, 2017", "sr": "Nario-Redmond, Gospodinov i Cobb, „Crip for a Day”, Rehabilitation Psychology, 2017" }
     },
     {
       "kind": "lab",

@@ -7,7 +7,7 @@ export const exercises = [
     id: 'app-for-one', week: 1, stage: 1, kind: 'drawing',
     title: { en: 'An application for one person', sr: 'Aplikacija za jednu osobu' },
     task: { en: 'Day one, by hand. Choose one person and one situation you have actually observed — a stop, a counter, an entrance, a corridor, a form. Design the first three screens of a phone application that does one thing for that person in that situation. Draw the screens at real size, write what each element is for, and name the one thing the application refuses to do.', sr: 'Prvi dan, rukom. Izaberi jednu osobu i jednu situaciju koju si stvarno video — stanicu, pult, ulaz, hodnik, formular. Projektuj prva tri ekrana telefonske aplikacije koja za tu osobu u toj situaciji radi jednu stvar. Nacrtaj ekrane u pravoj meri, napiši čemu služi svaki element i navedi jednu stvar koju aplikacija odbija da radi.' },
-    hand: { en: 'One A4 with three screens at real size (about 7 × 15 cm each), plus six lines of text: the person, the situation, the one sentence of purpose, the constraint, what it does not do, and three questions for the person.', sr: 'Jedan A4 sa tri ekrana u pravoj meri (oko 7 × 15 cm svaki) i šest redova teksta: osoba, situacija, jedna rečenica svrhe, ograničenje, šta ne radi i tri pitanja za tu osobu.' },
+    hand: { en: 'One A3 with three screens at real size (about 7 × 15 cm each), plus six lines of text: the person, the situation, the one sentence of purpose, the constraint, what it does not do, and three questions for the person.', sr: 'Jedan A3 sa tri ekrana u pravoj meri (oko 7 × 15 cm svaki) i šest redova teksta: osoba, situacija, jedna rečenica svrhe, ograničenje, šta ne radi i tri pitanja za tu osobu.' },
     check: { en: 'An invented user does not count: write where and when you observed the situation. A screen without a stated purpose for every element does not count. If the application does everything, it has no purpose — the refusal is part of the design.', sr: 'Izmišljen korisnik se ne priznaje: upiši gde i kada si situaciju posmatrao. Ekran bez upisane svrhe za svaki element se ne priznaje. Ako aplikacija radi sve, nema svrhu — odbijanje je deo projekta.' },
     source: { label: 'Microsoft Inclusive Design Toolkit — solve for one, extend to many', url: 'https://inclusive.microsoft.design/' }
   },
@@ -38,9 +38,9 @@ export const exercises = [
   {
     id: 'where-regulation-ends', week: 5, stage: 2, kind: 'reading',
     title: { en: 'Where the regulation ends', sr: 'Gde propis prestaje' },
-    task: { en: 'Find one condition in your week 3 building that is fully compliant and still bad to use, and one that breaches the Rulebook and is harmless in practice. Argue both in six sentences. This is the boundary the course is about.', sr: 'Nađi u zgradi iz 3. nedelje jedan uslov koji je potpuno usklađen a i dalje loš za upotrebu, i jedan koji krši Pravilnik a u praksi ne smeta. Obrazloži oba u šest rečenica. To je granica o kojoj je ovaj predmet.' },
+    task: { en: 'Find one condition in your week 3 building that is fully compliant and still bad to use, and one that breaches the Rulebook and is harmless in practice. Argue both in six sentences. This is the boundary the course is about.', sr: 'Nađi u zgradi iz 3. nedelje jedan uslov koji je potpuno usklađen a i dalje loš za upotrebu, i jedan koji krši Pravilnik a u praksi ne smeta. Obrazloži oba u šest rečenica. To je granica kojom se ovaj predmet bavi.' },
     hand: { en: 'One page, two cases, with the drawing or photograph that makes each visible.', sr: 'Jedna strana, dva slučaja, uz crtež ili fotografiju koja svaki od njih pokazuje.' },
-    check: { en: 'Compliance and usefulness must be argued separately. Saying “the standard is wrong” without naming the activity it fails is not an argument.', sr: 'Usklađenost i korisnost se obrazlažu odvojeno. „Standard je pogrešan” bez imenovanja aktivnosti koju iznevera nije argument.' },
+    check: { en: 'Compliance and usefulness must be argued separately. Saying “the standard is wrong” without naming the activity it fails is not an argument.', sr: 'Usklađenost i korisnost se obrazlažu odvojeno. „Standard je pogrešan” bez imenovanja aktivnosti koju izneverava nije argument.' },
     source: { label: 'EN 17210 — functional requirements', url: 'https://standards.cencenelec.eu/' }
   },
   {
@@ -48,7 +48,7 @@ export const exercises = [
     title: { en: 'The obstacle record', sr: 'Popis prepreka' },
     task: { en: 'On the site, record every point where the ground forces a change of behaviour: a step, a kerb, a surface change, a gradient above 8,3 %, an obstruction, a missing handrail, a place with nowhere to rest. Photograph with a scale object. Log the coordinate.', sr: 'Na lokaciji zabeleži svaku tačku na kojoj teren tera na promenu ponašanja: stepenik, ivičnjak, promena podloge, nagib preko 8,3 %, prepreka, nedostatak rukohvata, mesto bez ičega za predah. Fotografiši sa predmetom za razmeru. Upiši koordinatu.' },
     hand: { en: 'A photographic obstacle register with coordinates and a map of the points.', sr: 'Foto-registar prepreka sa koordinatama i mapa tačaka.' },
-    check: { en: 'Each entry says what the obstacle prevents, not who it prevents. “Too steep for wheelchairs” is a conclusion; “17 % over 6 m, no landing” is a record.', sr: 'Svaki zapis kaže šta prepreka onemogućava, ne kome. „Prestrmo za kolica” je zaključak; „17 % na 6 m, bez odmorišta” je zapis.' },
+    check: { en: 'Each entry says what the obstacle prevents, not who it prevents. “Too steep for wheelchairs” is a conclusion; “17 % over 6 m, no landing” is a record.', sr: 'Svaki zapis kaže šta prepreka onemogućava, a ne kome. „Prestrmo za kolica” je zaključak; „17 % na 6 m, bez odmorišta” je zapis.' },
     source: { label: 'Project brief „Živimo zajedno”, §2', url: '' }
   },
   {
@@ -64,7 +64,7 @@ export const exercises = [
     title: { en: 'The access matrix', sr: 'Matrica pristupa' },
     task: { en: 'For every entry point and every programme element, fill one row per user: wheelchair, pram, cane or walker, low vision, person without difficulty. Columns: from where, by which route, distance, total rise, time, number of rests. Compute, do not estimate.', sr: 'Za svaku ulaznu tačku i svaki sadržaj popuni po jedan red po korisniku: kolica, kolica za bebe, štap ili hodalica, oštećenje vida, osoba bez teškoća. Kolone: odakle, kojom trasom, dužina, ukupan uspon, vreme, broj predaha.' },
     hand: { en: 'The matrix plus a route plan with each row drawn on it.', sr: 'Matrica i plan trasa na kome je svaki red ucrtan.' },
-    check: { en: 'If two users have different routes to the same door, the design has already failed criterion three. Say so in the table instead of hiding it.', sr: 'Ako dva korisnika imaju različite trase do istih vrata, projekat je već pao treći kriterijum. Napiši to u tabeli umesto da sakriješ.' },
+    check: { en: 'If two users have different routes to the same door, the design has already failed criterion three. Say so in the table instead of hiding it.', sr: 'Ako dva korisnika imaju različite trase do istih vrata, projekat već pada na trećem kriterijumu. Napiši to u tabeli umesto da sakriješ.' },
     source: { label: 'Project brief „Živimo zajedno”, §5.2', url: '' }
   },
   {
@@ -118,7 +118,7 @@ export const exercises = [
   {
     id: 'post-occupancy', week: 14, stage: 6, kind: 'fieldwork',
     title: { en: 'Measure a finished building, not a promise', sr: 'Izmeri gotovu zgradu, ne obećanje' },
-    task: { en: 'Find a recently built or renovated public building in Belgrade that declares itself accessible. Do a short post-occupancy check: can you complete three ordinary tasks using one route? Record what was built as drawn, what was built differently, and what was added later by the people using it.', sr: 'Nađi nedavno izgrađen ili obnovljen javni objekat u Beogradu koji se izjašnjava kao pristupačan. Uradi kratku proveru posle useljenja: mogu li se tri obična zadatka obaviti jednom trasom? Zabeleži šta je izvedeno kao na crtežu, šta drugačije i šta su korisnici dodali naknadno.' },
+    task: { en: 'Find a recently built or renovated public building in Belgrade that declares itself accessible. Do a short post-occupancy check: can you complete three ordinary tasks using one route? Record what was built as drawn, what was built differently, and what was added later by the people using it.', sr: 'Nađi nedavno izgrađen ili obnovljen javni objekat u Beogradu koji je proglašen pristupačnim. Uradi kratku proveru posle useljenja: mogu li se tri obična zadatka obaviti jednom trasom? Zabeleži šta je izvedeno kao na crtežu, šta drugačije i šta su korisnici dodali naknadno.' },
     hand: { en: 'Three task narratives with photographs and a one-page finding.', sr: 'Tri opisa zadatka sa fotografijama i nalaz na jednoj strani.' },
     check: { en: 'Added ramps, wedged doors and handwritten signs are the most valuable evidence in the exercise: they are the building telling you what the drawing got wrong.', sr: 'Naknadne rampe, podmetnuta vrata i rukom pisani natpisi najvredniji su dokaz u vežbi: to zgrada govori šta je crtež promašio.' },
     source: { label: 'Course syllabus, week 14 (POE)', url: '' }
@@ -172,7 +172,7 @@ export const ideas = [
     id: 'association-brief-library', scale: { en: 'Ongoing · with the association', sr: 'Kontinuirano · sa udruženjem' },
     title: { en: 'A library of briefs written by associations', sr: 'Biblioteka zadataka koje pišu udruženja' },
     body: { en: 'Instead of students choosing a site, associations submit the places that actually block them, in their own words, with photographs. Each entry becomes a candidate brief for a future year. The association owns the entry and can withdraw it.', sr: 'Umesto da studenti biraju lokaciju, udruženja prijavljuju mesta koja ih stvarno zaustavljaju, svojim rečima i sa fotografijama. Svaki unos postaje kandidat za zadatak naredne godine. Unos pripada udruženju i može biti povučen.' },
-    why: { en: 'It moves the association from reviewer to author of the question — the only rung of Arnstein’s ladder that is not tokenism.', sr: 'Pomera udruženje sa mesta recenzenta na mesto autora pitanja — jedini prečag Arnsteinove lestvice koji nije tokenizam.' }
+    why: { en: 'It moves the association from reviewer to author of the question — the only rung of Arnstein’s ladder that is not tokenism.', sr: 'Pomera udruženje sa mesta recenzenta na mesto autora pitanja — jedina prečaga Arnsteinove lestvice koja nije tokenizam.' }
   },
   {
     id: 'usefulness-instrument', scale: { en: 'Research · long-term', sr: 'Istraživanje · dugoročno' },

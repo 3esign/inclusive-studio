@@ -148,7 +148,7 @@ export const about = {
   role: { en: 'Assistant Professor, PhD, architect', sr: 'docent, doktor nauka, arhitekta' },
   lede: {
     en: 'Eighteen years of architectural work, read from the files it left behind. The record is counted, not recalled: where a number appears below, it comes from a file census, not from memory.',
-    sr: 'Osamnaest godina arhitektonskog rada, pročitanih iz fajlova koje je ostavio. Zapis je prebrojan, a ne prisećan: broj koji stoji ispod dolazi iz popisa datoteka, ne iz sećanja.'
+    sr: 'Osamnaest godina arhitektonskog rada, pročitanih iz fajlova koje je ostavio. Zapis je prebrojan, a ne prepričan: broj koji stoji ispod dolazi iz popisa datoteka, ne iz sećanja.'
   },
   eras: [
     { period: '2008–2011', place: { en: 'Belgrade · Undergraduate studies', sr: 'Beograd · Osnovne studije' }, files: '674', body: { en: 'AutoCAD, 3ds Max, CorelDRAW, and a private versioning grammar invented because none was given: the number after the dot is the iteration. The exhibitions ArtIfAct and Duhovi grada run alongside coursework.', sr: 'AutoCAD, 3ds Max, CorelDRAW i sopstvena gramatika verzija, izmišljena jer je nije bilo: broj posle tačke je iteracija. Izložbe ArtIfAct i Duhovi grada teku uz nastavu.' } },
