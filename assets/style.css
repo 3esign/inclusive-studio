@@ -516,3 +516,40 @@ body[data-view=week] .shell,body[data-view=task] .shell,body[data-view=lecture] 
   .atlas-card,.precedent-card,.principle-card,.standard-card,.neuro-block{break-inside:avoid}
 }
 
+
+/* ---- By age: ten bands, three classes of limit. Class is carried by the words
+   in the tag; the border is a second, redundant channel, never the only one. ---- */
+.doctrine-list{list-style:none;padding:0;margin:1rem 0 2.6rem;display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.doctrine-list li{background:var(--white);padding:1.1rem 1.2rem;display:grid;grid-template-columns:34px 1fr;gap:.9rem;align-items:start}
+.doctrine-list b{font-size:1.5rem;line-height:1;font-weight:700;color:var(--ink);background:var(--signal);width:34px;height:34px;display:grid;place-items:center}
+.doctrine-list h3{font-size:1.08rem;margin:0 0 .4rem}
+.doctrine-list p{margin:0 0 .45rem;line-height:1.5}
+.age-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:1rem 0 0}
+.age-band{background:var(--white);padding:1.1rem 1.2rem;display:grid;gap:.7rem;align-content:start}
+.age-band.is-open{grid-column:1/-1;background:var(--wash)}
+.age-band header{display:grid;gap:.3rem}
+.age-band h3{font-size:1.12rem;margin:0}
+.age-counts{margin:0;display:flex;flex-wrap:wrap;gap:.35rem}
+.age-facts{margin:0;display:grid;gap:.15rem}
+.age-facts dt{font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-top:.45rem}
+.age-facts dd{margin:0;line-height:1.5}
+.age-facts dd.age-trap{border-left:3px solid var(--ink);padding-left:.7rem}
+.band-toggle{min-height:44px;justify-self:start}
+.age-limits{list-style:none;padding:0;margin:.3rem 0 0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.age-limit{background:var(--white);padding:.9rem 1rem;display:grid;gap:.4rem;border-left:4px solid var(--line)}
+.age-limit.kind-law{border-left-color:var(--ink)}
+.age-limit.kind-standard{border-left-color:var(--muted)}
+.age-limit.kind-data{border-left-style:dashed}
+.age-limit p{margin:0;line-height:1.5}
+.limit-head{display:flex;flex-wrap:wrap;gap:.5rem;align-items:baseline}
+.limit-value{font-size:1.1rem;font-variant-numeric:tabular-nums}
+.limit-rule{font-weight:700}
+.limit-detail{color:var(--muted)}
+@media(max-width:900px){
+  .age-grid{grid-template-columns:1fr}
+  .doctrine-list li{grid-template-columns:1fr}
+}
+.reading-mode .age-grid{grid-template-columns:1fr}
+@media print{
+  .age-band,.age-limit,.doctrine-list li{break-inside:avoid}
+}
