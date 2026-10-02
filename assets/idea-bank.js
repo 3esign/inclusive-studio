@@ -17,6 +17,7 @@ export const IDEA_FIELDS = [
   { id: 'sensory', label: t('Senses and orientation', 'Čula i orijentacija') },
   { id: 'making', label: t('Making and material', 'Izrada i materijal') },
   { id: 'measurement', label: t('Evidence and measurement', 'Dokaz i merenje') },
+  { id: 'children', label: t('Children, play and learning', 'Deca, igra i učenje') },
   { id: 'collaboration', label: t('Collaboration', 'Saradnja') }
 ];
 
@@ -209,6 +210,60 @@ export const IDEA_BANK = [
     move: t('Draw a plan and section of an alcove with indirect light, acoustic damping and predictable sightlines.', 'Nacrtaj osnovu i presek niše sa indirektnim svetlom, akustičkim prigušenjem i predvidljivim vizurama.'),
     evidence: t('Sound level drop in dBA, illuminance in lux, field of view and user heart-rate/recovery diary.', 'Pad nivoa zvuka u dBA, osvetljenost u luksima, vidno polje i zabeležen oporavak korisnika.'),
     source: { label: 'Magda Mostafa — Autism ASPECTSS™ Index', url: 'https://archnet.org/publications/9783' }
+  },
+  {
+    id: 'toy-from-rubbish', status: 'in-use', field: 'children', principles: [1, 2, 3, 5, 7],
+    title: t('A toy with the cost of rubbish', 'Igračka po ceni otpada'),
+    bridge: t('waste material ↔ developmental task', 'otpadni materijal ↔ razvojni zadatak'),
+    question: t('Can a cardboard box, three skewers and seven bottle caps train a hand movement and a spatial operation at once, and still let two different children play at one table?', 'Mogu li kartonska kutija, tri štapića i sedam čepova istovremeno da vežbaju pokret ruke i radnju nad prostorom, a da za istim stolom igraju dvoje različite dece?'),
+    move: t('Measure the parts you already have in the bin, then draw the toy at 1:1 and put the ⌀31,7 mm cylinder around every loose piece.', 'Izmeri delove koje već imaš u kanti, pa nacrtaj igračku 1:1 i oko svakog odvojivog komada povuci cilindar ⌀31,7 mm.'),
+    evidence: t('Parts list with real dimensions, the small-parts check, and one observable sentence about what a child does with it.', 'Spisak delova sa stvarnim merama, provera sitnih delova i jedna posmatriva rečenica o tome šta dete sa njom radi.'),
+    source: { label: 'EN 71-1 — Safety of toys, small parts cylinder', url: 'https://law.resource.org/pub/eu/toys/en.71.1.2014.html' }
+  },
+  {
+    id: 'deck-after-diagnosis', status: 'research', field: 'children', principles: [1, 2, 3, 5],
+    title: t('The deck that starts where the assessment stops', 'Špil koji počinje tamo gde procena prestaje'),
+    bridge: t('screening instrument ↔ the next morning', 'instrument procene ↔ sutra ujutru'),
+    question: t('Assessment decks name what a child finds hard. What would a deck look like that names, for each of those operations, an object to practise it on — buildable at home, this week?', 'Špilovi za procenu imenuju šta je detetu teško. Kako bi izgledao špil koji za svaku od tih radnji imenuje predmet na kom se ona vežba — napravljiv kod kuće, ove nedelje?'),
+    move: t('Take one published screening domain, list its items, and design one object per item. Then ask a therapist which three are wrong.', 'Uzmi jednu objavljenu oblast procene, ispiši njene stavke i projektuj po jedan predmet za svaku. Pa pitaj terapeuta koja su tri pogrešna.'),
+    evidence: t('A domain-to-object table, the therapist’s corrections, and the cost of each object in what a household throws away.', 'Tabela oblast → predmet, ispravke terapeuta i cena svakog predmeta u onome što domaćinstvo baca.'),
+    source: { label: 'NY State EI — list of developmental assessment instruments', url: 'https://health.ny.gov/community/infants_children/early_intervention/docs/2025-01_list_developmental_assessment_instruments.pdf' }
+  },
+  {
+    id: 'rotation-in-the-hand', status: 'research', field: 'children', principles: [2, 3, 4, 6],
+    title: t('Mental rotation that happens in the hand first', 'Mentalna rotacija koja se prvo dogodi u ruci'),
+    bridge: t('cognitive task ↔ physical manipulative', 'kognitivni zadatak ↔ predmet u ruci'),
+    question: t('Rotation tests put the turn on paper. What changes when the child turns the thing instead — and does the gain survive leaving the object behind?', 'Testovi rotacije stavljaju okretanje na papir. Šta se menja kad dete okrene samu stvar — i da li dobitak preživi kad predmet ostane iza?'),
+    move: t('Build one shape in three versions — on paper, as a screen task, as a thing that turns — and run the same question on all three.', 'Napravi jedan oblik u tri verzije — na papiru, kao zadatak na ekranu, kao stvar koja se okreće — i postavi isto pitanje na sve tri.'),
+    evidence: t('Time to answer, error on mirrored items, and whether the child turns their own head or the object.', 'Vreme do odgovora, greška na ogledalski obrnutim stavkama i da li dete okreće sopstvenu glavu ili predmet.'),
+    source: { label: 'Gilligan-Lee et al., Hands-on — Child Development 2023', url: 'https://srcd.onlinelibrary.wiley.com/doi/10.1111/cdev.13963' }
+  },
+  {
+    id: 'home-is-the-first-plan', status: 'candidate', field: 'children', principles: [3, 4, 7],
+    title: t('The home is a child’s first floor plan', 'Dom je prvi crtež osnove koji dete napravi'),
+    bridge: t('child cognition ↔ architectural drawing', 'dečje saznanje ↔ arhitektonski crtež'),
+    question: t('A child’s mental map is built outward from the home, and by about seven they can draw it from memory. Is the floor plan a notation children already own, and we merely formalise?', 'Dečja mentalna mapa gradi se od doma nadalje, a oko sedme godine dete može da je nacrta po sećanju. Da li je osnova zapis koji deca već imaju, a mi ga samo formalizujemo?'),
+    move: t('Collect drawn home maps from one age range, then put the same rooms in front of them as a model and record what moves.', 'Prikupi crtane mape doma iz jednog uzrasnog raspona, pa im iste prostorije stavi pred oči kao maketu i zabeleži šta se pomeri.'),
+    evidence: t('Landmarks before relations, the order things are drawn in, and what the child says is missing from your model.', 'Orijentiri pre odnosa, redosled kojim se stvari crtaju i ono što dete kaže da u tvojoj maketi nedostaje.'),
+    source: { label: 'Children’s spatial representation of their neighbourhood — J. Environmental Psychology', url: 'https://www.sciencedirect.com/science/article/pii/S0272494482800169/pdf' }
+  },
+  {
+    id: 'primer-of-space', status: 'spark', field: 'children', principles: [1, 2, 3],
+    title: t('A primer that teaches space without saying so', 'Bukvar koji uči prostor a da to ne kaže'),
+    bridge: t('literacy primer ↔ spatial curriculum', 'bukvar ↔ nastavni program prostora'),
+    question: t('A reading primer teaches letters while telling a story. What is the equivalent object for space — one that teaches rotation, scale and containment while a child is only playing?', 'Bukvar uči slova dok priča priču. Koji je ekvivalentan predmet za prostor — onaj koji uči rotaciju, razmeru i sadržavanje dok se dete samo igra?'),
+    move: t('Write the table of contents first, as operations rather than chapters, then design one page — one object — for the hardest one.', 'Prvo napiši sadržaj, kao radnje a ne kao poglavlja, pa projektuj jednu stranu — jedan predmet — za najtežu.'),
+    evidence: t('An age ladder from a published trajectory, and one object per rung that an adult can build in an afternoon.', 'Lestvica uzrasta iz objavljene putanje učenja i po jedan predmet za svaku prečagu, koji odrasla osoba napravi za jedno popodne.'),
+    source: { label: 'Spatial Reasoning Toolkit — trajectory from birth to seven', url: 'https://earlymaths.org/spatial-reasoning/' }
+  },
+  {
+    id: 'association-as-maker', status: 'candidate', field: 'collaboration', principles: [1, 2, 5],
+    title: t('The association is the manufacturer, not the beneficiary', 'Udruženje je proizvođač, a ne korisnik'),
+    bridge: t('student project ↔ real production', 'studentski projekat ↔ stvarna proizvodnja'),
+    question: t('What has to be true of a student drawing for the association to build fifty of them, repair them, and tell us which three designs were wrong?', 'Šta mora da važi za studentski crtež da bi udruženje napravilo pedeset komada, popravljalo ih i reklo nam koja su tri rešenja bila pogrešna?'),
+    move: t('Write the drawing as an instruction sheet for someone who is not a maker, then watch one be built from it without you speaking.', 'Napiši crtež kao uputstvo za nekoga ko nije majstor, pa gledaj kako se po njemu pravi jedan komad, a da ti ne progovoriš.'),
+    evidence: t('Build time, the questions asked out loud, the parts substituted, and what broke in the first month.', 'Vreme izrade, pitanja izgovorena naglas, zamenjeni delovi i ono što se pokvarilo u prvom mesecu.'),
+    source: { label: 'Inclusive Play Design Guide', url: 'https://www.accessibleplayground.net/wp-content/uploads/2016/05/Inclusive-Play-Design-Guide-LowRes-2.pdf' }
   }
 ];
 

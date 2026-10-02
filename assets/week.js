@@ -2,6 +2,7 @@
 // It shows what is in data/material/ and nothing else. No week, no invented week.
 
 import { $, $$, esc, tr, tx, lang, number, loadJSON, mount, announce, link, arrow, read, save } from './core.js';
+import { notices } from './course.js';
 import { MATERIAL_INDEX, weekFile, validateIndex, validateWeek, currentWeek, weekStats } from './material.js';
 import { resolveRefs, renderBlocks, weekLine } from './blocks.js';
 
@@ -45,12 +46,25 @@ function picker() {
   ${showDrafts ? '' : `<p class="help">${link('index.html?draft=1', tr('Show the weeks still in draft', 'Prikaži nedelje koje su još u nacrtu'))}</p>`}</nav>`;
 }
 
+// The whole announcement board of this course is three facts. Everything else is material,
+// and material lives further down the page. Source of the three: assets/course.js → notices.
+function noticesBoard(weekNumber = null) {
+  return `<section class="week-contract notices" aria-labelledby="week-contract-title">
+  <div><p class="eyebrow">${tr('Notices — all of them', 'Obaveštenja — sva')}</p>
+  <h2 id="week-contract-title">${tr('One week. One A3. One conversation.', 'Jedna nedelja. Jedan A3. Jedan razgovor.')}</h2></div>
+  <ol class="notice-list">${notices.map((item, index) => `<li><b>${number(index + 1)}</b><div><h3>${esc(tx(item.title))}</h3><p>${esc(tx(item.body))}</p></div></li>`).join('')}</ol>
+  <dl class="a3-strip"><div><dt>${tr('Student', 'Student')}</dt><dd>${tr('name and index', 'ime i indeks')}</dd></div><div><dt>${tr('Week', 'Nedelja')}</dt><dd>${weekNumber ? number(weekNumber) : '—'}</dd></div><div><dt>${tr('Review', 'Pregled')}</dt><dd>${tr('conversation in class', 'razgovor na času')}</dd></div><div><dt>${tr('Signature', 'Potpis')}</dt><dd>${tr('on the paper, after review', 'na papiru, posle pregleda')}</dd></div></dl>
+  <p class="help">${tr('The teacher signs on the paper, after the review. The course rules determine how the signed sheets count toward assessment.', 'Nastavnik potpisuje na papiru, posle pregleda. Pravila predmeta određuju kako se potpisani listovi vrednuju.')} <a href="predmet.html">${tr('The course and the marking', 'Predmet i ocenjivanje')} →</a> · <a href="assets/sablon-a3.svg" download>${tr('A3 template', 'A3 šablon')} ↓</a></p>
+  </section>`;
+}
+
 function readyView() {
   const week = state.week;
   const stats = weekStats(week);
   const bring = Array.isArray(week.bring) ? week.bring : [];
   const taskBlock = week.blocks.find(block => block.kind === 'exercise');
-  const taskHref = taskBlock?.ref === 'app-for-one' ? 'zadatak.html' : (taskBlock && state.refs.exercise[taskBlock.ref]?.href) || 'vezbe.html';
+  const ownPage = { 'toy-for-coordination': 'igracka.html', 'app-for-one': 'zadatak.html' };
+  const taskHref = (taskBlock && ownPage[taskBlock.ref]) || (taskBlock && state.refs.exercise[taskBlock.ref]?.href) || 'vezbe.html';
   return `<div class="page-top week-top"><div>
     <p class="eyebrow">${esc(weekLine(week))}</p>
     <h1>${esc(tx(week.title))}</h1>
@@ -61,20 +75,20 @@ function readyView() {
     <span class="meta-label">${tr('Updated', 'Dopunjeno')}</span><span>${esc(week.updated || '—')}</span>
     ${week.state === 'draft' ? `<span class="tag">${tr('draft — not yet taught', 'nacrt — čas još nije održan')}</span>` : ''}
   </div></div>
-  <section class="week-contract" aria-labelledby="week-contract-title"><div><p class="eyebrow">${tr('The weekly record', 'Nedeljni zapis')}</p><h2 id="week-contract-title">${tr('One week. One A3. One conversation.', 'Jedna nedelja. Jedan A3. Jedan razgovor.')}</h2><p>${tr('Bring one A3 that gathers the week’s information, sketches, drawings, images, renders and decisions. The medium may vary; the reasoning must remain visible.', 'Donesi jedan A3 koji sabira informacije, skice, crteže, slike, rendere i odluke te nedelje. Medij može da se menja; tok razmišljanja mora ostati vidljiv.')}</p></div><dl class="a3-strip"><div><dt>${tr('Student', 'Student')}</dt><dd>${tr('name and index', 'ime i indeks')}</dd></div><div><dt>${tr('Week', 'Nedelja')}</dt><dd>${number(week.n)}</dd></div><div><dt>${tr('Review', 'Pregled')}</dt><dd>${tr('conversation in class', 'razgovor na času')}</dd></div><div><dt>${tr('Signature', 'Potpis')}</dt><dd>${tr('on the paper, after review', 'na papiru, posle pregleda')}</dd></div></dl><p class="help">${tr('The signature records that the work was reviewed in class. The course rules determine how it counts toward assessment.', 'Potpis beleži da je rad pregledan na času. Pravila predmeta određuju kako se to vrednuje.')}</p></section>
+  ${noticesBoard(week.n)}
   ${bring.length ? `<section class="bring"><h2>${tr('Bring with you', 'Donesi sa sobom')}</h2><ul>${bring.map(item => `<li>${esc(tx(item))}</li>`).join('')}</ul></section>` : ''}
   <div class="material">${renderBlocks(week.blocks, state.refs)}</div>
   ${picker()}
   <section class="week-foot"><h2>${tr('Everything else is behind this page', 'Sve ostalo je iza ove strane')}</h2>
   <ul class="mini-links">
-    ${[['predmet.html', tr('The course, the record and the teacher', 'Predmet, zapisnik i nastavnik')], ['program.html', tr('Calendar of meetings', 'Kalendar susreta')], ['standard.html', tr('The semester project', 'Projekat semestra')], ['vezbe.html', tr('All exercises', 'Sve vežbe')], ['resources.html', tr('Library and sources', 'Biblioteka i izvori')], ['ideja.html', tr('Idea atelier — research and play', 'Atelje ideja — istraživanje i igra')], ['ucestvuj.html', tr('Optional public board — not a hand-in', 'Neobavezna javna tabla — nije predaja')], ['studio.html', tr('Project stages', 'Faze projekta')], ['uredi.html', tr('Teacher: prepare a week', 'Nastavnik: pripremi nedelju')]]
+    ${[['predmet.html', tr('The course, the record and the teacher', 'Predmet, zapisnik i nastavnik')], ['program.html', tr('Calendar of meetings', 'Kalendar susreta')], ['standard.html', tr('The semester project', 'Projekat semestra')], ['vezbe.html', tr('All exercises', 'Sve vežbe')], ['resources.html', tr('Library and sources', 'Biblioteka i izvori')], ['ideja.html', tr('Creative hub — sources, seeds, open questions', 'Creative hub — izvori, ideje, otvorena pitanja')], ['ucestvuj.html', tr('Optional public board — not a hand-in', 'Neobavezna javna tabla — nije predaja')], ['studio.html', tr('Project stages', 'Faze projekta')], ['uredi.html', tr('Teacher: prepare a week', 'Nastavnik: pripremi nedelju')]]
       .map(([href, label]) => `<li><a class="mini-link" href="${href}">${esc(label)} <span aria-hidden="true">→</span></a></li>`).join('')}
   </ul></section>`;
 }
 
 function emptyView() {
   return `<div class="page-top"><div><p class="eyebrow">${tr('Working week', 'Radna nedelja')}</p><h1>${tr('No week is open yet.', 'Nijedna nedelja još nije otvorena.')}</h1><p class="lede">${tr('The material for a session lives in one small file. Until the teacher puts one in, this page says so instead of inventing a lesson.', 'Građa jednog časa stoji u jednom malom fajlu. Dok ga nastavnik ne unese, ova strana to i kaže, umesto da izmisli čas.')}</p>
-  <div class="actions"><a class="button" href="uredi.html">${tr('Prepare material', 'Pripremi gradivo')} →</a><a class="button secondary" href="laboratorija.html">${tr('Laboratory', 'Laboratorija')}</a></div></div></div>${picker()}`;
+  <div class="actions"><a class="button" href="uredi.html">${tr('Prepare material', 'Pripremi gradivo')} →</a><a class="button secondary" href="laboratorija.html">${tr('Laboratory', 'Laboratorija')}</a></div></div></div>${noticesBoard()}${picker()}`;
 }
 
 function brokenView() {

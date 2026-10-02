@@ -80,7 +80,7 @@ function cardBox() {
 function notes() {
   return `<section class="task-notes" aria-labelledby="notes-title"><h2 id="notes-title">${tr('A short account of the task', 'Kratak opis zadatka')}</h2>
   ${FIELDS.map(field => `<div class="lab-field"><label for="field-${field.id}">${esc(tr(field.en, field.sr))}</label><textarea id="field-${field.id}" rows="${field.rows}">${esc(read('task-' + field.id, '') || '')}</textarea></div>`).join('')}
-  <div class="actions"><button type="button" id="save-notes">${tr('Keep in this browser', 'Zadrži u pregledaču')}</button><button type="button" id="export-task">${tr('Download the sheet', 'Preuzmi list')}</button><a class="button secondary" href="ideja.html">${tr('Continue in the idea atelier', 'Nastavi u ateljeu ideja')} ${arrow}</a></div>
+  <div class="actions"><button type="button" id="save-notes">${tr('Keep in this browser', 'Zadrži u pregledaču')}</button><button type="button" id="export-task">${tr('Download the sheet', 'Preuzmi list')}</button><a class="button secondary" href="ideja.html">${tr('Continue in the creative hub', 'Nastavi u creative hubu')} ${arrow}</a></div>
   <p class="help" id="notes-status" role="status">${tr('Text stays in this browser if it allows storage. Sketches are never stored automatically — download them.', 'Tekst ostaje u ovom pregledaču ako dopušta čuvanje. Skice se nikada ne čuvaju automatski — preuzmi ih.')}</p></section>`;
 }
 

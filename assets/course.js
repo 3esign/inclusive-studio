@@ -17,12 +17,14 @@ export const course = {
     en: [
       'Contact hours per week are not stated in the examination record; they must be confirmed from the accreditation booklet.',
       'The fifteen-week plan below is the course dossier working version, not an approved syllabus text.',
-      'Teaching dates, the room and the field visit have not been published.'
+      'Teaching dates, the room and the field visit have not been published.',
+      'Two colloquia are declared by period (mid-November, mid-December). The fifteen points the dossier gave to one colloquium are split 8 + 7 between them; that split is the teacher’s proposal and is confirmed in class.'
     ],
     sr: [
       'Fond časova nije naveden u zapisniku; potvrđuje se iz knjige predmeta.',
       'Petnaestonedeljni plan je radna verzija iz dosijea predmeta, a ne odobren tekst silabusa.',
-      'Termini nastave, učionica i termin terenskog obilaska nisu objavljeni.'
+      'Termini nastave, učionica i termin terenskog obilaska nisu objavljeni.',
+      'Dva kolokvijuma su najavljena po periodu (sredina novembra, sredina decembra). Petnaest bodova koje je dosije davao jednom kolokvijumu podeljeno je 8 + 7; ta podela je predlog nastavnika i potvrđuje se na času.'
     ]
   },
   thesis: {
@@ -30,6 +32,36 @@ export const course = {
     sr: 'Rešenje koje odgovara osobi koja koristi kolica, detetu od četiri godine, osobi sa oštećenjem vida i osobi od osamdeset godina bolje je i za sve ostale. Suprotno ne važi.'
   }
 };
+
+// The three things a student has to know before anything else on this course.
+// Declared by the teacher on 02.10.2026. The colloquia are declared by period, not by date:
+// the exact week is written in only when the faculty publishes the timetable.
+export const notices = [
+  {
+    id: 'a3',
+    title: { en: 'One lecture — one A3.', sr: 'Jedno predavanje — jedan A3.' },
+    body: {
+      en: 'Every session ends with one A3 sheet that gathers that week’s work: measurements, sketches, drawings, images and the decision you made. The medium may change; the reasoning must stay visible on the sheet.',
+      sr: 'Svaki čas se završava jednim A3 listom koji sabira rad te nedelje: mere, skice, crteže, slike i odluku koju si doneo. Medij sme da se menja; tok razmišljanja mora da ostane vidljiv na listu.'
+    }
+  },
+  {
+    id: 'signature',
+    title: { en: 'The sheet is signed in the room.', sr: 'List se potpisuje u sali.' },
+    body: {
+      en: 'Write your name, index number and the week on the sheet. The teacher reviews it and signs it at the end of the session. The signature is the record of attendance and of work done — there is no upload, no account and no digital hand-in.',
+      sr: 'Upiši ime, broj indeksa i nedelju na list. Nastavnik ga pregleda i potpisuje na kraju časa. Potpis je evidencija prisustva i urađenog rada — nema uploada, naloga ni digitalne predaje.'
+    }
+  },
+  {
+    id: 'colloquia',
+    title: { en: 'Two colloquia: mid-November and mid-December.', sr: 'Dva kolokvijuma: sredina novembra i sredina decembra.' },
+    body: {
+      en: 'Colloquium 1 covers concepts and regulation (planned for week 5). Colloquium 2 covers the site, the analysis and the concept (planned for week 11). Both are held in the regular session. The exact dates are entered here when the faculty publishes the timetable.',
+      sr: 'Kolokvijum 1 pokriva pojmove i propis (po planu 5. nedelja). Kolokvijum 2 pokriva lokaciju, analizu i koncept (po planu 11. nedelja). Oba se drže u redovnom terminu. Tačni datumi se upisuju ovde kad fakultet objavi raspored.'
+    }
+  }
+];
 
 export const outcomes = [
   { en: 'Distinguish accessibility (compliance with a regulation), universal design (one solution for all) and inclusive design (a process with users), and know when to use which term.', sr: 'Razlikuje pristupačnost (usklađenost sa propisom), univerzalni dizajn (jedno rešenje za sve) i inkluzivni dizajn (proces sa korisnicima) i zna kada koji pojam koristi.' },
@@ -51,7 +83,7 @@ export const weeks = [
   { n: 8, block: 'B', stage: 2, lecture: { en: 'Public space for everyone: pedestrian surfaces, tactile paths, street furniture, lighting, safety.', sr: 'Javni prostor za sve: pešačke površine, taktilne staze, mobilijar, osvetljenje, sigurnost.' }, studio: { en: 'Diagram of existing flows and points of interruption.', sr: 'Dijagram postojećih tokova i tačaka prekida.' } },
   { n: 9, block: 'B', stage: 3, milestone: true, lecture: { en: 'Inclusive playgrounds and places for children; neurodivergent users — sensory load, retreat, predictability. Reading: James 2022, Kelly 2025.', sr: 'Inkluzivna igrališta i prostori za decu; neurodivergentni korisnici — senzorno opterećenje, povlačenje, predvidljivost. Literatura: James 2022, Kelly 2025.' }, studio: { en: 'Ten-minute paper presentation per team, applied to the site.', sr: 'Prikaz pročitanog rada (10 min po timu) i primena na lokaciju.' } },
   { n: 10, block: 'C', stage: 4, milestone: true, lecture: { en: 'Participatory and co-design: methods, ethics, limits. What may be asked, and what may not.', sr: 'Participativni i ko-dizajn: metode, etika, granice. Šta se pita, a šta ne.' }, studio: { en: 'Prepare and run the walkthrough. Minutes recorded.', sr: 'Priprema i izvođenje participativne provere. Zapisnik.' } },
-  { n: 11, block: 'C', stage: 3, milestone: true, lecture: { en: 'From analysis to concept: programme, access matrix, strategy for overcoming the level difference.', sr: 'Od analize ka konceptu: program, pristupna matrica, izbor strategije savladavanja visine.' }, studio: { en: 'Concept review and correction. The project theme is fixed from here on.', sr: 'Koncept — pregled i korekcija. Tema se od ovde ne menja.' } },
+  { n: 11, block: 'C', stage: 3, milestone: true, lecture: { en: 'From analysis to concept: programme, access matrix, strategy for overcoming the level difference.', sr: 'Od analize ka konceptu: program, pristupna matrica, izbor strategije savladavanja visine.' }, studio: { en: 'Colloquium 2 (site, analysis and concept). Concept review and correction; the project theme is fixed from here on.', sr: 'Kolokvijum 2 (lokacija, analiza i koncept). Koncept — pregled i korekcija; tema se od ovde ne menja.' } },
   { n: 12, block: 'C', stage: 5, lecture: { en: 'The building: entrance, vertical circulation, sanitary block, orientation and wayfinding.', sr: 'Objekat: ulaz, vertikalne komunikacije, sanitarni blok, orijentacija i prostorno snalaženje.' }, studio: { en: 'Work on plans and sections.', sr: 'Rad na osnovama i presecima.' } },
   { n: 13, block: 'C', stage: 5, lecture: { en: 'The detail that carries the project: threshold, handrail, tactile field, contrast. Material and maintenance.', sr: 'Detalj koji nosi projekat: prag, rukohvat, taktilno polje, kontrast. Materijal i održavanje.' }, studio: { en: 'Work on details at 1:20 / 1:10.', sr: 'Rad na detaljima 1:20 / 1:10.' } },
   { n: 14, block: 'C', stage: 6, lecture: { en: 'Evaluation: how accessibility is measured after construction (POE). Case studies from Belgrade.', sr: 'Evaluacija: kako se meri pristupačnost posle izgradnje (POE). Studije slučaja iz Beograda.' }, studio: { en: 'Cross-review: each team assesses another project against the Rulebook and the seven principles.', sr: 'Unakrsna provera: svaki tim ocenjuje tuđi projekat po Pravilniku i po sedam principa.' } },
@@ -109,7 +141,8 @@ export const deliverables = [
 export const assessment = [
   { item: { en: 'Attendance and participation', sr: 'Prisustvo i aktivnost' }, a: 10, b: 10 },
   { item: { en: 'Exercises 3–4 (measurement and compliance check)', sr: 'Vežbe 3–4 (merenje i kontrola po Pravilniku)' }, a: 10, b: 10 },
-  { item: { en: 'Colloquium 1 (week 5)', sr: 'Kolokvijum 1 (5. nedelja)' }, a: 15, b: 15 },
+  { item: { en: 'Colloquium 1 · concepts and regulation (mid-November)', sr: 'Kolokvijum 1 · pojmovi i propis (sredina novembra)' }, a: 8, b: 8 },
+  { item: { en: 'Colloquium 2 · site, analysis and concept (mid-December)', sr: 'Kolokvijum 2 · lokacija, analiza i koncept (sredina decembra)' }, a: 7, b: 7 },
   { item: { en: 'Field analysis and slope map (weeks 6–8)', sr: 'Terenska analiza i mapa nagiba (6–8)' }, a: 15, b: 15 },
   { item: { en: 'Paper presentation (week 9)', sr: 'Prikaz literature (9)' }, a: 10, b: 10 },
   { item: { en: 'Project — graphic part', sr: 'Projekat — grafički deo' }, a: 25, b: 20 },

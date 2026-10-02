@@ -15,7 +15,8 @@ for (const page of pages) html[page] = await readFile(new URL(page, root), 'utf8
 
 const MODULES = {
   'index.html': 'week.js', 'predavanje.html': 'lecture.js', 'laboratorija.html': 'labs.js',
-  'zadatak.html': 'task.js', 'uredi.html': 'editor.js', 'ideja.html': 'ideas.js'
+  'zadatak.html': 'task.js', 'uredi.html': 'editor.js', 'ideja.html': 'ideas.js',
+  'igracka.html': 'toy.js'
 };
 
 test('the pages are exactly the ones the navigation points at', () => {

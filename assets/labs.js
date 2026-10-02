@@ -31,7 +31,7 @@ const decisionBox = id => {
   <p class="help">${tr('A number without a decision changes nothing. Write what you will do differently in your project because of this measurement.', 'Broj bez odluke ništa ne menja. Napiši šta ćeš u svom projektu uraditi drugačije zbog ove mere.')}</p>
   <label for="decision-input-${id}">${tr('In my project I will…', 'U svom projektu ću…')}</label>
   <textarea id="decision-input-${id}" rows="3">${esc(stored)}</textarea>
-  <div class="actions"><button type="button" id="save-decision">${tr('Keep in this browser', 'Zadrži u pregledaču')}</button><button type="button" id="export-lab">${tr('Download the record', 'Preuzmi zapis')}</button><a class="button secondary" id="to-board" href="ideja.html">${tr('Connect it in the idea atelier', 'Poveži u ateljeu ideja')} ${arrow}</a></div>
+  <div class="actions"><button type="button" id="save-decision">${tr('Keep in this browser', 'Zadrži u pregledaču')}</button><button type="button" id="export-lab">${tr('Download the record', 'Preuzmi zapis')}</button><a class="button secondary" id="to-board" href="ideja.html">${tr('Connect it in the creative hub', 'Poveži u creative hubu')} ${arrow}</a></div>
   <p class="help" id="decision-status" role="status"></p></section>`;
 };
 

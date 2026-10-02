@@ -440,6 +440,139 @@ export function analyzeManeuvering({ corridorWidthCm, doorClearWidthCm, approach
   };
 }
 
+// Ramp geometry and landing calculations: Pravilnik RS 22/2015 čl. 7
+export function analyzeRampGeometry({ totalRiseM, slopePct = 5, landingLengthM = 1.5, maxFlightRunM = 9.0 } = {}) {
+  const rise = Number(totalRiseM), slope = Number(slopePct);
+  if (!(rise > 0) || !(slope > 0)) return null;
+
+  const isStandardSlope = slope <= 5.0;
+  const isExceptionSlope = slope > 5.0 && slope <= 8.33;
+  const isSlopeAllowed = slope <= 8.33;
+
+  // Max run per single flight: at 5% is 9.0 m; at 8.3% is 6.0 m (čl. 7)
+  const allowedMaxRun = isStandardSlope ? Math.min(Number(maxFlightRunM) || 9.0, 9.0) : 6.0;
+
+  const totalRunM = Math.round((rise / (slope / 100)) * 100) / 100;
+  const numFlights = Math.ceil(totalRunM / allowedMaxRun);
+  const flightRunM = Math.round((totalRunM / numFlights) * 100) / 100;
+  const numIntermediateLandings = Math.max(0, numFlights - 1);
+  const totalLandingLengthM = Math.round(numIntermediateLandings * Number(landingLengthM || 1.5) * 100) / 100;
+  const totalDevelopedLengthM = Math.round((totalRunM + totalLandingLengthM) * 100) / 100;
+  const risePerFlightM = Math.round((rise / numFlights) * 1000) / 1000;
+
+  return {
+    totalRiseM: rise,
+    slopePct: slope,
+    isStandardSlope,
+    isExceptionSlope,
+    isSlopeAllowed,
+    allowedMaxRun,
+    totalRunM,
+    numFlights,
+    flightRunM,
+    numIntermediateLandings,
+    landingLengthM: Number(landingLengthM || 1.5),
+    totalLandingLengthM,
+    totalDevelopedLengthM,
+    risePerFlightM,
+    pass: isSlopeAllowed && flightRunM <= allowedMaxRun,
+    standard: 'Pravilnik RS 22/2015 i 10/2026 čl. 7 · ISO 21542 §10'
+  };
+}
+
+// Vestibule clearances and door swing checks: Pravilnik RS 22/2015 čl. 13
+export function analyzeVestibule({ depthCm, widthCm, outerDoorSwing = 'out', innerDoorSwing = 'in', doorWidthCm = 90 } = {}) {
+  const d = Number(depthCm), w = Number(widthCm), dw = Number(doorWidthCm);
+  if (!(d > 0) || !(w > 0)) return null;
+
+  const minWidth = 180; // čl. 13: min 180 cm širine
+  const hasInwardSwing = outerDoorSwing === 'in' || innerDoorSwing === 'in';
+  const minDepth = hasInwardSwing ? 240 : 200; // čl. 13: min 200 cm spolja, 240 cm unutra
+  const minDoorWidth = 90; // čl. 17: min 90 cm
+
+  const widthPass = w >= minWidth;
+  const depthPass = d >= minDepth;
+  const doorPass = dw >= minDoorWidth;
+
+  // Turning circle clearance Ø 150 cm between door swings
+  const netDepthBetweenSwings = d - (outerDoorSwing === 'in' ? dw : 0) - (innerDoorSwing === 'in' ? dw : 0);
+  const turningPass = netDepthBetweenSwings >= 150 && w >= 150;
+
+  return {
+    depthCm: d,
+    widthCm: w,
+    doorWidthCm: dw,
+    outerDoorSwing,
+    innerDoorSwing,
+    hasInwardSwing,
+    minDepth,
+    minWidth,
+    minDoorWidth,
+    netDepthBetweenSwings,
+    widthPass,
+    depthPass,
+    doorPass,
+    turningPass,
+    pass: widthPass && depthPass && doorPass && turningPass,
+    standard: 'Pravilnik RS 22/2015 čl. 13 i 17 · EN 17210 §10'
+  };
+}
+
+// Stair ergonomics and statutory dimensions: Pravilnik RS 22/2015 čl. 16
+export function analyzeStairs({ riserCm, treadCm } = {}) {
+  const r = Number(riserCm), b = Number(treadCm);
+  if (!(r > 0) || !(b > 0)) return null;
+
+  const maxRiser = 15.0; // čl. 16: čelo max 15 cm
+  const minTread = 30.0; // čl. 16: gazište min 30 cm
+  const blondel = Math.round((2 * r + b) * 10) / 10; // 2h + b
+  const blondelPass = blondel >= 60.0 && blondel <= 65.0;
+  const riserPass = r <= maxRiser;
+  const treadPass = b >= minTread;
+
+  return {
+    riserCm: r,
+    treadCm: b,
+    maxRiser,
+    minTread,
+    blondel,
+    blondelPass,
+    riserPass,
+    treadPass,
+    pass: riserPass && treadPass && blondelPass,
+    standard: 'Pravilnik RS 22/2015 čl. 16 · ISO 21542 §11'
+  };
+}
+
+// Passenger elevator statutory dimensions: Pravilnik RS 22/2015 čl. 21
+export function analyzeElevator({ cabinWidthCm, cabinDepthCm, doorClearWidthCm, isThroughCar = false } = {}) {
+  const cw = Number(cabinWidthCm), cd = Number(cabinDepthCm), dw = Number(doorClearWidthCm);
+  if (!(cw > 0) || !(cd > 0) || !(dw > 0)) return null;
+
+  const minWidth = isThroughCar ? 140 : 110; // čl. 21: min 110 cm / 140 cm
+  const minDepth = 140; // čl. 21: min 140 cm
+  const minDoor = 90; // čl. 21: min 90 cm
+
+  const widthPass = cw >= minWidth;
+  const depthPass = cd >= minDepth;
+  const doorPass = dw >= minDoor;
+
+  return {
+    cabinWidthCm: cw,
+    cabinDepthCm: cd,
+    doorClearWidthCm: dw,
+    isThroughCar,
+    minWidth,
+    minDepth,
+    minDoor,
+    widthPass,
+    depthPass,
+    doorPass,
+    pass: widthPass && depthPass && doorPass,
+    standard: 'Pravilnik RS 22/2015 čl. 21 · ISO 21542 §15'
+  };
+}
+
 /* ------------------------------------------------------------------ *
  * 8. The register of labs
  * ------------------------------------------------------------------ */

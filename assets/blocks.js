@@ -69,8 +69,9 @@ export function renderBlock(block, refs = { lab: {}, exercise: {} }) {
     case 'exercise': {
       const exercise = refs.exercise[block.ref];
       const href = exercise ? exercise.href : 'vezbe.html';
-      const isDayOne = block.ref === 'app-for-one';
-      return `<a class="material-card exercise" href="${isDayOne ? 'zadatak.html' : esc(href)}"><span class="meta-label">${tr('Task', 'Zadatak')}${exercise ? ` · ${tr('week', 'nedelja')} ${exercise.week}` : ''}</span><strong>${exercise ? text(exercise.title) : esc(block.ref)}</strong><span>${block.text ? text(block.text) : exercise ? text(exercise.aim) : ''}</span></a>`;
+      // Two exercises have a page of their own; the rest open in the exercise bank.
+      const own = { 'toy-for-coordination': 'igracka.html', 'app-for-one': 'zadatak.html' }[block.ref];
+      return `<a class="material-card exercise" href="${own || esc(href)}"><span class="meta-label">${tr('Task', 'Zadatak')}${exercise ? ` · ${tr('week', 'nedelja')} ${exercise.week}` : ''}</span><strong>${exercise ? text(exercise.title) : esc(block.ref)}</strong><span>${block.text ? text(block.text) : exercise ? text(exercise.aim) : ''}</span></a>`;
     }
     case 'decision':
       return `<div class="material-decision"><p class="meta-label">${tr('Recorded today', 'Danas se upisuje')}</p><p>${text(block.text)}</p></div>`;

@@ -1,5 +1,5 @@
 import { stages, resources } from './content.js';
-import { course, outcomes, weeks, blocks, site, themes, deliverables, assessment, projectCriteria, automaticFail, notRequired, houseRules, about, links } from './course.js';
+import { course, notices, outcomes, weeks, blocks, site, themes, deliverables, assessment, projectCriteria, automaticFail, notRequired, houseRules, about, links } from './course.js';
 import { exercises, ideas } from './exercises.js';
 import { exportDraft, importDraft, issueDraftLink } from './contributions.js';
 import { validateSchedule, formatDate, createICS } from './calendar.js';
@@ -340,6 +340,8 @@ function subject(){
   return `<div class="page-top"><div><p class="eyebrow">${tr('The course / Official data','Predmet / Zvanični podaci')}</p><h1>${esc(tx(course.title))}</h1><p class="lede">${esc(tx(course.institution))} · ${esc(tx(course.faculty))}<br>${esc(tx(course.teacher))} · ${esc(tx(course.term))}</p></div></div>
   <div class="readable"><h2>${tr('In short','Ukratko')}</h2><p>${tr('An elective architecture course. You take one real, steeply sloping place in Belgrade and design a way to cross it that everyone uses — the same route for everyone. You prove it with measurements, with the Rulebook, and with a check done together with the people it is for.','Izborni predmet na arhitekturi. Uzimaš jedno stvarno, strmo mesto u Beogradu i projektuješ način da se pređe — istom trasom za sve. Dokazuješ merama, Pravilnikom i proverom koju radiš zajedno sa ljudima kojima je projekat namenjen.')}</p></div>
   <blockquote class="thesis"><p>${esc(tx(course.thesis))}</p></blockquote>
+  <section class="week-contract notices" aria-labelledby="notices-title"><div><p class="eyebrow">${tr('Notices — all of them','Obaveštenja — sva')}</p><h2 id="notices-title">${tr('Three things, and the rest is material.','Tri stvari, a sve ostalo je gradivo.')}</h2></div>
+    <ol class="notice-list">${notices.map((item,i)=>`<li><b>${number(i+1)}</b><div><h3>${esc(tx(item.title))}</h3><p>${esc(tx(item.body))}</p></div></li>`).join('')}</ol></section>
   <section><div class="section-heading"><h2>${tr('Official course data','Zvanični podaci o predmetu')}</h2><span class="tag">${tr('Examination record, 27.08.2026','Zapisnik o polaganju, 27.08.2026')}</span></div>
     <p>${tr('The course runs in two study programmes at once. Both follow the same teaching; the difference in ECTS is settled by the extent of the hand-in, not by different lectures.','Predmet se izvodi u dva studijska programa. Nastava je zajednička, a razlika u ESPB usklađuje se obimom završnog rada, ne različitim predavanjima.')}</p>
     <div class="table-wrap"><table><caption class="sr-only">${tr('Study programmes, codes, semester and ECTS','Studijski programi, šifre, semestar i ESPB')}</caption><thead><tr><th scope="col">${tr('Study programme','Studijski program')}</th><th scope="col">${tr('Code','Šifra')}</th><th scope="col">${tr('Semester','Semestar')}</th><th scope="col">${tr('ECTS','ESPB')}</th><th scope="col">${tr('Type','Tip')}</th></tr></thead><tbody>${p}</tbody></table></div>
