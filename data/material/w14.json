@@ -1,0 +1,40 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 14,
+  "state": "draft",
+  "updated": "2026-10-02",
+  "title": { "en": "Audit another project and measure finished buildings", "sr": "Oceni tuđi projekat i izmeri gotovu zgradu" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "You can critically audit a peer team's project against the Rulebook, and conduct a Post-Occupancy Evaluation (POE) on a newly constructed public facility in Belgrade.",
+    "sr": "Umeš da kritički pregledaš projekat kolega po Pravilniku i sprovedeš evaluaciju nakon useljenja (POE) na novoizgrađenom javnom objektu u Beogradu."
+  },
+  "bring": [
+    { "en": "Complete set of project boards for peer review; camera and inspection checklist for POE.", "sr": "Komplet tabli projekta za recenziju; fotoaparat i kontrolna lista za obilazak izvedenog objekta." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "Peer review and post-occupancy reality", "sr": "Unakrsna recenzija i realnost nakon izgradnje" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "Week 14 combines two exercises on one A3 sheet: on the left, an audit of another team's project checking compliance and automatic fails; on the right, a post-occupancy audit of a recently completed public building in Belgrade comparing promised accessibility with built reality.",
+        "sr": "U 14. nedelji spajamo dve vežbe na jednom A3 listu: na levoj polovini je unakrsna recenzija tuđeg projekta sa proverom usklađenosti i tačaka automatskog pada; na desnoj je brza provera nakon izgradnje (POE) nedavno završenog javnog objekta u Beogradu gde poredimo obećano stanje sa stvarnošću."
+      }
+    },
+    { "kind": "exercise", "ref": "cross-review" },
+    { "kind": "exercise", "ref": "post-occupancy" },
+    { "kind": "lab", "ref": "prolaz" },
+    {
+      "kind": "decision",
+      "text": {
+        "en": "Each team incorporates verified peer feedback into their final board revisions before final submission.",
+        "sr": "Svaki tim unosi potvrđene primedbe iz recenzije kolega u finalne ispravke tabli pre konačne predaje."
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 8,
+  "state": "draft",
+  "updated": "2026-10-02",
+  "title": { "en": "The access matrix and public space", "sr": "Matrica pristupa i javni prostor" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "You can map pedestrian circulation, tactile guide paths, urban furniture, and calculate total distances and travel times for different user profiles in an access matrix.",
+    "sr": "Umeš da mapiraš pešačke tokove, taktilne staze vodilje, urbani mobilijar i izračunaš dužine putanja i vreme kretanja za različite profile korisnika u matrici pristupa."
+  },
+  "bring": [
+    { "en": "Slope map from week 7, tracing paper or CAD layer, drafting pens.", "sr": "Karta nagiba iz 7. nedelje, paus papir ili CAD sloj, crtaći pribor." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "One route for all: computing the access matrix", "sr": "Jedan put za sve: proračun matrice pristupa" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "Equitable use means no segregated entrances or detour tracks. In the access matrix, every user profile is calculated: distance from arrival, vertical rise, rest stops, and travel time. Separate pathways are an automatic design failure.",
+        "sr": "Ravnopravna upotreba znači da nema odvojenih ulaza ni zaobilaznih staza. U matrici pristupa računamo svaki profil: dužinu od dolaska, uspon, odmorišta i vreme kretanja. Razdvajanje staza je automatski pad projekta."
+      }
+    },
+    { "kind": "exercise", "ref": "access-matrix" },
+    { "kind": "lab", "ref": "prolaz" },
+    {
+      "kind": "question",
+      "items": [
+        { "en": "If a wheelchair user must travel 280 m while an ambulatory visitor travels 40 m, can that still be called universal design?", "sr": "Ako korisnik kolica mora da pređe 280 m dok osoba bez teškoća prelazi 40 m, može li se to uopšte nazvati univerzalnim dizajnom?" }
+      ]
+    }
+  ]
+}

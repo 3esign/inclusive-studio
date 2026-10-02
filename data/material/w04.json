@@ -1,0 +1,48 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 4,
+  "state": "draft",
+  "updated": "2026-10-02",
+  "title": { "en": "The Rulebook against your own drawing", "sr": "Pravilnik naspram tvog crteža" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "You can open the original Serbian Rulebook (Sl. glasnik RS 22/2015 and 10/2026), cite the governing articles for each measured element, and produce a rigorous compliance table.",
+    "sr": "Umeš da otvoriš izvorni tekst Pravilnika (Sl. glasnik RS 22/2015 i 10/2026), citiraš odgovarajuće članove za svaki izmereni element i izradiš preciznu tabelu usklađenosti."
+  },
+  "bring": [
+    { "en": "Your week 3 measurement table, the text of the Rulebook (RS 22/2015 and 10/2026), and a red pen or marker.", "sr": "Tabela mera iz 3. nedelje, tekst Pravilnika (RS 22/2015 i 10/2026) i crvena olovka ili marker." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "A regulation is not a recommendation", "sr": "Propis nije preporuka" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "We cross-check measurements against the Rulebook on technical standards of accessibility (Official Gazette RS 22/2015 and 10/2026). Every element gets its article number, required standard, and compliance verdict. Where the regulation is silent, we mark it as 'not regulated'.",
+        "sr": "Upoređujemo izmerene vrednosti sa Pravilnikom o tehničkim standardima pristupačnosti („Sl. glasnik RS” 22/2015 i 10/2026). Za svaki element navodimo broj člana, propisani zahtev i ocenu usklađenosti. Gde propis ćuti, upisujemo „nije propisano”."
+      }
+    },
+    {
+      "kind": "list",
+      "items": [
+        { "en": "Art. 7 — Ramps: gradient max 5 % (1:20), exceptionally 8,3 % (1:12) up to 6 m; clear width min 120 cm; landings every 6 m.", "sr": "Čl. 7 — Rampe: nagib najviše 5 % (1:20), izuzetno 8,3 % (1:12) do 6 m; svetla širina najmanje 120 cm; odmorišta na svakih 6 m." },
+        { "en": "Art. 14 — Corridors: min 180 cm for two-way passing, min 90 cm for one-way.", "sr": "Čl. 14 — Hodnici: najmanje 180 cm za dvosmerno kretanje, najmanje 90 cm za jednosmerno." },
+        { "en": "Art. 17 — Doors: clear passage min 80 cm; min 90 cm where approach requires a turn.", "sr": "Čl. 17 — Vrata: svetla širina najmanje 80 cm; najmanje 90 cm gde pristup zahteva skretanje." },
+        { "en": "Art. 18 — Thresholds: max 2 cm with bevelled or rounded edges.", "sr": "Čl. 18 — Pragovi: najviše 2 cm sa zaobljenim ili zakošenim ivicama." },
+        { "en": "Art. 19 — Maneuvering space: turning circle diameter min 150 cm without obstacles.", "sr": "Čl. 19 — Manevarski prostor: krug okretanja prečnika najmanje 150 cm bez prepreka." }
+      ]
+    },
+    { "kind": "exercise", "ref": "rulebook-cross-check" },
+    { "kind": "lab", "ref": "prolaz" },
+    {
+      "kind": "question",
+      "items": [
+        { "en": "Which measured dimension differed most from what the law requires, and why do you think it was built that way?", "sr": "Koja izmerena dimenzija najviše odstupa od zakonskog zahteva i šta misliš zašto je tako izvedena?" }
+      ]
+    }
+  ]
+}

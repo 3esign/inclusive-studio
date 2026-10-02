@@ -1,0 +1,39 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 7,
+  "state": "draft",
+  "updated": "2026-10-02",
+  "title": { "en": "The slope map from 151 points", "sr": "Mapa nagiba iz 151 tačke" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "You can interpolate a digital elevation model from 151 surveyed points, generate slope contour bands in QGIS or CAD, and determine where compliant movement is physically excluded.",
+    "sr": "Umeš da izvedeš digitalni model visina iz 151 geodetske tačke, generišeš pojaseve nagiba u QGIS-u ili CAD-u i odrediš zone gde je usklađeno kretanje fizički isključeno."
+  },
+  "bring": [
+    { "en": "Laptop with QGIS or AutoCAD/Revit installed, downloaded points CSV, notebook.", "sr": "Laptop sa instaliranim QGIS-om ili AutoCAD/Revit-om, preuzet CSV sa tačkama, sveska." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "From point cloud to terrain slope bands", "sr": "Od tačaka do pojaseva nagiba terena" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "Using 151 surveyed elevation points (EPSG:32634), we generate a digital elevation surface. Slopes are classified into three zones: green (< 5 % accessible for all), yellow (5–8,3 % ramp zone with landings), and red (> 8,3 % inaccessible without alternative routing).",
+        "sr": "Iz 151 geodetske tačke (EPSG:32634) generišemo površ terena. Nagibe delimo u tri pojasa: zeleni (< 5 % pristupačno svima), žuti (5–8,3 % zona rampe sa odmorištima) i crveni (> 8,3 % nepristupačno bez alternativne strategije)."
+      }
+    },
+    { "kind": "exercise", "ref": "slope-map" },
+    { "kind": "lab", "ref": "visina" },
+    {
+      "kind": "decision",
+      "text": {
+        "en": "Declare the chosen interpolation method (TIN vs IDW vs spline) and record its boundary uncertainty.",
+        "sr": "Izabrati metodu interpolacije (TIN, IDW ili splajn) i ubeležiti njenu rubnu nesigurnost na tabli."
+      }
+    }
+  ]
+}

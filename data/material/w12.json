@@ -1,0 +1,39 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 12,
+  "state": "draft",
+  "updated": "2026-10-02",
+  "title": { "en": "Find the way without seeing the sign", "sr": "Nađi put bez gledanja u znak" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "You can design building interiors, vertical links, accessible toilets, and tactile/acoustic orientation that guides users without relying on visual text boards (ISO 21542).",
+    "sr": "Umeš da projektuješ unutrašnjost objekta, vertikalne veze, pristupačne toalete i taktilno/akustičko vođenje koje vodi korisnike bez oslanjanja na vizuelne table (ISO 21542)."
+  },
+  "bring": [
+    { "en": "Building floor plans at 1:100, door and sanitary schedules, tracing overlay.", "sr": "Osnove objekta 1:100, šeme vrata i sanitarnih čvorova, paus folija." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "Multisensory wayfinding and spatial anatomy", "sr": "Višečulno vođenje i prostorna anatomija" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "Wayfinding relies on materials, acoustic reverberation, tactile flooring, lighting contrasts, and air circulation. We detail entrance lobbies, accessible sanitary cabins (min 150 × 150 cm clear turning zone), and stair/lift cores.",
+        "sr": "Orijentacija u prostoru oslanja se na materijale, akustiku, taktilne površine, kontraste osvetljenja i strujanje vazduha. Detaljno rešavamo ulazni hol, pristupačnu sanitarnu kabinu (krug okretanja 150 cm) i stepenišno-liftovsko jezgro."
+      }
+    },
+    { "kind": "exercise", "ref": "wayfinding-without-sight" },
+    { "kind": "lab", "ref": "prekidač" },
+    {
+      "kind": "decision",
+      "text": {
+        "en": "Verify that every doorway on the primary circulation route provides at least 80 cm (preferably 90 cm) clear passage without threshold snags.",
+        "sr": "Potvrditi da svaki otvor na primarnoj komunikaciji nudi najmanje 80 cm (preporučeno 90 cm) čiste širine bez zapinjanja o prag."
+      }
+    }
+  ]
+}

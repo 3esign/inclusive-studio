@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 297" width="420mm" height="297mm">
+  <defs>
+    <style>
+      .border-heavy { fill: none; stroke: #111827; stroke-width: 0.8; }
+      .border-med { fill: none; stroke: #374151; stroke-width: 0.4; }
+      .border-light { fill: none; stroke: #9ca3af; stroke-width: 0.2; }
+      .grid-dot { fill: #d1d5db; }
+      .text-title { font-family: system-ui, -apple-system, sans-serif; font-size: 3.8mm; font-weight: 700; fill: #111827; }
+      .text-subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 2.6mm; font-weight: 600; fill: #1f2937; }
+      .text-label { font-family: system-ui, -apple-system, sans-serif; font-size: 2.1mm; font-weight: 600; fill: #4b5563; text-transform: uppercase; letter-spacing: 0.2mm; }
+      .text-body { font-family: system-ui, -apple-system, sans-serif; font-size: 2.3mm; fill: #374151; }
+      .text-muted { font-family: system-ui, -apple-system, sans-serif; font-size: 1.9mm; fill: #6b7280; }
+      .table-header { fill: #f3f4f6; stroke: #374151; stroke-width: 0.3; }
+      .table-cell { fill: none; stroke: #d1d5db; stroke-width: 0.2; }
+      .circle-ref { fill: none; stroke: #9ca3af; stroke-width: 0.3; stroke-dasharray: 1.5, 1; }
+    </style>
+    <pattern id="dot-grid" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="0.3" class="grid-dot" />
+    </pattern>
+  </defs>
+
+  <!-- Outer Margins (10 mm) -->
+  <rect x="10" y="10" width="400" height="277" class="border-heavy" />
+
+  <!-- ================================================================== -->
+  <!-- HEADER STRIP (y: 10 to 36 mm)                                      -->
+  <!-- ================================================================== -->
+  <line x1="10" y1="36" x2="410" y2="36" class="border-heavy" />
+  
+  <!-- Left column: Faculty & Course -->
+  <text x="14" y="16" class="text-label">UNIVERZITET „UNION — NIKOLA TESLA” U BEOGRADU · FAKULTET ZA GRADITELJSKI MENADŽMENT</text>
+  <text x="14" y="21.5" class="text-title">Principi univerzalnog dizajna</text>
+  <text x="14" y="26.5" class="text-body">Nastavnik: doc. dr Semir Poturak · školska 2026/2027.</text>
+  <text x="14" y="31" class="text-muted">Projekat: Inkluzivni studio · Lokacija udruženja „Živimo zajedno”, Beograd</text>
+
+  <line x1="195" y1="10" x2="195" y2="36" class="border-med" />
+
+  <!-- Center column: Week & Task -->
+  <text x="200" y="16" class="text-label">NEDELJNI A3 LIST</text>
+  <text x="200" y="22" class="text-subtitle">Nedelja br: [ ____ ]</text>
+  <text x="200" y="27" class="text-body">Zadatak: _____________________________________</text>
+  <text x="200" y="32" class="text-muted">Evidencija se pregleda i potpisuje na papiru na kraju časa.</text>
+
+  <line x1="305" y1="10" x2="305" y2="36" class="border-med" />
+
+  <!-- Right column: Student Info -->
+  <text x="310" y="16" class="text-label">PODACI O STUDENTU</text>
+  <text x="310" y="21" class="text-body">Ime i prezime: _____________________________</text>
+  <text x="310" y="26" class="text-body">Broj indeksa: ____________  Tim: ____________</text>
+  <text x="310" y="31.5" class="text-muted">Program: [  ] 22.OA0068 (5 ESPB)   [  ] OAIPUD (4 ESPB)</text>
+
+  <!-- ================================================================== -->
+  <!-- MAIN GRAPHICAL CANVAS (x: 10 to 255 mm, y: 36 to 252 mm)           -->
+  <!-- ================================================================== -->
+  <rect x="10" y="36" width="245" height="216" fill="url(#dot-grid)" />
+  <line x1="255" y1="36" x2="255" y2="252" class="border-heavy" />
+
+  <!-- Canvas Header -->
+  <rect x="10" y="36" width="245" height="7" fill="#f9fafb" class="border-light" />
+  <text x="14" y="41" class="text-label">GRAFIČKI PRILOG / SITUACIJA / OSNOVA / PRESEK / DETALJ (Raster 10 mm)</text>
+  <text x="210" y="41" class="text-muted">Razmera: 1:__________</text>
+
+  <!-- Reference Turning Circle (150 cm dia) Placeholder in corner -->
+  <g transform="translate(30, 225)">
+    <circle cx="0" cy="0" r="7.5" class="circle-ref" />
+    <line x1="-8.5" y1="0" x2="8.5" y2="0" class="border-light" />
+    <line x1="0" y1="-8.5" x2="0" y2="8.5" class="border-light" />
+    <text x="0" y="11" class="text-muted" text-anchor="middle">R150 cm (čl. 19)</text>
+  </g>
+
+  <!-- North Arrow placeholder -->
+  <g transform="translate(240, 55)">
+    <circle cx="0" cy="0" r="5" class="border-light" />
+    <path d="M 0 -4.5 L 2.5 4 L 0 2 L -2.5 4 Z" fill="#111827" />
+    <text x="0" y="-6" class="text-label" text-anchor="middle">S</text>
+  </g>
+
+  <!-- ================================================================== -->
+  <!-- RIGHT PANELS: TABLE AND ARGUMENTATION (x: 255 to 410 mm)           -->
+  <!-- ================================================================== -->
+
+  <!-- Panel 1: Measurement & Compliance Table (y: 36 to 142 mm) -->
+  <rect x="255" y="36" width="155" height="7" fill="#f3f4f6" class="border-med" />
+  <text x="259" y="41" class="text-label">TABELA MERA I USKLAĐENOSTI (RS 22/2015 i 10/2026)</text>
+
+  <!-- Table Header -->
+  <g transform="translate(255, 43)">
+    <rect x="0" y="0" width="35" height="6" class="table-header" />
+    <rect x="35" y="0" width="28" height="6" class="table-header" />
+    <rect x="63" y="0" width="28" height="6" class="table-header" />
+    <rect x="91" y="0" width="24" height="6" class="table-header" />
+    <rect x="115" y="0" width="40" height="6" class="table-header" />
+    <text x="2" y="4.2" class="text-label" style="font-size:1.8mm;">Element</text>
+    <text x="37" y="4.2" class="text-label" style="font-size:1.8mm;">Izmereno</text>
+    <text x="65" y="4.2" class="text-label" style="font-size:1.8mm;">Propisano</text>
+    <text x="93" y="4.2" class="text-label" style="font-size:1.8mm;">Član</text>
+    <text x="117" y="4.2" class="text-label" style="font-size:1.8mm;">Ocena / Nalaz</text>
+  </g>
+
+  <!-- 10 Table Rows -->
+  <g transform="translate(255, 49)">
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="35" height="8.5" class="table-cell" /><text x="2" y="5.5" class="text-body">Nagib rampe</text>
+    <rect x="35" y="0" width="28" height="8.5" class="table-cell" />
+    <rect x="63" y="0" width="28" height="8.5" class="table-cell" /><text x="65" y="5.5" class="text-muted">≤ 5% (max 8,3%)</text>
+    <rect x="91" y="0" width="24" height="8.5" class="table-cell" /><text x="93" y="5.5" class="text-muted">čl. 7</text>
+    <rect x="115" y="0" width="40" height="8.5" class="table-cell" />
+
+    <!-- Row 2 -->
+    <rect x="0" y="8.5" width="35" height="8.5" class="table-cell" /><text x="2" y="14" class="text-body">Širina hodnika</text>
+    <rect x="35" y="8.5" width="28" height="8.5" class="table-cell" />
+    <rect x="63" y="8.5" width="28" height="8.5" class="table-cell" /><text x="65" y="14" class="text-muted">≥ 180 (90) cm</text>
+    <rect x="91" y="8.5" width="24" height="8.5" class="table-cell" /><text x="93" y="14" class="text-muted">čl. 14</text>
+    <rect x="115" y="8.5" width="40" height="8.5" class="table-cell" />
+
+    <!-- Row 3 -->
+    <rect x="0" y="17" width="35" height="8.5" class="table-cell" /><text x="2" y="22.5" class="text-body">Širina vrata</text>
+    <rect x="35" y="17" width="28" height="8.5" class="table-cell" />
+    <rect x="63" y="17" width="28" height="8.5" class="table-cell" /><text x="65" y="22.5" class="text-muted">≥ 80 (90) cm</text>
+    <rect x="91" y="17" width="24" height="8.5" class="table-cell" /><text x="93" y="22.5" class="text-muted">čl. 17</text>
+    <rect x="115" y="17" width="40" height="8.5" class="table-cell" />
+
+    <!-- Row 4 -->
+    <rect x="0" y="25.5" width="35" height="8.5" class="table-cell" /><text x="2" y="31" class="text-body">Visina praga</text>
+    <rect x="35" y="25.5" width="28" height="8.5" class="table-cell" />
+    <rect x="63" y="25.5" width="28" height="8.5" class="table-cell" /><text x="65" y="31" class="text-muted">≤ 2 cm zaobljen</text>
+    <rect x="91" y="25.5" width="24" height="8.5" class="table-cell" /><text x="93" y="31" class="text-muted">čl. 18</text>
+    <rect x="115" y="25.5" width="40" height="8.5" class="table-cell" />
+
+    <!-- Row 5 -->
+    <rect x="0" y="34" width="35" height="8.5" class="table-cell" /><text x="2" y="39.5" class="text-body">Manevarski krug</text>
+    <rect x="35" y="34" width="28" height="8.5" class="table-cell" />
+    <rect x="63" y="34" width="28" height="8.5" class="table-cell" /><text x="65" y="39.5" class="text-muted">Ø ≥ 150 cm</text>
+    <rect x="91" y="34" width="24" height="8.5" class="table-cell" /><text x="93" y="39.5" class="text-muted">čl. 19</text>
+    <rect x="115" y="34" width="40" height="8.5" class="table-cell" />
+
+    <!-- Row 6 -->
+    <rect x="0" y="42.5" width="35" height="8.5" class="table-cell" /><text x="2" y="48" class="text-body">Kvake / prekidači</text>
+    <rect x="35" y="42.5" width="28" height="8.5" class="table-cell" />
+    <rect x="63" y="42.5" width="28" height="8.5" class="table-cell" /><text x="65" y="48" class="text-muted">h = 80–90 cm</text>
+    <rect x="91" y="42.5" width="24" height="8.5" class="table-cell" /><text x="93" y="48" class="text-muted">čl. 23</text>
+    <rect x="115" y="42.5" width="40" height="8.5" class="table-cell" />
+
+    <!-- Row 7 -->
+    <rect x="0" y="51" width="35" height="8.5" class="table-cell" /><text x="2" y="56.5" class="text-body">Pristupačni toalet</text>
+    <rect x="35" y="51" width="28" height="8.5" class="table-cell" />
+    <rect x="63" y="51" width="28" height="8.5" class="table-cell" /><text x="65" y="56.5" class="text-muted">min 150×150 cm</text>
+    <rect x="91" y="51" width="24" height="8.5" class="table-cell" /><text x="93" y="56.5" class="text-muted">čl. 25</text>
+    <rect x="115" y="51" width="40" height="8.5" class="table-cell" />
+
+    <!-- Row 8 -->
+    <rect x="0" y="59.5" width="35" height="8.5" class="table-cell" /><text x="2" y="65" class="text-body">Taktilne trake</text>
+    <rect x="35" y="59.5" width="28" height="8.5" class="table-cell" />
+    <rect x="63" y="59.5" width="28" height="8.5" class="table-cell" /><text x="65" y="65" class="text-muted">vodilje / pažnje</text>
+    <rect x="91" y="59.5" width="24" height="8.5" class="table-cell" /><text x="93" y="65" class="text-muted">čl. 10</text>
+    <rect x="115" y="59.5" width="40" height="8.5" class="table-cell" />
+
+    <!-- Row 9 -->
+    <rect x="0" y="68" width="35" height="8.5" class="table-cell" /><text x="2" y="73.5" class="text-body">Parking mesto</text>
+    <rect x="35" y="68" width="28" height="8.5" class="table-cell" />
+    <rect x="63" y="68" width="28" height="8.5" class="table-cell" /><text x="65" y="73.5" class="text-muted">≥ 370 × 480 cm</text>
+    <rect x="91" y="68" width="24" height="8.5" class="table-cell" /><text x="93" y="73.5" class="text-muted">čl. 36</text>
+    <rect x="115" y="68" width="40" height="8.5" class="table-cell" />
+
+    <!-- Row 10 -->
+    <rect x="0" y="76.5" width="35" height="8.5" class="table-cell" /><text x="2" y="82" class="text-body">Slobodan izbor</text>
+    <rect x="35" y="76.5" width="28" height="8.5" class="table-cell" />
+    <rect x="63" y="76.5" width="28" height="8.5" class="table-cell" />
+    <rect x="91" y="76.5" width="24" height="8.5" class="table-cell" />
+    <rect x="115" y="76.5" width="40" height="8.5" class="table-cell" />
+  </g>
+
+  <!-- Panel 2: Design Rationale & Constraints (y: 142 to 252 mm) -->
+  <line x1="255" y1="142" x2="410" y2="142" class="border-heavy" />
+  <rect x="255" y="142" width="155" height="7" fill="#f3f4f6" class="border-med" />
+  <text x="259" y="147" class="text-label">OBRAZLOŽENJE PROJEKTNE ODLUKE I OGRANIČENJA</text>
+
+  <g transform="translate(259, 153)">
+    <text x="0" y="4" class="text-subtitle" style="font-size:2.2mm;">1. Kome rešenje služi i kako osigurava ravnopravnu upotrebu?</text>
+    <line x1="0" y1="9" x2="147" y2="9" class="border-light" />
+    <line x1="0" y1="14" x2="147" y2="14" class="border-light" />
+    <line x1="0" y1="19" x2="147" y2="19" class="border-light" />
+    <line x1="0" y1="24" x2="147" y2="24" class="border-light" />
+
+    <text x="0" y="32" class="text-subtitle" style="font-size:2.2mm;">2. Šta projekat odbija da radi (svesna granica / odbacivanje)?</text>
+    <line x1="0" y1="37" x2="147" y2="37" class="border-light" />
+    <line x1="0" y1="42" x2="147" y2="42" class="border-light" />
+    <line x1="0" y1="47" x2="147" y2="47" class="border-light" />
+
+    <text x="0" y="55" class="text-subtitle" style="font-size:2.2mm;">3. Ponašanje pri otkazu (šta je rezervna trasa kada sistem stane)?</text>
+    <line x1="0" y1="60" x2="147" y2="60" class="border-light" />
+    <line x1="0" y1="65" x2="147" y2="65" class="border-light" />
+    <line x1="0" y1="70" x2="147" y2="70" class="border-light" />
+
+    <text x="0" y="78" class="text-subtitle" style="font-size:2.2mm;">4. Održavanje u 5. godini (materijal, habanje, zima, ko popravlja):</text>
+    <line x1="0" y1="83" x2="147" y2="83" class="border-light" />
+    <line x1="0" y1="88" x2="147" y2="88" class="border-light" />
+    <line x1="0" y1="93" x2="147" y2="93" class="border-light" />
+  </g>
+
+  <!-- ================================================================== -->
+  <!-- FOOTER STRIP (y: 252 to 287 mm)                                    -->
+  <!-- ================================================================== -->
+  <line x1="10" y1="252" x2="410" y2="252" class="border-heavy" />
+
+  <!-- Footer Box 1: Field Note / Coauthor Voice (x: 10 to 145) -->
+  <rect x="10" y="252" width="135" height="35" class="border-med" fill="#fafafa" />
+  <text x="14" y="258" class="text-label">ZAPAŽANJE SA TERENA / REČIMA KOAUTORA</text>
+  <text x="14" y="263" class="text-muted">Izjava, prepreka ili reakcija korisnika zabeležena doslovno:</text>
+  <line x1="14" y1="268" x2="140" y2="268" class="border-light" />
+  <line x1="14" y1="274" x2="140" y2="274" class="border-light" />
+  <line x1="14" y1="280" x2="140" y2="280" class="border-light" />
+
+  <!-- Footer Box 2: Instrument & Measurement Uncertainty (x: 145 to 280) -->
+  <rect x="145" y="252" width="135" height="35" class="border-med" fill="#fafafa" />
+  <text x="149" y="258" class="text-label">MERNI INSTRUMENT I NESIGURNOST</text>
+  <text x="149" y="263" class="text-muted">Svaka kota nosi merni alat (vrednost bez nesigurnosti je utisak):</text>
+  <text x="149" y="269" class="text-body">Merni instrument: _________________________________________</text>
+  <text x="149" y="275" class="text-body">Rezolucija / nesigurnost: ____________________________________</text>
+  <text x="149" y="281" class="text-body">Izvor podloge (katastar / GNSS / ortofoto): ___________________</text>
+
+  <!-- Footer Box 3: Verification & Teacher Signature (x: 280 to 410) -->
+  <rect x="280" y="252" width="130" height="35" class="border-heavy" fill="#ffffff" />
+  <text x="285" y="258" class="text-label">PREGLED I POTPIS NASTAVNIKA U SALI</text>
+  <text x="285" y="264" class="text-body">Ocena rada: [  ] Potvrđeno    [  ] Potrebna dorada</text>
+  <text x="285" y="270" class="text-body">Komentar / Nalaz: _________________________________________</text>
+  <text x="285" y="277" class="text-body">Datum pregleda: ____.____.2026.</text>
+  <text x="285" y="283" class="text-subtitle">Potpis: ___________________________</text>
+
+</svg>

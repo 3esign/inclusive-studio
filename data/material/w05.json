@@ -1,0 +1,47 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 5,
+  "state": "draft",
+  "updated": "2026-10-02",
+  "title": { "en": "Where regulation ends", "sr": "Gde propis prestaje" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "You can identify the boundary where legal compliance fails user needs and where design begins; prepare for and sit Kolokvijum 1.",
+    "sr": "Umeš da prepoznaš granicu gde puko zadovoljenje propisa izneverava potrebe korisnika i gde počinje projektovanje; priprema i polaganje Kolokvijuma 1."
+  },
+  "bring": [
+    { "en": "A3 portfolio of weeks 1–4, notebook, and drawing equipment.", "sr": "A3 mapa vežbi iz nedelja 1–4, pribor za pisanje i crtanje." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "Compliance is the floor, not the ceiling", "sr": "Propis je pod, a ne plafon" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "International standards (UN CRPD Art. 9, EN 17210:2021, ISO 21542:2021) demonstrate that spaces can be completely compliant on paper while failing real users in practice. Design quality begins where the checklist ends.",
+        "sr": "Međunarodni standardi (UN Konvencija čl. 9, EN 17210:2021, ISO 21542:2021) pokazuju da prostor može formalno zadovoljiti propis na papiru, a u praksi biti neprijatan ili neupotrebljiv. Kvalitet projektovanja počinje tamo gde se lista propisa završava."
+      }
+    },
+    {
+      "kind": "quote",
+      "text": {
+        "en": "Accessibility is about making sure people can get in the door. Universal design is about making sure they want to be there.",
+        "sr": "Pristupačnost osigurava da ljudi mogu da uđu na vrata. Univerzalni dizajn osigurava da žele da budu tu."
+      },
+      "source": "Edward Steinfeld & Jordana Maisel, Universal Design: Creating Inclusive Environments (2012)"
+    },
+    { "kind": "exercise", "ref": "where-regulation-ends" },
+    { "kind": "lab", "ref": "tastatura" },
+    {
+      "kind": "decision",
+      "text": {
+        "en": "Kolokvijum 1 is sat in the first hour: concepts and regulations. The second hour evaluates borderline cases.",
+        "sr": "Kolokvijum 1 se radi u prvom satu: pojmovi i propisi. U drugom satu analiziramo granične slučajeve iz prakse."
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 9,
+  "state": "draft",
+  "updated": "2026-10-02",
+  "title": { "en": "Sensory load and children's spaces", "sr": "Senzorno opterećenje i prostori za decu" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "You can design inclusive play and outdoor spaces for neurodivergent children and adults (James 2022, Kelly 2025), drawing acoustic, visual, and tactile zoning with quiet retreat spaces.",
+    "sr": "Umeš da projektuješ inkluzivna igrališta i otvorene prostore za neurodivergentnu decu i odrasle (James 2022, Kelly 2025), crtajući zvučno, vizuelno i taktilno zoniranje sa prostorima za smirenje."
+  },
+  "bring": [
+    { "en": "Read articles James 2022 and Kelly 2025 from the course archive; 1:100 site plan, coloured pencils.", "sr": "Pročitani radovi James 2022 i Kelly 2025 iz baze predmeta; situacija 1:100, drvene bojice." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "Designing for neurodiversity and sensory clarity", "sr": "Projektovanje za neurodivergentnost i čulnu jasnoću" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "Inclusive design goes far beyond ramps. Neurodivergent users and children with sensory sensitivities need predictability, acoustic buffering, gradual transitions, and quiet retreat pockets that remain safe and reachable.",
+        "sr": "Inkluzivni dizajn ide daleko iznad rampi. Neurodivergentni korisnici i deca sa čulnom preosetljivošću traže predvidljivost prostora, zvučno prigušenje, postepene prelaze i mirna mesta za povlačenje koja ostaju sigurna i pristupačna."
+      }
+    },
+    {
+      "kind": "quote",
+      "text": {
+        "en": "A retreat space must be a sanctuary within the play environment, not an exile outside of it.",
+        "sr": "Mesto za povlačenje mora biti utočište unutar prostora za igru, a ne izgnanstvo van njega."
+      },
+      "source": "Kelly et al., Let's Play: Co-designing inclusive school playgrounds with neurodivergent children (2025)"
+    },
+    { "kind": "exercise", "ref": "sensory-load-section" },
+    { "kind": "lab", "ref": "vreme" },
+    {
+      "kind": "question",
+      "items": [
+        { "en": "How can a user anticipate what noise or visual level awaits them around the next corner?", "sr": "Kako korisnik može unapred da prepozna koliki ga nivo buke ili vizuelnih nadražaja čeka iza sledećeg ugla?" }
+      ]
+    }
+  ]
+}
