@@ -1,0 +1,22 @@
+{
+  "kit": "svemir-project-kit/v1",
+  "name": "inclusive-studio",
+  "description": "Pilot platforma: studenti arhitekture x udruzenje OSI, univerzalni dizajn, GitHub Pages",
+  "created": "2026-10-01T07:42:06.981Z",
+  "updated": "2026-10-01T23:56:45.365Z",
+  "status": "active",
+  "phases": [],
+  "currentPhase": null,
+  "nextMove": "Napraviti prostor ideja (ideja.html) — prethodni dah ga je samo opisao, nije izgradio; pa gradivo za nedelju 2 i izbor udruzenja/termina",
+  "registration": {
+    "status": "registered",
+    "path": "C:\\Svemir\\data\\project_kits.jsonl",
+    "at": "2026-10-01T07:42:07.115Z"
+  },
+  "stats": {
+    "log": 8,
+    "terms": 0,
+    "kb": 0,
+    "handoffs": 0
+  }
+}

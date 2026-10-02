@@ -72,7 +72,7 @@ const ROLE_WORDS = {
   field: { en: 'edit field', sr: 'polje za unos' },
   landmark: { en: 'region', sr: 'oblast' },
   table: { en: 'table', sr: 'tabela' },
-  unknown: { en: 'clickable, no name', sr: 'klikabilno, bez imena' }
+  unknown: { en: 'clickable, no name', sr: 'može se aktivirati, bez imena' }
 };
 
 // One node → one utterance. An unnamed control is announced as what it is: nothing useful.
@@ -362,7 +362,7 @@ export const labs = [
   {
     id: 'citac', minutes: 15, tests: { en: 'a screen reader and your markup', sr: 'čitač ekrana i tvoj kod' },
     title: { en: 'The machine reads your page', sr: 'Mašina čita tvoju stranicu' },
-    aim: { en: 'Find one fact in a notice, hearing only what a screen reader announces. Then do it again in the version without headings, alternative text or real buttons. Compare the number of steps.', sr: 'Nađi jedan podatak u obaveštenju, čujući samo ono što čitač ekrana izgovori. Pa isto u verziji bez naslova, alternativnog teksta i pravih tastera. Uporedi broj koraka.' },
+    aim: { en: 'Find one fact in a notice, hearing only what a screen reader announces. Then do it again in the version without headings, alternative text or real buttons. Compare the number of steps.', sr: 'Nađi jedan podatak u obaveštenju, čujući samo ono što čitač ekrana izgovori. Zatim ponovi isto u verziji bez naslova, alternativnog teksta i pravih tastera. Uporedi broj koraka.' },
     measures: { en: 'steps to the fact, in both versions', sr: 'korake do podatka, u obe verzije' },
     standard: 'WCAG 2.2 — 1.1.1, 1.3.1, 2.4.6, 4.1.2'
   },
@@ -374,7 +374,7 @@ export const labs = [
     standard: 'WCAG 2.2 — 2.1.1, 2.1.2, 2.4.7'
   },
   {
-    id: 'prekidac', minutes: 10, tests: { en: 'one switch and the order you designed', sr: 'jedan prekidač i red koji si projektovao' },
+    id: 'prekidač', minutes: 10, tests: { en: 'one switch and the order you designed', sr: 'jedan prekidač i red koji si projektovao' },
     title: { en: 'One button', sr: 'Jedan taster' },
     aim: { en: 'Operate a menu with a single switch and an automatic scan. Reorder and group the items, and watch the number of activations fall.', sr: 'Upravljaj menijem jednim prekidačem i automatskim skeniranjem. Promeni red i grupisanje, i gledaj kako broj aktivacija pada.' },
     measures: { en: 'switch activations for the same three tasks', sr: 'aktivacija prekidača za ista tri zadatka' },
@@ -382,9 +382,9 @@ export const labs = [
   },
   {
     id: 'kontrast', minutes: 10, tests: { en: 'your own colours and your own buttons', sr: 'tvoje boje i tvoje tastere' },
-    title: { en: 'Measure the colour, measure the target', sr: 'Izmeri boju, izmeri cilj' },
-    aim: { en: 'Put in the two colours from your project and read the ratio. Then set a button size and see when it stops satisfying the minimum. Zoom the sample to 400 % and look for the horizontal scrollbar.', sr: 'Upiši dve boje iz svog projekta i pročitaj odnos. Pa postavi veličinu tastera i vidi kada prestaje da zadovoljava minimum. Uvećaj uzorak na 400 % i traži horizontalni skrol.' },
-    measures: { en: 'contrast ratio, target size, reflow at 400 %', sr: 'odnos kontrasta, veličinu cilja, prelom na 400 %' },
+    title: { en: 'Measure the colour, measure the target', sr: 'Izmeri boju, izmeri dodirnu metu' },
+    aim: { en: 'Put in the two colours from your project and read the ratio. Then set a button size and see when it stops satisfying the minimum. Zoom the sample to 400 % and look for the horizontal scrollbar.', sr: 'Upiši dve boje iz svog projekta i pročitaj odnos. Zatim postavi veličinu tastera i vidi kada prestaje da zadovoljava minimum. Uvećaj uzorak na 400 % i traži horizontalno pomeranje.' },
+    measures: { en: 'contrast ratio, target size, reflow at 400 %', sr: 'odnos kontrasta, veličinu dodirne mete i prelom na 400 %' },
     standard: 'WCAG 2.2 — 1.4.3, 1.4.11, 1.4.10, 2.5.8'
   },
   {
@@ -397,21 +397,21 @@ export const labs = [
   {
     id: 'prolaz', minutes: 20, tests: { en: 'your plan against Art. 14, 17, 18 and 19', sr: 'tvoju osnovu po čl. 14, 17, 18 i 19' },
     title: { en: 'Does the chair get there, and does it turn', sr: 'Da li kolica stižu i da li se okreću' },
-    aim: { en: 'A real-size plan on a 10 cm grid. Move the walls and widen the doors until the route exists, the narrowest point holds and a 150 cm circle fits where you arrive. Fewer moves is a better score.', sr: 'Osnova u pravoj meri na mreži od 10 cm. Pomeraj zidove i širi vrata dok putanja ne postoji, dok najuža tačka ne drži i dok krug od 150 cm ne stane tamo gde se stiže. Manje poteza je bolji rezultat.' },
+    aim: { en: 'A real-size plan on a 10 cm grid. Move the walls and widen the doors until the route exists, the narrowest point holds and a 150 cm circle fits where you arrive. Fewer moves is a better score.', sr: 'Osnova u pravoj meri na mreži od 10 cm. Pomeraj zidove i proširuj vrata dok putanja ne postane prohodna, najuža tačka ne dostigne potrebnu širinu i krug od 150 cm ne stane na odredištu. Što manje poteza, to bolji rezultat.' },
     measures: { en: 'narrowest point, turning circle, number of moves', sr: 'najužu tačku, obrtni krug i broj poteza' },
     standard: 'Pravilnik RS 22/2015 — čl. 14, 17, 18, 19'
   },
   {
     id: 'visina', minutes: 15, tests: { en: 'the arithmetic of our own site', sr: 'aritmetiku naše lokacije' },
-    title: { en: '22,5 metres of height', sr: '22,5 metra visine' },
-    aim: { en: 'Our site falls 22,5 m over 151 m. Choose a slope and read how long the ramp becomes, how many landings it needs and whether it fits on a plot of about 129 × 131 m. This is where the project starts.', sr: 'Naša lokacija pada 22,5 m na 151 m. Izaberi nagib i pročitaj koliko rampa postaje duga, koliko odmorišta traži i da li staje na parcelu od oko 129 × 131 m. Tu projekat počinje.' },
+    title: { en: '22,5 metres of height', sr: 'Visinska razlika od 22,5 metara' },
+    aim: { en: 'Our site falls 22,5 m over 151 m. Choose a slope and read how long the ramp becomes, how many landings it needs and whether it fits on a plot of about 129 × 131 m. This is where the project starts.', sr: 'Na lokaciji postoji visinska razlika od 22,5 m na vazdušnoj dužini od 151 m. Izaberi nagib i izračunaj potrebnu dužinu rampe, broj odmorišta i da li rampa staje na parcelu od oko 129 × 131 m. Tu projekat počinje.' },
     measures: { en: 'ramp length, landings, shortfall in metres', sr: 'dužinu rampe, odmorišta i manjak u metrima' },
     standard: 'Pravilnik RS 22/2015 — čl. 7'
   },
   {
     id: 'vreme', minutes: 10, tests: { en: 'a deadline and a sentence', sr: 'rok i rečenicu' },
     title: { en: 'Twenty seconds and a long sentence', sr: 'Dvadeset sekundi i duga rečenica' },
-    aim: { en: 'Read an administrative notice under a countdown, then rewrite it. The counter is a design property, not a fact of nature.', sr: 'Pročitaj administrativno obaveštenje pod odbrojavanjem, pa ga prepiši. Brojač je svojstvo dizajna, ne činjenica prirode.' },
+    aim: { en: 'Read an administrative notice under a countdown, then rewrite it. The counter is a design property, not a fact of nature.', sr: 'Pročitaj administrativno obaveštenje uz odbrojavanje, pa ga prepiši. Brojač je svojstvo dizajna, ne činjenica prirode.' },
     measures: { en: 'sentence length, share of long words, whether you finished in time', sr: 'dužinu rečenice, udeo dugih reči i da li si stigao' },
     standard: 'WCAG 2.2 — 2.2.1, 3.1.5'
   }

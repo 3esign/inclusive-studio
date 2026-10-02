@@ -13,15 +13,16 @@ export const NAV = [
   { id: 'week', href: 'index.html', group: 'primary', en: 'This week', sr: 'Nedelja' },
   { id: 'lecture', href: 'predavanje.html', group: 'primary', en: 'Lecture', sr: 'Predavanje' },
   { id: 'lab', href: 'laboratorija.html', group: 'primary', en: 'Labs', sr: 'Laboratorija' },
-  { id: 'task', href: 'zadatak.html', group: 'primary', en: 'Task', sr: 'Zadatak' },
-  { id: 'studio', href: 'studio.html', group: 'archive', en: 'Studio', sr: 'Studio' },
+  { id: 'task', href: 'zadatak.html', group: 'primary', en: 'First task', sr: 'Prvi zadatak' },
+  { id: 'studio', href: 'studio.html', group: 'archive', en: 'Project stages', sr: 'Faze projekta' },
   { id: 'subject', href: 'predmet.html', group: 'archive', en: 'The course', sr: 'Predmet' },
   { id: 'schedule', href: 'program.html', group: 'archive', en: 'Calendar', sr: 'Kalendar' },
-  { id: 'brief', href: 'standard.html', group: 'archive', en: 'The brief', sr: 'Projekat' },
+  { id: 'brief', href: 'standard.html', group: 'archive', en: 'Project brief', sr: 'Projektni zadatak' },
   { id: 'work', href: 'vezbe.html', group: 'archive', en: 'Exercises', sr: 'Vežbe' },
   { id: 'library', href: 'resources.html', group: 'archive', en: 'Library', sr: 'Biblioteka' },
-  { id: 'participate', href: 'ucestvuj.html', group: 'archive', en: 'Pinboard', sr: 'Tabla' },
-  { id: 'editor', href: 'uredi.html', group: 'archive', en: 'Prepare material', sr: 'Pripremi gradivo' },
+  { id: 'ideas', href: 'ideja.html', group: 'archive', en: 'Idea atelier', sr: 'Atelje ideja' },
+  { id: 'participate', href: 'ucestvuj.html', group: 'archive', en: 'Public board', sr: 'Javna tabla' },
+  { id: 'editor', href: 'uredi.html', group: 'archive', en: 'Teacher: material', sr: 'Nastavnik: gradivo' },
   { id: 'ethics', href: 'etika.html', group: 'footer', en: 'Working together', sr: 'Kako sarađujemo' },
   { id: 'accessibility', href: 'pristupacnost.html', group: 'footer', en: 'Accessibility', sr: 'Pristupačnost' }
 ];
@@ -53,7 +54,8 @@ export function save(key, value) {
 export function drop(key) { try { localStorage.removeItem(PREFIX + key); return true; } catch { return false; } }
 
 /* ---------- language and role ---------- */
-export let lang = read('language', 'en') === 'sr' ? 'sr' : 'en';
+const browserLanguage = typeof navigator !== 'undefined' && /^sr\b/i.test(navigator.language || '') ? 'sr' : 'en';
+export let lang = read('language', browserLanguage) === 'sr' ? 'sr' : 'en';
 export let role = read('role', 'student') === 'partner' ? 'partner' : 'student';
 export const tr = (en, sr) => (lang === 'sr' ? sr : en);
 export const tx = object => (object && typeof object === 'object' ? object[lang] ?? object.en ?? '' : object ?? '');
@@ -116,7 +118,7 @@ function navMarkup(view) {
   const current = item => (item.id === view ? ' aria-current="page"' : '');
   const inArchive = archive.some(i => i.id === view);
   return `${primary.map(i => `<a data-nav="${i.id}" href="${i.href}"${current(i)}>${label(i)}</a>`).join('')}
-<details class="nav-more"${inArchive ? ' open' : ''}><summary${inArchive ? ' aria-current="true"' : ''}>${esc(tr('Material', 'Građa'))}</summary><div>${archive.map(i => `<a data-nav="${i.id}" href="${i.href}"${current(i)}>${label(i)}</a>`).join('')}</div></details>`;
+<details class="nav-more"><summary${inArchive ? ' aria-current="true"' : ''}>${esc(tr('Material', 'Građa'))}</summary><div>${archive.map(i => `<a data-nav="${i.id}" href="${i.href}"${current(i)}>${label(i)}</a>`).join('')}</div></details>`;
 }
 
 function tabbarMarkup(view) {

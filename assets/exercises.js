@@ -14,7 +14,7 @@ export const exercises = [
   {
     id: 'seven-principles-audit', week: 2, stage: 1, kind: 'drawing',
     title: { en: 'Seven principles, one building', sr: 'Sedam principa, jedna zgrada' },
-    task: { en: 'Take one building you can enter. Walk it once as a visitor and once as an auditor. Judge it against all seven principles, in order. For each principle give one photograph or sketch, one sentence of evidence and a verdict: met, partly met, failed.', sr: 'Izaberi zgradu u koju možeš da uđeš. Prođi je jednom kao posetilac, jednom kao ispitivač. Oceni je po svih sedam principa, redom. Za svaki princip daj jednu fotografiju ili skicu, jednu rečenicu dokaza i ocenu: ispunjen, delimično, pao.' },
+    task: { en: 'Take one building you can enter. Walk it once as a visitor and once as an auditor. Judge it against all seven principles, in order. For each principle give one photograph or sketch, one sentence of evidence and a verdict: met, partly met, failed.', sr: 'Izaberi zgradu u koju možeš da uđeš. Prođi je jednom kao posetilac, jednom kao ispitivač. Oceni je po svih sedam principa, redom. Za svaki princip daj jednu fotografiju ili skicu, jednu rečenicu dokaza i ocenu: ispunjen, delimično ispunjen ili nije ispunjen.' },
     hand: { en: 'One A3: plan diagram of the route plus seven evidence entries.', sr: 'Jedan A3: dijagram putanje i sedam zapisa dokaza.' },
     check: { en: 'A verdict without a photograph, a sketch or a measurement does not count. At least two principles must fail — if nothing failed, you audited the brochure, not the building.', sr: 'Ocena bez fotografije, skice ili mere ne važi. Bar dva principa moraju da padnu — ako ništa nije palo, ocenio si prospekt, a ne zgradu.' },
     source: { label: 'The Principles of Universal Design v2.0 (NC State, 1997)', url: 'https://design.ncsu.edu/research/center-for-universal-design/' }
@@ -78,9 +78,9 @@ export const exercises = [
   {
     id: 'walkthrough', week: 10, stage: 4, kind: 'participatory',
     title: { en: 'The walkthrough that changes the drawing', sr: 'Provera koja menja crtež' },
-    task: { en: 'Agree one real task with a coauthor — arrive, enter, find the toilet, sit down, leave. Walk it together. Record what happened, in their words, and what you had assumed. Then name the single drawing you will change because of it.', sr: 'Dogovori sa koautorom jedan stvaran zadatak — stići, ući, naći toalet, sesti, izaći. Pređite ga zajedno. Zabeleži šta se desilo, njihovim rečima, i šta si ti pretpostavljao. Zatim imenuj jedan crtež koji ćeš zbog toga promeniti.' },
+    task: { en: 'Agree one real task with a coauthor — arrive, enter, find the toilet, sit down, leave. Walk it together. Record what happened, in their words, and what you had assumed. Then name the single drawing you will change because of it.', sr: 'Dogovori sa koautorom jedan stvaran zadatak — stići, ući, naći toalet, sesti, izaći. Pređite ga zajedno. Zabeleži šta se desilo, rečima koautora, i šta si ti pretpostavljao. Zatim imenuj jedan crtež koji ćeš zbog toga promeniti.' },
     hand: { en: 'Minutes: who took part, what was tried, what was discovered, what changed in the project.', sr: 'Zapisnik: ko je učestvovao, šta je probano, šta je otkriveno, šta je promenjeno u projektu.' },
-    check: { en: 'No disability simulation. Participation is voluntary and may stop at any moment. Minutes that record no change to the project are minutes of a demonstration, not of a check.', sr: 'Bez simulacije invaliditeta. Učešće je dobrovoljno i prekida se u svakom trenutku. Zapisnik koji ne beleži nijednu promenu u projektu je zapisnik demonstracije, a ne provere.' },
+    check: { en: 'No disability simulation. Participation is voluntary and may stop at any moment. Minutes that record no change to the project are minutes of a demonstration, not of a check.', sr: 'Bez simulacije invaliditeta. Učešće je dobrovoljno i može se prekinuti u svakom trenutku. Zapisnik koji ne beleži nijednu promenu u projektu je zapisnik demonstracije, a ne provere.' },
     source: { label: 'W3C WAI — involving users in evaluation', url: 'https://www.w3.org/WAI/test-evaluate/involving-users/' }
   },
   {
@@ -96,7 +96,7 @@ export const exercises = [
     title: { en: 'Find the way without seeing the sign', sr: 'Nađi put bez gledanja u znak' },
     task: { en: 'Describe the route from the entrance to the main destination using only non-visual and tactile information: surface changes, acoustic cues, handrail continuity, slope, warning fields, scent and draught. Then draw what you must add to the plan so the description is true.', sr: 'Opiši put od ulaza do glavnog odredišta koristeći samo nevizuelne i taktilne informacije: promene podloge, akustičke tragove, neprekidnost rukohvata, nagib, polja upozorenja, miris i promaju. Zatim nacrtaj šta moraš dodati u osnovu da bi opis bio istinit.' },
     hand: { en: 'A written route description and a revised plan at 1:200 with the added cues.', sr: 'Pisan opis trase i izmenjena osnova 1:200 sa dodatim tragovima.' },
-    check: { en: 'The description must work read aloud, with no plan in hand. A tactile path that stops at a door and resumes nowhere fails the exercise.', sr: 'Opis mora da radi pročitan naglas, bez osnove u ruci. Taktilna staza koja se prekine kod vrata i nigde ne nastavi obara vežbu.' },
+    check: { en: 'The description must work read aloud, with no plan in hand. A tactile path that stops at a door and resumes nowhere fails the exercise.', sr: 'Opis mora biti razumljiv kada se pročita naglas, bez osnove u ruci. Taktilna staza koja se prekine kod vrata i nigde se ne nastavlja ne prolazi proveru.' },
     source: { label: 'ISO 21542 — accessibility and usability of the built environment', url: 'https://www.iso.org/standard/71860.html' }
   },
   {
@@ -111,31 +111,31 @@ export const exercises = [
     id: 'cross-review', week: 14, stage: 6, kind: 'reading',
     title: { en: 'Audit someone else’s project', sr: 'Oceni tuđi projekat' },
     task: { en: 'Take another team’s hand-in. Apply their own compliance table to their own drawings and check whether the numbers agree. Then apply the three automatic-fail tests. Write the audit as you would want yours written.', sr: 'Uzmi predaju drugog tima. Primeni njihovu tabelu usklađenosti na njihove crteže i proveri da li se brojevi slažu. Zatim primeni tri testa automatskog pada. Napiši ocenu onako kako bi želeo da tvoja bude napisana.' },
-    hand: { en: 'A two-page audit: three confirmed strengths, three defects with evidence, one question.', sr: 'Ocena na dve strane: tri potvrđene vrline, tri nedostatka sa dokazom, jedno pitanje.' },
-    check: { en: 'Every defect cites a drawing and a number. An audit with no confirmed strength was not read carefully.', sr: 'Svaki nedostatak navodi crtež i broj. Ocena bez ijedne potvrđene vrline nije pažljivo pročitana.' },
+    hand: { en: 'Left half of the week 14 A3: three confirmed strengths, three defects with evidence, one question.', sr: 'Leva polovina A3 lista za 14. nedelju: tri potvrđene vrline, tri nedostatka sa dokazom i jedno pitanje.' },
+    check: { en: 'Every defect cites a drawing and a number. An audit with no confirmed strength was not read carefully.', sr: 'Svaki nedostatak navodi crtež i broj. Ako ocena ne potvrdi nijednu vrlinu, projekat nije pažljivo pregledan.' },
     source: { label: 'Project brief „Živimo zajedno”, §7', url: '' }
   },
   {
     id: 'post-occupancy', week: 14, stage: 6, kind: 'fieldwork',
     title: { en: 'Measure a finished building, not a promise', sr: 'Izmeri gotovu zgradu, ne obećanje' },
     task: { en: 'Find a recently built or renovated public building in Belgrade that declares itself accessible. Do a short post-occupancy check: can you complete three ordinary tasks using one route? Record what was built as drawn, what was built differently, and what was added later by the people using it.', sr: 'Nađi nedavno izgrađen ili obnovljen javni objekat u Beogradu koji je proglašen pristupačnim. Uradi kratku proveru posle useljenja: mogu li se tri obična zadatka obaviti jednom trasom? Zabeleži šta je izvedeno kao na crtežu, šta drugačije i šta su korisnici dodali naknadno.' },
-    hand: { en: 'Three task narratives with photographs and a one-page finding.', sr: 'Tri opisa zadatka sa fotografijama i nalaz na jednoj strani.' },
-    check: { en: 'Added ramps, wedged doors and handwritten signs are the most valuable evidence in the exercise: they are the building telling you what the drawing got wrong.', sr: 'Naknadne rampe, podmetnuta vrata i rukom pisani natpisi najvredniji su dokaz u vežbi: to zgrada govori šta je crtež promašio.' },
+    hand: { en: 'Right half of the week 14 A3: three concise task narratives with photographs and one finding.', sr: 'Desna polovina A3 lista za 14. nedelju: tri sažeta opisa zadatka sa fotografijama i jedan nalaz.' },
+    check: { en: 'Added ramps, wedged doors and handwritten signs are the most valuable evidence in the exercise: they are the building telling you what the drawing got wrong.', sr: 'Naknadne rampe, vrata poduprta u otvorenom položaju i rukom pisani natpisi najvredniji su dokaz u vežbi: to zgrada govori šta je crtež promašio.' },
     source: { label: 'Course syllabus, week 14 (POE)', url: '' }
   },
   {
     id: 'accessible-handover', week: 15, stage: 6, kind: 'digital',
     title: { en: 'A hand-over that survives without you', sr: 'Predaja koja preživi bez tebe' },
-    task: { en: 'Prepare the public version of the project so it is usable by someone who cannot see the boards: a structured text description of the site, the problem, the strategy and the critical detail; image descriptions for each board; and the compliance table as text, not as a picture of a table.', sr: 'Pripremi javnu verziju projekta tako da je upotrebljiva i nekome ko ne vidi table: strukturisan tekstualni opis lokacije, problema, strategije i ključnog detalja; opisi slika za svaku tablu; i tabela usklađenosti kao tekst, a ne kao slika tabele.' },
-    hand: { en: 'A public summary of at most two pages, plus image descriptions, published on the pinboard.', sr: 'Javni sažetak od najviše dve strane, uz opise slika, objavljen na tabli.' },
+    task: { en: 'Prepare the public version of the project so it is usable by someone who cannot see the boards: a structured text description of the site, the problem, the strategy and the critical detail; image descriptions for each board; and the compliance table as text, not as a picture of a table.', sr: 'Pripremi javnu verziju projekta tako da je upotrebljiva i za osobu koja ne vidi table: strukturisan tekstualni opis lokacije, problema, strategije i ključnog detalja; opisi slika za svaku tablu; i tabela usklađenosti kao tekst, a ne kao slika tabele.' },
+    hand: { en: 'Upper part of the week 15 A3: a structured summary, key image descriptions and a readable excerpt from the compliance table. Public posting is optional and requires permission.', sr: 'Gornji deo A3 lista za 15. nedelju: strukturisan sažetak, ključni opisi slika i čitljiv izvod iz tabele usklađenosti. Javna objava je neobavezna i zahteva dozvolu.' },
     check: { en: 'Read the summary aloud to someone who has not seen the project. If they cannot restate the strategy, it is not finished. A table flattened into an image is unreadable to a screen reader.', sr: 'Pročitaj sažetak naglas nekome ko nije video projekat. Ako ne može da prepriča strategiju, nije gotovo. Tabela pretvorena u sliku čitaču ekrana je nečitljiva.' },
     source: { label: 'W3C WAI — complex images', url: 'https://www.w3.org/WAI/tutorials/images/complex/' }
   },
   {
     id: 'ai-claim-check', week: 15, stage: 6, kind: 'digital',
     title: { en: 'Catch the model in an error', sr: 'Uhvati model u grešci' },
-    task: { en: 'Ask an AI tool for the accessibility requirements that apply to your project. Then check every number it gives against the original text of the Rulebook. Record each claim, the article you checked, and the verdict: correct, wrong, or invented.', sr: 'Pitaj AI alat koji se zahtevi pristupačnosti odnose na tvoj projekat. Zatim proveri svaki broj prema izvornom tekstu Pravilnika. Zabeleži svaku tvrdnju, član koji si proverio i ocenu: tačno, netačno ili izmišljeno.' },
-    hand: { en: 'A claim-check table and a two-sentence conclusion about where the tool helped and where it would have cost you the exam.', sr: 'Tabela provere tvrdnji i zaključak u dve rečenice: gde je alat pomogao, a gde bi te koštao ispita.' },
+    task: { en: 'Ask an AI tool for the accessibility requirements that apply to your project. Then check every number it gives against the original text of the Rulebook. Record each claim, the article you checked, and the verdict: correct, wrong, or invented.', sr: 'Pitaj AI alat koji zahtevi pristupačnosti važe za tvoj projekat. Zatim proveri svaki broj prema izvornom tekstu Pravilnika. Zabeleži svaku tvrdnju, član koji si proverio i ocenu: tačno, netačno ili izmišljeno.' },
+    hand: { en: 'Lower part of the week 15 A3: a claim-check table and a two-sentence conclusion about where the tool helped and where it would have cost you the exam.', sr: 'Donji deo A3 lista za 15. nedelju: tabela provere tvrdnji i zaključak u dve rečenice — gde je alat pomogao, a gde bi te koštao ispita.' },
     check: { en: 'Declare the tool and the date. A table in which nothing was wrong means you asked questions whose answers you already knew.', sr: 'Navedi alat i datum. Tabela u kojoj ništa nije bilo pogrešno znači da si pitao ono što već znaš.' },
     source: { label: 'Course rules: AI tools are allowed and declared', url: '' }
   }
@@ -147,12 +147,12 @@ export const ideas = [
   {
     id: 'belgrade-slope-atlas', scale: { en: 'Seminar paper · one semester', sr: 'Seminarski rad · jedan semestar' },
     title: { en: 'An atlas of Belgrade’s unwalkable slopes', sr: 'Atlas nesavladivih beogradskih padina' },
-    body: { en: 'Map the city blocks where the terrain alone makes a compliant route impossible without a strategy. Open data plus field checks. The result is a planning argument, not a complaint: these are the places where the Rulebook is satisfied on paper and nobody can get up the hill.', sr: 'Mapiraj gradske blokove u kojima sam teren čini usklađenu trasu nemogućom bez strategije. Otvoreni podaci i provera na terenu. Rezultat je planski argument, a ne žalba: to su mesta gde je Pravilnik zadovoljen na papiru, a niko ne može uz padinu.' },
-    why: { en: 'The course already measures one such hill. Fifteen of them make a publishable finding.', sr: 'Predmet već meri jednu takvu padinu. Petnaest njih čini nalaz za objavljivanje.' }
+    body: { en: 'Map the city blocks where the terrain alone makes a compliant route impossible without a strategy. Open data plus field checks. The result is a planning argument, not a complaint: these are the places where the Rulebook is satisfied on paper and nobody can get up the hill.', sr: 'Mapiraj gradske blokove u kojima sam teren čini usklađenu trasu nemogućom bez strategije. Otvoreni podaci i provera na terenu. Rezultat je planski argument, a ne žalba: to su mesta gde je Pravilnik zadovoljen na papiru, a niko ne može da se popne uz padinu.' },
+    why: { en: 'The course already measures one such hill. Fifteen of them make a publishable finding.', sr: 'Predmet već meri jednu takvu padinu. Petnaest takvih padina čini nalaz za objavljivanje.' }
   },
   {
     id: 'poe-register', scale: { en: 'Multi-year · course archive', sr: 'Višegodišnje · arhiva predmeta' },
-    title: { en: 'A post-occupancy register of declared-accessible buildings', sr: 'Registar provere izjavljeno pristupačnih objekata' },
+    title: { en: 'A post-occupancy register of declared-accessible buildings', sr: 'Registar provera objekata proglašenih pristupačnim' },
     body: { en: 'Each generation of students audits three recently completed public buildings and adds them to one public register: what was promised, what was built, what users changed afterwards. After four years the register is evidence no single study can produce.', sr: 'Svaka generacija studenata ocenjuje po tri nedavno završena javna objekta i upisuje ih u jedan javni registar: šta je obećano, šta je izvedeno, šta su korisnici naknadno promenili. Posle četiri godine registar je dokaz kakav nijedna pojedinačna studija ne daje.' },
     why: { en: 'Serbia has compliance documents and almost no published post-occupancy evidence.', sr: 'Srbija ima dokumenta o usklađenosti i gotovo nijedan objavljen dokaz posle useljenja.' }
   },

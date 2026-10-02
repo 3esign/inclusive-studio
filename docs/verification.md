@@ -1,6 +1,19 @@
-# Verification — 1 October 2026
+# Verification — 2 October 2026
 
 This is a bounded implementation check, not WCAG certification or a claim of educational validation.
+
+## A3 course flow and Idea Atelier — 2026-10-02
+
+- **147/147 headless-Chrome checks passed** across **fifteen pages at 320, 360, 768 and 1440 CSS pixels**. The checks cover reflow, 24 px controls, language switching, simple view, reduced motion, no-JavaScript routes, all eight labs, the weekly material, the teacher editor, the Idea Atelier and its two-card connection, and the absence of uncaught exceptions.
+- **77/77 Node tests passed.** New assertions preserve the physical course record — one weekly A3, an in-class review and a signature on paper — and prevent an official student hand-in from being routed to GitHub. They also require two same-week exercise cards to be explicit parts of one A3 and keep the Idea Atelier separate from assignments.
+- **The Idea Atelier is implemented as a local-first instrument:** 17 curated seeds, combined filters, random or deliberate pairs, one generated question, first drawing, evidence and guardrail, a browser-local note, Markdown download and a shareable pair URL. It has no login, upload or GitHub hand-in.
+- **A real runtime defect was found and repaired:** the new weekly A3 block called a formatting helper that had not been imported. Static inspection and Node syntax checks missed it; the browser suite caught the blank working week. A second visual check found low-contrast guardrail text inside the Atelier result and corrected it.
+- **Measured upper bounds over local HTTP, without compression:** the heaviest page transfers 231.9 kB; the Idea Atelier transfers 91.7 kB; the working week 152.3 kB; the first task 81.2 kB. The largest measured JavaScript heap is 6.3 MB. No runtime dependency was added.
+- **Serbian copy was reviewed separately** for spelling, cases, agreement, professional terminology and number forms. The fallback pages now carry the same A3/signature and optional-public-board meaning when JavaScript is unavailable.
+
+### Still not checked
+
+A real screen reader, switch device, Serbian mobile browser, teaching session, disabled coauthor review, physical signature workflow and official timetable. The browser checks are implementation evidence, not educational validation or WCAG certification.
 
 ## The working week, the laboratory, day one and mobile — 2026-10-01T21:18:03.204Z
 

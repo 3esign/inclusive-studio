@@ -22,7 +22,7 @@ export async function resolveRefs(blocks) {
       const { exercises } = await import('./exercises.js');
       for (const block of list.filter(b => b.kind === 'exercise')) {
         const exercise = exercises.find(item => item.id === block.ref);
-        if (exercise) map.exercise[block.ref] = { title: exercise.title, aim: exercise.task, href: 'vezbe.html#' + encodeURIComponent(exercise.id), week: exercise.week };
+        if (exercise) map.exercise[block.ref] = { title: exercise.title, aim: exercise.task, href: 'vezbe.html#ex-' + encodeURIComponent(exercise.id), week: exercise.week };
       }
     } catch { /* same */ }
   }

@@ -1,4 +1,4 @@
-// Fourteen pages must not drift apart: one navigation, one course band, one module each,
+// Every page must carry one navigation, one course band and one module,
 // and a static baseline that still works when JavaScript does not run.
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -15,7 +15,7 @@ for (const page of pages) html[page] = await readFile(new URL(page, root), 'utf8
 
 const MODULES = {
   'index.html': 'week.js', 'predavanje.html': 'lecture.js', 'laboratorija.html': 'labs.js',
-  'zadatak.html': 'task.js', 'uredi.html': 'editor.js'
+  'zadatak.html': 'task.js', 'uredi.html': 'editor.js', 'ideja.html': 'ideas.js'
 };
 
 test('the pages are exactly the ones the navigation points at', () => {

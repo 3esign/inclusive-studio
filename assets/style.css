@@ -96,6 +96,48 @@ html.large-text{font-size:20px}html.strong-contrast{--paper:#fff;--white:#fff;--
 .idea{border-top:1px solid var(--line);padding-top:1.2rem}
 .idea h3{margin:.3rem 0 .5rem;font-size:1.2rem}
 
+/* The idea atelier: a denser research wall behind the quiet weekly desk. */
+.atelier-rule{margin:1.4rem 0 2rem;padding:1rem 1.2rem;border-left:4px solid var(--ink);background:var(--white);max-width:88ch}
+.idea-pipeline{list-style:none;padding:0;margin:0 0 3rem;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);background:var(--line);gap:1px}
+.idea-pipeline li{margin:0;padding:1rem;background:var(--white);display:grid;gap:.25rem;min-height:118px;align-content:start}
+.idea-pipeline b{font-size:.78rem;font-variant-numeric:tabular-nums;color:var(--muted)}
+.idea-pipeline span{font-size:1.15rem;font-weight:700}
+.idea-pipeline small{color:var(--muted);line-height:1.4}
+.idea-workbench{margin:0 0 3.5rem;padding:clamp(1.2rem,3vw,2rem);background:var(--ink);color:var(--white)}
+.workbench-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.workbench-head h2{margin:.2rem 0 0;font-size:clamp(1.7rem,4vw,2.7rem)}
+.idea-workbench .eyebrow,.idea-workbench .help{color:#d7dfd7}
+.bridge-track{margin:1.5rem 0;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:.8rem;border-top:1px solid #ffffff55;border-bottom:1px solid #ffffff55;padding:1rem 0}
+.bridge-track span{font-size:1.05rem;font-weight:700}
+.bridge-track span:last-child{text-align:right}
+.bridge-track i{font-style:normal;color:var(--signal);font-size:1.6rem}
+.connection-result{background:var(--white);color:var(--ink);padding:1.2rem 1.4rem;margin:1rem 0}
+.connection-result h3{font-size:1.35rem;margin:.3rem 0 .7rem}
+.connection-question{font-size:1.15rem;max-width:70ch}
+.connection-result dl{display:grid;grid-template-columns:minmax(110px,160px) minmax(0,1fr);gap:.45rem 1rem}
+.connection-result dt{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700}
+.connection-result dd{margin:0 0 .5rem}
+.idea-workbench .connection-result .help{color:var(--muted)}
+.idea-note{margin:1.4rem 0}.idea-note textarea{background:#fff;color:var(--ink)}
+.idea-filters{display:grid;grid-template-columns:minmax(180px,1.6fr) repeat(3,minmax(140px,1fr));gap:.8rem;margin:1.2rem 0 1.7rem;align-items:end}
+.idea-filters label{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.idea-filters input,.idea-filters select{width:100%;min-height:44px}
+.idea-bank-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.idea-card{margin:0;background:var(--white);padding:1.15rem;display:flex;flex-direction:column;min-width:0}
+.idea-card.is-selected{outline:3px solid var(--ink);outline-offset:-3px;background:#fbfdf4}
+.idea-card-meta{display:flex;align-items:center;justify-content:space-between;gap:.6rem;color:var(--muted);font-size:.78rem}
+.idea-card h3{font-size:1.2rem;margin:.8rem 0 .35rem}
+.idea-bridge{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.idea-card details{margin:auto 0 1rem}.idea-card details>div{padding-top:.7rem}
+.idea-pick{width:100%;margin-top:auto;min-height:44px}
+.idea-card.is-selected .idea-pick{background:var(--ink);color:var(--white)}
+.week-contract{margin:0 0 2rem;padding:1.2rem 1.3rem;background:var(--white);border-top:4px solid var(--ink)}
+.week-contract h2{font-size:1.45rem;margin:.2rem 0 .5rem}
+.a3-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:1.2rem 0}
+.a3-strip>div{background:var(--paper);padding:.75rem .85rem;min-width:0}
+.a3-strip dt{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.a3-strip dd{margin:.2rem 0 0;overflow-wrap:anywhere}
+
 .figure-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:1.3rem 0}
 .figure{background:var(--white);padding:.95rem 1rem}
 .figure dt{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
@@ -119,11 +161,17 @@ html.strong-contrast .week-table tr.milestone{background:var(--wash)}
   .link-grid,.idea-grid{grid-template-columns:1fr}
   .theme-grid{grid-template-columns:1fr}
   .figure-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .idea-bank-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .idea-filters{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:600px){
   #course-line{padding:.55rem 1rem;flex-direction:column;gap:.1rem}
   #course-line span+span:before{display:none}
   .figure-grid{grid-template-columns:1fr}
+  .idea-pipeline,.idea-bank-grid,.idea-filters,.a3-strip{grid-template-columns:1fr}
+  .idea-pipeline li{min-height:0}
+  .bridge-track{grid-template-columns:1fr}.bridge-track span:last-child{text-align:left}.bridge-track i{transform:rotate(90deg);justify-self:start}
+  .connection-result dl{grid-template-columns:1fr;gap:.2rem}
 }
 /* A wide table inside a grid track must not push the page wider than the viewport. */
 .document>*,.shell>*,.content-grid>*{min-width:0}

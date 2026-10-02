@@ -82,7 +82,7 @@ function view() {
   const newUrl = `${REPO}/new/main?filename=${encodeURIComponent('data/material/' + weekFile(week.n).split('/').pop())}${prefillable ? '&value=' + encodeURIComponent(json) : ''}`;
   const editUrl = `${REPO}/edit/main/${weekFile(week.n)}`;
   return `<div class="page-top"><div><p class="eyebrow">${tr('Teacher / Material for one session', 'Nastavnik / Građa za jedan čas')}</p><h1>${tr('Prepare the week.', 'Pripremi nedelju.')}</h1><p class="lede">${tr('Write the material here, check it against the site’s own rules, then commit one small file. The working week and the lecture are built from that file and from nothing else.', 'Upiši građu ovde, proveri je po pravilima samog sajta, pa upiši jedan mali fajl. Radna nedelja i predavanje nastaju iz tog fajla i ni iz čega drugog.')}</p></div>
-  <div class="page-meta"><span class="meta-label">${tr('Size', 'Veličina')}</span><span>${stats.blocks} ${tr('entries', 'upisa')} · ${stats.slides} ${tr('slides', 'slajdova')} · ${(json.length / 1024).toFixed(1)} kB</span></div></div>
+  <div class="page-meta"><span class="meta-label">${tr('Size', 'Veličina')}</span><span>${tr('Entries', 'Unosi')}: ${stats.blocks} · ${tr('Slides', 'Slajdovi')}: ${stats.slides} · ${(json.length / 1024).toFixed(1)} kB</span></div></div>
 
   <section class="editor-head">
     <div class="three-col">

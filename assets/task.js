@@ -2,19 +2,19 @@
 // around it — the brief, a constraint drawn from the labs, and an optional phone-sized sketchpad
 // that keeps showing you the real minimum sizes while you draw.
 
-import { $, $$, esc, tr, tx, lang, read, save, announce, download, mount, REPO, arrow } from './core.js';
+import { $, $$, esc, tr, tx, lang, read, save, announce, download, mount, arrow } from './core.js';
 
 /* The constraint cards are the labs, turned into design rules. Drawing one is the point:
    a constraint you chose is a preference, a constraint you were given is a design problem. */
 const CARDS = [
-  { id: 'linear', en: 'The screen must still make sense read in one line, top to bottom, with no layout: that is what a screen reader hands over.', sr: 'Ekran mora da ima smisla i kad se pročita u jednoj liniji, odozgo nadole, bez rasporeda: to je ono što čitač ekrana predaje.', lab: 'citac' },
+  { id: 'linear', en: 'The screen must still make sense read in one line, top to bottom, with no layout: that is what a screen reader hands over.', sr: 'Ekran mora da ima smisla i kada se pročita u jednoj liniji, odozgo nadole, bez rasporeda: to je redosled kojim ga čitač ekrana čita.', lab: 'citac' },
   { id: 'keyboard', en: 'Every action must be reachable without pointing: one switch, one key, or voice.', sr: 'Svaka radnja mora biti dostupna bez pokazivanja: jednim prekidačem, jednim tasterom ili glasom.', lab: 'tastatura' },
-  { id: 'three-presses', en: 'The main action must be reachable in at most three activations.', sr: 'Glavna radnja mora biti dostupna u najviše tri aktivacije.', lab: 'prekidac' },
-  { id: 'no-colour', en: 'No information may be carried by colour alone, and no target smaller than 24 px.', sr: 'Nijedna informacija ne sme da stoji samo na boji, i nijedan cilj nije manji od 24 px.', lab: 'kontrast' },
+  { id: 'three-presses', en: 'The main action must be reachable in at most three activations.', sr: 'Glavna radnja mora biti dostupna u najviše tri aktivacije.', lab: 'prekidač' },
+  { id: 'no-colour', en: 'No information may be carried by colour alone, and no target smaller than 24 px.', sr: 'Nijedna informacija ne sme biti preneta samo bojom, niti dodirna meta sme biti manja od 24 px.', lab: 'kontrast' },
   { id: 'two-channels', en: 'Anything urgent must arrive through two channels at once.', sr: 'Sve što je hitno mora da stigne kroz dva kanala istovremeno.', lab: 'kanali' },
   { id: 'one-hand', en: 'It must work with one hand, in a moving bus, with gloves on.', sr: 'Mora da radi jednom rukom, u autobusu koji se kreće, sa rukavicama.', lab: 'kontrast' },
-  { id: 'no-clock', en: 'Nothing may expire. No countdown, no session that drops the work.', sr: 'Ništa ne sme da istekne. Bez odbrojavanja i bez sesije koja gubi rad.', lab: 'vreme' },
-  { id: 'no-reading', en: 'It must be usable by someone who does not read the language of the interface.', sr: 'Mora da je upotrebljiva nekome ko ne čita jezik interfejsa.', lab: 'vreme' },
+  { id: 'no-clock', en: 'Nothing may expire. No countdown, no session that drops the work.', sr: 'Ništa ne sme da istekne. Bez odbrojavanja i bez sesije čijim istekom nestaje rad.', lab: 'vreme' },
+  { id: 'no-reading', en: 'It must be usable by someone who does not read the language of the interface.', sr: 'Mora moći da je koristi i osoba koja ne čita jezik interfejsa.', lab: 'vreme' },
   { id: 'offline', en: 'It must work with no network, in a basement, at 6 % battery.', sr: 'Mora da radi bez mreže, u podrumu, na 6 % baterije.', lab: 'kanali' },
   { id: 'no-account', en: 'It must work without an account, without a name, without a phone number.', sr: 'Mora da radi bez naloga, bez imena i bez broja telefona.', lab: 'citac' }
 ];
@@ -47,21 +47,21 @@ function brief() {
   return `<section class="brief-sheet">
   <h2>${tr('What is handed in', 'Šta se predaje')}</h2>
   <ol class="deliverables">
-    <li>${tr('One A3, drawn by hand: three screens at real size, about 7 × 15 cm each.', 'Jedan A3, crtan rukom: tri ekrana u pravoj meri, oko 7 × 15 cm svaki.')}</li>
+    <li>${tr('One A3: three screens at real size, about 7 × 15 cm each. Draw by hand, or use an equivalent digital, tactile, collage or assisted medium with the same scale and explanation.', 'Jedan A3: tri ekrana u pravoj meri, oko 7 × 15 cm svaki. Crtaj rukom ili koristi ravnopravan digitalni, taktilni, kolažni ili asistirani medij, uz istu razmeru i obrazloženje.')}</li>
     <li>${tr('A purpose written next to every element on the screen. An element with no purpose is removed.', 'Svrha upisana uz svaki element na ekranu. Element bez svrhe se briše.')}</li>
     <li>${tr('The person and the observed situation — where, when, what you saw.', 'Osoba i posmatrana situacija — gde, kada, šta si video.')}</li>
-    <li>${tr('The constraint card you drew, and how the design obeys it.', 'Kartica ograničenja koju si izvukao i kako je projekat ispunjava.')}</li>
+    <li>${tr('The constraint card you drew, and how the design obeys it.', 'Kartica ograničenja koju si izvukao i način na koji projekat ispunjava to ograničenje.')}</li>
     <li>${tr('One sentence: what the application refuses to do.', 'Jedna rečenica: šta aplikacija odbija da radi.')}</li>
     <li>${tr('Three questions for the person. You are not expected to have the answers today.', 'Tri pitanja za tu osobu. Danas se ne očekuje da znaš odgovore.')}</li>
   </ol>
   <h2>${tr('When it passes', 'Kada prolazi')}</h2>
   <ul class="rule-list">
-    <li>${tr('An invented user fails. Write where and when you observed the situation.', 'Izmišljen korisnik pada. Upiši gde i kada si situaciju posmatrao.')}</li>
+    <li>${tr('An invented user fails. Write where and when you observed the situation.', 'Rad zasnovan na izmišljenom korisniku ne prolazi. Upiši gde i kada si situaciju posmatrao.')}</li>
     <li>${tr('An application that does everything fails. The refusal is part of the design.', 'Aplikacija koja radi sve pada. Odbijanje je deo projekta.')}</li>
-    <li>${tr('A screen that only works with a drawing fails: say it out loud, in one line, and it must still hold.', 'Ekran koji radi samo kao slika pada: izgovori ga naglas, u jednoj liniji, i mora da drži.')}</li>
+    <li>${tr('A screen that only works with a drawing fails: say it out loud, in one line, and it must still hold.', 'Ekran koji funkcioniše samo kao slika ne prolazi: opiši ga naglas kao jedan niz; opis i dalje mora da ima smisla.')}</li>
     <li>${tr('“An app for the blind” fails. One person, one situation, one thing.', '„Aplikacija za slepe” pada. Jedna osoba, jedna situacija, jedna stvar.')}</li>
   </ul>
-  <div class="notice"><p>${tr('Today you design for someone, not with someone — and that is the weakness of day one, not a method. In week two the person is in the room, and the questions you wrote are what you ask.', 'Danas projektuješ za nekoga, a ne sa nekim — i to je slabost prvog dana, ne metod. U drugoj nedelji je osoba u sali, i pitanja koja si napisao su ono što pitaš.')}</p></div>
+  <div class="notice"><p>${tr('Today you design for someone, not with someone — and that is the weakness of day one, not a method. In week two the person is in the room, and the questions you wrote are what you ask.', 'Danas projektuješ za nekoga, a ne sa nekim — i to je slabost prvog dana, ne metod. U drugoj nedelji osoba je u sali i postavljaš pitanja koja si zapisao.')}</p></div>
   </section>`;
 }
 
@@ -78,16 +78,16 @@ function cardBox() {
 }
 
 function notes() {
-  return `<section class="task-notes" aria-labelledby="notes-title"><h2 id="notes-title">${tr('Six lines', 'Šest redova')}</h2>
+  return `<section class="task-notes" aria-labelledby="notes-title"><h2 id="notes-title">${tr('A short account of the task', 'Kratak opis zadatka')}</h2>
   ${FIELDS.map(field => `<div class="lab-field"><label for="field-${field.id}">${esc(tr(field.en, field.sr))}</label><textarea id="field-${field.id}" rows="${field.rows}">${esc(read('task-' + field.id, '') || '')}</textarea></div>`).join('')}
-  <div class="actions"><button type="button" id="save-notes">${tr('Keep in this browser', 'Zadrži u pregledaču')}</button><button type="button" id="export-task">${tr('Download the sheet', 'Preuzmi list')}</button><a class="button secondary" href="${REPO}/issues/new?template=predaja.yml" target="_blank" rel="noopener">${tr('Hand in on the pinboard', 'Predaj na tabli')} ${arrow}</a></div>
+  <div class="actions"><button type="button" id="save-notes">${tr('Keep in this browser', 'Zadrži u pregledaču')}</button><button type="button" id="export-task">${tr('Download the sheet', 'Preuzmi list')}</button><a class="button secondary" href="ideja.html">${tr('Continue in the idea atelier', 'Nastavi u ateljeu ideja')} ${arrow}</a></div>
   <p class="help" id="notes-status" role="status">${tr('Text stays in this browser if it allows storage. Sketches are never stored automatically — download them.', 'Tekst ostaje u ovom pregledaču ako dopušta čuvanje. Skice se nikada ne čuvaju automatski — preuzmi ih.')}</p></section>`;
 }
 
 function pad() {
   return `<section class="sketch" aria-labelledby="sketch-title">
   <h2 id="sketch-title">${tr('Optional: the same three screens on glass', 'Neobavezno: ista tri ekrana na staklu')}</h2>
-  <p class="help">${tr('Paper is the hand-in. This pad exists for one reason: while you draw it keeps showing the real minimum sizes — a 24 px target, a 16 px line of text, and the arc a thumb reaches on a 6 inch phone.', 'Papir je predaja. Ovo platno postoji zbog jedne stvari: dok crtaš, stalno pokazuje stvarne minimume — cilj od 24 px, red teksta od 16 px i luk koji palac dohvata na telefonu od 6 inča.')}</p>
+  <p class="help">${tr('Paper is the hand-in. This pad exists for one reason: while you draw it keeps showing the real minimum sizes — a 24 px target, a 16 px line of text, and the arc a thumb reaches on a 6 inch phone.', 'Papir je predaja. Ovo platno postoji zbog jedne stvari: dok crtaš, stalno pokazuje propisane minimalne mere — dodirnu metu od 24 px, red teksta od 16 px i luk koji palac dohvata na telefonu od 6 inča.')}</p>
   <div class="sketch-layout">
     <div class="phone-wrap">
       <div class="phone"><canvas id="pad" width="${PHONE.w}" height="${PHONE.h}" aria-label="${tr('Drawing surface for screen', 'Površina za crtanje ekrana')} ${state.slot}"></canvas><div class="phone-overlay" id="overlay" aria-hidden="true"></div></div>
@@ -97,20 +97,21 @@ function pad() {
       <p class="help" id="slot-name">${esc(tr(SCREENS[state.slot - 1].en, SCREENS[state.slot - 1].sr))}</p></fieldset>
       <fieldset><legend>${tr('Tool', 'Alat')}</legend><div class="role-choice"><button type="button" data-tool="pen" aria-pressed="${state.tool === 'pen'}">${tr('Pen', 'Olovka')}</button><button type="button" data-tool="eraser" aria-pressed="${state.tool === 'eraser'}">${tr('Eraser', 'Gumica')}</button></div></fieldset>
       <fieldset><legend>${tr('Guides', 'Pomoćne linije')}</legend>
-        <label class="check-line"><input type="checkbox" id="g-targets" ${state.overlay.targets ? 'checked' : ''}> ${tr('24 px targets', 'Ciljevi 24 px')}</label>
+        <label class="check-line"><input type="checkbox" id="g-targets" ${state.overlay.targets ? 'checked' : ''}> ${tr('24 px targets', 'Dodirne mete 24 px')}</label>
         <label class="check-line"><input type="checkbox" id="g-text" ${state.overlay.text ? 'checked' : ''}> ${tr('16 px text lines', 'Redovi teksta 16 px')}</label>
         <label class="check-line"><input type="checkbox" id="g-thumb" ${state.overlay.thumb ? 'checked' : ''}> ${tr('Thumb reach', 'Dohvat palca')}</label>
       </fieldset>
       <div class="actions"><button type="button" id="pad-clear">${tr('Clear this screen', 'Očisti ekran')}</button><button type="button" id="pad-save">${tr('Download PNG', 'Preuzmi PNG')}</button><button type="button" id="pad-sheet">${tr('Download all three', 'Preuzmi sva tri')}</button></div>
-      <p class="help">${tr('Drawing needs a pointer or a finger. If you cannot draw here, the paper route and the six written lines carry the same weight — that is the rule for the hand-in too.', 'Crtanje traži pokazivač ili prst. Ako ovde ne možeš da crtaš, put preko papira i šest upisanih redova vrede isto — to pravilo važi i za predaju.')}</p>
+      <p class="help">${tr('Drawing needs a pointer or a finger. If you cannot draw here, the paper route and the six written lines carry the same weight — that is the rule for the hand-in too.', 'Crtanje traži pokazivač ili prst. Ako ovde ne možeš da crtaš, rad na papiru i tekstualni opis vrede isto — to pravilo važi i za predaju.')}</p>
     </div>
   </div></section>`;
 }
 
 function render() {
-  $('#main').innerHTML = `<div class="page-top"><div><p class="eyebrow">${tr('Week 1 / Day one / By hand', 'Nedelja 1 / Prvi dan / Rukom')}</p><h1>${tr('An application<br>for one person.', 'Aplikacija<br>za jednu osobu.')}</h1><p class="lede">${tr('Not an app for a group, not an app for a diagnosis. One person you have watched in one situation, and the first three screens of something that does one thing for them.', 'Ne aplikacija za grupu, ne aplikacija za dijagnozu. Jedna osoba koju si gledao u jednoj situaciji, i prva tri ekrana nečega što za nju radi jednu stvar.')}</p>
+  $('#main').innerHTML = `<div class="page-top"><div><p class="eyebrow">${tr('Week 1 / Day one / By hand', 'Nedelja 1 / Prvi dan / Rukom')}</p><h1>${tr('An application<br>for one person.', 'Aplikacija<br>za jednu osobu.')}</h1><p class="lede">${tr('Not an app for a group, not an app for a diagnosis. One person you have watched in one situation, and the first three screens of something that does one thing for them.', 'Ne aplikacija za grupu, ne aplikacija za dijagnozu. Jedna osoba čiju si situaciju posmatrao i prva tri ekrana aplikacije koja za nju radi jednu stvar.')}</p>
   <div class="actions"><a class="button secondary" href="index.html">${tr('Back to the week', 'Natrag na nedelju')}</a><a class="button secondary" href="vezbe.html">${tr('All exercises', 'Sve vežbe')}</a></div></div>
   <div class="page-meta"><span class="meta-label">${tr('Time', 'Vreme')}</span><span>${tr('90 minutes in the studio', '90 minuta u studiju')}</span><span class="meta-label">${tr('Medium', 'Medij')}</span><span>${tr('pencil, A3', 'olovka, A3')}</span></div></div>
+  <div class="atelier-rule"><strong>${tr('The course record is the A3 on paper.', 'Evidencija na predmetu je A3 na papiru.')}</strong> ${tr('Write your name, index and week on it; the teacher reviews and signs it at the end of class. This site does not receive or grade the sheet.', 'Upiši ime, indeks i nedelju; nastavnik ga pregleda i potpisuje na kraju časa. Sajt ne prima niti ocenjuje list.')}</div>
   ${brief()}${cardBox()}${notes()}${pad()}`;
   bind();
 }

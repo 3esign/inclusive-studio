@@ -1,6 +1,6 @@
-name: "Project work / Projektantski rad"
-description: "Share evidence from a project stage / Podeli dokaze iz faze projekta"
-title: "[Stage / Faza] "
+name: "Public project reference / Javna referenca projekta"
+description: "Optionally share approved evidence from a project stage / Neobavezno podeli odobrene dokaze iz faze projekta"
+title: "[Public reference / Javna referenca] "
 labels: ["submission"]
 body:
   - type: markdown

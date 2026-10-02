@@ -23,7 +23,7 @@
       "kind": "text",
       "text": {
         "en": "This session is a draft. The structure is fixed: each principle gets one piece of evidence and one verdict — met, partly met, failed. At least two principles must fail; if nothing failed, you reviewed the brochure and not the building.",
-        "sr": "Ovaj čas je nacrt. Struktura je određena: svaki princip dobija jedan dokaz i jednu ocenu — ispunjen, delimično, pao. Bar dva principa moraju da padnu; ako ništa nije palo, ocenio si prospekt, a ne zgradu."
+        "sr": "Ovaj čas je nacrt. Struktura je određena: svaki princip dobija jedan dokaz i jednu ocenu — ispunjen, delimično ispunjen ili nije ispunjen. Bar dva principa ne mogu biti potpuno ispunjena; ako nisi pronašao nijedan nedostatak, ocenio si prospekt, a ne zgradu."
       }
     },
     { "kind": "exercise", "ref": "seven-principles-audit" },

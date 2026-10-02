@@ -18,7 +18,7 @@
   "blocks": [
     {
       "kind": "heading",
-      "text": { "en": "A door is 78 cm wide. Who is disabled — the person or the door?", "sr": "Vrata su široka 78 cm. Ko je ovde nesposoban — osoba ili vrata?" }
+      "text": { "en": "A door is 78 cm wide. Who is disabled — the person or the door?", "sr": "Vrata su široka 78 cm. Gde nastaje prepreka — u osobi ili u vratima?" }
     },
     {
       "kind": "text",
@@ -47,7 +47,7 @@
       "kind": "text",
       "text": {
         "en": "The same toolkit counts one need across three states: permanent, temporary and situational. For one-handed use it reports roughly 26.000 arm amputations a year, 13 million wrist injuries and 8 million people holding a baby. Treat those figures as the toolkit's own, not as measured truth — but keep the structure: the number of people who need a detail is always larger than the number of people who are registered as disabled.",
-        "sr": "Isti priručnik računa jednu potrebu kroz tri stanja: trajno, privremeno i situaciono. Za rad jednom rukom navodi oko 26.000 amputacija ruke godišnje, 13 miliona povreda ručnog zgloba i 8 miliona ljudi koji drže bebu. Te brojke uzmi kao njihov navod, ne kao izmerenu istinu — ali zadrži strukturu: broj ljudi kojima detalj treba uvek je veći od broja ljudi koji su upisani kao osobe sa invaliditetom."
+        "sr": "Isti priručnik računa jednu potrebu kroz tri stanja: trajno, privremeno i situaciono. Za rad jednom rukom navodi oko 26.000 amputacija ruke godišnje, 13 miliona povreda ručnog zgloba i 8 miliona ljudi koji drže bebu. Te brojke uzmi kao navod tog priručnika, ne kao izmerenu istinu — ali zadrži strukturu: broj ljudi kojima detalj treba uvek je veći od broja ljudi koji su upisani kao osobe sa invaliditetom."
       }
     },
     {
@@ -104,7 +104,7 @@
       "kind": "text",
       "text": {
         "en": "A 5 % ramp for 22,5 m of height is 450 m of walking. At the regulatory exception of 8,3 % it is 271 m, plus landings. The plot is roughly 129 × 131 m. The ramp does not fit, and that is the task: you are not designing a ramp, you are designing how the height is overcome so that everyone uses the same route.",
-        "sr": "Rampa od 5 % za 22,5 m visine je 450 m hoda. Na graničnih 8,3 % to je 271 m, plus odmorišta. Parcela je oko 129 × 131 m. Rampa ne staje, i to je zadatak: ne projektujete rampu nego način da se visina savlada tako da isti put koriste svi."
+        "sr": "Rampa nagiba 5 % za visinsku razliku od 22,5 m zahteva 450 m putanje. Pri graničnom nagibu od 8,3 % zahteva 271 m, plus odmorišta. Parcela je oko 129 × 131 m. Rampa ne staje, i to je zadatak: ne projektujete rampu nego način savladavanja visine tako da isti put koriste svi."
       }
     },
     {
@@ -115,7 +115,7 @@
       "kind": "text",
       "text": {
         "en": "Disability simulation is the oldest exercise in this field and the one with the worst results. After simulations people report more empathy but also more pity and discomfort, they judge themselves less capable, and they are not more willing to work with disabled people on an accessibility project. What does work is measured: structured exercises with the actual tools, with a debrief — and direct work with disabled people as coauthors and testers. So: in this studio we test tools and interfaces, not people's lives.",
-        "sr": "Simulacija invaliditeta je najstarija vežba u ovoj oblasti i ona sa najgorim rezultatima. Posle simulacija ljudi prijavljuju više empatije, ali i više sažaljenja i nelagode, sebe procenjuju manje sposobnim, i nisu spremniji da sa osobama sa invaliditetom rade na projektu pristupačnosti. Ono što radi je izmereno: strukturirane vežbe sa stvarnim alatima, uz debrif — i direktan rad sa osobama sa invaliditetom kao koautorima i proveravačima. Zato: u ovom studiju proveravamo alate i interfejse, ne tuđe živote."
+        "sr": "Simulacija invaliditeta je najstarija vežba u ovoj oblasti i ona sa najgorim rezultatima. Posle simulacija ljudi prijavljuju više empatije, ali i više sažaljenja i nelagode, sebe procenjuju manje sposobnim i nisu spremniji da sa osobama sa invaliditetom rade na projektu pristupačnosti. Rezultate daju strukturirane vežbe sa stvarnim alatima i zajedničkom analizom posle vežbe — kao i direktan rad sa osobama sa invaliditetom kao koautorima i proveravačima. Zato u ovom studiju proveravamo alate i interfejse, ne tuđe živote."
       }
     },
     {

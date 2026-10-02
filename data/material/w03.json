@@ -9,7 +9,7 @@
   "dateStatus": "proposed",
   "aim": {
     "en": "You can produce a measurement table in which every row names its instrument and its uncertainty, and you can say which rows break the Pravilnik.",
-    "sr": "Umeš da napraviš tabelu mera u kojoj svaki red navodi instrument i nesigurnost, i umeš da kažeš koji redovi ruše Pravilnik."
+    "sr": "Umeš da napraviš tabelu mera u kojoj svaki red navodi instrument i nesigurnost, i umeš da kažeš koje izmerene vrednosti ne ispunjavaju zahteve Pravilnika."
   },
   "bring": [
     { "en": "A tape measure, a spirit level or a phone inclinometer, and a printed plan of the floor you measure.", "sr": "Metar, libela ili inklinometar na telefonu i štampana osnova sprata koji meriš." }
@@ -23,7 +23,7 @@
       "kind": "text",
       "text": {
         "en": "A draft. We measure doors, corridors, thresholds, slopes, handle and switch heights, the accessible toilet and the lift car. Every row carries the instrument and its resolution. A value without an uncertainty is not a measurement, it is an impression.",
-        "sr": "Nacrt. Merimo vrata, hodnike, pragove, nagibe, visine kvaka i prekidača, pristupačni toalet i kabinu lifta. Svaki red nosi instrument i njegovu rezoluciju. Vrednost bez nesigurnosti nije mera nego utisak."
+        "sr": "Nacrt. Merimo vrata, hodnike, pragove, nagibe, visine kvaka i prekidača, pristupačni toalet i kabinu lifta. Svaki red navodi instrument i njegovu rezoluciju. Vrednost bez nesigurnosti nije mera nego utisak."
       }
     },
     { "kind": "exercise", "ref": "measure-your-faculty" },

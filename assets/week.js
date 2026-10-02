@@ -1,7 +1,7 @@
 // The main screen: the week the room is working on, and the material the teacher put in it.
 // It shows what is in data/material/ and nothing else. No week, no invented week.
 
-import { $, $$, esc, tr, tx, lang, loadJSON, mount, announce, link, arrow, read, save } from './core.js';
+import { $, $$, esc, tr, tx, lang, number, loadJSON, mount, announce, link, arrow, read, save } from './core.js';
 import { MATERIAL_INDEX, weekFile, validateIndex, validateWeek, currentWeek, weekStats } from './material.js';
 import { resolveRefs, renderBlocks, weekLine } from './blocks.js';
 
@@ -42,29 +42,32 @@ function picker() {
   const entries = index.weeks.slice().sort((a, b) => a.n - b.n).filter(entry => entry.state === 'published' || showDrafts);
   const current = state.week ? state.week.n : null;
   return `<nav class="week-picker" aria-label="${tr('Weeks', 'Nedelje')}"><ol>${entries.map(entry => `<li><a href="index.html?w=${entry.n}${showDrafts ? '&draft=1' : ''}"${entry.n === current ? ' aria-current="page"' : ''}><span>${String(entry.n).padStart(2, '0')}</span> ${esc(tx(entry.title))}${entry.state === 'draft' ? ` <em>${tr('draft', 'nacrt')}</em>` : ''}</a></li>`).join('')}</ol>
-  ${showDrafts ? '' : `<p class="help">${link('index.html?draft=1', tr('Show the weeks still in draft', 'Prikaži nedelje koje su još nacrt'))}</p>`}</nav>`;
+  ${showDrafts ? '' : `<p class="help">${link('index.html?draft=1', tr('Show the weeks still in draft', 'Prikaži nedelje koje su još u nacrtu'))}</p>`}</nav>`;
 }
 
 function readyView() {
   const week = state.week;
   const stats = weekStats(week);
   const bring = Array.isArray(week.bring) ? week.bring : [];
+  const taskBlock = week.blocks.find(block => block.kind === 'exercise');
+  const taskHref = taskBlock?.ref === 'app-for-one' ? 'zadatak.html' : (taskBlock && state.refs.exercise[taskBlock.ref]?.href) || 'vezbe.html';
   return `<div class="page-top week-top"><div>
     <p class="eyebrow">${esc(weekLine(week))}</p>
     <h1>${esc(tx(week.title))}</h1>
     ${week.aim ? `<p class="lede">${esc(tx(week.aim))}</p>` : ''}
-    <div class="actions"><a class="button" href="predavanje.html?w=${week.n}">${tr('Open as a lecture', 'Otvori kao predavanje')} →</a><a class="button secondary" href="zadatak.html">${tr('This week’s task', 'Zadatak nedelje')}</a><a class="button secondary" href="laboratorija.html">${tr('Laboratory', 'Laboratorija')}</a></div>
+    <div class="actions"><a class="button" href="${esc(taskHref)}">${tr('This week’s task', 'Zadatak nedelje')} →</a><a class="button secondary" href="predavanje.html?w=${week.n}">${tr('Open as a lecture', 'Otvori kao predavanje')}</a><a class="button secondary" href="laboratorija.html">${tr('Laboratory', 'Laboratorija')}</a></div>
   </div><div class="page-meta">
-    <span class="meta-label">${tr('Material', 'Građa')}</span><span>${stats.blocks} ${tr('entries', 'upisa')} · ${stats.slides} ${tr('slides', 'slajdova')} · ${stats.words} ${tr('words', 'reči')}</span>
+    <span class="meta-label">${tr('Material', 'Građa')}</span><span>${tr('Entries', 'Unosi')}: ${stats.blocks} · ${tr('Slides', 'Slajdovi')}: ${stats.slides} · ${tr('Words', 'Reči')}: ${stats.words}</span>
     <span class="meta-label">${tr('Updated', 'Dopunjeno')}</span><span>${esc(week.updated || '—')}</span>
-    ${week.state === 'draft' ? `<span class="tag">${tr('draft — not yet taught', 'nacrt — još nije održano')}</span>` : ''}
+    ${week.state === 'draft' ? `<span class="tag">${tr('draft — not yet taught', 'nacrt — čas još nije održan')}</span>` : ''}
   </div></div>
+  <section class="week-contract" aria-labelledby="week-contract-title"><div><p class="eyebrow">${tr('The weekly record', 'Nedeljni zapis')}</p><h2 id="week-contract-title">${tr('One week. One A3. One conversation.', 'Jedna nedelja. Jedan A3. Jedan razgovor.')}</h2><p>${tr('Bring one A3 that gathers the week’s information, sketches, drawings, images, renders and decisions. The medium may vary; the reasoning must remain visible.', 'Donesi jedan A3 koji sabira informacije, skice, crteže, slike, rendere i odluke te nedelje. Medij može da se menja; tok razmišljanja mora ostati vidljiv.')}</p></div><dl class="a3-strip"><div><dt>${tr('Student', 'Student')}</dt><dd>${tr('name and index', 'ime i indeks')}</dd></div><div><dt>${tr('Week', 'Nedelja')}</dt><dd>${number(week.n)}</dd></div><div><dt>${tr('Review', 'Pregled')}</dt><dd>${tr('conversation in class', 'razgovor na času')}</dd></div><div><dt>${tr('Signature', 'Potpis')}</dt><dd>${tr('on the paper, after review', 'na papiru, posle pregleda')}</dd></div></dl><p class="help">${tr('The signature records that the work was reviewed in class. The course rules determine how it counts toward assessment.', 'Potpis beleži da je rad pregledan na času. Pravila predmeta određuju kako se to vrednuje.')}</p></section>
   ${bring.length ? `<section class="bring"><h2>${tr('Bring with you', 'Donesi sa sobom')}</h2><ul>${bring.map(item => `<li>${esc(tx(item))}</li>`).join('')}</ul></section>` : ''}
   <div class="material">${renderBlocks(week.blocks, state.refs)}</div>
   ${picker()}
   <section class="week-foot"><h2>${tr('Everything else is behind this page', 'Sve ostalo je iza ove strane')}</h2>
   <ul class="mini-links">
-    ${[['predmet.html', tr('The course, the record and the teacher', 'Predmet, zapisnik i nastavnik')], ['program.html', tr('Calendar of meetings', 'Kalendar susreta')], ['standard.html', tr('The semester project', 'Projekat semestra')], ['vezbe.html', tr('All exercises', 'Sve vežbe')], ['resources.html', tr('Library and sources', 'Biblioteka i izvori')], ['ucestvuj.html', tr('Pinboard — ideas and hand-ins', 'Tabla — ideje i predaje')], ['studio.html', tr('Project stages', 'Faze projekta')], ['uredi.html', tr('Prepare material for a week', 'Pripremi gradivo za nedelju')]]
+    ${[['predmet.html', tr('The course, the record and the teacher', 'Predmet, zapisnik i nastavnik')], ['program.html', tr('Calendar of meetings', 'Kalendar susreta')], ['standard.html', tr('The semester project', 'Projekat semestra')], ['vezbe.html', tr('All exercises', 'Sve vežbe')], ['resources.html', tr('Library and sources', 'Biblioteka i izvori')], ['ideja.html', tr('Idea atelier — research and play', 'Atelje ideja — istraživanje i igra')], ['ucestvuj.html', tr('Optional public board — not a hand-in', 'Neobavezna javna tabla — nije predaja')], ['studio.html', tr('Project stages', 'Faze projekta')], ['uredi.html', tr('Teacher: prepare a week', 'Nastavnik: pripremi nedelju')]]
       .map(([href, label]) => `<li><a class="mini-link" href="${href}">${esc(label)} <span aria-hidden="true">→</span></a></li>`).join('')}
   </ul></section>`;
 }

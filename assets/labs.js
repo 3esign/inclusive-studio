@@ -2,7 +2,7 @@
 // no interval, no animation frame and no canvas survives a lab you have left.
 // Every lab produces a number and then asks for a design decision. The number is not the point.
 
-import { $, $$, esc, tr, tx, lang, read, save, announce, download, mount, REPO, link, arrow } from './core.js';
+import { $, $$, esc, tr, tx, lang, read, save, announce, download, mount, link, arrow } from './core.js';
 import {
   labs, labById, contrastRatio, contrastVerdict, targetVerdict, speak, stepsTo, bestRoute,
   auditNodes, NAV_MODES, scanCost, CHANNELS, PROFILES, coverage, analyzePlan, analyzeRamp,
@@ -22,7 +22,7 @@ function recordResult(id, measure) {
 }
 
 /* ---------------- shared pieces ---------------- */
-const framing = () => `<div class="notice lab-framing"><p><strong>${tr('What this is.', 'Šta je ovo.')}</strong> ${tr('A lab tests a tool, an interface or a geometry — never a person. Nobody is blindfolded here. After disability simulations people report more empathy but also more pity and discomfort, and they are not more willing to work with disabled people on an accessibility project (Nario-Redmond et al., 2017). What measurably helps is a structured exercise with the real tool plus a debrief; what actually changes a project is a disabled coauthor. The lab is the warm-up. The coauthor is the measure.', 'Ogled proverava alat, interfejs ili geometriju — nikad osobu. Ovde nikome ne stavljamo povez na oči. Posle simulacija invaliditeta ljudi prijavljuju više empatije, ali i više sažaljenja i nelagode, i nisu spremniji da sa osobama sa invaliditetom rade na projektu pristupačnosti (Nario-Redmond i dr., 2017). Izmereno pomaže strukturirana vežba sa stvarnim alatom i debrif; projekat stvarno menja koautor sa invaliditetom. Ogled je zagrevanje. Koautor je mera.')}</p></div>`;
+const framing = () => `<div class="notice lab-framing"><p><strong>${tr('What this is.', 'Šta je ovo.')}</strong> ${tr('A lab tests a tool, an interface or a geometry — never a person. Nobody is blindfolded here. After disability simulations people report more empathy but also more pity and discomfort, and they are not more willing to work with disabled people on an accessibility project (Nario-Redmond et al., 2017). What measurably helps is a structured exercise with the real tool plus a debrief; what actually changes a project is a disabled coauthor. The lab is the warm-up. The coauthor is the measure.', 'Ogled proverava alat, interfejs ili geometriju — nikad osobu. Ovde nikome ne stavljamo povez na oči. Posle simulacija invaliditeta ljudi prijavljuju više empatije, ali i više sažaljenja i nelagode, i nisu spremniji da sa osobama sa invaliditetom rade na projektu pristupačnosti (Nario-Redmond i dr., 2017). Dokazi pokazuju da pomaže strukturirana vežba sa stvarnim alatom i zajedničkom analizom posle vežbe; projekat stvarno menja koautor sa invaliditetom. Ogled je zagrevanje. Koautor je mera.')}</p></div>`;
 
 const decisionBox = id => {
   const stored = read('lab-decision-' + id, '') || '';
@@ -31,7 +31,7 @@ const decisionBox = id => {
   <p class="help">${tr('A number without a decision changes nothing. Write what you will do differently in your project because of this measurement.', 'Broj bez odluke ništa ne menja. Napiši šta ćeš u svom projektu uraditi drugačije zbog ove mere.')}</p>
   <label for="decision-input-${id}">${tr('In my project I will…', 'U svom projektu ću…')}</label>
   <textarea id="decision-input-${id}" rows="3">${esc(stored)}</textarea>
-  <div class="actions"><button type="button" id="save-decision">${tr('Keep in this browser', 'Zadrži u pregledaču')}</button><button type="button" id="export-lab">${tr('Download the record', 'Preuzmi zapis')}</button><a class="button secondary" id="to-board" href="${REPO}/issues/new?template=ideja.yml" target="_blank" rel="noopener">${tr('Take it to the pinboard', 'Iznesi na tablu')} ${arrow}</a></div>
+  <div class="actions"><button type="button" id="save-decision">${tr('Keep in this browser', 'Zadrži u pregledaču')}</button><button type="button" id="export-lab">${tr('Download the record', 'Preuzmi zapis')}</button><a class="button secondary" id="to-board" href="ideja.html">${tr('Connect it in the idea atelier', 'Poveži u ateljeu ideja')} ${arrow}</a></div>
   <p class="help" id="decision-status" role="status"></p></section>`;
 };
 
@@ -66,7 +66,7 @@ const DOC_GOOD = [
   { role: 'landmark', name: { en: 'Main content', sr: 'Glavni sadržaj' } },
   { role: 'heading', level: 1, name: { en: 'Enrolment of the winter semester', sr: 'Upis zimskog semestra' } },
   { role: 'text', name: { en: 'Enrolment is done at the student office, ground floor.', sr: 'Upis se obavlja u studentskoj službi, u prizemlju.' } },
-  { role: 'image', name: { en: 'Floor plan: the student office is the second door on the right of the entrance hall.', sr: 'Osnova: studentska služba je kroz druga vrata desno od ulaznog hola.' } },
+  { role: 'image', name: { en: 'Floor plan: the student office is the second door on the right of the entrance hall.', sr: 'Osnova: studentska služba se nalazi iza drugih vrata s desne strane ulaznog hola.' } },
   { role: 'heading', level: 2, name: { en: 'Deadline', sr: 'Rok' } },
   { role: 'text', name: { en: 'Documents are submitted until 15 October, 14:00.', sr: 'Dokumenti se predaju do 15. oktobra, 14.00.' } },
   { role: 'heading', level: 2, name: { en: 'What you bring', sr: 'Šta donosiš' } },
@@ -137,7 +137,7 @@ const readerLab = {
       if (next >= list.length) { announce(tr('End of the document.', 'Kraj dokumenta.')); return; }
       s.cursor = next; s.steps++;
       if (s.cursor === this.target[s.version]) {
-        recordResult('citac', `${s.version}: ${s.steps} ${tr('steps', 'koraka')}`);
+        recordResult('citac', `${s.version}: ${tr('Steps', 'Broj koraka')}: ${s.steps}`);
         announce(tr('Found. Steps: ', 'Nađeno. Koraka: ') + s.steps);
       }
       rerender();
@@ -156,7 +156,7 @@ const matches = (node, mode) => (mode === 'heading' ? node.role === 'heading' : 
 function problemText(problem) {
   const map = {
     'image-no-alt': tr('An image with no description — the machine reads the file name.', 'Slika bez opisa — mašina čita ime fajla.'),
-    'clickable-not-a-button': tr('Something clickable that is not a button — the keyboard cannot reach it.', 'Nešto klikabilno što nije taster — tastatura ne može do njega.'),
+    'clickable-not-a-button': tr('Something clickable that is not a button — the keyboard cannot reach it.', 'Element koji se može aktivirati, ali nije taster — tastatura ne može do njega.'),
     'control-unnamed': tr('A control with no name.', 'Kontrola bez imena.'),
     'no-headings': tr('No headings: the only way through is element by element.', 'Nema naslova: jedini put je element po element.'),
     'no-landmarks': tr('No regions: there is no way to jump to the content.', 'Nema oblasti: nema skoka na sadržaj.')
@@ -185,7 +185,7 @@ const keyboardLab = {
   render() {
     const s = this.state;
     return `<div class="lab-grid"><div class="lab-main">
-    <p class="lab-question">${tr('Fill the three fields and send — without touching the mouse or the screen. Tab, Shift+Tab, Space, Enter. Escape always gets you out.', 'Popuni tri polja i pošalji — bez miša i bez ekrana na dodir. Tab, Shift+Tab, Space, Enter. Escape te uvek izvodi.')}</p>
+    <p class="lab-question">${tr('Fill the three fields and send — without touching the mouse or the screen. Tab, Shift+Tab, Space, Enter. Escape always gets you out.', 'Popuni tri polja i pošalji obrazac — bez upotrebe miša i ekrana osetljivog na dodir. Tab, Shift+Tab, Space, Enter. Escape te uvek izvodi.')}</p>
     <div class="role-choice"><button type="button" data-trap="1" aria-pressed="${s.trap}">${tr('The usual version', 'Uobičajena verzija')}</button><button type="button" data-trap="0" aria-pressed="${!s.trap}">${tr('The corrected version', 'Ispravljena verzija')}</button></div>
     <form class="lab-form ${s.trap ? 'trap' : 'clean'}" id="kbd-form" novalidate>
       <div class="lab-field"><label for="kbd-name">${tr('Name', 'Ime')}</label><input id="kbd-name" autocomplete="off"></div>
@@ -245,7 +245,7 @@ const MENU = [
 const TASKS = ['help', 'exit', 'wc'];
 
 const switchLab = {
-  id: 'prekidac',
+  id: 'prekidač',
   state: { order: MENU.map(item => item.id), group: false, rate: 1200, cursor: 0, activations: 0, taskIndex: 0, running: false, log: [] },
   render() {
     const s = this.state;
@@ -262,9 +262,9 @@ const switchLab = {
     ${liveBox('scan-readout', tr('Measurement', 'Mera'))}
     </div><div class="lab-side">
     <div class="lab-field"><label for="scan-rate">${tr('Scan interval', 'Interval skeniranja')}: <output id="scan-rate-out">${(s.rate / 1000).toFixed(1)} s</output></label><input id="scan-rate" type="range" min="600" max="3000" step="200" value="${s.rate}"></div>
-    <h3>${tr('The price of the order', 'Cena reda')}</h3>
+    <h3>${tr('The price of the order', 'Cena redosleda')}</h3>
     <p>${tr('For these three tasks:', 'Za ova tri zadatka:')}<br>${tr('linear scan', 'linearno skeniranje')}: <strong>${linear}</strong><br>${tr('scan by groups of four', 'skeniranje po grupama od četiri')}: <strong>${grouped}</strong></p>
-    <p class="help">${tr('Move the items that are needed most to the top and the number falls. Ordering a menu is a design decision with a price in presses.', 'Pomeri gore ono što se najčešće traži i broj pada. Red u meniju je projektantska odluka sa cenom u pritiscima.')}</p>
+    <p class="help">${tr('Move the items that are needed most to the top and the number falls. Ordering a menu is a design decision with a price in presses.', 'Pomeri gore ono što se najčešće traži i broj pada. Redosled stavki u meniju je projektantska odluka čija se cena meri brojem pritisaka.')}</p>
     <ul class="reorder">${s.order.map((id, index) => `<li>${esc(tx(MENU.find(m => m.id === id)))} <button type="button" data-up="${index}" ${index === 0 ? 'disabled' : ''} aria-label="${tr('Move up', 'Pomeri gore')}: ${esc(tx(MENU.find(m => m.id === id)))}">↑</button></li>`).join('')}</ul>
     </div></div>`;
   },
@@ -290,7 +290,7 @@ const switchLab = {
         announce(tr('Correct.', 'Tačno.') + ' ' + s.taskIndex + '/' + TASKS.length);
         if (s.taskIndex === TASKS.length) {
           stop();
-          recordResult('prekidac', `${s.activations} ${tr('activations', 'aktivacija')}, ${(s.rate / 1000).toFixed(1)} s`);
+          recordResult('prekidač', `${tr('Activations', 'Broj aktivacija')}: ${s.activations}, ${(s.rate / 1000).toFixed(1)} s`);
         }
       } else announce(tr('That was: ', 'To je bilo: ') + tx(MENU.find(m => m.id === chosen)));
       paint();
@@ -313,7 +313,7 @@ const switchLab = {
     if (s.running) start();
     return () => { stop(); document.removeEventListener('keydown', onKey); };
   },
-  measure() { const stored = results().prekidac; return stored ? stored.measure : ''; }
+  measure() { const stored = results().prekidač; return stored ? stored.measure : ''; }
 };
 
 /* ---------------- 4. Contrast, target, reflow ---------------- */
@@ -329,24 +329,24 @@ const contrastLab = {
       ${field('bg', tr('Background', 'Podloga'), `type="text" value="${esc(s.bg)}" inputmode="text" spellcheck="false"`)}
     </div>
     <div class="actions"><input type="color" id="fg-pick" value="${esc(s.fg)}" aria-label="${tr('Pick the text colour', 'Izaberi boju teksta')}"><input type="color" id="bg-pick" value="${esc(s.bg)}" aria-label="${tr('Pick the background colour', 'Izaberi boju podloge')}"></div>
-    <div class="contrast-sample" id="contrast-sample"><p>${tr('Normal text, 16 px', 'Običan tekst, 16 px')}</p><p class="big">${tr('Large text, 24 px bold', 'Veliki tekst, 24 px bold')}</p></div>
+    <div class="contrast-sample" id="contrast-sample"><p>${tr('Normal text, 16 px', 'Običan tekst, 16 px')}</p><p class="big">${tr('Large text, 24 px bold', 'Veliki tekst, 24 px, podebljan')}</p></div>
     ${liveBox('contrast-readout', tr('Contrast ratio', 'Odnos kontrasta'))}
-    <h3>${tr('Target', 'Cilj')}</h3>
+    <h3>${tr('Target', 'Dodirna meta')}</h3>
     <div class="three-col">
       ${field('tw', tr('Width (px)', 'Širina (px)'), `type="number" min="4" max="200" value="${s.w}"`)}
       ${field('th', tr('Height (px)', 'Visina (px)'), `type="number" min="4" max="200" value="${s.h}"`)}
       ${field('tgap', tr('Spacing around (px)', 'Razmak oko (px)'), `type="number" min="0" max="60" value="${s.gap}"`)}
     </div>
     <div class="target-sample" id="target-sample"><button type="button">A</button><button type="button">B</button><button type="button">C</button></div>
-    ${liveBox('target-readout', tr('Target size', 'Veličina cilja'))}
+    ${liveBox('target-readout', tr('Target size', 'Veličina dodirne mete'))}
     <h3>${tr('Reflow', 'Prelom')}</h3>
     <div class="lab-field"><label for="zoom">${tr('Text size', 'Veličina teksta')}: <output id="zoom-out">${s.zoom} %</output></label><input id="zoom" type="range" min="100" max="400" step="50" value="${s.zoom}"></div>
     <div class="reflow-frame" id="reflow-frame"><div class="reflow-inner"><h4>${tr('Enrolment', 'Upis')}</h4><p>${tr('Documents are submitted until 15 October at 14:00, student office, ground floor.', 'Dokumenti se predaju do 15. oktobra u 14.00, studentska služba, prizemlje.')}</p><table><tr><th>${tr('Programme', 'Program')}</th><th>${tr('Semester', 'Semestar')}</th><th>ESPB</th></tr><tr><td>22.OA0068</td><td>5</td><td>5</td></tr><tr><td>OAIPUD</td><td>6</td><td>4</td></tr></table></div></div>
-    ${liveBox('reflow-readout', tr('Horizontal scroll', 'Horizontalni skrol'))}
+    ${liveBox('reflow-readout', tr('Horizontal scroll', 'Horizontalno pomeranje'))}
     </div><div class="lab-side">
     <h3>${tr('The thresholds', 'Granice')}</h3>
-    <ul><li>1.4.3 — ${tr('text 4,5:1; large text (24 px, or 19 px bold) 3:1', 'tekst 4,5:1; veliki tekst (24 px, ili 19 px bold) 3:1')}</li><li>1.4.11 — ${tr('icons, borders, states 3:1', 'ikone, obrisi, stanja 3:1')}</li><li>2.5.8 — ${tr('target 24 × 24 px, or smaller with 24 px of spacing', 'cilj 24 × 24 px, ili manji sa 24 px razmaka')}</li><li>2.5.5 — ${tr('44 × 44 px is the enhanced level', '44 × 44 px je pooštreni nivo')}</li><li>1.4.10 — ${tr('no horizontal scrolling at 320 px width or 400 % zoom', 'bez horizontalnog skrola na 320 px širine ili 400 % uvećanja')}</li></ul>
-    <p class="small muted">${tr('A ratio is arithmetic, not a verdict on legibility: font weight, size, screen and daylight all still matter. The number is the floor, not the goal.', 'Odnos je aritmetika, ne presuda o čitljivosti: debljina pisma, veličina, ekran i dnevno svetlo i dalje odlučuju. Broj je pod, ne cilj.')}</p>
+    <ul><li>1.4.3 — ${tr('text 4,5:1; large text (24 px, or 19 px bold) 3:1', 'tekst 4,5:1; veliki tekst (24 px, ili 19 px podebljan) 3:1')}</li><li>1.4.11 — ${tr('icons, borders, states 3:1', 'ikone, obrisi, stanja 3:1')}</li><li>2.5.8 — ${tr('target 24 × 24 px, or smaller with 24 px of spacing', 'dodirna meta 24 × 24 px, ili manja sa 24 px razmaka')}</li><li>2.5.5 — ${tr('44 × 44 px is the enhanced level', '44 × 44 px je pooštreni nivo')}</li><li>1.4.10 — ${tr('no horizontal scrolling at 320 px width or 400 % zoom', 'bez horizontalnog pomeranja pri širini od 320 px ili uvećanju od 400 %')}</li></ul>
+    <p class="small muted">${tr('A ratio is arithmetic, not a verdict on legibility: font weight, size, screen and daylight all still matter. The number is the floor, not the goal.', 'Odnos je aritmetika, ne presuda o čitljivosti: debljina pisma, veličina, ekran i dnevno svetlo i dalje odlučuju. Broj je donja granica, ne cilj.')}</p>
     </div></div>`;
   },
   bind() {
@@ -365,15 +365,15 @@ const contrastLab = {
       $('#target-sample').style.setProperty('--tw', s.w + 'px');
       $('#target-sample').style.setProperty('--th', s.h + 'px');
       $('#target-sample').style.setProperty('--tgap', s.gap + 'px');
-      $('#target-readout').innerHTML = `<p>${tr('Smallest side', 'Najmanja strana')} ${target.smallest} px${s.gap ? ` + ${s.gap} px ${tr('spacing', 'razmaka')} = ${target.effective} px` : ''} — 2.5.8: <strong>${target.minimum ? tr('passes', 'prolazi') : tr('fails', 'pada')}</strong>${target.spacingUsed ? ` (${tr('through the spacing exception', 'kroz izuzetak razmaka')})` : ''} · 2.5.5: <strong>${target.enhanced ? tr('passes', 'prolazi') : tr('fails', 'pada')}</strong></p>`;
+      $('#target-readout').innerHTML = `<p>${tr('Smallest side', 'Najmanja strana')} ${target.smallest} px${s.gap ? ` + ${s.gap} px ${tr('spacing', 'razmaka')} = ${target.effective} px` : ''} — 2.5.8: <strong>${target.minimum ? tr('passes', 'prolazi') : tr('fails', 'pada')}</strong>${target.spacingUsed ? ` (${tr('through the spacing exception', 'zahvaljujući izuzetku za razmak')})` : ''} · 2.5.5: <strong>${target.enhanced ? tr('passes', 'prolazi') : tr('fails', 'pada')}</strong></p>`;
 
       const frame = $('#reflow-frame');
       frame.style.fontSize = (16 * s.zoom / 100) + 'px';
       const inner = $('.reflow-inner', frame);
       const overflow = Math.max(0, inner.scrollWidth - frame.clientWidth);
       $('#reflow-readout').innerHTML = overflow > 1
-        ? `<p class="error">${tr('Horizontal scroll of', 'Horizontalni skrol od')} ${overflow} px ${tr('at', 'na')} ${s.zoom} % — 1.4.10 ${tr('fails', 'pada')}.</p>`
-        : `<p class="success">${tr('No horizontal scroll at', 'Bez horizontalnog skrola na')} ${s.zoom} %.</p>`;
+        ? `<p class="error">${tr('Horizontal scroll of', 'Horizontalno pomeranje od')} ${overflow} px ${tr('at', 'na')} ${s.zoom} % — 1.4.10 ${tr('fails', 'pada')}.</p>`
+        : `<p class="success">${tr('No horizontal scroll at', 'Bez horizontalnog pomeranja pri')} ${s.zoom} %.</p>`;
     };
     const bindValue = (id, key, cast = Number) => {
       const input = $('#' + id);
@@ -407,7 +407,7 @@ const channelLab = {
     <div class="table-wrap"><table id="channel-table"><caption class="sr-only">${tr('Who receives the alarm, through how many channels', 'Ko dobija alarm i kroz koliko kanala')}</caption><thead><tr><th scope="col">${tr('Situation', 'Situacija')}</th><th scope="col">${tr('Channels', 'Kanala')}</th><th scope="col">${tr('Verdict', 'Ocena')}</th></tr></thead><tbody></tbody></table></div>
     </div><div class="lab-side">
     <h3>${tr('The rule', 'Pravilo')}</h3>
-    <p>${tr('Principle 04 asks for redundancy: critical information reaches each situation through at least two independent channels. One channel is a single point of failure, and in an evacuation that is not a metaphor.', 'Princip 04 traži redundansu: ključna informacija stiže do svake situacije kroz najmanje dva nezavisna kanala. Jedan kanal je jedna tačka otkaza, a u evakuaciji to nije metafora.')}</p>
+    <p>${tr('Principle 04 asks for redundancy: critical information reaches each situation through at least two independent channels. One channel is a single point of failure, and in an evacuation that is not a metaphor.', 'Princip 04 traži redundansu: ključna informacija stiže do svake situacije kroz najmanje dva nezavisna kanala. Jedan kanal predstavlja jedinstvenu tačku otkaza, a u evakuaciji to nije metafora.')}</p>
     <p class="small muted">${tr('The channel-to-situation mapping here is a teaching model, not a certified matrix. A real building is checked with the people in it and against the fire regulations.', 'Veza kanala i situacija je nastavni model, ne sertifikovana matrica. Stvarna zgrada se proverava sa ljudima u njoj i po protivpožarnim propisima.')}</p>
     </div></div>`;
   },
@@ -477,7 +477,7 @@ const planLab = {
     <h3>${tr('Moves', 'Potezi')}: <span id="plan-moves">${s.moves}</span></h3>
     ${KNOBS.map(knob => `<div class="lab-field"><label for="knob-${knob.id}">${esc(tr(knob.en, knob.sr))}: <output id="out-${knob.id}">${s.values[knob.id]} cm</output></label><input id="knob-${knob.id}" type="range" min="${knob.min}" max="${knob.max}" step="${knob.step}" value="${s.values[knob.id]}"></div>`).join('')}
     <div class="actions"><button type="button" id="plan-reset">${tr('Back to the start', 'Vrati na početak')}</button></div>
-    <p class="small muted">${tr('The sheet does not grow: a wider corridor is a shallower toilet. That trade is the exercise. Art. 14, 17, 18 and 19 of the Pravilnik; values rounded to the 10 cm grid.', 'List se ne povećava: širi hodnik je plići toalet. Ta trampa i jeste vežba. Čl. 14, 17, 18 i 19 Pravilnika; vrednosti zaokružene na mrežu od 10 cm.')}</p>
+    <p class="small muted">${tr('The sheet does not grow: a wider corridor is a shallower toilet. That trade is the exercise. Art. 14, 17, 18 and 19 of the Pravilnik; values rounded to the 10 cm grid.', 'List se ne povećava: širi hodnik znači plići toalet. Taj prostorni kompromis jeste predmet vežbe. Čl. 14, 17, 18 i 19 Pravilnika; vrednosti su zaokružene na mrežu od 10 cm.')}</p>
     </div></div>`;
   },
   bind() {
@@ -522,15 +522,15 @@ const planLab = {
 
       const rows = [
         [tr('Narrowest point on the route', 'Najuža tačka na putanji'), analysis.narrowestCm === null ? tr('no route', 'nema putanje') : analysis.narrowestCm + ' cm', CORRIDOR_ONE_WAY_CM + ' cm'],
-        [tr('Clear door width', 'Svetla širina vrata'), s.values.door + ' cm', DOOR_MIN_CM + ' cm (90 ' + tr('where it turns', 'gde se okreće') + ')'],
+        [tr('Clear door width', 'Svetla širina vrata'), s.values.door + ' cm', DOOR_MIN_CM + ' cm (' + tr('90 where it turns', '90 cm na mestu okretanja') + ')'],
         [tr('Turning circle where you arrive', 'Obrtni krug na dolasku'), analysis.turnCm + ' cm', TURN_CM + ' cm']
       ];
       $('#plan-table').innerHTML = rows.map(([a, b, c]) => `<tr><th scope="row">${esc(a)}</th><td>${esc(b)}</td><td>${esc(c)}</td></tr>`).join('');
       $('#plan-readout').innerHTML = analysis.pass
-        ? `<p class="success">${tr('It passes: the route exists, the narrowest point holds, the circle fits.', 'Prolazi: putanja postoji, najuža tačka drži, krug staje.')} ${tr('Moves used', 'Potrošeno poteza')}: ${s.moves}.</p>`
+        ? `<p class="success">${tr('It passes: the route exists, the narrowest point holds, the circle fits.', 'Prolazi: putanja postoji, najuža tačka ima potrebnu širinu, krug staje.')} ${tr('Moves used', 'Potrošeno poteza')}: ${s.moves}.</p>`
         : `<p class="error">${analysis.problems.map(problem => planProblem(problem)).join(' · ')}</p>`;
       $('#plan-alt').textContent = `${tr('Plan, 8 × 5 m.', 'Osnova, 8 × 5 m.')} ${rows.map(([a, b, c]) => `${a}: ${b} (${tr('required', 'zahtevano')} ${c})`).join('. ')}. ${analysis.pass ? tr('Passes.', 'Prolazi.') : tr('Does not pass.', 'Ne prolazi.')}`;
-      if (analysis.pass) recordResult('prolaz', `${tr('passes in', 'prolazi u')} ${s.moves} ${tr('moves', 'poteza')}, ${analysis.narrowestCm} cm / ${analysis.turnCm} cm`);
+      if (analysis.pass) recordResult('prolaz', `${tr('passes; moves', 'prolazi; broj poteza')}: ${s.moves}, ${analysis.narrowestCm} cm / ${analysis.turnCm} cm`);
     };
 
     const schedule = () => { if (frame) cancelAnimationFrame(frame); frame = requestAnimationFrame(() => { frame = 0; paint(); }); };
@@ -565,7 +565,7 @@ const planLab = {
 function planProblem(problem) {
   const map = {
     'no-route': tr('No route for an 80 cm chair.', 'Nema putanje za kolica od 80 cm.'),
-    'too-narrow': tr('The narrowest point is', 'Najuža tačka je') + ` ${problem.cm} cm (${tr('needs', 'traži')} ${problem.needed}).`,
+    'too-narrow': tr('The narrowest point is', 'Najuža tačka je') + ` ${problem.cm} cm (${tr('needs', 'potrebno je')} ${problem.needed} cm).`,
     'no-turning-circle': tr('No 150 cm circle where you arrive:', 'Nema kruga od 150 cm na dolasku:') + ` ${problem.cm} cm.`,
     'goal-blocked': tr('The destination itself is blocked.', 'Samo odredište je zatvoreno.'),
     'start-blocked': tr('The entrance is blocked.', 'Ulaz je zatvoren.')
@@ -580,7 +580,7 @@ const heightLab = {
   render() {
     const s = this.state;
     return `<div class="lab-grid"><div class="lab-main">
-    <p class="lab-question">${tr('Our site falls 22,5 m over a straight line of 151 m, on plots of about 129 × 131 m. Choose a slope and read what the ramp becomes.', 'Naša lokacija pada 22,5 m na vazdušnoj liniji od 151 m, na parcelama od oko 129 × 131 m. Izaberi nagib i pročitaj šta rampa postaje.')}</p>
+    <p class="lab-question">${tr('Our site falls 22,5 m over a straight line of 151 m, on plots of about 129 × 131 m. Choose a slope and read what the ramp becomes.', 'Visinska razlika na lokaciji iznosi 22,5 m na vazdušnoj liniji od 151 m, na parcelama od oko 129 × 131 m. Izaberi nagib i izračunaj potrebnu dužinu rampe.')}</p>
     <div class="lab-field"><label for="rise">${tr('Height to overcome (cm)', 'Visina koja se savladava (cm)')}</label><input id="rise" type="number" min="10" max="3000" step="10" value="${s.rise}"></div>
     <div class="lab-field"><label for="slope">${tr('Slope', 'Nagib')}: <output id="slope-out">${s.slope} %</output></label><input id="slope" type="range" min="2" max="12" step="0.1" value="${s.slope}"></div>
     <div class="lab-field"><label for="available">${tr('Length you can actually develop (cm)', 'Dužina koju stvarno možeš da razviješ (cm)')}</label><input id="available" type="number" min="100" max="100000" step="100" value="${s.available}"></div>
@@ -588,7 +588,7 @@ const heightLab = {
     <div class="ramp-bars" id="ramp-bars" aria-hidden="true"></div>
     </div><div class="lab-side">
     <h3>${tr('The rule', 'Pravilo')}</h3>
-    <p>${tr('Art. 7: slope up to 5 % (1:20); exceptionally 8,3 % (1:12) for short runs. A ramp longer than 6 m — up to 9 m at a gentler slope — is broken by a landing of at least 150 cm. Handrails at 70 and 90 cm, extended 30 cm past both ends.', 'Čl. 7: nagib do 5 % (1:20); izuzetno 8,3 % (1:12) na kratkim rastojanjima. Rampa duža od 6 m — do 9 m kod manjeg nagiba — razdvaja se odmorištem od najmanje 150 cm. Rukohvati na 70 i 90 cm, produženi 30 cm preko oba kraja.')}</p>
+    <p>${tr('Art. 7: slope up to 5 % (1:20); exceptionally 8,3 % (1:12) for short runs. A ramp longer than 6 m — up to 9 m at a gentler slope — is broken by a landing of at least 150 cm. Handrails at 70 and 90 cm, extended 30 cm past both ends.', 'Čl. 7: nagib do 5 % (1:20); izuzetno 8,3 % (1:12) na kratkim rastojanjima. Rampa duža od 6 m — do 9 m kod manjeg nagiba — razdvaja se odmorištem od najmanje 150 cm. Rukohvati na 70 i 90 cm, produženi za 30 cm izvan oba kraja rampe.')}</p>
     <p class="small muted">${tr('When the ramp does not fit, the answer is not a steeper ramp. It is a different way to overcome the height: terracing with the terrain, a lift everybody uses, a route that follows the contour. The measurement tells you when to stop drawing ramps.', 'Kada rampa ne staje, odgovor nije strmija rampa. Odgovor je drugi način da se visina savlada: terasiranje po terenu, lift koji koriste svi, put po izohipsi. Mera ti kaže kada da prestaneš da crtaš rampe.')}</p>
     </div></div>`;
   },
@@ -640,8 +640,8 @@ const timeLab = {
     <details><summary>${tr('One possible plain version', 'Jedna moguća jasna verzija')}</summary><div><p>${esc(PLAIN_ANSWER[lang] || PLAIN_ANSWER.en)}</p></div></details>
     </div><div class="lab-side">
     <h3>${tr('What is measured', 'Šta se meri')}</h3>
-    <p>${tr('Words, sentences, average sentence length and the share of words longer than nine letters. That is a length measure, not a comprehension measure — comprehension is measured with readers.', 'Reči, rečenice, prosečna dužina rečenice i udeo reči dužih od devet slova. To je mera dužine, ne mera razumljivosti — razumljivost se meri sa čitaocima.')}</p>
-    <p class="help">${tr('2.2.1 Timing Adjustable: a time limit must be switchable, extendable or absent. The switch above is the whole lesson. 3.1.5 asks for plain language where the content allows it.', '2.2.1 Prilagodljivo vreme: vremensko ograničenje mora da se isključi, produži ili ne postoji. Prekidač iznad je cela lekcija. 3.1.5 traži jasan jezik gde sadržaj to dopušta.')}</p>
+    <p>${tr('Words, sentences, average sentence length and the share of words longer than nine letters. That is a length measure, not a comprehension measure — comprehension is measured with readers.', 'Reči, rečenice, prosečna dužina rečenice i udeo reči dužih od devet slova. To je mera dužine, ne mera razumljivosti — razumevanje se proverava sa čitaocima.')}</p>
+    <p class="help">${tr('2.2.1 Timing Adjustable: a time limit must be switchable, extendable or absent. The switch above is the whole lesson. 3.1.5 asks for plain language where the content allows it.', '2.2.1 Prilagodljivo vreme: mora biti moguće isključiti ili produžiti vremensko ograničenje — ili ga ne sme biti. Prekidač iznad je cela lekcija. 3.1.5 traži jasan jezik gde sadržaj to dopušta.')}</p>
     </div></div>`;
   },
   bind() {
@@ -650,10 +650,10 @@ const timeLab = {
     const paint = () => {
       const original = plainness(JARGON[lang] || JARGON.en);
       const mine = plainness(s.rewrite);
-      $('#time-readout').innerHTML = `<p>${tr('The notice', 'Obaveštenje')}: ${original.words} ${tr('words', 'reči')}, ${tr('average sentence', 'prosečna rečenica')} ${original.avgSentence}, ${tr('long words', 'dugih reči')} ${Math.round(original.longWordShare * 100)} % → <strong>${verdictName(original.verdict)}</strong></p>
-      <p>${tr('Your sentence', 'Tvoja rečenica')}: ${mine.words} ${tr('words', 'reči')}, ${tr('average sentence', 'prosečna rečenica')} ${mine.avgSentence}, ${tr('long words', 'dugih reči')} ${Math.round(mine.longWordShare * 100)} % → <strong>${verdictName(mine.verdict)}</strong>${s.finished === false ? ` · <span class="error">${tr('the counter ran out', 'brojač je istekao')}</span>` : s.finished ? ` · <span class="success">${tr('in time', 'na vreme')}</span>` : ''}</p>
+      $('#time-readout').innerHTML = `<p>${tr('The notice', 'Obaveštenje')}: ${tr('Words', 'Broj reči')}: ${original.words}, ${tr('average sentence', 'prosečna dužina rečenice')} ${original.avgSentence}, ${tr('long words', 'dugih reči')} ${Math.round(original.longWordShare * 100)} % → <strong>${verdictName(original.verdict)}</strong></p>
+      <p>${tr('Your sentence', 'Tvoja rečenica')}: ${tr('Words', 'Broj reči')}: ${mine.words}, ${tr('average sentence', 'prosečna dužina rečenice')} ${mine.avgSentence}, ${tr('long words', 'dugih reči')} ${Math.round(mine.longWordShare * 100)} % → <strong>${verdictName(mine.verdict)}</strong>${s.finished === false ? ` · <span class="error">${tr('the counter ran out', 'vreme je isteklo')}</span>` : s.finished ? ` · <span class="success">${tr('in time', 'na vreme')}</span>` : ''}</p>
       <p class="small muted">${tr('A length measure, not a comprehension measure.', 'Mera dužine, ne mera razumljivosti.')}</p>`;
-      if (mine.words > 2) recordResult('vreme', `${mine.words} ${tr('words', 'reči')}, ${verdictName(mine.verdict)}${s.finished === false ? ', ' + tr('out of time', 'preko vremena') : ''}`);
+      if (mine.words > 2) recordResult('vreme', `${tr('Words', 'Broj reči')}: ${mine.words}, ${verdictName(mine.verdict)}${s.finished === false ? ', ' + tr('out of time', 'preko vremena') : ''}`);
     };
     const stop = () => { if (timer) { clearInterval(timer); timer = null; } s.running = false; $('#time-start').textContent = tr('Start the countdown', 'Pokreni odbrojavanje'); };
     const start = () => {
@@ -684,21 +684,21 @@ const timeLab = {
 const verdictName = verdict => ({ plain: tr('plain', 'jasno'), dense: tr('dense', 'gusto'), heavy: tr('heavy', 'teško'), empty: tr('empty', 'prazno') }[verdict] || verdict);
 
 /* ---------------- the page ---------------- */
-const IMPLEMENTED = { citac: readerLab, tastatura: keyboardLab, prekidac: switchLab, kontrast: contrastLab, kanali: channelLab, prolaz: planLab, visina: heightLab, vreme: timeLab };
+const IMPLEMENTED = { citac: readerLab, tastatura: keyboardLab, prekidač: switchLab, kontrast: contrastLab, kanali: channelLab, prolaz: planLab, visina: heightLab, vreme: timeLab };
 
 function renderScore() {
   const box = $('#lab-score');
   if (!box) return;
   const all = results();
   const done = labs.filter(lab => all[lab.id]);
-  box.innerHTML = `<p><strong>${done.length}/${labs.length}</strong> ${tr('labs carry a measurement in this browser.', 'ogleda nosi meru u ovom pregledaču.')}</p>${done.length ? `<ul class="score-list">${done.map(lab => `<li><a href="laboratorija.html?lab=${lab.id}">${esc(tx(lab.title))}</a> <span>${esc(all[lab.id].measure)}</span></li>`).join('')}</ul><div class="actions"><button type="button" id="export-all">${tr('Download all records', 'Preuzmi sve zapise')}</button><button type="button" id="clear-all">${tr('Clear the measurements', 'Obriši mere')}</button></div>` : ''}`;
+  box.innerHTML = `<p>${tr('Measurements are saved for', 'Mere su sačuvane za')} <strong>${done.length} ${tr('of', 'od')} ${labs.length}</strong> ${tr('labs in this browser.', 'ogleda u ovom pregledaču.')}</p>${done.length ? `<ul class="score-list">${done.map(lab => `<li><a href="laboratorija.html?lab=${lab.id}">${esc(tx(lab.title))}</a> <span>${esc(all[lab.id].measure)}</span></li>`).join('')}</ul><div class="actions"><button type="button" id="export-all">${tr('Download all records', 'Preuzmi sve zapise')}</button><button type="button" id="clear-all">${tr('Clear the measurements', 'Obriši mere')}</button></div>` : ''}`;
   $('#export-all')?.addEventListener('click', () => {
     const lines = [`# ${tr('Laboratory records', 'Zapisi laboratorije')}`, ''];
     for (const lab of labs) {
       const result = all[lab.id]; if (!result) continue;
       lines.push(`## ${tx(lab.title)}`, `${tr('Measured', 'Izmereno')}: ${result.measure} (${result.at})`, `${tr('Standard', 'Standard')}: ${lab.standard}`, `${tr('Decision', 'Odluka')}: ${read('lab-decision-' + lab.id, '') || '—'}`, '');
     }
-    lines.push(`_${tr('Tool measurements. A test with a person is the measure, and it has not happened here.', 'Mere alata. Proba sa osobom je mera, i nije se ovde odigrala.')}_`);
+    lines.push(`_${tr('Tool measurements. A test with a person is the measure, and it has not happened here.', 'Mere alata. Proba sa osobom je mera i ovde nije sprovedena.')}_`);
     download('laboratorija.md', lines.join('\n'), 'text/markdown;charset=utf-8');
   });
   $('#clear-all')?.addEventListener('click', () => { save('lab-results', {}); renderScore(); announce(tr('Measurements cleared.', 'Mere obrisane.')); });

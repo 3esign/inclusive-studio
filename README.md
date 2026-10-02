@@ -13,8 +13,9 @@ A working environment for third-year architecture students and disability associ
 ## How the site is organised
 
 The front page is **the working week**: the material the teacher put in for this session, the task
-and the labs it points at. Everything else — the course, the calendar, the project, the exercises,
-the library, the pinboard, the stages — sits behind it as material.
+and the labs it points at. Each week ends with one physical A3 sheet, a conversation in class and
+the teacher's signature on paper. Everything else — the course, calendar, project, exercises,
+library, Idea Atelier and stages — sits behind it as supporting material.
 
 - **This week** (`index.html`) — title, aim, what to bring, and the session's material, read from
   `data/material/wNN.json`. No file, no week: the page says so instead of inventing a lesson.
@@ -29,6 +30,8 @@ the library, the pinboard, the stages — sits behind it as material.
   for the design decision that follows from it.
 - **Task** (`zadatak.html`) — day one: an application for one person, drawn by hand, with a drawn
   constraint card and an optional phone-sized sketchpad that keeps showing the real minimum sizes.
+- **Idea Atelier** (`ideja.html`) — a separate space for connecting unfinished ideas and turning a
+  promising connection into one small, testable move on an A3. It is not a week or a hand-in.
 - **Prepare material** (`uredi.html`) — the teacher writes a week, the tool checks it against the
   site's own rules and hands over the file to commit. See [docs/gradivo.md](docs/gradivo.md).
 
@@ -36,7 +39,7 @@ Behind those: **the course** (official data, outcomes, house rules, the teacher'
 **exercises** (sixteen, each with its week, its hand-in and its check, plus six longer works),
 **the studio** (six project stages), **the calendar** (fifteen teaching weeks as a sequence, plus
 dated meetings and ICS export of confirmed events), **the brief**, **the library** (seventeen
-sources), **the pinboard**, and **working together / accessibility**.
+sources), **the optional public board**, and **working together / accessibility**.
 
 ### No disability simulation
 
@@ -46,11 +49,11 @@ not more willing to work with disabled people on an accessibility project (Nario
 & Cobb, *Rehabilitation Psychology*, 2017). What measurably helps is a structured exercise with the
 real tool plus a debrief; what changes a project is a disabled coauthor. The labs are the warm-up.
 
-## Publishing and privacy
+## Course record, publishing and privacy
 
-The site has no server-side submission service. Text drafts remain in the current browser when storage is permitted. Selected files and sketches remain in memory and are not automatically saved. A file preview is not an upload. Attach the selected file or downloaded PNG yourself in GitHub. For long drafts the interface requests downloaded text to be pasted into GitHub.
+Students need no site account, email sign-in or GitHub account. The course record is the physical weekly A3 reviewed in class and signed by the teacher. The site does not record attendance, grades or official hand-ins.
 
-The final link opens an editable GitHub draft; issue text is published when submitted on GitHub. Files added to its editor upload immediately and are publicly accessible. GitHub requires an account. Public posting does not register an official course hand-in or a grade. Never publish private interview material or a contributor's identifying information without specific permission. Supported submission through a course contact still needs an appointed owner.
+The optional public board opens an editable GitHub draft. Anything submitted there is public and is not a course hand-in. Files added to GitHub's editor upload immediately. Never publish private interview material or identifying information without specific permission. Idea Atelier notes remain in the current browser unless downloaded; selected files and sketches are not automatically saved.
 
 ## Configure the real timetable
 
@@ -68,11 +71,12 @@ references one. Measured over local HTTP, uncompressed, with every dynamic impor
 
 | Page | Transferred | JS heap |
 |---|---|---|
-| `zadatak.html` | 75 kB | 1,9 MB |
-| `laboratorija.html` | 139 kB | 1,4 MB |
-| `predavanje.html` | 142 kB | 1,8 MB |
-| `index.html` | 144 kB | 1,3 MB |
-| the nine inherited pages | 224 kB | 3,1–5,9 MB |
+| `zadatak.html` | 81,2 kB | 1,9 MB |
+| `ideja.html` | 91,7 kB | 5,1 MB |
+| `laboratorija.html` | 144,7 kB | 1,4 MB |
+| `predavanje.html` | 148,3 kB | 1,8 MB |
+| `index.html` | 152,3 kB | 1,3 MB |
+| heaviest inherited page | 231,9 kB | 4,0 MB |
 
 The labs keep that modest: one lab is mounted at a time and torn down on the way out, so no
 interval, animation frame or canvas backing store survives a lab you have left; canvases cap the
@@ -84,9 +88,9 @@ Serve the repository with any static HTTP server and open `index.html` through i
 node --test tests/*.test.mjs
 ```
 
-70 Node tests cover the week format, the lab arithmetic, the calendar, portable drafts, the course
-record and the consistency of the fourteen page shells. A browser suite
-(headless Chrome, 137 checks at 320/360/768/1440 px) covers the pages, the labs, the editor, the
+77 Node tests cover the week format, the lab arithmetic, the calendar, portable drafts, the course
+record, the A3/signature workflow, the Idea Atelier and the consistency of the fifteen page shells. A browser suite
+(headless Chrome, 147 checks at 320/360/768/1440 px) covers the pages, the labs, the editor, the Atelier, the
 language switch, the no-JavaScript baseline and the measured weight. Results:
 [docs/verification.md](docs/verification.md).
 
