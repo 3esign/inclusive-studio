@@ -356,6 +356,91 @@ export function plainness(text) {
 }
 
 /* ------------------------------------------------------------------ *
+ * 7b. Architectural & Universal Design Calculations: Acoustics, LRV, Maneuver
+ * ------------------------------------------------------------------ */
+export const ABSORPTION_COEFFICIENTS = {
+  plaster_concrete: 0.02,
+  glass: 0.04,
+  wood: 0.10,
+  carpet: 0.25,
+  curtain_heavy: 0.50,
+  acoustic_panel: 0.75,
+  audience: 0.70
+};
+
+// Sabine formula: RT60 = 0.161 * V / A
+// DeafSpace & ANSI/ASA S12.60: lecture/classroom RT60 <= 0.60 s; quiet retreat RT60 <= 0.40 s
+export function analyzeAcoustics({ volumeM3, surfaces = [], roomType = 'classroom' } = {}) {
+  const v = Number(volumeM3);
+  if (!(v > 0) || !Array.isArray(surfaces) || surfaces.length === 0) return null;
+  let totalA = 0;
+  for (const s of surfaces) {
+    const area = Number(s.areaM2) || 0;
+    const coeff = typeof s.coeff === 'number' ? s.coeff : (ABSORPTION_COEFFICIENTS[s.material] ?? 0.05);
+    totalA += area * coeff;
+  }
+  if (!(totalA > 0)) return null;
+  const rt60 = Math.round((0.161 * v / totalA) * 100) / 100;
+  const targetRt60 = roomType === 'quiet_retreat' ? 0.40 : roomType === 'classroom' ? 0.60 : 1.00;
+  const pass = rt60 <= targetRt60;
+  const targetA = 0.161 * v / targetRt60;
+  const shortfallA = Math.max(0, targetA - totalA);
+  const neededPanelsM2 = Math.round((shortfallA / 0.75) * 10) / 10;
+  return {
+    volumeM3: v,
+    totalAbsorptionA: Math.round(totalA * 10) / 10,
+    rt60,
+    targetRt60,
+    pass,
+    neededPanelsM2,
+    verdict: pass ? 'optimal' : rt60 > targetRt60 * 1.5 ? 'severe_overload' : 'echoey',
+    standard: 'DeafSpace Acoustics · ANSI/ASA S12.60 · ASPECTSS™'
+  };
+}
+
+// Light Reflectance Value (LRV) difference: ISO 21542:2021 & BS 8300
+// Standard contrast: Delta LRV >= 30; Low-vision contrast: Delta LRV >= 40
+export function analyzeLRV({ lrvForeground, lrvBackground, isLowVision = false } = {}) {
+  const f = Number(lrvForeground), b = Number(lrvBackground);
+  if (isNaN(f) || isNaN(b) || f < 0 || f > 100 || b < 0 || b > 100) return null;
+  const deltaLRV = Math.round(Math.abs(f - b) * 10) / 10;
+  const needed = isLowVision ? 40 : 30;
+  const pass = deltaLRV >= needed;
+  return {
+    lrvForeground: f,
+    lrvBackground: b,
+    deltaLRV,
+    needed,
+    pass,
+    level: deltaLRV >= 40 ? 'enhanced' : deltaLRV >= 30 ? 'standard' : 'fail',
+    standard: 'ISO 21542:2021 · BS 8300-2'
+  };
+}
+
+// Doorway maneuvering clearance check: Pravilnik RS 22/2015 čl. 14 i 17
+export function analyzeManeuvering({ corridorWidthCm, doorClearWidthCm, approachType = 'frontal' } = {}) {
+  const cw = Number(corridorWidthCm), dw = Number(doorClearWidthCm);
+  if (!(cw > 0) || !(dw > 0)) return null;
+  const minDoor = 90; // čl. 17: min 90 cm svetle širine
+  const minCorridor = approachType === 'hinge_side' ? 140 : 120; // čl. 14
+  const neededLatchCm = approachType === 'latch_side' ? 50 : approachType === 'hinge_side' ? 30 : 0;
+  const doorPass = dw >= minDoor;
+  const corridorPass = cw >= minCorridor;
+  return {
+    corridorWidthCm: cw,
+    doorClearWidthCm: dw,
+    approachType,
+    minDoor,
+    minCorridor,
+    neededLatchCm,
+    doorPass,
+    corridorPass,
+    pass: doorPass && corridorPass,
+    standard: 'Pravilnik RS 22/2015 čl. 14 i 17 · ISO 21542'
+  };
+}
+
+/* ------------------------------------------------------------------ *
  * 8. The register of labs
  * ------------------------------------------------------------------ */
 export const labs = [

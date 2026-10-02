@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" style="background:#ffffff;font-family:system-ui,-apple-system,sans-serif;">
+  <defs>
+    <pattern id="grid10" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f0f3f1" stroke-width="1"/>
+    </pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#192e27"/>
+    </marker>
+    <marker id="arr-rev" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 8 1.5 L 0 5 L 8 8.5 z" fill="#192e27"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="700" fill="url(#grid10)"/>
+
+  <!-- Header -->
+  <g transform="translate(40, 45)">
+    <text font-size="20" font-weight="700" fill="#192e27" letter-spacing="-0.02em">TAKTIČKE I TAKTILNE POVRŠINE / TACTILE PAVING STANDARDS</text>
+    <text y="22" font-size="12" fill="#586962">Standardi taktilnih traka vođenja i upozorenja: Pravilnik RS 22/2015 i 10/2026 (čl. 10) · ISO 21542 · CEN/TS 15209</text>
+  </g>
+
+  <!-- Left: Traka vođenja (Guiding Path) -->
+  <g transform="translate(40, 95)">
+    <rect width="440" height="420" rx="6" fill="#f8faf9" stroke="#d5ded9" stroke-width="1.5"/>
+    <text x="25" y="30" font-size="14" font-weight="700" fill="#192e27">1. Taktilna traka vođenja / Guiding Path</text>
+    <text x="25" y="48" font-size="11" fill="#586962">Uzdužna trapezna rebra za usmeravanje belog štapa i čitanje đonom cipele</text>
+
+    <!-- 3D / Isometric sketch of ribs -->
+    <g transform="translate(50, 80)">
+      <!-- Base plate -->
+      <rect x="0" y="0" width="340" height="180" rx="4" fill="#fff9c4" stroke="#fbc02d" stroke-width="1.5"/>
+      <!-- Ribs -->
+      <rect x="35" y="0" width="25" height="180" fill="#fbc02d"/>
+      <rect x="95" y="0" width="25" height="180" fill="#fbc02d"/>
+      <rect x="155" y="0" width="25" height="180" fill="#fbc02d"/>
+      <rect x="215" y="0" width="25" height="180" fill="#fbc02d"/>
+      <rect x="275" y="0" width="25" height="180" fill="#fbc02d"/>
+
+      <!-- Cane movement line -->
+      <path d="M 107 -15 L 107 195" stroke="#2e7d32" stroke-width="2.5" stroke-dasharray="6 3"/>
+      <circle cx="107" cy="90" r="6" fill="#2e7d32"/>
+      <text x="117" y="94" font-size="10" font-weight="700" fill="#2e7d32">Pravac kretanja štapa</text>
+
+      <!-- Dimension width -->
+      <line x1="0" y1="205" x2="340" y2="205" stroke="#192e27" stroke-width="1.5" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="170" y="222" font-size="11" font-weight="700" fill="#192e27" text-anchor="middle">Širina trake: 40–60 cm</text>
+    </g>
+
+    <!-- Profile section of rib -->
+    <g transform="translate(50, 335)">
+      <line x1="0" y1="35" x2="340" y2="35" stroke="#192e27" stroke-width="2"/>
+      <!-- One rib profile enlarged -->
+      <polygon points="120,35 130,10 155,10 165,35" fill="#fbc02d" stroke="#f57f17" stroke-width="1.5"/>
+      <!-- Height dim: 4-5 mm -->
+      <line x1="105" y1="35" x2="105" y2="10" stroke="#d32f2f" stroke-width="1.5" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="95" y="25" font-size="10" font-weight="700" fill="#d32f2f" text-anchor="end">h = 4–5 mm</text>
+      <!-- Width dim: 25-35 mm -->
+      <line x1="125" y1="0" x2="160" y2="0" stroke="#192e27" stroke-width="1" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="142" y="-6" font-size="9" font-weight="600" fill="#192e27" text-anchor="middle">25–35 mm</text>
+      <text x="170" y="55" font-size="10" fill="#586962" text-anchor="middle">Profil rebra: trapezast, sa zaobljenim ivicama protiv spoticanja</text>
+    </g>
+  </g>
+
+  <!-- Right: Polje upozorenja / skretanja (Warning Field) -->
+  <g transform="translate(520, 95)">
+    <rect width="440" height="420" rx="6" fill="#f8faf9" stroke="#d5ded9" stroke-width="1.5"/>
+    <text x="25" y="30" font-size="14" font-weight="700" fill="#192e27">2. Polje upozorenja i skretanja / Warning Field</text>
+    <text x="25" y="48" font-size="11" fill="#586962">Zarubljene kupe (čepovi) za najavu opasnosti, rampe, stepeništa ili promene smera</text>
+
+    <!-- Blister grid plan -->
+    <g transform="translate(50, 80)">
+      <rect x="0" y="0" width="340" height="180" rx="4" fill="#fff9c4" stroke="#fbc02d" stroke-width="1.5"/>
+      <!-- Blister domes in orthogonal/diagonal grid -->
+      <!-- Row 1 -->
+      <circle cx="35" cy="30" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="85" cy="30" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="135" cy="30" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="185" cy="30" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="235" cy="30" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="285" cy="30" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/>
+      <!-- Row 2 -->
+      <circle cx="60" cy="70" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="110" cy="70" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="160" cy="70" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="210" cy="70" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="260" cy="70" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="310" cy="70" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/>
+      <!-- Row 3 -->
+      <circle cx="35" cy="110" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="85" cy="110" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="135" cy="110" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="185" cy="110" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="235" cy="110" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="285" cy="110" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/>
+      <!-- Row 4 -->
+      <circle cx="60" cy="150" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="110" cy="150" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="160" cy="150" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="210" cy="150" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="260" cy="150" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/><circle cx="310" cy="150" r="10" fill="#fbc02d" stroke="#f57f17" stroke-width="1"/>
+
+      <!-- Dimension width -->
+      <line x1="0" y1="205" x2="340" y2="205" stroke="#192e27" stroke-width="1.5" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="170" y="222" font-size="11" font-weight="700" fill="#192e27" text-anchor="middle">Širina polja: 40–60 cm</text>
+    </g>
+
+    <!-- Profile section of dome -->
+    <g transform="translate(50, 335)">
+      <line x1="0" y1="35" x2="340" y2="35" stroke="#192e27" stroke-width="2"/>
+      <polygon points="125,35 133,12 157,12 165,35" fill="#fbc02d" stroke="#f57f17" stroke-width="1.5"/>
+      <line x1="105" y1="35" x2="105" y2="12" stroke="#d32f2f" stroke-width="1.5" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="95" y="25" font-size="10" font-weight="700" fill="#d32f2f" text-anchor="end">h = 4–5 mm</text>
+      <text x="170" y="55" font-size="10" fill="#586962" text-anchor="middle">Oblik: zarubljena kupa Ø 25 mm pri vrhu, Ø 35 mm pri bazi</text>
+    </g>
+  </g>
+
+  <!-- Bottom: Svetlosni kontrast (LRV) i pravila postavljanja -->
+  <g transform="translate(40, 530)">
+    <rect width="920" height="130" rx="6" fill="#f8faf9" stroke="#d5ded9" stroke-width="1.5"/>
+    <text x="25" y="26" font-size="13" font-weight="700" fill="#192e27">3. Pravila postavljanja i kontrast svetlosne refleksije (LRV)</text>
+
+    <g transform="translate(25, 45)">
+      <text x="0" y="15" font-size="11" font-weight="700" fill="#2e7d32">• Svetlosni kontrast (LRV):</text>
+      <text x="150" y="15" font-size="11" fill="#333333">Razlika faktora refleksije svetlosti ΔLRV ≥ 30 bodova (npr. žuta traka LRV ≈ 65 na tamnom asfaltu LRV ≈ 15).</text>
+
+      <text x="0" y="35" font-size="11" font-weight="700" fill="#2e7d32">• Lokacija najave:</text>
+      <text x="150" y="35" font-size="11" fill="#333333">Polje upozorenja postavlja se 40–50 cm PRE početka prepreke, stepeništa, rampe ili kolovoza.</text>
+
+      <text x="0" y="55" font-size="11" font-weight="700" fill="#2e7d32">• Prekidi i skretanja:</text>
+      <text x="150" y="55" font-size="11" fill="#333333">Svaka promena smera trake vođenja pod uglom od 90° izvodi se kvadratnim poljem upozorenja 50 × 50 cm.</text>
+
+      <text x="0" y="75" font-size="11" font-weight="700" fill="#d32f2f">• Česta greška:</text>
+      <text x="150" y="75" font-size="11" fill="#d32f2f">Taktilna traka koja vodi direktno u stub, kantu za smeće ili se prekida bez polja skretanja.</text>
+    </g>
+  </g>
+</svg>

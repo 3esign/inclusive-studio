@@ -173,6 +173,42 @@ export const IDEA_BANK = [
     move: t('Break one dependency on paper and draw the route back to agency.', 'Na papiru prekini jednu zavisnost i nacrtaj put povratka samostalnosti.'),
     evidence: t('Failure state, consequence, recovery time and a non-digital fallback.', 'Stanje kvara, posledica, vreme oporavka i nedigitalna rezerva.'),
     source: { label: 'W3C WCAG — Error prevention', url: 'https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-all.html' }
+  },
+  {
+    id: 'acoustic-zoning', status: 'candidate', field: 'sensory', principles: [2, 3, 4, 7],
+    title: t('Acoustic zoning and reverberation control', 'Akustičko zoniranje i kontrola reverberacije'),
+    bridge: t('acoustics ↔ sensory inclusion', 'akustika ↔ senzorna inkluzija'),
+    question: t('Can spatial volume and absorption keep RT60 below 0.6s without turning a room into a recording booth?', 'Mogu li zapremina i apsorpcija da zadrže RT60 ispod 0,6 s a da prostor ne postane gluv?'),
+    move: t('Calculate reverberation time using the Sabine formula and test speech clarity with hearing-aid users.', 'Izračunaj vreme reverberacije Sabinovom formulom i proveri razgovetnost sa korisnicima slušnih aparata.'),
+    evidence: t('RT60 measurement, absorption area, background noise level in dBA and speech transmission index.', 'Merenje RT60, površina apsorpcije, nivo buke u dBA i indeks prenosa govora.'),
+    source: { label: 'Gallaudet DeafSpace Design Guidelines', url: 'https://gallaudet.edu/campus-design-facilities/campus-design-and-planning/deafspace/' }
+  },
+  {
+    id: 'tactile-guide-wall', status: 'candidate', field: 'making', principles: [1, 3, 4],
+    title: t('A continuous tactile wall that leads the hand', 'Neprekidni taktilni zid koji vodi ruku'),
+    bridge: t('material texture ↔ wayfinding', 'tekstura materijala ↔ orijentacija'),
+    question: t('How can natural materials like cork or grooved timber provide continuous guidance without floor clutter?', 'Kako prirodni materijali poput plute ili profilisanog drveta mogu voditi ruku bez prepreka na podu?'),
+    move: t('Design and mock up a 3-metre wall section with tactile height cues, transition nodes and room markers.', 'Projektuj i napravi uzorak zida od 3 metra sa taktilnim visinskim prelazima i oznakama prostorija.'),
+    evidence: t('Hand-tracking video, speed of movement, recognition of destinations and participant feedback.', 'Video-praćenje kretanja ruke, brzina prolaza, prepoznavanje odredišta i zapažanja korisnika.'),
+    source: { label: 'Hazelwood School — Alan Dunlop', url: 'https://alandunloparchitects.com/hazelwood-school/' }
+  },
+  {
+    id: 'lrv-contrast-envelope', status: 'research', field: 'measurement', principles: [3, 4, 7],
+    title: t('The light reflectance envelope of a doorway', 'Omotač svetlosnog kontrasta oko vrata'),
+    bridge: t('photometry ↔ boundary legibility', 'fotometrija ↔ čitljivost prostorne granice'),
+    question: t('Does a 30-point LRV difference make thresholds and frames readable across varying daylight conditions?', 'Da li razlika od 30 LRV bodova čini prag i štok čitljivim u svim uslovima dnevnog svetla?'),
+    move: t('Measure LRV of five frame/wall combinations under direct sun, overcast sky and artificial LED lighting.', 'Izmeri LRV pet kombinacija štoka i zida na direktnom suncu, oblačnom danu i LED svetlu.'),
+    evidence: t('LRV spectrophotometer readings, lux levels, recognition distance for low-vision readers.', 'Očitavanja spektrofotometrom, nivo luksa i udaljenost prepoznavanja za slabovide osobe.'),
+    source: { label: 'ISO 21542:2021', url: 'https://www.iso.org/standard/71860.html' }
+  },
+  {
+    id: 'sensory-retreat-pocket', status: 'candidate', field: 'space', principles: [1, 2, 6],
+    title: t('A sensory refuge built into the circulation path', 'Senzorno utočište ugrađeno u hodnik'),
+    bridge: t('spatial zoning ↔ neurodivergent safety', 'prostorno zoniranje ↔ neurodivergentna sigurnost'),
+    question: t('Can a niche offer immediate withdrawal from sensory overload without segregating or concealing the occupant?', 'Može li niša ponuditi povlačenje od preopterećenja bez izolacije i skrivanja korisnika?'),
+    move: t('Draw a plan and section of an alcove with indirect light, acoustic damping and predictable sightlines.', 'Nacrtaj osnovu i presek niše sa indirektnim svetlom, akustičkim prigušenjem i predvidljivim vizurama.'),
+    evidence: t('Sound level drop in dBA, illuminance in lux, field of view and user heart-rate/recovery diary.', 'Pad nivoa zvuka u dBA, osvetljenost u luksima, vidno polje i zabeležen oporavak korisnika.'),
+    source: { label: 'Magda Mostafa — Autism ASPECTSS™ Index', url: 'https://archnet.org/publications/9783' }
   }
 ];
 

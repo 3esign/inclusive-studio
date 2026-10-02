@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" style="background:#ffffff;font-family:system-ui,-apple-system,sans-serif;">
+  <defs>
+    <pattern id="grid10" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f0f3f1" stroke-width="1"/>
+    </pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#192e27"/>
+    </marker>
+    <marker id="arr-rev" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 8 1.5 L 0 5 L 8 8.5 z" fill="#192e27"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="700" fill="url(#grid10)"/>
+
+  <!-- Header -->
+  <g transform="translate(40, 45)">
+    <text font-size="20" font-weight="700" fill="#192e27" letter-spacing="-0.02em">GEOMETRIJA I DETALJ RAMPE / RAMP GEOMETRY &amp; DETAILS</text>
+    <text y="22" font-size="12" fill="#586962">Tehnički standardi pristupačnosti: Pravilnik RS 22/2015 i 10/2026 (čl. 7) · EN 17210:2021</text>
+  </g>
+
+  <!-- Section 1: Podužni presek rampe sa odmorištem -->
+  <g transform="translate(40, 95)">
+    <rect width="920" height="340" rx="6" fill="#f8faf9" stroke="#d5ded9" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="14" font-weight="700" fill="#192e27">1. Podužni presek: nagibi, odmorišta i dvostruki rukohvati (čl. 7)</text>
+
+    <!-- Ground / Profile geometry -->
+    <g transform="translate(50, 230)">
+      <!-- Level 0 base line -->
+      <line x1="-20" y1="0" x2="800" y2="0" stroke="#8c9e96" stroke-width="1" stroke-dasharray="4 4"/>
+
+      <!-- Lower landing -->
+      <path d="M 0 0 L 120 0 L 360 -70 L 480 -70 L 720 -140 L 820 -140" fill="none" stroke="#192e27" stroke-width="3"/>
+      <!-- Foundation hatch area -->
+      <path d="M 0 0 L 120 0 L 360 -70 L 480 -70 L 720 -140 L 820 -140 L 820 40 L 0 40 Z" fill="#eaf0ec" opacity="0.6"/>
+
+      <!-- Handrail 1 (90 cm above ramp) -->
+      <path d="M -20 -45 L 0 -45 L 120 -45 L 360 -115 L 480 -115 L 720 -185 L 840 -185" fill="none" stroke="#2e7d32" stroke-width="3"/>
+      <!-- Handrail 2 (70 cm above ramp) -->
+      <path d="M -20 -35 L 0 -35 L 120 -35 L 360 -105 L 480 -105 L 720 -175 L 840 -175" fill="none" stroke="#2e7d32" stroke-width="2"/>
+
+      <!-- Vertical posts (stubovi ograde) -->
+      <line x1="0" y1="0" x2="0" y2="-45" stroke="#2e7d32" stroke-width="1.5"/>
+      <line x1="120" y1="0" x2="120" y2="-45" stroke="#2e7d32" stroke-width="1.5"/>
+      <line x1="240" y1="-35" x2="240" y2="-80" stroke="#2e7d32" stroke-width="1.5"/>
+      <line x1="360" y1="-70" x2="360" y2="-115" stroke="#2e7d32" stroke-width="1.5"/>
+      <line x1="480" y1="-70" x2="480" y2="-115" stroke="#2e7d32" stroke-width="1.5"/>
+      <line x1="600" y1="-105" x2="600" y2="-150" stroke="#2e7d32" stroke-width="1.5"/>
+      <line x1="720" y1="-140" x2="720" y2="-185" stroke="#2e7d32" stroke-width="1.5"/>
+      <line x1="820" y1="-140" x2="820" y2="-185" stroke="#2e7d32" stroke-width="1.5"/>
+
+      <!-- Protective curb 5 cm (Ivičnjak) -->
+      <rect x="120" y="-3" width="240" height="3" fill="#192e27"/>
+      <rect x="480" y="-73" width="240" height="3" fill="#192e27"/>
+
+      <!-- Dimension: Handrail 90 cm -->
+      <line x1="100" y1="0" x2="100" y2="-45" stroke="#192e27" stroke-width="1" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="85" y="-22" font-size="10" font-weight="700" fill="#192e27" text-anchor="end">90 cm</text>
+
+      <!-- Dimension: Handrail 70 cm -->
+      <line x1="135" y1="0" x2="135" y2="-35" stroke="#192e27" stroke-width="1" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="145" y="-15" font-size="10" font-weight="700" fill="#192e27">70 cm</text>
+
+      <!-- Dimension: Handrail extension 30 cm -->
+      <line x1="-20" y1="-55" x2="0" y2="-55" stroke="#2e7d32" stroke-width="1" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="-10" y="-62" font-size="10" font-weight="700" fill="#2e7d32" text-anchor="middle">30 cm prepust</text>
+
+      <!-- Slope label Flight 1 -->
+      <text x="240" y="-50" font-size="12" font-weight="700" fill="#192e27" text-anchor="middle">NAGIB ≤ 5 % (preporučeno)</text>
+      <text x="240" y="-37" font-size="10" fill="#586962" text-anchor="middle">Maks. dužina leta = 9,0 m</text>
+
+      <!-- Landing label -->
+      <line x1="360" y1="-85" x2="480" y2="-85" stroke="#192e27" stroke-width="1" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="420" y="-95" font-size="11" font-weight="700" fill="#192e27" text-anchor="middle">ODMORIŠTE min. 150 cm</text>
+
+      <!-- Slope label Flight 2 -->
+      <text x="600" y="-120" font-size="12" font-weight="700" fill="#d32f2f" text-anchor="middle">NAGIB ≤ 8,3 % (izuzetak)</text>
+      <text x="600" y="-107" font-size="10" fill="#d32f2f" text-anchor="middle">Maks. dužina leta = 6,0 m</text>
+
+      <!-- Level indicators -->
+      <text x="0" y="20" font-size="10" font-weight="700" fill="#192e27">±0.00 m</text>
+      <text x="420" y="-55" font-size="10" font-weight="700" fill="#192e27">+0.30 m</text>
+      <text x="820" y="-125" font-size="10" font-weight="700" fill="#192e27">+0.80 m</text>
+    </g>
+  </g>
+
+  <!-- Section 2: Osnova rampe i taktilno polje -->
+  <g transform="translate(40, 455)">
+    <rect width="920" height="205" rx="6" fill="#f8faf9" stroke="#d5ded9" stroke-width="1.5"/>
+    <text x="20" y="26" font-size="14" font-weight="700" fill="#192e27">2. Osnova rampe: svetla širina, ivičnjak i taktilna najava / Plan View</text>
+
+    <g transform="translate(30, 45)">
+      <!-- Main ramp plan -->
+      <rect x="80" y="15" width="560" height="90" fill="#ffffff" stroke="#c2cec7" stroke-width="1"/>
+
+      <!-- Lower landing area -->
+      <rect x="0" y="15" width="80" height="90" fill="#f0f5f2" stroke="#192e27" stroke-width="1.5"/>
+      <text x="40" y="65" font-size="10" font-weight="600" fill="#586962" text-anchor="middle">Prilaz</text>
+
+      <!-- Tactile warning strip (50 cm wide, 50 cm before ramp) -->
+      <rect x="25" y="15" width="30" height="90" fill="#fbc02d" opacity="0.85" stroke="#f57f17" stroke-width="1"/>
+      <text x="40" y="125" font-size="10" font-weight="700" fill="#f57f17" text-anchor="middle">Taktilno polje 40–50 cm</text>
+
+      <!-- Curbs on edges (5 cm) -->
+      <line x1="80" y1="15" x2="640" y2="15" stroke="#192e27" stroke-width="4"/>
+      <line x1="80" y1="105" x2="640" y2="105" stroke="#192e27" stroke-width="4"/>
+      <text x="360" y="8" font-size="10" font-weight="700" fill="#192e27" text-anchor="middle">Ivičnjak h ≥ 5 cm (sa obe strane)</text>
+
+      <!-- Handrail lines -->
+      <line x1="60" y1="20" x2="660" y2="20" stroke="#2e7d32" stroke-width="2" stroke-dasharray="8 3"/>
+      <line x1="60" y1="100" x2="660" y2="100" stroke="#2e7d32" stroke-width="2" stroke-dasharray="8 3"/>
+
+      <!-- Flight 1 -->
+      <rect x="80" y="15" width="220" height="90" fill="#eaf6ee" opacity="0.3"/>
+      <text x="190" y="65" font-size="12" font-weight="700" fill="#192e27" text-anchor="middle">Krak rampe (L ≤ 9 m)</text>
+      <!-- Arrow direction up -->
+      <line x1="130" y1="60" x2="250" y2="60" stroke="#192e27" stroke-width="2" marker-end="url(#arr)"/>
+
+      <!-- Intermediate landing -->
+      <rect x="300" y="15" width="120" height="90" fill="#e0eee6" stroke="#8c9e96" stroke-width="1"/>
+      <text x="360" y="60" font-size="11" font-weight="700" fill="#192e27" text-anchor="middle">Odmorište</text>
+      <text x="360" y="75" font-size="10" fill="#586962" text-anchor="middle">L ≥ 150 cm</text>
+
+      <!-- Flight 2 -->
+      <rect x="420" y="15" width="220" height="90" fill="#eaf6ee" opacity="0.3"/>
+      <line x1="470" y1="60" x2="590" y2="60" stroke="#192e27" stroke-width="2" marker-end="url(#arr)"/>
+
+      <!-- Dimension: Clear width -->
+      <line x1="675" y1="15" x2="675" y2="105" stroke="#192e27" stroke-width="1.5" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="690" y="65" font-size="11" font-weight="700" fill="#192e27">120 cm (min.) / 180 cm (dvosmerno)</text>
+    </g>
+
+    <!-- Side Key Facts Table -->
+    <g transform="translate(680, 45)">
+      <rect width="215" height="135" rx="4" fill="#ffffff" stroke="#c2cec7"/>
+      <text x="15" y="22" font-size="11" font-weight="700" fill="#192e27">ZAKONSKI PARAMETRI (RS)</text>
+      <text x="15" y="42" font-size="10" fill="#333333">• Nagib: ≤ 5 % (1:20) redovno</text>
+      <text x="15" y="58" font-size="10" fill="#333333">• Nagib izuzetak: ≤ 8,3 % (do 6 m)</text>
+      <text x="15" y="74" font-size="10" fill="#333333">• Širina: min. 120 cm (čista)</text>
+      <text x="15" y="90" font-size="10" fill="#333333">• Odmorište: min. 150 cm dužine</text>
+      <text x="15" y="106" font-size="10" fill="#333333">• Rukohvati: na h=70 i h=90 cm</text>
+      <text x="15" y="122" font-size="10" fill="#333333">• Ivičnjak: obavezan h ≥ 5 cm</text>
+    </g>
+  </g>
+</svg>

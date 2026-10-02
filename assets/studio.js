@@ -4,6 +4,7 @@ import { exercises, ideas } from './exercises.js';
 import { exportDraft, importDraft, issueDraftLink } from './contributions.js';
 import { validateSchedule, formatDate, createICS } from './calendar.js';
 import { $, $$, esc, read, save, lang, setLanguage, tr, tx, number, link, arrow, announce, download, chrome, applyComfort } from './core.js';
+import { SPATIAL_STANDARDS, SEVEN_PRINCIPLES, DEAFSPACE_PATTERNS, ASPECTSS_INDEX, PRECEDENTS, VISUAL_ATLAS } from './architecture.js';
 
 const REPO = 'https://github.com/3esign/inclusive-studio';
 let role = read('role','student') === 'partner' ? 'partner' : 'student';
@@ -49,9 +50,199 @@ function calendar(){
   ${weekPlan()}
   <section><div class="section-heading"><h2>${tr('The proposed project sequence','Predloženi tok projekta')}</h2><span class="tag">${tr('Not a weekly timetable','Nije nedeljni raspored')}</span></div>${stages.map(s=>`<a class="stage-row" href="studio.html?stage=${s.id}"><span class="num">${number(s.id)}</span><div><strong>${esc(tx(s.title))}</strong><small>${esc(tx(s.question))}</small></div>${arrow}</a>`).join('')}</section>`;
 }
-function brief(){return `<div class="page-top"><div><p class="eyebrow">${tr('Project brief / Pilot proposal','Projektni zadatak / Predlog pilota')}</p><h1>${tr('An everyday place.<br>A shared possibility.','Svakodnevno mesto.<br>Zajednička mogućnost.')}</h1><p class="lede">${tr('Redesign one everyday place with the people who use it. Make access, choice and belonging visible in architectural decisions.','Preprojektujte jedno svakodnevno mesto sa ljudima koji ga koriste. Pokažite pristup, izbor i pripadanje kroz arhitektonske odluke.')}</p></div>${pageMeta()}</div><div class="document"><nav class="document-index" aria-label="${tr('Brief sections','Delovi zadatka')}">${['place','learn','evidence','review','ai'].map((id,i)=>link('#'+id,tr(['01 / The place','02 / What you learn','03 / What you make','04 / How we review','05 / Working with AI'][i],['01 / Mesto','02 / Šta učimo','03 / Šta pravimo','04 / Kako razmatramo','05 / Rad sa AI'][i]))).join('')}</nav><div>
+function principlesDetailSection(){
+  return `<section id="principles" class="principles-detail" aria-labelledby="principles-title">
+    <div class="section-heading">
+      <h2 id="principles-title">${tr('The Seven Principles of Universal Design in Architecture','Sedam principa univerzalnog dizajna u arhitekturi')}</h2>
+      <span class="tag">${tr('Operationalized for space','Operacionalizovano za prostor')}</span>
+    </div>
+    <p class="lede">${tr('Formulated by Ronald Mace and the Center for Universal Design (NC State, 1997). Here each principle is translated into an architectural rule to achieve and a failure mode to eliminate.','Autori: Ronald Mace i Centar za univerzalni dizajn (1997). Svaki princip je preveden u konkretno arhitektonsko pravilo koje treba ostvariti i tipičnu grešku koju treba otkloniti.')}</p>
+    <div class="principles-grid">
+      ${SEVEN_PRINCIPLES.map(p => `
+        <article class="principle-card">
+          <header class="principle-head">
+            <span class="principle-num" aria-hidden="true">${number(p.n)}</span>
+            <div>
+              <h3>${esc(tx(p.title))}</h3>
+              <p class="principle-def">${esc(tx(p.definition))}</p>
+            </div>
+          </header>
+          <div class="principle-body">
+            <div class="principle-rule">
+              <span class="rule-badge pass">${tr('Architectural rule','Arhitektonsko pravilo')}</span>
+              <p>${esc(tx(p.rule))}</p>
+            </div>
+            <div class="principle-rule fail">
+              <span class="rule-badge fail">${tr('Failure mode to eliminate','Greška koju uklanjamo')}</span>
+              <p>${esc(tx(p.fail))}</p>
+            </div>
+          </div>
+        </article>
+      `).join('')}
+    </div>
+  </section>`;
+}
+
+function spatialStandardsSection(){
+  return `<section id="standards" class="spatial-standards" aria-labelledby="standards-title">
+    <div class="section-heading">
+      <h2 id="standards-title">${tr('Statutory Spatial Standards & Critical Clearances','Obavezujući prostorni standardi i kritične dimenzije')}</h2>
+      <span class="tag">${tr('Pravilnik RS 22/2015 i 10/2026 · ISO 21542','Pravilnik RS 22/2015 i 10/2026 · ISO 21542')}</span>
+    </div>
+    <p class="lede">${tr('The minimum statutory geometry that must be met without exception in every architectural submission. Every dimension cites the specific article of the Rulebook.','Minimalna zakonska geometrija koja se bez izuzetka mora ispoštovati u svakom arhitektonskom rešenju. Svaka dimenzija navodi tačan član Pravilnika.')}</p>
+    <div class="standards-grid">
+      ${SPATIAL_STANDARDS.map(s => `
+        <article class="standard-card" id="standard-${esc(s.id)}">
+          <header class="standard-head">
+            <div>
+              <span class="meta-label">${esc(s.article)} · ${esc(s.regulation)}</span>
+              <h3>${esc(tx(s.title))}</h3>
+              <span class="standard-ref">${esc(s.standard)}</span>
+            </div>
+            ${s.visual ? `<a class="standard-visual-link" href="${esc(s.visual)}" target="_blank" rel="noopener" title="${tr('Open detail SVG','Otvori SVG detalj')}"><img src="${esc(s.visual)}" alt="${esc(tx(s.title))}" loading="lazy"></a>` : ''}
+          </header>
+          <ul class="standard-rules">
+            ${s.rules.map(r => `<li>${esc(tx(r))}</li>`).join('')}
+          </ul>
+        </article>
+      `).join('')}
+    </div>
+  </section>`;
+}
+
+function neuroSensorySection(){
+  return `<section id="neuro-sensory" class="neuro-sensory" aria-labelledby="neuro-title">
+    <div class="section-heading">
+      <h2 id="neuro-title">${tr('Sensory & Neurodivergent Architecture','Čulna i neurodivergentna arhitektura')}</h2>
+      <span class="tag">${tr('DeafSpace & Autism ASPECTSS™','DeafSpace i Autism ASPECTSS™')}</span>
+    </div>
+    <p class="lede">${tr('Extending universal design beyond physical mobility into sensory perception, cognitive ease, and communication modalities.','Širenje univerzalnog dizajna izvan fizičkog kretanja na polje čulnog doživljaja, kognitivnog rasterećenja i načina komunikacije.')}</p>
+    
+    <div class="neuro-block">
+      <div class="sub-heading">
+        <div>
+          <h3>${tr('DeafSpace: Five Architectural Dimensions','DeafSpace: Pet arhitektonskih dimenzija')}</h3>
+          <span class="small muted">${tr('Gallaudet University / Hansel Bauman','Univerzitet Gallaudet / Hansel Bauman')}</span>
+        </div>
+      </div>
+      <p>${tr('Space designed around the visual and tactile ecology of deaf culture: sightlines, walking rhythm during sign language, diffuse lighting, and acoustic dampening.','Prostor oblikovan oko vizuelne i taktilne ekologije kulture gluvih: vidne linije, ritam hoda tokom znakovnog razgovora, difuzno svetlo i prigušivanje odjeka.')}</p>
+      <div class="deafspace-grid">
+        ${DEAFSPACE_PATTERNS.map((d, i) => `
+          <div class="pattern-card">
+            <span class="meta-label">0${i+1} / ${esc(d.id)}</span>
+            <h4>${esc(tx(d.title))}</h4>
+            <p>${esc(tx(d.body))}</p>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+
+    <div class="neuro-block">
+      <div class="sub-heading">
+        <div>
+          <h3>${tr('Autism ASPECTSS™ Architectural Index','Autism ASPECTSS™ arhitektonski indeks')}</h3>
+          <span class="small muted">${tr('Dr. Magda Mostafa / AUC / UIA Work Programme','Dr Magda Mostafa / AUC / UIA')}</span>
+        </div>
+      </div>
+      <p>${tr('The world’s first evidence-based sensory design framework for autism: seven architectural criteria to calibrate sensory load, predict spatial transitions, and provide escape refuges.','Prvi naučno zasnovani okvir čulnog projektovanja za autizam u svetu: sedam arhitektonskih kriterijuma za kalibraciju stimulansa, predvidljivost prelaza i obezbeđivanje mirnih skloništa.')}</p>
+      <div class="aspectss-grid">
+        ${ASPECTSS_INDEX.map(a => `
+          <div class="aspectss-card">
+            <span class="aspectss-letter" aria-hidden="true">${esc(a.letter)}</span>
+            <div class="aspectss-info">
+              <h4>${esc(tx(a.title))}</h4>
+              <p>${esc(tx(a.body))}</p>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  </section>`;
+}
+
+function visualAtlasSection(){
+  return `<section id="visual-atlas" class="visual-atlas" aria-labelledby="atlas-title">
+    <div class="section-heading">
+      <h2 id="atlas-title">${tr('Visual Atlas of Architectural Details','Vizuelni atlas arhitektonskih detalja')}</h2>
+      <span class="tag">${tr('Vector SVG specifications','Vektorske SVG specifikacije')}</span>
+    </div>
+    <p class="lede">${tr('Parametric vector drawings based on statutory standards (Pravilnik RS 22/2015 & 10/2026, ISO 21542, DeafSpace). Clean geometry to inspect, verify and cite on your weekly A3 sheets.','Parametarski vektorski crteži zasnovani na važećim standardima (Pravilnik RS 22/2015 i 10/2026, ISO 21542, DeafSpace). Čista geometrija za proveru, merenje i citiranje na nedeljnim A3 listovima.')}</p>
+    <div class="atlas-grid">
+      ${VISUAL_ATLAS.map(item => `
+        <article class="atlas-card" id="atlas-${esc(item.id)}">
+          <div class="atlas-preview">
+            <img src="${esc(item.file)}" alt="${esc(tx(item.title))}" loading="lazy" decoding="async">
+          </div>
+          <div class="atlas-content">
+            <span class="meta-label">${tr('Architectural detail','Arhitektonski detalj')}</span>
+            <h3>${esc(tx(item.title))}</h3>
+            <p>${esc(tx(item.summary))}</p>
+            <div class="atlas-actions">
+              <a class="button secondary" href="${esc(item.file)}" target="_blank" rel="noopener">${tr('Open SVG in full view','Otvori puni SVG')} ↗</a>
+              <a class="mini-link" href="${esc(item.file)}" download>${tr('Download .svg','Preuzmi .svg')} ↓</a>
+            </div>
+          </div>
+        </article>
+      `).join('')}
+    </div>
+  </section>`;
+}
+
+function precedentsSection(){
+  return `<section id="precedents" class="precedents-section" aria-labelledby="precedents-title">
+    <div class="section-heading">
+      <h2 id="precedents-title">${tr('Built Precedents & Spatial Case Studies','Izvedeni antologijski primeri i prostorne studije')}</h2>
+      <span class="tag">${PRECEDENTS.length} ${tr('case studies','studija slučaja')}</span>
+    </div>
+    <p class="lede">${tr('Real built architecture where universal access generates spatial identity rather than an afterthought. Measured parameters, verified acoustic/lighting data, and core design lessons.','Realizovana arhitektura gde pristupačnost generiše prostorni identitet umesto naknadnog prilagođavanja. Izmereni parametri, provereni podaci akustike/osvetljenja i ključne lekcije.')}</p>
+    <div class="precedent-grid">
+      ${PRECEDENTS.map(p => `
+        <article class="precedent-card" id="precedent-${esc(p.id)}">
+          <div class="precedent-head">
+            <div class="precedent-meta">
+              <span class="meta-label">${esc(tx(p.category))}</span>
+              <span class="tag">${esc(p.year)}</span>
+            </div>
+            <h3>${esc(tx(p.title))}</h3>
+            <p class="precedent-sub">${esc(p.architect)} · ${esc(p.location)}</p>
+          </div>
+          <p class="precedent-hero"><strong>${tr('Key spatial idea','Ključna prostorna ideja')}:</strong> ${esc(tx(p.hero))}</p>
+          <div class="precedent-measured">
+            <h4>${tr('Measured architectural evidence','Izmereni arhitektonski parametri')}</h4>
+            <ul>
+              ${p.measured.map(m => `<li>${esc(tx(m))}</li>`).join('')}
+            </ul>
+          </div>
+          <blockquote class="precedent-lesson">
+            <p><strong>${tr('Studio lesson','Pouka za studio')}:</strong> ${esc(tx(p.lesson))}</p>
+          </blockquote>
+        </article>
+      `).join('')}
+    </div>
+  </section>`;
+}
+
+function brief(){
+  const briefNav = [
+    ['place', tr('01 / The place', '01 / Mesto')],
+    ['learn', tr('02 / What you learn', '02 / Šta učimo')],
+    ['principles', tr('03 / Seven principles', '03 / Sedam principa')],
+    ['standards', tr('04 / Spatial standards', '04 / Standardi i propisi')],
+    ['neuro-sensory', tr('05 / Sensory & neurodivergent', '05 / Čula i neurodivergentnost')],
+    ['evidence', tr('06 / What you make', '06 / Šta pravimo')],
+    ['review', tr('07 / How we review', '07 / Kako razmatramo')],
+    ['ai', tr('08 / Working with AI', '08 / Rad sa AI')],
+    ['site', tr('09 / Site facts', '09 / Podaci lokacije')],
+    ['themes', tr('10 / Project themes', '10 / Teme projekta')],
+    ['hand-in', tr('11 / Hand-in items', '11 / Sadržaj predaje')],
+    ['marks', tr('12 / Marking scheme', '12 / Ocenjivanje')]
+  ];
+  return `<div class="page-top"><div><p class="eyebrow">${tr('Project brief / Pilot proposal','Projektni zadatak / Predlog pilota')}</p><h1>${tr('An everyday place.<br>A shared possibility.','Svakodnevno mesto.<br>Zajednička mogućnost.')}</h1><p class="lede">${tr('Redesign one everyday place with the people who use it. Make access, choice and belonging visible in architectural decisions.','Preprojektujte jedno svakodnevno mesto sa ljudima koji ga koriste. Pokažite pristup, izbor i pripadanje kroz arhitektonske odluke.')}</p></div>${pageMeta()}</div><div class="document"><nav class="document-index" aria-label="${tr('Brief sections','Delovi zadatka')}">${briefNav.map(([id,label])=>link('#'+id,label)).join('')}</nav><div>
   <section id="place"><h2>${tr('Begin with a real situation.','Počnite od stvarne situacije.')}</h2><p>${tr('A neighbourhood entrance, shared courtyard, small public interior or route to a service: choose a manageable place together. The site and association have not yet been selected.','Ulaz u komšiluku, zajedničko dvorište, mali javni enterijer ili put do usluge: zajedno izaberite mesto primerenog obima. Lokacija i udruženje još nisu izabrani.')}</p><p>${tr('Work at three connected scales: the journey to the place, the organisation of the place, and one detail that changes its use. A ramp alone is not the whole experience.','Radite u tri povezane razmere: put do mesta, organizacija mesta i jedan detalj koji menja način korišćenja. Rampa sama nije celo iskustvo.')}</p><div class="notice"><p>${tr('This is a proposed studio framework for third-year architecture students. Teaching hours, credits, assessment weights and formal accommodations must be set by the responsible course team. This site does not award credits.','Ovo je predloženi okvir studija za treću godinu arhitekture. Fond časova, bodove, ponderisanje ocena i formalna prilagođavanja određuje odgovorni nastavni tim. Ovaj sajt ne dodeljuje bodove.')}</p></div></section>
   <section id="learn"><h2>${tr('What you should be able to do.','Po završetku treba da možete:')}</h2><ol><li>${tr('Document an actual spatial barrier without reducing a person to a diagnosis.','da dokumentujete stvarnu prostornu barijeru bez svođenja osobe na dijagnozu;')}</li><li>${tr('Negotiate a brief with coauthors and show where their decisions changed it.','da dogovorite zadatak sa koautorima i pokažete gde su njihove odluke promenile projekat;')}</li><li>${tr('Compare spatial alternatives using access, choice, sensory comfort and effort.','da uporedite prostorne varijante prema pristupu, izboru, čulnoj udobnosti i naporu;')}</li><li>${tr('Test a critical detail at full scale and revise it from evidence.','da ispitate ključni detalj u punoj veličini i doradite ga prema nalazima;')}</li><li>${tr('Communicate a coherent architectural proposal through coordinated spatial representations and a companion plain-language explanation.','da saopštite celovit arhitektonski predlog usklađenim prostornim prikazima i pratećim objašnjenjem na jednostavnom jeziku;')}</li><li>${tr('If you use AI, identify its contribution, failures and your independent checks. Otherwise document your own checking method.','da, ako koristite AI, prepoznate njegov doprinos i greške i zabeležite sopstvene nezavisne provere; u suprotnom, da dokumentujete svoj postupak provere.')}</li></ol></section>
+  ${principlesDetailSection()}
+  ${spatialStandardsSection()}
+  ${neuroSensorySection()}
   <section id="evidence"><h2>${tr('One connected project record.','Jedan povezan zapis projekta.')}</h2><p>${tr('Carry the same place and the same questions through the six stages. Each hand-in builds on the previous one. Use the scales that make your evidence legible; the course team must confirm formal drawing requirements.','Isto mesto i ista pitanja prolaze kroz šest faza. Svaki novi A3 i deo projekta nastavljaju prethodni rad. Koristite razmere koje čine dokaz čitljivim; nastavni tim potvrđuje formalne zahteve za crteže.')}</p>${stages.map(s=>`<a class="stage-row" href="studio.html?stage=${s.id}"><span class="num">${number(s.id)}</span><div><strong>${esc(tx(s.title))}</strong><small>${esc(tx(s.deliverables)[0])}</small></div>${arrow}</a>`).join('')}</section>
   <section id="review"><h2>${tr('A review that changes the project.','Razmatranje koje menja projekat.')}</h2><p>${tr('The following is a proposed feedback rubric, not an approved grading scheme. Use “evidence present”, “needs revision” and “not yet tested” for each dimension. A negative finding is useful if the response is documented.','Sledi predlog rubrike za povratnu informaciju, ne odobrena šema ocenjivanja. Za svaku dimenziju koristite: „dokaz postoji”, „potrebna dorada” i „još nije ispitano”. Negativan nalaz je koristan ako je odgovor dokumentovan.')}</p><div class="principles">${[
  [tr('Spatial evidence','Prostorni dokazi'),tr('Measured conditions, a complete journey and uncertainty clearly marked.','Izmereni uslovi, celovito kretanje i jasno označene neizvesnosti.')],
@@ -60,14 +251,29 @@ function brief(){return `<div class="page-top"><div><p class="eyebrow">${tr('Pro
  [tr('Testing and revision','Ispitivanje i dorada'),tr('An actual test, its limitations and a before/after decision are shown.','Prikazani su stvarno ispitivanje, njegove granice, početna odluka i izmena doneta posle provere.')],
  [tr('Accessible communication','Pristupačno saopštavanje'),tr('Meaning survives beyond the drawing: descriptions, readable structure and a usable format.','Smisao postoji i izvan crteža: opisi, čitljiva struktura i upotrebljiv format.')]
  ].map(([h,p])=>`<article><div><h3>${h}</h3><p>${p}</p></div></article>`).join('')}</div></section>
-  <section id="ai"><h2>${tr('AI can assist. It cannot consent.','AI može da pomogne. Ne može da da saglasnost.')}</h2><p>${tr('Use AI to generate alternatives, organise non-sensitive notes or draft a description. Verify every spatial claim against measurements and an applicable source. An invented persona cannot speak for a coauthor; a generated image cannot prove accessibility.','Koristite AI za varijante, organizaciju neosetljivih beležaka ili nacrt opisa. Svaku prostornu tvrdnju proverite merenjem i odgovarajućim izvorom. Izmišljena persona ne govori umesto koautora; generisana slika ne dokazuje pristupačnost.')}</p><p>${tr('Participation must remain possible without an AI account, a paid tool or image generation.','Učešće mora biti moguće bez AI naloga, plaćenog alata ili generisanja slike.')}</p>${link('resources.html',tr('Explore the reference library','Otvori biblioteku izvora')+arrow,'button secondary')}</section>${siteFacts()}</div></div>`;}
+  <section id="ai"><h2>${tr('AI can assist. It cannot consent.','AI može da pomogne. Ne može da da saglasnost.')}</h2><p>${tr('Use AI to generate alternatives, organise non-sensitive notes or draft a description. Verify every spatial claim against measurements and an applicable source. An invented persona cannot speak for a coauthor; a generated image cannot prove accessibility.','Koristite AI za varijante, organizaciju neosetljivih beležaka ili nacrt opisa. Svaku prostornu tvrdnju proverite merenjem i odgovarajućim izvorom. Izmišljena persona ne govori umesto koautora; generisana slika ne dokazuje pristupačnost.')}</p><p>${tr('Participation must remain possible without an AI account, a paid tool or image generation.','Učešće mora biti moguće bez AI naloga, plaćenog alata ili generisanja slike.')}</p>${link('resources.html',tr('Explore the reference library','Otvori biblioteku izvora')+arrow,'button secondary')}</section>${siteFacts()}</div></div>`;
+}
+
 function fieldMaterial(){return `<section id="field-material" class="field-material" aria-labelledby="field-title"><div class="section-heading"><h2 id="field-title">${tr('From the field archive: Živimo zajedno','Iz terenske zbirke: Živimo zajedno')}</h2><span class="tag">${tr('Teaching material / Source under review','Nastavni materijal / Izvor u proveri')}</span></div><div class="field-grid"><figure><a href="assets/fieldwork/zivimo-zajedno-sketch.jpg"><img src="assets/fieldwork/zivimo-zajedno-sketch.jpg" width="1000" height="563" loading="lazy" decoding="async" alt="${tr('Blue-ink site sketch: two larger rectangular areas separated by a narrow strip with steps; see the structured description alongside.','Terenska skica plavom olovkom: dve veće pravougaone površine razdvaja uska traka sa stepenicama; strukturisani opis je pored.')}"></a><figcaption>${tr('Unaltered image from the course archive. Open the full-size image. Author, capture date, units and survey accuracy are unconfirmed.','Neizmenjena slika iz nastavne zbirke. Otvori sliku u punoj veličini. Autor, datum snimanja, jedinice i tačnost snimka nisu potvrđeni.')}</figcaption></figure><div><h3>${tr('What can this sketch actually tell us?','Šta ova skica zaista može da nam kaže?')}</h3><p>${tr('A large outline is on the left, a more articulated outline on the right. Between them, a narrow vertical strip meets a flight of steps at the top. Several circular marks and handwritten dimensions appear on the right. North, scale, units and the meaning of the circles are not established.','Levo je veliki obris, desno razuđeniji. Između je uska uspravna traka koja na vrhu dolazi do stepeništa. Desno su kružne oznake i rukom upisane mere. Sever, razmera, jedinice i značenje krugova nisu utvrđeni.')}</p><ol><li>${tr('Redraw only the relationships you can defend; label uncertain readings.','Precrtaj samo odnose koje možeš da potkrepiš; označi neizvesna čitanja.')}</li><li>${tr('Make three lists: observed, measured, still to verify. Do not turn a guess into a dimension.','Napravi tri liste: opaženo, izmereno, tek proveriti. Ne pretvaraj pretpostavku u meru.')}</li><li>${tr('Explain an arrival route in words; identify what another site visit must resolve.','Objasni put dolaska rečima; utvrdi šta sledeća poseta treba da razreši.')}</li></ol><p class="small">${tr('The sketch is a prompt for inquiry, not a verified plan or a claim that this is the agreed pilot site. A phone vibration cannot replace a tactile drawing.','Skica je podsticaj za istraživanje, ne proveren plan niti potvrda lokacije pilota. Vibracija telefona ne može zameniti taktilni crtež.')}</p><div class="actions"><a class="button secondary" href="docs/route-evidence.txt" download>${tr('Download the route worksheet','Preuzmi list za istraživanje putanje')}</a><a class="mini-link" href="studio.html?stage=1">${tr('Use in stage 01','Primeni u fazi 01')} ↗</a></div></div></div><p class="help">${tr('Source: teaching material supplied by the course lead, reviewed 1 October 2026. This source image is excluded from the general content licence; further reuse needs its own rights check.','Izvor: nastavni materijal koji je dostavio voditelj predmeta, pregledan 1. oktobra 2026. Ova izvorna slika nije obuhvaćena opštom licencom sadržaja; dalja upotreba traži posebnu proveru prava.')}</p></section><section aria-labelledby="exercise-title"><div class="section-heading"><h2 id="exercise-title">${tr('Four ways to investigate a place','Četiri načina da istražimo mesto')}</h2></div><div class="exercise-grid">${[
  ['A conversation has geometry.','Razgovor ima geometriju.','Trace sightlines, backlighting and distance in a shared room. Discuss with Deaf coauthors which spatial choices help conversation. Draw a revised plan and section.','Prati vidne linije, svetlo iza sagovornika i rastojanja u zajedničkoj prostoriji. Sa gluvim koautorima razmotri prostorne odluke koje pomažu razgovoru. Nacrtaj izmenjenu osnovu i presek.','Gallaudet / DeafSpace','https://gallaudet.edu/campus-design-facilities/campus-design-and-planning/deafspace/',3,'One person does not represent every Deaf person.','Jedna osoba ne predstavlja sve gluve osobe.'],
  ['One destination, different routes.','Jedan cilj, različite putanje.','Compare two routes using width, slope, surfaces, crossings, rest and sensory conditions. Keep units, method and unknowns. Let coauthors choose which trade-offs matter.','Uporedi dve putanje prema širini, nagibu, podlogama, prelazima, odmoru i čulnim uslovima. Sačuvaj jedinice, metod i nepoznato. Koautori biraju koji kompromisi su važni.','UW / AccessMap','https://tcat.cs.washington.edu/accessmap/',1,'An example route is not verified navigation or a universal access score.','Primer putanje nije proverena navigacija niti univerzalna ocena pristupačnosti.'],
  ['A map to explore by touch.','Mapa za istraživanje dodirom.','Build a small relief map from cardboard or a 3D print. With blind or low-vision coauthors, test landmarks and route explanation, then revise confusing symbols and table placement.','Napravi malu reljefnu mapu od kartona ili 3D štampe. Sa slepim ili slabovidim koautorima proveri orijentire i objašnjenje putanje, pa popravi nejasne simbole i položaj na stolu.','TactIcons / CHI 2023','https://arxiv.org/html/2407.20674v1',4,'A blindfold exercise is not a substitute for coauthor knowledge.','Vežba sa povezom ne zamenjuje znanje koautora.'],
  ['A clip that carries its evidence.','Snimak koji prenosi svoj dokaz.','Choose an approved short clip of one architectural interaction. Add checked captions, a description of essential visual information and a transcript. Ask whether each format supports the same design question.','Izaberi odobren kratak snimak jedne arhitektonske interakcije. Dodaj proverene titlove, opis bitnih vizuelnih informacija i transkript. Proveri da li svaki format podržava isto projektantsko pitanje.','W3C / Accessible media','https://www.w3.org/WAI/media/av/',6,'No unreviewed recordings or automatic captions treated as finished work.','Bez nepregledanih snimaka i automatskih titlova predstavljenih kao završen rad.']
  ].map(([en,sr,bodyEn,bodySr,source,url,stage,limitEn,limitSr])=>`<article class="exercise"><span class="meta-label">${tr('Stage','Faza')} ${number(stage)}</span><h3>${tr(en,sr)}</h3><p>${tr(bodyEn,bodySr)}</p><p class="help">${tr(limitEn,limitSr)}</p><a href="${url}">${source} ↗</a><a class="mini-link" href="studio.html?stage=${stage}">${tr('Open the working stage','Otvori radnu fazu')} ↗</a></article>`).join('')}</div><p class="help">${tr('These are teaching proposals derived from the linked sources, not completed student projects or proven learning effects.','Ovo su nastavni predlozi izvedeni iz povezanih izvora, ne završeni studentski radovi niti dokazani efekti učenja.')}</p></section>`;}
-function library(){return `<div class="page-top"><div><p class="eyebrow">${tr('Reference library / Read → apply → question','Biblioteka / Pročitaj → primeni → preispitaj')}</p><h1>${tr('Ideas to work with.','Ideje za rad.')}</h1><p class="lede">${tr('A focused reading shelf for the studio. Each source has a practical job in the project.','Odabrana literatura za studio. Svaki izvor ima konkretnu ulogu u projektu.')}</p></div><span class="tag">${tr('Sources, not a substitute for fieldwork','Izvori ne zamenjuju teren')}</span></div><div class="actions"><a class="button secondary" href="#field-material">${tr('Explore Živimo zajedno material','Istraži materijal Živimo zajedno')} ↓</a><a class="button secondary" href="#exercise-title">${tr('Four studio exercises','Četiri studijske vežbe')} ↓</a></div><div class="filter-bar"><div><label for="resource-search">${tr('Search the library','Pretraži biblioteku')}</label><input id="resource-search" type="search" placeholder="${tr('A topic, source or method…','Tema, izvor ili metoda…')}"></div><div><label for="resource-stage">${tr('Project stage','Faza projekta')}</label><select id="resource-stage"><option value="all">${tr('All stages','Sve faze')}</option>${stages.map(s=>`<option value="${s.id}">${number(s.id)} — ${esc(tx(s.title))}</option>`).join('')}</select></div></div><p id="resource-count" class="small muted" role="status"></p><div id="resource-results" class="resource-list"></div>${fieldMaterial()}`;}
+
+function library(){
+  return `<div class="page-top"><div><p class="eyebrow">${tr('Reference library / Read → apply → question','Biblioteka / Pročitaj → primeni → preispitaj')}</p><h1>${tr('Ideas to work with.','Ideje za rad.')}</h1><p class="lede">${tr('A focused reading shelf for the studio. Each source has a practical job in the project.','Odabrana literatura za studio. Svaki izvor ima konkretnu ulogu u projektu.')}</p></div><span class="tag">${tr('Sources, not a substitute for fieldwork','Izvori ne zamenjuju teren')}</span></div>
+  <div class="actions">
+    <a class="button secondary" href="#visual-atlas">${tr('Visual atlas (5 details)','Vizuelni atlas (5 detalja)')} ↓</a>
+    <a class="button secondary" href="#precedents">${tr('Built precedents (6 studies)','Izvedeni primeri (6 studija)')} ↓</a>
+    <a class="button secondary" href="#field-material">${tr('Explore Živimo zajedno material','Istraži materijal Živimo zajedno')} ↓</a>
+    <a class="button secondary" href="#exercise-title">${tr('Four studio exercises','Četiri studijske vežbe')} ↓</a>
+  </div>
+  <div class="filter-bar"><div><label for="resource-search">${tr('Search the library','Pretraži biblioteku')}</label><input id="resource-search" type="search" placeholder="${tr('A topic, source or method…','Tema, izvor ili metoda…')}"></div><div><label for="resource-stage">${tr('Project stage','Faza projekta')}</label><select id="resource-stage"><option value="all">${tr('All stages','Sve faze')}</option>${stages.map(s=>`<option value="${s.id}">${number(s.id)} — ${esc(tx(s.title))}</option>`).join('')}</select></div></div><p id="resource-count" class="small muted" role="status"></p><div id="resource-results" class="resource-list"></div>
+  ${visualAtlasSection()}
+  ${precedentsSection()}
+  ${fieldMaterial()}`;
+}
 function ethics(){return `<div class="page-top"><div><p class="eyebrow">${tr('Working agreement / Proposed for the pilot','Dogovor o radu / Predlog za pilot')}</p><h1>${tr('With people.<br>With responsibility.','Sa ljudima.<br>Sa odgovornošću.')}</h1><p class="lede">${tr('Coauthors have a say in the question, the process and what becomes public.','Koautori odlučuju o pitanju, procesu i tome šta postaje javno.')}</p></div></div><div class="readable"><div class="principles">${[
  [tr('Agree the terms before the first visit.','Dogovorite uslove pre prve posete.'),tr('Ask about preferred communication, accessible meeting options, timing, breaks and whether a support person is welcome. Participation is voluntary; no diagnosis is required for a contribution.','Pitajte za način komunikacije, pristupačne mogućnosti susreta, termine, pauze i prisustvo osobe podrške. Učešće je dobrovoljno; dijagnoza nije potrebna za prilog.')],
  [tr('Leave room to disagree.','Ostavite prostor za neslaganje.'),tr('A coauthor can reject a premise, ask for another format, stop a test or decline publication. Record disagreement respectfully; do not turn it into a student failure or an endorsement.','Koautor može da odbaci pretpostavku, zatraži drugi format, prekine ispitivanje ili odbije objavu. Zabeležite neslaganje sa poštovanjem; ne pretvarajte ga u studentski neuspeh ili saglasnost.')],
