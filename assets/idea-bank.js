@@ -23,6 +23,33 @@ export const IDEA_FIELDS = [
 
 export const IDEA_BANK = [
   {
+    id: 'printed-joint-only', status: 'candidate', field: 'making', principles: [2, 3, 5],
+    title: t('Print the joint, find the rest', 'Štampaj spojnicu, ostalo nađi'),
+    bridge: t('rubbish ↔ the one part that cannot be rubbish', 'otpad ↔ jedan deo koji ne može biti otpad'),
+    question: t('If a toy may contain exactly one printed part, which part earns it — and what does the family do when that part breaks?', 'Ako igračka sme da sadrži tačno jedan štampan deo, koji ga deo zaslužuje — i šta porodica radi kad se taj deo slomi?'),
+    move: t('Design a connector that joins two kinds of household waste at a dimension you had to decide, and publish the file beside the toy.', 'Projektuj spojnicu koja spaja dve vrste kućnog otpada na meri koju si morao da odrediš, i objavi fajl zajedno sa igračkom.'),
+    evidence: t('The parts list with origins and prices, and the repair the family can do without us.', 'Spisak delova sa poreklom i cenama, i popravka koju porodica može da uradi bez nas.'),
+    source: { label: 'EN 71-1 — small parts and sharp edges apply to printed parts too', url: 'https://law.resource.org/pub/eu/toys/en.71.1.2014.html' }
+  },
+  {
+    id: 'gauge-in-the-hand', status: 'spark', field: 'making', principles: [5, 7],
+    title: t('A gauge a parent can hold', 'Merilo koje roditelj drži u ruci'),
+    bridge: t('a clause of a standard ↔ an object on a kitchen table', 'odredba standarda ↔ predmet na kuhinjskom stolu'),
+    question: t('Can the choking-hazard check leave the laboratory and become a printed cylinder anyone can hold against a toy?', 'Može li provera opasnosti od gušenja da izađe iz laboratorije i postane štampan cilindar koji svako može da prisloni uz igračku?'),
+    move: t('Print the ⌀31,7 mm cylinder at the standard depth, hand one to every team and one to the association, and count what fails.', 'Odštampaj cilindar ⌀31,7 mm na propisanoj dubini, daj po jedan svakom timu i jedan udruženju, i prebroj šta pada.'),
+    evidence: t('How many toys already in the association’s rooms fail the check, counted rather than estimated.', 'Koliko igračaka koje već stoje u prostorijama udruženja pada na proveri, prebrojano a ne procenjeno.'),
+    source: { label: 'EN 71-1 small parts cylinder', url: 'https://law.resource.org/pub/eu/toys/en.71.1.2014.html' }
+  },
+  {
+    id: 'open-toy-shelf', status: 'research', field: 'collaboration', principles: [1, 2, 3],
+    title: t('An open shelf of toys that can be rebuilt', 'Otvorena polica igračaka koje mogu da se naprave ponovo'),
+    bridge: t('the gap after a diagnosis ↔ an open library of makeable things', 'praznina posle dijagnoze ↔ otvorena biblioteka stvari koje se prave'),
+    question: t('Makers Making Change matches a request for an assistive device with a volunteer maker nearby. Does the same shape work for a toy, in Serbia, for the association’s families?', 'Makers Making Change spaja zahtev za pomagalom sa dobrovoljnim izrađivačem u blizini. Radi li isti oblik za igračku, u Srbiji, za porodice iz udruženja?'),
+    move: t('Publish each tested student toy as a sheet anybody can build from: parts, origins, prices, the drawing, and the printed part’s file.', 'Objavi svaku isprobanu studentsku igračku kao list po kom bilo ko može da je napravi: delovi, poreklo, cene, crtež i fajl štampanog dela.'),
+    evidence: t('One toy rebuilt by somebody who was not in the studio, from the sheet alone.', 'Jedna igračka koju je po samom listu ponovo napravio neko ko nije bio u studiju.'),
+    source: { label: 'Makers Making Change — Neil Squire Society', url: 'https://www.makersmakingchange.com/' }
+  },
+  {
     id: 'one-person-app', status: 'in-use', field: 'digital', principles: [1, 2, 3, 4, 5],
     title: t('An application for one person', 'Aplikacija za jednu osobu'),
     bridge: t('observed situation ↔ interface', 'posmatrana situacija ↔ interfejs'),

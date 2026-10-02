@@ -31,6 +31,51 @@ export const RESEARCH_THREADS = [
 ];
 
 export const RESEARCH = [
+  {
+    id: 'gilligan-lee-2023', kind: 'paper', thread: 'spatial', year: 2023, verified: 'abstract',
+    title: t('Hands-On: investigating the role of physical manipulatives in spatial training', 'Hands-On: uloga fizičkih predmeta u obuci prostornog mišljenja'),
+    who: 'Gilligan-Lee, Hawes, Williams, Farran & Mix · Child Development 94, 1205–1221',
+    says: t('A registered report that tests the thing directly: children trained on mental rotation with concrete pieces in the hand, the same training without them, and an active control. The group that moved the shapes improved at mental rotation.', 'Registrovan ogled koji ispituje baš to: deca uvežbavana u mentalnoj rotaciji sa konkretnim komadima u ruci, isti zadatak bez njih, i aktivna kontrola. Grupa koja je pomerala oblike napredovala je u mentalnoj rotaciji.'),
+    limit: t('We have read the abstract and part of the results table, not the full paper. The effect size and whether the gain carried over to mathematics are not written here, because we have not read them in the original.', 'Pročitali smo apstrakt i deo tabele rezultata, a ne ceo rad. Veličina efekta i to da li se dobitak preneo na matematiku ovde nisu upisani, jer ih nismo pročitali u originalu.'),
+    use: t('The single study that stands behind week 2 — the reason the task is an object and not a screen. Quote it with the sentence about how far we read it.', 'Jedna studija koja stoji iza 2. nedelje — razlog zašto je zadatak predmet, a ne ekran. Navodi se zajedno sa rečenicom dokle smo je pročitali.'),
+    url: 'https://srcd.onlinelibrary.wiley.com/doi/10.1111/cdev.13963'
+  },
+  {
+    id: 'nicholson-1971', kind: 'paper', thread: 'toy', year: 1971, verified: 'secondary',
+    title: t('How NOT to cheat children: the theory of loose parts', 'Kako NE prevariti decu: teorija rasutih delova'),
+    who: 'Simon Nicholson · Landscape Architecture 62, October 1971, 30–34',
+    says: t('An architect’s argument that inventiveness and discovery in any environment rise with the number and kind of things in it that can be moved, combined and changed. A finished playground offers a child one answer; a yard of boards, tyres, water and rope offers as many as the child can think of.', 'Argument jednog arhitekte: domišljatost i otkriće na nekom mestu rastu sa brojem i vrstom stvari koje se tu mogu pomerati, kombinovati i menjati. Gotovo igralište detetu nudi jedan odgovor; dvorište sa daskama, gumama, vodom i užetom nudi ih onoliko koliko dete ume da smisli.'),
+    limit: t('A polemic from 1971, not a trial. It has been repeated for fifty years more often than it has been measured, and we have read it through later summaries, not in the original journal.', 'Polemika iz 1971, a ne ogled. Pedeset godina se češće ponavlja nego što se meri, a mi smo je čitali kroz kasnije prikaze, ne u izvornom časopisu.'),
+    use: t('The sentence that turns rubbish from a budget constraint into a design argument — and the uncomfortable question for week 2: how many parts of your toy did you fix in place?', 'Rečenica koja otpad iz budžetskog ograničenja pretvara u projektantski argument — i neprijatno pitanje za 2. nedelju: koliko si delova svoje igračke ukrutio?'),
+    url: 'https://www.museumofplay.org/app/uploads/2024/11/AJP-16-2-3-Article-3-Loose-Parts.pdf'
+  },
+  {
+    id: 'en71-1-2026', kind: 'standard', thread: 'toy', year: 2026, verified: 'secondary',
+    title: t('EN 71-1:2026 — Safety of toys, mechanical and physical properties: the new edition', 'EN 71-1:2026 — Bezbednost igračaka, mehanička i fizička svojstva: novo izdanje'),
+    who: 'CEN · published January 2026, enforcement expected 2027',
+    says: t('A new edition of the standard we teach from exists. Reported changes: a test for expanding materials, a clause on food-imitating toys, clarified rules for enclosures and ventilation, and tightened requirements for straps, cords and loops.', 'Novo izdanje standarda po kom predajemo postoji. Prijavljene izmene: ispitivanje materijala koji bubre, odredba o igračkama koje imitiraju hranu, razjašnjena pravila za zatvorene prostore i provetravanje, i zaoštreni zahtevi za trake, kanape i petlje.'),
+    limit: t('Everything above comes from a consultancy summary. We have not opened the 2026 text; the standard is not free. Until we do, the 2014 edition is what the course quotes as a requirement.', 'Sve navedeno dolazi iz konsultantskog sažetka. Nismo otvorili tekst iz 2026; standard nije besplatan. Dok to ne uradimo, predmet kao zahtev navodi izdanje iz 2014.'),
+    use: t('A warning not to teach a number as permanent. When a student cites a toy standard in a diploma project in 2027, it will not be the edition on this shelf.', 'Upozorenje da se broj ne predaje kao večan. Kada student 2027. bude citirao standard za igračke u diplomskom radu, to neće biti izdanje sa ove police.'),
+    url: 'https://standards.iteh.ai/catalog/standards/cen/766c1582-b5d0-44ba-b6da-d931dbb7bb68/en-71-1-2026'
+  },
+  {
+    id: 'makers-making-change', kind: 'programme', thread: 'after', year: 2016, verified: 'secondary',
+    title: t('Makers Making Change — an open library of assistive devices anyone can build', 'Makers Making Change — otvorena biblioteka pomagala koja svako može da napravi'),
+    who: 'Neil Squire Society, Canada · since 2016',
+    says: t('A request from a person who needs a device is matched with a volunteer maker nearby; the design files are open, the user pays for materials. The library is reported at over 200 devices, from a few dollars upward, with tens of thousands delivered.', 'Zahtev osobe kojoj pomagalo treba spaja se sa dobrovoljnim izrađivačem u blizini; fajlovi su otvoreni, korisnik plaća materijal. Biblioteka se navodi sa preko 200 uređaja, od nekoliko dolara naviše, uz desetine hiljada isporučenih komada.'),
+    limit: t('The figures come from the organisation and from press coverage, not from an independent evaluation, and this is assistive technology for adults — not toys, and not Serbia.', 'Brojke dolaze od same organizacije i iz novinskih tekstova, a ne iz nezavisne evaluacije, i reč je o pomagalima za odrasle — ne o igračkama, i ne u Srbiji.'),
+    use: t('The nearest working model for what the association is missing after a diagnosis: not a service, but an open shelf of things that can be made locally for the price of material.', 'Najbliži radni primer onoga što udruženju nedostaje posle dijagnoze: ne usluga, nego otvorena polica stvari koje se prave lokalno za cenu materijala.'),
+    url: 'https://www.makersmakingchange.com/'
+  },
+  {
+    id: 'model-making-studio', kind: 'guide', thread: 'method', year: 2021, verified: 'secondary',
+    title: t('Physical model making in the architectural design studio', 'Izrada fizičkog modela u arhitektonskom studiju'),
+    who: 'Review literature on design studio practice · Springer, International Journal of Technology and Design Education',
+    says: t('Reviews of studio teaching report that building physical models strengthens a student’s grasp of scale, form and construction, and that digital modelling alone does not reliably improve spatial skill — hand drawing and physical models are still needed beside it.', 'Pregledi nastave u studiju navode da izrada fizičkih modela jača studentovo razumevanje razmere, oblika i konstrukcije, i da digitalno modelovanje samo za sebe ne popravlja pouzdano prostornu sposobnost — pored njega su i dalje potrebni crtanje rukom i fizički model.'),
+    limit: t('Studio literature is mostly case reports and surveys of student opinion. Percentages that circulate in it are not effect sizes, and we have read summaries rather than the individual studies.', 'Literatura o studiju uglavnom su prikazi slučaja i ankete o mišljenju studenata. Procenti koji u njoj kruže nisu veličine efekta, a mi smo čitali prikaze, ne pojedinačne studije.'),
+    use: t('Why week 2 asks for an object and not a render — and why the prototype is small, rough and tested, rather than a presentation model.', 'Zašto 2. nedelja traži predmet, a ne render — i zašto je prototip mali, grub i isproban, a ne maketa za prikazivanje.'),
+    url: 'https://link.springer.com/article/10.1007/s10798-021-09694-2'
+  },
   /* ---------------- spatial intelligence: is it even trainable ---------------- */
   {
     id: 'uttal-2013', kind: 'paper', thread: 'spatial', year: 2013, verified: 'abstract',
@@ -283,8 +328,8 @@ export const OPEN_QUESTIONS = [
   {
     id: 'object-vs-screen',
     question: t('For spatial operations, does the object in the hand actually beat the same task on a screen, and for which children?', 'Da li za radnje nad prostorom predmet u ruci zaista nadmašuje isti zadatak na ekranu, i za koju decu?'),
-    why: t('Our whole first task rests on it. One study tests it directly; we have not read the result in full, and we must not teach an assumption as a finding.', 'Ceo naš prvi zadatak stoji na tome. Jedna studija to ispituje neposredno; nismo pročitali rezultat u celini, a ne smemo da predajemo pretpostavku kao nalaz.'),
-    next: t('Open Gilligan-Lee et al. 2023 in full and write the effect into this file, with the direction it actually points.', 'Otvoriti Gilligan-Lee i saradnike iz 2023. u celini i upisati efekat u ovaj fajl, sa smerom u koji zaista pokazuje.')
+    why: t('Our whole first task rests on it. The direction is now on the shelf — the hands-on group improved at mental rotation — but we have read an abstract and a fragment of a table, and a direction is not an effect size.', 'Ceo naš prvi zadatak stoji na tome. Smer je sada na polici — grupa sa predmetom u ruci napredovala je u mentalnoj rotaciji — ali pročitali smo apstrakt i parče tabele, a smer nije veličina efekta.'),
+    next: t('Get the full text of Gilligan-Lee et al. 2023 through the faculty library, write the effect size and the transfer result into the shelf entry, and say for which ages it holds.', 'Nabaviti pun tekst Gilligan-Lee i saradnika iz 2023. preko fakultetske biblioteke, upisati veličinu efekta i nalaz o prenosu u zapis na polici, i reći za koje uzraste važi.')
   },
   {
     id: 'arkki-outcomes',

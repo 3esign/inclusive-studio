@@ -2,11 +2,8 @@
   "format": "inclusive-studio-material",
   "version": 1,
   "updated": "2026-10-02",
-  "current": 1,
-  "note": {
-    "en": "Add a week by writing data/material/wNN.json and listing it here. The site shows published weeks; drafts stay visible only with ?draft=1.",
-    "sr": "Nedelja se dodaje fajlom data/material/wNN.json i redom u ovoj listi. Sajt prikazuje objavljene nedelje; nacrti se vide samo uz ?draft=1."
-  },
+  "current": 2,
+  "note": { "en": "Add a week by writing data/material/wNN.json and listing it here. The site shows published weeks; drafts stay visible only with ?draft=1.", "sr": "Nedelja se dodaje fajlom data/material/wNN.json i redom u ovoj listi. Sajt prikazuje objavljene nedelje; nacrti se vide samo uz ?draft=1." },
   "weeks": [
     {
       "n": 1,
@@ -17,8 +14,8 @@
     {
       "n": 2,
       "file": "w02.json",
-      "state": "draft",
-      "title": { "en": "Seven principles on one building", "sr": "Sedam principa na jednoj zgradi" }
+      "state": "published",
+      "title": { "en": "The prototype on the table", "sr": "Prototip na stolu" }
     },
     {
       "n": 3,

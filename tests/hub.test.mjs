@@ -49,6 +49,33 @@ test('week one is the toy, and the toy carries the one number that can hurt a ch
   assert.ok(week.blocks.some(block => block.kind === 'measure' && /31,7/.test(block.value)));
 });
 
+test('week two is the prototype: an object that was built, with the material order and the cord limit', async () => {
+  const build = exercises.find(item => item.id === 'prototype-from-waste');
+  assert.ok(build, 'the prototype exercise exists');
+  assert.equal(build.week, 2);
+  assert.equal(build.kind, 'making');
+  for (const field of ['title', 'task', 'hand', 'check']) assert.ok(bilingual(build[field]), field);
+  // The material order is the whole point: found before bought, printed last.
+  assert.match(build.task.sr, /nađeno/);
+  assert.match(build.task.sr, /štampano poslednje/);
+  // The gauge is checked again on the object, not only on the drawing.
+  assert.match(build.hand.sr, /sitnih delova/);
+  assert.match(build.check.sr, /31,7 mm/);
+
+  const audit = exercises.find(item => item.id === 'seven-principles-audit');
+  assert.equal(audit.week, 2, 'the seven principles are judged on the same sheet');
+  assert.match(audit.check.sr, /prototip/);
+
+  const week = JSON.parse(await source('data/material/w02.json'));
+  assert.equal(week.n, 2);
+  assert.equal(week.state, 'published');
+  assert.ok(week.blocks.some(block => block.kind === 'exercise' && block.ref === 'prototype-from-waste'));
+  // EN 71-1: a cord that can tangle on a toy for a child under 18 months.
+  assert.ok(week.blocks.some(block => block.kind === 'measure' && /220 mm/.test(block.value)));
+  // The claim about the hand beating the screen may not be stated harder than it was read.
+  assert.ok(RESEARCH.some(entry => entry.id === 'gilligan-lee-2023' && entry.verified === 'abstract'));
+});
+
 test('every source on the shelf says what it does not say, and how far we read it', () => {
   assert.ok(RESEARCH.length >= 20, 'the shelf is not a handful of links');
   assert.equal(new Set(RESEARCH.map(entry => entry.id)).size, RESEARCH.length);
