@@ -3,36 +3,98 @@
   "version": 1,
   "n": 3,
   "state": "draft",
-  "updated": "2026-10-01",
-  "title": { "en": "Measure your own faculty", "sr": "Izmeri sopstveni fakultet" },
+  "updated": "2026-10-09",
+  "title": {
+    "en": "The hand that holds it",
+    "sr": "Ruka koja drži"
+  },
   "date": null,
   "dateStatus": "proposed",
   "aim": {
-    "en": "You can produce a measurement table in which every row names its instrument and its uncertainty, and you can say which rows break the Pravilnik.",
-    "sr": "Umeš da napraviš tabelu mera u kojoj svaki red navodi instrument i nesigurnost, i umeš da kažeš koje izmerene vrednosti ne ispunjavaju zahteve Pravilnika."
+    "en": "By the end of the session you can build a table of measures in which every row names its instrument and its uncertainty — for a hand and for a building — and you can say which measured values shut which hand out of your object.",
+    "sr": "Na kraju časa umeš da napraviš tabelu mera u kojoj svaki red navodi instrument i nesigurnost — za ruku i za zgradu — i umeš da kažeš koje izmerene vrednosti isključuju koju ruku iz tvog predmeta."
   },
   "bring": [
-    { "en": "A tape measure, a spirit level or a phone inclinometer, and a printed plan of the floor you measure.", "sr": "Metar, libela ili inklinometar na telefonu i štampana osnova sprata koji meriš." }
+    {
+      "en": "The object from the last two weeks — prototype or the everyday object you chose to redesign. It travels to every session now.",
+      "sr": "Predmet iz prethodne dve nedelje — prototip ili svakodnevni predmet koji si izabrao za prepravku. Od sada ide na svaki čas."
+    },
+    {
+      "en": "A tape or a ruler, and a string for the grip: the string follows the hand where the ruler cannot.",
+      "sr": "Metar ili lenjir, i konac za hvat: konac prati ruku tamo gde lenjir ne može."
+    },
+    {
+      "en": "One sheet of A3. Both halves of the sheet are born this week: the hand above, the faculty below.",
+      "sr": "Jedan list A3. Ove nedelje nastaju oba dela lista: ruka gore, fakultet dole."
+    }
   ],
   "blocks": [
     {
       "kind": "heading",
-      "text": { "en": "The building you are in is the first case study", "sr": "Zgrada u kojoj studiraš je prva studija slučaja" }
+      "text": {
+        "en": "The hand is the first object we measure",
+        "sr": "Ruka je prvi objekat koji merimo"
+      }
     },
     {
       "kind": "text",
       "text": {
-        "en": "A draft. We measure doors, corridors, thresholds, slopes, handle and switch heights, the accessible toilet and the lift car. Every row carries the instrument and its resolution. A value without an uncertainty is not a measurement, it is an impression.",
-        "sr": "Nacrt. Merimo vrata, hodnike, pragove, nagibe, visine kvaka i prekidača, pristupačni toalet i kabinu lifta. Svaki red navodi instrument i njegovu rezoluciju. Vrednost bez nesigurnosti nije mera nego utisak."
+        "en": "For two weeks the toy was judged by principles and by material. This week it is judged by hands — the smallest, the largest and the one you design for. A hand is measured, never simulated: three real hands, five measures each, every row with its instrument and its uncertainty.",
+        "sr": "Dve nedelje igračka se sudila po principima i po materijalu. Ove nedelje sudi joj ruka — najmanja, najveća i ona za koju projektuješ. Ruka se meri, nikad ne simulira: tri stvarne ruke, po pet mera, svaki red sa instrumentom i nesigurnošću."
       }
     },
-    { "kind": "exercise", "ref": "measure-your-faculty" },
-    { "kind": "lab", "ref": "prolaz" },
     {
-      "kind": "decision",
+      "kind": "heading",
       "text": {
-        "en": "The room agrees one thing: which measured failure we take to the faculty, and in what form.",
-        "sr": "Sala se dogovara o jednoj stvari: koji izmereni propust nosimo fakultetu i u kom obliku."
+        "en": "Two halves of one sheet",
+        "sr": "Dva dela jednog lista"
+      }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "The same discipline at two scales: above, the hand around your object at 1:1 or 1:2; below, the first rows of the faculty table — a door, a corridor, a handle. Next week the Rulebook asks for those numbers by article.",
+        "sr": "Ista disciplina na dve razmere: gore, ruka oko tvog predmeta u 1:1 ili 1:2; dole, prvi redovi tabele fakulteta — vrata, hodnik, kvaka. Sledeće nedelje Pravilnik pita za te brojeve po članu."
+      }
+    },
+    {
+      "kind": "exercise",
+      "ref": "hands-and-tolerances"
+    },
+    {
+      "kind": "exercise",
+      "ref": "measure-your-faculty"
+    },
+    {
+      "kind": "heading",
+      "text": {
+        "en": "From the hand to the building",
+        "sr": "Od ruke do zgrade"
+      }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "A door clear width and a grip diameter are the same kind of fact: a number, an instrument, an uncertainty. The course moves between them all semester — the object in the hand and the building around the hand.",
+        "sr": "Svetla širina vrata i prečnik hvata su ista vrsta činjenice: broj, instrument, nesigurnost. Predmet se ceo semestar kreće između njih — predmet u ruci i zgrada oko ruke."
+      }
+    }
+  ],
+  "revizije": [
+    {
+      "v": 1,
+      "datum": "2026-10-01",
+      "sta": {
+        "en": "First draft: the faculty measurement as the whole sheet.",
+        "sr": "Prvi nacrt: merenje fakulteta kao ceo list."
+      }
+    },
+    {
+      "v": 2,
+      "datum": "2026-10-09",
+      "sta": {
+        "en": "Redirected: the hand that holds it is the upper half (continues the prototype; works without one), the faculty table is the lower half. The week 4 Rulebook check keeps its input. The first draft stays in the repository history.",
+        "sr": "Preusmereno: Ruka koja drži je gornji deo (nastavlja prototip; radi i bez njega), tabela fakulteta donji deo. Provera po Pravilniku u 4. nedelji zadržava svoj ulaz. Prvi nacrt ostaje u istoriji repozitorijuma."
       }
     }
   ]

@@ -1,24 +1,34 @@
 # Inclusive Studio
 
+## Current direction · 4 October 2026
+
+The teacher selects the main sequence of topics, records of delivered sessions and assigned work. The existing idea and research banks remain open collections; new entries do not become assignments automatically. [Research notes](docs/research-roadmap.md) point to the latest additions.
+
+The local record in w01 reports the session held on 2 October and the prototype assigned for the next meeting. W02 is published preparation; w03–w15 are drafts. Publication is not evidence that a session was held. The week-one record names the visit from Živimo zajedno; this does not confirm a field visit or every future arrangement.
+
 **Principles of Universal Design** · Union — Nikola Tesla University, Belgrade · Faculty of Construction Management
-Assist. Prof. Semir Poturak, PhD · 2026/2027, first (winter) semester · third year
+Assistant Professor, PhD · 2026/2027, first (winter) semester · third year
 Study programmes: Architecture and Urbanism 2023 (`22.OA0068`, 5 ECTS) and 2016 (`OAIPUD`, 4 ECTS)
 
 **One working week on the front page. Eight labs that measure. One task, drawn by hand.**
 
 [Open the studio](https://3esign.github.io/inclusive-studio/) · [Srpski](README.sr.md)
 
-A working environment for third-year architecture students and disability association coauthors. The institution, course, programme codes, credits, grading scale and the measured site come from the faculty record and the course dossier. Still open and labelled as such on the site: contact hours, teaching dates, the room, the field visit and the partner association. The fifteen-week plan is the dossier working version, not an approved syllabus text.
+A working environment for third-year architecture students and disability association coauthors. The institution, course, programme codes, credits, grading scale and the measured site come from the faculty record and the course dossier. Still open and labelled as such on the site: contact hours, future teaching dates, the room, the field visit and the scope of further partnership arrangements. The fifteen-week plan is the dossier working version, not an approved syllabus text.
 
 ## How the site is organised
 
-The front page is **the working week**: the material the teacher put in for this session, the task
-and the labs it points at. Each week ends with one physical A3 sheet, a conversation in class and
-the teacher's signature on paper. Everything else — the course, calendar, project, exercises,
-library, Idea Atelier and stages — sits behind it as supporting material.
+The front page is **the course flow**: cemented classes in order — each with its material and its
+A3 sheet of the exam workbook — then the pilot for the next class, then the cloud of ideas. Each
+week ends with one physical A3 sheet, a conversation in class and the teacher's signature on paper.
+A flow strip in the header of every page keeps the three shelves one tap away. Everything else —
+the course, calendar, project, exercises, library, Idea Atelier and stages — sits behind it as
+supporting material.
 
-- **This week** (`index.html`) — title, aim, what to bring, and the session's material, read from
-  `data/material/wNN.json`. No file, no week: the page says so instead of inventing a lesson.
+- **Course flow** (`index.html`) — the landing: three shelves from `data/tok.json`, where cemented
+  classes also show the week's A3 sheet drawn from `data/material/wNN.json`. A deep link
+  (`index.html?w=N`) opens the week itself: title, aim, what to bring, and the session's material.
+  No file, no week: the page says so instead of inventing a lesson.
 - **Lecture** (`predavanje.html`) — the same material cut into slides at every heading. Arrows,
   Space, Home, End; swipe on a phone; "show everything" for reading and printing. Nothing moves on
   its own.
@@ -28,8 +38,7 @@ library, Idea Atelier and stages — sits behind it as supporting material.
   a 10 cm grid checked against Art. 14, 17, 18 and 19 of the Pravilnik; the arithmetic of 22,5 m of
   height; and a countdown over an administrative sentence. Each lab produces a number and then asks
   for the design decision that follows from it.
-- **Task** (`zadatak.html`) — day one: an application for one person, drawn by hand, with a drawn
-  constraint card and an optional phone-sized sketchpad that keeps showing the real minimum sizes.
+- **Task** (`zadatak.html`) — a reusable application-for-one-person exercise and optional phone-sized sketchpad. The project log moved this exercise to the week-eight draft. The recorded first session worked on toy concepts; its next assigned step was a prototype.
 - **Idea Atelier** (`ideja.html`) — a separate space for connecting unfinished ideas and turning a
   promising connection into one small, testable move on an A3. It is not a week or a hand-in.
 - **Prepare material** (`uredi.html`) — the teacher writes a week, the tool checks it against the

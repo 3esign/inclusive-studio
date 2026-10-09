@@ -1,6 +1,6 @@
 # Terenske podloge: Lokacija „Živimo zajedno” (Beograd)
 
-Ovaj folder sadrži georeferencirane terenske podatke premera lokacije udruženja „Živimo zajedno”, namenjene vežbama na predmetu *Principi univerzalnog dizajna* (doc. dr Semir Poturak, FGM Beograd).
+Ovaj folder sadrži georeferencirane terenske podatke premera lokacije udruženja „Živimo zajedno”, namenjene vežbama na predmetu *Principi univerzalnog dizajna* (FGM Beograd).
 
 ---
 

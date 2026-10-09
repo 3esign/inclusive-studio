@@ -1,0 +1,95 @@
+{
+  "format": "inclusive-studio-tok",
+  "version": 1,
+  "nacelo": {
+    "sr": "Pripremljeno nije održano. Održano bez upisanih rezultata nije zacementirano. Ideja nema nedelju dok ne postane pilot. Svaka stavka nosi izvor i datum.",
+    "en": "Prepared is not held. Held without recorded results is not cemented. An idea carries no week until it becomes a pilot. Every item carries a source and a date."
+  },
+  "cem": [
+    {
+      "id": "cas-w01",
+      "vrsta": "cas",
+      "nedelja": 1,
+      "naslov": { "sr": "Igračka koja uči prostor — prvi čas", "en": "A toy that teaches space — first class" },
+      "odrzan": "2026-10-02",
+      "rezultati": [
+        {
+          "sta": { "sr": "Timovi su osmislili koncepte igračaka — stvari koje razvijaju pokret ruke ili prostorni opseg deteta.", "en": "Teams drafted their own toy concepts — things that train a child's hand movement or spatial range." },
+          "izvor": "data/material/w01.json — sekcija „Zapisano posle časa”; LOG.md 2026-10-02."
+        },
+        {
+          "sta": { "sr": "U studio je došao direktor udruženja „Živimo zajedno”.", "en": "The director of the association „Živimo zajedno” visited the studio." },
+          "izvor": "LOG.md 2026-10-02."
+        },
+        {
+          "sta": { "sr": "Zadat prototip za sledeću nedelju: mali prototip iz prikupljenog materijala.", "en": "The task set for next week: a small prototype from reclaimed material." },
+          "izvor": "data/material/w01.json — „Zapisano posle časa”, drugi red."
+        },
+        {
+          "sta": { "sr": "Odluka sa časa: svaki tim upisuje jedan red — pokret ruke i radnju na prostoru.", "en": "Decision from the session: each team records one line — the hand movement and the operation on space." },
+          "izvor": "data/material/w01.json — blok „decision” na kraju nedelje."
+        }
+      ],
+      "izvor": "data/material/w01.json — sekcija „Zapisano posle časa” + LOG.md 2026-10-02."
+    }
+  ],
+  "pilot": [
+    {
+      "id": "cas-w02",
+      "vrsta": "cas",
+      "nedelja": 2,
+      "naslov": { "sr": "Prototip na stolu — drugi čas", "en": "The prototype on the table — second class" },
+      "kratko": { "sr": "Redosled materijala: nađeno → ponovo upotrebljivo → kupljeno → štampano; EN 71-1 granica kanapa 220 mm; sedam principa na sopstvenom prototipu.", "en": "Material order: found → reused → bought → printed; EN 71-1 cord limit 220 mm; the seven principles judged on one's own prototype." },
+      "izvor": "data/material/w02.json (objavljeno).",
+      "ceka": { "sr": "Održavanje časa 10.10 — posle časa upisati koliko je prototipa stiglo i šta se stvarno slomilo.", "en": "Holding the class on 10.10 — afterwards, record how many prototypes arrived and what actually broke." }
+    },
+    {
+      "id": "sledeci-list-ruka-koja-drzi",
+      "vrsta": "tema",
+      "nedelja": 3,
+      "naslov": { "sr": "Sledeći list: „Ruka koja drži”", "en": "The next sheet: “The hand that holds it”" },
+      "kratko": { "sr": "Jedan A3, dva dela: tri stvarne ruke × pet mera sa instrumentom i nesigurnošću, tri tolerancije na crtežu; dole tabela fakulteta. Radi i za timove bez prototipa.", "en": "One A3, two parts: three real hands × five measurements with instrument and uncertainty, three tolerances on the drawing; the faculty table below. Works for teams without a prototype too." },
+      "izvor": "data/material/w03.json (nacrt) + „Sledeći list” u data/material/w02.json; nalog nastavnika 09.10.2026.",
+      "ceka": { "sr": "Potvrda teme od nastavnika pre časa 10.10.", "en": "The teacher's confirmation of the theme before the class of 10.10." },
+      "izIdeje": "a3-sledeca-faza-dizajna"
+    },
+    {
+      "id": "probavanje-u-udruzenju",
+      "vrsta": "protokol",
+      "naslov": { "sr": "Probavanje prototipova u udruženju", "en": "Trying the prototypes at the association" },
+      "kratko": { "sr": "Bezbednosna kapija pre ruku (mali delovi, ivice); „tuđe ruke” bez objašnjenja; po korisniku se meri šta se meri; bez simulacije, bez ocenjivanja osoba, bez objave bez saglasnosti.", "en": "A safety gate before any hands (small parts, edges); “other hands” without explanation; per user, what is measured is measured; no simulation, no judging of persons, no publishing without consent." },
+      "izvor": "docs/probavanje-u-udruzenju.md.",
+      "ceka": { "sr": "Dogovor termina i prostora sa udruženjem.", "en": "The date and the space — to be agreed with the association." }
+    }
+  ],
+  "ideje": [
+    {
+      "id": "korisnici-probavaju-prototipe",
+      "naslov": { "sr": "Korisnici probavaju prototipe", "en": "Users try the prototypes" },
+      "tekst": { "sr": "Poneti prototipe u udruženje da ih korisnici probaju na svojim rukama — posmatrati, ne objašnjavati.", "en": "Bring the prototypes to the association so users can try them with their own hands — observe, do not explain." },
+      "izvor": "Razgovor sa nastavnikom, 09.10.2026. („da možda korisnici probaju”).",
+      "datum": "2026-10-09"
+    },
+    {
+      "id": "a3-sledeca-faza-dizajna",
+      "naslov": { "sr": "Sledeći A3 kao sledeća faza dizajna", "en": "The next A3 as the next design phase" },
+      "tekst": { "sr": "Novi A3 može, a ne mora da se nadoveže na dizajn prototipa — npr. mereno prelazak sa zamisli na broj.", "en": "A new A3 may or may not build on the prototype's design — e.g. measured, moving from idea to number." },
+      "izvor": "Razgovor sa nastavnikom, 09.10.2026. („možda sutra A3 je sledeća faza dizajna”).",
+      "datum": "2026-10-09"
+    },
+    {
+      "id": "sta-se-stvarno-slomilo",
+      "naslov": { "sr": "Šta se stvarno slomilo", "en": "What actually broke" },
+      "tekst": { "sr": "Posle svakog časa sa prototipovima upisati šta se stvarno slomilo i koliko ih je stiglo — od toga se uči i to su rezultati, ne utisci.", "en": "After every class with prototypes, record what actually broke and how many arrived — that is learned from, and those are results, not impressions." },
+      "izvor": "LOG.md 02.10.2026. i 09.10.2026. (obaveza upisa posle 2. nedelje).",
+      "datum": "2026-10-02"
+    },
+    {
+      "id": "maketa-i-prototip-na-dve-strane",
+      "naslov": { "sr": "Maketa i prototip na dve strane A3", "en": "Mock-up and prototype on two sides of one A3" },
+      "tekst": { "sr": "Prikazivanje zamisli prototipa i makete na prvoj nedelji — dve strane istog lista, dva načina dokazivanja.", "en": "Showing the prototype idea and the mock-up in the first week — two sides of the same sheet, two ways of proving." },
+      "izvor": "Razgovor sa nastavnikom, 09.10.2026. (opis prve nedelje).",
+      "datum": "2026-10-09"
+    }
+  ]
+}

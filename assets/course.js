@@ -177,7 +177,6 @@ export const houseRules = [
 // Teacher: the academic record. Counts are arithmetic from the census of the archive drive (2026-08-16);
 // cross-checked against grad/ARC.md and grad/THEORY.md on 2026-10-01.
 export const about = {
-  name: 'Semir Poturak',
   role: { en: 'Assistant Professor, PhD, architect', sr: 'docent, doktor nauka, arhitekta' },
   lede: {
     en: 'Eighteen years of architectural work, read from the files it left behind. The record is counted, not recalled: where a number appears below, it comes from a file census, not from memory.',

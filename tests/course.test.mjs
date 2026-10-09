@@ -18,12 +18,14 @@ test('the course identity matches the faculty examination record', () => {
   const [a, b] = course.programmes;
   assert.equal(a.code, '22.OA0068'); assert.equal(a.semester, 5); assert.equal(a.ects, 5);
   assert.equal(b.code, 'OAIPUD'); assert.equal(b.semester, 6); assert.equal(b.ects, 4);
-  // The course Semir teaches in 2026/2027 is the fifth-semester, third-year one.
+  // The course the teacher holds in 2026/2027 is the fifth-semester, third-year one.
   assert.ok(course.term.sr.includes('2026/2027'), course.term.sr);
   assert.ok(course.term.sr.includes('treća godina'), course.term.sr);
-  for (const field of ['title', 'short', 'institution', 'faculty', 'teacher', 'term', 'thesis']) {
+  for (const field of ['title', 'short', 'institution', 'faculty', 'term', 'thesis']) {
     assert.ok(bilingual(course[field]), field);
   }
+  // The interface names no person: identity carries no teacher field, only the faculty record does.
+  assert.ok(!('teacher' in course), 'identity grew a teacher field back');
 });
 
 test('what is not yet verified is still declared as unverified', () => {

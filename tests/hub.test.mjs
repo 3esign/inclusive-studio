@@ -72,8 +72,15 @@ test('week two is the prototype: an object that was built, with the material ord
   assert.ok(week.blocks.some(block => block.kind === 'exercise' && block.ref === 'prototype-from-waste'));
   // EN 71-1: a cord that can tangle on a toy for a child under 18 months.
   assert.ok(week.blocks.some(block => block.kind === 'measure' && /220 mm/.test(block.value)));
-  // The claim about the hand beating the screen may not be stated harder than it was read.
-  assert.ok(RESEARCH.some(entry => entry.id === 'gilligan-lee-2023' && entry.verified === 'abstract'));
+  // G-3329: reading can deepen; the classroom must not reintroduce the old causal overclaim.
+  const study = researchById('gilligan-lee-2023');
+  assert.equal(study.verified, 'full');
+  assert.strictEqual(researchById('hands-on-2023'), study, 'old source locator survives consolidation');
+  assert.equal(RESEARCH.filter(entry => entry.url.includes('10.1111/cdev.13963')).length, 1);
+  const text = JSON.stringify(week);
+  assert.doesNotMatch(text, /direction of the result favours the hand|Smer nalaza ide u korist ruke/);
+  const firstWeek = await source('data/material/w01.json');
+  assert.doesNotMatch(firstWeek, /children gained most|deca su dobila najviše/);
 });
 
 test('every source on the shelf says what it does not say, and how far we read it', () => {

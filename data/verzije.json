@@ -1,0 +1,47 @@
+{
+  "format": "inclusive-studio-versions",
+  "version": 1,
+  "predmet": {
+    "naziv": "Principi univerzalnog dizajna",
+    "fakultet": "Fakultet za graditeljski menadžment, Univerzitet „Union — Nikola Tesla”, Beograd",
+    "nastavnik": "docent, doktor nauka, arhitekta (ime u školskoj dokumentaciji)",
+    "programi": [
+      { "sifra": "22.OA0068", "semestar": 5, "espb": 5, "tip": "izborni" },
+      { "sifra": "OAIPUD", "semestar": 6, "espb": 4, "tip": "izborni" }
+    ],
+    "formatIspita": {
+      "oblik": "A3 horizontalna radna sveska",
+      "nacin": ["štampana", "digitalna"],
+      "izvor": "Nastavnik predmeta, 09.10.2026. (nalog za pripremu predmeta)",
+      "napomena": "U arhivi dosijea (nastava/) postoji i starija ispitna radna sveska u A4 vertikalnom formatu — arhivski primerak, ne merodavan format."
+    }
+  },
+  "nacelo": {
+    "sr": "Stranica predmeta živi paralelno sa predmetom: menja se, dopunjuje i dodaje. Svaka objavljena nedelja nosi revizije (šta se promenilo, kada, na čiju reč); „Dopunjeno” u zaglavlju uvek odgovara poslednjoj reviziji. Objavljeno nije isto što i održano.",
+    "en": "A subject site lives in parallel with the subject: it changes, is amended and added to. Every published week carries revisions (what changed, when, on whose word); the “Updated” line always matches the last revision. Published is not the same as held."
+  },
+  "stranice": [
+    { "id": "naslovna", "stranica": "naslovna.html", "izvorPodataka": "data/tok.json (brojevi štampa tools/shells.mjs)", "verzijaZivi": "naslovna je dodata ispred toka, ne umesto njega: duboke veze index.html?w=N i landing ostaju; scena (vendorevani three.js 0.180.0, heševi u assets/vendor/README.md) je samo dopuna sa SVG osnovom; štampa se kao naslovni list radne sveske (A3 horizontalno)" },
+    { "id": "udruzenje", "stranica": "udruzenje.html", "izvorPodataka": "docs/probavanje-u-udruzenju.md (sadržaj samo odatle)", "verzijaZivi": "pilot prostor za članove udruženja i osoblje na srpskom: četiri koraka, pet prava, kapija bezbednosti (presuda se izvodi iz 4 provere, stanje samo u pregledaču), list za zapisivanje za štampu; termin i prostor dogovaraju se sa udruženjem, a strana ne nosi imena ni fotografije članova" },
+    { "id": "tok", "stranica": "index.html (landing)", "izvorPodataka": "data/tok.json + data/material/wNN.json", "verzijaZivi": "tri police na glavnoj strani: zacementirano (održano + rezultati + A3 list nedelje), pilot (čeka), oblak ideja (bez nedelje); traka toka u zaglavlju svake strane" },
+    { "id": "nedelja", "stranica": "index.html?w=N", "izvorPodataka": "data/material/wNN.json", "verzijaZivi": "revizije u samom fajlu gradiva" },
+    { "id": "predavanje", "stranica": "predavanje.html", "izvorPodataka": "data/material/wNN.json", "verzijaZivi": "isto gradivo isečeno na slajdove" },
+    { "id": "vezbe", "stranica": "vezbe.html", "izvorPodataka": "assets/exercises.js", "verzijaZivi": "banka vežbi; istorija u repozitorijumu i LOG.md" },
+    { "id": "kalendar", "stranica": "program.html", "izvorPodataka": "data/schedule.json", "verzijaZivi": "datumi nose status confirmed/proposed" },
+    { "id": "laboratorija", "stranica": "laboratorija.html", "izvorPodataka": "assets/lab-core.js", "verzijaZivi": "istorija u repozitorijumu i LOG.md" },
+    { "id": "biblioteka", "stranica": "resources.html", "izvorPodataka": "assets/research.js", "verzijaZivi": "svaki zapis navodi dokle je pročitan" },
+    { "id": "hub", "stranica": "ideja.html", "izvorPodataka": "assets/idea-bank.js, assets/ideas.js", "verzijaZivi": "istorija u repozitorijumu i LOG.md" },
+    { "id": "godista", "stranica": "godista.html", "izvorPodataka": "assets/ages.js, assets/age-rules.js", "verzijaZivi": "istorija u repozitorijumu i LOG.md" },
+    { "id": "predmet", "stranica": "predmet.html", "izvorPodataka": "assets/course.js", "verzijaZivi": "nepotvrđeni podaci nose svoju oznaku" },
+    { "id": "manifest", "stranica": "ovaj fajl", "izvorPodataka": "data/verzije.json", "verzijaZivi": "istorija sajta u polju istorija + repozitorijum" }
+  ],
+  "istorija": [
+    { "datum": "2026-10-01", "sta": { "sr": "Pilot v1 sajta objavljen.", "en": "Site pilot v1 published." } },
+    { "datum": "2026-10-02", "sta": { "sr": "Nedelja 1 preusmerena na igračku udruženja; nedelja 2 prepisana u „Prototip na stolu”; prvi čas održan.", "en": "Week 1 redirected to the association toy; week 2 rewritten as the prototype session; first class held." } },
+    { "datum": "2026-10-09", "sta": { "sr": "Uvedene revizije gradiva: svaka objavljena nedelja nosi vidljivu istoriju nastanka; w02 dobija „Sledeći list”; w03 preusmeren na „Ruka koja drži”; manifest predmeta sa formatom ispita.", "en": "Material revisions introduced: every published week carries a visible history; w02 gains “The next sheet”; w03 redirected to “The hand that holds it”; subject manifest with the exam format." } },
+    { "datum": "2026-10-09", "sta": { "sr": "Novi poseban prozor „Tok predmeta” (tok.html, data/tok.json): tri police — zacementirano (w01, održano 02.10 sa rezultatima), pilot za sledeći čas (w02, „Ruka koja drži”, probavanje u udruženju) i oblak ideja bez nedelje. Prelaze provodi validator i testovi.", "en": "New steering window “Course flow” (tok.html, data/tok.json): three shelves — cemented (w01, held 02.10 with results), pilot for the next class (w02, “The hand that holds it”, the association try-out) and the cloud of ideas with no week. Transitions are enforced by the validator and the tests." } },
+    { "datum": "2026-10-09", "sta": { "sr": "Tok predmeta postaje landing strana (index.html): zacementirani časovi redom sa materijalom i A3 listom nedelje ka radnoj sveski za ispit, pilot za sledeći čas, oblak ideja; posebna strana tok.html je ukinuta, duboke veze index.html?w=N i dalje rade. Traka toka (zacementirano · sledeći čas · oblak) stoji u zaglavlju svake strane, generiše je tools/shells.mjs iz data/tok.json i radi bez skripte. Ovaj obrazac je šema za svaki sledeći predmetni sajt.", "en": "The course flow becomes the landing (index.html): cemented classes in order with their material and the week's A3 sheet toward the exam workbook, the pilot for the next class, and the cloud of ideas; the separate tok.html page is retired, deep links index.html?w=N keep working. A flow strip (cemented · next class · cloud) sits in the header of every page, generated by tools/shells.mjs from data/tok.json and working without scripting. This pattern is the schema for every subject site that follows." } },
+    { "datum": "2026-10-09", "sta": { "sr": "Dodata naslovna (naslovna.html) — prva vrata sajta, dodata toku a ne umesto njega: scena je naslaganih A3 listova (jedan po zacementiranoj nedelji + jedan koji stiže, sa signal-obeleživačem), brojeve štampa tools/shells.mjs iz data/tok.json, three.js 0.180.0 vendorevan u assets/vendor/ sa SHA-256 heševima (bez npm, bez CDN), scena se gasi uz prefers-reduced-motion i iza čuvanog uvoza (SVG osnovni prikaz bez WebGL); štampa celog sajta prešla na A3 horizontalno, naslovna se štampa kao naslovni list sveske. Dodata i pilotska strana udruženja (udruzenje.html, srpski prvi): četiri koraka probavanja, pet prava, kapija bezbednosti sa izvedenom presudom i list za zapisivanje; strana ne nosi imena ni fotografije članova. Srpski navodnici zatvoreni sa ” svuda gde se bio uvukao pravi znak.", "en": "A cover page added (naslovna.html) — the site's first door, added in front of the flow, never instead of it: the scene is a stack of A3 sheets (one per cemented week plus one arriving, with a signal bookmark), counts stamped by tools/shells.mjs from data/tok.json, three.js 0.180.0 vendored into assets/vendor/ with SHA-256 hashes (no npm, no CDN), the scene steps aside for prefers-reduced-motion and behind a guarded import (an SVG baseline without WebGL); the whole site now prints on A3 landscape, the cover printing as the workbook's title sheet. A pilot association page added too (udruzenje.html, Serbian first): the four try-out steps, five rights, a safety gate with a derived verdict and a recording sheet; the page carries no names, photographs or statements of members. Serbian quotes re-closed with ” wherever a straight mark had slipped in." } },
+    { "datum": "2026-10-09", "sta": { "sr": "Objavljena površina bez ličnih imena: imena su zamenjena ulogama („direktor udruženja”, „nastavnik”), a unosi čija je objava zavisila od saglasnosti ukinuti; pravila koja štite člana ostaju. Novi test tests/interfejs.test.mjs obara gradnju ako se ime ili saglasnosna zavisnost vrate u objavu.", "en": "The published surface without personal names: names replaced by roles („the director of the association”, „the teacher”), entries whose publishing depended on consent removed; the rules protecting a member stay. A new test, tests/interfejs.test.mjs, fails the build if a name or a consent dependency returns." } }
+  ]
+}

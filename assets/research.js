@@ -32,14 +32,106 @@ export const RESEARCH_THREADS = [
 ];
 
 export const RESEARCH = [
+  // Primary source additions checked 4 October 2026.
   {
-    id: 'gilligan-lee-2023', kind: 'paper', thread: 'spatial', year: 2023, verified: 'abstract',
-    title: t('Hands-On: investigating the role of physical manipulatives in spatial training', 'Hands-On: uloga fizičkih predmeta u obuci prostornog mišljenja'),
-    who: 'Gilligan-Lee, Hawes, Williams, Farran & Mix · Child Development 94, 1205–1221',
-    says: t('A registered report that tests the thing directly: children trained on mental rotation with concrete pieces in the hand, the same training without them, and an active control. The group that moved the shapes improved at mental rotation.', 'Registrovan ogled koji ispituje baš to: deca uvežbavana u mentalnoj rotaciji sa konkretnim komadima u ruci, isti zadatak bez njih, i aktivna kontrola. Grupa koja je pomerala oblike napredovala je u mentalnoj rotaciji.'),
-    limit: t('We have read the abstract and part of the results table, not the full paper. The effect size and whether the gain carried over to mathematics are not written here, because we have not read them in the original.', 'Pročitali smo apstrakt i deo tabele rezultata, a ne ceo rad. Veličina efekta i to da li se dobitak preneo na matematiku ovde nisu upisani, jer ih nismo pročitali u originalu.'),
-    use: t('The single study that stands behind week 2 — the reason the task is an object and not a screen. Quote it with the sentence about how far we read it.', 'Jedna studija koja stoji iza 2. nedelje — razlog zašto je zadatak predmet, a ne ekran. Navodi se zajedno sa rečenicom dokle smo je pročitali.'),
-    url: 'https://srcd.onlinelibrary.wiley.com/doi/10.1111/cdev.13963'
+    "id": "lego-braille-bricks-2020",
+    "kind": "programme",
+    "thread": "toy",
+    "year": 2020,
+    "verified": "full",
+    "title": {
+      "en": "LEGO Braille Bricks",
+      "sr": "LEGO Braille Bricks"
+    },
+    "who": "LEGO Foundation / LEGO Group · 20 August 2020",
+    "says": {
+      "en": "Bricks combine braille studs with printed symbols and fit the ordinary system. The announcement reports development with blind communities.",
+      "sr": "Kockice spajaju Brajeve tačke i štampane simbole, uz uklapanje u običan sistem. Saopštenje navodi razvoj sa zajednicama slepih."
+    },
+    "limit": {
+      "en": "Manufacturer announcement read; learning outcomes, current availability and Serbian localisation not checked.",
+      "sr": "Pročitano saopštenje proizvođača; učinak učenja, današnja dostupnost i srpska lokalizacija nisu provereni."
+    },
+    "use": {
+      "en": "An open example of a shared object with several ways of reading.",
+      "sr": "Otvoren primer zajedničkog predmeta sa više načina čitanja."
+    },
+    "url": "https://www.lego.com/en-us/aboutus/news/2020/august/lego-braille-bricks"
+  },
+  {
+    "id": "eyemine-v2-guide",
+    "kind": "guide",
+    "thread": "toy",
+    "year": 2021,
+    "verified": "full",
+    "title": {
+      "en": "EyeMine v2: getting started playing",
+      "sr": "EyeMine v2: početak igre"
+    },
+    "who": "SpecialEffect · guide dated 20 January 2021",
+    "says": {
+      "en": "The guide supports gaze-controlled play and asks helpers to leave the purpose of play to the player.",
+      "sr": "Vodič podržava igru upravljanu pogledom i traži da pomagači prepuste svrhu igre igraču."
+    },
+    "limit": {
+      "en": "Historical Windows, eye-tracker and Minecraft Java instructions read; not installed and not verified for phones or current compatibility.",
+      "sr": "Pročitano istorijsko uputstvo za Windows, praćenje pogleda i Minecraft Java; bez instalacije, provere telefona ili današnje kompatibilnosti."
+    },
+    "use": {
+      "en": "Explore access as control over goals as well as commands.",
+      "sr": "Istražiti pristup kao upravljanje ciljevima, uz upravljanje komandama."
+    },
+    "url": "https://github.com/SpecialEffect/EyeMine/wiki/Get-started-playing"
+  },
+  {
+    "id": "w3c-coga-clear-steps",
+    "kind": "guide",
+    "thread": "method",
+    "year": 2021,
+    "verified": "full",
+    "title": {
+      "en": "Make Each Step Clear",
+      "sr": "Učini svaki korak jasnim"
+    },
+    "who": "W3C WAI · supplemental cognitive accessibility pattern",
+    "says": {
+      "en": "Make previous, current and next steps understandable so users can follow a process.",
+      "sr": "Prethodni, sadašnji i naredni koraci treba da budu razumljivi kako bi korisnik pratio postupak."
+    },
+    "limit": {
+      "en": "Pattern page read on 4 October 2026. Supplemental guidance, not a required WCAG conformance criterion.",
+      "sr": "Stranica obrasca pročitana 04.10.2026. Dopunska smernica, ne obavezni kriterijum WCAG usaglašenosti."
+    },
+    "use": {
+      "en": "Our idea: examine resuming an interrupted task; transfer to a building route is an analogy, not a physical access standard.",
+      "sr": "Naša ideja: razmotriti povratak na prekinut zadatak; prenos na putanju kroz zgradu je analogija, ne standard fizičkog pristupa."
+    },
+    "url": "https://www.w3.org/WAI/WCAG2/supplemental/patterns/o1p04-clear-steps/"
+  },
+  {
+    "id": "gilligan-lee-2023",
+    "kind": "paper",
+    "thread": "spatial",
+    "year": 2023,
+    "verified": "full",
+    "title": {
+      "en": "Hands-On: physical manipulatives in spatial training",
+      "sr": "Hands-On: fizički predmeti u prostornoj obuci"
+    },
+    "who": "Gilligan-Lee et al. · Child Development 94, 1205–1221",
+    "says": {
+      "en": "Both training groups improved mental rotation; their difference was not significant. Hands-On outperformed Hands-Off on immediate calculation, not composite mathematics.",
+      "sr": "Obe grupe napredovale su u mentalnoj rotaciji; njihova razlika nije bila značajna. Hands-On nadmašuje Hands-Off u neposrednom računanju, ne u zbirnom matematičkom rezultatu."
+    },
+    "limit": {
+      "en": "Methods, Table 2, results and selected discussion read on 4 October 2026; no reanalysis. Nonsignificance does not establish equivalence.",
+      "sr": "Metod, tabela 2, rezultati i deo diskusije pročitani 04.10.2026; bez reanalize. Neznačajnost ne dokazuje jednakost."
+    },
+    "use": {
+      "en": "Choose a teaching medium with a stated purpose; this is not proof that toys generally outperform screens.",
+      "sr": "Medij nastave birati uz obrazloženje; ovo nije dokaz da igračke uopšteno nadmašuju ekrane."
+    },
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/cdev.13963"
   },
   {
     id: 'nicholson-1971', kind: 'paper', thread: 'toy', year: 1971, verified: 'secondary',
@@ -79,13 +171,13 @@ export const RESEARCH = [
   },
   /* ---------------- spatial intelligence: is it even trainable ---------------- */
   {
-    id: 'uttal-2013', kind: 'paper', thread: 'spatial', year: 2013, verified: 'abstract',
+    id: 'uttal-2013', kind: 'paper', thread: 'spatial', year: 2013, verified: 'full',
     title: t('The malleability of spatial skills: a meta-analysis of training studies', 'Promenljivost prostornih sposobnosti: meta-analiza studija obuke'),
     who: 'Uttal, Meadow, Tipton, Hand, Alden, Warren & Newcombe · Psychological Bulletin 139(2), 352–402',
-    says: t('Across 217 training studies the average gain of spatial training over control is g = 0,47. The gain survives a delay to a later test, and it appears on spatial tasks that were never trained. Training is most effective in children.', 'Kroz 217 studija obuke prosečan dobitak obuke prostornog mišljenja u odnosu na kontrolu je g = 0,47. Dobitak preživljava pauzu do kasnijeg testiranja i pojavljuje se na prostornim zadacima koji nisu vežbani. Obuka je najdelotvornija kod dece.'),
-    limit: t('It measures gain on spatial tasks. It is not evidence that a trained child does better at school, and the paper itself does not claim that.', 'Meri dobitak na prostornim zadacima. Nije dokaz da uvežbano dete bolje prolazi u školi, i sam rad to ne tvrdi.'),
+    says: t('Across 217 training studies the average gain of spatial training over control is g = 0,47. The gain survives a delay to a later test, and it appears on spatial tasks that were never trained. The analysis did not establish an age-group difference.', 'Kroz 217 studija obuke prosečan dobitak obuke prostornog mišljenja u odnosu na kontrolu je g = 0,47. Dobitak preživljava pauzu do kasnijeg testiranja i pojavljuje se na prostornim zadacima koji nisu vežbani. Analiza nije potvrdila razliku između uzrasnih grupa.'),
+    limit: t('Age results and discussion read in the published version, pp. 364 and 366–367, on 4 October 2026; other claims retain the earlier abstract-level reading. Age comparisons mainly cross different studies; no reanalysis or course evaluation.', 'Rezultati i diskusija o uzrastu pročitani u objavljenoj verziji, str. 364 i 366–367, 04.10.2026; ostale tvrdnje zadržavaju raniji obim čitanja apstrakta. Uzrasti se uglavnom porede između različitih studija; bez reanalize ili evaluacije našeg predmeta.'),
     use: t('The single sentence that justifies a studio week spent on an object for a child’s hand: the skill is not fixed.', 'Jedna rečenica koja opravdava nedelju studija potrošenu na predmet za dečju ruku: sposobnost nije data jednom zauvek.'),
-    url: 'https://groups.psych.northwestern.edu/uttal/documents/1Themalleabilityofspatialskills-Ametaanalysisoftrainingstudies1_001.pdf'
+    url: 'https://groups.psych.northwestern.edu/uttal/documents/UttalMeadowetal2013.pdf'
   },
   {
     id: 'gilligan-2020', kind: 'paper', thread: 'spatial', year: 2020, verified: 'abstract',
@@ -104,15 +196,6 @@ export const RESEARCH = [
     limit: t('A null result on transfer is not a null result on the trained skill — the rotation gain was real.', 'Izostanak prenosa nije izostanak efekta na uvežbanu veštinu — dobitak u rotaciji je bio stvaran.'),
     use: t('The sentence that keeps a student from writing “this toy improves mathematics” on an A3.', 'Rečenica koja sprečava studenta da na A3 napiše „ova igračka poboljšava matematiku”.'),
     url: 'https://www.sciencedirect.com/science/article/abs/pii/S1041608019300019'
-  },
-  {
-    id: 'hands-on-2023', kind: 'paper', thread: 'spatial', year: 2023, verified: 'abstract',
-    title: t('Hands-on: investigating the role of physical manipulatives in spatial training', 'Rukama: uloga fizičkih predmeta u obuci prostornog mišljenja'),
-    who: 'Gilligan-Lee et al. · Child Development 94(5)',
-    says: t('Spatial training with children was run with physical manipulatives and compared against the equivalent task without them — the question of whether the object in the hand matters is tested directly, not assumed.', 'Obuka prostornog mišljenja sa decom izvedena je sa fizičkim predmetima i poređena sa istim zadatkom bez njih — pitanje da li predmet u ruci nešto menja ispitano je neposredno, a ne pretpostavljeno.'),
-    limit: t('We have read the abstract and the publisher page, not the full result. Do not quote an effect size from it until the paper is opened.', 'Pročitani su apstrakt i stranica izdavača, ne pun rezultat. Ne navoditi veličinu efekta dok se rad ne otvori.'),
-    use: t('The reason the first task is a physical toy and not an application. It is an argument under test, not a settled fact.', 'Razlog zbog kog je prvi zadatak fizička igračka, a ne aplikacija. To je argument koji se ispituje, a ne utvrđena činjenica.'),
-    url: 'https://srcd.onlinelibrary.wiley.com/doi/10.1111/cdev.13963'
   },
   {
     id: 'picture-rotation-test', kind: 'instrument', thread: 'spatial', year: 2003, verified: 'secondary',
@@ -267,13 +350,29 @@ export const RESEARCH = [
     url: 'http://pravni-skener.org/pdf/sr/baza_propisa/52.pdf'
   },
   {
-    id: 'udl-3', kind: 'guide', thread: 'rights', year: 2024, verified: 'secondary',
-    title: t('UDL Guidelines 3.0 — Universal Design for Learning', 'UDL smernice 3.0 — univerzalni dizajn učenja'),
-    who: 'CAST · released 30 July 2024',
-    says: t('The framework has three networks — affective (engagement), recognition (perception and understanding) and strategic (planning and action). Version 3.0 shifts the goal from producing “expert learners” to supporting learner agency, and explicitly addresses barriers rooted in bias and systems of exclusion.', 'Okvir ima tri mreže — afektivnu (angažovanje), prepoznavajuću (opažanje i razumevanje) i stratešku (planiranje i delanje). Verzija 3.0 pomera cilj sa stvaranja „ekspertskih učenika” na podršku samostalnosti onoga ko uči i izričito se bavi preprekama koje potiču iz pristrasnosti i sistema isključivanja.'),
-    limit: t('A framework with a large practice base and a contested evidence base. It is how to think, not proof that it works.', 'Okvir sa velikom praktičnom osnovom i spornom dokaznom osnovom. To je način mišljenja, a ne dokaz da deluje.'),
-    use: t('The bridge between universal design in space and universal design in teaching — the same seven-principle instinct applied to a lesson, and to a toy that teaches.', 'Most između univerzalnog dizajna u prostoru i univerzalnog dizajna u nastavi — isti instinkt sedam principa primenjen na čas, i na igračku koja uči.'),
-    url: 'https://udlguidelines.cast.org/'
+    "id": "udl-3",
+    "kind": "guide",
+    "thread": "rights",
+    "year": 2024,
+    "verified": "full",
+    "title": {
+      "en": "CAST UDL Guidelines 3.0",
+      "sr": "CAST UDL smernice 3.0"
+    },
+    "who": "CAST · released 30 July 2024",
+    "says": {
+      "en": "Three educational principles: engagement, representation, action and expression. The stated goal is learner agency.",
+      "sr": "Tri obrazovna principa: angažovanje, predstavljanje, delanje i izražavanje. Navedeni cilj je samostalnost onoga ko uči."
+    },
+    "limit": {
+      "en": "Primary guideline overview read on 4 October 2026; underlying effectiveness studies not reviewed. This is not the seven-principle UD checklist.",
+      "sr": "Primarni pregled smernica pročitan 04.10.2026; studije učinka nisu pregledane. Ovo nije lista sedam UD principa."
+    },
+    "use": {
+      "en": "Our open idea: let a reader choose a medium for expressing the same spatial relationship.",
+      "sr": "Naša otvorena ideja: čitalac bira medij u kome izražava isti prostorni odnos."
+    },
+    "url": "https://udlguidelines.cast.org/"
   },
 
   /* ---------------- the method of this studio ---------------- */
@@ -379,7 +478,9 @@ export const RESEARCH = [
   }
 ];
 
-export const researchById = id => RESEARCH.find(item => item.id === id) || null;
+// Preserved locator: both IDs previously described DOI 10.1111/cdev.13963.
+const RESEARCH_ALIASES = { 'hands-on-2023': 'gilligan-lee-2023' };
+export const researchById = id => RESEARCH.find(item => item.id === (RESEARCH_ALIASES[id] || id)) || null;
 
 export function filterResearch({ thread = 'all', kind = 'all', verified = 'all', query = '' } = {}) {
   const needle = String(query || '').trim().toLowerCase();
@@ -411,8 +512,8 @@ export const OPEN_QUESTIONS = [
   {
     id: 'object-vs-screen',
     question: t('For spatial operations, does the object in the hand actually beat the same task on a screen, and for which children?', 'Da li za radnje nad prostorom predmet u ruci zaista nadmašuje isti zadatak na ekranu, i za koju decu?'),
-    why: t('Our whole first task rests on it. The direction is now on the shelf — the hands-on group improved at mental rotation — but we have read an abstract and a fragment of a table, and a direction is not an effect size.', 'Ceo naš prvi zadatak stoji na tome. Smer je sada na polici — grupa sa predmetom u ruci napredovala je u mentalnoj rotaciji — ali pročitali smo apstrakt i parče tabele, a smer nije veličina efekta.'),
-    next: t('Get the full text of Gilligan-Lee et al. 2023 through the faculty library, write the effect size and the transfer result into the shelf entry, and say for which ages it holds.', 'Nabaviti pun tekst Gilligan-Lee i saradnika iz 2023. preko fakultetske biblioteke, upisati veličinu efekta i nalaz o prenosu u zapis na polici, i reći za koje uzraste važi.')
+    why: t('The public methods and results have now been read and the shelf corrected. What those findings mean for our particular prototypes remains an open question; the first task does not depend on proving one medium generally superior.', 'Javni metod i rezultati sada su pročitani i polica ispravljena. Šta ti nalazi znače za naše konkretne prototipove ostaje otvoreno pitanje; prvi zadatak ne zavisi od dokazivanja opšte nadmoći jednog medija.'),
+    next: t('Compare public studies by outcome, age, training activity and follow-up interval; retain null findings and separate reported evidence from our teaching choices.', 'Porediti javne radove prema ishodu, uzrastu, aktivnosti obuke i roku praćenja; sačuvati i nulte nalaze i razlikovati prijavljene dokaze od naših nastavnih izbora.')
   },
   {
     id: 'arkki-outcomes',

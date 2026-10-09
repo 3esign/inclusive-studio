@@ -350,7 +350,7 @@ function subject(){
   <section><div class="section-heading"><h2>${tr('What you should be able to do','Po završetku predmeta student:')}</h2><span class="small muted">${tr('Learning outcomes','Ishodi učenja')}</span></div><ol class="outcome-list">${out}</ol></section>
   <section><div class="section-heading"><h2>${tr('House rules','Pravila rada')}</h2></div><ul class="rule-list">${rules}</ul></section>
   <section id="teacher"><div class="section-heading"><h2>${tr('The teacher','Nastavnik')}</h2><span class="tag">${tr('Counted, not recalled','Prebrojano, ne prepričano')}</span></div>
-    <p class="lede">${esc(about.name)} — ${esc(tx(about.role))}</p><p>${esc(tx(about.lede))}</p>
+    <p class="lede">${esc(tx(about.role))}</p><p>${esc(tx(about.lede))}</p>
     <div class="era-list">${eras}</div>
     <p class="help">${esc(tx(about.note))}</p>
     <div class="readable"><h3>${tr('Why the course is taught this way','Zašto se predmet drži ovako')}</h3><p>${esc(tx(about.why))}</p></div></section>

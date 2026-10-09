@@ -68,6 +68,20 @@ export function validateWeek(week) {
   if (!['published', 'draft'].includes(week.state)) problems.push('state must be "published" or "draft"');
   if (week.date !== null && week.date !== undefined && !/^\d{4}-\d{2}-\d{2}$/.test(week.date)) problems.push('date must be null or YYYY-MM-DD');
   if (week.date && week.dateStatus !== 'confirmed' && week.dateStatus !== 'proposed') problems.push('a date needs dateStatus "confirmed" or "proposed"');
+  // Revisions make the writing of the material visible: what changed, when, on whose word.
+  // A published week without them is material that claims it never changed.
+  if (week.revizije !== undefined) {
+    if (!Array.isArray(week.revizije) || week.revizije.length === 0) problems.push('revizije must be a non-empty array when present');
+    else week.revizije.forEach((r, i) => {
+      const v = i + 1;
+      if (!Number.isInteger(r.v) || r.v !== v) problems.push(`revizije #${v}: "v" must be ${v}, in order`);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(r.datum || '')) problems.push(`revizije #${v}: "datum" must be YYYY-MM-DD`);
+      if (!isText(r.sta)) problems.push(`revizije #${v}: "sta" is required — a revision says what changed`);
+    });
+    const last = week.revizije[week.revizije.length - 1];
+    if (last && week.updated && week.updated !== last.datum) problems.push('updated must equal the last revision date — the "Dopunjeno" line tells the truth');
+  }
+  if (week.state === 'published' && !(Array.isArray(week.revizije) && week.revizije.length)) problems.push('a published week carries revizije — published material has a visible history');
   const blocks = Array.isArray(week.blocks) ? week.blocks : null;
   if (!blocks) problems.push('blocks must be an array');
   else blocks.forEach((block, index) => problems.push(...validateBlock(block, index)));

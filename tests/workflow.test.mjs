@@ -6,7 +6,7 @@ const root = new URL('../', import.meta.url);
 const source = async file => readFile(new URL(file, root), 'utf8');
 
 test('the weekly record is one A3 reviewed and signed on paper', async () => {
-  const week = await source('assets/week.js');
+  const week = await source('assets/home.js');
   const task = await source('assets/task.js');
   assert.match(week, /Jedna nedelja\. Jedan A3\. Jedan razgovor\./);
   assert.match(week, /potpisuje na papiru|Potpis/);
@@ -17,7 +17,7 @@ test('the weekly record is one A3 reviewed and signed on paper', async () => {
 test('the official student path never sends a hand-in to GitHub', async () => {
   const task = await source('assets/task.js');
   const labs = await source('assets/labs.js');
-  const week = await source('assets/week.js');
+  const week = await source('assets/home.js');
   const studioFile = await source('assets/studio.js');
   const start = studioFile.indexOf('function studio()');
   const end = studioFile.indexOf('function eventRange', start);

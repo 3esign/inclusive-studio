@@ -14,9 +14,10 @@ const html = {};
 for (const page of pages) html[page] = await readFile(new URL(page, root), 'utf8');
 
 const MODULES = {
-  'index.html': 'week.js', 'predavanje.html': 'lecture.js', 'laboratorija.html': 'labs.js',
+  'index.html': 'home.js', 'predavanje.html': 'lecture.js', 'laboratorija.html': 'labs.js',
   'zadatak.html': 'task.js', 'uredi.html': 'editor.js', 'ideja.html': 'ideas.js',
-  'igracka.html': 'toy.js', 'godista.html': 'ages.js'
+  'igracka.html': 'toy.js', 'godista.html': 'ages.js',
+  'naslovna.html': 'naslovna.js', 'udruzenje.html': 'udruzenje.js'
 };
 
 test('the pages are exactly the ones the navigation points at', () => {
@@ -55,13 +56,14 @@ test('every page loads one module, and only the pages that need the big bundle g
   for (const page of lean) assert.ok(!html[page].includes('studio.js'), page + ' must not load the legacy bundle');
 });
 
-test('the course band on every page names the course, the faculty, the teacher and the term', () => {
+test('the course band on every page names the course, the faculty and the term — and no person', () => {
   for (const page of pages) {
     const band = html[page].match(/<div class="course-band">([\s\S]*?)<\/div>/);
     assert.ok(band, page + ' has no course band');
-    for (const value of [identity.title.en, identity.institution.en, identity.faculty.en, identity.teacher.en, identity.term.en]) {
+    for (const value of [identity.title.en, identity.institution.en, identity.faculty.en, identity.term.en]) {
       assert.ok(band[1].includes(value), `${page} band is missing: ${value}`);
     }
+    assert.ok(!/Dejan|Kozić|Koći|Semir|Poturak/.test(band[1]), page + ' band names a person');
   }
 });
 
@@ -99,16 +101,38 @@ test('the laboratory page lists its labs even with scripting off', async () => {
   }
 });
 
+test('the flow strip sits in the header of every page and tells the truth about the shelves', async () => {
+  const tok = JSON.parse(await readFile(new URL('../data/tok.json', import.meta.url), 'utf8'));
+  const nextCas = tok.pilot.filter(item => item.vrsta === 'cas' && typeof item.nedelja === 'number')[0];
+  const stamped = {
+    zacementirano: String(tok.cem.length),
+    sledeciCas: nextCas ? String(nextCas.nedelja) : '',
+    oblakIdeja: String(tok.ideje.length)
+  };
+  for (const page of pages) {
+    assert.ok(html[page].includes('class="flow-strip"'), page + ' has no flow strip in its header');
+    for (const anchor of ['index.html#zacementirano', 'index.html#sledeci-cas', 'index.html#oblak-ideja']) {
+      assert.ok(html[page].includes(anchor), page + ' strip misses ' + anchor);
+    }
+    const counts = [...html[page].matchAll(/data-flow="([a-z-]+)" data-count="([^"]*)"/g)].map(match => match[2]);
+    assert.deepEqual(counts, [stamped.zacementirano, stamped.sledeciCas, stamped.oblakIdeja], page + ' strip counts disagree with data/tok.json');
+  }
+});
+
 test('the evidence against disability simulation is on the page itself, not only in the code', () => {
   assert.ok(html['laboratorija.html'].includes('Nario-Redmond'));
   assert.ok(html['laboratorija.html'].includes('blindfold'));
 });
 
-test('the CSS and the modules are the only assets the shells reference', () => {
+test('the CSS and the modules are the only assets the shells reference, plus the vendored three.js', () => {
   for (const page of pages) {
     const references = [...html[page].matchAll(/(?:src|href)="(assets\/[^"]+)"/g)].map(m => m[1]);
     for (const reference of references) {
-      assert.ok(/^assets\/(style\.css|mark\.svg|[a-z-]+\.js)$/.test(reference), `${page}: unexpected asset ${reference}`);
+      // vendor/three.module.min.js and vendor/three.core.min.js are the only third-party
+      // files, vendored on purpose (assets/vendor/README.md carries their hashes).
+      assert.ok(/^assets\/(style\.css|mark\.svg|[a-z-]+\.js|vendor\/three\.(module|core)\.min\.js)$/.test(reference), `${page}: unexpected asset ${reference}`);
     }
+    // Nothing may call a third party at read time: no CDN, no analytics, no webfonts.
+    assert.ok(!/https?:\/\/[^"]*\.(js|css|woff2?)/.test(html[page]), `${page}: loads a script, style or font from the network`);
   }
 });

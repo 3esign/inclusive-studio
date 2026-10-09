@@ -22,6 +22,177 @@ export const IDEA_FIELDS = [
 ];
 
 export const IDEA_BANK = [
+  // Open research additions, checked 4 October 2026; not assigned work.
+  {
+    "id": "braille-bricks-shared-symbol",
+    "status": "research",
+    "field": "children",
+    "principles": [
+      1,
+      2,
+      4
+    ],
+    "title": {
+      "en": "One brick, two ways of reading",
+      "sr": "Jedna kockica, dva načina čitanja"
+    },
+    "bridge": {
+      "en": "touch and print ↔ a shared game",
+      "sr": "dodir i štampa ↔ zajednička igra"
+    },
+    "question": {
+      "en": "What might a shared game become when the same brick carries braille studs and printed symbols, while players choose how to read it?",
+      "sr": "Kakva bi zajednička igra mogla da nastane kada ista kockica nosi Brajeve tačke i štampane simbole, a igrači biraju kako će je čitati?"
+    },
+    "move": {
+      "en": "A shared building story could leave the next move to each player; blind participants could shape its rules and decide which tactile distinctions actually matter.",
+      "sr": "Zajednička priča građenja mogla bi da prepusti sledeći potez svakom igraču; slepi učesnici mogli bi da oblikuju pravila i odlučuju koje taktilne razlike zaista znače."
+    },
+    "evidence": {
+      "en": "Read LEGO's announcement of 20 August 2020: dual symbols, ordinary-brick compatibility and development with blind communities. This manufacturer account does not independently establish learning outcomes or current Serbian availability.",
+      "sr": "Pročitana je objava LEGO-a od 20. avgusta 2020: dvostruki simboli, kompatibilnost sa običnim kockicama i razvoj sa zajednicama slepih. Navodi proizvođača nisu nezavisna potvrda učinka učenja ni sadašnje dostupnosti u Srbiji."
+    },
+    "source": {
+      "label": "LEGO — LEGO Braille Bricks announcement, 20 August 2020",
+      "url": "https://www.lego.com/en-us/aboutus/news/2020/august/lego-braille-bricks"
+    }
+  },
+  {
+    "id": "blind-builders-check-instructions",
+    "status": "research",
+    "field": "collaboration",
+    "principles": [
+      1,
+      3,
+      4
+    ],
+    "title": {
+      "en": "The builder checks the language",
+      "sr": "Graditelj proverava jezik uputstva"
+    },
+    "bridge": {
+      "en": "spatial instructions ↔ paid experiential expertise",
+      "sr": "prostorno uputstvo ↔ plaćeno iskustveno znanje"
+    },
+    "question": {
+      "en": "How does a building description change when a blind builder can reject an ambiguous direction before the instructions are published for others?",
+      "sr": "Kako se opis građenja menja kada slepi graditelj može da odbaci dvosmislen smer pre nego što uputstvo postane dostupno drugim ljudima?"
+    },
+    "move": {
+      "en": "A shared object could connect written directions, touch and speech; the builder's corrections could become part of the description, with their contribution explicitly credited.",
+      "sr": "Isti predmet mogao bi da poveže pisane smernice, dodir i govor; ispravke graditelja mogle bi da postanu deo opisa, uz jasno priznanje njihovog doprinosa."
+    },
+    "evidence": {
+      "en": "Read Bricks for the Blind's undated FAQ: paid writers and blind testers, accessible text and example set 60376. The actual set instructions were not tested; initial piece sorting may require assistance.",
+      "sr": "Pročitan je nedatirani FAQ organizacije Bricks for the Blind: plaćeni pisci i slepi proveravači, pristupačan tekst i primer kompleta 60376. Samo uputstvo nije isprobano; početno razvrstavanje delova može da zahteva pomoć."
+    },
+    "source": {
+      "label": "Bricks for the Blind — Frequently Asked Questions",
+      "url": "https://bricksfortheblind.org/faqs/"
+    }
+  },
+  {
+    "id": "tmap-shared-street-map",
+    "status": "research",
+    "field": "sensory",
+    "principles": [
+      1,
+      3,
+      4
+    ],
+    "title": {
+      "en": "A street map with chosen detail",
+      "sr": "Ulična mapa sa odabranim detaljima"
+    },
+    "bridge": {
+      "en": "tactile streets ↔ shared route decisions",
+      "sr": "taktilne ulice ↔ zajednički izbor putanje"
+    },
+    "question": {
+      "en": "Which landmarks would people keep when raised lines, braille and large print must share limited space on the same street map?",
+      "sr": "Koje bi orijentire ljudi zadržali kada izdignute linije, Brajevo pismo i krupna štampa moraju da dele ograničen prostor na istoj uličnoj mapi?"
+    },
+    "move": {
+      "en": "Two map scales could open a conversation about orientation: participants could choose useful landmarks and explain when additional detail becomes clutter rather than help.",
+      "sr": "Dve razmere mape mogle bi da otvore razgovor o orijentaciji: učesnici bi mogli da izaberu korisne orijentire i objasne kada dodatni detalj počinje da smeta."
+    },
+    "evidence": {
+      "en": "Read MAD Lab's undated TMAP FAQ: tactile street maps, not indoor plans. Its SVG/PDF files are not screen-reader accessible. Geographic coverage varies; no account was opened and no map generated.",
+      "sr": "Pročitan je nedatirani TMAP FAQ laboratorije MAD Lab: taktilne ulične mape, ne planovi enterijera. Njihovi SVG/PDF fajlovi nisu čitljivi čitačem ekrana. Geografska pokrivenost varira; nalog nije otvaran niti mapa generisana."
+    },
+    "source": {
+      "label": "LightHouse MAD Lab — TMAP FAQ and Troubleshooting",
+      "url": "https://madlabdesign.org/tmap-faq-and-troubleshooting/"
+    }
+  },
+  {
+    "id": "eyemine-player-chosen-goal",
+    "status": "research",
+    "field": "digital",
+    "principles": [
+      1,
+      2,
+      6
+    ],
+    "title": {
+      "en": "The player chooses the destination",
+      "sr": "Igrač bira odredište"
+    },
+    "bridge": {
+      "en": "eye control ↔ ownership of play",
+      "sr": "upravljanje pogledom ↔ samostalno određivanje igre"
+    },
+    "question": {
+      "en": "What changes when an assistant supports eye-controlled movement but leaves the decision to explore, fly, build or simply watch to the player?",
+      "sr": "Šta se menja kada pomagač podržava kretanje upravljano pogledom, ali igraču prepušta odluku da istražuje, leti, gradi ili samo posmatra svet?"
+    },
+    "move": {
+      "en": "A shared world could allow different controls and tempos; the player's preferred activity could determine which options appear, rather than a helper's idea of progress.",
+      "sr": "Zajednički svet mogao bi da dopušta različite kontrole i tempo; aktivnost koju igrač želi mogla bi da odredi ponuđene mogućnosti, umesto pomagačeve predstave o napretku."
+    },
+    "evidence": {
+      "en": "Read SpecialEffect's 2021–2022 EyeMine v2 wiki: player autonomy and graduated controls. This historical Windows PC, eye-tracker and Minecraft Java setup is not a phone interface; current compatibility was not tested.",
+      "sr": "Pročitana je SpecialEffect dokumentacija za EyeMine v2 iz 2021–2022: autonomija igrača i postepene kontrole. Taj istorijski spoj Windows računara, praćenja pogleda i Minecraft Java nije telefonski interfejs; današnja kompatibilnost nije isprobana."
+    },
+    "source": {
+      "label": "SpecialEffect EyeMine v2 wiki — Get started playing, 20 January 2021",
+      "url": "https://github.com/SpecialEffect/EyeMine/wiki/Get-started-playing"
+    }
+  },
+  {
+    "id": "vanabbe-replicas-shared-visit",
+    "status": "research",
+    "field": "space",
+    "principles": [
+      1,
+      2,
+      4
+    ],
+    "title": {
+      "en": "Several approaches to the same artwork",
+      "sr": "Više pristupa istom umetničkom delu"
+    },
+    "bridge": {
+      "en": "experiential expertise ↔ a shared museum visit",
+      "sr": "iskustveno znanje ↔ zajednička poseta muzeju"
+    },
+    "question": {
+      "en": "Could a group remain together while each visitor chooses a replica, description or visual encounter, without one route becoming the standard for everyone?",
+      "sr": "Može li grupa da ostane zajedno dok svaki posetilac bira repliku, opis ili vizuelni susret, bez pretvaranja jednog puta u standard za sve?"
+    },
+    "move": {
+      "en": "A shared exhibition could offer optional sensory approaches; people with relevant lived experience could shape those choices and identify where an apparently helpful addition excludes someone.",
+      "sr": "Zajednička izložba mogla bi da ponudi senzorne pristupe po izboru; ljudi sa relevantnim ličnim iskustvom mogli bi da oblikuju mogućnosti i prepoznaju kada naizgled koristan dodatak nekoga isključuje."
+    },
+    "evidence": {
+      "en": "Read Van Abbemuseum's undated collectivity and multisensory pages: experiential experts, tactile objects and scent cards. Only replicas may be touched. No visit, sensory trial or whole-building accessibility assessment was performed.",
+      "sr": "Pročitane su nedatirane stranice muzeja Van Abbe o zajedništvu i čulima: iskustveni stručnjaci, taktilni predmeti i mirisne kartice. Dodiruju se samo replike. Nisu sprovedeni poseta, senzorna proba ni procena pristupačnosti cele zgrade."
+    },
+    "source": {
+      "label": "Van Abbemuseum — Collectivity and solidarity",
+      "url": "https://vanabbemuseum.nl/en/museum/about-the-museum/themes/collectivity-solidarity"
+    }
+  },
   {
     id: 'printed-joint-only', status: 'candidate', field: 'making', principles: [2, 3, 5],
     title: t('Print the joint, find the rest', 'Štampaj spojnicu, ostalo nađi'),

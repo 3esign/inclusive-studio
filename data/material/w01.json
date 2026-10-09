@@ -4,204 +4,402 @@
   "n": 1,
   "state": "published",
   "updated": "2026-10-02",
-  "title": { "en": "A toy that teaches space", "sr": "Igračka koja uči prostor" },
+  "title": {
+    "en": "A toy that teaches space",
+    "sr": "Igračka koja uči prostor"
+  },
   "date": null,
   "dateStatus": "proposed",
-  "aim": { "en": "By the end of the session you can name where an object excludes someone and why, using a measurement or an observation — not an impression. And you have designed, on paper, a toy that trains one movement of the hand and one operation on space at the same time, buildable from household waste.", "sr": "Na kraju časa umeš da kažeš gde predmet isključuje nekoga i zašto, pozivajući se na meru ili zapažanje — ne na utisak. I na papiru si projektovao igračku koja istovremeno vežba jedan pokret ruke i jednu radnju nad prostorom, a pravi se od kućnog otpada." },
+  "aim": {
+    "en": "By the end of the session you can name where an object excludes someone and why, using a measurement or an observation — not an impression. And you have designed, on paper, a toy that trains one movement of the hand and one operation on space at the same time, buildable from household waste.",
+    "sr": "Na kraju časa umeš da kažeš gde predmet isključuje nekoga i zašto, pozivajući se na meru ili zapažanje — ne na utisak. I na papiru si projektovao igračku koja istovremeno vežba jedan pokret ruke i jednu radnju nad prostorom, a pravi se od kućnog otpada."
+  },
   "bring": [
-    { "en": "A pencil, an eraser and one sheet of A3 — the first task is drawn by hand.", "sr": "Olovka, gumica i jedan list A3 — prvi zadatak se crta rukom." },
-    { "en": "A ruler or a tape. Today every dimension on the sheet is a measured dimension.", "sr": "Lenjir ili metar. Danas je svaka mera na listu izmerena mera." },
-    { "en": "If you have them: two bottle caps, a skewer, a piece of cardboard. The object in the hand settles arguments the drawing cannot.", "sr": "Ako imaš: dva čepa, štapić za ražnjiće, komad kartona. Predmet u ruci rešava sporove koje crtež ne može." }
+    {
+      "en": "A pencil, an eraser and one sheet of A3 — the first task is drawn by hand.",
+      "sr": "Olovka, gumica i jedan list A3 — prvi zadatak se crta rukom."
+    },
+    {
+      "en": "A ruler or a tape. Today every dimension on the sheet is a measured dimension.",
+      "sr": "Lenjir ili metar. Danas je svaka mera na listu izmerena mera."
+    },
+    {
+      "en": "If you have them: two bottle caps, a skewer, a piece of cardboard. The object in the hand settles arguments the drawing cannot.",
+      "sr": "Ako imaš: dva čepa, štapić za ražnjiće, komad kartona. Predmet u ruci rešava sporove koje crtež ne može."
+    }
   ],
   "blocks": [
     {
       "kind": "heading",
-      "text": { "en": "A toy is the smallest building we design", "sr": "Igračka je najmanja građevina koju projektujemo" }
+      "text": {
+        "en": "A toy is the smallest building we design",
+        "sr": "Igračka je najmanja građevina koju projektujemo"
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "It has a structure, a material, a cost, a user who was not consulted, and a rule about who may enter. Everything this course will later do to a hillside with a fall of 22,5 m, you do today to a cardboard box. And unlike the hillside, you can build the box this week and watch a child disagree with you.", "sr": "Ima konstrukciju, materijal, cenu, korisnika koji nije pitan i pravilo o tome ko sme da uđe. Sve što će ovaj predmet kasnije raditi sa padinom od 22,5 m, danas radiš sa kartonskom kutijom. A za razliku od padine, kutiju možeš da napraviš ove nedelje i da gledaš kako se dete ne slaže sa tobom." }
+      "text": {
+        "en": "It has a structure, a material, a cost, a user who was not consulted, and a rule about who may enter. Everything this course will later do to a hillside with a fall of 22,5 m, you do today to a cardboard box. And unlike the hillside, you can build the box this week and watch a child disagree with you.",
+        "sr": "Ima konstrukciju, materijal, cenu, korisnika koji nije pitan i pravilo o tome ko sme da uđe. Sve što će ovaj predmet kasnije raditi sa padinom od 22,5 m, danas radiš sa kartonskom kutijom. A za razliku od padine, kutiju možeš da napraviš ove nedelje i da gledaš kako se dete ne slaže sa tobom."
+      }
     },
     {
       "kind": "image",
       "src": "data/igracka/igracka-01.jpg",
-      "alt": { "en": "A cardboard carton with one side open. Bamboo skewers are pushed through its walls and span the opening in rows. Plastic bottle caps in blue, white, violet, yellow, red, green and orange are threaded onto the skewers so that each can slide along the rod and spin.", "sr": "Kartonska kutija sa jednom otvorenom stranom. Štapići za ražnjiće probodeni su kroz stranice i premošćuju otvor u redovima. Plastični čepovi — plavi, beli, ljubičasti, žuti, crveni, zeleni i narandžasti — nanizani su na štapiće tako da svaki klizi duž šipke i okreće se." },
-      "caption": { "en": "Made at the association „Živimo zajedno”. Photographed 02.10.2026.", "sr": "Napravljeno u udruženju „Živimo zajedno”. Fotografisano 02.10.2026." }
+      "alt": {
+        "en": "A cardboard carton with one side open. Bamboo skewers are pushed through its walls and span the opening in rows. Plastic bottle caps in blue, white, violet, yellow, red, green and orange are threaded onto the skewers so that each can slide along the rod and spin.",
+        "sr": "Kartonska kutija sa jednom otvorenom stranom. Štapići za ražnjiće probodeni su kroz stranice i premošćuju otvor u redovima. Plastični čepovi — plavi, beli, ljubičasti, žuti, crveni, zeleni i narandžasti — nanizani su na štapiće tako da svaki klizi duž šipke i okreće se."
+      },
+      "caption": {
+        "en": "Made at the association „Živimo zajedno”. Photographed 02.10.2026.",
+        "sr": "Napravljeno u udruženju „Živimo zajedno”. Fotografisano 02.10.2026."
+      }
     },
     {
       "kind": "image",
       "src": "data/igracka/igracka-03.jpg",
-      "alt": { "en": "Close view of one rod: an orange dome cap glued to a yellow ring cap and a blue cap, forming a single piece that turns on the skewer. Hot glue is visible at the joint.", "sr": "Bliski prikaz jednog štapića: narandžasti kupasti čep slepljen sa žutim prstenom i plavim čepom, što čini jedan komad koji se okreće oko štapića. Na spoju se vidi topli lepak." },
-      "caption": { "en": "Two or three caps glued back to back make one piece that slides and rotates.", "sr": "Dva ili tri čepa slepljena leđa uz leđa čine jedan komad koji klizi i rotira se." }
+      "alt": {
+        "en": "Close view of one rod: an orange dome cap glued to a yellow ring cap and a blue cap, forming a single piece that turns on the skewer. Hot glue is visible at the joint.",
+        "sr": "Bliski prikaz jednog štapića: narandžasti kupasti čep slepljen sa žutim prstenom i plavim čepom, što čini jedan komad koji se okreće oko štapića. Na spoju se vidi topli lepak."
+      },
+      "caption": {
+        "en": "Two or three caps glued back to back make one piece that slides and rotates.",
+        "sr": "Dva ili tri čepa slepljena leđa uz leđa čine jedan komad koji klizi i rotira se."
+      }
     },
     {
       "kind": "list",
       "items": [
-        { "en": "Hand: a pincer grip on a disc of about 30 mm, both hands at once, the arm crossing the body’s midline to reach the far rod.", "sr": "Ruka: pincetni hvat na disku od oko 30 mm, obe ruke istovremeno, ruka koja prelazi srednju liniju tela da bi stigla do daljeg štapića." },
-        { "en": "Space: order along a line, near rod and far rod, the same colour found in another row — and rotation, because a cap turns while it travels.", "sr": "Prostor: red duž linije, bliži i dalji štapić, ista boja nađena u drugom redu — i rotacija, jer se čep okreće dok putuje." },
-        { "en": "Cost: packaging waste, a pack of skewers, hot glue. That is not a detail — cost is part of access.", "sr": "Cena: otpad od ambalaže, paklo štapića, topli lepak. To nije sitnica — cena je deo pristupačnosti." }
+        {
+          "en": "Hand: a pincer grip on a disc of about 30 mm, both hands at once, the arm crossing the body’s midline to reach the far rod.",
+          "sr": "Ruka: pincetni hvat na disku od oko 30 mm, obe ruke istovremeno, ruka koja prelazi srednju liniju tela da bi stigla do daljeg štapića."
+        },
+        {
+          "en": "Space: order along a line, near rod and far rod, the same colour found in another row — and rotation, because a cap turns while it travels.",
+          "sr": "Prostor: red duž linije, bliži i dalji štapić, ista boja nađena u drugom redu — i rotacija, jer se čep okreće dok putuje."
+        },
+        {
+          "en": "Cost: packaging waste, a pack of skewers, hot glue. That is not a detail — cost is part of access.",
+          "sr": "Cena: otpad od ambalaže, paklo štapića, topli lepak. To nije sitnica — cena je deo pristupačnosti."
+        }
       ]
     },
     {
       "kind": "heading",
-      "text": { "en": "Mismatch, not deficit", "sr": "Nesklad, a ne nedostatak" }
+      "text": {
+        "en": "Mismatch, not deficit",
+        "sr": "Nesklad, a ne nedostatak"
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "Universal design does not start from a diagnosis. It starts from the distance between what a body does and what an object demands. That distance is designed, which means it can be designed differently. Ronald Mace, who named the field in 1985, was an architect and a wheelchair user; he refused the word “special”, because a separate solution announces who it was not built for. A separate toy says the same thing to a child, earlier and more clearly.", "sr": "Univerzalni dizajn ne počinje od dijagnoze. Počinje od razmaka između onoga što telo može i onoga što predmet zahteva. Taj razmak je projektovan, što znači da može biti projektovan drugačije. Ronald Mejs, koji je 1985. dao ime ovoj oblasti, bio je arhitekta i korisnik invalidskih kolica; odbijao je reč „specijalno”, jer odvojeno rešenje objavljuje za koga nije pravljeno. Odvojena igračka to detetu kaže ranije i jasnije." }
+      "text": {
+        "en": "Universal design does not start from a diagnosis. It starts from the distance between what a body does and what an object demands. That distance is designed, which means it can be designed differently. Ronald Mace, who named the field in 1985, was an architect and a wheelchair user; he refused the word “special”, because a separate solution announces who it was not built for. A separate toy says the same thing to a child, earlier and more clearly.",
+        "sr": "Univerzalni dizajn ne počinje od dijagnoze. Počinje od razmaka između onoga što telo može i onoga što predmet zahteva. Taj razmak je projektovan, što znači da može biti projektovan drugačije. Ronald Mejs, koji je 1985. dao ime ovoj oblasti, bio je arhitekta i korisnik invalidskih kolica; odbijao je reč „specijalno”, jer odvojeno rešenje objavljuje za koga nije pravljeno. Odvojena igračka to detetu kaže ranije i jasnije."
+      }
     },
     {
       "kind": "list",
       "items": [
-        { "en": "The medical model: the person has a problem, the person is treated.", "sr": "Medicinski model: osoba ima problem, osoba se tretira." },
-        { "en": "The social model: the environment creates the disability, the environment is changed.", "sr": "Socijalni model: okruženje stvara invaliditet, okruženje se menja." },
-        { "en": "The mismatch model (the one we design with): a specific body meets a specific detail, and the detail loses.", "sr": "Model neslaganja (po njemu projektujemo): konkretno telo sretne konkretan detalj, i detalj je taj koji gubi." }
+        {
+          "en": "The medical model: the person has a problem, the person is treated.",
+          "sr": "Medicinski model: osoba ima problem, osoba se tretira."
+        },
+        {
+          "en": "The social model: the environment creates the disability, the environment is changed.",
+          "sr": "Socijalni model: okruženje stvara invaliditet, okruženje se menja."
+        },
+        {
+          "en": "The mismatch model (the one we design with): a specific body meets a specific detail, and the detail loses.",
+          "sr": "Model neslaganja (po njemu projektujemo): konkretno telo sretne konkretan detalj, i detalj je taj koji gubi."
+        }
       ]
     },
     {
       "kind": "quote",
-      "text": { "en": "Disability is not a personal health condition. It is a mismatch between a person and their environment.", "sr": "Invaliditet nije lično zdravstveno stanje. To je neslaganje između osobe i njenog okruženja." },
+      "text": {
+        "en": "Disability is not a personal health condition. It is a mismatch between a person and their environment.",
+        "sr": "Invaliditet nije lično zdravstveno stanje. To je neslaganje između osobe i njenog okruženja."
+      },
       "source": "Microsoft Inclusive Design Toolkit (2015, 2nd ed. 2023)"
     },
     {
       "kind": "heading",
-      "text": { "en": "The cards that sort, and the day after", "sr": "Kartice koje razvrstavaju, i dan posle" }
+      "text": {
+        "en": "The cards that sort, and the day after",
+        "sr": "Kartice koje razvrstavaju, i dan posle"
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "The director of the association describes decks of cards that hold questions and tasks: a child works through them and the result says what the child can do. Instruments of that shape exist and are standardised — ASQ-3, DIAL-4, the Early Screening Inventory, the Bayley scales — and for space alone the Picture Rotation Test, sixteen items, animals and people turned by 45, 90, 135 or 180 degrees, with two of the three answers mirrored rather than rotated. They are good at the thing they do. The gap is the next morning.", "sr": "Direktor udruženja opisuje špilove kartica koji drže pitanja i zadatke: dete ih prođe, a rezultat kaže šta dete ume. Instrumenti tog oblika postoje i standardizovani su — ASQ-3, DIAL-4, Early Screening Inventory, Bejlijeve skale — a samo za prostor Picture Rotation Test, šesnaest zadataka, životinje i ljudi okrenuti za 45, 90, 135 ili 180 stepeni, pri čemu su dva od tri ponuđena odgovora ogledalski obrnuta, a ne zarotirana. Dobri su u onome što rade. Praznina je sutra ujutru." }
+      "text": {
+        "en": "The director of the association describes decks of cards that hold questions and tasks: a child works through them and the result says what the child can do. Instruments of that shape exist and are standardised — ASQ-3, DIAL-4, the Early Screening Inventory, the Bayley scales — and for space alone the Picture Rotation Test, sixteen items, animals and people turned by 45, 90, 135 or 180 degrees, with two of the three answers mirrored rather than rotated. They are good at the thing they do. The gap is the next morning.",
+        "sr": "Direktor udruženja opisuje špilove kartica koji drže pitanja i zadatke: dete ih prođe, a rezultat kaže šta dete ume. Instrumenti tog oblika postoje i standardizovani su — ASQ-3, DIAL-4, Early Screening Inventory, Bejlijeve skale — a samo za prostor Picture Rotation Test, šesnaest zadataka, životinje i ljudi okrenuti za 45, 90, 135 ili 180 stepeni, pri čemu su dva od tri ponuđena odgovora ogledalski obrnuta, a ne zarotirana. Dobri su u onome što rade. Praznina je sutra ujutru."
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "Families report the same thing across health systems: after the assessment they are handed a result and left to find the services themselves. Reviews of neurodevelopmental care call it falling through the cracks; the intervention literature calls it the post-diagnostic gap, and the programmes written for it are mostly about navigating services, not about what happens on the table at home. That is where an architect is actually useful: the assessment names the operation a child finds hard; somebody has to design the object on which that operation is practised, beside other children, for the price of rubbish.", "sr": "Porodice u različitim zdravstvenim sistemima prijavljuju isto: posle procene dobiju nalaz i ostanu sami da traže usluge. Pregledi neurorazvojne zaštite to zovu propadanjem kroz pukotine; literatura o intervencijama zove to postdijagnostičkom prazninom, a programi pisani za nju uglavnom se bave snalaženjem u sistemu usluga, a ne onim što se dešava na stolu kod kuće. Tu je arhitekta zaista koristan: procena imenuje radnju koja je detetu teška; neko mora da projektuje predmet na kom se ta radnja vežba, pored druge dece, za cenu otpada." }
+      "text": {
+        "en": "Families report the same thing across health systems: after the assessment they are handed a result and left to find the services themselves. Reviews of neurodevelopmental care call it falling through the cracks; the intervention literature calls it the post-diagnostic gap, and the programmes written for it are mostly about navigating services, not about what happens on the table at home. That is where an architect is actually useful: the assessment names the operation a child finds hard; somebody has to design the object on which that operation is practised, beside other children, for the price of rubbish.",
+        "sr": "Porodice u različitim zdravstvenim sistemima prijavljuju isto: posle procene dobiju nalaz i ostanu sami da traže usluge. Pregledi neurorazvojne zaštite to zovu propadanjem kroz pukotine; literatura o intervencijama zove to postdijagnostičkom prazninom, a programi pisani za nju uglavnom se bave snalaženjem u sistemu usluga, a ne onim što se dešava na stolu kod kuće. Tu je arhitekta zaista koristan: procena imenuje radnju koja je detetu teška; neko mora da projektuje predmet na kom se ta radnja vežba, pored druge dece, za cenu otpada."
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "So we turn the deck around. In this studio a card does not sort a child. A card constrains the designer: one card names the movement of the hand, one names the operation on space, one names the second child at the same table. You draw all three and you do not choose them, because a constraint you chose is a preference.", "sr": "Zato špil okrećemo naopako. U ovom studiju kartica ne razvrstava dete. Kartica ograničava projektanta: jedna imenuje pokret ruke, jedna radnju nad prostorom, jedna drugo dete za istim stolom. Izvlačiš sve tri i ne biraš ih, jer ograničenje koje si izabrao je ukus." }
+      "text": {
+        "en": "So we turn the deck around. In this studio a card does not sort a child. A card constrains the designer: one card names the movement of the hand, one names the operation on space, one names the second child at the same table. You draw all three and you do not choose them, because a constraint you chose is a preference.",
+        "sr": "Zato špil okrećemo naopako. U ovom studiju kartica ne razvrstava dete. Kartica ograničava projektanta: jedna imenuje pokret ruke, jedna radnju nad prostorom, jedna drugo dete za istim stolom. Izvlačiš sve tri i ne biraš ih, jer ograničenje koje si izabrao je ukus."
+      }
     },
     {
       "kind": "link",
       "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7487627/",
-      "text": { "en": "“Mind the Gap” — a feasibility study of support for families after a new diagnosis", "sr": "„Mind the Gap” — studija izvodljivosti podrške porodicama posle nove dijagnoze" }
+      "text": {
+        "en": "“Mind the Gap” — a feasibility study of support for families after a new diagnosis",
+        "sr": "„Mind the Gap” — studija izvodljivosti podrške porodicama posle nove dijagnoze"
+      }
     },
     {
       "kind": "heading",
-      "text": { "en": "Why this is not an arts and crafts hour", "sr": "Zašto ovo nije čas ručnog rada" }
+      "text": {
+        "en": "Why this is not an arts and crafts hour",
+        "sr": "Zašto ovo nije čas ručnog rada"
+      }
     },
     {
       "kind": "measure",
-      "text": { "en": "Average effect of spatial training on spatial skill, across 217 training studies", "sr": "Prosečan efekat obuke prostornog mišljenja na prostornu sposobnost, kroz 217 studija obuke" },
+      "text": {
+        "en": "Average effect of spatial training on spatial skill, across 217 training studies",
+        "sr": "Prosečan efekat obuke prostornog mišljenja na prostornu sposobnost, kroz 217 studija obuke"
+      },
       "value": "g = 0,47",
-      "instrument": { "en": "Meta-analysis: Uttal, Meadow, Tipton, Hand, Alden, Warren & Newcombe, “The malleability of spatial skills”, Psychological Bulletin 139(2), 2013, pp. 352–402. The effect held after a delay and appeared on spatial tasks that were never trained; children gained most. It does not show that a toy raises school marks — transfer to mathematics is contested in later trials.", "sr": "Meta-analiza: Uttal, Meadow, Tipton, Hand, Alden, Warren i Newcombe, „The malleability of spatial skills”, Psychological Bulletin 139(2), 2013, str. 352–402. Efekat se održao posle pauze i pojavio se na prostornim zadacima koji nisu vežbani; deca su dobila najviše. Ne pokazuje da igračka podiže ocene — prenos na matematiku je u kasnijim ogledima sporan." }
+      "instrument": {
+        "en": "Meta-analysis: Uttal, Meadow, Tipton, Hand, Alden, Warren & Newcombe, “The malleability of spatial skills”, Psychological Bulletin 139(2), 2013, pp. 352–402. The effect held after a delay and appeared on spatial tasks that were never trained; the age-group difference was not statistically significant (published version, pp. 364 and 366–367; checked 4 October 2026). It does not show that a toy raises school marks — transfer to mathematics is contested in later trials.",
+        "sr": "Meta-analiza: Uttal, Meadow, Tipton, Hand, Alden, Warren i Newcombe, „The malleability of spatial skills”, Psychological Bulletin 139(2), 2013, str. 352–402. Efekat se održao posle pauze i pojavio se na prostornim zadacima koji nisu vežbani; razlika uzrasnih grupa nije bila statistički značajna (objavljena verzija, str. 364 i 366–367; provereno 04.10.2026). Ne pokazuje da igračka podiže ocene — prenos na matematiku je u kasnijim ogledima sporan."
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "Two honest limits, and you will be asked about both. First, the transfer question: trials that train mental rotation reliably improve mental rotation, and only some of them find a gain in arithmetic. Second, the medium: whether a thing in the hand beats the same task on a screen has been tested directly and is still argued. So defend your toy by what it makes a child do this afternoon, never by a promise about school.", "sr": "Dva poštena ograničenja, i o oba ćete biti pitani. Prvo, pitanje prenosa: ogledi koji uvežbavaju mentalnu rotaciju pouzdano popravljaju mentalnu rotaciju, a samo neki nalaze dobitak u računanju. Drugo, medij: da li predmet u ruci nadmašuje isti zadatak na ekranu ispitivano je neposredno i još se o tome raspravlja. Zato igračku brani onim što tera dete da uradi danas popodne, nikad obećanjem o školi." }
+      "text": {
+        "en": "Two honest limits, and you will be asked about both. First, the transfer question: trials that train mental rotation reliably improve mental rotation, and only some of them find a gain in arithmetic. Second, the medium: whether a thing in the hand beats the same task on a screen has been tested directly and is still argued. So defend your toy by what it makes a child do this afternoon, never by a promise about school.",
+        "sr": "Dva poštena ograničenja, i o oba ćete biti pitani. Prvo, pitanje prenosa: ogledi koji uvežbavaju mentalnu rotaciju pouzdano popravljaju mentalnu rotaciju, a samo neki nalaze dobitak u računanju. Drugo, medij: da li predmet u ruci nadmašuje isti zadatak na ekranu ispitivano je neposredno i još se o tome raspravlja. Zato igračku brani onim što tera dete da uradi danas popodne, nikad obećanjem o školi."
+      }
     },
     {
       "kind": "link",
       "href": "https://groups.psych.northwestern.edu/uttal/documents/1Themalleabilityofspatialskills-Ametaanalysisoftrainingstudies1_001.pdf",
-      "text": { "en": "Uttal et al., The malleability of spatial skills — the full meta-analysis", "sr": "Uttal i saradnici, The malleability of spatial skills — puna meta-analiza" }
+      "text": {
+        "en": "Uttal et al., The malleability of spatial skills — the full meta-analysis",
+        "sr": "Uttal i saradnici, The malleability of spatial skills — puna meta-analiza"
+      }
     },
     {
       "kind": "heading",
-      "text": { "en": "Seven principles, and what they are for", "sr": "Sedam principa, i čemu služe" }
+      "text": {
+        "en": "Seven principles, and what they are for",
+        "sr": "Sedam principa, i čemu služe"
+      }
     },
     {
       "kind": "list",
       "items": [
-        { "en": "01 Equitable use — the same toy, not a separate one.", "sr": "01 Ravnopravna upotreba — ista igračka, ne posebna." },
-        { "en": "02 Flexibility in use — more than one way to play it.", "sr": "02 Fleksibilna upotreba — više načina da se igra." },
-        { "en": "03 Simple and intuitive use — understood without instruction.", "sr": "03 Jednostavna i intuitivna upotreba — razume se bez uputstva." },
-        { "en": "04 Perceptible information — at least two channels carry it.", "sr": "04 Uočljiva informacija — nose je najmanje dva kanala." },
-        { "en": "05 Tolerance for error — a mistake does not become an accident.", "sr": "05 Tolerancija na grešku — greška ne postaje nesreća." },
-        { "en": "06 Low physical effort — the normal use is not an effort.", "sr": "06 Mali fizički napor — normalna upotreba nije napor." },
-        { "en": "07 Size and space for approach and use — the body fits, with its equipment.", "sr": "07 Veličina i prostor za pristup i upotrebu — telo staje, sa svojom opremom." }
+        {
+          "en": "01 Equitable use — the same toy, not a separate one.",
+          "sr": "01 Ravnopravna upotreba — ista igračka, ne posebna."
+        },
+        {
+          "en": "02 Flexibility in use — more than one way to play it.",
+          "sr": "02 Fleksibilna upotreba — više načina da se igra."
+        },
+        {
+          "en": "03 Simple and intuitive use — understood without instruction.",
+          "sr": "03 Jednostavna i intuitivna upotreba — razume se bez uputstva."
+        },
+        {
+          "en": "04 Perceptible information — at least two channels carry it.",
+          "sr": "04 Uočljiva informacija — nose je najmanje dva kanala."
+        },
+        {
+          "en": "05 Tolerance for error — a mistake does not become an accident.",
+          "sr": "05 Tolerancija na grešku — greška ne postaje nesreća."
+        },
+        {
+          "en": "06 Low physical effort — the normal use is not an effort.",
+          "sr": "06 Mali fizički napor — normalna upotreba nije napor."
+        },
+        {
+          "en": "07 Size and space for approach and use — the body fits, with its equipment.",
+          "sr": "07 Veličina i prostor za pristup i upotrebu — telo staje, sa svojom opremom."
+        }
       ]
     },
     {
       "kind": "link",
       "href": "https://design.ncsu.edu/research/center-for-universal-design/",
-      "text": { "en": "The Principles of Universal Design, version 2.0 — Center for Universal Design, NC State, 1997", "sr": "Principi univerzalnog dizajna, verzija 2.0 — Center for Universal Design, NC State, 1997" }
+      "text": {
+        "en": "The Principles of Universal Design, version 2.0 — Center for Universal Design, NC State, 1997",
+        "sr": "Principi univerzalnog dizajna, verzija 2.0 — Center for Universal Design, NC State, 1997"
+      }
     },
     {
       "kind": "heading",
-      "text": { "en": "One number you will be held to today", "sr": "Jedan broj po kom ćete danas biti pitani" }
+      "text": {
+        "en": "One number you will be held to today",
+        "sr": "Jedan broj po kom ćete danas biti pitani"
+      }
     },
     {
       "kind": "measure",
-      "text": { "en": "Small parts cylinder — the gauge that decides whether a loose part may exist in a toy for a child under three", "sr": "Cilindar za sitne delove — mera koja odlučuje sme li odvojiv deo da postoji u igrački za dete ispod tri godine" },
+      "text": {
+        "en": "Small parts cylinder — the gauge that decides whether a loose part may exist in a toy for a child under three",
+        "sr": "Cilindar za sitne delove — mera koja odlučuje sme li odvojiv deo da postoji u igrački za dete ispod tri godine"
+      },
       "value": "⌀ 31,7 mm · depth 25,4–57,1 mm",
-      "instrument": { "en": "EN 71-1, Safety of toys — mechanical and physical properties. A part is placed in the cylinder uncompressed, in any orientation; if it fits entirely inside, it is a small part. Read 02.10.2026 from the published standard text at law.resource.org, not from a certification body.", "sr": "EN 71-1, Bezbednost igračaka — mehanička i fizička svojstva. Deo se stavlja u cilindar nestisnut, u bilo kom položaju; ako ceo stane unutra, to je sitan deo. Pročitano 02.10.2026. iz objavljenog teksta standarda na law.resource.org, a ne od sertifikacionog tela." }
+      "instrument": {
+        "en": "EN 71-1, Safety of toys — mechanical and physical properties. A part is placed in the cylinder uncompressed, in any orientation; if it fits entirely inside, it is a small part. Read 02.10.2026 from the published standard text at law.resource.org, not from a certification body.",
+        "sr": "EN 71-1, Bezbednost igračaka — mehanička i fizička svojstva. Deo se stavlja u cilindar nestisnut, u bilo kom položaju; ako ceo stane unutra, to je sitan deo. Pročitano 02.10.2026. iz objavljenog teksta standarda na law.resource.org, a ne od sertifikacionog tela."
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "A bottle cap of ⌀ 28–38 mm sits exactly on that boundary, which is why it is the first thing you measure and the first thing you draw the cylinder around. On the sheet: either no loose part fits inside it, or the sheet says in writing that the toy is not for children under three. There is no third option and no “probably”.", "sr": "Čep od ⌀ 28–38 mm stoji tačno na toj granici, i zato je prvo što se meri i prvo oko čega se crta cilindar. Na listu: ili nijedan odvojiv deo ne staje unutra, ili na listu piše da igračka nije za decu ispod tri godine. Treće mogućnosti nema, a „verovatno” ne postoji." }
+      "text": {
+        "en": "A bottle cap of ⌀ 28–38 mm sits exactly on that boundary, which is why it is the first thing you measure and the first thing you draw the cylinder around. On the sheet: either no loose part fits inside it, or the sheet says in writing that the toy is not for children under three. There is no third option and no “probably”.",
+        "sr": "Čep od ⌀ 28–38 mm stoji tačno na toj granici, i zato je prvo što se meri i prvo oko čega se crta cilindar. Na listu: ili nijedan odvojiv deo ne staje unutra, ili na listu piše da igračka nije za decu ispod tri godine. Treće mogućnosti nema, a „verovatno” ne postoji."
+      }
     },
     {
       "kind": "heading",
-      "text": { "en": "Why we will not blindfold anyone", "sr": "Zašto nikome ne stavljamo povez na oči" }
+      "text": {
+        "en": "Why we will not blindfold anyone",
+        "sr": "Zašto nikome ne stavljamo povez na oči"
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "Disability simulation is the oldest exercise in this field and the one with the worst results. After simulations people report more empathy but also more pity and discomfort, they judge themselves less capable, and they are not more willing to work with disabled people on an accessibility project. What does work is measured: structured exercises with the actual tools, with a debrief — and direct work with disabled people as coauthors and testers. So: in this studio we test tools and objects, not people’s lives.", "sr": "Simulacija invaliditeta je najstarija vežba u ovoj oblasti i ona sa najgorim rezultatima. Posle simulacija ljudi prijavljuju više empatije, ali i više sažaljenja i nelagode, sebe procenjuju manje sposobnim i nisu spremniji da sa osobama sa invaliditetom rade na projektu pristupačnosti. Rezultate daju strukturirane vežbe sa stvarnim alatima i zajedničkom analizom posle vežbe — kao i direktan rad sa osobama sa invaliditetom kao koautorima i proveravačima. Zato u ovom studiju proveravamo alate i predmete, ne tuđe živote." }
+      "text": {
+        "en": "Disability simulation is the oldest exercise in this field and the one with the worst results. After simulations people report more empathy but also more pity and discomfort, they judge themselves less capable, and they are not more willing to work with disabled people on an accessibility project. What does work is measured: structured exercises with the actual tools, with a debrief — and direct work with disabled people as coauthors and testers. So: in this studio we test tools and objects, not people’s lives.",
+        "sr": "Simulacija invaliditeta je najstarija vežba u ovoj oblasti i ona sa najgorim rezultatima. Posle simulacija ljudi prijavljuju više empatije, ali i više sažaljenja i nelagode, sebe procenjuju manje sposobnim i nisu spremniji da sa osobama sa invaliditetom rade na projektu pristupačnosti. Rezultate daju strukturirane vežbe sa stvarnim alatima i zajedničkom analizom posle vežbe — kao i direktan rad sa osobama sa invaliditetom kao koautorima i proveravačima. Zato u ovom studiju proveravamo alate i predmete, ne tuđe živote."
+      }
     },
     {
       "kind": "link",
       "href": "https://www.researchgate.net/publication/314968962_Crip_for_a_Day_The_Unintended_Negative_Consequences_of_Disability_Simulations",
-      "text": { "en": "Nario-Redmond, Gospodinov & Cobb, “Crip for a Day”, Rehabilitation Psychology, 2017", "sr": "Nario-Redmond, Gospodinov i Cobb, „Crip for a Day”, Rehabilitation Psychology, 2017" }
+      "text": {
+        "en": "Nario-Redmond, Gospodinov & Cobb, “Crip for a Day”, Rehabilitation Psychology, 2017",
+        "sr": "Nario-Redmond, Gospodinov i Cobb, „Crip for a Day”, Rehabilitation Psychology, 2017"
+      }
     },
     {
       "kind": "lab",
       "ref": "citac",
-      "text": { "en": "Fifteen minutes in the laboratory: the same announcement, read twice by the machine. Count the steps — then ask what the equivalent is for an object with no label on it.", "sr": "Petnaest minuta u laboratoriji: isto obaveštenje, dva puta pročitano mašinski. Prebroj korake — pa se pitaj šta je ekvivalent toga za predmet na kom ne piše ništa." }
+      "text": {
+        "en": "Fifteen minutes in the laboratory: the same announcement, read twice by the machine. Count the steps — then ask what the equivalent is for an object with no label on it.",
+        "sr": "Petnaest minuta u laboratoriji: isto obaveštenje, dva puta pročitano mašinski. Prebroj korake — pa se pitaj šta je ekvivalent toga za predmet na kom ne piše ništa."
+      }
     },
     {
       "kind": "heading",
-      "text": { "en": "The semester behind today’s sheet", "sr": "Semestar iza današnjeg lista" }
+      "text": {
+        "en": "The semester behind today’s sheet",
+        "sr": "Semestar iza današnjeg lista"
+      }
     },
     {
       "kind": "measure",
-      "text": { "en": "Our site, Živimo zajedno: height difference over a straight line of 151 m", "sr": "Naša lokacija, Živimo zajedno: visinska razlika na vazdušnoj liniji od 151 m" },
+      "text": {
+        "en": "Our site, Živimo zajedno: height difference over a straight line of 151 m",
+        "sr": "Naša lokacija, Živimo zajedno: visinska razlika na vazdušnoj liniji od 151 m"
+      },
       "value": "22,5 m / 151 m = 14,9 %",
-      "instrument": { "en": "Phone GNSS, declared accuracy 1,5–2,5 m horizontal and 2–3 m vertical, 151 points, EPSG:32634, measured 24.11.2025. Reconnaissance, not a survey.", "sr": "Telefonski GNSS, deklarisana tačnost 1,5–2,5 m horizontalno i 2–3 m vertikalno, 151 tačka, EPSG:32634, mereno 24.11.2025. Rekognosciranje, ne geodetski snimak." }
+      "instrument": {
+        "en": "Phone GNSS, declared accuracy 1,5–2,5 m horizontal and 2–3 m vertical, 151 points, EPSG:32634, measured 24.11.2025. Reconnaissance, not a survey.",
+        "sr": "Telefonski GNSS, deklarisana tačnost 1,5–2,5 m horizontalno i 2–3 m vertikalno, 151 tačka, EPSG:32634, mereno 24.11.2025. Rekognosciranje, ne geodetski snimak."
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "A 5 % ramp for 22,5 m of height is 450 m of walking. At the regulatory exception of 8,3 % it is 271 m, plus landings. The plot is roughly 129 × 131 m. The ramp does not fit, and that is the project: you are not designing a ramp, you are designing how the height is overcome so that everyone uses the same route. The toy is the same problem at 1:1000 — and you can finish it today.", "sr": "Rampa nagiba 5 % za visinsku razliku od 22,5 m zahteva 450 m putanje. Pri graničnom nagibu od 8,3 % zahteva 271 m, plus odmorišta. Parcela je oko 129 × 131 m. Rampa ne staje, i to je projekat: ne projektujete rampu nego način savladavanja visine tako da isti put koriste svi. Igračka je isti zadatak u razmeri 1:1000 — i nju danas možete da završite." }
+      "text": {
+        "en": "A 5 % ramp for 22,5 m of height is 450 m of walking. At the regulatory exception of 8,3 % it is 271 m, plus landings. The plot is roughly 129 × 131 m. The ramp does not fit, and that is the project: you are not designing a ramp, you are designing how the height is overcome so that everyone uses the same route. The toy is the same problem at 1:1000 — and you can finish it today.",
+        "sr": "Rampa nagiba 5 % za visinsku razliku od 22,5 m zahteva 450 m putanje. Pri graničnom nagibu od 8,3 % zahteva 271 m, plus odmorišta. Parcela je oko 129 × 131 m. Rampa ne staje, i to je projekat: ne projektujete rampu nego način savladavanja visine tako da isti put koriste svi. Igračka je isti zadatak u razmeri 1:1000 — i nju danas možete da završite."
+      }
     },
     {
       "kind": "heading",
-      "text": { "en": "The first task", "sr": "Prvi zadatak" }
+      "text": {
+        "en": "The first task",
+        "sr": "Prvi zadatak"
+      }
     },
     {
       "kind": "exercise",
       "ref": "toy-for-coordination",
-      "text": { "en": "Drawn by hand, one A3. Three cards drawn, not chosen: the hand, the space, the second child at the table.", "sr": "Crta se rukom, jedan A3. Tri izvučene kartice, ne izabrane: ruka, prostor, drugo dete za stolom." }
+      "text": {
+        "en": "Drawn by hand, one A3. Three cards drawn, not chosen: the hand, the space, the second child at the table.",
+        "sr": "Crta se rukom, jedan A3. Tri izvučene kartice, ne izabrane: ruka, prostor, drugo dete za stolom."
+      }
     },
     {
       "kind": "question",
       "items": [
-        { "en": "Name a toy you had that only one kind of body could use. How did you know?", "sr": "Navedi igračku koju si imao, a koju je moglo da koristi samo jedno vrste tela. Odakle si to znao?" },
-        { "en": "Which spatial operation does the cap-on-a-skewer actually require — and which one does it only look like it requires?", "sr": "Koju radnju nad prostorom čep na štapiću stvarno zahteva — a koju samo izgleda da zahteva?" },
-        { "en": "Your toy works. What would you see a child do? Say it as a sentence someone else could check.", "sr": "Tvoja igračka radi. Šta bi video da dete uradi? Reci to kao rečenicu koju neko drugi može da proveri." }
+        {
+          "en": "Name a toy you had that only one kind of body could use. How did you know?",
+          "sr": "Navedi igračku koju si imao, a koju je moglo da koristi samo jedno vrste tela. Odakle si to znao?"
+        },
+        {
+          "en": "Which spatial operation does the cap-on-a-skewer actually require — and which one does it only look like it requires?",
+          "sr": "Koju radnju nad prostorom čep na štapiću stvarno zahteva — a koju samo izgleda da zahteva?"
+        },
+        {
+          "en": "Your toy works. What would you see a child do? Say it as a sentence someone else could check.",
+          "sr": "Tvoja igračka radi. Šta bi video da dete uradi? Reci to kao rečenicu koju neko drugi može da proveri."
+        }
       ]
     },
     {
       "kind": "heading",
-      "text": { "en": "Recorded after the session", "sr": "Zapisano posle časa" }
+      "text": {
+        "en": "Recorded after the session",
+        "sr": "Zapisano posle časa"
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "Held 02.10.2026. The teams designed their own toy concepts: things that pull a child in by themselves, are worth playing with, teach something and train the hand. Dejan Kozić, director of the association “Živimo zajedno”, came to the studio — the association whose toy opens this week and whose site carries the semester project.", "sr": "Održano 02.10.2026. Timovi su osmislili sopstvene koncepte igračaka: predmete koji sami privlače dete, vredi se njima igrati, uče nečemu i vežbaju ruku. U studio je došao Dejan Kozić, direktor udruženja „Živimo zajedno” — udruženja čija igračka otvara ovu nedelju i na čijoj lokaciji stoji semestralni projekat." }
+      "text": {
+        "en": "Held 02.10.2026. The teams designed their own toy concepts: things that pull a child in by themselves, are worth playing with, teach something and train the hand. The director of the association “Živimo zajedno” came to the studio — the association whose toy opens this week and whose site carries the semester project.",
+        "sr": "Održano 02.10.2026. Timovi su osmislili sopstvene koncepte igračaka: predmete koji sami privlače dete, vredi se njima igrati, uče nečemu i vežbaju ruku. U studio je došao direktor udruženja „Živimo zajedno” — udruženja čija igračka otvara ovu nedelju i na čijoj lokaciji stoji semestralni projekat."
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "The task set for next week: build the concept. A small prototype, from reclaimed and reusable material first; printing is allowed, last, and only for the part that cannot be found. The whole of week 2 is that object on the table.", "sr": "Zadatak zadat za sledeću nedelju: napravi koncept. Mali prototip, prvo od prikupljenog i ponovo upotrebljivog materijala; štampanje je dozvoljeno, poslednje, i samo za deo koji ne može da se nađe. Cela 2. nedelja je taj predmet na stolu." }
+      "text": {
+        "en": "The task set for next week: build the concept. A small prototype, from reclaimed and reusable material first; printing is allowed, last, and only for the part that cannot be found. The whole of week 2 is that object on the table.",
+        "sr": "Zadatak zadat za sledeću nedelju: napravi koncept. Mali prototip, prvo od prikupljenog i ponovo upotrebljivog materijala; štampanje je dozvoljeno, poslednje, i samo za deo koji ne može da se nađe. Cela 2. nedelja je taj predmet na stolu."
+      }
     },
     {
       "kind": "decision",
-      "text": { "en": "Each team records one line today: the movement of the hand and the operation on space their toy trains, in the words of the cards they drew.", "sr": "Svaki tim danas upisuje jedan red: pokret ruke i radnju nad prostorom koje njihova igračka vežba, rečima kartica koje su izvukli." }
+      "text": {
+        "en": "Each team records one line today: the movement of the hand and the operation on space their toy trains, in the words of the cards they drew.",
+        "sr": "Svaki tim danas upisuje jedan red: pokret ruke i radnju nad prostorom koje njihova igračka vežba, rečima kartica koje su izvukli."
+      }
+    }
+  ],
+  "revizije": [
+    {
+      "v": 1,
+      "datum": "2026-10-02",
+      "sta": {
+        "en": "Published before the session: the association toy as the first A3, drawn by hand.",
+        "sr": "Objavljeno pre časa: igračka udruženja kao prvi A3, crtana rukom."
+      }
+    },
+    {
+      "v": 2,
+      "datum": "2026-10-02",
+      "sta": {
+        "en": "Added after the session: the record of the held class — team concepts, a guest from the association, prototype assigned for the next meeting.",
+        "sr": "Dopunjeno posle časa: zapis održanog časa — koncepti timova, gost iz udruženja, prototip zadan za sledeći susret."
+      }
     }
   ]
 }

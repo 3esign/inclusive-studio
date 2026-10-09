@@ -38,6 +38,14 @@ test('every week file on disk passes the same rules the editor enforces', async 
   }
 });
 
+test('the index titles match the week files they point at — a redirected week leaves no stale title', async () => {
+  for (const entry of index.weeks) {
+    const week = await json('data/material/' + entry.file);
+    assert.equal(entry.title.en, week.title.en, `week ${entry.n}: index title differs from the week file (en)`);
+    assert.equal(entry.title.sr, week.title.sr, `week ${entry.n}: index title differs from the week file (sr)`);
+  }
+});
+
 test('every lab and exercise a week points at really exists', async () => {
   for (const entry of index.weeks) {
     const week = await json('data/material/' + entry.file);
@@ -56,6 +64,26 @@ test('no week invents a teaching date, and a date without a status is refused', 
   }
   const invented = { ...emptyWeek(3), title: { sr: 'x' }, state: 'draft', date: '2026-10-08', dateStatus: 'guessed' };
   assert.ok(validateWeek(invented).problems.some(problem => problem.includes('dateStatus')));
+});
+
+test('published material carries a visible revision history, numbered and truthful', async () => {
+  for (const entry of index.weeks) {
+    const week = await json('data/material/' + entry.file);
+    if (week.state !== 'published') continue;
+    assert.ok(Array.isArray(week.revizije) && week.revizije.length > 0, `week ${entry.n} is published with no revisions`);
+    week.revizije.forEach((r, i) => {
+      assert.equal(r.v, i + 1, `week ${entry.n}: revision numbers run 1..n in order`);
+      assert.match(r.datum, /^\d{4}-\d{2}-\d{2}$/, `week ${entry.n}: revision ${i + 1} has a date`);
+      assert.ok(r.sta && (r.sta.sr || r.sta.en || (typeof r.sta === 'string' && r.sta.trim())), `week ${entry.n}: revision ${i + 1} says what changed`);
+    });
+    assert.equal(week.updated, week.revizije[week.revizije.length - 1].datum, `week ${entry.n}: "updated" matches the last revision`);
+  }
+  // The rules themselves: broken histories are refused, not tidied away.
+  const base = { ...emptyWeek(3), title: { sr: 'x' }, state: 'published', updated: '2026-10-09' };
+  assert.ok(validateWeek({ ...base }).problems.some(p => p.includes('revizije')), 'published without revisions is refused');
+  assert.ok(validateWeek({ ...base, revizije: [{ v: 2, datum: '2026-10-09', sta: { sr: 'x' } }] }).problems.some(p => p.includes('"v" must be 1')), 'out-of-order numbering is refused');
+  assert.ok(validateWeek({ ...base, revizije: [{ v: 1, datum: '2026-10-08', sta: { sr: 'x' } }] }).problems.some(p => p.includes('updated must equal')), 'a lying "Dopunjeno" line is refused');
+  assert.deepEqual(validateWeek({ ...base, revizije: [{ v: 1, datum: '2026-10-09', sta: { sr: 'x' } }], updated: '2026-10-09' }).problems, []);
 });
 
 test('an image without a description cannot become material', () => {

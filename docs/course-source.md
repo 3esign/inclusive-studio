@@ -9,13 +9,13 @@ later reader can tell a verified fact from a working proposal without opening th
 | Fact | Value | Where it comes from |
 |---|---|---|
 | Institution | Univerzitet „Union — Nikola Tesla”, Fakultet za graditeljski menadžment, Beograd | examination record |
-| Teacher | doc. dr Semir Poturak | examination record |
+| Teacher | docent, PhD — the name stays in the faculty's record, not on the site | examination record |
 | Programme 2023 | Arhitektura i urbanizam, code `22.OA0068`, semester 5, 5 ECTS, elective | examination record |
 | Programme 2016 | Arhitektura i urbanizam, code `OAIPUD`, semester 6, 4 ECTS, elective | examination record |
 | Grading scale | 51–60 = 6 · 61–70 = 7 · 71–80 = 8 · 81–90 = 9 · 91–100 = 10 | examination record |
 | Teaching system | `iteacher.unt.edu.rs` | examination record |
 
-The course Semir teaches in **2026/2027, first (winter) semester, third year** is the fifth-semester
+The course the teacher holds in **2026/2027, first (winter) semester, third year** is the fifth-semester
 programme (`22.OA0068`). The sixth-semester programme sits in the same teaching.
 
 ## Verified — measured from source files, 30 September 2026

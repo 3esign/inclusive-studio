@@ -3,19 +3,19 @@
   "name": "inclusive-studio",
   "description": "Pilot platforma: studenti arhitekture x udruzenje OSI, univerzalni dizajn, GitHub Pages",
   "created": "2026-10-01T07:42:06.981Z",
-  "updated": "2026-10-02T18:24:33.479Z",
+  "updated": "2026-10-09T00:44:14.393Z",
   "status": "active",
   "phases": [],
   "currentPhase": null,
-  "nextMove": "Pribaviti pun tekst Gilligan-Lee 2023 preko fakultetske biblioteke i upisati velicinu efekta u assets/research.js; pitati Dejana Kozica da li fotografije igracke smeju da ostanu javne; potvrditi podelu bodova 8+7 na kolokvijumima; posle 2. nedelje upisati sta se stvarno slomilo na prototipovima",
+  "nextMove": "Snimci osveženi i provereni vidom (2026-10-09): naslovna sa živom 3D scenom (canvas, SVG osnovac sakriven), landing sa sve tri police (Zacementirano 1 · Pilot za sledeći čas 3 · Oblak ideja 4), udruženje i nedelja 2 — 0 ličnih imena na prikazanoj površini; 134/134 testova; shells 19/0. Sledeće: Semirova reč za objavu (commit + push), pa provera žive GitHub Pages verzije.",
   "registration": {
     "status": "registered",
     "path": "C:\\Svemir\\data\\project_kits.jsonl",
     "at": "2026-10-01T07:42:07.115Z"
   },
   "stats": {
-    "log": 10,
-    "terms": 0,
+    "log": 15,
+    "terms": 5,
     "kb": 0,
     "handoffs": 0
   }

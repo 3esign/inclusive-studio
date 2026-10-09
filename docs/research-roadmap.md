@@ -1,5 +1,37 @@
 # Evidence and experiments for the next studio pilot
 
+## Further research direction · 4 October 2026, wave 6
+
+The teacher's current question concerns spatial activities, children's wider capacities, architecture and design with children, and collaboration with a disability association. Keep this an open collection. Distinguish trained performance, transfer to another task, preparation for future learning, and participation in meaningful activities. None is automatically a measure of general intelligence.
+
+An updated literature map, project/call checks and provisional paper questions are retained in the existing private PUD teaching dossier. The working hypothesis remains conditional: which activities, representations and support help which children use learning in a new situation that matters to them? A separate design question asks whether children's choices actually change the next version of an object or place.
+
+The [National Research Council chapter on spatial learning](https://www.nationalacademies.org/read/11019/chapter/6) provides a useful vocabulary for transfer and preparation for future learning. [Kelly et al.](https://doi.org/10.1016/j.ijedro.2025.100494) offers a concrete co-design process; its model iterations are not evidence of cognitive improvement. Source-reading boundaries and unresolved sample inconsistencies remain recorded with the source notes.
+
+Our possible collaboration formats include selecting an everyday situation together, offering several communication routes, keeping design changes traceable to participants, and returning to maintain or revise the result. No new assignment, participant study or outreach is initiated here. The existing classroom flow stays teacher-selected.
+
+## Open collection · 4 October 2026
+
+The teacher selects the teaching sequence and records what was delivered or assigned. Continue collecting sources, examples and questions. The priorities and session proposals dated 2 October below remain historical proposals, not the current implementation queue. The established A3 record remains documented in the course material.
+
+The canonical collection is [idea-bank.js](../assets/idea-bank.js) for connections and [research.js](../assets/research.js) for source claims. Five new ideas have status research: shared Braille/print bricks, reader-tested building instructions, tactile street maps, player-directed gaze input and a multisensory museum encounter. These are research leads, not selected weeks.
+
+| Primary example | Reading boundary |
+|---|---|
+| [LEGO Braille Bricks](https://www.lego.com/en-us/aboutus/news/2020/august/lego-braille-bricks) | Manufacturer announcement from 2020; no independent learning evaluation or current availability check. |
+| [Bricks for the Blind](https://bricksfortheblind.org/faqs/) | Organisation FAQ; the named instructions were not downloaded or tried. |
+| [TMAP](https://madlabdesign.org/tmap-faq-and-troubleshooting/) | Service FAQ; no map generated and no evaluation outcomes inferred. Undated source; no publication year invented. |
+| [EyeMine v2](https://github.com/SpecialEffect/EyeMine/wiki) and [playing guide](https://github.com/SpecialEffect/EyeMine/wiki/Get-started-playing) | Historical documentation, not a current compatibility or mobile test. |
+| [Van Abbemuseum](https://vanabbemuseum.nl/en/museum/about-the-museum/themes/collectivity-solidarity) and [multisensory tour](https://vanabbemuseum.nl/en/see-and-do/online/multi-zintuiglijke-kunstwerken) | Museum descriptions, no site visit or independent access audit. Undated pages remain undated. |
+
+Two existing lines of inquiry also became more precise. [CAST UDL 3.0](https://udlguidelines.cast.org/) has three educational principles; do not substitute the seven UD design principles for them. [W3C Make Each Step Clear](https://www.w3.org/WAI/WCAG2/supplemental/patterns/o1p04-clear-steps/) offers a concrete process pattern. It is supplemental cognitive-accessibility guidance, not a mandatory WCAG conformance criterion. Both primary pages were read; neither establishes this course's learning effect.
+
+Our possible connections: a spatial relation expressed in a medium chosen by its reader; a task whose previous, current and next steps remain understandable after interruption; an AI-generated description checked against geometry and a reader's question. These remain ideas. No participant study, source application or external code was run.
+
+**Local review:** w01 includes a record of the 2 October session and the prototype assignment. W02 is published preparation and w03–w15 are drafts. Stale README descriptions have been corrected. Remaining claims about standards, clinical effects, ramp feasibility and mandatory negative findings need targeted evidence review before being carried into new material; see KNOWLEDGE.md. This pass does not certify those claims.
+
+**Honest verdict:** public source text and local course metadata were read. This is an enrichment of the existing collection, with no new timetable, assessment scheme, application feature or public deployment.
+
 Research checkpoint: 2 October 2026. The course flow is now fixed for the pilot: weekly instruction on the site → one physical A3 → review in class → teacher's signature on paper. No student account or digital submission is required. The separate Idea Atelier is implemented; the proposals below are candidates for later weekly material, not automatic assignments or measured learning outcomes.
 
 The central interaction should connect an observation of a place to a design decision and a coauthor's response. The next release should make that relationship easy to inspect and revise. More media or AI capability is useful only when it helps someone make, understand or contest a concrete architectural decision.
@@ -11,7 +43,7 @@ The central interaction should connect an observation of a place to a design dec
 - The Idea Atelier holds 17 curated seeds and can connect two into a question, first drawing, evidence and guardrail. Its note stays in the browser unless downloaded.
 - The GitHub board is optional public discussion, not attendance, assessment or submission.
 
-## Next feature priorities
+## Historical feature proposals · 2 October 2026
 
 P0 means needed for a dependable pilot; P1 means a small experiment worth testing after the pilot's contribution path works; P2 means research only. These are editorial priorities, not computed effect sizes.
 
@@ -69,3 +101,9 @@ The course owner still needs to establish the authoritative syllabus and timetab
 ## Honest verdict
 
 Checked: cited primary-source passages, the implemented A3/Atelier flow, 77 Node tests and 147 browser checks. Inferred: the remaining feature ordering and workshop designs above. Not executed: user studies, private uploads, institutional account checks, physical signature trials or assistive-technology sessions.
+
+## Verification of the 4 October enrichment
+
+35 targeted checks passed across the existing hub, ideas, material and ages suites. UTF-8 decoding passed for 16 edited files, and the new local dossier links and preserved research alias resolve. Independent review checked the scientific corrections and found one stale open-question paragraph; it was corrected to the public reading now completed. These checks do not establish teaching effectiveness or legal compliance.
+
+**Honest verdict — presentation gate:** (1) The collection supports the teacher's selection of the teaching flow. (2) New source claims have explicit reading limits; older unresolved claims are named in KNOWLEDGE.md. (3) One duplicate paper and stale claims were removed while the old source ID remains usable. (4) Current direction comes first, then the live flow, then the research bank. (5) No motion was added. (6) The notes use plain semantic text and links; no visual effects were needed. (7) Local reading and content checks passed; browser appearance, assistive technology, phone behaviour and external services were not tested in this pass. No public deployment occurred.

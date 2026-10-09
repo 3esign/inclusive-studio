@@ -3,131 +3,300 @@
   "version": 1,
   "n": 2,
   "state": "published",
-  "updated": "2026-10-02",
-  "title": { "en": "The prototype on the table", "sr": "Prototip na stolu" },
+  "updated": "2026-10-09",
+  "title": {
+    "en": "The prototype on the table",
+    "sr": "Prototip na stolu"
+  },
   "date": null,
   "dateStatus": "proposed",
-  "aim": { "en": "You bring an object, not a drawing. You can say which of your decisions the material refused, you can judge your own prototype against all seven principles and fail at least two of them honestly, and you can name the one part that must be printed because it cannot be found.", "sr": "Donosiš predmet, a ne crtež. Umeš da kažeš koju je tvoju odluku materijal odbio, umeš da oceniš sopstveni prototip po svih sedam principa i da pošteno oboriš bar dva, i umeš da imenuješ jedan deo koji mora da se odštampa jer ne može da se nađe." },
+  "aim": {
+    "en": "You bring an object, not a drawing. You can say which of your decisions the material refused, you can judge your own prototype against all seven principles and fail at least two of them honestly, and you can name the one part that must be printed because it cannot be found.",
+    "sr": "Donosiš predmet, a ne crtež. Umeš da kažeš koju je tvoju odluku materijal odbio, umeš da oceniš sopstveni prototip po svih sedam principa i da pošteno oboriš bar dva, i umeš da imenuješ jedan deo koji mora da se odštampa jer ne može da se nađe."
+  },
   "bring": [
-    { "en": "The prototype. Built, not described. If it broke on the way, bring the broken one — a failure that is present beats a success that is reported.", "sr": "Prototip. Napravljen, ne opisan. Ako se slomio putem, donesi slomljen — kvar koji je prisutan vredi više od uspeha o kom se izveštava." },
-    { "en": "The first week’s A3 beside it, so the difference between the drawing and the object can be seen in one glance.", "sr": "A3 iz prve nedelje pored njega, da se razlika između crteža i predmeta vidi u jednom pogledu." },
-    { "en": "A tape, the leftovers, and the receipt if anything was bought. Cost is part of access and we write it down.", "sr": "Metar, ostaci materijala i račun ako je nešto kupljeno. Cena je deo pristupačnosti i upisuje se." },
-    { "en": "Second pair of hands: someone who has never seen your toy will be handed it without a word of explanation.", "sr": "Tuđe ruke: neko ko tvoju igračku nikad nije video dobiće je bez ijedne reči objašnjenja." }
+    {
+      "en": "The prototype. Built, not described. If it broke on the way, bring the broken one — a failure that is present beats a success that is reported.",
+      "sr": "Prototip. Napravljen, ne opisan. Ako se slomio putem, donesi slomljen — kvar koji je prisutan vredi više od uspeha o kom se izveštava."
+    },
+    {
+      "en": "The first week’s A3 beside it, so the difference between the drawing and the object can be seen in one glance.",
+      "sr": "A3 iz prve nedelje pored njega, da se razlika između crteža i predmeta vidi u jednom pogledu."
+    },
+    {
+      "en": "A tape, the leftovers, and the receipt if anything was bought. Cost is part of access and we write it down.",
+      "sr": "Metar, ostaci materijala i račun ako je nešto kupljeno. Cena je deo pristupačnosti i upisuje se."
+    },
+    {
+      "en": "Second pair of hands: someone who has never seen your toy will be handed it without a word of explanation.",
+      "sr": "Tuđe ruke: neko ko tvoju igračku nikad nije video dobiće je bez ijedne reči objašnjenja."
+    }
   ],
   "blocks": [
     {
       "kind": "heading",
-      "text": { "en": "A prototype is a claim that can break", "sr": "Prototip je tvrdnja koja može da se slomi" }
+      "text": {
+        "en": "A prototype is a claim that can break",
+        "sr": "Prototip je tvrdnja koja može da se slomi"
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "Last week you designed on paper and the paper agreed with everything. This week the material answers back. A skewer splits along the grain, hot glue lets go of polypropylene as it cools, a cap that turned beautifully in the drawing binds against the cardboard, and a box that was rigid on the sheet folds the moment a child leans on it. None of that is a setback — it is the first honest information the project has produced, and it exists only because something was built.", "sr": "Prošle nedelje si projektovao na papiru, a papir se slagao sa svime. Ove nedelje materijal odgovara. Štapić puca po vlaknu, topli lepak pušta polipropilen dok se hladi, čep koji se na crtežu divno okretao zapinje o karton, a kutija koja je na listu bila kruta savija se čim se dete nasloni. Ništa od toga nije neuspeh — to je prvi pošten podatak koji je projekat dao, i postoji samo zato što je nešto napravljeno." }
+      "text": {
+        "en": "Last week you designed on paper and the paper agreed with everything. This week the material answers back. A skewer splits along the grain, hot glue lets go of polypropylene as it cools, a cap that turned beautifully in the drawing binds against the cardboard, and a box that was rigid on the sheet folds the moment a child leans on it. None of that is a setback — it is the first honest information the project has produced, and it exists only because something was built.",
+        "sr": "Prošle nedelje si projektovao na papiru, a papir se slagao sa svime. Ove nedelje materijal odgovara. Štapić puca po vlaknu, topli lepak pušta polipropilen dok se hladi, čep koji se na crtežu divno okretao zapinje o karton, a kutija koja je na listu bila kruta savija se čim se dete nasloni. Ništa od toga nije neuspeh — to je prvi pošten podatak koji je projekat dao, i postoji samo zato što je nešto napravljeno."
+      }
     },
     {
       "kind": "image",
       "src": "data/igracka/igracka-02.jpg",
-      "alt": { "en": "The inside of the open cardboard box: bamboo skewers span it in two directions and bottle caps are threaded on them — an orange dome on a blue ring, a yellow ring on its own, a red cap with a visible blob of hardened hot glue around the rod, a green one at the edge. A glue gun lies on a chequered cloth behind the box.", "sr": "Unutrašnjost otvorene kartonske kutije: štapići za ražnjiće premošćuju je u dva pravca, a na njima su nanizani čepovi — narandžasta kupa na plavom prstenu, žuti prsten sam, crveni čep sa vidljivom kapi očvrslog toplog lepka oko štapića, zeleni na ivici. Iza kutije, na kariranoj krpi, leži pištolj za lepak." },
-      "caption": { "en": "The same toy, photographed while it was still being made. The blob of glue on the red cap is not a flaw in the photograph — it is where the maker decided this piece would not rotate.", "sr": "Ista igračka, slikana dok je još nastajala. Kap lepka na crvenom čepu nije mana fotografije — to je mesto na kom je izrađivač odlučio da se ovaj komad neće okretati." }
+      "alt": {
+        "en": "The inside of the open cardboard box: bamboo skewers span it in two directions and bottle caps are threaded on them — an orange dome on a blue ring, a yellow ring on its own, a red cap with a visible blob of hardened hot glue around the rod, a green one at the edge. A glue gun lies on a chequered cloth behind the box.",
+        "sr": "Unutrašnjost otvorene kartonske kutije: štapići za ražnjiće premošćuju je u dva pravca, a na njima su nanizani čepovi — narandžasta kupa na plavom prstenu, žuti prsten sam, crveni čep sa vidljivom kapi očvrslog toplog lepka oko štapića, zeleni na ivici. Iza kutije, na kariranoj krpi, leži pištolj za lepak."
+      },
+      "caption": {
+        "en": "The same toy, photographed while it was still being made. The blob of glue on the red cap is not a flaw in the photograph — it is where the maker decided this piece would not rotate.",
+        "sr": "Ista igračka, slikana dok je još nastajala. Kap lepka na crvenom čepu nije mana fotografije — to je mesto na kom je izrađivač odlučio da se ovaj komad neće okretati."
+      }
     },
     {
       "kind": "heading",
-      "text": { "en": "The order in which material is chosen", "sr": "Redosled po kom se bira materijal" }
+      "text": {
+        "en": "The order in which material is chosen",
+        "sr": "Redosled po kom se bira materijal"
+      }
     },
     {
       "kind": "list",
       "items": [
-        { "en": "01 Found. Packaging, caps, tubes, offcuts, the lid of something. Free, already in the house, and a parent can repeat it without asking anyone.", "sr": "01 Nađeno. Ambalaža, čepovi, tube, otpaci, poklopac od nečega. Besplatno, već u kući, i roditelj to može da ponovi ne pitajući nikoga." },
-        { "en": "02 Reusable. Something that was already something else and will be again — a jar, a board, a textile. Named on the sheet together with its previous life.", "sr": "02 Ponovo upotrebljivo. Ono što je već bilo nešto drugo i opet će biti — tegla, daska, tkanina. Na listu se imenuje zajedno sa svojim prethodnim životom." },
-        { "en": "03 Bought, and only then. Skewers, glue, elastic, a bearing. Every bought item carries its price on the sheet, in dinars.", "sr": "03 Kupljeno, i tek onda. Štapići, lepak, lastiš, ležaj. Svaka kupljena stavka nosi svoju cenu na listu, u dinarima." },
-        { "en": "04 Printed. Only the part that cannot be found and cannot be bought: a connector, a jig, a bushing, a gauge. The printer is not a shortcut around the first three steps.", "sr": "04 Štampano. Samo deo koji ne može da se nađe i ne može da se kupi: spojnica, šablon, čaura, merilo. Štampač nije prečica mimo prva tri koraka." }
+        {
+          "en": "01 Found. Packaging, caps, tubes, offcuts, the lid of something. Free, already in the house, and a parent can repeat it without asking anyone.",
+          "sr": "01 Nađeno. Ambalaža, čepovi, tube, otpaci, poklopac od nečega. Besplatno, već u kući, i roditelj to može da ponovi ne pitajući nikoga."
+        },
+        {
+          "en": "02 Reusable. Something that was already something else and will be again — a jar, a board, a textile. Named on the sheet together with its previous life.",
+          "sr": "02 Ponovo upotrebljivo. Ono što je već bilo nešto drugo i opet će biti — tegla, daska, tkanina. Na listu se imenuje zajedno sa svojim prethodnim životom."
+        },
+        {
+          "en": "03 Bought, and only then. Skewers, glue, elastic, a bearing. Every bought item carries its price on the sheet, in dinars.",
+          "sr": "03 Kupljeno, i tek onda. Štapići, lepak, lastiš, ležaj. Svaka kupljena stavka nosi svoju cenu na listu, u dinarima."
+        },
+        {
+          "en": "04 Printed. Only the part that cannot be found and cannot be bought: a connector, a jig, a bushing, a gauge. The printer is not a shortcut around the first three steps.",
+          "sr": "04 Štampano. Samo deo koji ne može da se nađe i ne može da se kupi: spojnica, šablon, čaura, merilo. Štampač nije prečica mimo prva tri koraka."
+        }
       ]
     },
     {
       "kind": "text",
-      "text": { "en": "This order is not an environmental gesture. A toy whose parts come out of a bin can be remade by the family the week after it breaks, in a town with no workshop, by somebody who is not a maker. A toy that depends on one printed part is, from that moment, a toy only we can repair — and that is a design decision with consequences, so it is written on the sheet as a decision and not slipped in as a detail.", "sr": "Ovaj redosled nije ekološki gest. Igračka čiji delovi dolaze iz korpe za otpatke može ponovo da se napravi u porodici nedelju dana pošto se slomi, u mestu bez radionice, rukama nekoga ko nije majstor. Igračka koja zavisi od jednog štampanog dela od tog trenutka je igračka koju samo mi umemo da popravimo — a to je projektantska odluka sa posledicama, pa se na listu upisuje kao odluka, a ne provlači kao sitnica." }
+      "text": {
+        "en": "This order is not an environmental gesture. A toy whose parts come out of a bin can be remade by the family the week after it breaks, in a town with no workshop, by somebody who is not a maker. A toy that depends on one printed part is, from that moment, a toy only we can repair — and that is a design decision with consequences, so it is written on the sheet as a decision and not slipped in as a detail.",
+        "sr": "Ovaj redosled nije ekološki gest. Igračka čiji delovi dolaze iz korpe za otpatke može ponovo da se napravi u porodici nedelju dana pošto se slomi, u mestu bez radionice, rukama nekoga ko nije majstor. Igračka koja zavisi od jednog štampanog dela od tog trenutka je igračka koju samo mi umemo da popravimo — a to je projektantska odluka sa posledicama, pa se na listu upisuje kao odluka, a ne provlači kao sitnica."
+      }
     },
     {
       "kind": "heading",
-      "text": { "en": "The printer is a joint, not a toy", "sr": "Štampač je spojnica, a ne igračka" }
+      "text": {
+        "en": "The printer is a joint, not a toy",
+        "sr": "Štampač je spojnica, a ne igračka"
+      }
     },
     {
       "kind": "list",
       "items": [
-        { "en": "Print what cannot be found: the piece that holds two found parts together at a dimension you had to decide. Print the gauge as well — a ⌀31,7 mm cylinder you can hold against every loose part is worth more than a drawing of one.", "sr": "Štampaj ono što ne može da se nađe: komad koji drži dva nađena dela na meri koju si morao da odrediš. Odštampaj i merilo — cilindar od ⌀31,7 mm koji možeš da prisloniš uz svaki odvojiv deo vredi više od njegovog crteža." },
-        { "en": "A printed part breaks along the layers, not across them. Lay the part so the force crosses the layers; if a child will pull it, the pull must not run parallel to the build direction.", "sr": "Štampan deo puca po slojevima, ne popreko. Postavi deo tako da sila preseca slojeve; ako će dete da vuče, vučenje ne sme da ide uporedo sa pravcem slaganja." },
-        { "en": "Layer lines, seams and support scars hold dirt and saliva, and small children put things in their mouths. A printed part that will be mouthed is sanded, or it is not printed.", "sr": "Linije slojeva, šavovi i tragovi potpore drže prljavštinu i pljuvačku, a mala deca stavljaju stvari u usta. Štampan deo koji će završiti u ustima se brusi, ili se ne štampa." },
-        { "en": "No printed part may be a small part in a toy for a child under three, and none may end in a point or an edge you would not run along your own lip.", "sr": "Nijedan štampan deo ne sme da bude sitan deo u igrački za dete ispod tri godine, i nijedan ne sme da se završi vrhom ili ivicom koju ne bi prevukao preko sopstvene usne." },
-        { "en": "Print at the end, not at the beginning. A part printed before the cardboard version was tested is a decision the software made for you.", "sr": "Štampa se na kraju, ne na početku. Deo odštampan pre nego što je kartonska verzija isprobana je odluka koju je mašina donela umesto tebe." }
+        {
+          "en": "Print what cannot be found: the piece that holds two found parts together at a dimension you had to decide. Print the gauge as well — a ⌀31,7 mm cylinder you can hold against every loose part is worth more than a drawing of one.",
+          "sr": "Štampaj ono što ne može da se nađe: komad koji drži dva nađena dela na meri koju si morao da odrediš. Odštampaj i merilo — cilindar od ⌀31,7 mm koji možeš da prisloniš uz svaki odvojiv deo vredi više od njegovog crteža."
+        },
+        {
+          "en": "A printed part breaks along the layers, not across them. Lay the part so the force crosses the layers; if a child will pull it, the pull must not run parallel to the build direction.",
+          "sr": "Štampan deo puca po slojevima, ne popreko. Postavi deo tako da sila preseca slojeve; ako će dete da vuče, vučenje ne sme da ide uporedo sa pravcem slaganja."
+        },
+        {
+          "en": "Layer lines, seams and support scars hold dirt and saliva, and small children put things in their mouths. Sanding alone does not establish that a printed part is suitable for mouthing; that requires a separate assessment of the material, construction and intended use.",
+          "sr": "Linije slojeva, šavovi i tragovi potpore drže prljavštinu i pljuvačku, a mala deca stavljaju stvari u usta. Samo brušenje ne potvrđuje da je štampan deo prikladan za stavljanje u usta; to traži zasebnu procenu materijala, izrade i namene."
+        },
+        {
+          "en": "No printed part may be a small part in a toy for a child under three, and sharp points and edges need an appropriate inspection method. Do not test them on lips or skin.",
+          "sr": "Nijedan štampan deo ne sme da bude sitan deo u igrački za dete ispod tri godine, a oštri vrhovi i ivice traže odgovarajući postupak provere. Ne ispituju se na usnama ili koži."
+        },
+        {
+          "en": "Print at the end, not at the beginning. A part printed before the cardboard version was tested is a decision the software made for you.",
+          "sr": "Štampa se na kraju, ne na početku. Deo odštampan pre nego što je kartonska verzija isprobana je odluka koju je mašina donela umesto tebe."
+        }
       ]
     },
     {
       "kind": "text",
-      "text": { "en": "These are working rules, not a standard. What is published about printed objects for children is mostly manufacturer guidance and maker practice rather than a tested requirement; where it matters — small parts, points, edges, cords — the toy standard still governs, and the standard does not care how the part was made.", "sr": "Ovo su radna pravila, a ne standard. Ono što je objavljeno o štampanim predmetima za decu uglavnom je uputstvo proizvođača i praksa izrađivača, a ne ispitan zahtev; tamo gde je važno — sitni delovi, vrhovi, ivice, kanapi — i dalje važi standard za igračke, a njemu je svejedno kako je deo napravljen." }
+      "text": {
+        "en": "These are working rules, not a standard. What is published about printed objects for children is mostly manufacturer guidance and maker practice rather than a tested requirement; where it matters — small parts, points, edges, cords — the toy standard still governs, and the standard does not care how the part was made.",
+        "sr": "Ovo su radna pravila, a ne standard. Ono što je objavljeno o štampanim predmetima za decu uglavnom je uputstvo proizvođača i praksa izrađivača, a ne ispitan zahtev; tamo gde je važno — sitni delovi, vrhovi, ivice, kanapi — i dalje važi standard za igračke, a njemu je svejedno kako je deo napravljen."
+      }
     },
     {
       "kind": "heading",
-      "text": { "en": "Two numbers measured on the object, not on the drawing", "sr": "Dva broja koja se mere na predmetu, a ne na crtežu" }
+      "text": {
+        "en": "Two numbers measured on the object, not on the drawing",
+        "sr": "Dva broja koja se mere na predmetu, a ne na crtežu"
+      }
     },
     {
       "kind": "measure",
-      "text": { "en": "Cord, chain or cable on a toy for a child under 18 months", "sr": "Kanap, lančić ili kabl na igrački za dete ispod 18 meseci" },
+      "text": {
+        "en": "Cord, chain or cable on a toy for a child under 18 months",
+        "sr": "Kanap, lančić ili kabl na igrački za dete ispod 18 meseci"
+      },
       "value": "≤ 220 mm",
-      "instrument": { "en": "EN 71-1, Safety of toys — mechanical and physical properties. A cord that can tangle must not exceed 220 mm, or must separate into parts no longer than 220 mm under the breakaway test. Between 18 and 36 months a longer cord that can form a loop or a noose requires a warning at the point of sale. Read 02.10.2026 from the published standard text and from a testing house summary of the same clause.", "sr": "EN 71-1, Bezbednost igračaka — mehanička i fizička svojstva. Kanap koji može da se zamrsi ne sme da pređe 220 mm, ili mora da se razdvoji na delove ne duže od 220 mm na ispitivanju raskidne veze. Za uzrast između 18 i 36 meseci duži kanap koji može da obrazuje petlju ili omču traži upozorenje na mestu prodaje. Pročitano 02.10.2026. iz objavljenog teksta standarda i iz sažetka iste odredbe kod ispitne kuće." }
+      "instrument": {
+        "en": "EN 71-1, Safety of toys — mechanical and physical properties. A cord that can tangle must not exceed 220 mm, or must separate into parts no longer than 220 mm under the breakaway test. Between 18 and 36 months a longer cord that can form a loop or a noose requires a warning at the point of sale. Read 02.10.2026 from the published standard text and from a testing house summary of the same clause.",
+        "sr": "EN 71-1, Bezbednost igračaka — mehanička i fizička svojstva. Kanap koji može da se zamrsi ne sme da pređe 220 mm, ili mora da se razdvoji na delove ne duže od 220 mm na ispitivanju raskidne veze. Za uzrast između 18 i 36 meseci duži kanap koji može da obrazuje petlju ili omču traži upozorenje na mestu prodaje. Pročitano 02.10.2026. iz objavljenog teksta standarda i iz sažetka iste odredbe kod ispitne kuće."
+      }
     },
     {
       "kind": "measure",
-      "text": { "en": "The small parts cylinder, applied again — this time to the thing that exists", "sr": "Cilindar za sitne delove, ponovo primenjen — ovog puta na predmet koji postoji" },
+      "text": {
+        "en": "The small parts cylinder, applied again — this time to the thing that exists",
+        "sr": "Cilindar za sitne delove, ponovo primenjen — ovog puta na predmet koji postoji"
+      },
       "value": "⌀ 31,7 mm · 25,4–57,1 mm",
-      "instrument": { "en": "EN 71-1. On the drawing you checked the parts you had drawn. On the object you check the parts the object produced: what came loose while you were building, what the glue did not hold, what a child can twist off in four seconds. Test the prototype after it has been dropped, not before.", "sr": "EN 71-1. Na crtežu si proveravao delove koje si nacrtao. Na predmetu proveravaš delove koje je predmet proizveo: ono što se odvojilo dok si gradio, ono što lepak nije održao, ono što dete može da otkine za četiri sekunde. Prototip se ispituje pošto je pao, ne pre toga." }
+      "instrument": {
+        "en": "EN 71-1. On the drawing you checked the parts you had drawn. On the object you check the parts the object produced: what came loose while you were building, what the glue did not hold, what a child can twist off in four seconds. Test the prototype after it has been dropped, not before.",
+        "sr": "EN 71-1. Na crtežu si proveravao delove koje si nacrtao. Na predmetu proveravaš delove koje je predmet proizveo: ono što se odvojilo dok si gradio, ono što lepak nije održao, ono što dete može da otkine za četiri sekunde. Prototip se ispituje pošto je pao, ne pre toga."
+      }
     },
     {
       "kind": "heading",
-      "text": { "en": "Why the thing in the hand, and not the screen", "sr": "Zašto predmet u ruci, a ne ekran" }
+      "text": {
+        "en": "What the comparison of training media establishes",
+        "sr": "Šta poređenje medija obuke potvrđuje"
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "The question has been tested directly. Gilligan-Lee and colleagues ran spatial training with children in three conditions — with physical pieces in the hand, with the same task without them, and an active control — precisely in order to see whether the hand adds anything. The direction of the result favours the hand: the group that moved the shapes improved at mental rotation. We have read the abstract and part of the results table, not the whole paper, so that is where the claim stops, and the sheet says so.", "sr": "Pitanje je ispitivano neposredno. Gilligan-Lee i saradnici sproveli su obuku prostornog mišljenja sa decom u tri uslova — sa fizičkim komadima u ruci, sa istim zadatkom bez njih, i sa aktivnom kontrolom — upravo da bi se videlo da li ruka nešto dodaje. Smer nalaza ide u korist ruke: grupa koja je pomerala oblike napredovala je u mentalnoj rotaciji. Pročitali smo apstrakt i deo tabele rezultata, a ne ceo rad, pa se tvrdnja tu zaustavlja, i to na listu piše." }
+      "text": {
+        "en": "Gilligan-Lee et al.: both training groups improved mental rotation without a significant difference between them; Hands-On did better on immediate calculation. Methods and results were read on 4 October 2026. Choosing a physical prototype remains a teaching decision, not proof of general superiority over screens. See the research shelf for scope and limitations.",
+        "sr": "Gilligan-Lee i saradnici: obe grupe napredovale su u mentalnoj rotaciji bez značajne razlike između njih; Hands-On je bolji u neposrednom računanju. Metod i rezultati pročitani su 04.10.2026. Izbor fizičkog prototipa ostaje nastavna odluka, ne dokaz opšte nadmoći nad ekranima. Obim i ograničenja su na polici izvora."
+      }
     },
     {
       "kind": "link",
       "href": "https://srcd.onlinelibrary.wiley.com/doi/10.1111/cdev.13963",
-      "text": { "en": "Gilligan-Lee, Hawes, Williams, Farran & Mix, “Hands-On: investigating the role of physical manipulatives in spatial training”, Child Development 94 (2023), 1205–1221", "sr": "Gilligan-Lee, Hawes, Williams, Farran i Mix, „Hands-On: uloga fizičkih predmeta u obuci prostornog mišljenja”, Child Development 94 (2023), 1205–1221" }
+      "text": {
+        "en": "Gilligan-Lee, Hawes, Williams, Farran & Mix, “Hands-On: investigating the role of physical manipulatives in spatial training”, Child Development 94 (2023), 1205–1221",
+        "sr": "Gilligan-Lee, Hawes, Williams, Farran i Mix, „Hands-On: uloga fizičkih predmeta u obuci prostornog mišljenja”, Child Development 94 (2023), 1205–1221"
+      }
     },
     {
       "kind": "heading",
-      "text": { "en": "Loose parts: the oldest argument for rubbish", "sr": "Rasuti delovi: najstariji argument za otpad" }
+      "text": {
+        "en": "Loose parts: the oldest argument for rubbish",
+        "sr": "Rasuti delovi: najstariji argument za otpad"
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "In 1971 an architect, Simon Nicholson, published a short polemic in Landscape Architecture: how inventive a place allows a child to be depends on how many things in it can be moved, combined and changed. A finished playground gives a child one answer; a yard with boards, tyres, water and rope gives the child as many answers as the child can think of. The conclusion for you is uncomfortable and useful — every part of your toy that is fixed is a decision you took away from the child. Count how many you took.", "sr": "Godine 1971. arhitekta Sajmon Nikolson objavio je u časopisu Landscape Architecture kratku polemiku: koliko je dete na nekom mestu domišljato zavisi od toga koliko se stvari na njemu može pomerati, kombinovati i menjati. Gotovo igralište detetu daje jedan odgovor; dvorište sa daskama, gumama, vodom i užetom daje mu onoliko odgovora koliko dete ume da smisli. Zaključak je za tebe neprijatan i koristan — svaki deo tvoje igračke koji je nepomičan je odluka koju si oduzeo detetu. Prebroj koliko si ih oduzeo." }
+      "text": {
+        "en": "In 1971 an architect, Simon Nicholson, published a short polemic in Landscape Architecture: how inventive a place allows a child to be depends on how many things in it can be moved, combined and changed. A finished playground gives a child one answer; a yard with boards, tyres, water and rope gives the child as many answers as the child can think of. The conclusion for you is uncomfortable and useful — every part of your toy that is fixed is a decision you took away from the child. Count how many you took.",
+        "sr": "Godine 1971. arhitekta Sajmon Nikolson objavio je u časopisu Landscape Architecture kratku polemiku: koliko je dete na nekom mestu domišljato zavisi od toga koliko se stvari na njemu može pomerati, kombinovati i menjati. Gotovo igralište detetu daje jedan odgovor; dvorište sa daskama, gumama, vodom i užetom daje mu onoliko odgovora koliko dete ume da smisli. Zaključak je za tebe neprijatan i koristan — svaki deo tvoje igračke koji je nepomičan je odluka koju si oduzeo detetu. Prebroj koliko si ih oduzeo."
+      }
     },
     {
       "kind": "heading",
-      "text": { "en": "Seven principles, on your own object", "sr": "Sedam principa, na sopstvenom predmetu" }
+      "text": {
+        "en": "Seven principles, on your own object",
+        "sr": "Sedam principa, na sopstvenom predmetu"
+      }
     },
     {
       "kind": "text",
-      "text": { "en": "The lecture gives you the seven principles with built examples and failures. The studio applies them to the one object you cannot defend with rhetoric, because it is on the table and it either works in a stranger’s hands or it does not. The rule from the building audit stands unchanged: at least two principles must fail. If nothing failed, you reviewed your intention and not your prototype.", "sr": "Predavanje ti daje sedam principa sa izvedenim primerima i promašajima. Studio ih primenjuje na jedan predmet koji ne možeš da braniš rečima, jer stoji na stolu i ili radi u tuđim rukama ili ne radi. Pravilo iz provere zgrade ostaje isto: bar dva principa moraju da padnu. Ako ništa nije palo, ocenio si svoju nameru, a ne svoj prototip." }
+      "text": {
+        "en": "The lecture gives you the seven principles with built examples and failures. The studio applies them to the one object you cannot defend with rhetoric, because it is on the table and it either works in a stranger’s hands or it does not. The rule from the building audit stands unchanged: at least two principles must fail. If nothing failed, you reviewed your intention and not your prototype.",
+        "sr": "Predavanje ti daje sedam principa sa izvedenim primerima i promašajima. Studio ih primenjuje na jedan predmet koji ne možeš da braniš rečima, jer stoji na stolu i ili radi u tuđim rukama ili ne radi. Pravilo iz provere zgrade ostaje isto: bar dva principa moraju da padnu. Ako ništa nije palo, ocenio si svoju nameru, a ne svoj prototip."
+      }
     },
-    { "kind": "exercise", "ref": "prototype-from-waste" },
-    { "kind": "exercise", "ref": "seven-principles-audit" },
+    {
+      "kind": "exercise",
+      "ref": "prototype-from-waste"
+    },
+    {
+      "kind": "exercise",
+      "ref": "seven-principles-audit"
+    },
     {
       "kind": "lab",
       "ref": "kanali",
-      "text": { "en": "Fifteen minutes: strip one channel at a time from the same message. Then do it to your toy — cover its colours with grey paper and see what is left to play by.", "sr": "Petnaest minuta: skidaj jedan po jedan kanal sa iste poruke. Pa uradi to svojoj igrački — prekrij joj boje sivim papirom i vidi šta je ostalo da se po njemu igra." }
+      "text": {
+        "en": "Fifteen minutes: strip one channel at a time from the same message. Then do it to your toy — cover its colours with grey paper and see what is left to play by.",
+        "sr": "Petnaest minuta: skidaj jedan po jedan kanal sa iste poruke. Pa uradi to svojoj igrački — prekrij joj boje sivim papirom i vidi šta je ostalo da se po njemu igra."
+      }
     },
     {
       "kind": "question",
       "items": [
-        { "en": "Which decision from your drawing did the material refuse, and what did you do instead?", "sr": "Koju odluku sa tvog crteža je materijal odbio, i šta si uradio umesto nje?" },
-        { "en": "You handed it over with no explanation. What did the person do first — and was it what you drew?", "sr": "Dao si je nekome bez objašnjenja. Šta je ta osoba prvo uradila — i da li je to ono što si nacrtao?" },
-        { "en": "Which part would you print, and what exactly stops you from finding it instead?", "sr": "Koji deo bi odštampao, i šta te tačno sprečava da ga umesto toga nađeš?" },
-        { "en": "How many parts of your toy can a child move? How many did you fix in place, and for whose convenience?", "sr": "Koliko delova tvoje igračke dete može da pomeri? Koliko si ih ukrutio, i radi čije udobnosti?" }
+        {
+          "en": "Which decision from your drawing did the material refuse, and what did you do instead?",
+          "sr": "Koju odluku sa tvog crteža je materijal odbio, i šta si uradio umesto nje?"
+        },
+        {
+          "en": "You handed it over with no explanation. What did the person do first — and was it what you drew?",
+          "sr": "Dao si je nekome bez objašnjenja. Šta je ta osoba prvo uradila — i da li je to ono što si nacrtao?"
+        },
+        {
+          "en": "Which part would you print, and what exactly stops you from finding it instead?",
+          "sr": "Koji deo bi odštampao, i šta te tačno sprečava da ga umesto toga nađeš?"
+        },
+        {
+          "en": "How many parts of your toy can a child move? How many did you fix in place, and for whose convenience?",
+          "sr": "Koliko delova tvoje igračke dete može da pomeri? Koliko si ih ukrutio, i radi čije udobnosti?"
+        }
       ]
     },
     {
       "kind": "decision",
-      "text": { "en": "Each team records two lines: the part that will be printed and why it could not be found, and the first thing a stranger did with the toy without being told anything.", "sr": "Svaki tim upisuje dva reda: deo koji će biti odštampan i zašto nije mogao da se nađe, i prvu stvar koju je neko sa strane uradio sa igračkom bez ijedne reči uputstva." }
+      "text": {
+        "en": "Each team records two lines: the part that will be printed and why it could not be found, and the first thing a stranger did with the toy without being told anything.",
+        "sr": "Svaki tim upisuje dva reda: deo koji će biti odštampan i zašto nije mogao da se nađe, i prvu stvar koju je neko sa strane uradio sa igračkom bez ijedne reči uputstva."
+      }
+    },
+    {
+      "kind": "heading",
+      "text": {
+        "en": "The next sheet",
+        "sr": "Sledeći list"
+      }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "At the end of the session the next A3 is handed out — one sheet, two halves. Above: the hand that holds your object — three real hands, five measures each, three tolerance numbers on the drawing. Below: the first rows of the faculty table, because next week the Rulebook asks for your numbers. It works without a prototype: you measure a hand and choose an everyday object to redesign. If a trial at the association is agreed, one of the three hands may come from there.",
+        "sr": "Na kraju časa zadaje se sledeći A3 — jedan list, dva dela. Gore: ruka koja drži tvoj predmet — tri stvarne ruke, po pet mera, tri broja tolerancije na crtežu. Dole: prvi redovi tabele fakulteta, jer sledeće nedelje Pravilnik pita za tvoje brojeve. Radi i bez prototipa: meriš ruku i biraš svakodnevni predmet za prepravku. Ako se dogovori probavanje u udruženju, jedna od tri ruke sme da bude odatle."
+      }
+    },
+    {
+      "kind": "exercise",
+      "ref": "hands-and-tolerances"
+    },
+    {
+      "kind": "exercise",
+      "ref": "measure-your-faculty"
+    }
+  ],
+  "revizije": [
+    {
+      "v": 1,
+      "datum": "2026-10-02",
+      "sta": {
+        "en": "Published: prototype session — order of materials, EN 71-1 edges, seven principles judged on your own object.",
+        "sr": "Objavljeno: čas prototipa — redosled materijala, ivice po EN 71-1, sedam principa na sopstvenom predmetu."
+      }
+    },
+    {
+      "v": 2,
+      "datum": "2026-10-09",
+      "sta": {
+        "en": "Added “The next sheet”: the week 3 assignment (the hand that holds it + the faculty table, two halves of one A3, works without a prototype), and the preparation for the trial of prototypes at the association.",
+        "sr": "Dodat „Sledeći list\": zadatak za 3. nedelju (Ruka koja drži + tabela fakulteta, dva dela jednog A3, radi i bez prototipa) i priprema probavanja prototipa u udruženju."
+      }
     }
   ]
 }
