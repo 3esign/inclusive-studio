@@ -1,0 +1,222 @@
+{
+  "schema": "course-prototypes/v1",
+  "sources": [
+    {
+      "id": "teacher-2026-10-09",
+      "recordedOn": "2026-10-09",
+      "description": {
+        "sr": "Nastavnikov zapis uz pet dostavljenih fotografija: nazivi, imena autora, brojevi indeksa i podatak da su doneti prototipovi započeti na prvom času.",
+        "en": "The teacher’s record accompanying five supplied photographs: titles, author names, student numbers and the statement that the brought prototypes were begun in the first class."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "zmijica-2026",
+      "title": "Zmijica",
+      "author": {
+        "name": "Ivana Simić",
+        "studentNumber": "141/2024"
+      },
+      "attribution": {
+        "sourceId": "teacher-2026-10-09",
+        "fields": [
+          "name",
+          "studentNumber"
+        ]
+      },
+      "originWeek": 1,
+      "medium": "physical",
+      "status": "brought",
+      "sourceId": "teacher-2026-10-09",
+      "description": {
+        "sr": "Prostorna žičana putanja na kartonskoj podlozi, sa zelenim elementom na žici i izdignutim osloncima.",
+        "en": "A spatial wire path on a cardboard base, with a green element on the wire and raised supports."
+      },
+      "photos": [
+        {
+          "id": "zmijica-2026-photo-01",
+          "src": "data/prototipovi/zmijica-2026/01.jpg",
+          "sha256": "bd720059492d0db434998c7d2f39923e83d4a3e5a316d4bab93ebfa8130eaa9c",
+          "width": 721,
+          "height": 1280,
+          "alt": {
+            "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
+            "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
+          },
+          "caption": {
+            "sr": "Zmijica — dostavljena fotografija prototipa.",
+            "en": "Zmijica — supplied photograph of the prototype."
+          },
+          "sourceId": "teacher-2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "muzicka-kutija-2026",
+      "title": "Muzička Kutija",
+      "author": {
+        "name": "Nikola Pajić",
+        "studentNumber": "49/24"
+      },
+      "attribution": {
+        "sourceId": "teacher-2026-10-09",
+        "fields": [
+          "name",
+          "studentNumber"
+        ]
+      },
+      "originWeek": 1,
+      "medium": "digital",
+      "status": "brought",
+      "sourceId": "teacher-2026-10-09",
+      "description": {
+        "sr": "Digitalni prototip prikazan na laptopu: scena sa cvetovima različitih boja i oblika, uz oznaku „Žuti cvet“.",
+        "en": "A digital prototype shown on a laptop: a scene of flowers in different colors and shapes, with the label “Žuti cvet” (“Yellow flower”)."
+      },
+      "photos": [
+        {
+          "id": "muzicka-kutija-2026-photo-01",
+          "src": "data/prototipovi/muzicka-kutija-2026/01.jpg",
+          "sha256": "b287f28a4f0ddf3f036d3ffb4d8e84a61647250836ef7d49cc037ae122205c97",
+          "width": 721,
+          "height": 1280,
+          "alt": {
+            "sr": "Ekran laptopa prikazuje zelenu površinu sa raznobojnim stilizovanim cvetovima. Iznad scene stoje simbol note i tekst „Žuti cvet“; fotografija ne prenosi zvuk ili tok interakcije.",
+            "en": "A laptop screen shows a green field with colorful stylized flowers. A musical-note symbol and the words “Žuti cvet” appear above the scene; the photograph does not convey sound or the interaction sequence."
+          },
+          "caption": {
+            "sr": "Muzička Kutija — dostavljena fotografija prototipa.",
+            "en": "Muzička Kutija — supplied photograph of the prototype."
+          },
+          "sourceId": "teacher-2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "zgradica-2026",
+      "title": "Zgradica",
+      "author": {
+        "name": "Teodora Radojičić",
+        "studentNumber": "72/24"
+      },
+      "attribution": {
+        "sourceId": "teacher-2026-10-09",
+        "fields": [
+          "name",
+          "studentNumber"
+        ]
+      },
+      "originWeek": 1,
+      "medium": "physical",
+      "status": "brought",
+      "sourceId": "teacher-2026-10-09",
+      "description": {
+        "sr": "Višeetažna kartonska konstrukcija sa unutrašnjim pregradama, otvorima i belom lopticom.",
+        "en": "A multilevel cardboard structure with internal partitions, openings and a white ball."
+      },
+      "photos": [
+        {
+          "id": "zgradica-2026-photo-01",
+          "src": "data/prototipovi/zgradica-2026/01.jpg",
+          "sha256": "548460e82415964a00ca0ced18618e21db98e1183174cdf199ac60ff1184e4c3",
+          "width": 721,
+          "height": 1280,
+          "alt": {
+            "sr": "Otvorena kartonska konstrukcija ima više horizontalnih nivoa sa pregradama koje obrazuju prolaze. Na gornjoj površini je kružni otvor, na nižem nivou bela loptica; rukom se pridržava prednja ivica.",
+            "en": "An open cardboard structure has several horizontal levels with partitions forming passages. A circular opening is visible on the upper surface and a white ball on a lower level; a hand holds the front edge."
+          },
+          "caption": {
+            "sr": "Zgradica — dostavljena fotografija prototipa.",
+            "en": "Zgradica — supplied photograph of the prototype."
+          },
+          "sourceId": "teacher-2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "sudoku-2026",
+      "title": "Sudoku",
+      "author": {
+        "name": "Nađa Stanić",
+        "studentNumber": "151/24"
+      },
+      "attribution": {
+        "sourceId": "teacher-2026-10-09",
+        "fields": [
+          "name",
+          "studentNumber"
+        ]
+      },
+      "originWeek": 1,
+      "medium": "physical",
+      "status": "brought",
+      "sourceId": "teacher-2026-10-09",
+      "description": {
+        "sr": "Kartonske ploče sa tamnim kvadratnim poljima i svetlim, izdignutim ciframa. Fotografija beleži fizički raspored elemenata.",
+        "en": "Cardboard boards with dark square cells and light-colored raised numerals. The photograph records the physical arrangement of the pieces."
+      },
+      "photos": [
+        {
+          "id": "sudoku-2026-photo-01",
+          "src": "data/prototipovi/sudoku-2026/01.jpg",
+          "sha256": "0f8dbac6f927a3d4ca052830609b41231fb119b77b4f4b6d3827f138faeecf2a",
+          "width": 721,
+          "height": 1280,
+          "alt": {
+            "sr": "Dve kartonske ploče na stolu podeljene su u kvadratna polja. Na tamnim površinama nalaze se ručno izrađene reljefne cifre od svetlog kartona; deo ploča izlazi iz kadra.",
+            "en": "Two cardboard boards on a table are divided into square cells. Hand-cut raised numerals in light cardboard sit on dark surfaces; parts of the boards extend outside the photograph."
+          },
+          "caption": {
+            "sr": "Sudoku — dostavljena fotografija prototipa.",
+            "en": "Sudoku — supplied photograph of the prototype."
+          },
+          "sourceId": "teacher-2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "pogodilica-2026",
+      "title": "Pogodilica",
+      "author": {
+        "name": "Todorić Teodora",
+        "studentNumber": "39/24"
+      },
+      "attribution": {
+        "sourceId": "teacher-2026-10-09",
+        "fields": [
+          "name",
+          "studentNumber"
+        ]
+      },
+      "originWeek": 1,
+      "medium": "physical",
+      "status": "brought",
+      "sourceId": "teacher-2026-10-09",
+      "description": {
+        "sr": "Obojeni delovi kartonske ambalaže i podloga sa oznakama boja. Na fotografiji se delovi rukama raspoređuju uz podlogu.",
+        "en": "Colored pieces of cardboard packaging and a base marked with colors. Hands are arranging pieces beside the base in the photograph."
+      },
+      "photos": [
+        {
+          "id": "pogodilica-2026-photo-01",
+          "src": "data/prototipovi/pogodilica-2026/01.jpg",
+          "sha256": "e78005d77caa5ea1ea28b6f755d1518cde2e07070e1cc68bdafe02d6364aa7ac",
+          "width": 721,
+          "height": 1280,
+          "alt": {
+            "sr": "Podloga od kartonske ambalaže za jaja ima izdignute vrhove sa obojenim oznakama. Oko nje su odvojeni delovi obojeni žuto, plavo, roze, crveno, zeleno, belo i ljubičasto; ruke drže dva dela.",
+            "en": "An egg-carton base has raised peaks marked with colors. Separate pieces around it are painted yellow, blue, pink, red, green, white and purple; hands hold two pieces."
+          },
+          "caption": {
+            "sr": "Pogodilica — dostavljena fotografija prototipa.",
+            "en": "Pogodilica — supplied photograph of the prototype."
+          },
+          "sourceId": "teacher-2026-10-09"
+        }
+      ]
+    }
+  ],
+  "observations": [],
+  "revizije": []
+}

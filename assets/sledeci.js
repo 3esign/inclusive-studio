@@ -8,6 +8,7 @@ import { $, esc, tr, tx, loadJSON, mount, announce, link } from './core.js';
 import { validateTok } from './tok-core.js';
 import { weekFile, validateWeek, safeHref } from './material.js';
 import { exercises } from './exercises.js';
+import { prototypeTeaser, validatePrototypes } from './prototipovi-core.js';
 
 let data = null; // { tok, w02, w03 }
 
@@ -131,7 +132,7 @@ function view() {
   const dateNote = w02?.dateStatus === 'proposed'
     ? `<span class="tag">${tr('date proposed', 'datum predložen')}</span>`
     : `<span class="tag">${tr('date set', 'datum potvrđen')}</span>`;
-  return `<div class="next-intro"><div class="next-intro-heading">
+  return `${data.prototypes ? prototypeTeaser(data.prototypes) : ''}<div class="next-intro"><div class="next-intro-heading">
     <p class="eyebrow">${tr('Preparation · week', 'Priprema · nedelja')} ${cas?.nedelja ?? ''}</p>
     <h1>${esc(tx(w02?.title || cas?.naslov))}</h1>
     <p class="idea-card-meta">${dateNote} · ${tr('prepared — not yet held', 'pripremljeno — još nije održano')}</p>
@@ -151,7 +152,8 @@ function view() {
 
 async function load() {
   try {
-    const tok = await loadJSON('data/tok.json');
+    const [tok, prototypes] = await Promise.all([loadJSON('data/tok.json'), loadJSON('data/prototipovi.json')]);
+    if (validatePrototypes(prototypes).length) throw new Error('Invalid prototype register.');
     const problems = validateTok(tok);
     if (problems.length) throw new Error(problems[0]);
     const cas = tok.sledeci.find(item => item.vrsta === 'cas' && typeof item.nedelja === 'number');
@@ -162,7 +164,7 @@ async function load() {
     let w03 = null;
     const tema = tok.sledeci.find(item => item.vrsta === 'tema' && typeof item.nedelja === 'number');
     if (tema) { try { w03 = await loadJSON(weekFile(tema.nedelja)); } catch { w03 = null; } }
-    data = { tok, w02, w03 };
+    data = { tok, w02, w03, prototypes };
     announce(tr('The preparation for the next class is loaded.', 'Priprema sledećeg časa je učitana.'));
   } catch (error) {
     announce(tr('The preparation could not be fetched — the sections on this page stay as written.', 'Priprema nije mogla da se dohvati — odeljci na ovoj strani ostaju kako su upisani.'));
@@ -172,5 +174,5 @@ async function load() {
   if (data && main) main.innerHTML = view();
 }
 
-mount({ view: 'next', render: () => {}, title: () => tr('Next class', 'Sledeći čas') });
+mount({ view: 'next', render: () => { if (data && $('#main')) $('#main').innerHTML = view(); }, title: () => tr('Next class', 'Sledeći čas') });
 load();

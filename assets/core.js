@@ -16,6 +16,7 @@ export const NAV = [
   { id: 'cloud', href: 'oblak.html', group: 'primary', en: 'Cloud of ideas', sr: 'Oblak ideja' },
   { id: 'partner', href: 'udruzenje.html', group: 'primary', en: 'The association', sr: 'Udruženje' },
   { id: 'lecture', href: 'predavanje.html', group: 'archive', en: 'Lecture', sr: 'Predavanje' },
+  { id: 'prototypes', href: 'prototipovi.html', group: 'archive', en: 'Student prototypes', sr: 'Studentski prototipovi' },
   { id: 'lab', href: 'laboratorija.html', group: 'archive', en: 'Labs', sr: 'Laboratorija' },
   { id: 'toy', href: 'igracka.html', group: 'archive', en: 'The toy', sr: 'Igračka' },
   { id: 'ages', href: 'godista.html', group: 'archive', en: 'By age', sr: 'Po godištima' },

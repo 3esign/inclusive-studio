@@ -36,17 +36,22 @@ try {
   const manifest = JSON.parse(fs.readFileSync(path.join(snapshot.store, 'manifests', snapshot.id + '.json'), 'utf8'));
   if (!unchangedCopy(copy, manifest)) throw new Error('Verification copy differs from the snapshot.');
   const baseline = check({ ...opts, againstRoot: copy });
+  const hasPrototypes = manifest.files.some(f => f.path === 'data/prototipovi.json');
+  const prototypeProcess = hasPrototypes && baseline.ok ? spawnSync(process.execPath, ['tools/prototipovi.mjs', '--check'], { cwd: copy, encoding: 'utf8', windowsHide: true, timeout: 120000, maxBuffer: 4 * 1024 * 1024 }) : null;
+  const prototypes = { applicable: hasPrototypes, ok: !hasPrototypes || (baseline.ok && prototypeProcess?.status === 0),
+    exit: prototypeProcess?.status ?? null, error: prototypeProcess?.error?.message || null,
+    output: prototypeProcess ? (prototypeProcess.stdout || '') + (prototypeProcess.stderr || '') : (hasPrototypes ? 'Not run: baseline guard failed.' : 'No prototype registry in this snapshot.') };
   const files = manifest.files.map(f => f.path).filter(f => /^tests\/[^/]+\.test\.mjs$/.test(f)).sort().map(f => path.join(copy, f));
   if (!files.length) throw new Error('No course tests found.');
-  const tests = baseline.ok ? spawnSync(process.execPath, ['--test', ...files], { cwd: copy, encoding: 'utf8', windowsHide: true, timeout: 180000, maxBuffer: 8 * 1024 * 1024 }) : { status: null, stdout: '', stderr: 'Tests not run: baseline guard failed.' };
+  const tests = baseline.ok && prototypes.ok ? spawnSync(process.execPath, ['--test', ...files], { cwd: copy, encoding: 'utf8', windowsHide: true, timeout: 180000, maxBuffer: 8 * 1024 * 1024 }) : { status: null, stdout: '', stderr: 'Tests not run: baseline or prototype validation failed.' };
   const after = compare({ ...opts, id: snapshot.id });
   const stable = !after.changed.length && !after.added.length && !after.deleted.length;
   const copyStable = unchangedCopy(copy, manifest);
-  const receipt = { at: new Date().toISOString(), ok: baseline.ok && tests.status === 0 && after.ok && stable && copyStable && integrity.ok,
-    snapshot, baseline, tests: { exit: tests.status, error: tests.error?.message || null, output: (tests.stdout || '') + (tests.stderr || '') },
+  const receipt = { at: new Date().toISOString(), ok: baseline.ok && prototypes.ok && tests.status === 0 && after.ok && stable && copyStable && integrity.ok,
+    snapshot, baseline, prototypes, tests: { exit: tests.status, error: tests.error?.message || null, output: (tests.stdout || '') + (tests.stderr || '') },
     restored, copyStable, after, stable, integrity, limitation: 'Tests ran in a separate restored snapshot. This is local verification, not teacher approval, visual QA, publication, an OS-immutable filesystem, or an enforced remote branch rule.' };
   const receiptPath = path.join(snapshot.store, 'verification-' + snapshot.id + '.json');
   fs.writeFileSync(receiptPath, JSON.stringify(receipt, null, 2) + '\n', { flag: 'wx' });
-  console.log(JSON.stringify({ ok: receipt.ok, snapshot, baseline, testExit: tests.status, testSummary: receipt.tests.output.split('\n').slice(-12), copyStable, verifiedCopy: copy, stable, after, receipt: receiptPath }, null, 2));
+  console.log(JSON.stringify({ ok: receipt.ok, snapshot, baseline, prototypes, testExit: tests.status, testSummary: receipt.tests.output.split('\n').slice(-12), copyStable, verifiedCopy: copy, stable, after, receipt: receiptPath }, null, 2));
   if (!receipt.ok) process.exitCode = 1;
 } catch (error) { console.error(JSON.stringify({ ok: false, error: error.message })); process.exitCode = 1; }

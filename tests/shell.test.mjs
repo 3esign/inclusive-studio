@@ -18,8 +18,17 @@ const MODULES = {
   'zadatak.html': 'task.js', 'uredi.html': 'editor.js', 'ideja.html': 'ideas.js',
   'igracka.html': 'toy.js', 'godista.html': 'ages.js',
   'naslovna.html': 'naslovna.js', 'udruzenje.html': 'udruzenje.js',
-  'sledeci.html': 'sledeci.js', 'oblak.html': 'oblak.js'
+  'sledeci.html': 'sledeci.js', 'oblak.html': 'oblak.js', 'prototipovi.html': 'prototipovi.js'
 };
+
+test('the established primary destinations and lecture/source routes cannot disappear together with generated shells', () => {
+  const primary = [['cover', 'naslovna.html'], ['flow', 'index.html'], ['next', 'sledeci.html'], ['cloud', 'oblak.html'], ['partner', 'udruzenje.html']];
+  assert.deepEqual(NAV.filter(item => item.group === 'primary').map(item => [item.id, item.href]), primary);
+  for (const [id, href] of [['library', 'resources.html'], ['lecture', 'predavanje.html']]) {
+    assert.equal(NAV.find(item => item.id === id)?.href, href, id + ' retains its existing route');
+    assert.ok(pages.includes(href), href + ' must remain a real page');
+  }
+});
 
 test('the pages are exactly the ones the navigation points at', () => {
   const linked = NAV.map(item => item.href).sort();

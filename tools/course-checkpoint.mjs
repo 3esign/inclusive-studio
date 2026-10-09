@@ -11,6 +11,7 @@ export const LIMITS = Object.freeze({ files: 4096, fileBytes: 64 * 1024 * 1024, 
 const DIRS = new Set(['assets', 'data', 'tools', 'tests', 'docs', 'skills', '.github']);
 const EXCLUDED = /^(?:\.git|node_modules|!Projekti|\.checkpoints?|checkpoints?|\.course-history|\.env(?:\..*)?|.*(?:secret|credential|vault).*|id_(?:rsa|ed25519)|.*\.(?:pem|p12|pfx|key))$/i;
 const HEX = /^[a-f0-9]{64}$/;
+const PROTOTYPES = 'data/prototipovi.json';
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const fail = message => { throw new Error(message); };
 const exists = p => { try { fs.lstatSync(p); return true; } catch (e) { if (e.code === 'ENOENT') return false; throw e; } };
@@ -227,16 +228,78 @@ function weekChecks(before, after) {
   }
   return errors;
 }
+// Corrections retain the full earlier item and are replayed, never inferred from a new date.
+export function comparePrototypeHistory(before, after) {
+  if (!before && !after) return [];
+  const errors = [], label = PROTOTYPES;
+  const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+  const shape = r => r?.schema === 'course-prototypes/v1' && ['sources', 'items', 'observations'].every(k => Array.isArray(r[k]) && r[k].every(object)) && (r.revizije === undefined || Array.isArray(r.revizije));
+  if (!shape(after) || (before && !shape(before))) return [`${label}: missing or invalid registry`];
+  const old = before || { sources: [], items: [], observations: [], revizije: [] };
+  for (const key of ['sources', 'observations', 'revizije']) {
+    const a = old[key] || [], b = after[key] || [];
+    if (b.length < a.length || a.some((row, i) => !same(row, b[i]))) errors.push(`${label}: ${key} prefix rewritten or deleted`);
+  }
+  const ids = new Set(), sources = new Set(after.sources.map(s => s?.id));
+  for (const item of after.items) {
+    if (!item?.id || ids.has(item.id)) errors.push(`${label}: missing or duplicate prototype id`);
+    ids.add(item?.id);
+  }
+  if (after.items.length < old.items.length || old.items.some((item, i) => item.id !== after.items[i]?.id)) errors.push(`${label}: existing prototype removed, reordered or renamed`);
+  const date = value => typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value) && Number.isFinite(Date.parse(value + 'T00:00:00Z')) && new Date(value + 'T00:00:00Z').toISOString().slice(0, 10) === value;
+  const text = value => typeof value === 'string' && value.trim().length > 0;
+  const revisions = after.revizije || [], previousCount = (old.revizije || []).length;
+  const history = new Map(), changed = new Map(old.items.map(item => [item.id, item]));
+  for (const [i, revision] of revisions.entries()) {
+    const id = revision?.prototypeId;
+    if (!revision || revision.v !== i + 1 || !date(revision.datum) || (i && revision.datum < revisions[i - 1]?.datum)
+      || !text(revision.sta?.sr) || !text(revision.sta?.en) || !sources.has(revision.sourceId)
+      || !ids.has(id) || revision.before?.id !== id || revision.after?.id !== id || same(revision.before, revision.after)) {
+      errors.push(`${label}: invalid correction revision ${i + 1}`); continue;
+    }
+    if (history.has(id) && !same(history.get(id), revision.before)) errors.push(`${label}: broken correction history for ${id}`);
+    history.set(id, revision.after);
+    if (i >= previousCount) {
+      if (changed.has(id) && !same(changed.get(id), revision.before)) errors.push(`${label}: correction before does not match baseline for ${id}`);
+      changed.set(id, revision.after);
+    }
+  }
+  for (const item of after.items) {
+    if (history.has(item.id) && !same(history.get(item.id), item)) errors.push(`${label}: correction after does not match current item ${item.id}`);
+    if (changed.has(item.id) && !same(changed.get(item.id), item)) errors.push(`${label}: changed item requires an explicit correction revision: ${item.id}`);
+  }
+  return errors;
+}
+function prototypeChecks(beforeBytes, afterBytes, files) {
+  const before = beforeBytes ? JSON.parse(beforeBytes) : null, after = afterBytes ? JSON.parse(afterBytes) : null;
+  const errors = comparePrototypeHistory(before, after), assets = new Map();
+  const rows = value => Array.isArray(value) ? value : [];
+  for (const registry of [before, after]) {
+    if (!registry) continue;
+    const records = [...rows(registry.items), ...rows(registry.observations), ...rows(registry.revizije).flatMap(r => [r?.before, r?.after])];
+    for (const record of records) for (const photo of (Array.isArray(record?.photos) ? record.photos : [])) {
+      try {
+        safeRelative(photo.src);
+        if (!/^(?:data|assets)\//.test(photo.src) || !included(photo.src) || !HEX.test(photo.sha256 || '')) throw Error('invalid asset reference');
+        if (assets.has(photo.src) && assets.get(photo.src) !== photo.sha256) throw Error('historical asset path reused with different bytes');
+        assets.set(photo.src, photo.sha256);
+        if (files.get(photo.src) !== photo.sha256) errors.push(`${PROTOTYPES}: referenced or historical photo missing/changed: ${photo.src}`);
+      } catch { errors.push(`${PROTOTYPES}: unsafe, invalid or reused photo reference`); }
+    }
+  }
+  return errors;
+}
 function currentFiles(root) {
-  const rows = inventory(root), files = new Map(), weeks = new Map();
+  const rows = inventory(root), files = new Map(), weeks = new Map(); let prototypes;
   for (const row of rows) {
     const read = readStable(path.join(root, row.path));
     if (!same(row.identity, read.identity)) fail('project changed during comparison: ' + row.path);
     files.set(row.path, read.sha256);
     if (/^data\/material\/w\d{2}\.json$/.test(row.path)) weeks.set(row.path, read.bytes);
+    if (row.path === PROTOTYPES) prototypes = read.bytes;
   }
   if (!same(rows, inventory(root))) fail('project changed during comparison');
-  return { files, weeks };
+  return { files, weeks, prototypes };
 }
 
 export function guardOfficial({ root, official, expectedSha256 }) {
@@ -256,11 +319,12 @@ export function guardOfficial({ root, official, expectedSha256 }) {
 }
 export function compare({ root, store, id, official, expectedSha256 }) {
   const ctx = context(root, store), m = loadManifest(ctx, id), before = new Map(), oldWeeks = new Map(), current = currentFiles(ctx.root), after = current.files;
-  for (const f of m.files) { const bytes = blob(ctx, f); before.set(f.path, f.sha256); if (/^data\/material\/w\d{2}\.json$/.test(f.path)) oldWeeks.set(f.path, bytes); }
+  let oldPrototypes;
+  for (const f of m.files) { const bytes = blob(ctx, f); before.set(f.path, f.sha256); if (/^data\/material\/w\d{2}\.json$/.test(f.path)) oldWeeks.set(f.path, bytes); if (f.path === PROTOTYPES) oldPrototypes = bytes; }
   const changed = [], added = [], deleted = [];
   for (const [rel, digest] of before) { if (!after.has(rel)) deleted.push(rel); else if (digest !== after.get(rel)) changed.push(rel); }
   for (const rel of after.keys()) if (!before.has(rel)) added.push(rel);
-  const errors = weekChecks(oldWeeks, current.weeks);
+  const errors = [...weekChecks(oldWeeks, current.weeks), ...prototypeChecks(oldPrototypes, current.prototypes, current.files)];
   if (official) errors.push(...guardOfficial({ root: ctx.root, official, expectedSha256 }).errors);
   return { ok: !errors.length, id, changed, added, deleted, errors, publishedIsNotApproval: true };
 }
@@ -271,10 +335,11 @@ export function check({ root, base, againstRoot, official, expectedSha256 }) {
   if (againstRoot !== undefined && overlaps(r, target)) fail('againstRoot must be separate from the Git baseline workspace');
   if (!/^[a-f0-9]{40}$/.test(base || '')) fail('base must be an exact 40-character Git commit');
   if (git(r, ['rev-parse', base + '^{commit}']).trim() !== base) fail('base is not a commit');
-  const names = git(r, ['ls-tree', '-r', '--name-only', base, '--', 'data/material']).split('\n').filter(p => /^data\/material\/w\d{2}\.json$/.test(p));
-  if (!names.length) fail('baseline has no material weeks');
+  const names = git(r, ['ls-tree', '-r', '--name-only', base, '--', 'data/material', PROTOTYPES]).split('\n').filter(p => /^data\/material\/w\d{2}\.json$/.test(p) || p === PROTOTYPES);
+  if (!names.some(p => /^data\/material\/w\d{2}\.json$/.test(p))) fail('baseline has no material weeks');
   const before = new Map(names.map(rel => [rel, Buffer.from(git(r, ['show', base + ':' + safeRelative(rel)]))]));
-  const errors = weekChecks(before, currentFiles(target).weeks);
+  const current = currentFiles(target);
+  const errors = [...weekChecks(before, current.weeks), ...prototypeChecks(before.get(PROTOTYPES), current.prototypes, current.files)];
   if (official) errors.push(...guardOfficial({ root: target, official, expectedSha256 }).errors);
   return { ok: !errors.length, base, againstRoot: target, errors, publishedIsNotApproval: true };
 }

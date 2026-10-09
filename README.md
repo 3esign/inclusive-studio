@@ -1,5 +1,7 @@
 # Inclusive Studio
 
+**Maintaining the course · 9 October 2026:** start with [the project entry contract](AGENTS.md) and [current content and design rules](docs/smernice.md). They describe the stable five destinations, prototype records, the explicit attribution scope and the checkpoint/verification sequence. Earlier descriptions and measurement counts below are dated context, not a new instruction or current verification result.
+
 ## Current direction · 4 October 2026
 
 The teacher selects the main sequence of topics, records of delivered sessions and assigned work. The existing idea and research banks remain open collections; new entries do not become assignments automatically. [Research notes](docs/research-roadmap.md) point to the latest additions.

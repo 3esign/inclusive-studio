@@ -5,11 +5,17 @@ import os from 'node:os';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { execFileSync, spawnSync } from 'node:child_process';
-import { capture, verify, compare, restore, check, safeRelative, validateAbsoluteComponents, compareWeekRevisions, guardOfficial, LIMITS } from '../tools/course-checkpoint.mjs';
+import { capture, verify, compare, restore, check, safeRelative, validateAbsoluteComponents, compareWeekRevisions, comparePrototypeHistory, guardOfficial, LIMITS } from '../tools/course-checkpoint.mjs';
 
 const digest = b => crypto.createHash('sha256').update(b).digest('hex');
 const encode = o => JSON.stringify(o, null, 2) + '\n';
 const baseWeek = () => ({ n: 1, state: 'published', title: { sr: 'Original' }, updated: '2026-10-02', revizije: [{ v: 1, datum: '2026-10-02', sta: { sr: 'First recorded version' } }], blocks: [{ kind: 'exercise', ref: 'first' }] });
+const prototypeRegistry = () => ({ schema: 'course-prototypes/v1', sources: [{ id: 'fixture-source', recordedOn: '2026-10-09', description: { sr: 'Test izvor', en: 'Fixture source' } }], items: [{ id: 'prototype-one', title: { sr: 'Test rad', en: 'Fixture work' }, author: { name: 'Fixture Author', studentNumber: '49/24' }, attribution: { sourceId: 'fixture-source', fields: ['name', 'studentNumber'] }, originWeek: 1, medium: 'physical', status: 'brought', sourceId: 'fixture-source', description: { sr: 'Test', en: 'Fixture' }, photos: [{ id: 'photo-one', src: 'data/prototipovi/photo-one.jpg', sha256: digest('original photo'), width: 1, height: 1, alt: { sr: 'Test', en: 'Fixture' }, caption: { sr: 'Test', en: 'Fixture' }, sourceId: 'fixture-source' }] }], observations: [], revizije: [] });
+const correctedPrototype = before => {
+  const next = structuredClone(before), item = next.items[0]; item.author.name = 'Corrected Fixture Author';
+  next.revizije.push({ v: next.revizije.length + 1, datum: '2026-10-09', sta: { sr: 'Izričita ispravka', en: 'Explicit correction' }, sourceId: 'fixture-source', prototypeId: item.id, before: structuredClone(before.items[0]), after: structuredClone(item) });
+  return next;
+};
 const git = (root, ...args) => execFileSync('git', ['-C', root, ...args], { encoding: 'utf8', windowsHide: true, env: { ...process.env, GIT_OPTIONAL_LOCKS: '0' } }).trim();
 function fixture(t) {
   const parent = fs.mkdtempSync(path.join(os.tmpdir(), 'course-checkpoint-'));
@@ -257,4 +263,92 @@ test('explicit official manifest pins selected content separately from published
   assert.equal(compare({ ...f, id: snap.id, official, expectedSha256 }).ok, false);
   const changed = baseWeek(); changed.title.sr = 'Revised'; changed.revizije.push({ v: 2, datum: '2026-10-09', sta: 'changed' }); changed.updated = '2026-10-09'; f.write('data/material/w01.json', changed);
   assert.equal(check({ ...f, base: f.head, official, expectedSha256 }).ok, false, 'a revision is not teacher approval');
+});
+
+test('prototype history admits first registry and appended work, but corrections retain exact prior authorship', () => {
+  const before = prototypeRegistry();
+  assert.deepEqual(comparePrototypeHistory(null, before), []);
+  assert.deepEqual(comparePrototypeHistory(null, null), []);
+  for (const mutant of [null, { ...before, items: [null] }, { ...before, sources: [null] }, { ...before, observations: {} }, { ...before, revizije: [null] }]) {
+    assert.ok(comparePrototypeHistory(before, mutant).length, 'malformed/null records report problems without throwing');
+  }
+  const badCorrection = correctedPrototype(before); badCorrection.revizije[0].sta.sr = 42;
+  assert.ok(comparePrototypeHistory(before, badCorrection).length);
+  const added = structuredClone(before); added.items.push({ ...structuredClone(before.items[0]), id: 'prototype-two' });
+  assert.deepEqual(comparePrototypeHistory(before, added), []);
+  const silent = structuredClone(before); silent.items[0].author.studentNumber = '49/2024';
+  assert.match(comparePrototypeHistory(before, silent).join(' '), /explicit correction/);
+  assert.match(comparePrototypeHistory(before, { ...before, items: [] }).join(' '), /removed/);
+  const corrected = correctedPrototype(before);
+  assert.deepEqual(comparePrototypeHistory(before, corrected), []);
+  assert.equal(corrected.revizije[0].before.author.name, 'Fixture Author');
+  assert.equal(corrected.items[0].author.studentNumber, '49/24', 'identifiers are not normalized');
+  const forged = structuredClone(corrected); forged.revizije[0].before.author.name = 'Invented earlier author';
+  assert.match(comparePrototypeHistory(before, forged).join(' '), /does not match baseline/);
+  const broken = correctedPrototype(corrected); broken.revizije[1].after.description.sr = 'changed'; broken.items[0] = structuredClone(broken.revizije[1].after); broken.revizije[1].before.author.name = 'Unrelated author';
+  assert.match(comparePrototypeHistory(corrected, broken).join(' '), /broken correction history|does not match baseline/);
+  for (const key of ['sources', 'observations', 'revizije']) {
+    const old = structuredClone(corrected); if (key === 'observations') old.observations.push({ id: 'real-record' });
+    const next = structuredClone(old); next[key] = [];
+    assert.match(comparePrototypeHistory(old, next).join(' '), new RegExp(key + ' prefix'));
+  }
+});
+
+test('snapshot comparison preserves prototype photo bytes even after a documented replacement', t => {
+  const f = fixture(t), before = prototypeRegistry(); f.write('data/prototipovi.json', before); f.write(before.items[0].photos[0].src, 'original photo');
+  const snapshot = capture(f), next = correctedPrototype(before);
+  const photo = next.items[0].photos[0]; photo.src = 'data/prototipovi/photo-two.jpg'; photo.sha256 = digest('new photo');
+  next.revizije[0].after = structuredClone(next.items[0]);
+  f.write('data/prototipovi.json', next); f.write(photo.src, 'new photo');
+  assert.equal(compare({ ...f, id: snapshot.id }).ok, true);
+  fs.unlinkSync(path.join(f.root, before.items[0].photos[0].src));
+  assert.match(compare({ ...f, id: snapshot.id }).errors.join(' '), /historical photo missing\/changed/);
+  f.write(before.items[0].photos[0].src, 'original photo'); f.write(photo.src, 'corrupted photo');
+  assert.equal(compare({ ...f, id: snapshot.id }).ok, false);
+  f.write(photo.src, 'new photo'); f.write('data/prototipovi.json', { ...next, items: [] });
+  assert.equal(compare({ ...f, id: snapshot.id }).ok, false);
+  for (const mutant of [null, { ...next, items: [null] }, { ...next, observations: {} }]) {
+    f.write('data/prototipovi.json', mutant);
+    assert.equal(compare({ ...f, id: snapshot.id }).ok, false, 'malformed registry is reported, not an unexpected TypeError');
+  }
+  fs.unlinkSync(path.join(f.root, 'data/prototipovi.json'));
+  assert.match(compare({ ...f, id: snapshot.id }).errors.join(' '), /missing or invalid registry/);
+});
+
+test('Git baseline allows first prototypes and checks the restored registry and assets rather than live files', t => {
+  const f = fixture(t), first = capture(f), registry = prototypeRegistry();
+  f.write('data/prototipovi.json', registry); f.write(registry.items[0].photos[0].src, 'original photo');
+  assert.equal(check({ ...f, base: f.head }).ok, true, 'older course baseline need not contain a prototype registry');
+  assert.equal(compare({ ...f, id: first.id }).ok, true);
+  git(f.root, 'add', 'data/prototipovi.json', 'data/prototipovi');
+  git(f.root, '-c', 'user.name=Fixture', '-c', 'user.email=fixture@example.invalid', '-c', 'core.hooksPath=', 'commit', '-qm', 'prototype fixture');
+  const base = git(f.root, 'rev-parse', 'HEAD'), snapshot = capture(f), againstRoot = path.join(f.parent, 'prototype-copy');
+  restore({ ...f, id: snapshot.id, to: againstRoot });
+  const silent = structuredClone(registry); silent.items[0].author.name = 'Silent replacement'; f.write('data/prototipovi.json', silent);
+  assert.equal(check({ ...f, base }).ok, false);
+  assert.equal(check({ ...f, base, againstRoot }).ok, true);
+  fs.writeFileSync(path.join(againstRoot, registry.items[0].photos[0].src), 'changed target photo');
+  assert.equal(check({ ...f, base, againstRoot }).ok, false);
+});
+
+test('the course gate checks prototypes only in the restored copy and preserves legacy no-registry operation', t => {
+  for (const mode of ['legacy', 'reject', 'valid']) {
+    const f = fixture(t);
+    for (const file of ['course-checkpoint.mjs', 'course-verify.mjs']) f.write('tools/' + file, fs.readFileSync(new URL('../tools/' + file, import.meta.url), 'utf8'));
+    f.write('tests/fixture.test.mjs', "import test from 'node:test'; import assert from 'node:assert/strict'; import fs from 'node:fs'; test('restored fixture',()=>assert.ok(fs.existsSync('CHECKPOINT-RESTORE.json')));\n");
+    if (mode !== 'legacy') {
+      const registry = prototypeRegistry(); f.write('data/prototipovi.json', registry); f.write(registry.items[0].photos[0].src, 'original photo');
+      f.write('tools/prototipovi.mjs', `import fs from 'node:fs'; if(!fs.existsSync(new URL('../CHECKPOINT-RESTORE.json',import.meta.url))) throw Error('generator ran in live source'); console.log('restored-prototype-check'); process.exitCode=${mode === 'reject' ? 7 : 0};\n`);
+    }
+    const result = spawnSync(process.execPath, [path.join(f.root, 'tools/course-verify.mjs'), '--base', f.head, '--store', f.store], { cwd: f.root, encoding: 'utf8', windowsHide: true, timeout: 30000 });
+    assert.equal(result.error, undefined);
+    assert.equal(result.status, mode === 'reject' ? 1 : 0, result.stderr + result.stdout);
+    const report = JSON.parse(result.stdout);
+    assert.equal(report.prototypes.applicable, mode !== 'legacy');
+    assert.equal(report.prototypes.ok, mode !== 'reject');
+    assert.equal(report.testExit, mode === 'reject' ? null : 0);
+    if (mode !== 'legacy') assert.match(report.prototypes.output, /restored-prototype-check/);
+    assert.equal(report.copyStable, true); assert.equal(report.stable, true);
+    assert.equal(fs.existsSync(path.join(f.root, 'CHECKPOINT-RESTORE.json')), false);
+  }
 });

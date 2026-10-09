@@ -27,6 +27,7 @@ const DESC = {
   'udruzenje.html': 'Prostor za udruženje: protokol probavanja prototipova, prava korisnika i bezbednosna provera.',
   'predmet.html': 'Predmet, ispit i način ocenjivanja: A3 radna sveska, štampana i digitalna.',
   'predavanje.html': 'Gradivo časa kao predavanje: slajdovi, mere i pitanja.',
+  'prototipovi.html': 'Doneti studentski prototipovi: fotografije, autori i kratak opis radova započetih na prvom času.',
   'laboratorija.html': 'Ogledi pristupačnosti u pregledaču: šta se oseća, šta se meri, šta se zaključuje.',
   'igracka.html': 'Igračka koja uči prostor: referentne igračke i način analize.',
   'godista.html': 'Granice po godištima: šta je zakon, šta standard, šta podatak.',
