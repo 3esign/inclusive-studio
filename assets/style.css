@@ -711,7 +711,7 @@ h1,h2{text-wrap:balance}
 
 /* --- the sheets: task, hand-in, check — one card, three facts --- */
 .task-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1rem 0}
-.task-card{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--ink);padding:1.25rem 1.4rem;display:flex;flex-direction:column;gap:.5rem}
+.task-card{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--ink);padding:1.25rem 1.4rem;display:flex;flex-direction:column;gap:.5rem;min-width:0;overflow-wrap:anywhere}
 .task-card.is-next{border-left-color:var(--muted);background:var(--paper)}
 .task-card.is-draft{border-left-style:dashed}
 .task-card h3{margin:.2rem 0 0;font-size:1.3rem}
@@ -772,3 +772,57 @@ h1,h2{text-wrap:balance}
   .task-card,.wait-list li,.bring-list li,.plan-list>li{break-inside:avoid}
   .protocol-figure{max-width:70%}
 }
+
+/* The held lesson is an illustrated reading spread, not a half-empty card grid.
+   This scope preserves the approved cover and the other course pages. */
+body[data-view="flow"] .flow-intro{align-items:end;padding-bottom:1.5rem;border-bottom:1px solid var(--line);margin-bottom:1.6rem}
+.flow-intro h1{font-size:clamp(2rem,3.1vw,3rem);margin:0;letter-spacing:-.045em}
+.flow-intro .eyebrow{margin-bottom:.65rem}
+.flow-intro>.lede{max-width:43ch;font-size:1rem;line-height:1.6}
+.held-records{display:grid;gap:4rem}
+.held-record{min-width:0}
+.lesson-heading{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;margin-bottom:1.8rem}
+.lesson-heading .eyebrow{display:flex;gap:.8rem;flex-wrap:wrap;align-items:center;font-size:.78rem;margin:0 0 1rem}
+.lesson-heading h3{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(1.8rem,3vw,2.65rem);line-height:1.13;letter-spacing:-.03em;max-width:27ch;margin:0}
+.lesson-state{font-family:'Segoe UI',system-ui,sans-serif;text-transform:uppercase;padding:.25rem .55rem;background:var(--ink);color:var(--paper);font-size:.7rem;letter-spacing:.08em}
+.lesson-number{font-size:5rem;line-height:1;letter-spacing:-.08em;font-weight:300;color:var(--muted);font-variant-numeric:tabular-nums}
+.lesson-spread{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:clamp(1.5rem,4vw,4.5rem);align-items:start}
+.held-record:not(.has-photos) .lesson-spread{grid-template-columns:minmax(0,780px)}
+.lesson-gallery{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:1rem;align-items:start}
+.lesson-photo{margin:0;min-width:0}
+.lesson-photo-detail{padding-top:4rem}
+.lesson-photo a{display:block;background:var(--wash);outline-offset:5px}
+.lesson-photo img{display:block;width:100%;height:auto;aspect-ratio:1400/2486;object-fit:contain}
+.lesson-photo figcaption{display:grid;grid-template-columns:1.7rem minmax(0,1fr);gap:.25rem;margin-top:.8rem;font-size:.8rem;line-height:1.55;color:var(--muted)}
+.lesson-photo figcaption>span:first-child{font-variant-numeric:tabular-nums;color:var(--ink)}
+.lesson-reading{min-width:0;max-width:64ch}
+.lesson-reading>.eyebrow{margin-bottom:.3rem}
+.lesson-results{list-style:none;padding:0;margin:0;counter-reset:outcome}
+.lesson-results li{padding:1rem 0 1rem 2rem;border-bottom:1px solid var(--line);position:relative;line-height:1.65;margin:0;counter-increment:outcome}
+.lesson-results li:before{content:counter(outcome,decimal-leading-zero);position:absolute;left:0;top:1.25rem;font-size:.7rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.lesson-source{font-size:.85rem;color:var(--muted);margin:1rem 0 0}
+.lesson-assignment{background:var(--wash);padding:1.25rem 1.4rem;border-left:3px solid var(--ink);font-size:.94rem;line-height:1.65;margin-top:1.6rem}
+.lesson-assignment .eyebrow{margin-bottom:.6rem}.lesson-assignment ul{padding-left:1.1rem;margin:.2rem 0 1rem}
+.lesson-assignment>a{display:inline-flex;min-height:44px;align-items:center;font-size:.85rem}
+.lesson-provenance{font-size:.85rem;color:var(--muted);margin-top:1.5rem;overflow-wrap:anywhere}
+.lesson-provenance summary{font-weight:400}.lesson-provenance p,.lesson-provenance ol{margin-bottom:1rem}
+body[data-view="flow"] .onward{margin:3.5rem 0}
+body[data-view="flow"] .onward a{padding:1.5rem 1.6rem}
+body[data-view="flow"] .onward b{font-family:Georgia,serif;font-weight:400;font-size:1.65rem}
+@media(max-width:1000px){.lesson-spread{gap:2rem;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.lesson-gallery{grid-template-columns:minmax(0,1fr)}.lesson-photo-detail{padding-top:0;max-width:70%}.lesson-photo img{max-height:650px}}
+@media(max-width:720px){body[data-view="flow"] .shell{padding-top:1.25rem}.flow-intro{display:block!important}.flow-intro>.lede{margin-top:.85rem;font-size:.95rem}.lesson-heading{gap:.5rem;margin-bottom:1.25rem}.lesson-heading h3{font-size:1.9rem}.lesson-number{font-size:3.2rem}.lesson-heading .eyebrow{gap:.6rem;font-size:.72rem;margin-bottom:.8rem}.lesson-spread{grid-template-columns:minmax(0,1fr);gap:2rem}.lesson-gallery{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:.75rem}.lesson-photo-detail{max-width:none;padding-top:2.5rem}.lesson-photo figcaption{grid-template-columns:minmax(0,1fr);font-size:.77rem}.lesson-photo figcaption>span:first-child{font-size:.7rem}.lesson-reading{max-width:none}.lesson-assignment{padding:1rem}.lesson-provenance{margin-bottom:0}body[data-view="flow"] .onward{margin:2.5rem 0}}
+@media(max-width:360px){.lesson-number{display:none}.lesson-heading h3{font-size:1.7rem}.flow-intro h1{font-size:2rem}}
+@media print{.lesson-spread{grid-template-columns:1fr 1fr;gap:1.5rem}.lesson-photo-detail{padding-top:1rem}.lesson-provenance,.lesson-reading>.actions{display:none}.lesson-heading{break-after:avoid}.lesson-photo{break-inside:avoid}}
+
+/* Preparation keeps its status while the actual prototype is visible at the entrance. */
+.next-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,340px);grid-template-areas:'heading photo' 'copy photo';gap:1.3rem 4rem;align-items:start;border-bottom:1px solid var(--line);padding-bottom:2.5rem;margin-bottom:2rem}
+.next-intro-heading{grid-area:heading;min-width:0}.next-intro-copy{grid-area:copy;min-width:0;align-self:start}.next-intro h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.15rem,3.7vw,3.8rem);font-weight:400;letter-spacing:-.035em;line-height:1.12;max-width:20ch}
+.next-intro-copy .lede{max-width:58ch;font-size:1.06rem;line-height:1.7}
+/* Enlarged text and spacing must wrap inside the preparation's narrow tracks. */
+body[data-view=next] :is(.next-intro .idea-card-meta,.floor .idea-card,.bring-list,.plan-list){min-width:0;overflow-wrap:anywhere}
+body[data-view=next] :is(.bring-list,.plan-list){grid-template-columns:minmax(0,1fr)}
+body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width:0}
+.next-material-photo{grid-area:photo;margin:0;min-width:0}
+.next-material-photo img{display:block;width:100%;height:auto;background:var(--wash)}
+.next-material-photo figcaption{font-size:.84rem;color:var(--muted);line-height:1.6;margin-top:.7rem;max-width:48ch}
+@media(max-width:760px){.next-intro{grid-template-columns:minmax(0,1fr);grid-template-areas:'heading' 'photo' 'copy';gap:1.3rem;padding-bottom:1.5rem}.next-intro h1{font-size:2.25rem;margin-bottom:.8rem}.next-material-photo{max-width:320px;width:100%;justify-self:center}.next-intro-copy .lede{font-size:1rem}.next-intro .actions{margin-top:1rem}}

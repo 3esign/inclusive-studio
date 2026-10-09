@@ -28,6 +28,31 @@ function fixture(t) {
   return { root, store, parent, head, write };
 }
 
+test('CLI invoked through a project junction runs capture and verify while imports remain inert', t => {
+  const f = fixture(t), alias = path.join(f.parent, 'linked-site');
+  f.write('tools/course-checkpoint.mjs', fs.readFileSync(new URL('../tools/course-checkpoint.mjs', import.meta.url), 'utf8'));
+  fs.symlinkSync(f.root, alias, process.platform === 'win32' ? 'junction' : 'dir');
+  try {
+    const tool = path.join(alias, 'tools/course-checkpoint.mjs');
+    const run = args => spawnSync(process.execPath, [tool, ...args], { cwd: alias, encoding: 'utf8', windowsHide: true, timeout: 15000 });
+    const captured = run(['capture', '--root', '.', '--store', f.store]);
+    assert.equal(captured.error, undefined); assert.equal(captured.status, 0, captured.stderr);
+    assert.ok(captured.stdout.trim(), 'a CLI junction entry must perform work, not silently exit zero');
+    const snapshot = JSON.parse(captured.stdout);
+    assert.equal(snapshot.ok, true); assert.equal(snapshot.head, f.head);
+    assert.equal(fs.existsSync(path.join(f.store, 'manifests', snapshot.id + '.json')), true);
+    const checked = run(['verify', '--root', '.', '--store', f.store, '--id', snapshot.id]);
+    assert.equal(checked.error, undefined); assert.equal(checked.status, 0, checked.stderr);
+    assert.equal(JSON.parse(checked.stdout).ok, true);
+    const importer = path.join(f.parent, 'import-only.mjs');
+    fs.writeFileSync(importer, "import './linked-site/tools/course-checkpoint.mjs'; console.log('import-only');\n");
+    const imported = spawnSync(process.execPath, [importer], { encoding: 'utf8', windowsHide: true, timeout: 5000 });
+    assert.equal(imported.error, undefined); assert.equal(imported.status, 0, imported.stderr);
+    assert.equal(imported.stdout.trim(), 'import-only');
+    assert.equal(fs.readFileSync(path.join(f.root, 'index.html'), 'utf8'), 'existing index');
+  } finally { fs.unlinkSync(alias); }
+});
+
 test('capture binds tracked, dirty and relevant untracked bytes without changing source or index', t => {
   const f = fixture(t); f.write('index.html', 'dirty index'); f.write('sledeci.html', 'new draft page');
   f.write('data/.env', 'never copy'); f.write('data/secrets.json', 'never copy');

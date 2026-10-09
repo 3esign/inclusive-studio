@@ -309,6 +309,12 @@ function cli(args) {
   const result = ({ capture, verify, compare, restore, check })[command](opts);
   console.log(JSON.stringify(result, null, 2)); if (!result.ok) process.exitCode = 1;
 }
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+function isCliEntry() {
+  if (!process.argv[1]) return false;
+  // Node resolves the module URL through a junction; argv can retain its alias.
+  try { return fs.realpathSync(process.argv[1]) === fs.realpathSync(fileURLToPath(import.meta.url)); }
+  catch { return false; }
+}
+if (isCliEntry()) {
   try { cli(process.argv.slice(2)); } catch (e) { console.error(JSON.stringify({ ok: false, error: e.message })); process.exitCode = 1; }
 }

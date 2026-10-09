@@ -6,14 +6,21 @@
 
 import { $, esc, tr, tx, loadJSON, mount, announce, link } from './core.js';
 import { validateTok } from './tok-core.js';
-import { weekFile, validateWeek } from './material.js';
+import { weekFile, validateWeek, safeHref } from './material.js';
 import { exercises } from './exercises.js';
 
 let data = null; // { tok, w02, w03 }
 
 const ex = id => exercises.find(item => item.id === id);
 
-const VRSTA_LABEL = { cas: 'Čas', tema: 'Tema', protokol: 'Protokol', dogadjaj: 'Događaj' };
+const VRSTA_LABEL = { cas: { en: 'Class', sr: 'Čas' }, tema: { en: 'Theme', sr: 'Tema' }, protokol: { en: 'Protocol', sr: 'Protokol' }, dogadjaj: { en: 'Event', sr: 'Događaj' } };
+
+function preparationPhoto(week) {
+  const photo = week?.blocks?.find(block => block.kind === 'image');
+  const src = photo && safeHref(photo.src);
+  if (!src) return '';
+  return `<figure class="next-material-photo"><img src="${esc(src)}" alt="${esc(tx(photo.alt))}" width="1400" height="2486" loading="eager" decoding="async"><figcaption>${esc(tx(photo.caption))}</figcaption></figure>`;
+}
 
 // One exercise from the bank: the task, what is handed in, how it is checked.
 function exerciseCard(id, { draft = false } = {}) {
@@ -38,7 +45,7 @@ function floorView(tok) {
   return `<section class="floor" aria-labelledby="floor-title">
   <div class="section-heading"><div><p class="eyebrow">${tr('Where we start', 'Odakle polazimo')}</p><h2 id="floor-title">${tr('The class before, and what it left', 'Prethodni čas i ono što je ostavio')}</h2></div></div>
   <div class="idea-grid"><article class="idea-card">
-    <p class="idea-card-meta"><time>${esc(last.odrzan)}</time> · ${esc(VRSTA_LABEL[last.vrsta] || last.vrsta)} · <a href="index.html?w=${last.nedelja}">${tr('week', 'nedelja')} ${last.nedelja}</a></p>
+    <p class="idea-card-meta"><time>${esc(last.odrzan)}</time> · ${esc(tx(VRSTA_LABEL[last.vrsta] || last.vrsta))} · <a href="index.html?w=${last.nedelja}">${tr('week', 'nedelja')} ${last.nedelja}</a></p>
     <h3>${esc(tx(last.naslov))}</h3>
     <ul class="cem-results">${items}</ul>
     <p class="idea-card-meta"><a href="index.html">${tr('All held classes', 'Svi održani časovi')} →</a></p>
@@ -74,7 +81,7 @@ function planView(w02) {
   <ol class="plan-list">
     ${materials.length ? `<li><div><h3>${tr('The material order', 'Redosled materijala')}</h3><ul>${materials.map(item => `<li>${esc(tx(item))}</li>`).join('')}</ul></div><p class="idea-card-meta">${tr('Source', 'Izvor')}: data/material/w02.json</p></li>` : ''}
     ${measures.length ? `<li><div><h3>${tr('Two numbers measured on the object', 'Dva broja koja se mere na predmetu')}</h3><ul class="measure-list">${measures.map(block => `<li><b>${esc(block.value)}</b> — ${esc(tx(block.text))}<span class="idea-card-meta">${esc(tx(block.instrument))}</span></li>`).join('')}</ul></div><p class="idea-card-meta">${tr('Source', 'Izvor')}: data/material/w02.json — mere; EN 71-1</p></li>` : ''}
-    ${sevenText ? `<li><div><h3>${tr('Seven principles, on one’s own prototype', 'Sedam principa, na sopstvenom prototipu')}</h3><p>${esc(tx(sevenText))}</p></div><p class="idea-card-meta">${tr('Source', 'Izvor')}: data/material/w02.json · <a href="predavanje.html?w=2">${tr('the lecture', 'predavanje')} →</a></p></li>` : ''}
+    ${sevenText ? `<li><div><h3>${tr('Seven principles, on one’s own prototype', 'Sedam principa, na sopstvenom prototipu')}</h3><p>${esc(tx(sevenText))}</p></div><p class="idea-card-meta">${tr('Source', 'Izvor')}: data/material/w02.json · <a href="predavanje.html?w=2&amp;preview=1">${tr('Working preview', 'Radni pregled')} →</a></p></li>` : ''}
   </ol>
   ${decision ? `<div class="notice decision-note"><p><b>${tr('What each team records', 'Šta svaki tim upisuje')}:</b> ${esc(tx(decision.text))}</p></div>` : ''}
   </section>`;
@@ -90,7 +97,7 @@ function sheetView(tok, w02, w03) {
     ${tema ? `<article class="task-card is-next"><p class="idea-card-meta">${tr('The next sheet', 'Sledeći list')} · ${tr('week', 'nedelja')} ${tema.nedelja} · ${tr('draft', 'nacrt')}</p><h3>${esc(tx(tema.naslov))}</h3><p>${esc(tx(tema.kratko))}</p><p class="idea-note"><b>${tr('Waiting for', 'Čeka')}:</b> ${esc(tx(tema.ceka))}</p><p class="idea-card-meta">${tr('Source', 'Izvor')}: ${esc(tema.izvor)}</p></article>` : ''}
     ${w03 ? ['hands-and-tolerances', 'measure-your-faculty'].map(id => exerciseCard(id, { draft: true })).join('') : ''}
   </div>
-  <p class="help"><a href="assets/sablon-a3.svg" download>${tr('A3 sheet template', 'Šablon A3 lista')} ↓</a> · <a href="vezbe.html">${tr('the whole exercise bank', 'cela banka vežbi')} →</a>${w02 ? ` · <a href="index.html?w=2">${tr('the whole week’s material', 'celo gradivo nedelje')} →</a>` : ''}</p></section>`;
+  <p class="help"><a href="assets/sablon-a3.svg" download>${tr('A3 sheet template', 'Šablon A3 lista')} ↓</a> · <a href="vezbe.html">${tr('the whole exercise bank', 'cela banka vežbi')} →</a>${w02 ? ` · <a href="predavanje.html?w=2&amp;preview=1">${tr('Working preview', 'Radni pregled')} →</a>` : ''}</p></section>`;
 }
 
 function protocolView(tok) {
@@ -124,14 +131,15 @@ function view() {
   const dateNote = w02?.dateStatus === 'proposed'
     ? `<span class="tag">${tr('date proposed', 'datum predložen')}</span>`
     : `<span class="tag">${tr('date set', 'datum potvrđen')}</span>`;
-  return `<div class="page-top week-top"><div>
+  return `<div class="next-intro"><div class="next-intro-heading">
     <p class="eyebrow">${tr('Preparation · week', 'Priprema · nedelja')} ${cas?.nedelja ?? ''}</p>
     <h1>${esc(tx(w02?.title || cas?.naslov))}</h1>
+    <p class="idea-card-meta">${dateNote} · ${tr('prepared — not yet held', 'pripremljeno — još nije održano')}</p>
+  </div>
+  ${preparationPhoto(w02)}
+  <div class="next-intro-copy">
     ${w02?.aim ? `<p class="lede">${esc(tx(w02.aim))}</p>` : ''}
-    <div class="actions"><a class="button" href="index.html?w=2">${tr('The week’s material', 'Gradivo nedelje')} →</a><a class="button secondary" href="predavanje.html?w=2">${tr('As a lecture', 'Kao predavanje')}</a><a class="button secondary" href="program.html">${tr('Calendar', 'Kalendar')}</a></div>
-  </div><div class="page-meta">
-    <span class="meta-label">${tr('Session', 'Čas')}</span><span>${cas ? `${tr('week', 'nedelja')} ${cas.nedelja}` : '—'}</span>
-    <span class="meta-label">${tr('State', 'Stanje')}</span><span>${dateNote} ${tr('prepared — not yet held', 'pripremljeno — još nije održano')}</span>
+    <div class="actions"><a class="button" href="predavanje.html?w=2&amp;preview=1">${tr('Working preview', 'Radni pregled')} →</a><a class="button secondary" href="program.html">${tr('Calendar', 'Kalendar')}</a></div>
   </div></div>
   ${floorView(tok)}
   ${bringView(w02)}

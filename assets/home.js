@@ -9,7 +9,7 @@ import { notices } from './course.js';
 import { MATERIAL_INDEX, weekFile, validateIndex, validateWeek, currentWeek, weekStats } from './material.js';
 import { resolveRefs, renderBlocks, weekLine } from './blocks.js';
 import { validateTok } from './tok-core.js';
-import { exercises } from './exercises.js';
+import { heldIntro, heldSection } from './held-record.js';
 
 const params = new URLSearchParams(location.search);
 const showDrafts = params.get('draft') === '1';
@@ -133,53 +133,10 @@ function weekRender() {
 
 let flow = null;
 
-const VRSTA_LABEL = {
-  cas: { en: 'Class', sr: 'Čas' },
-  tema: { en: 'Theme', sr: 'Tema' },
-  protokol: { en: 'Protocol', sr: 'Protokol' },
-  dogadjaj: { en: 'Event', sr: 'Događaj' }
-};
-
-const weekHref = item => (typeof item.nedelja === 'number' ? `index.html?w=${item.nedelja}` : null);
-
-// The A3 line of a held week: its exercise blocks, titled from the bank — the sheet that
-// goes into the exam workbook. Derived from the week file, never retold.
-function a3View(week) {
-  const blocks = (week?.blocks || []).filter(block => block.kind === 'exercise');
-  if (!blocks.length) return '';
-  const items = blocks.map(block => {
-    const known = exercises.find(exercise => exercise.id === block.ref);
-    const title = known ? tx(known.title) : block.ref;
-    return `<li><b>${esc(title)}</b>${block.text ? ` — ${esc(tx(block.text))}` : ''}</li>`;
-  }).join('');
-  return `<div class="a3-assignment"><p class="idea-card-meta">${tr('The A3 sheet of this week — a page of the exam workbook', 'A3 list ove nedelje — strana radne sveske za ispit')}</p><ul>${items}</ul></div>`;
-}
-
-function heldCard(item, week) {
-  const results = item.rezultati.map(result =>
-    `<li>${esc(tx(result.sta))}<span class="idea-card-meta">— ${esc(result.izvor)}</span></li>`).join('');
-  const weekLink = weekHref(item);
-  return `<article class="idea-card held-card">
-    <p class="idea-card-meta"><time>${esc(item.odrzan)}</time> · ${esc(tx(VRSTA_LABEL[item.vrsta] || { sr: item.vrsta }))}${weekLink ? ` · <a href="${esc(weekLink)}">${tr('week', 'nedelja')} ${item.nedelja}</a>` : ''}</p>
-    <h3>${esc(tx(item.naslov))}</h3>
-    ${week ? a3View(week) : ''}
-    <ul class="cem-results">${results}</ul>
-    <p class="idea-card-meta">${tr('Source', 'Izvor')}: ${esc(item.izvor)}${weekLink ? ` · <a href="${esc(weekLink)}">${tr('the whole week', 'cela nedelja')} →</a>` : ''}</p>
-  </article>`;
-}
-
-// The exam format line comes from the subject manifest, not from memory.
-function examLine(verzije) {
-  const format = verzije?.predmet?.formatIspita;
-  if (!format) return '';
-  const nacin = Array.isArray(format.nacin) ? format.nacin.join(' + ') : (format.nacin || '');
-  return `<p>${tr('Every week adds one sheet to the exam workbook:', 'Svaka nedelja dodaje jedan list u radnu svesku za ispit:')} <b>${esc(format.oblik)}${nacin ? ` — ${esc(nacin)}` : ''}</b>.${tr(' The format is recorded in the subject manifest with its source.', ' Format je upisan u manifest predmeta sa svojim izvorom.')} <a href="predmet.html">${tr('The course and the marking', 'Predmet i ocenjivanje')} →</a></p>`;
-}
-
 // Helping material: what a student needs beside the held classes — honest, linked, visual.
 function helpingView() {
   return `<section class="helping" aria-labelledby="helping-title">
-  <div class="section-heading"><div><p class="eyebrow">${tr('Material that helps', 'Materijal koji pomaže')}</p><h2 id="helping-title">${tr('What you keep beside the workbook', 'Šta stoji uz svesku')}</h2></div></div>
+  <div class="section-heading"><div><p class="eyebrow">${tr('Material that helps', 'Materijal koji pomaže')}</p><h2 id="helping-title">${tr('For further work', 'Za dalji rad')}</h2></div></div>
   <div class="help-grid">
     <a class="help-card" href="assets/sablon-a3.svg" download><b>${tr('A3 sheet template', 'Šablon A3 lista')}</b><span>${tr('the blank sheet of the workbook, for print and for digital', 'prazan list radne sveske, za štampu i digitalno')}</span></a>
     <a class="help-card" href="vezbe.html"><b>${tr('Exercise bank', 'Banka vežbi')}</b><span>${tr('every exercise of the course, with limits and measures', 'sve vežbe predmeta, sa granicama i merama')}</span></a>
@@ -194,13 +151,13 @@ function helpingView() {
 // The standards a designer of inclusive space reads at a glance — our own diagrams.
 function standardsView() {
   const diagrams = [
-    { file: 'assets/vizuali/manevarski-prostor.svg', title: { sr: 'Manevraski prostor', en: 'Turning space' }, note: { sr: 'koliko mesta treba točku', en: 'how much room a wheel needs' } },
+    { file: 'assets/vizuali/manevarski-prostor.svg', title: { sr: 'Manevarski prostor', en: 'Turning space' }, note: { sr: 'prostor potreban za okretanje', en: 'space for turning' } },
     { file: 'assets/vizuali/rampa-standard.svg', title: { sr: 'Rampa po standardu', en: 'A ramp to standard' }, note: { sr: 'nagib, dužina, odmorište', en: 'slope, length, rest' } },
     { file: 'assets/vizuali/taktilne-staze.svg', title: { sr: 'Taktilne staze', en: 'Tactile paths' }, note: { sr: 'vođenje nogom i štapom', en: 'guiding foot and cane' } },
-    { file: 'assets/vizuali/pristupacni-toalet.svg', title: { sr: 'Pristupačan toalet', en: 'An accessible toilet' }, note: { sr: 'mere i grabljive tačke', en: 'measures and grip points' } }
+    { file: 'assets/vizuali/pristupacni-toalet.svg', title: { sr: 'Pristupačan toalet', en: 'An accessible toilet' }, note: { sr: 'dimenzije i rukohvati', en: 'dimensions and grab rails' } }
   ];
   return `<section class="standards" aria-labelledby="standards-title">
-  <div class="section-heading"><div><p class="eyebrow">${tr('Standards at a glance', 'Standardi na prvi pogled')}</p><h2 id="standards-title">${tr('Diagrams we drew ourselves', 'Dijagrami koje smo sami nacrtali')}</h2></div></div>
+  <div class="section-heading"><div><p class="eyebrow">${tr('Standards at a glance', 'Standardi na prvi pogled')}</p><h2 id="standards-title">${tr('Spatial relationships', 'Prostorni odnosi')}</h2></div></div>
   <div class="standards-grid">${diagrams.map(d => `<a class="standard-tile" href="resources.html"><img src="${d.file}" alt="${esc(tx(d.title))} — ${esc(tx(d.note))}" loading="lazy" width="480" height="360"><b>${esc(tx(d.title))}</b><span>${esc(tx(d.note))}</span></a>`).join('')}</div>
   <p class="help">${tr('Full set with measures: ', 'Ceo skup sa merama: ')}<a href="resources.html">${tr('the library', 'biblioteka')} →</a></p></section>`;
 }
@@ -208,12 +165,7 @@ function standardsView() {
 function landingView() {
   const tok = flow.tok;
   return `
-  <section id="odrzano" aria-labelledby="odrzano-title">
-    <div class="section-heading"><div><p class="eyebrow">${tr('Held in class', 'Održano na času')}</p><h2 id="odrzano-title">${tr('Classes that happened, with what they left', 'Časovi koji su se održali, sa onim što su ostavili')}</h2></div></div>
-    <p class="lede held-lede">${examLine(flow.verzije) || tr('Every held class is written down with its results and its sources — nothing else sits here.', 'Svaki održani čas je upisan sa rezultatima i izvorima — ništa drugo ne stoji ovde.')}</p>
-    <div class="idea-grid">${tok.odrzano.map(item => heldCard(item, flow.weeks.get(item.nedelja))).join('')}</div>
-    ${tok.odrzano.length === 0 ? `<p class="notice">${tr('No class has been held and recorded yet. When it is, it appears here with its results.', 'Nijedan čas još nije održan ni upisan. Kad se održi, pojavljuje se ovde sa rezultatima.')}</p>` : ''}
-  </section>
+  ${heldSection(tok, flow.weeks)}
   <nav class="onward" aria-label="${tr('Where the course goes next', 'Kuda predmet ide dalje')}">
     <a href="sledeci.html"><b>${tr('Next class', 'Sledeći čas')}</b><span>${tr('the preparation, on the shoulders of the last one', 'priprema, naslonjena na prethodni čas')} →</span></a>
     <a href="oblak.html"><b>${tr('Cloud of ideas', 'Oblak ideja')}</b><span>${tr('everything that still has no week', 'sve što još nema nedelju')} →</span></a>
@@ -229,6 +181,10 @@ function landingRender() {
   if (!flow) return;
   const host = $('#landing-view');
   if (host) host.innerHTML = landingView();
+  const intro = $('#held-intro');
+  if (intro) intro.innerHTML = heldIntro();
+  const footnote = $('#held-footnote');
+  if (footnote) footnote.textContent = tr('The next class and ideas in development have separate pages. The class record retains its sources and earlier editions.', 'Priprema sledećeg časa i ideje u razvoju imaju zasebne strane. Zapis časa čuva izvore i ranija izdanja.');
 }
 
 async function loadLanding() {

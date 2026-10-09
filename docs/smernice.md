@@ -48,7 +48,7 @@ Traka toka u zaglavlju svake strane štampa brojeve iz `data/tok.json` — gener
 
 1. Podaci prvo: `data/tok.json` (šema v2) i `data/material/wNN.json`; validator mora proći.
 2. `node tools/shells.mjs` — ljuska (navigacija, traka, brend, podnožje, naslovi) se regeneriše, nikad ne piše ručno.
-3. `node --test` — 163 testa; promena testa se pregleda: ništa se ne labavi bez razloga.
+3. `npm run verify:course -- --base <početni-puni-Git-SHA> --store <privatni-store-van-sajta>` — testira zasebnu vraćenu kopiju checkpointa; promena testa se pregleda, ništa se ne labavi bez razloga.
 4. Dokaz nad stvarnim prikazom: 390/768/1440, bez horizontalnog prelivanja, konzola čista, slike učitane.
 5. `data/verzije.json` (nove stavke `istorija` + registar strana), `LOG.md` (append), `docs/smernice.md` ako se smernica promenila.
 6. Objava: commit → push → Pages build → živi dokaz na 3esign.github.io.
@@ -57,3 +57,13 @@ Traka toka u zaglavlju svake strane štampa brojeve iz `data/tok.json` — gener
 
 Rečenica · Laž · Oduzimanje · Hijerarhija · Kretanje · Test golog ekrana · Ko može.
 Ako bilo koje pitanje nema odgovora — nije gotovo.
+
+## Slika kao deo gradiva · 09.10.2026.
+
+Prikaz PUD-a je dokumentarna radna sveska: mirna svetla podloga, tamnozelena struktura, boje stvarnih predmeta na fotografijama. Naslovi pojedinačnih lekcija koriste sistemsko serifno pismo, a tekst i kontrole čitljiv sans-serif. Ove dve uloge su namerna projektna odluka; nijedan novi font se ne preuzima. Dobra postojeća 3D naslovna se čuva.
+
+Fotografija gradiva nije proizvoljna dekoracija niti dokaz da je fotografisana na času. Prikazuje se uz originalni opis i natpis, sa vezom ka celom gradivu. Portretni kadar predmeta se čuva bez odsecanja mehanizma. Prva relevantna fotografija ima prednost pri učitavanju. Na telefonu dolazi posle kratke identifikacije časa, pre dugih izveštaja i administrativnih objašnjenja. Postojanje slike na disku ili HTTP 200 ne potvrđuje da je student stvarno vidi.
+
+`assets/held-record.js` izvodi pregled održanog časa iz već postojećih podataka i fotografija. `node tools/held-baseline.mjs` osvežava srpski statični prikaz istim rendererom; zatim se po potrebi pokreće `tools/shells.mjs`. Izvornici `wNN.json` se zbog promene kompozicije ne prepravljaju. Novi datum održavanja se ne izvodi iz današnje objave sajta.
+
+Proveriti stvarni put: početna strana → vidljiva fotografija i njen opis → gradivo → povratak; zasebno proveriti pripremu i označeni radni pregled. Provera uključuje 320 px, srpski i engleski, ugašen JavaScript i uvećan tekst. Tehnički lokatori ostaju u proširivom zapisu izvora; vodeći studentski tekst koristi razumljive nazive.
