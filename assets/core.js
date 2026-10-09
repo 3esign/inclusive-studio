@@ -11,13 +11,15 @@ export const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&':
 
 export const NAV = [
   { id: 'cover', href: 'naslovna.html', group: 'primary', en: 'Cover', sr: 'Naslovna' },
-  { id: 'flow', href: 'index.html', group: 'primary', en: 'Course flow', sr: 'Tok predmeta' },
-  { id: 'lecture', href: 'predavanje.html', group: 'primary', en: 'Lecture', sr: 'Predavanje' },
-  { id: 'lab', href: 'laboratorija.html', group: 'primary', en: 'Labs', sr: 'Laboratorija' },
-  { id: 'toy', href: 'igracka.html', group: 'primary', en: 'The toy', sr: 'Igračka' },
-  { id: 'ages', href: 'godista.html', group: 'primary', en: 'By age', sr: 'Po godištima' },
-  { id: 'ideas', href: 'ideja.html', group: 'primary', en: 'Creative hub', sr: 'Creative hub' },
+  { id: 'flow', href: 'index.html', group: 'primary', en: 'Held in class', sr: 'Održano' },
+  { id: 'next', href: 'sledeci.html', group: 'primary', en: 'Next class', sr: 'Sledeći čas' },
+  { id: 'cloud', href: 'oblak.html', group: 'primary', en: 'Cloud of ideas', sr: 'Oblak ideja' },
   { id: 'partner', href: 'udruzenje.html', group: 'primary', en: 'The association', sr: 'Udruženje' },
+  { id: 'lecture', href: 'predavanje.html', group: 'archive', en: 'Lecture', sr: 'Predavanje' },
+  { id: 'lab', href: 'laboratorija.html', group: 'archive', en: 'Labs', sr: 'Laboratorija' },
+  { id: 'toy', href: 'igracka.html', group: 'archive', en: 'The toy', sr: 'Igračka' },
+  { id: 'ages', href: 'godista.html', group: 'archive', en: 'By age', sr: 'Po godištima' },
+  { id: 'ideas', href: 'ideja.html', group: 'archive', en: 'Creative hub', sr: 'Creative hub' },
   { id: 'studio', href: 'studio.html', group: 'archive', en: 'Project stages', sr: 'Faze projekta' },
   { id: 'task', href: 'zadatak.html', group: 'archive', en: 'An application for one person', sr: 'Aplikacija za jednu osobu' },
   { id: 'subject', href: 'predmet.html', group: 'archive', en: 'The course', sr: 'Predmet' },
@@ -36,14 +38,14 @@ export const NAV = [
    truth without scripting; this code only re-renders labels on a language change and lets
    the landing refresh the counts once the live data arrives. */
 export const FLOW_ZONES = [
-  { id: 'zacementirano', href: 'index.html#zacementirano', en: 'Cemented', sr: 'Zacementirano', kind: 'count' },
-  { id: 'sledeci-cas', href: 'index.html#sledeci-cas', en: 'Next class', sr: 'Sledeći čas', kind: 'nedelja' },
-  { id: 'oblak-ideja', href: 'index.html#oblak-ideja', en: 'Cloud of ideas', sr: 'Oblak ideja', kind: 'count' }
+  { id: 'odrzano', href: 'index.html#odrzano', en: 'Held', sr: 'Održano', kind: 'count' },
+  { id: 'sledeci-cas', href: 'sledeci.html', en: 'Next class', sr: 'Sledeći čas', kind: 'nedelja' },
+  { id: 'oblak-ideja', href: 'oblak.html', en: 'Cloud of ideas', sr: 'Oblak ideja', kind: 'count' }
 ];
 
 export function flowStripMarkup(counts = {}) {
   const zone = item => {
-    const value = counts[item.kind === 'nedelja' ? 'pilotNedelja' : item.id] ?? '';
+    const value = counts[item.kind === 'nedelja' ? 'sledeciNedelja' : item.id] ?? '';
     const suffix = item.kind === 'nedelja'
       ? (value !== '' ? ` · ${tr('week', 'nedelja')} ${esc(value)}` : '')
       : (value !== '' ? ` · ${esc(value)}` : '');
@@ -86,8 +88,9 @@ export function save(key, value) {
 export function drop(key) { try { localStorage.removeItem(PREFIX + key); return true; } catch { return false; } }
 
 /* ---------- language and role ---------- */
-const browserLanguage = typeof navigator !== 'undefined' && /^sr\b/i.test(navigator.language || '') ? 'sr' : 'en';
-export let lang = read('language', browserLanguage) === 'sr' ? 'sr' : 'en';
+// The course is taught in Serbian: the surface is Serbian by default, on every page,
+// from the first paint. English stays one deliberate toggle away, never a mixed baseline.
+export let lang = read('language', 'sr') === 'en' ? 'en' : 'sr';
 export let role = read('role', 'student') === 'partner' ? 'partner' : 'student';
 export const tr = (en, sr) => (lang === 'sr' ? sr : en);
 export const tx = object => (object && typeof object === 'object' ? object[lang] ?? object.en ?? '' : object ?? '');
@@ -176,7 +179,7 @@ export function chrome(view, pageTitle) {
     if (!flowCounts) {
       const stamped = {};
       for (const anchor of $$('.flow-strip a')) stamped[anchor.dataset.flow] = anchor.dataset.count;
-      flowCounts = { zacementirano: stamped.zacementirano ?? '', pilotNedelja: stamped['sledeci-cas'] ?? '', 'oblak-ideja': stamped['oblak-ideja'] ?? '' };
+      flowCounts = { odrzano: stamped.odrzano ?? '', sledeciNedelja: stamped['sledeci-cas'] ?? '', 'oblak-ideja': stamped['oblak-ideja'] ?? '' };
     }
     strip.innerHTML = flowStripMarkup(flowCounts);
   }
@@ -201,7 +204,7 @@ export function chrome(view, pageTitle) {
   if (band) band.innerHTML = `<strong>${esc(tx(identity.title))}</strong> <span>${esc(tx(identity.institution))} · ${esc(tx(identity.faculty))}</span> <span>${esc(tx(identity.term))}</span>`;
 
   const note = $('#footer-note');
-  if (note) note.textContent = tr('A shared architecture studio. A pilot, open to revision.', 'Zajednički arhitektonski studio. Pilot otvoren za doradu.');
+  if (note) note.textContent = tr('A shared studio, open to revision.', 'Zajednički studio otvoren za doradu.');
   const ethics = $('#footer-ethics');
   if (ethics) ethics.textContent = tr('Working together', 'Kako sarađujemo');
   const access = $('#footer-access');

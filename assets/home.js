@@ -1,5 +1,6 @@
-// The landing is the course flow: cemented classes in order (each with its material and
-// its A3 sheet of the exam workbook), the pilot for the next class, and the cloud of ideas.
+// The landing holds what the course has actually done: held classes in order, each with its
+// results, its material and its A3 sheet of the exam workbook — plus the material that helps.
+// The next class and the cloud of ideas have their own pages; here they are one line each.
 // A deep link (?w=N) still opens the week itself — published URLs keep working.
 // Data comes from data/tok.json and data/material/wNN.json; nothing is retold by hand here.
 
@@ -31,8 +32,7 @@ async function loadWeek() {
     const entry = (Number.isInteger(wanted) && entries.find(item => item.n === wanted)) || currentWeek(index);
     if (!entry) { state = { phase: 'empty', index }; return; }
     if (entry.state === 'draft' && !showDrafts && !(Number.isInteger(wanted) && wanted === entry.n)) {
-      state = { phase: 'empty', index };
-      return;
+      state = { phase: 'empty', index }; return;
     }
     const week = await loadJSON(weekFile(entry.n));
     const weekCheck = validateWeek(week);
@@ -85,7 +85,7 @@ function readyView() {
     <p class="eyebrow">${esc(weekLine(week))}</p>
     <h1>${esc(tx(week.title))}</h1>
     ${week.aim ? `<p class="lede">${esc(tx(week.aim))}</p>` : ''}
-    <div class="actions"><a class="button" href="${esc(taskHref)}">${tr('This week’s task', 'Zadatak nedelje')} →</a><a class="button secondary" href="predavanje.html?w=${week.n}">${tr('Open as a lecture', 'Otvori kao predavanje')}</a><a class="button secondary" href="index.html">${tr('Course flow', 'Tok predmeta')} ↑</a></div>
+    <div class="actions"><a class="button" href="${esc(taskHref)}">${tr('This week’s task', 'Zadatak nedelje')} →</a><a class="button secondary" href="predavanje.html?w=${week.n}">${tr('Open as a lecture', 'Otvori kao predavanje')}</a><a class="button secondary" href="index.html">${tr('Held classes', 'Održani časovi')} ↑</a></div>
   </div><div class="page-meta">
     <span class="meta-label">${tr('Material', 'Građa')}</span><span>${tr('Entries', 'Unosi')}: ${stats.blocks} · ${tr('Slides', 'Slajdovi')}: ${stats.slides} · ${tr('Words', 'Reči')}: ${stats.words}</span>
     <span class="meta-label">${tr('Updated', 'Dopunjeno')}</span><span>${esc(week.updated || '—')}${week.revizije?.length ? ` · v${week.revizije[week.revizije.length - 1].v}` : ''}</span>
@@ -98,7 +98,7 @@ function readyView() {
   ${picker()}
   <section class="week-foot"><h2>${tr('Everything else is behind this page', 'Sve ostalo je iza ove strane')}</h2>
   <ul class="mini-links">
-    ${[['index.html', tr('Course flow — cemented, pilot, cloud', 'Tok predmeta — zacementirano, pilot, oblak')], ['predmet.html', tr('The course, the record and the teacher', 'Predmet, zapisnik i nastavnik')], ['program.html', tr('Calendar of meetings', 'Kalendar susreta')], ['standard.html', tr('The semester project', 'Projekat semestra')], ['vezbe.html', tr('All exercises', 'Sve vežbe')], ['resources.html', tr('Library and sources', 'Biblioteka i izvori')], ['ideja.html', tr('Creative hub — sources, seeds, open questions', 'Creative hub — izvori, ideje, otvorena pitanja')], ['ucestvuj.html', tr('Optional public board — not a hand-in', 'Neobavezna javna tabla — nije predaja')], ['studio.html', tr('Project stages', 'Faze projekta')], ['uredi.html', tr('Teacher: prepare a week', 'Nastavnik: pripremi nedelju')]]
+    ${[['index.html', tr('Held classes with results', 'Održani časovi sa rezultatima')], ['sledeci.html', tr('Next class — the preparation', 'Sledeći čas — priprema')], ['oblak.html', tr('Cloud of ideas', 'Oblak ideja')], ['predmet.html', tr('The course, the record and the marking', 'Predmet, zapisnik i ocenjivanje')], ['program.html', tr('Calendar of meetings', 'Kalendar susreta')], ['standard.html', tr('The semester project', 'Projekat semestra')], ['vezbe.html', tr('All exercises', 'Sve vežbe')], ['resources.html', tr('Library and sources', 'Biblioteka i izvori')], ['ideja.html', tr('Creative hub — sources, seeds, open questions', 'Creative hub — izvori, ideje, otvorena pitanja')], ['ucestvuj.html', tr('Optional public board — not a hand-in', 'Neobavezna javna tabla — nije predaja')], ['studio.html', tr('Project stages', 'Faze projekta')], ['uredi.html', tr('Teacher: prepare a week', 'Nastavnik: pripremi nedelju')]]
       .map(([href, label]) => `<li><a class="mini-link" href="${href}">${esc(label)} <span aria-hidden="true">→</span></a></li>`).join('')}
   </ul></section>`;
 }
@@ -129,7 +129,7 @@ function weekRender() {
     : `<div class="page-top"><div><p class="eyebrow">${tr('Working week', 'Radna nedelja')}</p><h1>${tr('This week.', 'Radna nedelja.')}</h1><p class="loading">${tr('Reading the material…', 'Čitam građu…')}</p></div></div>`;
 }
 
-/* ==================== the landing: three shelves of the flow ==================== */
+/* ============= the landing: held classes, in order, with what helps ============= */
 
 let flow = null;
 
@@ -155,12 +155,12 @@ function a3View(week) {
   return `<div class="a3-assignment"><p class="idea-card-meta">${tr('The A3 sheet of this week — a page of the exam workbook', 'A3 list ove nedelje — strana radne sveske za ispit')}</p><ul>${items}</ul></div>`;
 }
 
-function cemCard(item, week) {
+function heldCard(item, week) {
   const results = item.rezultati.map(result =>
     `<li>${esc(tx(result.sta))}<span class="idea-card-meta">— ${esc(result.izvor)}</span></li>`).join('');
   const weekLink = weekHref(item);
-  return `<article class="idea-card">
-    <p class="idea-card-meta">${esc(tx(VRSTA_LABEL[item.vrsta] || { en: item.vrsta }))} · ${esc(item.odrzan)}${weekLink ? ` · <a href="${esc(weekLink)}">${tr('week', 'nedelja')} ${item.nedelja}</a>` : ''}</p>
+  return `<article class="idea-card held-card">
+    <p class="idea-card-meta"><time>${esc(item.odrzan)}</time> · ${esc(tx(VRSTA_LABEL[item.vrsta] || { sr: item.vrsta }))}${weekLink ? ` · <a href="${esc(weekLink)}">${tr('week', 'nedelja')} ${item.nedelja}</a>` : ''}</p>
     <h3>${esc(tx(item.naslov))}</h3>
     ${week ? a3View(week) : ''}
     <ul class="cem-results">${results}</ul>
@@ -168,60 +168,62 @@ function cemCard(item, week) {
   </article>`;
 }
 
-function pilotCard(item) {
-  const from = 'izIdeje' in item ? flow.tok.ideje.find(idea => idea.id === item.izIdeje) : null;
-  const weekLink = weekHref(item);
-  return `<article class="idea-card">
-    <p class="idea-card-meta">${esc(tx(VRSTA_LABEL[item.vrsta] || { en: item.vrsta }))}${weekLink ? ` · <a href="${esc(weekLink)}">${tr('week', 'nedelja')} ${item.nedelja}</a>` : ''}</p>
-    <h3>${esc(tx(item.naslov))}</h3>
-    ${item.kratko ? `<p>${esc(tx(item.kratko))}</p>` : ''}
-    <p class="idea-note"><b>${tr('Waiting for', 'Čeka')}:</b> ${esc(tx(item.ceka))}</p>
-    ${from ? `<p class="idea-card-meta">${tr('Pulled from the cloud', 'Izvučeno iz oblaka')}: ${esc(tx(from.naslov))} (${esc(from.datum)})</p>` : ''}
-    <p class="idea-card-meta">${tr('Source', 'Izvor')}: ${esc(item.izvor)}</p>
-  </article>`;
-}
-
-function ideaCard(item) {
-  const pulled = flow.tok.pilot.filter(pilot => pilot.izIdeje === item.id);
-  return `<article class="idea-card">
-    <p class="idea-card-meta">${esc(item.datum)}${pulled.length ? ` · ${tr('in pilot', 'u pilotu')}` : ''}</p>
-    <h3>${esc(tx(item.naslov))}</h3>
-    <p>${esc(tx(item.tekst))}</p>
-    <p class="idea-card-meta">${tr('Source', 'Izvor')}: ${esc(item.izvor)}</p>
-  </article>`;
-}
-
-function shelf(id, titleEn, titleSr, body, intro = '') {
-  return `<section id="${id}" aria-labelledby="${id}-title">
-    <div class="section-heading"><div><p class="eyebrow">${tr('Shelf', 'Polica')}</p><h2 id="${id}-title">${tr(titleEn, titleSr)}</h2></div></div>
-    ${intro}
-    <div class="idea-grid">${body}</div>
-  </section>`;
-}
-
 // The exam format line comes from the subject manifest, not from memory.
 function examLine(verzije) {
   const format = verzije?.predmet?.formatIspita;
   if (!format) return '';
   const nacin = Array.isArray(format.nacin) ? format.nacin.join(' + ') : (format.nacin || '');
-  return `<p class="notice">${tr('Every week adds one sheet to the exam workbook:', 'Svaka nedelja dodaje jedan list u radnu svesku za ispit:')} <b>${esc(format.oblik)}${nacin ? ` — ${esc(nacin)}` : ''}</b>.${tr(' The format is recorded in the subject manifest with its source.', ' Format je upisan u manifest predmeta sa svojim izvorom.')} <a href="predmet.html">${tr('The course and the marking', 'Predmet i ocenjivanje')} →</a></p>`;
+  return `<p>${tr('Every week adds one sheet to the exam workbook:', 'Svaka nedelja dodaje jedan list u radnu svesku za ispit:')} <b>${esc(format.oblik)}${nacin ? ` — ${esc(nacin)}` : ''}</b>.${tr(' The format is recorded in the subject manifest with its source.', ' Format je upisan u manifest predmeta sa svojim izvorom.')} <a href="predmet.html">${tr('The course and the marking', 'Predmet i ocenjivanje')} →</a></p>`;
+}
+
+// Helping material: what a student needs beside the held classes — honest, linked, visual.
+function helpingView() {
+  return `<section class="helping" aria-labelledby="helping-title">
+  <div class="section-heading"><div><p class="eyebrow">${tr('Material that helps', 'Materijal koji pomaže')}</p><h2 id="helping-title">${tr('What you keep beside the workbook', 'Šta stoji uz svesku')}</h2></div></div>
+  <div class="help-grid">
+    <a class="help-card" href="assets/sablon-a3.svg" download><b>${tr('A3 sheet template', 'Šablon A3 lista')}</b><span>${tr('the blank sheet of the workbook, for print and for digital', 'prazan list radne sveske, za štampu i digitalno')}</span></a>
+    <a class="help-card" href="vezbe.html"><b>${tr('Exercise bank', 'Banka vežbi')}</b><span>${tr('every exercise of the course, with limits and measures', 'sve vežbe predmeta, sa granicama i merama')}</span></a>
+    <a class="help-card" href="resources.html"><b>${tr('Library and sources', 'Biblioteka i izvori')}</b><span>${tr('standards, readings and reference pages', 'standardi, čitanja i referentne strane')}</span></a>
+    <a class="help-card" href="godista.html"><b>${tr('Limits by age', 'Granice po godištima')}</b><span>${tr('what is law, what is standard, what is data', 'šta je zakon, šta standard, šta podatak')}</span></a>
+    <a class="help-card" href="program.html"><b>${tr('Calendar', 'Kalendar')}</b><span>${tr('meetings and deadlines of the semester', 'susreti i rokovi semestra')}</span></a>
+    <a class="help-card" href="predmet.html"><b>${tr('The course and the marking', 'Predmet i ocenjivanje')}</b><span>${tr('how the signed sheets count', 'kako se potpisani listovi vrednuju')}</span></a>
+    <a class="help-card" href="etika.html"><b>${tr('How we work together', 'Kako sarađujemo')}</b><span>${tr('the working rules: with people, with responsibility', 'pravila rada: sa ljudima, sa odgovornošću')}</span></a>
+  </div></section>`;
+}
+
+// The standards a designer of inclusive space reads at a glance — our own diagrams.
+function standardsView() {
+  const diagrams = [
+    { file: 'assets/vizuali/manevarski-prostor.svg', title: { sr: 'Manevraski prostor', en: 'Turning space' }, note: { sr: 'koliko mesta treba točku', en: 'how much room a wheel needs' } },
+    { file: 'assets/vizuali/rampa-standard.svg', title: { sr: 'Rampa po standardu', en: 'A ramp to standard' }, note: { sr: 'nagib, dužina, odmorište', en: 'slope, length, rest' } },
+    { file: 'assets/vizuali/taktilne-staze.svg', title: { sr: 'Taktilne staze', en: 'Tactile paths' }, note: { sr: 'vođenje nogom i štapom', en: 'guiding foot and cane' } },
+    { file: 'assets/vizuali/pristupacni-toalet.svg', title: { sr: 'Pristupačan toalet', en: 'An accessible toilet' }, note: { sr: 'mere i grabljive tačke', en: 'measures and grip points' } }
+  ];
+  return `<section class="standards" aria-labelledby="standards-title">
+  <div class="section-heading"><div><p class="eyebrow">${tr('Standards at a glance', 'Standardi na prvi pogled')}</p><h2 id="standards-title">${tr('Diagrams we drew ourselves', 'Dijagrami koje smo sami nacrtali')}</h2></div></div>
+  <div class="standards-grid">${diagrams.map(d => `<a class="standard-tile" href="resources.html"><img src="${d.file}" alt="${esc(tx(d.title))} — ${esc(tx(d.note))}" loading="lazy" width="480" height="360"><b>${esc(tx(d.title))}</b><span>${esc(tx(d.note))}</span></a>`).join('')}</div>
+  <p class="help">${tr('Full set with measures: ', 'Ceo skup sa merama: ')}<a href="resources.html">${tr('the library', 'biblioteka')} →</a></p></section>`;
 }
 
 function landingView() {
   const tok = flow.tok;
-  return [
-    shelf('zacementirano', 'Cemented — held classes, in order, with results', 'Zacementirano — održani časovi, redom, sa rezultatima',
-      tok.cem.map(item => cemCard(item, flow.weeks.get(item.nedelja))).join(''),
-      examLine(flow.verzije)),
-    shelf('sledeci-cas', 'Pilot for the next class', 'Pilot za sledeći čas',
-      tok.pilot.map(pilotCard).join('')),
-    shelf('oblak-ideja', 'Cloud of ideas — no week yet', 'Oblak ideja — još bez nedelje',
-      tok.ideje.map(ideaCard).join(''))
-  ].join('');
+  return `
+  <section id="odrzano" aria-labelledby="odrzano-title">
+    <div class="section-heading"><div><p class="eyebrow">${tr('Held in class', 'Održano na času')}</p><h2 id="odrzano-title">${tr('Classes that happened, with what they left', 'Časovi koji su se održali, sa onim što su ostavili')}</h2></div></div>
+    <p class="lede held-lede">${examLine(flow.verzije) || tr('Every held class is written down with its results and its sources — nothing else sits here.', 'Svaki održani čas je upisan sa rezultatima i izvorima — ništa drugo ne stoji ovde.')}</p>
+    <div class="idea-grid">${tok.odrzano.map(item => heldCard(item, flow.weeks.get(item.nedelja))).join('')}</div>
+    ${tok.odrzano.length === 0 ? `<p class="notice">${tr('No class has been held and recorded yet. When it is, it appears here with its results.', 'Nijedan čas još nije održan ni upisan. Kad se održi, pojavljuje se ovde sa rezultatima.')}</p>` : ''}
+  </section>
+  <nav class="onward" aria-label="${tr('Where the course goes next', 'Kuda predmet ide dalje')}">
+    <a href="sledeci.html"><b>${tr('Next class', 'Sledeći čas')}</b><span>${tr('the preparation, on the shoulders of the last one', 'priprema, naslonjena na prethodni čas')} →</span></a>
+    <a href="oblak.html"><b>${tr('Cloud of ideas', 'Oblak ideja')}</b><span>${tr('everything that still has no week', 'sve što još nema nedelju')} →</span></a>
+  </nav>
+  ${helpingView()}
+  ${standardsView()}`;
 }
 
 // The static baseline on the page is already true, so it is not traded for a loading line:
-// the live shelves replace it only when the data has arrived and passed its rules.
+// the live sections replace it only when the data has arrived and passed its rules.
 // If the fetch fails, the baseline stays and the live region says so.
 function landingRender() {
   if (!flow) return;
@@ -235,7 +237,7 @@ async function loadLanding() {
     const problems = validateTok(tok);
     if (problems.length) throw new Error(problems[0]);
     const weeks = new Map();
-    for (const item of tok.cem) {
+    for (const item of tok.odrzano) {
       if (typeof item.nedelja === 'number' && !weeks.has(item.nedelja)) {
         const week = await loadJSON(weekFile(item.nedelja));
         const check = validateWeek(week);
@@ -244,11 +246,11 @@ async function loadLanding() {
       }
     }
     flow = { tok, verzije, weeks };
-    const nextCas = tok.pilot.filter(item => item.vrsta === 'cas' && typeof item.nedelja === 'number')[0];
-    setFlowCounts({ zacementirano: tok.cem.length, pilotNedelja: nextCas ? nextCas.nedelja : '', 'oblak-ideja': tok.ideje.length });
-    announce(tr('The course flow loaded.', 'Tok predmeta je učitan.'));
+    const nextCas = tok.sledeci.filter(item => item.vrsta === 'cas' && typeof item.nedelja === 'number')[0];
+    setFlowCounts({ odrzano: tok.odrzano.length, sledeciNedelja: nextCas ? nextCas.nedelja : '', 'oblak-ideja': tok.ideje.length });
+    announce(tr('The held classes are loaded.', 'Održani časovi su učitani.'));
   } catch {
-    announce(tr('The flow data could not be fetched — the shelves on this page stay as written.', 'Podaci toka nisu mogli da se dohvate — police na ovoj strani ostaju kako su upisane.'));
+    announce(tr('The flow data could not be fetched — the sections on this page stay as written.', 'Podaci toka nisu mogli da se dohvate — odeljci na ovoj strani ostaju kako su upisani.'));
   }
   landingRender();
 }
@@ -261,7 +263,7 @@ const draw = mount({
   view: 'flow', render,
   title: () => weekMode
     ? (state.week ? `${tr('Week', 'Nedelja')} ${state.week.n} — ${tx(state.week.title)}` : tr('This week', 'Radna nedelja'))
-    : tr('Course flow', 'Tok predmeta')
+    : tr('Held classes', 'Održano na času')
 });
 
 if (weekMode) {

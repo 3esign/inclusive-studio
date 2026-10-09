@@ -15,25 +15,23 @@ test('the cover is the first door, and the flow landing keeps its job', async ()
   const flow = NAV.find(item => item.id === 'flow');
   assert.equal(flow.href, 'index.html');
   const landing = await read('index.html');
-  for (const anchor of ['id="zacementirano"', 'id="sledeci-cas"', 'id="oblak-ideja"']) {
-    assert.ok(landing.includes(anchor), `the landing lost its shelf: ${anchor}`);
-  }
+  assert.ok(landing.includes('id="odrzano"'), 'the landing lost its held anchor');
   const home = await read('assets/home.js');
   assert.ok(/w=/.test(home), 'deep links index.html?w=N no longer handled by home.js');
 });
 
 test('the cover tells the truth without scripting: its counts are the flow counts', async () => {
   const tok = JSON.parse(await read('data/tok.json'));
-  const nextCas = tok.pilot.filter(item => item.vrsta === 'cas' && typeof item.nedelja === 'number')[0];
+  const nextCas = tok.sledeci.filter(item => item.vrsta === 'cas' && typeof item.nedelja === 'number')[0];
   const cover = await read('naslovna.html');
-  const stage = cover.match(/<div class="cover-stage" data-cem="(\d*)" data-pilot-nedelja="(\d*)"/);
+  const stage = cover.match(/<div class="cover-stage" data-odrzano="(\d*)" data-sledeci-nedelja="(\d*)"/);
   assert.ok(stage, 'the cover stage carries no stamped counts');
-  assert.equal(stage[1], String(tok.cem.length), 'cemented count on the cover disagrees with data/tok.json');
-  assert.equal(stage[2], String(nextCas ? nextCas.nedelja : ''), 'pilot week on the cover disagrees with data/tok.json');
-  const cem = cover.match(/<b data-count="cem">([^<]*)<\/b>/);
-  const pilot = cover.match(/<b data-count="pilot-nedelja">([^<]*)<\/b>/);
-  assert.equal(cem[1], String(tok.cem.length));
-  assert.equal(pilot[1], String(nextCas ? nextCas.nedelja : '—'));
+  assert.equal(stage[1], String(tok.odrzano.length), 'held count on the cover disagrees with data/tok.json');
+  assert.equal(stage[2], String(nextCas ? nextCas.nedelja : ''), 'next-class week on the cover disagrees with data/tok.json');
+  const odrzano = cover.match(/<b data-count="odrzano">([^<]*)<\/b>/);
+  const nedelja = cover.match(/<b data-count="sledeci-nedelja">([^<]*)<\/b>/);
+  assert.equal(odrzano[1], String(tok.odrzano.length));
+  assert.equal(nedelja[1], String(nextCas ? nextCas.nedelja : '—'));
 });
 
 test('the only third-party code is vendored, hashed and stated', async () => {

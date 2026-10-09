@@ -3,18 +3,18 @@
   "name": "inclusive-studio",
   "description": "Pilot platforma: studenti arhitekture x udruzenje OSI, univerzalni dizajn, GitHub Pages",
   "created": "2026-10-01T07:42:06.981Z",
-  "updated": "2026-10-09T03:52:54.676Z",
+  "updated": "2026-10-09T08:06:21.865Z",
   "status": "active",
   "phases": [],
   "currentPhase": null,
-  "nextMove": "OBJAVLJENO na https://3esign.github.io/inclusive-studio/ (komit f794191, Pages build built 03:52Z, živi dokaz iz live-dokaz.mjs: 200+traka+0 imena). Sledeće: prvi čas posle objave — uneti stvarne rezultate probavanja prototipa u udruženju kad se dogode, verzije.json dobija novu stavku.",
+  "nextMove": "REDIZAJN uživo spreman za objavu (tri zone: održano / sledeći čas / oblak; 163/163; 12+6 snimaka). Sledeće: push na GitHub Pages + živi dokaz, pa posle časa 09.10. uneti rezultate probavanja prototipa.",
   "registration": {
     "status": "registered",
     "path": "C:\\Svemir\\data\\project_kits.jsonl",
     "at": "2026-10-01T07:42:07.115Z"
   },
   "stats": {
-    "log": 15,
+    "log": 16,
     "terms": 5,
     "kb": 0,
     "handoffs": 0

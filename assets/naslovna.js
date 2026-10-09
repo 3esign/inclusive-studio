@@ -1,4 +1,4 @@
-// The cover: the workbook as a real lit stack of A3 sheets — one per cemented week,
+// The cover: the workbook as a real lit stack of A3 sheets — one per held week,
 // one more on its way. DOM is the contract (title, doors, counts); the canvas is only
 // the stage. Without JavaScript, without WebGL, or with reduced motion, the drawn
 // stack below the canvas is the page — nothing is claimed that is not rendered.
@@ -17,11 +17,11 @@ let scene = null;        // stays null until three.js loads and WebGL answers
 /* ---------- the view: title block, doors, counts — all DOM ---------- */
 
 function view() {
-  const cem = tok ? tok.cem.length : Number($('.cover-stage')?.dataset.cem || 0);
-  const pilot = tok ? tok.pilot.filter(item => item.vrsta === 'cas' && typeof item.nedelja === 'number')[0]?.nedelja
-    : Number($('.cover-stage')?.dataset.pilotNedelja || 0);
+  const odrzano = tok ? tok.odrzano.length : Number($('.cover-stage')?.dataset.odrzano || 0);
+  const sledeci = tok ? tok.sledeci.filter(item => item.vrsta === 'cas' && typeof item.nedelja === 'number')[0]?.nedelja
+    : Number($('.cover-stage')?.dataset.sledeciNedelja || 0);
   return `
-<div class="cover-stage" data-cem="${cem}" data-pilot-nedelja="${pilot ?? ''}">
+<div class="cover-stage" data-odrzano="${odrzano}" data-sledeci-nedelja="${sledeci ?? ''}">
   <div id="cover-scene" class="cover-scene" aria-hidden="true">
     <svg class="cover-fallback" viewBox="0 0 520 320" role="img" aria-label="${tr('A stack of A3 sheets; one more sheet is arriving.', 'Snop A3 listova; još jedan list je na putu.')}">
       <g fill="none" stroke="currentColor" stroke-width="2">
@@ -40,15 +40,15 @@ function view() {
   </div>
   <div class="cover-title">
     <p class="eyebrow">${tr('The course workbook · cover', 'Radna sveska predmeta · naslovna')}</p>
-    <h1>${tr('A workbook<br>that grows.', 'Radna sveska<br>koja raste.')}</h1>
+    <h1>${tr('A workbook<br>that grows.', 'Sveska<br>koja raste.')}</h1>
     <p class="lede">${tr(
       'Each week of this course ends as one A3 sheet — horizontal, printed and digital. Sheet by sheet, the weeks stack into the workbook you hand in at the exam. Three doors from here: the flow of the course, the space of the association, and the course itself.',
       'Svaka nedelja ovog predmeta završava se jednim A3 listom — horizontalnim, štampanim i digitalnim. List po list, nedelje se ređaju u svesku koju predaješ na ispitu. Odavde tri vrata: tok predmeta, prostor udruženja i sam predmet.')}</p>
-    <p class="cover-count">${tr('Week', 'Nedelja')} <b data-count="cem">${cem}</b> ${tr('cemented · week', 'zacementirana · nedelja')} <b data-count="pilot-nedelja">${pilot ?? '—'}</b> ${tr('on its way', 'na putu')}</p>
+    <p class="cover-count">${tr('Week', 'Nedelja')} <b data-count="odrzano">${odrzano}</b> ${tr('held · week', 'održana · nedelja')} <b data-count="sledeci-nedelja">${sledeci ?? '—'}</b> ${tr('on its way', 'na putu')}</p>
   </div>
 </div>
 <nav class="cover-doors" aria-label="${tr('Where to go from the cover', 'Kuda sa naslovne')}">
-  <a class="cover-door" href="index.html"><span class="cover-door-num" aria-hidden="true">01</span><span><b>${tr('Course flow', 'Tok predmeta')}</b><span>${tr('Cemented classes in order, the pilot for the next class, the cloud of ideas.', 'Održani časovi redom, pilot za sledeći čas, oblak ideja.')}</span></span></a>
+  <a class="cover-door" href="index.html"><span class="cover-door-num" aria-hidden="true">01</span><span><b>${tr('Held classes', 'Održano na času')}</b><span>${tr('Held classes in order with results, the material that helps, and each week’s A3 sheet.', 'Časovi redom sa rezultatima, materijal koji pomaže i A3 list svake nedelje.')}</span></span></a>
   <a class="cover-door" href="udruzenje.html"><span class="cover-door-num" aria-hidden="true">02</span><span><b>${tr('The association', 'Udruženje')}</b><span>${tr('Trying the prototypes: your rights, the steps, the practical space.', 'Probavanje prototipova: tvoja prava, koraci, praktični prostor.')}</span></span></a>
   <a class="cover-door" href="predmet.html"><span class="cover-door-num" aria-hidden="true">03</span><span><b>${tr('The course', 'Predmet')}</b><span>${tr('Aims, marking, and the exam format — A3 horizontal, printed and digital.', 'Ciljevi, bodovanje i format ispita — A3 horizontalno, štampano i digitalno.')}</span></span></a>
 </nav>
@@ -104,7 +104,7 @@ async function bootScene() {
   camera.lookAt(0, 0.35, 0);
 
   const stack = new THREE.Group();
-  const settled = Math.max(1, tok ? tok.cem.length : Number(stage.dataset.cem || 1));
+  const settled = Math.max(1, tok ? tok.odrzano.length : Number(stage.dataset.odrzano || 1));
   const paperMaterial = new THREE.MeshStandardMaterial({ color: SHEET, roughness: 0.85, metalness: 0 });
   const sheetGeometry = new THREE.BoxGeometry(4.2, 0.024, 2.97);
   const jitter = [[0.030, 0.012, -0.010], [-0.022, -0.014, 0.008], [0.014, 0.010, 0.020], [-0.030, 0.008, -0.014], [0.026, -0.010, 0.012]];

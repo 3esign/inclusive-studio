@@ -76,7 +76,7 @@ function cardMarkup(idea) {
 function shelfSection() {
   const list = filterResearch(shelf);
   const option = (value, label, current) => `<option value="${esc(value)}"${value === current ? ' selected' : ''}>${esc(label)}</option>`;
-  return `<section class="idea-library" aria-labelledby="shelf-title"><div class="section-heading"><div><p class="eyebrow">${tr('The shelf', 'Polica')}</p><h2 id="shelf-title">${tr('What we have read, and what it does not say.', 'Šta smo pročitali, i šta to ne tvrdi.')}</h2></div><p id="shelf-count" class="tag" role="status">${list.length}/${RESEARCH.length}</p></div>
+  return `<section class="idea-library" aria-labelledby="shelf-title"><div class="section-heading"><div><p class="eyebrow">${tr('Readings', 'Pročitano')}</p><h2 id="shelf-title">${tr('What we have read, and what it does not say.', 'Šta smo pročitali, i šta to ne tvrdi.')}</h2></div><p id="shelf-count" class="tag" role="status">${list.length}/${RESEARCH.length}</p></div>
   <p class="help">${tr('Every entry carries how far we actually read it. An entry marked “from a summary” may not be quoted as a fact in an A3 before the original is opened — that rule is the only thing separating a library from a rumour.', 'Svaki zapis nosi dokle smo ga stvarno pročitali. Zapis označen sa „iz sažetka” ne sme da se navede kao činjenica na A3 pre nego što se otvori original — to pravilo je jedino što biblioteku razlikuje od glasine.')}</p>
   <div class="idea-filters" aria-label="${tr('Filter the shelf', 'Filtriraj policu')}">
     <div><label for="shelf-search">${tr('Search', 'Pretraga')}</label><input id="shelf-search" type="search" value="${esc(shelf.query)}" placeholder="${tr('rotation, toy, law…', 'rotacija, igračka, zakon…')}"></div>

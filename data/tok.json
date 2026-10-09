@@ -1,11 +1,11 @@
 {
   "format": "inclusive-studio-tok",
-  "version": 1,
+  "version": 2,
   "nacelo": {
-    "sr": "Pripremljeno nije održano. Održano bez upisanih rezultata nije zacementirano. Ideja nema nedelju dok ne postane pilot. Svaka stavka nosi izvor i datum.",
-    "en": "Prepared is not held. Held without recorded results is not cemented. An idea carries no week until it becomes a pilot. Every item carries a source and a date."
+    "sr": "Pripremljeno nije održano. Održano bez upisanih rezultata nije završeno. Ideja nema nedelju dok ne uđe u pripremu sledećeg časa. Svaka stavka nosi izvor i datum.",
+    "en": "Prepared is not held. Held without recorded results is not complete. An idea carries no week until it enters the preparation for the next class. Every item carries a source and a date."
   },
-  "cem": [
+  "odrzano": [
     {
       "id": "cas-w01",
       "vrsta": "cas",
@@ -33,7 +33,7 @@
       "izvor": "data/material/w01.json — sekcija „Zapisano posle časa” + LOG.md 2026-10-02."
     }
   ],
-  "pilot": [
+  "sledeci": [
     {
       "id": "cas-w02",
       "vrsta": "cas",
@@ -73,7 +73,7 @@
     {
       "id": "a3-sledeca-faza-dizajna",
       "naslov": { "sr": "Sledeći A3 kao sledeća faza dizajna", "en": "The next A3 as the next design phase" },
-      "tekst": { "sr": "Novi A3 može, a ne mora da se nadoveže na dizajn prototipa — npr. mereno prelazak sa zamisli na broj.", "en": "A new A3 may or may not build on the prototype's design — e.g. measured, moving from idea to number." },
+      "tekst": { "sr": "Novi A3 može, a ne mora da se nadoveze na dizajn prototipa — npr. merenje, prelazak sa zamisli na broj.", "en": "A new A3 may or may not build on the prototype's design — e.g. measured, moving from idea to number." },
       "izvor": "Razgovor sa nastavnikom, 09.10.2026. („možda sutra A3 je sledeća faza dizajna”).",
       "datum": "2026-10-09"
     },
