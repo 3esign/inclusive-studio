@@ -1,0 +1,13 @@
+{
+  "schema": "course-publication/v1",
+  "note": "This register separates a recorded held class from teacher-finalized material. Published preparation is not an approval. Hashes identify material bytes; they are not signatures or access controls.",
+  "items": [
+    {
+      "week": 1,
+      "kind": "held-record",
+      "materialSha256": "1c501259c78210bd475a14eca6d11be2e094cf8623cdb1a898c43d78ee5fd8b7",
+      "source": "data/tok.json: cas-w01; LOG.md: record of the class held on 2026-10-02",
+      "recordedAt": "2026-10-09T07:21:28.945Z"
+    }
+  ]
+}

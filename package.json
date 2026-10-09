@@ -2,5 +2,9 @@
   "name": "inclusive-studio",
   "private": true,
   "type": "module",
-  "description": "No dependencies. This file only declares that the browser modules in assets/ are ES modules, so Node can run the tests directly."
+  "description": "Dependency-free course site with reproducible local verification.",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "verify:course": "node tools/course-verify.mjs"
+  }
 }

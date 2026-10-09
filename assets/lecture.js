@@ -2,24 +2,36 @@
 // No new content is written here — if a slide is thin, the material is thin, and that shows.
 
 import { $, $$, esc, tr, tx, loadJSON, mount, announce, read, save } from './core.js';
-import { MATERIAL_INDEX, weekFile, validateIndex, validateWeek, currentWeek, toSlides } from './material.js';
+import { MATERIAL_INDEX, weekFile, validateIndex, validateWeek, toSlides } from './material.js';
 import { resolveRefs, renderBlocks, weekLine } from './blocks.js';
+import { PUBLICATION_FILE, lecturePolicy, selectLecture, validatePublication } from './lecture-policy.js';
 
 const params = new URLSearchParams(location.search);
-const wanted = Number(params.get('w'));
-let state = { phase: 'loading', week: null, slides: [], refs: null, at: 0, all: false, problems: [] };
+const wanted = params.has('w') ? Number(params.get('w')) : null;
+const preview = params.get('preview') === '1';
+let state = { phase: 'loading', week: null, slides: [], refs: null, at: 0, all: false, problems: [], publication: null };
 let detach = null;
 
 async function load() {
   try {
     const index = await loadJSON(MATERIAL_INDEX);
     if (!validateIndex(index).ok) { state.phase = 'broken'; state.problems = validateIndex(index).problems; return; }
-    const entry = (Number.isInteger(wanted) && index.weeks.find(item => item.n === wanted)) || currentWeek(index);
+    const publication = preview ? { schema: 'course-publication/v1', items: [] } : await loadJSON(PUBLICATION_FILE);
+    const publicationProblems = validatePublication(publication);
+    if (publicationProblems.length) { state.phase = 'broken'; state.problems = publicationProblems; return; }
+    const entry = selectLecture(index, publication, wanted, { preview });
     if (!entry) { state.phase = 'empty'; return; }
-    const week = await loadJSON(weekFile(entry.n));
+    const response = await fetch(weekFile(entry.n), { cache: 'no-cache' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const bytes = await response.arrayBuffer();
+    const week = JSON.parse(new TextDecoder().decode(bytes));
     const check = validateWeek(week);
     if (!check.ok) { state.phase = 'broken'; state.problems = check.problems; return; }
+    if (week.n !== entry.n) { state.phase = 'broken'; state.problems = ['Material does not match the requested week.']; return; }
     state.week = week;
+    const fingerprint = preview ? '' : Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), b => b.toString(16).padStart(2, '0')).join('');
+    state.publication = lecturePolicy(week, publication, fingerprint, { preview });
+    if (!state.publication.allowed) { state.phase = 'preparation'; return; }
     state.slides = toSlides(week);
     state.refs = await resolveRefs(week.blocks);
     state.phase = state.slides.length ? 'ready' : 'empty';
@@ -53,8 +65,12 @@ function readyView() {
 }
 
 function head() {
-  const week = state.week;
-  return `<div class="lecture-head">
+    const week = state.week;
+  const mode = state.publication?.mode;
+  const notice = mode === 'preparation'
+    ? `<aside class="notice" role="note"><strong>${tr('Preparation — working material', 'Priprema — radni materijal')}</strong><p>${tr('This preview is not a finalized teaching record. The teacher determines what becomes course material.', 'Ovaj pregled nije konačna nastavna građa. Nastavnik određuje šta ulazi u materijal predmeta.')}</p><a href="sledeci.html">${tr('Next class', 'Sledeći čas')}</a></aside>`
+    : `<p class="eyebrow">${mode === 'held-record' ? tr('Material from a recorded class', 'Materijal održanog časa') : tr('Finalized course material', 'Konačni nastavni materijal')}</p>`;
+  return `${notice}<div class="lecture-head">
     <div><p class="eyebrow">${esc(weekLine(week))}</p><h1>${esc(tx(week.title))}</h1></div>
     <div class="lecture-actions">
       <button type="button" id="toggle-all" aria-pressed="${state.all}">${state.all ? tr('Slide by slide', 'Slajd po slajd') : tr('Show everything', 'Prikaži sve')}</button>
@@ -68,6 +84,7 @@ function render() {
   if (detach) { detach(); detach = null; }
   const main = $('#main');
   main.innerHTML = state.phase === 'ready' ? readyView()
+    : state.phase === 'preparation' ? `<h1>${tr('This material is in preparation.', 'Ovaj materijal je u pripremi.')}</h1><p>${state.publication?.reason === 'changed-material' ? tr('The material has changed since its recorded version. It needs review before appearing with the recorded lectures.', 'Materijal je promenjen posle zabeležene verzije. Potreban je pregled pre prikazivanja uz završena predavanja.') : tr('Published preparation does not mean a class was held or its material finalized.', 'Dostupna priprema ne znači da je čas održan niti da je gradivo konačno.')}</p><p><a class="button" href="sledeci.html">${tr('Next class', 'Sledeći čas')}</a> <a href="predavanje.html?w=${state.week.n}&amp;preview=1">${tr('Preview working material', 'Pregled radnog materijala')}</a></p>`
     : state.phase === 'broken' ? `<h1>${tr('The material does not pass its own rules.', 'Građa ne prolazi sopstvena pravila.')}</h1><div class="notice error"><ul>${state.problems.map(p => `<li>${esc(p)}</li>`).join('')}</ul></div>`
     : state.phase === 'offline' ? `<h1>${tr('The material could not be fetched.', 'Građa nije mogla da se dohvati.')}</h1><p class="small muted">${state.problems.map(esc).join(' ')}</p>`
     : state.phase === 'empty' ? `<h1>${tr('Nothing to show yet.', 'Još nema šta da se prikaže.')}</h1><p><a class="button" href="uredi.html">${tr('Prepare material', 'Pripremi gradivo')}</a></p>`
