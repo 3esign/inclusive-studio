@@ -5,9 +5,9 @@
     {
       "week": 1,
       "kind": "held-record",
-      "materialSha256": "36ccd2523861101c97e4284223ab54a4129d8c24d5b297cfad3bac15f560d2dd",
-      "source": "data/tok.json: cas-w01; data/material/w01.json: revizija 3 — nastavnikova ispravka 09.10.2026, pozajmljeni primer iz prvog časa (natpisi precizirani); held record, not final material approval",
-      "recordedAt": "2026-10-09T18:52:00.000Z"
+      "materialSha256": "b92288403f2e15ac1f8817c53839d2213d3e1bc61060d2e27c47340bfe4a2d2c",
+      "source": "data/tok.json: cas-w01; data/material/w01.json: revizija 4 — nastavnikova ispravka 09.10.2026, žičani primer „Zmijica” iz udruženja vraćen u prvu nedelju; held record, not final material approval",
+      "recordedAt": "2026-10-09T19:08:11.000Z"
     }
   ]
 }

@@ -44,8 +44,8 @@
       "kind": "list",
       "items": [
         {
-          "sr": "Studenti su doneli izrađene prototipove započete na prvom času. Do sada je dokumentovano šest radova: Zmijica, Muzička Kutija, Zgradica, Sudoku, Pogodilica i Upadalica.",
-          "en": "Students brought the prototypes begun in the first class. Six works have been documented so far: Zmijica, Muzička Kutija, Zgradica, Sudoku, Pogodilica and Upadalica."
+          "sr": "Studenti su doneli izrađene prototipove započete na prvom času. Do sada je dokumentovano pet radova: Muzička Kutija, Zgradica, Sudoku, Pogodilica i Upadalica.",
+          "en": "Students brought the prototypes begun in the first class. Five works have been documented so far: Muzička Kutija, Zgradica, Sudoku, Pogodilica and Upadalica."
         },
         {
           "sr": "Fotografije, tačna autorstva i kratki opisi objedinjeni su u zbirci druge nedelje. Najavljen je još jedan krug fotografija za istu nedelju.",
@@ -88,14 +88,14 @@
     },
     {
       "kind": "image",
-      "src": "data/prototipovi/zmijica-2026/01.jpg",
+      "src": "data/prototipovi/zgradica-2026/01.jpg",
       "alt": {
-        "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
-        "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
+        "sr": "Otvorena kartonska konstrukcija ima više horizontalnih nivoa sa pregradama koje obrazuju prolaze. Na gornjoj površini je kružni otvor, na nižem nivou bela loptica; rukom se pridržava prednja ivica.",
+        "en": "An open cardboard structure has several horizontal levels with partitions forming passages. A circular opening is visible on the upper surface and a white ball on a lower level; a hand holds the front edge."
       },
       "caption": {
-        "sr": "Zmijica — studentski prototip dokumentovan u drugoj nedelji. Autorstvo i dodatni podaci nalaze se u zbirci radova i primera.",
-        "en": "Zmijica — a student prototype documented in week two. Attribution and further information are available in the collection of works and examples."
+        "sr": "Zgradica — studentski prototip dokumentovan u drugoj nedelji. Autorstvo i dodatni podaci nalaze se u zbirci radova i primera.",
+        "en": "Zgradica — a student prototype documented in week two. Attribution and further information are available in the collection of works and examples."
       }
     },
     {
@@ -359,6 +359,14 @@
       "sta": {
         "sr": "Pozajmljeni primer iz udruženja vraćen isključivo u nedelju 1 prema nastavnikovoj ispravci. U nedelji 2 prikazana fotografija dokumentovanog studentskog prototipa iz postojeće zbirke. Pedagoški primeri mogućih problema odvojeni od zabeleženih ishoda.",
         "en": "Following the teacher’s correction, the borrowed association example is placed exclusively in week one. Week two shows a documented student prototype from the existing collection. Teaching examples of possible problems are distinguished from recorded outcomes."
+      }
+    },
+    {
+      "v": 6,
+      "datum": "2026-10-09",
+      "sta": {
+        "sr": "Prema novoj nastavnikovoj ispravci, fotografija koja je prikazivana u drugoj nedelji (žičana putanja) takođe je primer iz udruženja donešen na prvi čas i pripada isključivo nedelji 1. Umesto nje prikazan je dokumentovani studentski prototip Zgradica, a zbirka druge nedelje navodi pet donetih radova. Fotografije iz posete udruženju se i dalje očekuju.",
+        "en": "Following the teacher’s further correction, the photograph previously shown in week two (the wire path) is also the association’s example brought to the first class and belongs exclusively to week one. A documented student prototype, Zgradica, is shown instead, and the week-two collection lists five brought works. Photographs from the association visit are still awaited."
       }
     }
   ]

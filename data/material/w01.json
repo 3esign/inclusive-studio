@@ -80,6 +80,18 @@
       }
     },
     {
+      "kind": "image",
+      "src": "data/prototipovi/zmijica-2026/01.jpg",
+      "alt": {
+        "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
+        "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
+      },
+      "caption": {
+        "sr": "Žičana putanja „Zmijica” — drugi primer pozajmljen iz udruženja „Živimo zajedno”. Nastavnik ga je doneo na prvi čas kao podsticaj studentima da osmisle sopstvene prototipove.",
+        "en": "The wire path “Zmijica” — a second example borrowed from the association “Živimo zajedno”. The teacher brought it to the first class as a starting point for students to design their own prototypes."
+      }
+    },
+    {
       "kind": "list",
       "items": [
         {
@@ -419,6 +431,14 @@
       "sta": {
         "sr": "Prema nastavnikovoj ispravci, sve tri fotografije pozajmljene igračke pripadaju samo prvom času, kao primer za osmišljavanje sopstvenih prototipova. Uklonjene su nepotvrđene tvrdnje o mestu i datumu fotografisanja, izradi, pokretanju i nameri izrađivača. Datum usklađen sa postojećim zapisom održanog časa.",
         "en": "Following the teacher’s correction, all three photographs of the borrowed toy belong only to the first class, as an example for students designing their own prototypes. Removed unconfirmed claims about photographic place and date, manufacture, movement and maker intent. Aligned the date with the existing held-class record."
+      }
+    },
+    {
+      "v": 4,
+      "datum": "2026-10-09",
+      "sta": {
+        "sr": "Prema nastavnikovoj ispravci zbirke radova, fotografija žičane putanja „Zmijica” takođe prikazuje primer iz udruženja donešen na prvi čas, a ne studentski prototip. Dodata je u galeriju pozajmljenih primera prve nedelje i uklonjena iz nedelje 2.",
+        "en": "Following the teacher’s correction to the works collection, the photograph of the wire path “Zmijica” also shows the association’s example brought to the first class, not a student prototype. It is added to the week-one gallery of borrowed examples and removed from week two."
       }
     }
   ]
