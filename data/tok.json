@@ -18,6 +18,13 @@
       "rezultati": [
         {
           "sta": {
+            "sr": "Nastavnik je pozajmio igračku iz udruženja „Živimo zajedno” i doneo je na prvi čas kao primer za osmišljavanje studentskih prototipova.",
+            "en": "The teacher borrowed a toy from the association “Živimo zajedno” and brought it to the first class as an example for students designing their prototypes."
+          },
+          "izvor": "Izričita ispravka nastavnika, 09.10.2026: pozajmljeni primer pripada samo nedelji 1; data/material/w01.json, revizija 3."
+        },
+        {
+          "sta": {
             "sr": "Timovi su osmislili koncepte igračaka — stvari koje razvijaju pokret ruke ili prostorni opseg deteta.",
             "en": "Teams drafted their own toy concepts — things that train a child's hand movement or spatial range."
           },

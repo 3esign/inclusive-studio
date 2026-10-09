@@ -82,20 +82,20 @@
     {
       "kind": "text",
       "text": {
-        "en": "Last week you designed on paper and the paper agreed with everything. This week the material answers back. A skewer splits along the grain, hot glue lets go of polypropylene as it cools, a cap that turned beautifully in the drawing binds against the cardboard, and a box that was rigid on the sheet folds the moment a child leans on it. None of that is a setback — it is the first honest information the project has produced, and it exists only because something was built.",
-        "sr": "Prošle nedelje si projektovao na papiru, a papir se slagao sa svime. Ove nedelje materijal odgovara. Štapić puca po vlaknu, topli lepak pušta polipropilen dok se hladi, čep koji se na crtežu divno okretao zapinje o karton, a kutija koja je na listu bila kruta savija se čim se dete nasloni. Ništa od toga nije neuspeh — to je prvi pošten podatak koji je projekat dao, i postoji samo zato što je nešto napravljeno."
+        "sr": "Prošle nedelje započeli ste osmišljavanje sopstvenog prototipa. Izrada omogućava proveru crteža u materijalu: spoj može da popusti, pokretni deo može da zapinje ili konstrukcija da se savije. To su primeri mogućih problema koje treba proveriti, a ne zabeleženi ishodi ovog časa. Na svom radu zabeležite šta se zaista dogodilo, šta ste promenili i zašto.",
+        "en": "Last week you began designing your own prototype. Making allows the drawing to be checked in material: a joint might loosen, a moving part might catch, or a structure might bend. These are possible problems to investigate, not recorded outcomes of this class. Record what actually happened in your own work, what you changed and why."
       }
     },
     {
       "kind": "image",
-      "src": "data/igracka/igracka-02.jpg",
+      "src": "data/prototipovi/zmijica-2026/01.jpg",
       "alt": {
-        "en": "The inside of the open cardboard box: bamboo skewers span it in two directions and bottle caps are threaded on them — an orange dome on a blue ring, a yellow ring on its own, a red cap with a visible blob of hardened hot glue around the rod, a green one at the edge. A glue gun lies on a chequered cloth behind the box.",
-        "sr": "Unutrašnjost otvorene kartonske kutije: štapići za ražnjiće premošćuju je u dva pravca, a na njima su nanizani čepovi — narandžasta kupa na plavom prstenu, žuti prsten sam, crveni čep sa vidljivom kapi očvrslog toplog lepka oko štapića, zeleni na ivici. Iza kutije, na kariranoj krpi, leži pištolj za lepak."
+        "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
+        "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
       },
       "caption": {
-        "en": "The same toy, photographed while it was still being made. The blob of glue on the red cap is not a flaw in the photograph — it is where the maker decided this piece would not rotate.",
-        "sr": "Ista igračka, slikana dok je još nastajala. Kap lepka na crvenom čepu nije mana fotografije — to je mesto na kom je izrađivač odlučio da se ovaj komad neće okretati."
+        "sr": "Zmijica — studentski prototip dokumentovan u drugoj nedelji. Autorstvo i dodatni podaci nalaze se u zbirci radova i primera.",
+        "en": "Zmijica — a student prototype documented in week two. Attribution and further information are available in the collection of works and examples."
       }
     },
     {
@@ -351,6 +351,14 @@
       "sta": {
         "sr": "Dodat tehnički crtež Lego4ll i nastavnikov prototip zvečke sa četiri fotografije, prema novoj dopuni nastavnika. Zadržano razdvajanje vrste rada, autorstva i dokumentovanja u drugoj nedelji.",
         "en": "Added the Lego4ll technical drawing and the teacher’s rattle prototype with four photographs, following the teacher’s new submission. Work type, authorship and documentation in week two remain distinct."
+      }
+    },
+    {
+      "v": 5,
+      "datum": "2026-10-09",
+      "sta": {
+        "sr": "Pozajmljeni primer iz udruženja vraćen isključivo u nedelju 1 prema nastavnikovoj ispravci. U nedelji 2 prikazana fotografija dokumentovanog studentskog prototipa iz postojeće zbirke. Pedagoški primeri mogućih problema odvojeni od zabeleženih ishoda.",
+        "en": "Following the teacher’s correction, the borrowed association example is placed exclusively in week one. Week two shows a documented student prototype from the existing collection. Teaching examples of possible problems are distinguished from recorded outcomes."
       }
     }
   ]

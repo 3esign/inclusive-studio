@@ -3,13 +3,13 @@
   "version": 1,
   "n": 1,
   "state": "published",
-  "updated": "2026-10-02",
+  "updated": "2026-10-09",
   "title": {
     "en": "A toy that teaches space",
     "sr": "Igračka koja uči prostor"
   },
-  "date": null,
-  "dateStatus": "proposed",
+  "date": "2026-10-02",
+  "dateStatus": "confirmed",
   "aim": {
     "en": "By the end of the session you can name where an object excludes someone and why, using a measurement or an observation — not an impression. And you have designed, on paper, a toy that trains one movement of the hand and one operation on space at the same time, buildable from household waste.",
     "sr": "Na kraju časa umeš da kažeš gde predmet isključuje nekoga i zašto, pozivajući se na meru ili zapažanje — ne na utisak. I na papiru si projektovao igračku koja istovremeno vežba jedan pokret ruke i jednu radnju nad prostorom, a pravi se od kućnog otpada."
@@ -47,40 +47,52 @@
       "kind": "image",
       "src": "data/igracka/igracka-01.jpg",
       "alt": {
-        "en": "A cardboard carton with one side open. Bamboo skewers are pushed through its walls and span the opening in rows. Plastic bottle caps in blue, white, violet, yellow, red, green and orange are threaded onto the skewers so that each can slide along the rod and spin.",
-        "sr": "Kartonska kutija sa jednom otvorenom stranom. Štapići za ražnjiće probodeni su kroz stranice i premošćuju otvor u redovima. Plastični čepovi — plavi, beli, ljubičasti, žuti, crveni, zeleni i narandžasti — nanizani su na štapiće tako da svaki klizi duž šipke i okreće se."
+        "sr": "Otvorena kartonska kutija sa nizovima drvenih štapića i plastičnim čepovima različitih boja.",
+        "en": "An open cardboard box with rows of wooden sticks and plastic caps in different colours."
       },
       "caption": {
-        "en": "Made at the association „Živimo zajedno”. Photographed 02.10.2026.",
-        "sr": "Napravljeno u udruženju „Živimo zajedno”. Fotografisano 02.10.2026."
+        "sr": "Igračka pozajmljena iz udruženja „Živimo zajedno”. Nastavnik ju je doneo na prvi čas kao primer i podsticaj studentima da osmisle sopstvene prototipove.",
+        "en": "A toy borrowed from the association “Živimo zajedno”. The teacher brought it to the first class as an example and a starting point for students to design their own prototypes."
+      }
+    },
+    {
+      "kind": "image",
+      "src": "data/igracka/igracka-02.jpg",
+      "alt": {
+        "sr": "Pogled u otvorenu kartonsku kutiju sa drvenim štapićima i narandžastim, plavim, žutim, crvenim i zelenim plastičnim elementima.",
+        "en": "A view into an open cardboard box with wooden sticks and orange, blue, yellow, red and green plastic elements."
+      },
+      "caption": {
+        "sr": "Drugi pogled na pozajmljenu igračku prikazanu na prvom času — nastavni primer iz prve nedelje.",
+        "en": "Another view of the borrowed toy — a teaching example shown in the first class of week one."
       }
     },
     {
       "kind": "image",
       "src": "data/igracka/igracka-03.jpg",
       "alt": {
-        "en": "Close view of one rod: an orange dome cap glued to a yellow ring cap and a blue cap, forming a single piece that turns on the skewer. Hot glue is visible at the joint.",
-        "sr": "Bliski prikaz jednog štapića: narandžasti kupasti čep slepljen sa žutim prstenom i plavim čepom, što čini jedan komad koji se okreće oko štapića. Na spoju se vidi topli lepak."
+        "sr": "Detalj narandžastog, žutog i plavog plastičnog elementa u kartonskoj kutiji sa drvenim štapićima.",
+        "en": "A detail of orange, yellow and blue plastic elements in the cardboard box with wooden sticks."
       },
       "caption": {
-        "en": "Two or three caps glued back to back make one piece that slides and rotates.",
-        "sr": "Dva ili tri čepa slepljena leđa uz leđa čine jedan komad koji klizi i rotira se."
+        "sr": "Detalj pozajmljene igračke prikazane na prvom času: plastični elementi i drveni štapići.",
+        "en": "A detail of the borrowed toy shown in the first class: plastic elements and wooden sticks."
       }
     },
     {
       "kind": "list",
       "items": [
         {
-          "en": "Hand: a pincer grip on a disc of about 30 mm, both hands at once, the arm crossing the body’s midline to reach the far rod.",
-          "sr": "Ruka: pincetni hvat na disku od oko 30 mm, obe ruke istovremeno, ruka koja prelazi srednju liniju tela da bi stigla do daljeg štapića."
+          "sr": "Ruka: koji hvatovi i dometi bi bili potrebni za korišćenje? Proveriti na predmetu; fotografija ne pokazuje stvarni način upotrebe.",
+          "en": "Hand: which grips and reaches would use require? Check the object; a photograph does not show how it is actually used."
         },
         {
-          "en": "Space: order along a line, near rod and far rod, the same colour found in another row — and rotation, because a cap turns while it travels.",
-          "sr": "Prostor: red duž linije, bliži i dalji štapić, ista boja nađena u drugom redu — i rotacija, jer se čep okreće dok putuje."
+          "sr": "Prostor: kako su delovi raspoređeni? Koji su bliži, dalji ili ponovljeni i šta treba proveriti o njihovom pomeranju?",
+          "en": "Space: how are the parts arranged? Which are near, far or repeated, and what needs to be checked about their movement?"
         },
         {
-          "en": "Cost: packaging waste, a pack of skewers, hot glue. That is not a detail — cost is part of access.",
-          "sr": "Cena: otpad od ambalaže, paklo štapića, topli lepak. To nije sitnica — cena je deo pristupačnosti."
+          "sr": "Materijal i cena: prepoznati delove koji bi mogli da se ponovo upotrebe i zabeležiti stvarne troškove sopstvenog prototipa.",
+          "en": "Material and cost: identify parts that could be reused and record the actual costs of your own prototype."
         }
       ]
     },
@@ -365,8 +377,8 @@
     {
       "kind": "text",
       "text": {
-        "en": "Held 02.10.2026. The teams designed their own toy concepts: things that pull a child in by themselves, are worth playing with, teach something and train the hand. The director of the association “Živimo zajedno” came to the studio — the association whose toy opens this week and whose site carries the semester project.",
-        "sr": "Održano 02.10.2026. Timovi su osmislili sopstvene koncepte igračaka: predmete koji sami privlače dete, vredi se njima igrati, uče nečemu i vežbaju ruku. U studio je došao direktor udruženja „Živimo zajedno” — udruženja čija igračka otvara ovu nedelju i na čijoj lokaciji stoji semestralni projekat."
+        "en": "Held 02.10.2026. The teacher borrowed a toy from the association “Živimo zajedno” and brought it to the first class as a starting point for students to design their own prototypes. The teams designed their own toy concepts: things that pull a child in by themselves, are worth playing with, teach something and train the hand. The director of the association “Živimo zajedno” came to the studio — the association whose toy opens this week and whose site carries the semester project.",
+        "sr": "Održano 02.10.2026. Nastavnik je pozajmio igračku iz udruženja „Živimo zajedno” i doneo je na prvi čas kao primer za osmišljavanje sopstvenih studentskih prototipova. Timovi su osmislili sopstvene koncepte igračaka: predmete koji sami privlače dete, vredi se njima igrati, uče nečemu i vežbaju ruku. U studio je došao direktor udruženja „Živimo zajedno” — udruženja čija igračka otvara ovu nedelju i na čijoj lokaciji stoji semestralni projekat."
       }
     },
     {
@@ -399,6 +411,14 @@
       "sta": {
         "en": "Added after the session: the record of the held class — team concepts, a guest from the association, prototype assigned for the next meeting.",
         "sr": "Dopunjeno posle časa: zapis održanog časa — koncepti timova, gost iz udruženja, prototip zadan za sledeći susret."
+      }
+    },
+    {
+      "v": 3,
+      "datum": "2026-10-09",
+      "sta": {
+        "sr": "Prema nastavnikovoj ispravci, sve tri fotografije pozajmljene igračke pripadaju samo prvom času, kao primer za osmišljavanje sopstvenih prototipova. Uklonjene su nepotvrđene tvrdnje o mestu i datumu fotografisanja, izradi, pokretanju i nameri izrađivača. Datum usklađen sa postojećim zapisom održanog časa.",
+        "en": "Following the teacher’s correction, all three photographs of the borrowed toy belong only to the first class, as an example for students designing their own prototypes. Removed unconfirmed claims about photographic place and date, manufacture, movement and maker intent. Aligned the date with the existing held-class record."
       }
     }
   ]

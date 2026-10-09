@@ -222,6 +222,13 @@
         "sr": "Zbirka druge nedelje proširena na osam radova i jedanaest fotografija: dodat tehnički crtež Lego4ll i nastavnikov 3D štampani prototip zvečke. Original crteža prikazan vodoravno bez izmene slikovnih podataka. Birač održanih nedelja prikazuje najnoviju prvu.",
         "en": "Expanded the week-two collection to eight works and eleven photographs: added the Lego4ll technical drawing and the teacher’s 3D-printed rattle prototype. The original drawing is displayed horizontally without changing image data. The held-week selector shows the newest week first."
       }
+    },
+    {
+      "datum": "2026-10-09",
+      "sta": {
+        "sr": "Ispravljeno poreklo referentne igračke: pozajmljena iz udruženja i doneta na prvi čas kao primer. Sve tri fotografije prikazuju se samo u nedelji 1; druga nedelja prikazuje dokumentovan studentski prototip. Uklonjeno nagađanje o izradi, datumu fotografisanja i nameri izrađivača; dopunjena regresa za pripadnost fotografija nedeljama.",
+        "en": "Corrected the reference toy’s provenance: borrowed from the association and brought to the first class as an example. All three photographs appear only in week one; week two shows a documented student prototype. Removed speculation about manufacture, photographic date and maker intent, and added a regression check for photograph-to-week assignment."
+      }
     }
   ]
 }

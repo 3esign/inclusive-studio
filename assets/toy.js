@@ -5,18 +5,29 @@
 
 import { $, $$, esc, tr, tx, read, save, announce, download, mount, arrow } from './core.js';
 
-/* The object we start from, measured from the photographs taken at the association on 02.10.2026.
-   Dimensions are stated as the ranges of the standard parts, not as a survey of that one toy. */
+// Teacher-confirmed first-class reference; measurements and operation require inspection.
 const REFERENCE = {
-  title: { en: 'The toy that already exists', sr: 'Igračka koja već postoji' },
-  body: {
-    en: 'A cardboard carton with one side removed. Bamboo skewers (⌀ about 3 mm, 20–25 cm long) pushed through both walls so they span the opening. Plastic bottle caps (⌀ 28–38 mm) glued back to back in pairs and threaded onto the skewers, where they slide left and right and spin. Colours: blue, white, violet, yellow, red, green, orange. Total cost: packaging waste, a pack of skewers and hot glue.',
-    sr: 'Kartonska kutija kojoj je jedna strana uklonjena. Štapići za ražnjiće (⌀ oko 3 mm, dužine 20–25 cm) probodeni kroz obe stranice tako da premošćuju otvor. Plastični čepovi od flaša (⌀ 28–38 mm) slepljeni leđa uz leđa u parove i nanizani na štapiće, po kojima klize levo-desno i okreću se. Boje: plava, bela, ljubičasta, žuta, crvena, zelena, narandžasta. Ukupna cena: otpad od ambalaže, paklo štapića i topli lepak.'
+  "title": {
+    "sr": "Pozajmljeni primer sa prvog časa",
+    "en": "Borrowed example from the first class"
   },
-  reading: [
-    { en: 'Hand: pincer grip on a 30 mm disc, both hands at once, the arm crossing the body’s midline to reach the far rod.', sr: 'Ruka: pincetni hvat na disku od 30 mm, obe ruke istovremeno, ruka koja prelazi srednju liniju tela da bi stigla do daljeg štapića.' },
-    { en: 'Space: order along a line, left and right, near rod and far rod, the same colour found on another row — and rotation, because a cap turns while it travels.', sr: 'Prostor: red duž linije, levo i desno, bliži i dalji štapić, ista boja nađena u drugom redu — i rotacija, jer se čep okreće dok putuje.' },
-    { en: 'What it does not do: it does not score, it does not name a diagnosis, and it does not stop a second child from playing on the other side of the same box.', sr: 'Šta ne radi: ne boduje, ne imenuje dijagnozu i ne sprečava drugo dete da se igra sa druge strane iste kutije.' }
+  "body": {
+    "sr": "Nastavnik je pozajmio ovu igračku iz udruženja „Živimo zajedno” i doneo je na prvi čas kao podsticaj za osmišljavanje studentskih prototipova. Na fotografijama se vide kartonska kutija, drveni štapići i plastični čepovi različitih boja. Primer pripada prvoj nedelji.",
+    "en": "The teacher borrowed this toy from the association “Živimo zajedno” and brought it to the first class as a starting point for student prototypes. The photographs show a cardboard box, wooden sticks and plastic caps in different colours. This example belongs to week one."
+  },
+  "reading": [
+    {
+      "sr": "Ruka: koji hvatovi i dometi bi bili potrebni za korišćenje? Proveriti na predmetu; fotografija ne pokazuje stvarni način upotrebe.",
+      "en": "Hand: which grips and reaches would use require? Check the object; a photograph does not show how it is actually used."
+    },
+    {
+      "sr": "Prostor: kako su delovi raspoređeni? Koji su bliži, dalji ili ponovljeni i šta treba proveriti o njihovom pomeranju?",
+      "en": "Space: how are the parts arranged? Which are near, far or repeated, and what needs to be checked about their movement?"
+    },
+    {
+      "sr": "Materijal i cena: prepoznati delove koji bi mogli da se ponovo upotrebe i zabeležiti stvarne troškove sopstvenog prototipa.",
+      "en": "Material and cost: identify parts that could be reused and record the actual costs of your own prototype."
+    }
   ]
 };
 
@@ -124,7 +135,7 @@ function referenceBox() {
   <h2 id="reference-title">${tr(REFERENCE.title.en, REFERENCE.title.sr)}</h2>
   <p>${esc(tx(REFERENCE.body))}</p>
   <ul class="rule-list">${REFERENCE.reading.map(item => `<li>${label(item)}</li>`).join('')}</ul>
-  <p class="help">${tr('Made at the association “Živimo zajedno”. Dimensions are the ranges of the standard parts — a bottle cap, a skewer — not a survey of that one object.', 'Napravljeno u udruženju „Živimo zajedno”. Mere su rasponi standardnih delova — čep, štapić — a ne snimak tog jednog predmeta.')}</p>
+  <p class="help">${tr('Actual dimensions, movement and joints must be checked on the object; a photograph does not establish them.', 'Stvarne mere, pokreti i spojevi proveravaju se na predmetu; fotografija ih ne potvrđuje.')} <a href="index.html?w=1">${tr('Week 1 material', 'Gradivo prve nedelje')}</a></p>
   </section>`;
 }
 
@@ -159,7 +170,7 @@ function evidenceBox() {
 
 function render() {
   $('#main').innerHTML = `<div class="page-top"><div><p class="eyebrow">${tr('Week 1 / Day one / By hand', 'Nedelja 1 / Prvi dan / Rukom')}</p><h1>${tr('A toy<br>that teaches space.', 'Igračka<br>koja uči prostor.')}</h1><p class="lede">${tr('Not a toy for a diagnosis, and not a therapy device. One object that trains a movement of the hand and an operation on space at the same time, built from what a household throws away, playable by two different children at one table.', 'Ne igračka za dijagnozu i ne terapijsko pomagalo. Jedan predmet koji istovremeno vežba pokret ruke i radnju nad prostorom, napravljen od onoga što domaćinstvo baca, a za njim mogu dvoje različite dece za istim stolom.')}</p>
-  <div class="actions"><a class="button secondary" href="index.html">${tr('Back to the week', 'Natrag na nedelju')}</a><a class="button secondary" href="assets/sablon-a3.svg" download>${tr('A3 template', 'A3 šablon')} ↓</a><a class="button secondary" href="vezbe.html#ex-toy-for-coordination">${tr('All exercises', 'Sve vežbe')}</a></div></div>
+  <div class="actions"><a class="button secondary" href="index.html?w=1">${tr('Back to the week', 'Natrag na nedelju')}</a><a class="button secondary" href="assets/sablon-a3.svg" download>${tr('A3 template', 'A3 šablon')} ↓</a><a class="button secondary" href="vezbe.html#ex-toy-for-coordination">${tr('All exercises', 'Sve vežbe')}</a></div></div>
   <div class="page-meta"><span class="meta-label">${tr('Time', 'Vreme')}</span><span>${tr('90 minutes in the studio', '90 minuta u studiju')}</span><span class="meta-label">${tr('Medium', 'Medij')}</span><span>${tr('pencil, A3, the parts in your hand', 'olovka, A3, delovi u ruci')}</span></div></div>
   <div class="atelier-rule"><strong>${tr('The course record is the A3 on paper.', 'Evidencija na predmetu je A3 na papiru.')}</strong> ${tr('Write your name, index and week on it; the teacher reviews and signs it at the end of class. This site does not receive or grade the sheet.', 'Upiši ime, indeks i nedelju; nastavnik ga pregleda i potpisuje na kraju časa. Sajt ne prima niti ocenjuje list.')}</div>
   ${referenceBox()}${brief()}

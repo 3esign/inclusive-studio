@@ -128,3 +128,7 @@ Zbirka sada obuhvata i tehnički crtež Lego4ll i nastavnikov prototip zvečke s
 Originalna fotografija tehničkog crteža ostaje nepromenjena; `photos[].rotation: -90` okreće samo prikaz preko zajedničkog renderer-a i CSS-a. Podržane su -90, 90 i 180 stepeni, bajtovi/SHA i originalne dimenzije ostaju izvorni. Generativna rekonstrukcija se ne koristi kao tehnička dokumentacija. Zapažanja iz udruženja i dalje su zaseban događaj uz potvrđen izvor.
 
 Pregled održanih časova i birač radnih nedelja prikazuju najnovije prvo; ne unositi ručno obrnut HTML niti menjati pedagoški redosled faza A/B/C semestralnog plana. Redosled proveriti sa najmanje tri izmešane nedelje.
+
+## Pozajmljeni primer pripada prvom času · 09.10.2026.
+
+Nastavnik je izričito ispravio poreklo: igračka iz `data/igracka/igracka-01.jpg`, `igracka-02.jpg` i `igracka-03.jpg` pozajmljena je iz udruženja „Živimo zajedno” i doneta na prvi čas da podstakne osmišljavanje studentskih prototipova. Sve tri fotografije pripadaju samo `w01`; to nije studentski rad druge nedelje niti dokaz probavanja u udruženju. Ne zaključivati datum/mesto snimanja, autorstvo, mere, funkciju ili nameru izrađivača iz fotografije. Fotografije druge nedelje moraju odgovarati potvrđenim zapisima te nedelje. Ispravka objavljenog gradiva dobija novu reviziju; njegov važeći publication hash osvežava se uz očuvanje statusa `held-record`, bez proglašavanja konačnog odobrenja. Prethodni bajtovi ostaju u Git istoriji i checkpointu.
