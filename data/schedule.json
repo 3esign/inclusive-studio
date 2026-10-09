@@ -4,5 +4,9 @@
   "course": "Principi univerzalnog dizajna (22.OA0068 / OAIPUD)",
   "term": "2026/2027 · prvi (zimski) semestar",
   "timezone": "Europe/Belgrade",
-  "events": []
+  "events": [],
+  "regularTeachingDay": {
+    "weekday": 5,
+    "source": "Nastavnik predmeta, 09.10.2026: nastava svakog petka."
+  }
 }

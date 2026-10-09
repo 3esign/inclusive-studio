@@ -35,6 +35,37 @@ test('an additional independent prototype renders without modifying templates or
   for (const original of data.items) assert.ok(html.includes(`id="${original.id}"`));
   assert.equal((html.match(/data-prototype-attribution=/g) || []).length, data.items.length + 1);
 });
+test('documented week is required, positive and never precedes the start of work', () => {
+  for (const value of [undefined, null, 0, -1, 1.5, '2', Infinity]) {
+    const invalid = clone(); invalid.items[0].documentedWeek = value;
+    assert.ok(validatePrototypes(invalid).some(problem => problem.includes('Documented week')));
+    assert.throws(() => renderPrototypes(invalid), /Documented week/);
+    assert.throws(() => prototypeTeaser(invalid), /Documented week/);
+  }
+  const invalid = clone(); invalid.items[0].originWeek = 3; invalid.items[0].documentedWeek = 2;
+  assert.ok(validatePrototypes(invalid).some(problem => problem.includes('Documented week')));
+});
+test('cards and summaries distinguish documented material from origin and derive future week links from each record', t => {
+  const d = clone();
+  for (const item of d.items) { item.originWeek = 1; item.documentedWeek = 2; }
+  d.items[1].originWeek = 3; d.items[1].documentedWeek = 4;
+  assert.deepEqual(validatePrototypes(d), []);
+  t.after(() => setLanguage('sr'));
+  for (const language of ['sr', 'en']) {
+    setLanguage(language);
+    const html = renderPrototypes(d), teaser = prototypeTeaser(d);
+    const card = id => html.split(`data-prototype="${id}">`)[1].split('</article>')[0];
+    assert.ok(card(d.items[0].id).includes(`href="index.html?w=2">${language === 'sr' ? 'Nedelja' : 'Week'} 2</a>`));
+    assert.ok(card(d.items[1].id).includes(`href="index.html?w=4">${language === 'sr' ? 'Nedelja' : 'Week'} 4</a>`));
+    assert.ok(card(d.items[0].id).includes(language === 'sr' ? 'izrada započeta u nedelji 1' : 'work begun in week 1'));
+    assert.ok(card(d.items[1].id).includes(language === 'sr' ? 'izrada započeta u nedelji 3' : 'work begun in week 3'));
+    assert.ok(teaser.includes(language === 'sr' ? 'Dokumentovano: Nedelja 2 · Nedelja 4' : 'Documented: Week 2 · Week 4'));
+    assert.ok(teaser.includes(language === 'sr' ? 'Početak izrade: Nedelja 1 · Nedelja 3' : 'Work begun: Week 1 · Week 3'));
+    const context = html.split('<aside class="prototype-context">')[1].split('</aside>')[0];
+    assert.ok(context.indexOf('index.html?w=2') < context.indexOf('index.html?w=1'), 'documented material is the primary contextual link');
+    for (const week of [1, 2, 3, 4]) assert.ok(context.includes(`href="index.html?w=${week}"`));
+  }
+});
 test('invalid attribution, duplicates, foreign fields and unsafe photo paths are rejected', () => {
   for (const mutate of [
     d => { d.items[0].attribution = null; },

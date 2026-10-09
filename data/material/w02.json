@@ -8,8 +8,8 @@
     "en": "The prototype on the table",
     "sr": "Prototip na stolu"
   },
-  "date": null,
-  "dateStatus": "proposed",
+  "date": "2026-10-09",
+  "dateStatus": "confirmed",
   "aim": {
     "en": "You bring an object, not a drawing. You can say which of your decisions the material refused, you can judge your own prototype against all seven principles and fail at least two of them honestly, and you can name the one part that must be printed because it cannot be found.",
     "sr": "Donosiš predmet, a ne crtež. Umeš da kažeš koju je tvoju odluku materijal odbio, umeš da oceniš sopstveni prototip po svih sedam principa i da pošteno oboriš bar dva, i umeš da imenuješ jedan deo koji mora da se odštampa jer ne može da se nađe."
@@ -33,6 +33,41 @@
     }
   ],
   "blocks": [
+    {
+      "kind": "heading",
+      "text": {
+        "sr": "Zapisano posle časa — 09.10.2026.",
+        "en": "Recorded after class — 9 October 2026"
+      }
+    },
+    {
+      "kind": "list",
+      "items": [
+        {
+          "sr": "Studenti su doneli izrađene prototipove započete na prvom času. Do sada je dokumentovano šest radova: Zmijica, Muzička Kutija, Zgradica, Sudoku, Pogodilica i Upadalica.",
+          "en": "Students brought the prototypes begun in the first class. Six works have been documented so far: Zmijica, Muzička Kutija, Zgradica, Sudoku, Pogodilica and Upadalica."
+        },
+        {
+          "sr": "Fotografije, tačna autorstva i kratki opisi objedinjeni su u zbirci druge nedelje. Najavljen je još jedan krug fotografija za istu nedelju.",
+          "en": "Photographs, exact attribution and short descriptions are collected in the week-two gallery. A further batch of photographs has been announced for the same week."
+        }
+      ]
+    },
+    {
+      "kind": "link",
+      "href": "prototipovi.html",
+      "text": {
+        "sr": "Nedelja 2 — doneti studentski prototipovi, fotografije i autori",
+        "en": "Week 2 — brought student prototypes, photographs and authors"
+      }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "sr": "Zapis potvrđuje donošenje i dokumentovanje prototipova. Zapažanja iz udruženja dodaju se zasebno uz odgovarajuće radove kada fotografije i podaci budu dostavljeni.",
+        "en": "This record confirms that prototypes were brought and documented. Observations from the association will be added separately to the relevant works when photographs and information are supplied."
+      }
+    },
     {
       "kind": "heading",
       "text": {
@@ -296,6 +331,14 @@
       "sta": {
         "en": "Added “The next sheet”: the week 3 assignment (the hand that holds it + the faculty table, two halves of one A3, works without a prototype), and the preparation for the trial of prototypes at the association.",
         "sr": "Dodat „Sledeći list\": zadatak za 3. nedelju (Ruka koja drži + tabela fakulteta, dva dela jednog A3, radi i bez prototipa) i priprema probavanja prototipa u udruženju."
+      }
+    },
+    {
+      "v": 3,
+      "datum": "2026-10-09",
+      "sta": {
+        "sr": "Po potvrdi nastavnika upisan održani drugi čas 09.10.2026, stvarni zapis o šest donetih prototipova i veza ka zbirci druge nedelje. Izrada je započeta prve nedelje; nisu dodati nepotvrđeni rezultati testiranja.",
+        "en": "Recorded the second class held on 9 October 2026 following the teacher’s confirmation, an account of six brought prototypes and a link to the week-two collection. Making began in week one; no unconfirmed testing outcomes were added."
       }
     }
   ]

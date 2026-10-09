@@ -112,3 +112,11 @@ Za šesti rad dodaje se novi `items[]` sa svim potvrđenim podacima i zasebnim o
 ## Dopuna registra · 09.10.2026.
 
 U sledećoj izričitoj nastavnikovoj dopuni dodat je šesti rad **Upadalica**, sa potvrđenom atribucijom, jednom originalnom fotografijom i izvorom `teacher-2026-10-09-upadalica`. Atribucija se čita iz registra rada. Raniji opis pet radova označava prvu isporuku; postojeći postupak i granice važe i za novu dopunu.
+
+## Potvrđena nedelja dokumentovanja · 09.10.2026.
+
+Nastavnik je naknadno potvrdio: svih šest radova i najavljeni naredni krug fotografija pripadaju **nedelji 2**, održanoj **u petak, 09.10.2026.** Nastava je petkom. `originWeek: 1` označava početak izrade; `documentedWeek: 2` označava nedelju dokumentovanja i vodi ka njenom gradivu. Nisu isto polje. Šest before/after revizija čuva prethodno stanje; izvor je `teacher-2026-10-09-week-02`. Nove fotografije iz ovog najavljenog kruga vezati za nedelju 2 i odgovarajući rad, uz proveru stvarnog konteksta. Ovo nije trajno pravilo za sve buduće radove. Zapažanja iz udruženja ostaju zasebni događaji.
+
+Drugi čas sada pripada `odrzano`, a naredni čas je treća nedelja, čiji plan ostaje priprema. Datum održavanja nije datum konačnog odobrenja čitavog gradiva. Redovan petak ne određuje satnicu, trajanje ni tačan termin susreta u udruženju.
+
+`assets/next-class.js` sada izvodi stranicu Sledeći čas iz stvarne naredne nedelje u `data/tok.json` i odgovarajućeg `wNN.json`. Ne vraćati nazive, zadatke ili veze fiksirane za drugu nedelju. Posle promene toka ili narednog gradiva pokrenuti `node tools/next-baseline.mjs` (zatim `--check`), `node tools/held-baseline.mjs`, `node tools/prototipovi.mjs` i `node tools/shells.mjs`; testovi proveravaju isti statični i živi prikaz. Izvor nedelje i status njenog nacrta ostaju vidljivi.

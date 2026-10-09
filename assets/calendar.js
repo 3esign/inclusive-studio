@@ -80,6 +80,10 @@ export function validateSchedule(data) {
   for (const field of ['institution', 'course', 'term']) {
     if (!validText(data[field])) errors.push(`Schedule ${field} must be text.`);
   }
+  if (data.regularTeachingDay !== undefined) {
+    const day = data.regularTeachingDay;
+    if (!day || !Number.isInteger(day.weekday) || day.weekday < 1 || day.weekday > 7 || !validText(day.source) || !day.source.trim()) errors.push('Regular teaching day needs an ISO weekday (1–7) and its source.');
+  }
   let timezoneValid = true;
   try { zoneFormatter(data.timezone); } catch (error) { errors.push(error.message); timezoneValid = false; }
   if (!Array.isArray(data.events)) return [...errors, 'Schedule events must be an array.'];
@@ -114,6 +118,14 @@ export function validateSchedule(data) {
     }
   });
   return errors;
+}
+
+/** A confirmed weekly rhythm does not invent meeting times or calendar events. */
+export function teachingDayText(data, lang = 'en') {
+  const day = data?.regularTeachingDay?.weekday;
+  if (!Number.isInteger(day) || day < 1 || day > 7) return '';
+  const names = lang.startsWith('sr') ? ['ponedeljkom', 'utorkom', 'sredom', 'četvrtkom', 'petkom', 'subotom', 'nedeljom'] : ['Mondays', 'Tuesdays', 'Wednesdays', 'Thursdays', 'Fridays', 'Saturdays', 'Sundays'];
+  return lang.startsWith('sr') ? `Nastava je ${names[day - 1]}. Satnica nije zabeležena.` : `Classes meet on ${names[day - 1]}. The meeting time has not been recorded.`;
 }
 
 /** Format a calendar date without shifting it through the visitor's local timezone. */

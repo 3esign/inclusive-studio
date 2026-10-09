@@ -28,3 +28,11 @@ Nema novih npm zavisnosti, spoljnih fontova/trakera niti novog paralelnog regist
 ## Dopuna registra · 09.10.2026.
 
 U sledećoj izričitoj nastavnikovoj dopuni dodat je šesti rad **Upadalica**, sa potvrđenom atribucijom, jednom originalnom fotografijom i izvorom `teacher-2026-10-09-upadalica`. Atribucija se čita iz registra rada. Raniji opis pet radova označava prvu isporuku; postojeći postupak i granice važe i za novu dopunu.
+
+## Potvrđena nedelja dokumentovanja · 09.10.2026.
+
+Nastavnik je naknadno potvrdio: svih šest radova i najavljeni naredni krug fotografija pripadaju **nedelji 2**, održanoj **u petak, 09.10.2026.** Nastava je petkom. `originWeek: 1` označava početak izrade; `documentedWeek: 2` označava nedelju dokumentovanja i vodi ka njenom gradivu. Nisu isto polje. Šest before/after revizija čuva prethodno stanje; izvor je `teacher-2026-10-09-week-02`. Nove fotografije iz ovog najavljenog kruga vezati za nedelju 2 i odgovarajući rad, uz proveru stvarnog konteksta. Ovo nije trajno pravilo za sve buduće radove. Zapažanja iz udruženja ostaju zasebni događaji.
+
+Drugi čas sada pripada `odrzano`, a naredni čas je treća nedelja, čiji plan ostaje priprema. Datum održavanja nije datum konačnog odobrenja čitavog gradiva. Redovan petak ne određuje satnicu, trajanje ni tačan termin susreta u udruženju.
+
+Prikaz sledećeg časa deli `assets/next-class.js` sa generatorom `tools/next-baseline.mjs`. Posle pomeranja nedelje regenerisati njegov statični prikaz i školjke; ne prepisivati teme, zadatke i veze ručno sa prethodnog časa. Tačan redosled provera nalazi se u smernicama.

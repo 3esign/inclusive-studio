@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises';
 
 // The website is dependency-free and has no package.json; load its browser ES module directly.
 const source = await readFile(new URL('../assets/calendar.js', import.meta.url), 'utf8');
-const { validateSchedule, formatDate, createICS } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
+const { validateSchedule, formatDate, createICS, teachingDayText } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
 const event = (overrides = {}) => ({
   id: 'studio-1', stage: 1, title: 'Observe a shared place',
   start: '2026-10-01T10:00', end: '2026-10-01T12:00', location: '',
@@ -17,7 +17,7 @@ const unfold = text => text.replace(/\r\n /g, '');
 
 test('the published schedule names the course but invents no dates', async () => {
   const data = JSON.parse(await readFile(new URL('../data/schedule.json', import.meta.url), 'utf8'));
-  // Course identity comes from the faculty examination record (27.08.2026); teaching dates do not exist yet.
+  // Timed events remain unavailable; a teacher-confirmed Friday rhythm is distinct.
   assert.equal(data.status, 'unconfirmed');
   assert.equal(data.timezone, 'Europe/Belgrade');
   assert.match(data.institution, /Union . Nikola Tesla/);
@@ -25,6 +25,18 @@ test('the published schedule names the course but invents no dates', async () =>
   assert.ok(data.term.startsWith('2026/2027'), data.term);
   assert.deepEqual(data.events, []);
   assert.deepEqual(validateSchedule(data), []);
+  assert.equal(data.regularTeachingDay.weekday, 5);
+  assert.match(teachingDayText(data, 'sr'), /petkom/);
+  assert.match(teachingDayText(data, 'en'), /Fridays/);
+});
+
+test('a regular teaching day needs a source and never manufactures timed events for export', () => {
+  for (const weekday of [0, 8, 2.5, '5']) assert.ok(validateSchedule(schedule([], {regularTeachingDay:{weekday, source:'Teacher'}})).length);
+  assert.ok(validateSchedule(schedule([], {regularTeachingDay:{weekday:5, source:''}})).length);
+  const data = schedule([], {regularTeachingDay:{weekday:5, source:'Teacher'}});
+  assert.deepEqual(validateSchedule(data), []);
+  assert.doesNotMatch(createICS(data.events), /BEGIN:VEVENT/);
+  assert.equal(teachingDayText(schedule()), '');
 });
 
 test('valid leap days and real month lengths are enforced', () => {

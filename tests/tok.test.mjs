@@ -99,7 +99,9 @@ test('the landing is the held record, in Serbian, naming all three parts even wi
 
 test('the held page carries no preparation results and no cloud ideas — each has its own page', async () => {
   const page = await readFile(new URL('../index.html', import.meta.url), 'utf8');
-  assert.ok(!page.includes('Prototip na stolu — drugi čas'), 'a next-class item sits on the held page');
+  for (const entry of tok.sledeci.filter(item => item.vrsta === 'cas')) {
+    assert.ok(!page.includes(entry.naslov.sr), `a next-class item sits on the held page: ${entry.id}`);
+  }
   for (const idea of tok.ideje) {
     assert.ok(!page.includes(idea.naslov.sr), `idea "${idea.naslov.sr}" sits on the held page — it belongs to oblak.html`);
   }
@@ -107,11 +109,19 @@ test('the held page carries no preparation results and no cloud ideas — each h
 
 test('the next-class page is rich and leans on the last held class, without scripting', async () => {
   const page = await readFile(new URL('../sledeci.html', import.meta.url), 'utf8');
-  for (const needle of ['Šta se donosi', 'Plan, redom', 'Ruka koja drži', 'Probavanje prototipova u udruženju', 'Šta ova strana još čeka', 'EN 71-1']) {
+  const { nextClassEntry, lastHeldClass } = await load('next-class.js');
+  const next = nextClassEntry(tok), last = lastHeldClass(tok);
+  if (!next) { assert.ok(page.includes('Naredni čas još nije upisan.')); return; }
+  const week = await json(`data/material/w${String(next.nedelja).padStart(2, '0')}.json`);
+  for (const needle of ['Šta se donosi', 'Plan, redom', week.title.sr, 'Šta ova strana još čeka', ...tok.sledeci.filter(i => i.vrsta === 'protokol').map(i => i.naslov.sr)]) {
     assert.ok(page.includes(needle), `sledeci.html misses: ${needle}`);
   }
-  assert.ok(page.includes('2026-10-02'), 'the next-class page does not lean on the last held class');
-  assert.ok(page.includes('assets/fieldwork/zivimo-zajedno-sketch.jpg'), 'the protocol section carries no field sketch');
+  if (last) {
+    assert.ok(page.includes(last.odrzan), 'the next-class page does not lean on the last held class');
+    assert.ok(page.includes(`index.html?w=${last.nedelja}`));
+  }
+  assert.ok(page.includes(`predavanje.html?w=${next.nedelja}&amp;preview=1`));
+  if (tok.sledeci.some(i => i.id === 'probavanje-u-udruzenju')) assert.ok(page.includes('assets/fieldwork/zivimo-zajedno-sketch.jpg'), 'the protocol section carries no field sketch');
 });
 
 test('the cloud page lists every idea with its date, without scripting', async () => {
