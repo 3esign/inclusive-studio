@@ -48,7 +48,7 @@ async function loadWeek() {
 function picker() {
   const index = state.index;
   if (!index) return '';
-  const entries = index.weeks.slice().sort((a, b) => a.n - b.n).filter(entry => entry.state === 'published' || showDrafts);
+  const entries = index.weeks.slice().sort((a, b) => b.n - a.n).filter(entry => entry.state === 'published' || showDrafts);
   const current = state.week ? state.week.n : null;
   return `<nav class="week-picker" aria-label="${tr('Weeks', 'Nedelje')}"><ol>${entries.map(entry => `<li><a href="index.html?w=${entry.n}${showDrafts ? '&draft=1' : ''}"${entry.n === current ? ' aria-current="page"' : ''}><span>${String(entry.n).padStart(2, '0')}</span> ${esc(tx(entry.title))}${entry.state === 'draft' ? ` <em>${tr('draft', 'nacrt')}</em>` : ''}</a></li>`).join('')}</ol>
   ${showDrafts ? '' : `<p class="help">${link('index.html?draft=1', tr('Show the weeks still in draft', 'Prikaži nedelje koje su još u nacrtu'))}</p>`}</nav>`;

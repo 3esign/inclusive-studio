@@ -45,10 +45,13 @@ test('the image reading path translates descriptions and retains provenance with
 
 test('newest held date leads the reading path; a malformed image cannot become an executable link', () => {
   setLanguage('sr');
-  const old = { naslov: { sr: 'Raniji čas' }, odrzan: '2026-01-02', rezultati: [], izvor: 'zapis' };
-  const recent = { ...old, naslov: { sr: 'Noviji čas' }, odrzan: '2026-02-02' };
-  const html = heldSection({ odrzano: [old, recent] }, new Map());
-  assert.ok(html.indexOf('Noviji čas') < html.indexOf('Raniji čas'));
+  const record = (n, date) => Object.freeze({ nedelja: n, naslov: { sr: `Čas ${n}` }, odrzan: date, rezultati: [], izvor: 'zapis' });
+  const old = record(1, '2026-10-02');
+  const records = Object.freeze([record(2, '2026-10-09'), record(10, '2026-12-04'), old, record(3, '2026-10-16')]);
+  const before = JSON.stringify(records);
+  const html = heldSection({ odrzano: records }, new Map());
+  assert.deepEqual([...html.matchAll(/<h3>Čas (\d+)<\/h3>/g)].map(match => Number(match[1])), [10, 3, 2, 1]);
+  assert.equal(JSON.stringify(records), before, 'display order must not rewrite the original course record');
   assert.deepEqual(lessonImages({ blocks: [
     { kind: 'image', src: 'javascript:alert(1)' },
     { kind: 'image', src: 'data/../../private.jpg' },

@@ -15,6 +15,20 @@ const initial = [
   ['pogodilica-2026', 'Pogodilica', 'Todorić Teodora', '39/24', 'e78005d77caa5ea1ea28b6f755d1518cde2e07070e1cc68bdafe02d6364aa7ac']
 ];
 const clone = () => structuredClone(data);
+function additionalWorks() {
+  const d = clone(), base = d.items[0];
+  const work = (id, kind, authorRole, medium, count) => {
+    const item = structuredClone(base);
+    Object.assign(item, { id, title: id, kind, authorRole, medium, status: 'documented', documentedWeek: 2, author: { name: `${authorRole} fixture` }, attribution: { sourceId: base.sourceId, fields: ['name'] } });
+    delete item.originWeek;
+    item.photos = Array.from({ length: count }, (_, i) => ({ ...base.photos[0], id: `${id}-${i + 1}`, src: `data/prototipovi/${id}/${i + 1}.jpg` }));
+    return item;
+  };
+  const drawing = work('fixture-drawing', 'technical-drawing', 'student', 'drawing', 1);
+  const teacher = work('fixture-teacher', 'prototype', 'teacher', 'physical', 4);
+  d.items.push(drawing, teacher);
+  return { d, drawing, teacher };
+}
 test('the supplied five photographs retain their exact teacher-provided titles and attribution in current or recorded earlier editions', async () => {
   assert.deepEqual(validatePrototypes(data), []);
   for (const [id, title, name, studentNumber, hash] of initial) {
@@ -54,16 +68,95 @@ test('cards and summaries distinguish documented material from origin and derive
   for (const language of ['sr', 'en']) {
     setLanguage(language);
     const html = renderPrototypes(d), teaser = prototypeTeaser(d);
-    const card = id => html.split(`data-prototype="${id}">`)[1].split('</article>')[0];
+    const card = id => html.split(`data-prototype="${id}"`)[1].split('</article>')[0];
     assert.ok(card(d.items[0].id).includes(`href="index.html?w=2">${language === 'sr' ? 'Nedelja' : 'Week'} 2</a>`));
     assert.ok(card(d.items[1].id).includes(`href="index.html?w=4">${language === 'sr' ? 'Nedelja' : 'Week'} 4</a>`));
     assert.ok(card(d.items[0].id).includes(language === 'sr' ? 'izrada započeta u nedelji 1' : 'work begun in week 1'));
     assert.ok(card(d.items[1].id).includes(language === 'sr' ? 'izrada započeta u nedelji 3' : 'work begun in week 3'));
     assert.ok(teaser.includes(language === 'sr' ? 'Dokumentovano: Nedelja 2 · Nedelja 4' : 'Documented: Week 2 · Week 4'));
-    assert.ok(teaser.includes(language === 'sr' ? 'Početak izrade: Nedelja 1 · Nedelja 3' : 'Work begun: Week 1 · Week 3'));
+    assert.ok(!teaser.includes(language === 'sr' ? 'Početak izrade:' : 'Work begun:'), 'the collection summary does not imply a shared start week');
     const context = html.split('<aside class="prototype-context">')[1].split('</aside>')[0];
     assert.ok(context.indexOf('index.html?w=2') < context.indexOf('index.html?w=1'), 'documented material is the primary contextual link');
     for (const week of [1, 2, 3, 4]) assert.ok(context.includes(`href="index.html?w=${week}"`));
+  }
+});
+test('drawings and teacher examples omit unknown personal data and origin without changing the legacy records', t => {
+  const { d, drawing, teacher } = additionalWorks();
+  assert.deepEqual(d.items.slice(0, data.items.length), data.items);
+  assert.deepEqual(validatePrototypes(d), []);
+  t.after(() => setLanguage('sr'));
+  for (const language of ['sr', 'en']) {
+    setLanguage(language);
+    const html = renderPrototypes(d), teaser = prototypeTeaser(d);
+    const card = id => html.split(`data-prototype="${id}"`)[1].split('</article>')[0];
+    const drawingCard = card(drawing.id), teacherCard = card(teacher.id);
+    assert.match(drawingCard, /data-work-kind="technical-drawing" data-author-role="student"/);
+    assert.match(teacherCard, /data-work-kind="prototype" data-author-role="teacher"/);
+    assert.ok(drawingCard.includes(language === 'sr' ? 'Tehnički crtež' : 'Technical drawing'));
+    assert.ok(teacherCard.includes(language === 'sr' ? 'Nastavnikov primer' : 'Teacher’s example'));
+    assert.doesNotMatch(drawingCard.replace(/class="[^"]*"/g, ''), /Physical prototype|Digital prototype|Fizički prototip|Digitalni prototip/);
+    for (const item of [drawing, teacher]) {
+      const shown = card(item.id);
+      assert.ok(shown.includes(`<span data-author-name>${item.author.name}</span></p>`));
+      assert.doesNotMatch(shown, /data-author-number|undefined|null|work begun|izrada započeta/);
+      assert.ok(shown.includes(language === 'sr' ? 'Dokumentovan rad' : 'Documented work'));
+      assert.match(shown, /href="index.html\?w=2"/);
+      assert.equal((shown.match(/<figure class="prototype-photo">/g) || []).length, item.photos.length);
+      assert.ok(!teaser.includes(item.author.name), 'the teaser does not duplicate personal attribution');
+    }
+    assert.ok(html.includes(language === 'sr' ? 'Radovi i primeri.' : 'Works and examples.'));
+    assert.doesNotMatch(teaser, /undefined|null|Work begun|Početak izrade/);
+    const onlyNew = { ...d, items: [drawing, teacher], revizije: [], observations: [] };
+    assert.deepEqual(validatePrototypes(onlyNew), []);
+    assert.doesNotMatch(renderPrototypes(onlyNew), /index\.html\?w=1(?:"|&)/, 'unknown origin is never replaced with week one');
+  }
+});
+test('optional identity and origin fields must be omitted or contain valid explicitly attributed values', () => {
+  for (const mutate of [
+    i => { i.author.studentNumber = ''; i.attribution.fields.push('studentNumber'); },
+    i => { i.author.studentNumber = null; i.attribution.fields.push('studentNumber'); },
+    i => { i.author.studentNumber = 49; i.attribution.fields.push('studentNumber'); },
+    i => { i.author.studentNumber = '49/24'; },
+    i => { i.attribution.fields.push('studentNumber'); },
+    i => { i.attribution.fields = ['name', 'name']; },
+    i => { i.author.role = 'student'; },
+    i => { i.authorRole = 'approved'; },
+    i => { i.authorRole = null; },
+    i => { i.kind = 'approved-device'; },
+    i => { i.kind = null; },
+    ...[undefined, null, 0, -1, 1.5, '1', Infinity, 3].map(value => i => { i.originWeek = value; })
+  ]) {
+    const { d, drawing } = additionalWorks(); mutate(drawing);
+    assert.ok(validatePrototypes(d).length, 'reject invalid or mismatched optional evidence');
+    assert.throws(() => renderPrototypes(d));
+  }
+  const { d, drawing } = additionalWorks();
+  drawing.author.studentNumber = '0049/24'; drawing.attribution.fields.push('studentNumber'); drawing.originWeek = 1;
+  assert.deepEqual(validatePrototypes(d), []);
+  assert.match(renderPrototypes(d), /data-author-number>0049\/24<\/span>/, 'supplied formatting is preserved');
+});
+test('display-only rotation preserves source bytes metadata and is identical in gallery and teaser', () => {
+  for (const rotation of [-90, 90, 180]) {
+    const { d, drawing } = additionalWorks(), p = drawing.photos[0];
+    Object.assign(p, { width: 1000, height: 2000, rotation });
+    const before = structuredClone(d);
+    assert.deepEqual(validatePrototypes(d), []);
+    const gallery = renderPrototypes(d), teaser = prototypeTeaser(d);
+    const ratio = rotation === 180 ? '1000/2000' : '2000/1000';
+    const dimensions = rotation === 180 ? '--rotated-width:100%;--rotated-height:100%' : '--rotated-width:50%;--rotated-height:200%';
+    const wrapper = `<span class="prototype-image rotated-image" style="aspect-ratio:${ratio};--rotation:${rotation}deg;${dimensions}">`;
+    for (const html of [gallery, teaser]) {
+      assert.ok(html.includes(wrapper));
+      assert.ok(html.includes(`<img src="${p.src}" width="1000" height="2000"`));
+    }
+    assert.ok(gallery.includes(`<a href="${p.src}"`), 'full image link remains the unchanged original');
+    assert.deepEqual(d, before, 'rendering never changes original src, SHA, dimensions or history');
+  }
+  for (const rotation of [undefined, null, 0, 45, -180, 270, '-90', '-90deg;display:none']) {
+    const { d, drawing } = additionalWorks(); drawing.photos[0].rotation = rotation;
+    assert.ok(validatePrototypes(d).some(problem => problem.includes('rotation')));
+    assert.throws(() => renderPrototypes(d), /rotation/);
+    assert.throws(() => prototypeTeaser(d), /rotation/);
   }
 });
 test('invalid attribution, duplicates, foreign fields and unsafe photo paths are rejected', () => {
@@ -104,7 +197,7 @@ test('static, live and translated views preserve every author and prototype; sum
     assert.equal(html.split(`<!-- ${marker}:start -->`)[1].split(`<!-- ${marker}:end -->`)[0], expected);
   }
   setLanguage('en'); const english = renderPrototypes(data);
-  assert.match(english, /Brought prototypes/);
-  for (const item of data.items) { assert.ok(english.includes(item.author.name)); assert.ok(english.includes(item.author.studentNumber)); assert.ok(english.includes(item.title)); }
+  assert.match(english, /Works and examples/);
+  for (const item of data.items) { assert.ok(english.includes(item.author.name)); if (item.author.studentNumber !== undefined) assert.ok(english.includes(item.author.studentNumber)); assert.ok(english.includes(item.title)); }
   setLanguage('sr');
 });

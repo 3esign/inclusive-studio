@@ -50,6 +50,10 @@
         {
           "sr": "Fotografije, tačna autorstva i kratki opisi objedinjeni su u zbirci druge nedelje. Najavljen je još jedan krug fotografija za istu nedelju.",
           "en": "Photographs, exact attribution and short descriptions are collected in the week-two gallery. A further batch of photographs has been announced for the same week."
+        },
+        {
+          "sr": "Zbirka druge nedelje dopunjena je tehničkim crtežom Lego4ll i nastavnikovim prototipom zvečke, dizajniranim u Blenderu i 3D štampanim. Četiri fotografije zvečke prikazuju jedan rad.",
+          "en": "The week-two collection was expanded with the Lego4ll technical drawing and the teacher’s rattle prototype, designed in Blender and 3D printed. The four rattle photographs document one work."
         }
       ]
     },
@@ -57,8 +61,8 @@
       "kind": "link",
       "href": "prototipovi.html",
       "text": {
-        "sr": "Nedelja 2 — doneti studentski prototipovi, fotografije i autori",
-        "en": "Week 2 — brought student prototypes, photographs and authors"
+        "sr": "Nedelja 2 — radovi i primeri: prototipovi, tehnički crtež, fotografije i autori",
+        "en": "Week 2 — works and examples: prototypes, technical drawing, photographs and authors"
       }
     },
     {
@@ -339,6 +343,14 @@
       "sta": {
         "sr": "Po potvrdi nastavnika upisan održani drugi čas 09.10.2026, stvarni zapis o šest donetih prototipova i veza ka zbirci druge nedelje. Izrada je započeta prve nedelje; nisu dodati nepotvrđeni rezultati testiranja.",
         "en": "Recorded the second class held on 9 October 2026 following the teacher’s confirmation, an account of six brought prototypes and a link to the week-two collection. Making began in week one; no unconfirmed testing outcomes were added."
+      }
+    },
+    {
+      "v": 4,
+      "datum": "2026-10-09",
+      "sta": {
+        "sr": "Dodat tehnički crtež Lego4ll i nastavnikov prototip zvečke sa četiri fotografije, prema novoj dopuni nastavnika. Zadržano razdvajanje vrste rada, autorstva i dokumentovanja u drugoj nedelji.",
+        "en": "Added the Lego4ll technical drawing and the teacher’s rattle prototype with four photographs, following the teacher’s new submission. Work type, authorship and documentation in week two remain distinct."
       }
     }
   ]

@@ -1,5 +1,5 @@
 // Roles remain the default. The explicit 09.10.2026 instruction permits only author name
-// and student number attached to the supplied prototype. This is a field-level exception,
+// and, when supplied, student number attached to the supplied work. This is a field-level exception,
 // not a page/directory whitelist or permission for other people, contacts or grades.
 // This bounded guard detects the known legacy identities and misplaced attributed strings;
 // it is not a classifier capable of discovering every personal datum in arbitrary prose.
@@ -18,11 +18,13 @@ function attributionRows(data) {
   const sources = new Set(data.sources.map(source => source.id));
   const rows = [...data.items, ...(data.revizije || []).flatMap(revision => [revision.before, revision.after])];
   for (const row of rows) {
-    assert.deepEqual(Object.keys(row.author).sort(), ['name', 'studentNumber'], 'only the two authorized author fields may be public');
-    assert.deepEqual([...row.attribution.fields].sort(), ['name', 'studentNumber'], 'attribution scope must stay exact');
+    const numbered = Object.hasOwn(row.author, 'studentNumber');
+    const fields = numbered ? ['name', 'studentNumber'] : ['name'];
+    assert.deepEqual(Object.keys(row.author).sort(), fields, 'only the authorized author fields may be public');
+    assert.deepEqual([...row.attribution.fields].sort(), fields, 'attribution scope must stay exact');
     assert.ok(sources.has(row.attribution.sourceId), 'attribution needs a recorded source');
     assert.ok(typeof row.author.name === 'string' && row.author.name.trim());
-    assert.ok(typeof row.author.studentNumber === 'string' && row.author.studentNumber.trim());
+    if (numbered) assert.ok(typeof row.author.studentNumber === 'string' && /^\d{1,4}\/\d{2}(?:\d{2})?$/.test(row.author.studentNumber));
   }
   return rows;
 }
@@ -31,7 +33,7 @@ function withoutAuthorizedAttribution(file, text, data) {
   attributionRows(data);
   if (file === 'data/prototipovi.json') {
     const copy = JSON.parse(text);
-    for (const row of attributionRows(copy)) row.author = { name: '[attributed-author]', studentNumber: '[attributed-number]' };
+    for (const row of attributionRows(copy)) row.author = { name: '[attributed-author]', ...(Object.hasOwn(row.author, 'studentNumber') ? { studentNumber: '[attributed-number]' } : {}) };
     return JSON.stringify(copy);
   }
   // Renderer source contains template placeholders, not an emitted HTML attribution.
@@ -41,9 +43,9 @@ function withoutAuthorizedAttribution(file, text, data) {
     assert.equal(file, 'prototipovi.html', 'only the canonical gallery publishes attribution');
     const row = data.items.find(item => item.id === id);
     assert.ok(row, 'attribution marker must name an existing prototype');
-    const expected = `<span data-author-name>${escape(row.author.name)}</span><span data-author-number>${escape(row.author.studentNumber)}</span>`;
+    const expected = `<span data-author-name>${escape(row.author.name)}</span>${Object.hasOwn(row.author, 'studentNumber') ? `<span data-author-number>${escape(row.author.studentNumber)}</span>` : ''}`;
     assert.equal(inner.trim().replace(/>\s+</g, '><'), expected, 'gallery attribution must match the exact authorized fields');
-    return '<p>[attributed-author-and-number]</p>';
+    return '<p>[attributed-author-fields]</p>';
   });
 }
 
@@ -100,9 +102,29 @@ test('the attribution exception cannot hide unrelated text, extra identifiers or
   assert.throws(() => withoutAuthorizedAttribution('udruzenje.html', author, data), /canonical gallery/);
   assert.throws(() => withoutAuthorizedAttribution('prototipovi.html', author.replace('</p>', '<span>Dejan</span></p>'), data), /exact authorized/);
   const extra = structuredClone(data); extra.items[0].author.email = 'fixture@example.invalid';
-  assert.throws(() => attributionRows(extra), /two authorized/);
+  assert.throws(() => attributionRows(extra), /authorized author fields/);
   const unknown = structuredClone(data); unknown.items[0].attribution.sourceId = 'missing';
   assert.throws(() => attributionRows(unknown), /recorded source/);
+});
+test('name-only teacher attribution is limited to the sourced author field and exact gallery markup', () => {
+  const data = { schema: 'course-prototypes/v1', sources: [{ id: 'fixture-permission' }], items: [{ id: 'fixture-work', authorRole: 'teacher', author: { name: 'Semir Fixture' }, attribution: { sourceId: 'fixture-permission', fields: ['name'] } }], revizije: [] };
+  const author = '<p class="prototype-author" data-prototype-attribution="fixture-work"><span data-author-name>Semir Fixture</span></p>';
+  assert.doesNotMatch(withoutAuthorizedAttribution('prototipovi.html', author, data), NAMES);
+  assert.doesNotMatch(withoutAuthorizedAttribution('data/prototipovi.json', JSON.stringify(data), data), NAMES);
+  assert.match(withoutAuthorizedAttribution('prototipovi.html', author + '<p>Semir Fixture</p>', data), NAMES);
+  assert.match(withoutAuthorizedAttribution('assets/prototipovi-core.js', author, data), NAMES);
+  assert.throws(() => withoutAuthorizedAttribution('index.html', author, data), /canonical gallery/);
+  for (const extra of ['<span data-author-number>49/24</span>', '<span>Teacher</span>', '<a href="mailto:fixture@example.invalid">contact</a>']) {
+    assert.throws(() => withoutAuthorizedAttribution('prototipovi.html', author.replace('</p>', extra + '</p>'), data), /exact authorized/);
+  }
+  for (const mutate of [
+    d => { d.items[0].author.email = 'fixture@example.invalid'; },
+    d => { d.items[0].author.studentNumber = ''; },
+    d => { d.items[0].attribution.fields.push('studentNumber'); },
+    d => { d.items[0].attribution.sourceId = 'missing'; }
+  ]) { const invalid = structuredClone(data); mutate(invalid); assert.throws(() => attributionRows(invalid)); }
+  const misplaced = structuredClone(data); misplaced.items[0].description = 'Semir Fixture';
+  assert.match(withoutAuthorizedAttribution('data/prototipovi.json', JSON.stringify(misplaced), data), NAMES, 'descriptions do not gain an identity exception');
 });
 
 test('the interface waits on no consent', async () => {

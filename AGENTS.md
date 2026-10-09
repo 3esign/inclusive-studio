@@ -36,3 +36,11 @@ Nastavnik je naknadno potvrdio: svih šest radova i najavljeni naredni krug foto
 Drugi čas sada pripada `odrzano`, a naredni čas je treća nedelja, čiji plan ostaje priprema. Datum održavanja nije datum konačnog odobrenja čitavog gradiva. Redovan petak ne određuje satnicu, trajanje ni tačan termin susreta u udruženju.
 
 Prikaz sledećeg časa deli `assets/next-class.js` sa generatorom `tools/next-baseline.mjs`. Posle pomeranja nedelje regenerisati njegov statični prikaz i školjke; ne prepisivati teme, zadatke i veze ručno sa prethodnog časa. Tačan redosled provera nalazi se u smernicama.
+
+## Različite vrste rada i nove nedelje · 09.10.2026.
+
+Zbirka sada obuhvata i tehnički crtež Lego4ll i nastavnikov prototip zvečke sa četiri fotografije. Oba pripadaju dokumentovanoj nedelji 2. `kind` razdvaja `technical-drawing` i `prototype` (izostavljeno na starim zapisima znači postojeći prototip); `authorRole` može biti `student` ili `teacher`; `status: documented` ne tvrdi donošenje ili testiranje. `medium: drawing` je crtež. `author` sadrži ime i samo dostavljeni indeks, a `attribution.fields` tačno prisutna lična polja. Ne nagađati indeks niti `originWeek`: za nova dva rada nisu dostavljeni. Četiri slike zvečke pripadaju jednom radu.
+
+Originalna fotografija tehničkog crteža ostaje nepromenjena; `photos[].rotation: -90` okreće samo prikaz preko zajedničkog renderer-a i CSS-a. Podržane su -90, 90 i 180 stepeni, bajtovi/SHA i originalne dimenzije ostaju izvorni. Generativna rekonstrukcija se ne koristi kao tehnička dokumentacija. Zapažanja iz udruženja i dalje su zaseban događaj uz potvrđen izvor.
+
+Pregled održanih časova i birač radnih nedelja prikazuju najnovije prvo; ne unositi ručno obrnut HTML niti menjati pedagoški redosled faza A/B/C semestralnog plana. Redosled proveriti sa najmanje tri izmešane nedelje.

@@ -70,6 +70,13 @@
             "en": "Photographs, exact attribution and short descriptions are collected in the week-two gallery. A further batch of photographs has been announced for the same week."
           },
           "izvor": "Nastavnik predmeta, 09.10.2026; prototipovi.html."
+        },
+        {
+          "sta": {
+            "sr": "Zbirka druge nedelje dopunjena je tehničkim crtežom Lego4ll i nastavnikovim prototipom zvečke, dizajniranim u Blenderu i 3D štampanim. Četiri fotografije zvečke prikazuju jedan rad.",
+            "en": "The week-two collection was expanded with the Lego4ll technical drawing and the teacher’s rattle prototype, designed in Blender and 3D printed. The four rattle photographs document one work."
+          },
+          "izvor": "Nastavnikova dopuna 09.10.2026; data/prototipovi.json — teacher-2026-10-09-drawing-rattle."
         }
       ],
       "izvor": "Izričita potvrda nastavnika 09.10.2026: druga nedelja održana danas, nastava petkom; data/material/w02.json — Zapisano posle časa."

@@ -24,6 +24,14 @@
         "sr": "Nastavnik je potvrdio da doneti prototipovi i najavljeni naredni krug fotografija pripadaju drugoj nedelji. Drugi čas održan je u petak, 09.10.2026; nastava je petkom. Izrada prototipova započeta je na prvom času.",
         "en": "The teacher confirmed that the brought prototypes and the announced next batch of photographs belong to week two. The second class took place on Friday, 9 October 2026; classes meet on Fridays. The prototypes were begun in the first class."
       }
+    },
+    {
+      "id": "teacher-2026-10-09-drawing-rattle",
+      "recordedOn": "2026-10-09",
+      "description": {
+        "sr": "Nastavnikova dopuna druge nedelje: tehnički crtež Lego4ll sa izričitom atribucijom i četiri fotografije njegovog prototipa zvečke, dizajniranog u Blenderu i 3D štampanog. Crtež je zasebna vrsta rada; poreklo izrade i indeks nisu navedeni. Fotografije iz udruženja slede u zasebnom krugu.",
+        "en": "The teacher’s addition to week two: the Lego4ll technical drawing with explicit attribution and four photographs of his rattle prototype, designed in Blender and 3D printed. The drawing is a distinct work type; the starting week and student number were not supplied. Photographs from the association will follow separately."
+      }
     }
   ],
   "items": [
@@ -278,6 +286,137 @@
         }
       ],
       "documentedWeek": 2
+    },
+    {
+      "id": "lego4ll-2026",
+      "title": "Lego4ll",
+      "kind": "technical-drawing",
+      "authorRole": "student",
+      "author": {
+        "name": "Sofia Ocanto Jovičić"
+      },
+      "attribution": {
+        "sourceId": "teacher-2026-10-09-drawing-rattle",
+        "fields": [
+          "name"
+        ]
+      },
+      "documentedWeek": 2,
+      "medium": "drawing",
+      "status": "documented",
+      "sourceId": "teacher-2026-10-09-drawing-rattle",
+      "description": {
+        "sr": "Tehnički crtež dizajna: prostorni prikaz kvadratne podloge sa mrežom i kružnim i izduženim elementima, uz izdvojene delove i projekcije. Rad je dokumentovan kao crtež, a ne kao izrađen prototip.",
+        "en": "Technical design drawing: a spatial view of a square gridded base with circular and elongated elements, alongside separate components and projections. The work is documented as a drawing, not as a fabricated prototype."
+      },
+      "photos": [
+        {
+          "id": "lego4ll-2026-photo-01",
+          "src": "data/prototipovi/lego4ll-2026/01.jpg",
+          "sha256": "28c1bedd1eeb78cc0e99acda65bdc4123a0a48fea38b77ee752afd8a9868e8ff",
+          "width": 721,
+          "height": 1280,
+          "alt": {
+            "sr": "List sa prostornim prikazom kvadratne mreže, kružnih i izduženih delova, kao i zasebnim projekcijama.",
+            "en": "A sheet showing a square grid, circular and elongated parts in perspective, with separate projections."
+          },
+          "caption": {
+            "sr": "Lego4ll — tehnički crtež. Originalna fotografija prikazana vodoravno.",
+            "en": "Lego4ll — technical drawing. The original photograph displayed horizontally."
+          },
+          "sourceId": "teacher-2026-10-09-drawing-rattle",
+          "rotation": -90
+        }
+      ]
+    },
+    {
+      "id": "zvecka-2026",
+      "title": "Zvečka",
+      "kind": "prototype",
+      "authorRole": "teacher",
+      "author": {
+        "name": "Semir Poturak"
+      },
+      "attribution": {
+        "sourceId": "teacher-2026-10-09-drawing-rattle",
+        "fields": [
+          "name"
+        ]
+      },
+      "documentedWeek": 2,
+      "medium": "physical",
+      "status": "documented",
+      "sourceId": "teacher-2026-10-09-drawing-rattle",
+      "description": {
+        "sr": "Nastavnikov prototip zvečke, dizajniran u Blenderu i izrađen 3D štampom. Četiri fotografije prikazuju kružne forme u plavoj, žutoj i crvenoj boji, koncentrične elemente i različite površinske detalje.",
+        "en": "The teacher’s rattle prototype, designed in Blender and fabricated by 3D printing. Four photographs show circular forms in blue, yellow and red, concentric elements and different surface details."
+      },
+      "photos": [
+        {
+          "id": "zvecka-2026-photo-01",
+          "src": "data/prototipovi/zvecka-2026/01.jpg",
+          "sha256": "1cef4e2cffc66f1a6386fd983a3847a83bafa49571ce96f9f33e795a2f925ab8",
+          "width": 721,
+          "height": 1280,
+          "alt": {
+            "sr": "Plavi kružni 3D štampani elementi sa koncentričnim prstenovima i reljefnim detaljima na podlozi štampača.",
+            "en": "Blue circular 3D-printed elements with concentric rings and raised details on the print bed."
+          },
+          "caption": {
+            "sr": "Plavi primerci — detalj koncentričnih elemenata i teksture.",
+            "en": "Blue examples — detail of the concentric elements and texture."
+          },
+          "sourceId": "teacher-2026-10-09-drawing-rattle"
+        },
+        {
+          "id": "zvecka-2026-photo-02",
+          "src": "data/prototipovi/zvecka-2026/02.jpg",
+          "sha256": "d6bda72ee0548dbc375f2116274399e9fec64314ea92998d597430c549c49e65",
+          "width": 721,
+          "height": 1280,
+          "alt": {
+            "sr": "Krupni plan plavog kružnog elementa sa reljefom u sredini i prstenovima oko njega.",
+            "en": "Close view of a blue circular element with a raised centre and surrounding rings."
+          },
+          "caption": {
+            "sr": "Plavi primerak — pogled na središnji detalj.",
+            "en": "Blue example — view of the central detail."
+          },
+          "sourceId": "teacher-2026-10-09-drawing-rattle"
+        },
+        {
+          "id": "zvecka-2026-photo-03",
+          "src": "data/prototipovi/zvecka-2026/03.jpg",
+          "sha256": "2d43a12639e565c9a5b5b94b9dd100d0982e844013a785956d3801ddcf0325c9",
+          "width": 721,
+          "height": 1280,
+          "alt": {
+            "sr": "Žuti kružni element na podlozi 3D štampača, sa prstenovima i nizovima otvora u površini.",
+            "en": "A yellow circular element on the 3D printer bed, with rings and rows of openings in the surface."
+          },
+          "caption": {
+            "sr": "Žuti primerak na podlozi 3D štampača.",
+            "en": "Yellow example on the 3D printer bed."
+          },
+          "sourceId": "teacher-2026-10-09-drawing-rattle"
+        },
+        {
+          "id": "zvecka-2026-photo-04",
+          "src": "data/prototipovi/zvecka-2026/04.jpg",
+          "sha256": "7444c61fa99076d6cb26f7b10f8e722b5ddcdd2528c2a800ceae4daa01e83bd1",
+          "width": 721,
+          "height": 1280,
+          "alt": {
+            "sr": "Više plavih, crvenih i žutih kružnih štampanih primeraka među nitima filamenta.",
+            "en": "Several blue, red and yellow circular printed examples among strands of filament."
+          },
+          "caption": {
+            "sr": "Zbirni pogled na štampane primerke u različitim bojama.",
+            "en": "Collected view of printed examples in different colours."
+          },
+          "sourceId": "teacher-2026-10-09-drawing-rattle"
+        }
+      ]
     }
   ],
   "observations": [],
