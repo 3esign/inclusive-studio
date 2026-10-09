@@ -24,3 +24,7 @@ Status **doneto/predstavljeno** dolazi iz tog naloga. Datum objave, naziv datote
 6. Predaj imenovane izmene, dokaz i preostale granice. Objava mora biti u ovlašćenom obimu; lokalni test ili checkpoint sami ne predstavljaju objavu ni odobrenje nastavnika.
 
 Nema novih npm zavisnosti, spoljnih fontova/trakera niti novog paralelnog registra. Koristi postojeće projektne testove i dizajn/akademske reference navedene u smernicama. Checkpoint i provere smanjuju rizik i otkrivaju određene promene; ne garantuju da greška nije moguća niti sprečavaju proces sa istim pravima da zaobiđe alat.
+
+## Dopuna registra · 09.10.2026.
+
+U sledećoj izričitoj nastavnikovoj dopuni dodat je šesti rad **Upadalica**, sa potvrđenom atribucijom, jednom originalnom fotografijom i izvorom `teacher-2026-10-09-upadalica`. Atribucija se čita iz registra rada. Raniji opis pet radova označava prvu isporuku; postojeći postupak i granice važe i za novu dopunu.

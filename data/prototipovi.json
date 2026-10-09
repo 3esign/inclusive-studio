@@ -8,6 +8,14 @@
         "sr": "Nastavnikov zapis uz pet dostavljenih fotografija: nazivi, imena autora, brojevi indeksa i podatak da su doneti prototipovi započeti na prvom času.",
         "en": "The teacher’s record accompanying five supplied photographs: titles, author names, student numbers and the statement that the brought prototypes were begun in the first class."
       }
+    },
+    {
+      "id": "teacher-2026-10-09-upadalica",
+      "recordedOn": "2026-10-09",
+      "description": {
+        "sr": "Nastavnikova dopuna prethodne zbirke donetih prototipova: naziv i atribucija šestog rada uz dostavljenu fotografiju.",
+        "en": "The teacher’s addition to the collection of brought prototypes: the title and attribution of the sixth work, with its supplied photograph."
+      }
     }
   ],
   "items": [
@@ -213,6 +221,47 @@
             "en": "Pogodilica — supplied photograph of the prototype."
           },
           "sourceId": "teacher-2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "upadalica-2026",
+      "title": "Upadalica",
+      "author": {
+        "name": "Sara Janjić",
+        "studentNumber": "4/24"
+      },
+      "attribution": {
+        "sourceId": "teacher-2026-10-09-upadalica",
+        "fields": [
+          "name",
+          "studentNumber"
+        ]
+      },
+      "originWeek": 1,
+      "medium": "physical",
+      "status": "brought",
+      "sourceId": "teacher-2026-10-09-upadalica",
+      "description": {
+        "sr": "Otvorena kartonska kutija sa narandžastim cilindričnim elementima i dvema crnim šipkama iznad njih. Na fotografiji se rukom pridržava žuti predmet.",
+        "en": "An open cardboard box with orange cylindrical pieces and two black rods above them. A hand holds a yellow object in the photograph."
+      },
+      "photos": [
+        {
+          "id": "upadalica-2026-photo-01",
+          "src": "data/prototipovi/upadalica-2026/01.jpg",
+          "sha256": "538bef7a7700254940f36d6044f3d38f938bbb0609f1849072ac5a602b09c32b",
+          "width": 721,
+          "height": 1280,
+          "alt": {
+            "sr": "U otvorenoj kartonskoj kutiji nalaze se tri narandžasta cilindrična elementa, iznad kojih prolaze dve crne šipke. Ruka delimično zaklanja levi element i pridržava žuti predmet.",
+            "en": "An open cardboard box contains three orange cylindrical pieces with two black rods above them. A hand partly obscures the left piece while holding a yellow object."
+          },
+          "caption": {
+            "sr": "Upadalica — dostavljena fotografija prototipa.",
+            "en": "Upadalica — supplied photograph of the prototype."
+          },
+          "sourceId": "teacher-2026-10-09-upadalica"
         }
       ]
     }

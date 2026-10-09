@@ -108,3 +108,7 @@ Primer postupka, **nije podatak za automatski upis**: stigne druga fotografija j
 5. Pokrenuti `node tools/prototipovi.mjs`, `node tools/prototipovi.mjs --check`, pa potrebnu regeneraciju ljuske i konačni gate redom iz odeljka „Kako se menja sajt“. Pregledati atribuciju i sliku u punoj galeriji i oba pregleda, sa uključenim i isključenim JavaScript-om.
 
 Za šesti rad dodaje se novi `items[]` sa svim potvrđenim podacima i zasebnim odgovarajućim nalogom za atribuciju. Odobrenje ovih pet nije trajna dozvola za svakog budućeg autora. Ako potreban podatak nije poznat, sačuvati ga kao otvoren posao u postojećoj radnoj evidenciji umesto izmišljanja polja koje validator prihvata.
+
+## Dopuna registra · 09.10.2026.
+
+U sledećoj izričitoj nastavnikovoj dopuni dodat je šesti rad **Upadalica**, sa potvrđenom atribucijom, jednom originalnom fotografijom i izvorom `teacher-2026-10-09-upadalica`. Atribucija se čita iz registra rada. Raniji opis pet radova označava prvu isporuku; postojeći postupak i granice važe i za novu dopunu.
