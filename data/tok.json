@@ -179,6 +179,32 @@
       },
       "izvor": "Razgovor sa nastavnikom, 09.10.2026. (opis prve nedelje).",
       "datum": "2026-10-09"
+    },
+    {
+      "id": "sva-merenja-ruku-u-jednu-tabelu",
+      "naslov": {
+        "sr": "Sva merenja ruku u jednu tabelu",
+        "en": "Every hand measurement in one table"
+      },
+      "tekst": {
+        "sr": "Nedelja 3 donosi merenja pravih ruku. Sabrati merenja svih timova u jednu tabelu i pročitati raspon — najmanja, najveća, i da li propisana mera pokriva svakog.",
+        "en": "Week 3 brings measurements of real hands. Gather every team's measurements into one table and read the spread — smallest, largest, and whether the required dimension covers everyone."
+      },
+      "izvor": "Zadatak „Ruka koja drži” (materijal nedelje 2, izvor teacher-2026-10-09-week-02); dopuna oblaka po nalogu voditelja predmeta od 10.10.2026.",
+      "datum": "2026-10-11"
+    },
+    {
+      "id": "a3-listovi-u-prostoru-udruzenja",
+      "naslov": {
+        "sr": "A3 listovi u prostoru udruženja",
+        "en": "The A3 sheets in the association's room"
+      },
+      "tekst": {
+        "sr": "Kad se nakupi nekoliko nedeljnih A3 listova, poneti ih u udruženje i rasporediti na sto — da korisnici vide ceo semestar odjednom i kažu šta im je najviše pomoglo.",
+        "en": "When several weekly A3 sheets have accumulated, bring them to the association and lay them on the table — so users see the whole semester at once and say what helped them most."
+      },
+      "izvor": "Poseta udruženja „Živimo zajedno” na prvom času (02.10.2026, zapis w01); dopuna oblaka po nalogu voditelja predmeta od 10.10.2026.",
+      "datum": "2026-10-11"
     }
   ]
 }

@@ -462,6 +462,36 @@ export const IDEA_BANK = [
     move: t('Write the drawing as an instruction sheet for someone who is not a maker, then watch one be built from it without you speaking.', 'Napiši crtež kao uputstvo za nekoga ko nije majstor, pa gledaj kako se po njemu pravi jedan komad, a da ti ne progovoriš.'),
     evidence: t('Build time, the questions asked out loud, the parts substituted, and what broke in the first month.', 'Vreme izrade, pitanja izgovorena naglas, zamenjeni delovi i ono što se pokvarilo u prvom mesecu.'),
     source: { label: 'Inclusive Play Design Guide', url: 'https://www.accessibleplayground.net/wp-content/uploads/2016/05/Inclusive-Play-Design-Guide-LowRes-2.pdf' }
+  },
+  // Course-development additions, 11 October 2026: seeds tied to what the semester has
+  // shown so far — measuring real hands in week 3, the toys of weeks 1–2 — per the course lead's
+  // standing order of 10 October 2026 that the cloud is supplemented as the site grows.
+  {
+    id: 'wcag-contrast-off-screen', status: 'research', field: 'measurement', principles: [3, 4, 7],
+    title: t('The 3:1 rule leaves the screen', 'Pravilo 3:1 izlazi iz ekrana'),
+    bridge: t('web contrast ↔ a number you can argue with in a room', 'kontrast na vebu ↔ broj s kojim se u prostoriji može raspravljati'),
+    question: t('WCAG 2.2 asks 3:1 for meaningful graphics on a screen. What happens when the same number is held against a door handle, a light switch or a stair edge in the faculty?', 'WCAG 2.2 traži 3:1 za značajnu grafiku na ekranu. Šta se desi kad se isti broj prisloni na kvaku, prekidač za svetlo ili ivicu stepenika na fakultetu?'),
+    move: t('Measure five real pairs in the building with a contrast app, write the ratio next to each, and propose the cheapest change that passes.', 'Izmeri pet stvarnih parova u zgradi aplikacijom za kontrast, upiši odnos pored svakog i predloži najjeftiniju promenu koja prolazi.'),
+    evidence: t('The five measured ratios and one changed detail that survives a re-measure.', 'Pet izmerenih odnosa i jedan promenjeni detalj koji izdrži ponovno merenje.'),
+    source: { label: 'WCAG 2.2 — non-text contrast, W3C', url: 'https://www.w3.org/TR/WCAG22/' }
+  },
+  {
+    id: 'exclusion-counted-not-felt', status: 'research', field: 'measurement', principles: [1, 2, 5],
+    title: t('Count who is excluded, do not feel it', 'Prebroj koga isključuješ, ne osećaj to'),
+    bridge: t('a design decision ↔ a published exclusion percentage', 'projektna odluka ↔ objavljen procenat isključenosti'),
+    question: t('The Cambridge toolkit turns “hard to use” into a counted number of people excluded. What does one faculty entrance — door, handle, counter — exclude, counted?', 'Kembridžski alat pretvara „teško za korišćenje” u prebrojan broj isključenih ljudi. Koliko isključuje jedan ulaz na fakultetu — vrata, kvaka, pult — prebrojano?'),
+    move: t('Take one entrance, run the exclusion calculation for three real demands (reach, grip, sight), and put the three numbers on an A3.', 'Uzmi jedan ulaz, izračunaj isključenost za tri stvarna zahteva (doseg, hvat, vid) i stavi tri broja na A3.'),
+    evidence: t('Three exclusion numbers with their demand assumptions, checked against the toolkit data.', 'Tri broja isključenosti sa pretpostavkama zahteva, provereni uz podatke alata.'),
+    source: { label: 'Cambridge Engineering Design Centre — Inclusive Design Toolkit', url: 'https://www.inclusivedesigntoolkit.com/' }
+  },
+  {
+    id: 'loose-parts-in-the-association-room', status: 'research', field: 'children', principles: [1, 2, 3],
+    title: t('Loose parts on the association floor', 'Rastavljeni delovi na podu udruženja'),
+    bridge: t('loose-parts play ↔ a prototype that teaches assembly', 'igra rastavljenih delova ↔ prototip koji uči sklapanje'),
+    question: t('Loose-parts play says the value is in what can be rearranged. Can a week’s toy become a set of parts two children assemble differently — one of them with a limited grip?', 'Igra rastavljenih delova kaže da je vrednost u onome što se može preurediti. Može li igračka iz nedelje postati skup delova koje dvoje dece sklapaju različito — jedno od njih ograničenog hvata?'),
+    move: t('Split one existing prototype into parts that join without tools, watch two different assemblies happen, and record which join defeated the weaker grip.', 'Rastavi jedan postojeći prototip na delove koji se spajaju bez alata, posmatraj dva različita sklopa i zapiši koji je spoj pobedio slabiji hvat.'),
+    evidence: t('Two photographed assemblies and the named join that failed one hand — not a general impression.', 'Dva fotografisana sklopa i imenovan spoj koji jednoj ruci nije uspeo — ne opšti utisak.'),
+    source: { label: 'Loose parts play — American Journal of Play', url: 'https://www.museumofplay.org/app/uploads/2024/11/AJP-16-2-3-Article-3-Loose-Parts.pdf' }
   }
 ];
 

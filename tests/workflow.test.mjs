@@ -45,7 +45,8 @@ test('two exercises in one week are explicitly parts of one A3', async () => {
 test('the idea atelier is explicitly separate from assignments', async () => {
   const page = await source('ideja.html');
   const module = await source('assets/ideas.js');
-  assert.match(page, /Nothing here becomes an assignment automatically/);
+  // 11.10.2026: Serbian-first surface (smernice) — the refusal sentence greets in Serbian.
+  assert.match(page, /Odavde se ništa ne zadaje automatski/);
   assert.match(module, /Odavde se ništa ne zadaje automatski/);
   assert.match(module, /nije nastavni zadatak|ne menja nastavno gradivo/);
   assert.ok(!module.includes('issues/new'));

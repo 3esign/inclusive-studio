@@ -705,7 +705,7 @@ function renderScore() {
 }
 
 function listView() {
-  return `<div class="page-top"><div><p class="eyebrow">${tr('Laboratory / Eight measurements', 'Laboratorija / Osam mera')}</p><h1>${tr('Measure it,<br>then decide.', 'Izmeri,<br>pa odluči.')}</h1><p class="lede">${tr('Eight short labs. Each one tests a tool, an interface or a geometry, produces one number, and then asks what you will change in your project.', 'Osam kratkih ogleda. Svaki proverava alat, interfejs ili geometriju, daje jedan broj, i onda pita šta menjaš u svom projektu.')}</p></div></div>
+  return `<div class="page-top"><div><p class="eyebrow">${tr('Laboratory / Eight measurements', 'Laboratorija / Osam mera')}</p><h1>${tr('Measure it,<br>then decide.', 'Izmeri,<br>pa odluči.')}</h1><p class="lede">${tr('Eight short labs. Each one tests a tool, an interface or a geometry — never a person. Nobody is blindfolded here: after disability simulations people report more empathy but also more pity, and they are not more willing to work with disabled people (Nario-Redmond et al., 2017). What works is a structured exercise with the real tool, a debrief, and above all a disabled coauthor.', 'Osam kratkih ogleda. Svaki proverava alat, interfejs ili geometriju — nikad osobu. Ovde niko ne vezuje povez (blindfold) preko očiju: posle simulacija invaliditeta ljudi prijavljuju više empatije, ali i više sažaljenja, i nisu spremniji da rade sa osobama sa invaliditetom (Nario-Redmond i saradnici, 2017). Radi vežba sa stvarnim alatom, razgovor posle nje, i preko svega koautor sa invaliditetom.')}</p></div></div>
   ${framing()}
   <div id="lab-score" class="lab-score"></div>
   <ul class="lab-list">${labs.map(lab => `<li><a href="laboratorija.html?lab=${lab.id}">

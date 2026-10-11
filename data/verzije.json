@@ -229,6 +229,13 @@
         "sr": "Ispravljeno poreklo referentne igračke: pozajmljena iz udruženja i doneta na prvi čas kao primer. Sve tri fotografije prikazuju se samo u nedelji 1; druga nedelja prikazuje dokumentovan studentski prototip. Uklonjeno nagađanje o izradi, datumu fotografisanja i nameri izrađivača; dopunjena regresa za pripadnost fotografija nedeljama.",
         "en": "Corrected the reference toy’s provenance: borrowed from the association and brought to the first class as an example. All three photographs appear only in week one; week two shows a documented student prototype. Removed speculation about manufacture, photographic date and maker intent, and added a regression check for photograph-to-week assignment."
       }
+    },
+    {
+      "datum": "2026-10-11",
+      "sta": {
+        "sr": "Sređivanje površine po nalogu voditelja predmeta od 10.10.2026: statični osnovci 14 strana prevedeni na srpski (jedan jezik na površini, ugovor iz smernica); „Creative hub\" preimenovan u „Radionica ideja\" (navigacija, naslov, naslovna); padajući „Materijal\" preraspoređen redosledom rada predmeta; oblak ideja i radionica sada se vode međusobno; statični prikaz oblaka izvodi se novim generatorom tools/cloud-baseline.mjs iz istog renderera kao živi prikaz; dokaz protiv simulacije invaliditeta vraćen u vodeći paragraf laboratorije; oblak dopunjen sa dve ideje iz razvoja semestra (merenja ruku, A3 listovi u udruženju) i tri nova semena u radionici. Nova kapija tests/povrsina.test.mjs čuva jezik površine.",
+        "en": "Surface tidy-up per the course lead's order of 10 October 2026: static baselines of fourteen pages translated to Serbian (one language on the surface, per the guidelines contract); \"Creative hub\" renamed to \"Radionica ideja\" (navigation, title, cover); the Material dropdown reordered to follow the subject's working order; the cloud and the atelier now link to each other; the cloud's static view is stamped by a new generator, tools/cloud-baseline.mjs, from the same renderer as the live view; the evidence against disability simulation restored to the laboratory's lead paragraph; the cloud gained two ideas drawn from the semester's development (hand measurements, A3 sheets at the association) and the atelier three new seeds. A new guard test, tests/povrsina.test.mjs, keeps the surface language."
+      }
     }
   ]
 }

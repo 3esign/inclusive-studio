@@ -131,8 +131,10 @@ test('the hub carries the toy thread as seeds, not only as a finished week', () 
 test('the hub page still refuses to assign anything by itself', async () => {
   const page = await source('ideja.html');
   const module = await source('assets/ideas.js');
-  assert.match(page, /Creative hub/);
-  assert.match(page, /Nothing here becomes an assignment automatically/);
+  // 11.10.2026: the surface is Serbian-first (smernice: jedan jezik na površini), so the
+  // static baseline greets in Serbian; the atelier keeps its English behind the toggle.
+  assert.match(page, /Radionica ideja/);
+  assert.match(page, /Odavde se ništa ne zadaje automatski/);
   assert.match(module, /Odavde se ništa ne zadaje automatski/);
   assert.match(module, /Ništa ovde nije predaja i ništa se odavde ne zadaje/);
 });
