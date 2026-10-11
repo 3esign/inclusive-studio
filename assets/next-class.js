@@ -51,7 +51,7 @@ function planView(week, firstPhoto, refs, bank) {
     if (block.kind === 'decision') return `<div class="material-decision"><p class="meta-label">${tr('Proposed record for the class', 'Predlog zapisa za čas')}</p><p>${esc(tx(block.text))}</p></div>`;
     return renderBlock(block, refs);
   };
-  return `<section class="plan" aria-labelledby="plan-title">${sectionTitle('plan-title', tr('Working material', 'Radni materijal'), tr('The plan, in order', 'Plan, redom'))}<ol class="plan-list">${toSlides(week).map(group => `<li><div>${group.heading ? `<h3>${esc(tx(group.heading.text))}</h3>` : ''}${group.blocks.map(blockView).join('')}</div><p class="idea-card-meta">${tr('Source', 'Izvor')}: ${esc(weekFile(week.n))}</p></li>`).join('')}</ol></section>`;
+  return `<section class="plan" aria-labelledby="plan-title">${sectionTitle('plan-title', tr('Working material', 'Radni materijal'), tr('The plan, in order', 'Plan, redom'))}<ol class="plan-list">${toSlides(week).map(group => `<li><div>${group.heading ? `<h3>${esc(tx(group.heading.text))}</h3>` : ''}${group.blocks.map(blockView).join('')}</div><p class="idea-card-meta">${tr('Source', 'Izvor')}: ${tr('Week ' + week.n + ' preparation material (draft)', 'Priprema materijala nedelje ' + week.n + ' (nacrt)')} · <span class="small muted">${esc(weekFile(week.n))}</span></p></li>`).join('')}</ol></section>`;
 }
 function sheetsView(week, bank) {
   const ids = [...new Set(week.blocks.filter(block => block.kind === 'exercise').map(block => block.ref))];
