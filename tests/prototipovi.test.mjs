@@ -16,7 +16,7 @@ const initial = [
 ];
 const clone = () => structuredClone(data);
 function additionalWorks() {
-  const d = clone(), base = d.items[0];
+  const d = clone(), base = d.items.find(item => item.id === 'lego4ll-2026') || d.items[0]; // 12.10: baza ne zavisi od redosleda registra
   const work = (id, kind, authorRole, medium, count) => {
     const item = structuredClone(base);
     Object.assign(item, { id, title: id, kind, authorRole, medium, status: 'documented', documentedWeek: 2, author: { name: `${authorRole} fixture` }, attribution: { sourceId: base.sourceId, fields: ['name'] } });

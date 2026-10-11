@@ -5,9 +5,9 @@
     {
       "week": 1,
       "kind": "held-record",
-      "materialSha256": "b92288403f2e15ac1f8817c53839d2213d3e1bc61060d2e27c47340bfe4a2d2c",
-      "source": "data/tok.json: cas-w01; data/material/w01.json: revizija 4 — nastavnikova ispravka 09.10.2026, žičani primer „Zmijica” iz udruženja vraćen u prvu nedelju; held record, not final material approval",
-      "recordedAt": "2026-10-09T19:08:11.000Z"
+      "materialSha256": "1c7bc640f8c15ae3d7edd9f8036681fdd3c4ba1623f5e45904eb3beda35135ab",
+      "source": "data/tok.json: cas-w01; data/material/w01.json: revizija 5 — ispravka voditelja predmeta 12.10.2026, „Zmijica” je studentski rad i dokumentuje se u nedelji 2, galerija prvog časa vraća se na tri fotografije pozajmljene igračke; held record, not final material approval",
+      "recordedAt": "2026-10-11T22:55:50.000Z"
     }
   ]
 }

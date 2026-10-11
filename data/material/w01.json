@@ -3,7 +3,7 @@
   "version": 1,
   "n": 1,
   "state": "published",
-  "updated": "2026-10-09",
+  "updated": "2026-10-12",
   "title": {
     "en": "A toy that teaches space",
     "sr": "Igračka koja uči prostor"
@@ -77,18 +77,6 @@
       "caption": {
         "sr": "Detalj pozajmljene igračke prikazane na prvom času: plastični elementi i drveni štapići.",
         "en": "A detail of the borrowed toy shown in the first class: plastic elements and wooden sticks."
-      }
-    },
-    {
-      "kind": "image",
-      "src": "data/prototipovi/zmijica-2026/01.jpg",
-      "alt": {
-        "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
-        "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
-      },
-      "caption": {
-        "sr": "Žičana putanja „Zmijica” — drugi primer pozajmljen iz udruženja „Živimo zajedno”. Nastavnik ga je doneo na prvi čas kao podsticaj studentima da osmisle sopstvene prototipove.",
-        "en": "The wire path “Zmijica” — a second example borrowed from the association “Živimo zajedno”. The teacher brought it to the first class as a starting point for students to design their own prototypes."
       }
     },
     {
@@ -439,6 +427,14 @@
       "sta": {
         "sr": "Prema nastavnikovoj ispravci zbirke radova, fotografija žičane putanja „Zmijica” takođe prikazuje primer iz udruženja donešen na prvi čas, a ne studentski prototip. Dodata je u galeriju pozajmljenih primera prve nedelje i uklonjena iz nedelje 2.",
         "en": "Following the teacher’s correction to the works collection, the photograph of the wire path “Zmijica” also shows the association’s example brought to the first class, not a student prototype. It is added to the week-one gallery of borrowed examples and removed from week two."
+      }
+    },
+    {
+      "v": 5,
+      "datum": "2026-10-12",
+      "sta": {
+        "sr": "Rad „Zmijica” je studentski rad i dokumentuje se u nedelji 2 sa ostalim studentskim prototipovima (atribucija u registru radova); uklonjen iz galerije prvog časa po ispravci voditelja predmeta. Galerija prvog časa vraća se na tri fotografije pozajmljene igračke iz udruženja.",
+        "en": "The work “Zmijica” is a student work and is documented in week 2 with the other student prototypes (attribution in the works registry); removed from the first class's gallery per the course lead's correction. The first class's gallery returns to the three photographs of the borrowed association toy."
       }
     }
   ]

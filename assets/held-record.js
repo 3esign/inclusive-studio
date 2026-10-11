@@ -17,16 +17,6 @@ function photo(block, i, eager) {
   </figure>`;
 }
 
-function assignment(week) {
-  const blocks = (week?.blocks || []).filter(b => b.kind === 'exercise');
-  if (!blocks.length) return '';
-  return `<aside class="lesson-assignment"><p class="eyebrow">${tr('The week’s A3 sheet', 'A3 list nedelje')}</p>
-    <ul>${blocks.map(b => {
-      const title = exercises.find(e => e.id === b.ref)?.title;
-      return `<li><strong>${esc(tx(title || b.ref))}</strong>${b.text ? ` — ${esc(tx(b.text))}` : ''}</li>`;
-    }).join('')}</ul><a href="assets/sablon-a3.svg" download>${tr('Download the A3 template', 'Preuzmi A3 šablon')} ↓</a></aside>`;
-}
-
 export function heldRecord(item, week, { first = false } = {}) {
   const n = Number.isInteger(item.nedelja) && item.nedelja > 0 ? item.nedelja : null;
   const href = n ? `index.html?w=${n}` : null;
@@ -36,12 +26,11 @@ export function heldRecord(item, week, { first = false } = {}) {
     <header class="lesson-heading"><div><p class="eyebrow"><span class="lesson-state">${tr('Held', 'Održano')}</span> <time datetime="${esc(item.odrzan)}">${esc(date)}</time>${n ? ` · ${tr('Week', 'Nedelja')} ${n}` : ''}</p>
     <h3>${esc(tx(item.naslov))}</h3></div>${n ? `<span class="lesson-number" aria-hidden="true">${number(n)}</span>` : ''}</header>
     <div class="lesson-spread">
-      ${images.length ? `<div class="lesson-gallery" aria-label="${tr('Photographs from the lesson material', 'Fotografije iz gradiva časa')}">${images.map((b, i) => photo(b, i, first && i === 0)).join('')}</div>` : ''}
+      ${images.length ? `<div class="lesson-gallery${images.length === 3 ? ' count-3' : ''}" aria-label="${tr('Photographs from the lesson material', 'Fotografije iz gradiva časa')}">${images.map((b, i) => photo(b, i, first && i === 0)).join('')}</div>` : ''}
       <div class="lesson-reading"><p class="eyebrow">${tr('Recorded in class', 'Zabeleženo na času')}</p>
         <ul class="lesson-results">${item.rezultati.map(r => `<li>${esc(tx(r.sta))}</li>`).join('')}</ul>
         <p class="lesson-source">${href ? `<a href="${href}">${tr('Class record and source material', 'Zapis časa i izvorno gradivo')} ↗</a>` : esc(item.izvor)}</p>
         <div class="actions">${href ? `<a class="button" href="${href}">${tr('Read the lesson', 'Otvori gradivo')} <span aria-hidden="true">↗</span></a><a class="button secondary" href="predavanje.html?w=${n}">${tr('Lecture view', 'Prikaz predavanja')}</a>` : ''}</div>
-        ${assignment(week)}
         <details class="lesson-provenance"><summary>${tr('Records and sources', 'Zapisi i izvori')}</summary>
           <p>${esc(item.izvor)}</p><ol>${item.rezultati.map(r => `<li>${esc(tx(r.sta))}<br><small>${esc(r.izvor)}</small></li>`).join('')}</ol>
         </details>
@@ -53,7 +42,7 @@ export function heldRecord(item, week, { first = false } = {}) {
 export function heldIntro() {
   return `<div class="page-top flow-intro"><div><p class="eyebrow">${tr('Principles of universal design', 'Principi univerzalnog dizajna')}</p>
     <h1>${tr('Held in class.', 'Održano na času.')}</h1></div>
-    <p class="lede">${tr('Lesson material, photographs and recorded outcomes. Each class contributes one A3 sheet to the course workbook.', 'Gradivo, fotografije i zabeleženi ishodi. Svaki čas doprinosi jednim A3 listom radnoj svesci predmeta.')}</p></div>`;
+    <p class="lede">${tr('Lesson material, photographs and recorded outcomes.', 'Gradivo, fotografije i zabeleženi ishodi održanih časova.')}</p></div>`;
 }
 
 export function heldSection(tok, weeks) {

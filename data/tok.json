@@ -205,6 +205,19 @@
       },
       "izvor": "Poseta udruženja „Živimo zajedno” na prvom času (02.10.2026, zapis w01); dopuna oblaka po nalogu voditelja predmeta od 10.10.2026.",
       "datum": "2026-10-11"
+    },
+    {
+      "id": "nedeljni-a3-list-radne-sveske",
+      "naslov": {
+        "sr": "Nedeljni A3 list radne sveske",
+        "en": "The weekly A3 sheet of the workbook"
+      },
+      "tekst": {
+        "sr": "Zamisao da svaki čas doprinosi jednim A3 listom radne sveske predmeta — gradi se na času i potpisuje. Prikaz „A3 list nedelje” na strani održanih časova povučen je 12.10. jer voditelj predmeta nije definisao taj prikaz; ideja ostaje u oblaku dok se ne potvrdi.",
+        "en": "The idea that each class contributes one A3 sheet to the course workbook — built in class and signed. The “week's A3 sheet” display on the held-classes page was withdrawn on 12 October because the course lead had not defined it; the idea stays in the cloud until confirmed."
+      },
+      "izvor": "Nalog voditelja predmeta, 12.10.2026. (sređivanje strane održanih časova).",
+      "datum": "2026-10-12"
     }
   ]
 }

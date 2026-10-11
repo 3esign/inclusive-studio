@@ -94,7 +94,9 @@ test('the landing is the held record, in Serbian, naming all three parts even wi
   assert.ok(page.includes('id="odrzano"'), 'the static landing misses the anchor id="odrzano"');
   assert.ok(page.includes('href="sledeci.html"'), 'the landing does not lead to the next-class page');
   assert.ok(page.includes('href="oblak.html"'), 'the landing does not lead to the cloud page');
-  assert.ok(page.includes('href="assets/sablon-a3.svg"'), 'the helping material does not offer the A3 template');
+  // 12.10: nedeljni A3 list povucen sa strane odrzanih casova (ideja zivi u oblaku); sablon ostaje u banki vezbi i gradenu nedelje.
+  assert.ok(!page.includes('href="assets/sablon-a3.svg"'), 'the held page no longer offers the A3 template (order of 12 October)');
+  for (const href of ['godista.html', 'etika.html', 'resources.html']) assert.ok(page.includes(`href="${href}"`), 'an approved helping card is missing');
 });
 
 test('the held page carries no preparation results and no cloud ideas — each has its own page', async () => {

@@ -40,48 +40,17 @@
         "sr": "Nastavnikova ispravka zbirke: fotografija isporučena za rad Zmijica prikazuje primer iz udruženja „Živimo zajedno”, donešen na prvi čas. Predmet pripada isključivo prvoj nedelji; atribucija studentu za ovu fotografiju je povučena. Fotografije iz posete udruženju se i dalje očekuju.",
         "en": "The teacher’s correction to the collection: the photograph supplied for the work Zmijica shows the association’s example, brought to the first class. The object belongs exclusively to week one; the student attribution for this photograph is withdrawn. Photographs from the association visit are still awaited."
       }
+    },
+    {
+      "id": "teacher-2026-10-12-correction",
+      "recordedOn": "2026-10-12",
+      "description": {
+        "sr": "Ispravka voditelja predmeta: rad Zmijica je studentski rad, ne primer iz udruženja. Prethodna ispravka od 09.10. pogrešno ga je vodila kao pozajmljeni primer. Rad se dokumentuje u nedelji 2 sa ostalim studentskim prototipovima; sa prikaza gradiva prvog časa je sklonjen. Atribucija je vraćena na originalno dostavljenu studentsku prijavu.",
+        "en": "The course lead's correction: the work Zmijica is a student work, not an association example. The earlier 9 October correction wrongly recorded it as a borrowed example. The work is documented in week 2 with the other student prototypes and is removed from the first class's material display. The attribution is restored to the originally supplied student record."
+      }
     }
   ],
   "items": [
-    {
-      "id": "zmijica-2026",
-      "title": "Zmijica",
-      "author": {
-        "name": "Primer iz udruženja „Živimo zajedno”"
-      },
-      "attribution": {
-        "sourceId": "teacher-2026-10-09-correction",
-        "fields": [
-          "name"
-        ]
-      },
-      "medium": "physical",
-      "status": "brought",
-      "sourceId": "teacher-2026-10-09-correction",
-      "description": {
-        "sr": "Prostorna žičana putanja na kartonskoj podlozi, sa zelenim elementom na žici i izdignutim osloncima. Primer pozajmljen iz udruženja „Živimo zajedno”; nastavnik ga je doneo na prvi čas kao podsticaj studentima da osmisle sopstvene prototipove.",
-        "en": "A spatial wire path on a cardboard base, with a green element on the wire and raised supports. An example borrowed from the association “Živimo zajedno”; the teacher brought it to the first class as a starting point for students designing their own prototypes."
-      },
-      "photos": [
-        {
-          "id": "zmijica-2026-photo-01",
-          "src": "data/prototipovi/zmijica-2026/01.jpg",
-          "sha256": "bd720059492d0db434998c7d2f39923e83d4a3e5a316d4bab93ebfa8130eaa9c",
-          "width": 721,
-          "height": 1280,
-          "alt": {
-            "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
-            "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
-          },
-          "caption": {
-            "sr": "Zmijica — dostavljena fotografija prototipa.",
-            "en": "Zmijica — supplied photograph of the prototype."
-          },
-          "sourceId": "teacher-2026-10-09"
-        }
-      ],
-      "documentedWeek": 1
-    },
     {
       "id": "muzicka-kutija-2026",
       "title": "Muzička Kutija",
@@ -123,6 +92,48 @@
         }
       ],
       "documentedWeek": 2
+    },
+    {
+      "id": "zmijica-2026",
+      "title": "Zmijica",
+      "author": {
+        "name": "Ivana Simić",
+        "studentNumber": "141/2024"
+      },
+      "attribution": {
+        "sourceId": "teacher-2026-10-12-correction",
+        "fields": [
+          "name",
+          "studentNumber"
+        ]
+      },
+      "medium": "physical",
+      "status": "brought",
+      "sourceId": "teacher-2026-10-12-correction",
+      "description": {
+        "sr": "Prostorna žičana putanja na kartonskoj podlozi, sa zelenim elementom na žici i izdignutim osloncima. Studentski prototip; dokumentovan u drugoj nedelji sa ostalim studentskim radovima.",
+        "en": "A spatial wire path on a cardboard base, with a green element on the wire and raised supports. A student prototype, documented in week two with the other student works."
+      },
+      "photos": [
+        {
+          "id": "zmijica-2026-photo-01",
+          "src": "data/prototipovi/zmijica-2026/01.jpg",
+          "sha256": "bd720059492d0db434998c7d2f39923e83d4a3e5a316d4bab93ebfa8130eaa9c",
+          "width": 721,
+          "height": 1280,
+          "alt": {
+            "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
+            "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
+          },
+          "caption": {
+            "sr": "Zmijica — dostavljena fotografija prototipa.",
+            "en": "Zmijica — supplied photograph of the prototype."
+          },
+          "sourceId": "teacher-2026-10-09"
+        }
+      ],
+      "documentedWeek": 2,
+      "originWeek": 1
     },
     {
       "id": "zgradica-2026",
@@ -326,8 +337,8 @@
             "en": "A sheet showing a square grid, circular and elongated parts in perspective, with separate projections."
           },
           "caption": {
-            "sr": "Lego4ll — tehnički crtež. Originalna fotografija prikazana vodoravno.",
-            "en": "Lego4ll — technical drawing. The original photograph displayed horizontally."
+            "sr": "Lego4ll — tehnički crtež. Fotografija je snimljena uspravno; prikazana je okrenuta da se crtež čita vodoravno.",
+            "en": "Lego4ll — technical drawing. The photograph was taken upright; it is shown rotated so the drawing reads horizontally."
           },
           "sourceId": "teacher-2026-10-09-drawing-rattle",
           "rotation": -90
@@ -1073,6 +1084,97 @@
           }
         ],
         "documentedWeek": 1
+      }
+    },
+    {
+      "v": 8,
+      "datum": "2026-10-12",
+      "prototypeId": "zmijica-2026",
+      "sourceId": "teacher-2026-10-12-correction",
+      "sta": {
+        "sr": "Zmijica je studentski rad (atribucija vraćena na originalno dostavljenu studentsku prijavu), ne primer iz udruženja. Rad se dokumentuje u nedelji 2; uklonjen iz prikaza gradiva prvog časa.",
+        "en": "Zmijica is a student work (attribution restored to the originally supplied student record), not an association example. The work is documented in week 2 and removed from the first class's material display."
+      },
+      "before": {
+        "id": "zmijica-2026",
+        "title": "Zmijica",
+        "author": {
+          "name": "Primer iz udruženja „Živimo zajedno”"
+        },
+        "attribution": {
+          "sourceId": "teacher-2026-10-09-correction",
+          "fields": [
+            "name"
+          ]
+        },
+        "medium": "physical",
+        "status": "brought",
+        "sourceId": "teacher-2026-10-09-correction",
+        "description": {
+          "sr": "Prostorna žičana putanja na kartonskoj podlozi, sa zelenim elementom na žici i izdignutim osloncima. Primer pozajmljen iz udruženja „Živimo zajedno”; nastavnik ga je doneo na prvi čas kao podsticaj studentima da osmisle sopstvene prototipove.",
+          "en": "A spatial wire path on a cardboard base, with a green element on the wire and raised supports. An example borrowed from the association “Živimo zajedno”; the teacher brought it to the first class as a starting point for students designing their own prototypes."
+        },
+        "photos": [
+          {
+            "id": "zmijica-2026-photo-01",
+            "src": "data/prototipovi/zmijica-2026/01.jpg",
+            "sha256": "bd720059492d0db434998c7d2f39923e83d4a3e5a316d4bab93ebfa8130eaa9c",
+            "width": 721,
+            "height": 1280,
+            "alt": {
+              "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
+              "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
+            },
+            "caption": {
+              "sr": "Zmijica — dostavljena fotografija prototipa.",
+              "en": "Zmijica — supplied photograph of the prototype."
+            },
+            "sourceId": "teacher-2026-10-09"
+          }
+        ],
+        "documentedWeek": 1
+      },
+      "after": {
+        "id": "zmijica-2026",
+        "title": "Zmijica",
+        "author": {
+          "name": "Ivana Simić",
+          "studentNumber": "141/2024"
+        },
+        "attribution": {
+          "sourceId": "teacher-2026-10-12-correction",
+          "fields": [
+            "name",
+            "studentNumber"
+          ]
+        },
+        "medium": "physical",
+        "status": "brought",
+        "sourceId": "teacher-2026-10-12-correction",
+        "description": {
+          "sr": "Prostorna žičana putanja na kartonskoj podlozi, sa zelenim elementom na žici i izdignutim osloncima. Studentski prototip; dokumentovan u drugoj nedelji sa ostalim studentskim radovima.",
+          "en": "A spatial wire path on a cardboard base, with a green element on the wire and raised supports. A student prototype, documented in week two with the other student works."
+        },
+        "photos": [
+          {
+            "id": "zmijica-2026-photo-01",
+            "src": "data/prototipovi/zmijica-2026/01.jpg",
+            "sha256": "bd720059492d0db434998c7d2f39923e83d4a3e5a316d4bab93ebfa8130eaa9c",
+            "width": 721,
+            "height": 1280,
+            "alt": {
+              "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
+              "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
+            },
+            "caption": {
+              "sr": "Zmijica — dostavljena fotografija prototipa.",
+              "en": "Zmijica — supplied photograph of the prototype."
+            },
+            "sourceId": "teacher-2026-10-09"
+          }
+        ],
+        "documentedWeek": 2,
+        "originWeek": 1
       }
     }
   ]

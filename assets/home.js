@@ -139,29 +139,12 @@ function helpingView() {
   return `<section class="helping" aria-labelledby="helping-title">
   <div class="section-heading"><div><p class="eyebrow">${tr('Material that helps', 'Materijal koji pomaže')}</p><h2 id="helping-title">${tr('For further work', 'Za dalji rad')}</h2></div></div>
   <div class="help-grid">
-    <a class="help-card" href="assets/sablon-a3.svg" download><b>${tr('A3 sheet template', 'Šablon A3 lista')}</b><span>${tr('the blank sheet of the workbook, for print and for digital', 'prazan list radne sveske, za štampu i digitalno')}</span></a>
-    <a class="help-card" href="vezbe.html"><b>${tr('Exercise bank', 'Banka vežbi')}</b><span>${tr('every exercise of the course, with limits and measures', 'sve vežbe predmeta, sa granicama i merama')}</span></a>
-    <a class="help-card" href="resources.html"><b>${tr('Library and sources', 'Biblioteka i izvori')}</b><span>${tr('standards, readings and reference pages', 'standardi, čitanja i referentne strane')}</span></a>
     <a class="help-card" href="godista.html"><b>${tr('Limits by age', 'Granice po godištima')}</b><span>${tr('what is law, what is standard, what is data', 'šta je zakon, šta standard, šta podatak')}</span></a>
-    <a class="help-card" href="program.html"><b>${tr('Calendar', 'Kalendar')}</b><span>${tr('meetings and deadlines of the semester', 'susreti i rokovi semestra')}</span></a>
-    <a class="help-card" href="predmet.html"><b>${tr('The course and the marking', 'Predmet i ocenjivanje')}</b><span>${tr('how the signed sheets count', 'kako se potpisani listovi vrednuju')}</span></a>
     <a class="help-card" href="etika.html"><b>${tr('How we work together', 'Kako sarađujemo')}</b><span>${tr('the working rules: with people, with responsibility', 'pravila rada: sa ljudima, sa odgovornošću')}</span></a>
+    <a class="help-card" href="resources.html"><b>${tr('Library and sources', 'Biblioteka i izvori')}</b><span>${tr('standards, readings and reference pages', 'standardi, čitanja i referentne strane')}</span></a>
   </div></section>`;
 }
 
-// The standards a designer of inclusive space reads at a glance — our own diagrams.
-function standardsView() {
-  const diagrams = [
-    { file: 'assets/vizuali/manevarski-prostor.svg', title: { sr: 'Manevarski prostor', en: 'Turning space' }, note: { sr: 'prostor potreban za okretanje', en: 'space for turning' } },
-    { file: 'assets/vizuali/rampa-standard.svg', title: { sr: 'Rampa po standardu', en: 'A ramp to standard' }, note: { sr: 'nagib, dužina, odmorište', en: 'slope, length, rest' } },
-    { file: 'assets/vizuali/taktilne-staze.svg', title: { sr: 'Taktilne staze', en: 'Tactile paths' }, note: { sr: 'vođenje nogom i štapom', en: 'guiding foot and cane' } },
-    { file: 'assets/vizuali/pristupacni-toalet.svg', title: { sr: 'Pristupačan toalet', en: 'An accessible toilet' }, note: { sr: 'dimenzije i rukohvati', en: 'dimensions and grab rails' } }
-  ];
-  return `<section class="standards" aria-labelledby="standards-title">
-  <div class="section-heading"><div><p class="eyebrow">${tr('Standards at a glance', 'Standardi na prvi pogled')}</p><h2 id="standards-title">${tr('Spatial relationships', 'Prostorni odnosi')}</h2></div></div>
-  <div class="standards-grid">${diagrams.map(d => `<a class="standard-tile" href="resources.html"><img src="${d.file}" alt="${esc(tx(d.title))} — ${esc(tx(d.note))}" loading="lazy" width="480" height="360"><b>${esc(tx(d.title))}</b><span>${esc(tx(d.note))}</span></a>`).join('')}</div>
-  <p class="help">${tr('Full set with measures: ', 'Ceo skup sa merama: ')}<a href="resources.html">${tr('the library', 'biblioteka')} →</a></p></section>`;
-}
 
 function landingView() {
   const tok = flow.tok;
@@ -172,8 +155,7 @@ function landingView() {
     <a href="sledeci.html"><b>${tr('Next class', 'Sledeći čas')}</b><span>${tr('the preparation, on the shoulders of the last one', 'priprema, naslonjena na prethodni čas')} →</span></a>
     <a href="oblak.html"><b>${tr('Cloud of ideas', 'Oblak ideja')}</b><span>${tr('everything that still has no week', 'sve što još nema nedelju')} →</span></a>
   </nav>
-  ${helpingView()}
-  ${standardsView()}`;
+  ${helpingView()}`;
 }
 
 // The static baseline on the page is already true, so it is not traded for a loading line:

@@ -261,14 +261,30 @@ function fieldMaterial(){return `<section id="field-material" class="field-mater
  ['A clip that carries its evidence.','Snimak koji prenosi svoj dokaz.','Choose an approved short clip of one architectural interaction. Add checked captions, a description of essential visual information and a transcript. Ask whether each format supports the same design question.','Izaberi odobren kratak snimak jedne arhitektonske interakcije. Dodaj proverene titlove, opis bitnih vizuelnih informacija i transkript. Proveri da li svaki format podržava isto projektantsko pitanje.','W3C / Accessible media','https://www.w3.org/WAI/media/av/',6,'No unreviewed recordings or automatic captions treated as finished work.','Bez nepregledanih snimaka i automatskih titlova predstavljenih kao završen rad.']
  ].map(([en,sr,bodyEn,bodySr,source,url,stage,limitEn,limitSr])=>`<article class="exercise"><span class="meta-label">${tr('Stage','Faza')} ${number(stage)}</span><h3>${tr(en,sr)}</h3><p>${tr(bodyEn,bodySr)}</p><p class="help">${tr(limitEn,limitSr)}</p><a href="${url}">${source} ↗</a><a class="mini-link" href="studio.html?stage=${stage}">${tr('Open the working stage','Otvori radnu fazu')} ↗</a></article>`).join('')}</div><p class="help">${tr('These are teaching proposals derived from the linked sources, not completed student projects or proven learning effects.','Ovo su nastavni predlozi izvedeni iz povezanih izvora, ne završeni studentski radovi niti dokazani efekti učenja.')}</p></section>`;}
 
+// The standards a designer of inclusive space reads at a glance — our own diagrams.
+function standardsView() {
+  const diagrams = [
+    { file: 'assets/vizuali/manevarski-prostor.svg', title: { sr: 'Manevarski prostor', en: 'Turning space' }, note: { sr: 'prostor potreban za okretanje', en: 'space for turning' } },
+    { file: 'assets/vizuali/rampa-standard.svg', title: { sr: 'Rampa po standardu', en: 'A ramp to standard' }, note: { sr: 'nagib, dužina, odmorište', en: 'slope, length, rest' } },
+    { file: 'assets/vizuali/taktilne-staze.svg', title: { sr: 'Taktilne staze', en: 'Tactile paths' }, note: { sr: 'vođenje nogom i štapom', en: 'guiding foot and cane' } },
+    { file: 'assets/vizuali/pristupacni-toalet.svg', title: { sr: 'Pristupačan toalet', en: 'An accessible toilet' }, note: { sr: 'dimenzije i rukohvati', en: 'dimensions and grab rails' } }
+  ];
+  return `<section class="standards" aria-labelledby="standards-title">
+  <div class="section-heading"><div><p class="eyebrow">${tr('Standards at a glance', 'Standardi na prvi pogled')}</p><h2 id="standards-title">${tr('Spatial relationships', 'Prostorni odnosi')}</h2></div></div>
+  <div class="standards-grid">${diagrams.map(d => `<a class="standard-tile" href="resources.html"><img src="${d.file}" alt="${esc(tx(d.title))} — ${esc(tx(d.note))}" loading="lazy" width="480" height="360"><b>${esc(tx(d.title))}</b><span>${esc(tx(d.note))}</span></a>`).join('')}</div>
+  <p class="help">${tr('Full set with measures: ', 'Ceo skup sa merama: ')}<a href="resources.html">${tr('the library', 'biblioteka')} →</a></p></section>`;
+}
+
 function library(){
   return `<div class="page-top"><div><p class="eyebrow">${tr('Reference library / Read → apply → question','Biblioteka / Pročitaj → primeni → preispitaj')}</p><h1>${tr('Ideas to work with.','Ideje za rad.')}</h1><p class="lede">${tr('A focused reading shelf for the studio. Each source has a practical job in the project.','Odabrana literatura za studio. Svaki izvor ima konkretnu ulogu u projektu.')}</p></div><span class="tag">${tr('Sources, not a substitute for fieldwork','Izvori ne zamenjuju teren')}</span></div>
   <div class="actions">
+    <a class="button secondary" href="#standards-title">${tr('Standards at a glance','Standardi na prvi pogled')} ↓</a>
     <a class="button secondary" href="#visual-atlas">${tr('Visual atlas (5 details)','Vizuelni atlas (5 detalja)')} ↓</a>
     <a class="button secondary" href="#precedents">${tr('Built precedents (6 studies)','Izvedeni primeri (6 studija)')} ↓</a>
     <a class="button secondary" href="#field-material">${tr('Explore Živimo zajedno material','Istraži materijal Živimo zajedno')} ↓</a>
     <a class="button secondary" href="#exercise-title">${tr('Four studio exercises','Četiri studijske vežbe')} ↓</a>
   </div>
+  ${standardsView()}
   <div class="filter-bar"><div><label for="resource-search">${tr('Search the library','Pretraži biblioteku')}</label><input id="resource-search" type="search" placeholder="${tr('A topic, source or method…','Tema, izvor ili metoda…')}"></div><div><label for="resource-stage">${tr('Project stage','Faza projekta')}</label><select id="resource-stage"><option value="all">${tr('All stages','Sve faze')}</option>${stages.map(s=>`<option value="${s.id}">${number(s.id)} — ${esc(tx(s.title))}</option>`).join('')}</select></div></div><p id="resource-count" class="small muted" role="status"></p><div id="resource-results" class="resource-list"></div>
   ${visualAtlasSection()}
   ${precedentsSection()}

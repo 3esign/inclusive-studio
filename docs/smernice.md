@@ -23,6 +23,14 @@ Ulaz za novi um je [AGENTS.md](../AGENTS.md). Ove smernice su živi ugovor; star
 | Ideja nema nedelju — samo izvor i datum; nedelju dobija ulaskom u pripremu. | Oblak je red čekanja, ne raspored. |
 | Svaka stavka nosi izvor i datum; preseci delova su zabranjeni; validator je zajednički stranicama, testovima i `tools/shells.mjs`. | Istina se izvodi, ne prepričava. — `assets/tok-core.js` |
 
+## Kompozicija i preglednost · 12.10.2026
+
+| Smernica | Zašto | Ko brani |
+|---|---|---|
+| Strana održanih časova prikazuje isključivo održane časove sa njihovim gradivom; pomoćni materijal se svodi na odobrene kartice (granice po godištima, kako sarađujemo, biblioteka), a standardi žive među izvorima. | Svaka strana ima jedno jasno svojstvo; mešanje sadržaja skriva glavno. | `tests/landing.test.mjs` i pregled |
+| Predmetni sajt vodi računa o kompoziciji i preglednosti: fotografije i prilozi dobijaju smiren okvir i ravan raspored (crtež kao tabla dokumenta, galerija sa tri fotografije bez kosog rasporeda), bez nakupljanja natpisa uz sliku. | Preglednost je deo pouke predmeta: stranica koja uči o univerzalnom dizajnu mora sama biti čitka. | pregled stvarne strane (320 px i veći ekrani) |
+| Prikaz koji nastavnik nije definisao ne postavlja se sam: nedorečene zamisli (npr. „A3 list nedelje") idu u oblak ideja sa izvorom, a ne na stranu održanih časova. | Izmišljen prikaz izgleda kao nastavnička odluka. | `tests/tok.test.mjs` (oblak nosi izvor) |
+
 ## Pet stabilnih odredišta i tok nastave
 
 - **Naslovna (`naslovna.html`)** — odobrena uvodna kompozicija i ulaz u predmet; nova nastavna građa ne zahteva njeno ponovno osmišljavanje.

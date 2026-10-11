@@ -866,3 +866,13 @@ body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width
 .prototype-card[data-work-kind="technical-drawing"] .prototype-description,.prototype-card[data-author-role="teacher"] .prototype-description{max-width:76ch}
 @media(max-width:1000px){.prototype-card[data-author-role="teacher"] .prototype-photos{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.prototype-card[data-author-role="teacher"] .prototype-photos{grid-template-columns:minmax(0,1fr)}}
+
+/* Tri fotografije casa: vodeca levo kroz dva reda, dve detaljne desno bez rasporeda u kosinu (12.10) */
+.lesson-gallery.count-3{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
+.lesson-gallery.count-3 .lesson-photo:first-child{grid-row:1/3}
+.lesson-gallery.count-3 .lesson-photo-detail{padding-top:0}
+/* Tehnicki crtez kao tabla dokumenta: beli okvir, centrirano, smiren potpis (12.10) */
+.prototype-card[data-work-kind="technical-drawing"] .prototype-photo{display:flex;flex-direction:column;align-items:center}
+.prototype-card[data-work-kind="technical-drawing"] .prototype-photo>a{display:block;width:min(100%,840px)}
+.prototype-card[data-work-kind="technical-drawing"] .rotated-image{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(.6rem,1.6vw,1.2rem)}
+.prototype-card[data-work-kind="technical-drawing"] .prototype-photo figcaption{display:block;text-align:center;max-width:62ch;margin:.7rem auto 0}
