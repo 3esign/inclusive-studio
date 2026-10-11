@@ -26,11 +26,10 @@ export function heldRecord(item, week, { first = false } = {}) {
     <header class="lesson-heading"><div><p class="eyebrow"><span class="lesson-state">${tr('Held', 'Održano')}</span> <time datetime="${esc(item.odrzan)}">${esc(date)}</time>${n ? ` · ${tr('Week', 'Nedelja')} ${n}` : ''}</p>
     <h3>${esc(tx(item.naslov))}</h3></div>${n ? `<span class="lesson-number" aria-hidden="true">${number(n)}</span>` : ''}</header>
     <div class="lesson-spread">
-      ${images.length ? `<div class="lesson-gallery${images.length === 3 ? ' count-3' : ''}" aria-label="${tr('Photographs from the lesson material', 'Fotografije iz gradiva časa')}">${images.map((b, i) => photo(b, i, first && i === 0)).join('')}</div>` : ''}
+      ${images.length ? `<div class="lesson-gallery${images.length === 3 ? ' count-3' : images.length === 1 ? ' count-1' : ''}" aria-label="${tr('Photographs from the lesson material', 'Fotografije iz gradiva časa')}">${images.map((b, i) => photo(b, i, first && i === 0)).join('')}</div>` : ''}
       <div class="lesson-reading"><p class="eyebrow">${tr('Recorded in class', 'Zabeleženo na času')}</p>
         <ul class="lesson-results">${item.rezultati.map(r => `<li>${esc(tx(r.sta))}</li>`).join('')}</ul>
         <p class="lesson-source">${href ? `<a href="${href}">${tr('Class record and source material', 'Zapis časa i izvorno gradivo')} ↗</a>` : esc(item.izvor)}</p>
-        <div class="actions">${href ? `<a class="button" href="${href}">${tr('Read the lesson', 'Otvori gradivo')} <span aria-hidden="true">↗</span></a><a class="button secondary" href="predavanje.html?w=${n}">${tr('Lecture view', 'Prikaz predavanja')}</a>` : ''}</div>
         <details class="lesson-provenance"><summary>${tr('Records and sources', 'Zapisi i izvori')}</summary>
           <p>${esc(item.izvor)}</p><ol>${item.rezultati.map(r => `<li>${esc(tx(r.sta))}<br><small>${esc(r.izvor)}</small></li>`).join('')}</ol>
         </details>

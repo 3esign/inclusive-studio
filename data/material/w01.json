@@ -387,13 +387,6 @@
         "en": "The task set for next week: build the concept. A small prototype, from reclaimed and reusable material first; printing is allowed, last, and only for the part that cannot be found. The whole of week 2 is that object on the table.",
         "sr": "Zadatak zadat za sledeću nedelju: napravi koncept. Mali prototip, prvo od prikupljenog i ponovo upotrebljivog materijala; štampanje je dozvoljeno, poslednje, i samo za deo koji ne može da se nađe. Cela 2. nedelja je taj predmet na stolu."
       }
-    },
-    {
-      "kind": "decision",
-      "text": {
-        "en": "Each team records one line today: the movement of the hand and the operation on space their toy trains, in the words of the cards they drew.",
-        "sr": "Svaki tim danas upisuje jedan red: pokret ruke i radnju nad prostorom koje njihova igračka vežba, rečima kartica koje su izvukli."
-      }
     }
   ],
   "revizije": [
@@ -435,6 +428,14 @@
       "sta": {
         "sr": "Rad „Zmijica” je studentski rad i dokumentuje se u nedelji 2 sa ostalim studentskim prototipovima (atribucija u registru radova); uklonjen iz galerije prvog časa po ispravci voditelja predmeta. Galerija prvog časa vraća se na tri fotografije pozajmljene igračke iz udruženja.",
         "en": "The work “Zmijica” is a student work and is documented in week 2 with the other student prototypes (attribution in the works registry); removed from the first class's gallery per the course lead's correction. The first class's gallery returns to the three photographs of the borrowed association toy."
+      }
+    },
+    {
+      "v": 6,
+      "datum": "2026-10-12",
+      "sta": {
+        "sr": "Blok „Odluka koja se upisuje” (svaki tim upisuje jedan red) uklonjen iz gradiva: voditelj predmeta tu odluku nije definisao; ideja je prebačena u oblak ideja da čeka njegovu odluku.",
+        "en": "The \"Decision to be recorded\" block (each team writes one row) removed from the material: the course lead did not define that decision; the idea moved to the idea cloud to await his decision."
       }
     }
   ]

@@ -69,6 +69,7 @@ function protocolsView(tok) {
   }).join('');
 }
 function waitsView(tok) {
+  if (!tok.sledeci.length) return '';
   return `<section class="waits" aria-labelledby="waits-title">${sectionTitle('waits-title', tr('Open decisions', 'Otvorene odluke'), tr('What this page still waits on', 'Šta ova strana još čeka'))}<ul class="wait-list">${tok.sledeci.map(item => `<li><b>${esc(tx(item.naslov))}</b><span>${esc(tx(item.ceka))}</span></li>`).join('')}</ul><p class="help">${tr('A held class and its results remain in the record; this page follows the next class named in the course flow.', 'Održani čas i njegovi rezultati ostaju u evidenciji; ova strana prati naredni čas naveden u toku predmeta.')} <a href="index.html">${tr('Held classes', 'Održani časovi')} →</a></p></section>`;
 }
 export function renderNextClass({ tok, week = null, prototypes = null, refs = { lab: {}, exercise: {} }, exerciseBank = exercises }) {
