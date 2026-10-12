@@ -264,6 +264,13 @@
         "sr": "Naslovna prepravljena po prigovoru voditelja predmeta (nema smisla — samo animacija otvara se sveska): uklonjena je trodimenzionalna animacija i scena sa naslovne; naslovna je sada ulaz u predmet — jedna recenica o A3 radnoj svesci, zivi brojaci toka (odrzane nedelje, ideje u oblaku, naredna nedelja) i sedam vrata: Odrzano, Sledeci cas, Oblak ideja, Radovi i primeri, Biblioteka i izvori, Udruzenje i Predmet. Stampana A3 naslovnica radne sveske ostaje. Broj ideja u oblakupecaten je generatorom luske zajedno sa ostalim brojacima.",
         "en": "The cover redesigned per the course lead note (it made no sense — only an animation opening a workbook): the 3D animation and scene are removed; the cover is now an entrance — one sentence about the A3 workbook, live flow counts (held weeks, ideas in the cloud, the next week) and seven doors: held classes, next class, cloud of ideas, works and examples, library and sources, the association, the course. The printable A3 workbook cover remains. The cloud-idea count is stamped by the shell generator with the other counts."
       }
+    },
+    {
+      "datum": "2026-10-12",
+      "sta": {
+        "sr": "Po nalogu voditelja predmeta: veza „Zapis časa i izvorno gradivo” skinuta sa svakog održanog časa (vodila je na istu stranu — bila je samoupis, ne izvor); „Kako sarađujemo” izlazi iz zvaničnog dela — kartica skinuta iz „Za dalji rad” (ostaju granice po godištima i biblioteka; veza ostaje u podnožju); glavna navigacija je sada na vrhu svake strane na svim širinama (na telefonu je do sada bila skrivena, a donja traka je nosila sve veze) — donja traka je ukinuta kao duplikat. Kapije usklađene sa novim ugovorom.",
+        "en": "Per the course lead order: the \"class record and source material\" link removed from every held class (it pointed back to the same page — a self-entry, not a source); \"how we work together\" leaves the official part — the card removed from the helping section (limits by age and the library remain; the link stays in the footer); the main navigation now sits at the top of every page at every width (on phones it was hidden and a bottom bar carried the links) — the bottom bar is retired as a duplicate. Guards aligned with the new contract."
+      }
     }
   ]
 }

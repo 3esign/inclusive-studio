@@ -394,10 +394,6 @@ body.lecture-mode .course-band{display:none}
 @layer responsive {
 /* The tab bar replaces the header navigation on a phone: one thumb, five targets. */
 @media(max-width:760px){
-  .main-nav{display:none}
-  .tabbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:45;background:var(--white);border-top:1px solid var(--line);padding:.2rem .2rem calc(.2rem + env(safe-area-inset-bottom));justify-content:space-around;align-items:stretch}
-  .tabbar>a,.tab-more>summary{flex:1;min-height:52px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:.8rem;text-decoration:none;padding:.3rem .2rem;border-top:3px solid transparent}
-  .tabbar>a[aria-current=page],.tab-more>summary[aria-current]{border-top-color:var(--ink);font-weight:700}
   .tab-more{border:0;flex:1;display:flex}
   .tab-more>summary{list-style:none}
   .tab-more>summary::-webkit-details-marker{display:none}

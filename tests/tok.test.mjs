@@ -89,7 +89,7 @@ test('the landing is the held record, in Serbian, naming all three parts even wi
     'the held record is a primary navigation item');
   for (const word of ['Održano', 'Sledeći čas', 'Oblak ideja']) assert.ok(page.includes(word), `static baseline misses "${word}"`);
   assert.ok(page.includes('2026-10-02'), 'the held date is part of the static baseline');
-  assert.ok(page.includes('index.html?w=1'), 'a held class links to its own week');
+  assert.ok(!page.includes('index.html?w='), 'a held class carries no self-referencing record link (withdrawn 12.10.2026)');
   assert.match(page, /data-view="flow"/);
   assert.ok(page.includes('id="odrzano"'), 'the static landing misses the anchor id="odrzano"');
   assert.ok(page.includes('href="sledeci.html"'), 'the landing does not lead to the next-class page');

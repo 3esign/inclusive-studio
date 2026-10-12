@@ -140,7 +140,6 @@ function helpingView() {
   <div class="section-heading"><div><p class="eyebrow">${tr('Material that helps', 'Materijal koji pomaže')}</p><h2 id="helping-title">${tr('For further work', 'Za dalji rad')}</h2></div></div>
   <div class="help-grid">
     <a class="help-card" href="godista.html"><b>${tr('Limits by age', 'Granice po godištima')}</b><span>${tr('what is law, what is standard, what is data', 'šta je zakon, šta standard, šta podatak')}</span></a>
-    <a class="help-card" href="etika.html"><b>${tr('How we work together', 'Kako sarađujemo')}</b><span>${tr('the working rules: with people, with responsibility', 'pravila rada: sa ljudima, sa odgovornošću')}</span></a>
     <a class="help-card" href="resources.html"><b>${tr('Library and sources', 'Biblioteka i izvori')}</b><span>${tr('standards, readings and reference pages', 'standardi, čitanja i referentne strane')}</span></a>
   </div></section>`;
 }
@@ -168,7 +167,7 @@ function landingRender() {
   const intro = $('#held-intro');
   if (intro) intro.innerHTML = heldIntro();
   const footnote = $('#held-footnote');
-  if (footnote) footnote.textContent = tr('The next class and ideas in development have separate pages. The class record retains its sources and earlier editions.', 'Priprema sledećeg časa i ideje u razvoju imaju zasebne strane. Zapis časa čuva izvore i ranija izdanja.');
+  if (footnote) footnote.textContent = tr('The next class and ideas in development have separate pages. The class record retains its sources and earlier editions.', 'Priprema sledećeg časa i ideje u razvoju imaju zasebne strane.');
 }
 
 async function loadLanding() {

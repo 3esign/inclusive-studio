@@ -50,8 +50,10 @@ test('held records preserve the first-class reference context in both languages 
     for (const image of lessonImages(firstWeek).filter(block => referenceSources.includes(block.src))) {
       assert.ok(firstHtml.includes(esc(image.caption[language])), `${language}: preserve the factual caption`);
     }
-    assert.ok(firstHtml.includes('href="index.html?w=1"'), 'the first-class record links to its own material');
-    assert.ok(secondHtml.includes('href="index.html?w=2"'), 'the second-class record keeps its distinct material');
+    // 12.10.2026 (course lead's order): the "class record and source material" link was a
+    // self-reference to the same page — withdrawn; the record itself is the material.
+    assert.ok(!firstHtml.includes('Zapis časa i izvorno gradivo') && !firstHtml.includes('Class record and source material'), 'the first-class record still carries the withdrawn link');
+    assert.ok(!secondHtml.includes('Zapis časa i izvorno gradivo') && !secondHtml.includes('Class record and source material'), 'the second-class record still carries the withdrawn link');
   }
 });
 

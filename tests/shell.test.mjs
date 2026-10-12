@@ -43,7 +43,9 @@ test('every page carries the same navigation, in the same order, labelled in Ser
     for (const item of NAV.filter(entry => entry.group !== 'footer')) {
       assert.ok(html[page].includes(`>${item.sr}</a>`), `${page}: navigation label "${item.sr}" is missing — the shell language slipped`);
     }
-    assert.ok(html[page].includes('class="tabbar"'), page + ' has no tab bar for phones');
+    // 12.10.2026 (course lead's note): the top navigation is present at every width; the bottom tab bar is gone.
+    assert.ok(!html[page].includes('class="tabbar"'), page + ' still carries a tab bar');
+    assert.ok(html[page].includes('class="main-nav"'), page + ' has no top navigation');
     assert.ok(html[page].includes('id="announcements"'), page + ' has no live region');
     assert.ok(html[page].includes('id="skip-link"'), page + ' has no skip link');
   }

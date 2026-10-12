@@ -105,7 +105,7 @@ for (const page of pages) {
     .replace(/<a id="skip-link" class="skip" href="#main">[^<]*<\/a>/, '<a id="skip-link" class="skip" href="#main">Pređi na sadržaj</a>')
     .replace(/<a class="brand" href="(?:naslovna|index)\.html"><span class="brand-mark" aria-hidden="true"><\/span><span>[\s\S]*?<\/span><\/a>/, `<a class="brand" href="naslovna.html"><span class="brand-mark" aria-hidden="true"></span><span>${brandSr}</span></a>`)
     .replace(/<nav class="main-nav"[\s\S]*?<\/nav>/, mainNav(page))
-    .replace(/<nav class="tabbar"[\s\S]*?<\/nav>/, tabbar(page))
+    .replace(/<nav class="tabbar"[\s\S]*?<\/nav>\n?/, '')
     .replace(/<p id="course-line">[\s\S]*?<\/p>/, courseBand())
     .replace(/<button id="reading-toggle" aria-pressed="false" hidden>[^<]*<\/button>/, '<button id="reading-toggle" aria-pressed="false" hidden>Jednostavan prikaz</button>')
     .replace(/<button id="language-toggle" class="language" lang="sr-Latn" hidden>[^<]*<\/button>/, '<button id="language-toggle" class="language" lang="en" hidden>English</button>')
