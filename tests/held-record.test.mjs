@@ -3,9 +3,12 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { heldRecord, heldSection, heldIntro, lessonImages } from '../assets/held-record.js';
 import { setLanguage, esc } from '../assets/core.js';
+import { validateVisit } from '../assets/poseta-core.js';
 const root = new URL('../', import.meta.url);
 const json = async p => JSON.parse(await readFile(new URL(p, root), 'utf8'));
 const tok = await json('data/tok.json');
+const visit = await json('data/poseta.json');
+assert.deepEqual(validateVisit(visit), [], 'visit register must pass its own rules');
 
 test('the held landing retains each lesson photograph, caption and result in static and live reading paths', async () => {
   setLanguage('sr');
@@ -26,7 +29,22 @@ test('the held landing retains each lesson photograph, caption and result in sta
     for (const result of item.rezultati) assert.ok(rendered.includes(esc(result.sta.sr)), 'an actual outcome was lost');
   }
   assert.ok(page.includes(heldIntro()), 'static intro differs from live Serbian intro');
-  assert.ok(page.includes(heldSection(tok, weeks)), 'static class records are stale: run tools/held-baseline.mjs');
+  assert.ok(page.includes(heldSection(tok, weeks, visit)), 'static class records are stale: run tools/held-baseline.mjs');
+});
+
+test('the visit panel stands under its own week only, with every participant exactly once', () => {
+  setLanguage('sr');
+  const weeks = new Map();
+  const panel = heldSection(tok, weeks, visit);
+  for (const person of visit.participants) {
+    assert.equal(panel.split(esc(person.name)).length - 1, 1, person.name + ' must appear exactly once');
+  }
+  const week2 = tok.odrzano.find(i => i.nedelja === visit.week);
+  const withPanel = heldRecord(week2, null, { visit });
+  const withoutPanel = heldRecord(tok.odrzano.find(i => i.nedelja !== visit.week), null, { visit });
+  assert.ok(withPanel.includes('data-visit-participants'), 'the panel must stand under the visit week');
+  assert.ok(!withoutPanel.includes('data-visit-participants'), 'the panel must not leak into other weeks');
+  assert.ok(withPanel.includes('Temeljna analiza posete'), 'the panel must open the analysis page');
 });
 
 test('the image reading path translates descriptions and retains provenance without inventing a class photograph', async () => {

@@ -1,0 +1,60 @@
+{
+ "schema": "course-visit/v1",
+ "id": "poseta-udruzenje-2026-10-09",
+ "week": 2,
+ "occurredOn": "2026-10-09",
+ "place": {
+  "sr": "Udruženje „Živimo zajedno”, Beograd",
+  "en": "The Živimo zajedno association, Belgrade"
+ },
+ "source": {
+  "id": "teacher-2026-10-12-field",
+  "recordedOn": "2026-10-12",
+  "description": {
+   "sr": "Spisak studenata na poseti udruženju dostavio je voditelj predmeta 12.10.2026. uz materijal posete; zapažanja o korišćenju radova upisana su u registar radova.",
+   "en": "The list of students on the association visit was supplied by the course lead on 12 October 2026 with the visit material; observations about the use of the works are recorded in the work register."
+  }
+ },
+ "participants": [
+  {
+   "name": "Anđela Deurić",
+   "studentNumber": "137/2024"
+  },
+  {
+   "name": "Nevena Grkić",
+   "studentNumber": "62/2024"
+  },
+  {
+   "name": "Ivana Simić",
+   "studentNumber": "141/2024"
+  },
+  {
+   "name": "Petra Nešić",
+   "studentNumber": "94/2024"
+  },
+  {
+   "name": "Marija Bajić",
+   "studentNumber": "114/2024"
+  },
+  {
+   "name": "Nađa Stanić",
+   "studentNumber": "151/2024"
+  },
+  {
+   "name": "Uroš Pavlović",
+   "studentNumber": "35/2024"
+  },
+  {
+   "name": "Teodora Radojičić",
+   "studentNumber": "72/2024"
+  },
+  {
+   "name": "Nikola Pajić",
+   "studentNumber": "49/2024"
+  }
+ ],
+ "summary": {
+  "sr": "Poseta udruženju održana je u petak 09.10.2026, istog dana kad je održan drugi čas. Studenti su doneli prototipove započete na prvom času; korisnici udruženja su ih probali na stolu, bez usmeravanja. Temeljna analiza interakcije objavljena je na strani Poseta udruženju; zapažanja uz pojedinačne radove stoje u registru radova.",
+  "en": "The association visit took place on Friday, 9 October 2026, the same day as the second class. Students brought the prototypes begun in the first class; the association’s users tried them at the table, without prompting. A full analysis of the interaction is published on the Visit page; observations for individual works stand in the work register."
+ }
+}

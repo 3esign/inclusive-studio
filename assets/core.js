@@ -19,6 +19,7 @@ export const NAV = [
   // then the work across the semester, then the subject's own frame, then the open ends.
   { id: 'lecture', href: 'predavanje.html', group: 'archive', en: 'Lecture', sr: 'Predavanje' },
   { id: 'prototypes', href: 'prototipovi.html', group: 'archive', en: 'Works and examples', sr: 'Radovi i primeri' },
+  { id: 'visit', href: 'poseta.html', group: 'archive', en: 'The visit', sr: 'Poseta udruženju' },
   { id: 'toy', href: 'igracka.html', group: 'archive', en: 'The toy', sr: 'Igračka' },
   { id: 'lab', href: 'laboratorija.html', group: 'archive', en: 'Labs', sr: 'Laboratorija' },
   { id: 'studio', href: 'studio.html', group: 'archive', en: 'Project stages', sr: 'Faze projekta' },

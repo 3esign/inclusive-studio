@@ -18,7 +18,8 @@ const MODULES = {
   'zadatak.html': 'task.js', 'uredi.html': 'editor.js', 'ideja.html': 'ideas.js',
   'igracka.html': 'toy.js', 'godista.html': 'ages.js',
   'naslovna.html': 'naslovna.js', 'udruzenje.html': 'udruzenje.js',
-  'sledeci.html': 'sledeci.js', 'oblak.html': 'oblak.js', 'prototipovi.html': 'prototipovi.js'
+  'sledeci.html': 'sledeci.js', 'oblak.html': 'oblak.js', 'prototipovi.html': 'prototipovi.js',
+  'poseta.html': 'poseta.js'
 };
 
 test('the established primary destinations and lecture/source routes cannot disappear together with generated shells', () => {

@@ -28,6 +28,7 @@ const DESC = {
   'predmet.html': 'Predmet, ispit i način ocenjivanja: A3 radna sveska, štampana i digitalna.',
   'predavanje.html': 'Gradivo časa kao predavanje: slajdovi, mere i pitanja.',
   'prototipovi.html': 'Radovi i primeri iz nastave: studentski prototipovi, tehnički crteži i nastavnički primeri sa fotografijama, autorstvom i nedeljom dokumentovanja.',
+  'poseta.html': 'Poseta udruženju „Živimo zajedno”: temeljna analiza interakcije korisnika sa studentskim prototipovima — šta se videlo i šta je sledeći korak svakog rada.',
   'laboratorija.html': 'Ogledi pristupačnosti u pregledaču: šta se oseća, šta se meri, šta se zaključuje.',
   'igracka.html': 'Igračka koja uči prostor: referentne igračke i način analize.',
   'godista.html': 'Granice po godištima: šta je zakon, šta standard, šta podatak.',

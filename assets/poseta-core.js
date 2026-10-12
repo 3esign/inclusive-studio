@@ -1,0 +1,143 @@
+// The association visit as course material: one visit register (data/poseta.json) and the
+// prototype register's observations feed the held page panel and the analysis page.
+// The same renderer serves the static baseline and the live view; nothing is retold by hand.
+// Participants' names live only in the visit register — never as literals in this source.
+
+import { esc, tr, tx, number } from './core.js';
+
+const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const STUDENT = /^\d{1,4}\/\d{2}(?:\d{2})?$/;
+const date = v => typeof v === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v) && Number.isFinite(Date.parse(v)) && new Date(v).toISOString().slice(0, 10) === v;
+const bilingual = v => v && typeof v === 'object' && !Array.isArray(v) && typeof v.sr === 'string' && v.sr.trim() && typeof v.en === 'string' && v.en.trim();
+const keys = (obj, allowed) => obj && typeof obj === 'object' && !Array.isArray(obj) && Object.keys(obj).every(k => allowed.includes(k));
+
+export function validateVisit(visit) {
+  const problems = [];
+  const fail = (condition, message) => { if (!condition) problems.push(message); };
+  fail(visit?.schema === 'course-visit/v1', 'Unknown visit register schema.');
+  fail(keys(visit, ['schema', 'id', 'week', 'occurredOn', 'place', 'source', 'participants', 'summary']), 'Unknown visit register fields.');
+  fail(ID.test(visit?.id || ''), 'Visit id required.');
+  fail(Number.isInteger(visit?.week) && visit.week > 0, 'Visit week must be a positive integer.');
+  fail(date(visit?.occurredOn), 'Visit needs an actual date.');
+  fail(bilingual(visit?.place) && bilingual(visit?.summary), 'Visit place and summary must be bilingual.');
+  fail(keys(visit?.source, ['id', 'recordedOn', 'description']) && ID.test(visit.source?.id || '') && date(visit.source?.recordedOn) && bilingual(visit.source?.description), 'Visit source requires an id, a record date and a bilingual description.');
+  fail(Array.isArray(visit?.participants) && visit.participants.length > 0, 'Visit participants required.');
+  const names = new Set();
+  for (const person of visit?.participants || []) {
+    fail(keys(person, ['name', 'studentNumber']) && typeof person.name === 'string' && person.name.trim() && STUDENT.test(person.studentNumber || ''), 'Each participant needs exactly a name and a student number.');
+    fail(!names.has(person?.name), 'Duplicate participant name.');
+    names.add(person?.name);
+  }
+  return problems;
+}
+
+const srDate = iso => iso.split('-').reverse().join('.');
+
+/* ---------- the panel on the held page: an intro to the material, the participants, one door ---------- */
+
+export function renderVisitPanel(visit) {
+  if (validateVisit(visit).length) throw new Error('Invalid visit register.');
+  const items = visit.participants.map(person =>
+    `<li><span data-participant-name>${esc(person.name)}</span><span data-participant-number>${esc(person.studentNumber)}</span></li>`).join('');
+  return `<div class="field-visit">
+  <p class="eyebrow">${tr('Association visit', 'Poseta udruženju')} „${esc(tx(visit.place).replace(/^Udruženje /, ''))}” · <time datetime="${esc(visit.occurredOn)}">${esc(srDate(visit.occurredOn))}.</time></p>
+  <p>${tr('The same day, the class left the classroom: the prototypes were handed to the association’s users at the table, without a word of guidance. What the hands did with each work — and what that says about the next step — is written on a page of its own.',
+          'Isti dan čas je izašao iz učionice: prototipovi su predati u ruke korisnika udruženja, bez ijedne reči usmeravanja. Šta su ruke radile sa svakim radom — i šta to govori o sledećem koraku — zapisano je na zasebnoj strani.')}</p>
+  <ul class="visit-participants" data-visit-participants="${esc(visit.id)}" aria-label="${tr('Students on the visit', 'Studenti na poseti')}">${items}</ul>
+  <a class="button secondary" href="poseta.html">${tr('The full analysis of the visit', 'Temeljna analiza posete')} ↗</a>
+</div>`;
+}
+
+/* ---------- the analysis page ---------- */
+
+const FINDINGS = [
+  {
+    work: 'zmijica-2026',
+    seen: { sr: 'Korisnica je sama navlačila zeleni element po žičanoj putanji — jednom rukom po žici, drugom pritežući podlogu da ne klizi. Igra je tekla bez podsticaja, iz sedećeg položaja za stolom.', en: 'A user pulled the green element along the wire path by herself — one hand on the wire, the other steadying the base so it would not slide. The play went on without prompting, seated at the table.' },
+    reading: { sr: 'Putanja jasno saopštava šta se radi: cilj je vidljiv, a greška se oseti — element zatitra na žici. Najslabija tačka nije žica nego podloga: dok je sto gladak, druga ruka troši se na stabilizaciju umesto na igru.', en: 'The path states its own task clearly: the goal is visible, and a miss is felt — the element trembles on the wire. The weakest point is not the wire but the base: while the table is smooth, the second hand is spent steadying instead of playing.' },
+    next: { sr: 'Antiklizni sloj ispod podloga — gotovo besplatna izmena koja oslobađa drugu ruku; razmotriti oslonac koji žicu drži u visini stola, da radi i iz fotelje.', en: 'A non-slip layer under the base — a near-free change that frees the second hand; consider a support holding the wire at table height, so it works from an armchair too.' }
+  },
+  {
+    work: 'zgradica-2026',
+    seen: { sr: 'Na snimku od 23 sekunde korisnica istražuje toranj bez ijedne reči usmeravanja: okreće ga, izdvaja sprat, vraća ga. U pozadini se čuje aplauz i „svaka čast”.', en: 'On the 23-second recording a user explores the tower without a single word of guidance: she turns it, separates a floor, puts it back. Applause and „svaka čast” are heard in the background.' },
+    reading: { sr: 'Najduža neprekinuta istraživanja cele posete — i potpuno samostalna. Toranj nudi jasan zadatak (složi spratove) i nagradu koja se vidi (raste). Aplauz u pozadini slavi pokušaj, ne samo rezultat: zajednica je deo igre.', en: 'The longest unbroken exploration of the whole visit — and entirely self-directed. The tower offers a clear task (stack the floors) and a reward that can be seen (it grows). The applause in the background celebrates the attempt, not only the result: the community is part of the play.' },
+    next: { sr: 'Teža i stabilnija baza, spratovi oblikovani za izdvajanje jednom rukom; razmotriti dvostruku nagradu — vizuelnu (toranj raste) i zvučnu (klik pri spajanju).', en: 'A heavier, steadier base; floors shaped for one-handed separation; consider a double reward — visual (the tower grows) and audible (a click as they join).' }
+  },
+  {
+    work: 'upadalica-2026',
+    seen: { sr: 'Na snimku od deset sekundi čuje se brojanje naglas do pogotka — „tri, četiri… pao!” — i aplauz. Dva para ruku drže kutiju istovremeno; žuta loptica pada između štapića u narandžaste čašice.', en: 'On the ten-second recording a user counts aloud up to the drop — „three, four… it fell!” — followed by applause. Two pairs of hands hold the box at once; the yellow ball falls between the sticks into the orange cups.' },
+    reading: { sr: 'Igra je sama sebi izvela nivoe: što je veći razmak štapića, to je pogodak lakši. Brojanje se javilo bez ikakvog predloga — ritam i broj su prirodni deo igre. Rad drži jednu i dve osobe istovremeno.', en: 'The play produced its own difficulty levels: the wider the gap between the sticks, the easier the drop. The counting appeared without any suggestion — rhythm and number are a natural part of the game. The work holds one and two people at once.' },
+    next: { sr: 'Čašicama dati vrednosti po boji (poeni), a razmak štapića učiniti podesivim — igra raste sa veštinom i ostaje zajednička.', en: 'Give the cups values by colour (points) and make the stick gap adjustable — the game grows with skill and stays shared.' }
+  },
+  {
+    work: 'pogodilica-2026',
+    seen: { sr: 'Tabla sa obojenim stošcima igrana je sa više strana stola istovremeno — po broju fotografija, najposećeniji rad posete. Ruke slažu stošce po boji i gađaju cilj.', en: 'The board with coloured cones was played from several sides of the table at once — by photograph count, the most visited work of the visit. Hands sort cones by colour and aim at the target.' },
+    reading: { sr: 'Grupa se ovde skuplja sama od sebe: tabla je dovoljno velika da primi više ruku, a pravila dovoljno jasna da se igra nastavi bez objašnjenja. Paleta je najdečja na celoj zbirci — jedina koja vizuelno „objavljuje” da je igra za decu.', en: 'A group gathers here on its own: the board is large enough for several hands, and the rules are clear enough for the play to continue without explanation. The palette is the most childish of the whole collection — the only one that visually „announces” a children’s game.' },
+    next: { sr: 'Prigušiti paletu ka prirodnim materijalima (drvo, karton, tkivo) — odrasli korisnici zaslužuju estetiku za sebe; pravila koja rade i u paru i sam.', en: 'Mute the palette towards natural materials (wood, cardboard, cloth) — adult users deserve an aesthetics of their own; rules that work in a pair and alone.' }
+  },
+  {
+    work: 'sudoku-2026',
+    seen: { sr: 'Pločice sa reljefnim brojevima slagane su i razvrstavane po stolu; kontakti su bili kraći i mirniji nego kod ostalih radova — slaganje bez utrke.', en: 'Tiles with raised numbers were laid out and sorted on the table; the contact was shorter and quieter than with the other works — arranging without a race.' },
+    reading: { sr: 'Najviši kontrast zbirke (crno na belom) i reljef koji se čita prstom — jak dizajn za slabovidne. Ali broj je apstrakcija: na materijalu se vidi slaganje, ne i igra sa pravilom. Nedostaje most od broja do zadatka.', en: 'The highest contrast of the collection (black on white) and a relief that can be read by finger — strong design for low-vision users. But a number is an abstraction: the material shows arranging, not yet a game with a rule. The bridge from number to task is missing.' },
+    next: { sr: 'Uz svaki broj dati količinu ili boju (1●, 2●●…) — pariranje umesto računanja; zadržati reljef i kontrast, dodati podlogu sa udubljenjima po broju.', en: 'Give each number a quantity or a colour (1●, 2●●…) — matching instead of counting; keep the relief and contrast, add a base with hollows by number.' }
+  },
+  {
+    work: 'muzicka-kutija-2026',
+    seen: { sr: 'Aplikacija za praćenje pokreta na laptopu: korisnik diže i spušta ruku ispred ekrana, cvet na ekranu odgovara, zvuk potvrđuje. Viđeno i iz daljine, sa druge strane stola.', en: 'A hand-tracking application on a laptop: the user raises and lowers a hand in front of the screen, a flower on the screen answers, sound confirms. Seen from a distance too, across the table.' },
+    reading: { sr: 'Ravnopravna igra: ne traži hvat, silu ni preciznost — pokret je dovoljan. Ali ekran vuče pažnju ka sebi: korisnik je u igri, a izvan sobe. Odziv je trenutan i pošten — to drži pažnju.', en: 'An equalising play: it asks for no grip, force or precision — a movement is enough. But the screen pulls attention to itself: the user is in the game and out of the room. The response is instant and honest — that is what holds attention.' },
+    next: { sr: 'Preusmeriti odziv u sobu: zvučnik na stolu umesto u ekranu, cvet na zidu — igra ostaje društvena, a prostor postaje instrument.', en: 'Redirect the response into the room: a speaker on the table instead of in the screen, the flower on a wall — the play stays social and the room becomes the instrument.' }
+  }
+];
+
+const PATTERNS = [
+  { sr: 'Četiri stila korišćenja u jednoj sobi: duboki samostalni istraživač, par ruku, grupa oko table i posmatrač sa strane. Nijedan dizajn ne pokriva sve — rotacija radova po stolu je najjeftinija univerzalna mera.', en: 'Four styles of use in one room: the deep solo explorer, a pair of hands, a group around a board, and a watcher from the side. No single design covers them all — rotating the works around the table is the cheapest universal measure.' },
+  { sr: 'Proslava pokušaja: aplauz prati i promašaj. Dizajnirati tako da i promašaj daje povratnu informaciju — zvuk, pokret, promenu boje.', en: 'The celebration of the attempt: applause follows a miss too. Design so that a miss also gives feedback — a sound, a movement, a change of colour.' },
+  { sr: 'Sto je arena: svi fizički radovi korišćeni su na stolu. Stabilnost podloge je univerzalni uslov — vidljivo kod Zmijice, čija se podloga klizala dok se igralo.', en: 'The table is the arena: every physical work was used on the table. A steady base is a universal condition — visible with Zmijica, whose base slid during play.' },
+  { sr: 'Zvuk drži pažnju bez ekrana: brojanje, aplauz, odziv aplikacije. Igračka koja „odgovara” zvukom ostaje u sobi.', en: 'Sound holds attention without a screen: counting, applause, the application’s response. A work that „answers” with sound stays in the room.' },
+  { sr: 'Odrasla estetika je pristupačnost: drvo i crno-beli kontrast su najbolje primljeni, a najdečja paleta najmanje zadržava. Materijal i boja su deo univerzalnog dizajna, ne ukras.', en: 'An adult aesthetics is accessibility: wood and black-and-white contrast were received best, and the most childish palette held attention least. Material and colour are part of universal design, not decoration.' }
+];
+
+function ready(visit, prototypes) {
+  const problems = [...validateVisit(visit)];
+  if (problems.length) throw new Error(problems.join('\n'));
+}
+
+export function renderPoseta(visit, prototypes) {
+  ready(visit, prototypes);
+  const byWork = new Map((prototypes?.observations || []).map(o => [o.prototypeId, o]));
+  const title = id => prototypes.items.find(item => item.id === id)?.title || id;
+  const findings = FINDINGS.map((finding, i) => {
+    const observation = byWork.get(finding.work);
+    const photos = observation
+      ? `<div class="visit-photos">${observation.photos.map(p => `<figure class="prototype-photo"><a href="${esc(p.src)}" aria-label="${tr('Open full image', 'Otvori celu sliku')}"><img src="${esc(p.src)}" width="${p.width}" height="${p.height}" alt="${esc(tx(p.alt))}" loading="lazy" decoding="async"></a><figcaption>${esc(tx(p.caption))}</figcaption></figure>`).join('')}</div>`
+      : `<p class="visit-no-photo">${tr('The material of this work stays in the working notebook — the recordings show a person, not only a toy.', 'Materijal ovog rada ostaje u radnoj svesci — snimak pokazuje osobu, ne samo igračku.')}</p>`;
+    return `<article class="visit-finding" id="${esc(finding.work)}">
+  <h3><span aria-hidden="true">${number(i + 1)}</span> ${esc(title(finding.work))} <a class="gallery-link" href="prototipovi.html#${esc(finding.work)}">${tr('authorship in the gallery', 'autorstvo u galeriji')} ↗</a></h3>
+  ${photos}
+  <p><span class="visit-label">${tr('Seen', 'Viđeno')}</span>${esc(tx(finding.seen))}</p>
+  <p><span class="visit-label">${tr('Reading', 'Čitanje')}</span>${esc(tx(finding.reading))}</p>
+  <p><span class="visit-label">${tr('Next step', 'Sledeći korak')}</span>${esc(tx(finding.next))}</p>
+</article>`;
+  }).join('');
+  const participants = visit.participants.map(person =>
+    `<li><span data-participant-name>${esc(person.name)}</span><span data-participant-number>${esc(person.studentNumber)}</span></li>`).join('');
+  const patterns = PATTERNS.map(p => `<li>${esc(tx(p))}</li>`).join('');
+  return `<div class="page-top flow-intro"><div><p class="eyebrow">${tr('Week', 'Nedelja')} ${visit.week} · ${tr('association visit', 'poseta udruženju')} · <time datetime="${esc(visit.occurredOn)}">${esc(srDate(visit.occurredOn))}.</time></p>
+  <h1>${tr('The visit to the association.', 'Poseta udruženju.')}</h1></div>
+  <p class="lede">${tr('The same day as the second class, the students brought the prototypes to the Živimo zajedno association and handed them to the users — without explanation, without guidance. This page is a full reading of what was seen: how each work was taken in hand, what those hands did on their own, and what that says about the next step of each prototype.', 'Isti dan kad i drugi čas, studenti su doneli prototipove u prostor udruženja „Živimo zajedno” i predali ih korisnicima — bez objašnjenja, bez usmeravanja. Ova strana je temeljno čitanje viđenog: kako je svaki rad primljen u ruke, šta su te ruke same od sebe radile i šta to govori o sledećem koraku svakog prototipa.')}</p></div>
+<p class="notice">${tr('How this was read: 45 photographs, three recordings (10, 23 and 5 seconds) and their sound, taken on 9 October 2026 between 13:54 and 14:11. It is not a test: there were no interviews and no one is graded — the work is judged, never the person. The photographs published here were chosen so that they show no faces; the recordings stay in the working notebook.', 'Kako je ovo pročitano: 45 fotografija, tri snimka (10, 23 i 5 sekundi) i njihov zvuk, nastali 09.10.2026. između 13:54 i 14:11. Nije ispitivanje: nije bilo intervjua i niko se ne ocenjuje — ocenjuje se rad, nikad osoba. Fotografije objavljene ovde izabrane su tako da ne pokazuju lica; snimci ostaju u radnoj svesci.')}</p>
+<section aria-labelledby="visit-participants-title"><div class="section-heading"><div><p class="eyebrow">${tr('Who was there', 'Ko je bio tamo')}</p><h2 id="visit-participants-title">${tr('Students on the visit', 'Studenti na poseti')}</h2></div><p>${tr('Nine students, the same day as the second class.', 'Devetoro studenata, isti dan kad i drugi čas.')}</p></div>
+  <ul class="visit-participants" data-visit-participants="${esc(visit.id)}" aria-label="${tr('Students on the visit', 'Studenti na poseti')}">${participants}</ul>
+</section>
+<section aria-labelledby="visit-findings-title"><div class="section-heading"><div><p class="eyebrow">${tr('Work by work', 'Rad po rad')}</p><h2 id="visit-findings-title">${tr('What was seen', 'Šta se videlo')}</h2></div><p>${tr('Seen — reading — next step: three separate claims, kept apart.', 'Viđeno — čitanje — sledeći korak: tri odvojene tvrdnje, čuvaju se odvojeno.')}</p></div>
+  ${findings}
+</section>
+<section aria-labelledby="visit-patterns-title"><div class="section-heading"><div><p class="eyebrow">${tr('Across all works', 'Presjek kroz sve radove')}</p><h2 id="visit-patterns-title">${tr('What repeats', 'Šta se ponavlja')}</h2></div></div>
+  <ol class="lesson-results visit-patterns">${patterns}</ol>
+</section>
+<section aria-labelledby="visit-next-title"><div class="section-heading"><div><p class="eyebrow">${tr('For the work ahead', 'Za dalji rad')}</p><h2 id="visit-next-title">${tr('Where this leads', 'Kuda ovo vodi')}</h2></div></div>
+  <p>${tr('The next steps above are ready to enter the cloud of ideas and the preparation of the next class. One method note for the next visit: record the empty table before the work is handed over — the change is measured by the difference.', 'Sledeći koraci gore spremni su da uđu u oblak ideja i pripremu sledećeg časa. Jedna metodska beleška za sledeću posetu: snimiti prazan sto pre predaje rada — promena se meri razlikom.')}</p>
+  <div class="actions"><a class="button secondary" href="oblak.html">${tr('Cloud of ideas', 'Oblak ideja')}</a><a class="button secondary" href="sledeci.html">${tr('Next class', 'Sledeći čas')}</a><a class="button secondary" href="prototipovi.html">${tr('Works and examples', 'Radovi i primeri')}</a></div>
+</section>
+<aside class="prototype-context visit-source"><h2>${tr('Sources of this page', 'Izvori ove strane')}</h2><p>${esc(tx(visit.source.description))}</p><p>${tr('Attribution of each work stands in the gallery of works; the participants of the visit in the visit register. Faces are not published on this page.', 'Autorstvo svakog rada stoji u galeriji radova; učesnici posete u registru posete. Lica se na ovoj strani ne objavljuju.')}</p></aside>`;
+}

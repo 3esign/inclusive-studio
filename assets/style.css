@@ -881,3 +881,21 @@ body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width
   .lesson-gallery.count-3 .lesson-photo:first-child{grid-row:auto}
   .lesson-photo-detail{padding-top:0}
 }
+
+/* ---- the association visit: panel on held records and the analysis page ---- */
+.field-visit{margin-top:1.1rem;padding:1rem 1.2rem;background:var(--wash);border-left:3px solid var(--ink)}
+.field-visit .eyebrow{margin-bottom:.45rem}
+.field-visit p{font-size:.95rem}
+.visit-participants{list-style:none;padding:0;margin:.7rem 0 1rem;display:flex;flex-wrap:wrap;gap:.4rem .5rem}
+.visit-participants li{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:.32rem .7rem;font-size:.92rem;display:inline-flex;gap:.55rem;align-items:baseline}
+.visit-participants [data-participant-number]{color:var(--muted);font-size:.85rem}
+.visit-finding{border-top:1px solid var(--line);padding:1.5rem 0;display:grid;gap:.75rem}
+.visit-finding h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem;margin:0}
+.visit-finding .gallery-link{font-size:.88rem;font-weight:400}
+.visit-photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin:.25rem 0}
+.visit-photos .prototype-photo{margin:0}
+.visit-no-photo{font-size:.92rem;color:var(--muted)}
+.visit-label{font-weight:700;margin-right:.45rem}
+.visit-patterns li{padding-left:.2rem}
+.visit-source p{font-size:.92rem}
+@media (max-width:720px){.visit-photos{grid-template-columns:1fr}}

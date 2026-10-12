@@ -1,276 +1,289 @@
 {
-  "format": "inclusive-studio-versions",
-  "version": 1,
-  "predmet": {
-    "naziv": "Principi univerzalnog dizajna",
-    "fakultet": "Fakultet za graditeljski menadžment, Univerzitet „Union — Nikola Tesla”, Beograd",
-    "nastavnik": "docent, doktor nauka, arhitekta (ime u školskoj dokumentaciji)",
-    "programi": [
-      {
-        "sifra": "22.OA0068",
-        "semestar": 5,
-        "espb": 5,
-        "tip": "izborni"
-      },
-      {
-        "sifra": "OAIPUD",
-        "semestar": 6,
-        "espb": 4,
-        "tip": "izborni"
-      }
-    ],
-    "formatIspita": {
-      "oblik": "A3 horizontalna radna sveska",
-      "nacin": [
-        "štampana",
-        "digitalna"
-      ],
-      "izvor": "Nastavnik predmeta, 09.10.2026. (nalog za pripremu predmeta)",
-      "napomena": "U arhivi dosijea (nastava/) postoji i starija ispitna radna sveska u A4 vertikalnom formatu — arhivski primerak, ne merodavan format."
-    }
-  },
-  "nacelo": {
-    "sr": "Stranica predmeta živi paralelno sa predmetom: menja se, dopunjuje i dodaje. Svaka objavljena nedelja nosi revizije (šta se promenilo, kada, na čiju reč); „Dopunjeno” u zaglavlju uvek odgovara poslednjoj reviziji. Objavljeno nije isto što i održano.",
-    "en": "A subject site lives in parallel with the subject: it changes, is amended and added to. Every published week carries revisions (what changed, when, on whose word); the “Updated” line always matches the last revision. Published is not the same as held."
-  },
-  "stranice": [
-    {
-      "id": "prototipovi",
-      "stranica": "prototipovi.html",
-      "izvorPodataka": "data/prototipovi.json; zajednicki prikaz assets/prototipovi-core.js; generator tools/prototipovi.mjs",
-      "verzijaZivi": "Prikupljeni radovi i primeri: prototipovi, tehnički crteži i nastavnički primeri sa izričito navedenim autorstvom. Indeks i početak izrade beleže se samo kada su poznati. Osnovni zapisi i prethodne slike se čuvaju, korekcije imaju before/after revizije, a zapažanja iz udruženja zasebne događaje."
-    },
-    {
-      "id": "naslovna",
-      "stranica": "naslovna.html",
-      "izvorPodataka": "data/tok.json (brojevi štampa tools/shells.mjs)",
-      "verzijaZivi": "naslovna je dodata ispred toka, ne umesto njega: duboke veze index.html?w=N i landing ostaju; scena (vendorevani three.js 0.180.0, heševi u assets/vendor/README.md) je samo dopuna sa SVG osnovom; štampa se kao naslovni list radne sveske (A3 horizontalno)"
-    },
-    {
-      "id": "udruzenje",
-      "stranica": "udruzenje.html",
-      "izvorPodataka": "docs/probavanje-u-udruzenju.md (sadržaj samo odatle)",
-      "verzijaZivi": "prostor za članove udruženja i osoblje, na srpskom: četiri koraka, pet prava, kapija bezbednosti (presuda se izvodi iz 4 provere, stanje samo u pregledaču), list za zapisivanje za štampu; termin i prostor dogovaraju se sa udruženjem, a strana ne nosi imena ni fotografije članova"
-    },
-    {
-      "id": "tok",
-      "stranica": "index.html (landing)",
-      "izvorPodataka": "data/tok.json + data/material/wNN.json",
-      "verzijaZivi": "samo održano: svaki održani čas sa rezultatima, izvorima, A3 listom nedelje i pomoćnim materijalom; traka toka u zaglavlju svake strane"
-    },
-    {
-      "id": "sledeci",
-      "stranica": "sledeci.html",
-      "izvorPodataka": "data/tok.json (sledeci) + data/material/wNN.json + assets/exercises.js",
-      "verzijaZivi": "bogata priprema sledećeg časa: naslanja se na rezultate prethodnog, donosi šta se donosi, plan redom, listovi koje čas ostavlja, protokol probavanja i šta strana čeka"
-    },
-    {
-      "id": "oblak",
-      "stranica": "oblak.html",
-      "izvorPodataka": "data/tok.json (ideje)",
-      "verzijaZivi": "sve što nije održano i nije sledeće: ideje redom po datumu, sa izvorom; kad ideja uđe u pripremu, to ovde piše"
-    },
-    {
-      "id": "nedelja",
-      "stranica": "index.html?w=N",
-      "izvorPodataka": "data/material/wNN.json",
-      "verzijaZivi": "revizije u samom fajlu gradiva"
-    },
-    {
-      "id": "predavanje",
-      "stranica": "predavanje.html",
-      "izvorPodataka": "data/material/wNN.json",
-      "verzijaZivi": "isto gradivo isečeno na slajdove"
-    },
-    {
-      "id": "vezbe",
-      "stranica": "vezbe.html",
-      "izvorPodataka": "assets/exercises.js",
-      "verzijaZivi": "banka vežbi; istorija u repozitorijumu i LOG.md"
-    },
-    {
-      "id": "kalendar",
-      "stranica": "program.html",
-      "izvorPodataka": "data/schedule.json",
-      "verzijaZivi": "datumi nose status confirmed/proposed"
-    },
-    {
-      "id": "laboratorija",
-      "stranica": "laboratorija.html",
-      "izvorPodataka": "assets/lab-core.js",
-      "verzijaZivi": "istorija u repozitorijumu i LOG.md"
-    },
-    {
-      "id": "biblioteka",
-      "stranica": "resources.html",
-      "izvorPodataka": "assets/research.js",
-      "verzijaZivi": "svaki zapis navodi dokle je pročitan"
-    },
-    {
-      "id": "hub",
-      "stranica": "ideja.html",
-      "izvorPodataka": "assets/idea-bank.js, assets/ideas.js",
-      "verzijaZivi": "istorija u repozitorijumu i LOG.md"
-    },
-    {
-      "id": "godista",
-      "stranica": "godista.html",
-      "izvorPodataka": "assets/ages.js, assets/age-rules.js",
-      "verzijaZivi": "istorija u repozitorijumu i LOG.md"
-    },
-    {
-      "id": "predmet",
-      "stranica": "predmet.html",
-      "izvorPodataka": "assets/course.js",
-      "verzijaZivi": "nepotvrđeni podaci nose svoju oznaku"
-    },
-    {
-      "id": "manifest",
-      "stranica": "ovaj fajl",
-      "izvorPodataka": "data/verzije.json",
-      "verzijaZivi": "istorija sajta u polju istorija + repozitorijum"
-    }
+ "format": "inclusive-studio-versions",
+ "version": 1,
+ "predmet": {
+  "naziv": "Principi univerzalnog dizajna",
+  "fakultet": "Fakultet za graditeljski menadžment, Univerzitet „Union — Nikola Tesla”, Beograd",
+  "nastavnik": "docent, doktor nauka, arhitekta (ime u školskoj dokumentaciji)",
+  "programi": [
+   {
+    "sifra": "22.OA0068",
+    "semestar": 5,
+    "espb": 5,
+    "tip": "izborni"
+   },
+   {
+    "sifra": "OAIPUD",
+    "semestar": 6,
+    "espb": 4,
+    "tip": "izborni"
+   }
   ],
-  "istorija": [
-    {
-      "datum": "2026-10-01",
-      "sta": {
-        "sr": "Pilot v1 sajta objavljen.",
-        "en": "Site pilot v1 published."
-      }
-    },
-    {
-      "datum": "2026-10-02",
-      "sta": {
-        "sr": "Nedelja 1 preusmerena na igračku udruženja; nedelja 2 prepisana u „Prototip na stolu”; prvi čas održan.",
-        "en": "Week 1 redirected to the association toy; week 2 rewritten as the prototype session; first class held."
-      }
-    },
-    {
-      "datum": "2026-10-09",
-      "sta": {
-        "sr": "Uvedene revizije gradiva: svaka objavljena nedelja nosi vidljivu istoriju nastanka; w02 dobija „Sledeći list”; w03 preusmeren na „Ruka koja drži”; manifest predmeta sa formatom ispita.",
-        "en": "Material revisions introduced: every published week carries a visible history; w02 gains “The next sheet”; w03 redirected to “The hand that holds it”; subject manifest with the exam format."
-      }
-    },
-    {
-      "datum": "2026-10-09",
-      "sta": {
-        "sr": "Novi poseban prozor „Tok predmeta” (tok.html, data/tok.json): tri police — zacementirano (w01, održano 02.10 sa rezultatima), pilot za sledeći čas (w02, „Ruka koja drži”, probavanje u udruženju) i oblak ideja bez nedelje. Prelaze provodi validator i testovi.",
-        "en": "New steering window “Course flow” (tok.html, data/tok.json): three shelves — cemented (w01, held 02.10 with results), pilot for the next class (w02, “The hand that holds it”, the association try-out) and the cloud of ideas with no week. Transitions are enforced by the validator and the tests."
-      }
-    },
-    {
-      "datum": "2026-10-09",
-      "sta": {
-        "sr": "Tok predmeta postaje landing strana (index.html): zacementirani časovi redom sa materijalom i A3 listom nedelje ka radnoj sveski za ispit, pilot za sledeći čas, oblak ideja; posebna strana tok.html je ukinuta, duboke veze index.html?w=N i dalje rade. Traka toka (zacementirano · sledeći čas · oblak) stoji u zaglavlju svake strane, generiše je tools/shells.mjs iz data/tok.json i radi bez skripte. Ovaj obrazac je šema za svaki sledeći predmetni sajt.",
-        "en": "The course flow becomes the landing (index.html): cemented classes in order with their material and the week's A3 sheet toward the exam workbook, the pilot for the next class, and the cloud of ideas; the separate tok.html page is retired, deep links index.html?w=N keep working. A flow strip (cemented · next class · cloud) sits in the header of every page, generated by tools/shells.mjs from data/tok.json and working without scripting. This pattern is the schema for every subject site that follows."
-      }
-    },
-    {
-      "datum": "2026-10-09",
-      "sta": {
-        "sr": "Dodata naslovna (naslovna.html) — prva vrata sajta, dodata toku a ne umesto njega: scena je naslaganih A3 listova (jedan po zacementiranoj nedelji + jedan koji stiže, sa signal-obeleživačem), brojeve štampa tools/shells.mjs iz data/tok.json, three.js 0.180.0 vendorevan u assets/vendor/ sa SHA-256 heševima (bez npm, bez CDN), scena se gasi uz prefers-reduced-motion i iza čuvanog uvoza (SVG osnovni prikaz bez WebGL); štampa celog sajta prešla na A3 horizontalno, naslovna se štampa kao naslovni list sveske. Dodata i pilotska strana udruženja (udruzenje.html, srpski prvi): četiri koraka probavanja, pet prava, kapija bezbednosti sa izvedenom presudom i list za zapisivanje; strana ne nosi imena ni fotografije članova. Srpski navodnici zatvoreni sa ” svuda gde se bio uvukao pravi znak.",
-        "en": "A cover page added (naslovna.html) — the site's first door, added in front of the flow, never instead of it: the scene is a stack of A3 sheets (one per cemented week plus one arriving, with a signal bookmark), counts stamped by tools/shells.mjs from data/tok.json, three.js 0.180.0 vendored into assets/vendor/ with SHA-256 hashes (no npm, no CDN), the scene steps aside for prefers-reduced-motion and behind a guarded import (an SVG baseline without WebGL); the whole site now prints on A3 landscape, the cover printing as the workbook's title sheet. A pilot association page added too (udruzenje.html, Serbian first): the four try-out steps, five rights, a safety gate with a derived verdict and a recording sheet; the page carries no names, photographs or statements of members. Serbian quotes re-closed with ” wherever a straight mark had slipped in."
-      }
-    },
-    {
-      "datum": "2026-10-09",
-      "sta": {
-        "sr": "Objavljena površina bez ličnih imena: imena su zamenjena ulogama („direktor udruženja”, „nastavnik”), a unosi čija je objava zavisila od saglasnosti ukinuti; pravila koja štite člana ostaju. Novi test tests/interfejs.test.mjs obara gradnju ako se ime ili saglasnosna zavisnost vrate u objavu.",
-        "en": "The published surface without personal names: names replaced by roles („the director of the association”, „the teacher”), entries whose publishing depended on consent removed; the rules protecting a member stay. A new test, tests/interfejs.test.mjs, fails the build if a name or a consent dependency returns."
-      }
-    },
-    {
-      "datum": "2026-10-09",
-      "sta": {
-        "sr": "Preuređen tok predmeta po nalogu nastavnika: tri dela, svaki na svojoj strani — održano (index.html: samo održani časovi sa rezultatima, pomoćnim materijalom i A3 listom), sledeći čas (nova strana sledeci.html: naslonjena na prethodni čas — šta se donosi, plan, listovi, protokol, čekanja) i oblak ideja (nova strana oblak.html). Rečnik bez „zacementirano/pilot/polica”: šema toka je v2 (odrzano/sledeci/ideje), a tests/recnik.test.mjs čuva površinu od povratka tog rečnika. Sve ljuske su srpske (lang=sr-Latn, naslovi, traka, podnožje), engleski je samo iza prekidača. Prvi sopstveni vizuali na površini (dijagrami standarda, terenska skica). Mobilni pregled sređen: bez horizontalnog prelivanja na 390/768/1440.",
-        "en": "The course flow rebuilt at the teacher's direction: three parts, each on its own page — held (index.html: held classes only, with results, helping material and the A3 sheet), next class (new sledeci.html: leaning on the previous class — what to bring, the plan, the sheets, the protocol, the waits) and the cloud of ideas (new oblak.html). The vocabulary without “cemented/pilot/shelf”: the flow schema is v2 (odrzano/sledeci/ideje) and tests/recnik.test.mjs keeps that vocabulary off the surface. Every shell is Serbian (lang=sr-Latn, titles, strip, footer); English stays behind the toggle. The site's own visuals appear on the surface for the first time (standard diagrams, the field sketch). The mobile view fixed: no horizontal overflow at 390/768/1440."
-      }
-    },
-    {
-      "datum": "2026-10-09",
-      "sta": {
-        "sr": "Fotografije postojećeg gradiva prikazane pri početku održanih časova i pripreme. Pregled časa povezuje celinu predmeta, detalj mehanizma, zabeležene ishode i A3 zadatak; najnoviji održani čas je prvi. Statički i dinamički pregled koriste isti renderer, uz originalne opise i sačuvane izvore. Priprema ostaje označena, sa izričitim radnim pregledom predavanja. Odobrena naslovna i izvorno gradivo nisu menjani. Ispravljen je poziv checkpoint alata kroz Windows junction.",
-        "en": "Existing lesson photographs now appear near the start of the held-class record and preparation. The record connects the whole object, a mechanism detail, recorded outcomes and the A3 task; the most recent held class leads. Static and live records use the same renderer, retaining original descriptions and sources. Preparation keeps its status and an explicit working lecture preview. The approved cover and source lesson material are unchanged. The checkpoint CLI now works through a Windows junction."
-      }
-    },
-    {
-      "datum": "2026-10-09",
-      "sta": {
-        "sr": "Dodat registar pet donetih studentskih prototipova sa originalnim fotografijama, nazivima i imenima/indeksima izričito navedenim u nastavnikovom nalogu. Galerija i pregledi na Održano/Sledeći čas izvode se iz jednog registra; podaci o korišćenju u udruženju imaju zasebne događaje. Sačuvani su izvornici nastavnog gradiva i osnovna arhitektura sajta. Dodati su projektni ulaz za umove, provere tačne atribucije, integriteta slika i statičkog prikaza, kao i zaštita istorije prototipova pri poređenju verzija. Ispravljen prevod tela stranice Sledeći čas pri promeni jezika.",
-        "en": "Added a register of five brought student prototypes with original photographs, titles and author names/student numbers explicitly supplied in the teacher’s request. The gallery and Held/Next class previews derive from one register; observations of use at the association are separate events. Source lesson material and the basic site architecture are preserved. Added an agent entry document, exact attribution/image/static-view checks and prototype history protection between versions. Fixed Next class body translation when switching languages."
-      }
-    },
-    {
-      "datum": "2026-10-09",
-      "sta": {
-        "sr": "Dodata Upadalica kao šesti doneti prototip sa izvornom fotografijom, potvrđenom atribucijom i zasebnim izvorom nastavnikove dopune. Ranijih pet zapisa i fotografija sačuvano.",
-        "en": "Added Upadalica as the sixth brought prototype, with its original photograph, confirmed attribution and a separate source for the teacher’s addition. The previous five records and photographs are preserved."
-      }
-    },
-    {
-      "datum": "2026-10-09",
-      "sta": {
-        "sr": "Prototipovi razvrstani u nedelju 2, odvojeno od početka izrade u nedelji 1. Nastavnik potvrdio održavanje drugog časa 09.10.2026 i nastavu petkom. Dodat zapis održanog časa i prilagođena priprema sledećoj nedelji, uz očuvanu istoriju prethodnih izdanja.",
-        "en": "Classified the prototypes under week 2, separately from the start of making in week 1. The teacher confirmed the second class was held on 9 October 2026 and that classes meet on Fridays. Added the held-class record and updated next-class preparation, preserving earlier editions."
-      }
-    },
-    {
-      "datum": "2026-10-09",
-      "sta": {
-        "sr": "Zbirka druge nedelje proširena na osam radova i jedanaest fotografija: dodat tehnički crtež Lego4ll i nastavnikov 3D štampani prototip zvečke. Original crteža prikazan vodoravno bez izmene slikovnih podataka. Birač održanih nedelja prikazuje najnoviju prvu.",
-        "en": "Expanded the week-two collection to eight works and eleven photographs: added the Lego4ll technical drawing and the teacher’s 3D-printed rattle prototype. The original drawing is displayed horizontally without changing image data. The held-week selector shows the newest week first."
-      }
-    },
-    {
-      "datum": "2026-10-09",
-      "sta": {
-        "sr": "Ispravljeno poreklo referentne igračke: pozajmljena iz udruženja i doneta na prvi čas kao primer. Sve tri fotografije prikazuju se samo u nedelji 1; druga nedelja prikazuje dokumentovan studentski prototip. Uklonjeno nagađanje o izradi, datumu fotografisanja i nameri izrađivača; dopunjena regresa za pripadnost fotografija nedeljama.",
-        "en": "Corrected the reference toy’s provenance: borrowed from the association and brought to the first class as an example. All three photographs appear only in week one; week two shows a documented student prototype. Removed speculation about manufacture, photographic date and maker intent, and added a regression check for photograph-to-week assignment."
-      }
-    },
-    {
-      "datum": "2026-10-11",
-      "sta": {
-        "sr": "Sređivanje površine po nalogu voditelja predmeta od 10.10.2026: statični osnovci 14 strana prevedeni na srpski (jedan jezik na površini, ugovor iz smernica); „Creative hub\" preimenovan u „Radionica ideja\" (navigacija, naslov, naslovna); padajući „Materijal\" preraspoređen redosledom rada predmeta; oblak ideja i radionica sada se vode međusobno; statični prikaz oblaka izvodi se novim generatorom tools/cloud-baseline.mjs iz istog renderera kao živi prikaz; dokaz protiv simulacije invaliditeta vraćen u vodeći paragraf laboratorije; oblak dopunjen sa dve ideje iz razvoja semestra (merenja ruku, A3 listovi u udruženju) i tri nova semena u radionici. Nova kapija tests/povrsina.test.mjs čuva jezik površine.",
-        "en": "Surface tidy-up per the course lead's order of 10 October 2026: static baselines of fourteen pages translated to Serbian (one language on the surface, per the guidelines contract); \"Creative hub\" renamed to \"Radionica ideja\" (navigation, title, cover); the Material dropdown reordered to follow the subject's working order; the cloud and the atelier now link to each other; the cloud's static view is stamped by a new generator, tools/cloud-baseline.mjs, from the same renderer as the live view; the evidence against disability simulation restored to the laboratory's lead paragraph; the cloud gained two ideas drawn from the semester's development (hand measurements, A3 sheets at the association) and the atelier three new seeds. A new guard test, tests/povrsina.test.mjs, keeps the surface language."
-      }
-    },
-    {
-      "datum": "2026-10-12",
-      "sta": {
-        "sr": "Detaljniji pregled celog sajta po nalogu voditelja predmeta: statično telo strane igračka prevedeno na srpski (veze i pravilo bezbednosti EN 71-1); izvori radnog materijala na strani sledećeg časa sada vode ljudskim nazivom („Priprema materijala nedelje 3 (nacrt)”) sa tehničkom putanjom kao tragom, i protokol probavanja isto; vrste izvora u biblioteci („Studijski slučaj”, „Metoda”…) sada su na srpskom u srpskom prikazu preko jedne mape u rendereru. Pregledano i mereno: sve unutrašnje veze i sidla (jedno sidro radi samo uz skriptu — prihvaćeno svesno), brojevi trake slažu se sa tokom na svim stranama, kalendar namerno drži datume u zapisima održanih časova dok ne postoji raspored, citirani naslovi izvora ostaju na izvornom jeziku po ugovoru.",
-        "en": "A finer pass over the whole site per the course lead's order: the toy page's static body translated to Serbian (links and the EN 71-1 safety rule); the working-material sources on the next-class page now lead with a human name (\"Week 3 preparation material (draft)\") with the file path as a trailing locator, and the trying-out protocol likewise; the library's source types (\"Case study\", \"Method\"…) now render in Serbian in the Serbian view through a single renderer map. Checked and measured: all internal links and anchors (one anchor works only with scripting — a conscious acceptance), the flow strip agrees with the course flow on every page, the calendar deliberately keeps dates in the held-class records until a timetable exists, and quoted source titles keep their own language per the contract."
-      }
-    },
-    {
-      "datum": "2026-10-12",
-      "sta": {
-        "sr": "Sređivanje strane održanih časova po nalogu voditelja predmeta: prikaz „A3 list nedelje\" uklonjen sa svakog časa (ideja „Nedeljni A3 list radne sveske\" prebačena u oblak sa izvorom); pomoćne kartice svedene na tri odobrene (granice po godištima, kako sarađujemo, biblioteka i izvori); standardi na prvi pogled preseljeni među izvore. Rad „Zmijica\" vraćen u studentske radove (atribucija iz originalne prijave, dokumentovan u nedelji 2, revizija v8 registra i revizija v5 nedelje 1; galerija prvog časa vraća se na tri fotografije pozajmljene igračke). Kompozicija: galerija od tri fotografije dobija ravan raspored (vodeća fotografija kroz dva reda), tehnički crtež dobija tretman table dokumenta (beli okvir, centrirano, jasniji potpis o okretanju fotografije). Novo pravilo u smernicama: predmetni sajt vodi računa o kompoziciji i preglednosti; strana održanih časova prikazuje isključivo održane časove; prikaz koji nastavnik nije definisao ide u oblak, ne na stranu.",
-        "en": "Tidying the held-classes page per the course lead's order: the \"week's A3 sheet\" display removed from every class (the \"weekly A3 sheet of the workbook\" idea moved to the cloud with its source); the helping cards reduced to the three approved ones (limits by age, how we work together, library and sources); standards at a glance moved among the sources. The work \"Zmijica\" restored to the student works (attribution from the original submission, documented in week 2 — registry revision v8 and week-1 revision v5; the first class's gallery returns to the three photographs of the borrowed toy). Composition: a three-photograph gallery gets an even layout (the lead photograph spanning two rows), and the technical drawing gets a document-plate treatment (white matte, centred, a clearer caption about the photograph's rotation). A new rule in the guidelines: a subject page cares about composition and clarity; the held-classes page shows exclusively held classes; a display the teacher has not defined goes to the cloud, not onto the page."
-      }
-    },
-    {
-      "datum": "2026-10-12",
-      "sta": {
-        "sr": "Strogi prolaz po nalogu voditelja predmeta: zapis odrzanih casova sada nosi samo ono sto je voditelj izricito rekao (njegove poruke od 02.10. i 09.10. izvadene iz sesija) — preformulisani rezultati prvog casa (igracka kao primer, osmisljavanje koncepata na papiru, poseta direktora udruzenja, zadatak malog prototipa DIY/reciklaza ne iskljucivo uz 3D stampu), dopunjen zapis druge nedelje posetom udruzenja cije se fotografije jos ocekuju; izmisljena „odluka sa casa” (svaki tim upisuje jedan red) uklonjena iz gradiva nedelje 1 (revizija v6) i prebacena u oblak; strana sledeceg casa je sada prazna („Naredni cas jos nije upisan”) — predlog „Ruka koja drzi” i protokol probavanja cekaju potvrdu u oblaku (10 ideja); dugmad „Radni pregled” i „Prikaz predavanja” skinuta sa odrzanih casova jer ih voditelj nije definisao. Kompozicija na telefonu: fotografije casa pune sirine bez praznina; traka radova: thumbnail tehnickog crteza uspravan kao svi ostali (rotacija ostaje samo prikaz crteza kao table unutar kartice).",
-        "en": "A rigor pass per the course lead order: the held-classes record now carries only what he explicitly said (his messages of 2 and 9 October extracted from the sessions) — the first class results rephrased, the second week record extended with the association visit whose photographs are still expected; the invented class decision (each team writes one row) removed from week 1 material (revision v6) and moved to the cloud; the next-class page is now empty (\"the next class has not been entered\") — the \"hand that holds\" proposal and the trying-out protocol wait for confirmation in the cloud (10 ideas); the working-preview and lecture-view buttons removed from held classes as undefined by the lead. Mobile composition: lesson photographs full-width with no gaps; the works strip: the technical drawing thumbnail upright like all the others (rotation remains only the in-card plate display)."
-      }
-    },
-    {
-      "datum": "2026-10-12",
-      "sta": {
-        "sr": "Naslovna prepravljena po prigovoru voditelja predmeta (nema smisla — samo animacija otvara se sveska): uklonjena je trodimenzionalna animacija i scena sa naslovne; naslovna je sada ulaz u predmet — jedna recenica o A3 radnoj svesci, zivi brojaci toka (odrzane nedelje, ideje u oblaku, naredna nedelja) i sedam vrata: Odrzano, Sledeci cas, Oblak ideja, Radovi i primeri, Biblioteka i izvori, Udruzenje i Predmet. Stampana A3 naslovnica radne sveske ostaje. Broj ideja u oblakupecaten je generatorom luske zajedno sa ostalim brojacima.",
-        "en": "The cover redesigned per the course lead note (it made no sense — only an animation opening a workbook): the 3D animation and scene are removed; the cover is now an entrance — one sentence about the A3 workbook, live flow counts (held weeks, ideas in the cloud, the next week) and seven doors: held classes, next class, cloud of ideas, works and examples, library and sources, the association, the course. The printable A3 workbook cover remains. The cloud-idea count is stamped by the shell generator with the other counts."
-      }
-    },
-    {
-      "datum": "2026-10-12",
-      "sta": {
-        "sr": "Po nalogu voditelja predmeta: veza „Zapis časa i izvorno gradivo” skinuta sa svakog održanog časa (vodila je na istu stranu — bila je samoupis, ne izvor); „Kako sarađujemo” izlazi iz zvaničnog dela — kartica skinuta iz „Za dalji rad” (ostaju granice po godištima i biblioteka; veza ostaje u podnožju); glavna navigacija je sada na vrhu svake strane na svim širinama (na telefonu je do sada bila skrivena, a donja traka je nosila sve veze) — donja traka je ukinuta kao duplikat. Kapije usklađene sa novim ugovorom.",
-        "en": "Per the course lead order: the \"class record and source material\" link removed from every held class (it pointed back to the same page — a self-entry, not a source); \"how we work together\" leaves the official part — the card removed from the helping section (limits by age and the library remain; the link stays in the footer); the main navigation now sits at the top of every page at every width (on phones it was hidden and a bottom bar carried the links) — the bottom bar is retired as a duplicate. Guards aligned with the new contract."
-      }
-    }
-  ]
+  "formatIspita": {
+   "oblik": "A3 horizontalna radna sveska",
+   "nacin": [
+    "štampana",
+    "digitalna"
+   ],
+   "izvor": "Nastavnik predmeta, 09.10.2026. (nalog za pripremu predmeta)",
+   "napomena": "U arhivi dosijea (nastava/) postoji i starija ispitna radna sveska u A4 vertikalnom formatu — arhivski primerak, ne merodavan format."
+  }
+ },
+ "nacelo": {
+  "sr": "Stranica predmeta živi paralelno sa predmetom: menja se, dopunjuje i dodaje. Svaka objavljena nedelja nosi revizije (šta se promenilo, kada, na čiju reč); „Dopunjeno” u zaglavlju uvek odgovara poslednjoj reviziji. Objavljeno nije isto što i održano.",
+  "en": "A subject site lives in parallel with the subject: it changes, is amended and added to. Every published week carries revisions (what changed, when, on whose word); the “Updated” line always matches the last revision. Published is not the same as held."
+ },
+ "stranice": [
+  {
+   "id": "prototipovi",
+   "stranica": "prototipovi.html",
+   "izvorPodataka": "data/prototipovi.json; zajednicki prikaz assets/prototipovi-core.js; generator tools/prototipovi.mjs",
+   "verzijaZivi": "Prikupljeni radovi i primeri: prototipovi, tehnički crteži i nastavnički primeri sa izričito navedenim autorstvom. Indeks i početak izrade beleže se samo kada su poznati. Osnovni zapisi i prethodne slike se čuvaju, korekcije imaju before/after revizije, a zapažanja iz udruženja zasebne događaje."
+  },
+  {
+   "id": "naslovna",
+   "stranica": "naslovna.html",
+   "izvorPodataka": "data/tok.json (brojevi štampa tools/shells.mjs)",
+   "verzijaZivi": "naslovna je dodata ispred toka, ne umesto njega: duboke veze index.html?w=N i landing ostaju; scena (vendorevani three.js 0.180.0, heševi u assets/vendor/README.md) je samo dopuna sa SVG osnovom; štampa se kao naslovni list radne sveske (A3 horizontalno)"
+  },
+  {
+   "id": "udruzenje",
+   "stranica": "udruzenje.html",
+   "izvorPodataka": "docs/probavanje-u-udruzenju.md (sadržaj samo odatle)",
+   "verzijaZivi": "prostor za članove udruženja i osoblje, na srpskom: četiri koraka, pet prava, kapija bezbednosti (presuda se izvodi iz 4 provere, stanje samo u pregledaču), list za zapisivanje za štampu; termin i prostor dogovaraju se sa udruženjem, a strana ne nosi imena ni fotografije članova"
+  },
+  {
+   "id": "tok",
+   "stranica": "index.html (landing)",
+   "izvorPodataka": "data/tok.json + data/material/wNN.json",
+   "verzijaZivi": "samo održano: svaki održani čas sa rezultatima, izvorima, A3 listom nedelje i pomoćnim materijalom; traka toka u zaglavlju svake strane"
+  },
+  {
+   "id": "sledeci",
+   "stranica": "sledeci.html",
+   "izvorPodataka": "data/tok.json (sledeci) + data/material/wNN.json + assets/exercises.js",
+   "verzijaZivi": "bogata priprema sledećeg časa: naslanja se na rezultate prethodnog, donosi šta se donosi, plan redom, listovi koje čas ostavlja, protokol probavanja i šta strana čeka"
+  },
+  {
+   "id": "oblak",
+   "stranica": "oblak.html",
+   "izvorPodataka": "data/tok.json (ideje)",
+   "verzijaZivi": "sve što nije održano i nije sledeće: ideje redom po datumu, sa izvorom; kad ideja uđe u pripremu, to ovde piše"
+  },
+  {
+   "id": "nedelja",
+   "stranica": "index.html?w=N",
+   "izvorPodataka": "data/material/wNN.json",
+   "verzijaZivi": "revizije u samom fajlu gradiva"
+  },
+  {
+   "id": "predavanje",
+   "stranica": "predavanje.html",
+   "izvorPodataka": "data/material/wNN.json",
+   "verzijaZivi": "isto gradivo isečeno na slajdove"
+  },
+  {
+   "id": "vezbe",
+   "stranica": "vezbe.html",
+   "izvorPodataka": "assets/exercises.js",
+   "verzijaZivi": "banka vežbi; istorija u repozitorijumu i LOG.md"
+  },
+  {
+   "id": "kalendar",
+   "stranica": "program.html",
+   "izvorPodataka": "data/schedule.json",
+   "verzijaZivi": "datumi nose status confirmed/proposed"
+  },
+  {
+   "id": "laboratorija",
+   "stranica": "laboratorija.html",
+   "izvorPodataka": "assets/lab-core.js",
+   "verzijaZivi": "istorija u repozitorijumu i LOG.md"
+  },
+  {
+   "id": "biblioteka",
+   "stranica": "resources.html",
+   "izvorPodataka": "assets/research.js",
+   "verzijaZivi": "svaki zapis navodi dokle je pročitan"
+  },
+  {
+   "id": "hub",
+   "stranica": "ideja.html",
+   "izvorPodataka": "assets/idea-bank.js, assets/ideas.js",
+   "verzijaZivi": "istorija u repozitorijumu i LOG.md"
+  },
+  {
+   "id": "godista",
+   "stranica": "godista.html",
+   "izvorPodataka": "assets/ages.js, assets/age-rules.js",
+   "verzijaZivi": "istorija u repozitorijumu i LOG.md"
+  },
+  {
+   "id": "predmet",
+   "stranica": "predmet.html",
+   "izvorPodataka": "assets/course.js",
+   "verzijaZivi": "nepotvrđeni podaci nose svoju oznaku"
+  },
+  {
+   "id": "visit",
+   "stranica": "poseta.html",
+   "izvorPodataka": "data/poseta.json, data/prototipovi.json (zapažanja)",
+   "verzijaZivi": "statika pečena tools/poseta-baseline.mjs; živi prikaz iz istih registara"
+  },
+  {
+   "id": "manifest",
+   "stranica": "ovaj fajl",
+   "izvorPodataka": "data/verzije.json",
+   "verzijaZivi": "istorija sajta u polju istorija + repozitorijum"
+  }
+ ],
+ "istorija": [
+  {
+   "datum": "2026-10-01",
+   "sta": {
+    "sr": "Pilot v1 sajta objavljen.",
+    "en": "Site pilot v1 published."
+   }
+  },
+  {
+   "datum": "2026-10-02",
+   "sta": {
+    "sr": "Nedelja 1 preusmerena na igračku udruženja; nedelja 2 prepisana u „Prototip na stolu”; prvi čas održan.",
+    "en": "Week 1 redirected to the association toy; week 2 rewritten as the prototype session; first class held."
+   }
+  },
+  {
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Uvedene revizije gradiva: svaka objavljena nedelja nosi vidljivu istoriju nastanka; w02 dobija „Sledeći list”; w03 preusmeren na „Ruka koja drži”; manifest predmeta sa formatom ispita.",
+    "en": "Material revisions introduced: every published week carries a visible history; w02 gains “The next sheet”; w03 redirected to “The hand that holds it”; subject manifest with the exam format."
+   }
+  },
+  {
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Novi poseban prozor „Tok predmeta” (tok.html, data/tok.json): tri police — zacementirano (w01, održano 02.10 sa rezultatima), pilot za sledeći čas (w02, „Ruka koja drži”, probavanje u udruženju) i oblak ideja bez nedelje. Prelaze provodi validator i testovi.",
+    "en": "New steering window “Course flow” (tok.html, data/tok.json): three shelves — cemented (w01, held 02.10 with results), pilot for the next class (w02, “The hand that holds it”, the association try-out) and the cloud of ideas with no week. Transitions are enforced by the validator and the tests."
+   }
+  },
+  {
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Tok predmeta postaje landing strana (index.html): zacementirani časovi redom sa materijalom i A3 listom nedelje ka radnoj sveski za ispit, pilot za sledeći čas, oblak ideja; posebna strana tok.html je ukinuta, duboke veze index.html?w=N i dalje rade. Traka toka (zacementirano · sledeći čas · oblak) stoji u zaglavlju svake strane, generiše je tools/shells.mjs iz data/tok.json i radi bez skripte. Ovaj obrazac je šema za svaki sledeći predmetni sajt.",
+    "en": "The course flow becomes the landing (index.html): cemented classes in order with their material and the week's A3 sheet toward the exam workbook, the pilot for the next class, and the cloud of ideas; the separate tok.html page is retired, deep links index.html?w=N keep working. A flow strip (cemented · next class · cloud) sits in the header of every page, generated by tools/shells.mjs from data/tok.json and working without scripting. This pattern is the schema for every subject site that follows."
+   }
+  },
+  {
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Dodata naslovna (naslovna.html) — prva vrata sajta, dodata toku a ne umesto njega: scena je naslaganih A3 listova (jedan po zacementiranoj nedelji + jedan koji stiže, sa signal-obeleživačem), brojeve štampa tools/shells.mjs iz data/tok.json, three.js 0.180.0 vendorevan u assets/vendor/ sa SHA-256 heševima (bez npm, bez CDN), scena se gasi uz prefers-reduced-motion i iza čuvanog uvoza (SVG osnovni prikaz bez WebGL); štampa celog sajta prešla na A3 horizontalno, naslovna se štampa kao naslovni list sveske. Dodata i pilotska strana udruženja (udruzenje.html, srpski prvi): četiri koraka probavanja, pet prava, kapija bezbednosti sa izvedenom presudom i list za zapisivanje; strana ne nosi imena ni fotografije članova. Srpski navodnici zatvoreni sa ” svuda gde se bio uvukao pravi znak.",
+    "en": "A cover page added (naslovna.html) — the site's first door, added in front of the flow, never instead of it: the scene is a stack of A3 sheets (one per cemented week plus one arriving, with a signal bookmark), counts stamped by tools/shells.mjs from data/tok.json, three.js 0.180.0 vendored into assets/vendor/ with SHA-256 hashes (no npm, no CDN), the scene steps aside for prefers-reduced-motion and behind a guarded import (an SVG baseline without WebGL); the whole site now prints on A3 landscape, the cover printing as the workbook's title sheet. A pilot association page added too (udruzenje.html, Serbian first): the four try-out steps, five rights, a safety gate with a derived verdict and a recording sheet; the page carries no names, photographs or statements of members. Serbian quotes re-closed with ” wherever a straight mark had slipped in."
+   }
+  },
+  {
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Objavljena površina bez ličnih imena: imena su zamenjena ulogama („direktor udruženja”, „nastavnik”), a unosi čija je objava zavisila od saglasnosti ukinuti; pravila koja štite člana ostaju. Novi test tests/interfejs.test.mjs obara gradnju ako se ime ili saglasnosna zavisnost vrate u objavu.",
+    "en": "The published surface without personal names: names replaced by roles („the director of the association”, „the teacher”), entries whose publishing depended on consent removed; the rules protecting a member stay. A new test, tests/interfejs.test.mjs, fails the build if a name or a consent dependency returns."
+   }
+  },
+  {
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Preuređen tok predmeta po nalogu nastavnika: tri dela, svaki na svojoj strani — održano (index.html: samo održani časovi sa rezultatima, pomoćnim materijalom i A3 listom), sledeći čas (nova strana sledeci.html: naslonjena na prethodni čas — šta se donosi, plan, listovi, protokol, čekanja) i oblak ideja (nova strana oblak.html). Rečnik bez „zacementirano/pilot/polica”: šema toka je v2 (odrzano/sledeci/ideje), a tests/recnik.test.mjs čuva površinu od povratka tog rečnika. Sve ljuske su srpske (lang=sr-Latn, naslovi, traka, podnožje), engleski je samo iza prekidača. Prvi sopstveni vizuali na površini (dijagrami standarda, terenska skica). Mobilni pregled sređen: bez horizontalnog prelivanja na 390/768/1440.",
+    "en": "The course flow rebuilt at the teacher's direction: three parts, each on its own page — held (index.html: held classes only, with results, helping material and the A3 sheet), next class (new sledeci.html: leaning on the previous class — what to bring, the plan, the sheets, the protocol, the waits) and the cloud of ideas (new oblak.html). The vocabulary without “cemented/pilot/shelf”: the flow schema is v2 (odrzano/sledeci/ideje) and tests/recnik.test.mjs keeps that vocabulary off the surface. Every shell is Serbian (lang=sr-Latn, titles, strip, footer); English stays behind the toggle. The site's own visuals appear on the surface for the first time (standard diagrams, the field sketch). The mobile view fixed: no horizontal overflow at 390/768/1440."
+   }
+  },
+  {
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Fotografije postojećeg gradiva prikazane pri početku održanih časova i pripreme. Pregled časa povezuje celinu predmeta, detalj mehanizma, zabeležene ishode i A3 zadatak; najnoviji održani čas je prvi. Statički i dinamički pregled koriste isti renderer, uz originalne opise i sačuvane izvore. Priprema ostaje označena, sa izričitim radnim pregledom predavanja. Odobrena naslovna i izvorno gradivo nisu menjani. Ispravljen je poziv checkpoint alata kroz Windows junction.",
+    "en": "Existing lesson photographs now appear near the start of the held-class record and preparation. The record connects the whole object, a mechanism detail, recorded outcomes and the A3 task; the most recent held class leads. Static and live records use the same renderer, retaining original descriptions and sources. Preparation keeps its status and an explicit working lecture preview. The approved cover and source lesson material are unchanged. The checkpoint CLI now works through a Windows junction."
+   }
+  },
+  {
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Dodat registar pet donetih studentskih prototipova sa originalnim fotografijama, nazivima i imenima/indeksima izričito navedenim u nastavnikovom nalogu. Galerija i pregledi na Održano/Sledeći čas izvode se iz jednog registra; podaci o korišćenju u udruženju imaju zasebne događaje. Sačuvani su izvornici nastavnog gradiva i osnovna arhitektura sajta. Dodati su projektni ulaz za umove, provere tačne atribucije, integriteta slika i statičkog prikaza, kao i zaštita istorije prototipova pri poređenju verzija. Ispravljen prevod tela stranice Sledeći čas pri promeni jezika.",
+    "en": "Added a register of five brought student prototypes with original photographs, titles and author names/student numbers explicitly supplied in the teacher’s request. The gallery and Held/Next class previews derive from one register; observations of use at the association are separate events. Source lesson material and the basic site architecture are preserved. Added an agent entry document, exact attribution/image/static-view checks and prototype history protection between versions. Fixed Next class body translation when switching languages."
+   }
+  },
+  {
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Dodata Upadalica kao šesti doneti prototip sa izvornom fotografijom, potvrđenom atribucijom i zasebnim izvorom nastavnikove dopune. Ranijih pet zapisa i fotografija sačuvano.",
+    "en": "Added Upadalica as the sixth brought prototype, with its original photograph, confirmed attribution and a separate source for the teacher’s addition. The previous five records and photographs are preserved."
+   }
+  },
+  {
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Prototipovi razvrstani u nedelju 2, odvojeno od početka izrade u nedelji 1. Nastavnik potvrdio održavanje drugog časa 09.10.2026 i nastavu petkom. Dodat zapis održanog časa i prilagođena priprema sledećoj nedelji, uz očuvanu istoriju prethodnih izdanja.",
+    "en": "Classified the prototypes under week 2, separately from the start of making in week 1. The teacher confirmed the second class was held on 9 October 2026 and that classes meet on Fridays. Added the held-class record and updated next-class preparation, preserving earlier editions."
+   }
+  },
+  {
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Zbirka druge nedelje proširena na osam radova i jedanaest fotografija: dodat tehnički crtež Lego4ll i nastavnikov 3D štampani prototip zvečke. Original crteža prikazan vodoravno bez izmene slikovnih podataka. Birač održanih nedelja prikazuje najnoviju prvu.",
+    "en": "Expanded the week-two collection to eight works and eleven photographs: added the Lego4ll technical drawing and the teacher’s 3D-printed rattle prototype. The original drawing is displayed horizontally without changing image data. The held-week selector shows the newest week first."
+   }
+  },
+  {
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Ispravljeno poreklo referentne igračke: pozajmljena iz udruženja i doneta na prvi čas kao primer. Sve tri fotografije prikazuju se samo u nedelji 1; druga nedelja prikazuje dokumentovan studentski prototip. Uklonjeno nagađanje o izradi, datumu fotografisanja i nameri izrađivača; dopunjena regresa za pripadnost fotografija nedeljama.",
+    "en": "Corrected the reference toy’s provenance: borrowed from the association and brought to the first class as an example. All three photographs appear only in week one; week two shows a documented student prototype. Removed speculation about manufacture, photographic date and maker intent, and added a regression check for photograph-to-week assignment."
+   }
+  },
+  {
+   "datum": "2026-10-11",
+   "sta": {
+    "sr": "Sređivanje površine po nalogu voditelja predmeta od 10.10.2026: statični osnovci 14 strana prevedeni na srpski (jedan jezik na površini, ugovor iz smernica); „Creative hub\" preimenovan u „Radionica ideja\" (navigacija, naslov, naslovna); padajući „Materijal\" preraspoređen redosledom rada predmeta; oblak ideja i radionica sada se vode međusobno; statični prikaz oblaka izvodi se novim generatorom tools/cloud-baseline.mjs iz istog renderera kao živi prikaz; dokaz protiv simulacije invaliditeta vraćen u vodeći paragraf laboratorije; oblak dopunjen sa dve ideje iz razvoja semestra (merenja ruku, A3 listovi u udruženju) i tri nova semena u radionici. Nova kapija tests/povrsina.test.mjs čuva jezik površine.",
+    "en": "Surface tidy-up per the course lead's order of 10 October 2026: static baselines of fourteen pages translated to Serbian (one language on the surface, per the guidelines contract); \"Creative hub\" renamed to \"Radionica ideja\" (navigation, title, cover); the Material dropdown reordered to follow the subject's working order; the cloud and the atelier now link to each other; the cloud's static view is stamped by a new generator, tools/cloud-baseline.mjs, from the same renderer as the live view; the evidence against disability simulation restored to the laboratory's lead paragraph; the cloud gained two ideas drawn from the semester's development (hand measurements, A3 sheets at the association) and the atelier three new seeds. A new guard test, tests/povrsina.test.mjs, keeps the surface language."
+   }
+  },
+  {
+   "datum": "2026-10-12",
+   "sta": {
+    "sr": "Detaljniji pregled celog sajta po nalogu voditelja predmeta: statično telo strane igračka prevedeno na srpski (veze i pravilo bezbednosti EN 71-1); izvori radnog materijala na strani sledećeg časa sada vode ljudskim nazivom („Priprema materijala nedelje 3 (nacrt)”) sa tehničkom putanjom kao tragom, i protokol probavanja isto; vrste izvora u biblioteci („Studijski slučaj”, „Metoda”…) sada su na srpskom u srpskom prikazu preko jedne mape u rendereru. Pregledano i mereno: sve unutrašnje veze i sidla (jedno sidro radi samo uz skriptu — prihvaćeno svesno), brojevi trake slažu se sa tokom na svim stranama, kalendar namerno drži datume u zapisima održanih časova dok ne postoji raspored, citirani naslovi izvora ostaju na izvornom jeziku po ugovoru.",
+    "en": "A finer pass over the whole site per the course lead's order: the toy page's static body translated to Serbian (links and the EN 71-1 safety rule); the working-material sources on the next-class page now lead with a human name (\"Week 3 preparation material (draft)\") with the file path as a trailing locator, and the trying-out protocol likewise; the library's source types (\"Case study\", \"Method\"…) now render in Serbian in the Serbian view through a single renderer map. Checked and measured: all internal links and anchors (one anchor works only with scripting — a conscious acceptance), the flow strip agrees with the course flow on every page, the calendar deliberately keeps dates in the held-class records until a timetable exists, and quoted source titles keep their own language per the contract."
+   }
+  },
+  {
+   "datum": "2026-10-12",
+   "sta": {
+    "sr": "Sređivanje strane održanih časova po nalogu voditelja predmeta: prikaz „A3 list nedelje\" uklonjen sa svakog časa (ideja „Nedeljni A3 list radne sveske\" prebačena u oblak sa izvorom); pomoćne kartice svedene na tri odobrene (granice po godištima, kako sarađujemo, biblioteka i izvori); standardi na prvi pogled preseljeni među izvore. Rad „Zmijica\" vraćen u studentske radove (atribucija iz originalne prijave, dokumentovan u nedelji 2, revizija v8 registra i revizija v5 nedelje 1; galerija prvog časa vraća se na tri fotografije pozajmljene igračke). Kompozicija: galerija od tri fotografije dobija ravan raspored (vodeća fotografija kroz dva reda), tehnički crtež dobija tretman table dokumenta (beli okvir, centrirano, jasniji potpis o okretanju fotografije). Novo pravilo u smernicama: predmetni sajt vodi računa o kompoziciji i preglednosti; strana održanih časova prikazuje isključivo održane časove; prikaz koji nastavnik nije definisao ide u oblak, ne na stranu.",
+    "en": "Tidying the held-classes page per the course lead's order: the \"week's A3 sheet\" display removed from every class (the \"weekly A3 sheet of the workbook\" idea moved to the cloud with its source); the helping cards reduced to the three approved ones (limits by age, how we work together, library and sources); standards at a glance moved among the sources. The work \"Zmijica\" restored to the student works (attribution from the original submission, documented in week 2 — registry revision v8 and week-1 revision v5; the first class's gallery returns to the three photographs of the borrowed toy). Composition: a three-photograph gallery gets an even layout (the lead photograph spanning two rows), and the technical drawing gets a document-plate treatment (white matte, centred, a clearer caption about the photograph's rotation). A new rule in the guidelines: a subject page cares about composition and clarity; the held-classes page shows exclusively held classes; a display the teacher has not defined goes to the cloud, not onto the page."
+   }
+  },
+  {
+   "datum": "2026-10-12",
+   "sta": {
+    "sr": "Strogi prolaz po nalogu voditelja predmeta: zapis odrzanih casova sada nosi samo ono sto je voditelj izricito rekao (njegove poruke od 02.10. i 09.10. izvadene iz sesija) — preformulisani rezultati prvog casa (igracka kao primer, osmisljavanje koncepata na papiru, poseta direktora udruzenja, zadatak malog prototipa DIY/reciklaza ne iskljucivo uz 3D stampu), dopunjen zapis druge nedelje posetom udruzenja cije se fotografije jos ocekuju; izmisljena „odluka sa casa” (svaki tim upisuje jedan red) uklonjena iz gradiva nedelje 1 (revizija v6) i prebacena u oblak; strana sledeceg casa je sada prazna („Naredni cas jos nije upisan”) — predlog „Ruka koja drzi” i protokol probavanja cekaju potvrdu u oblaku (10 ideja); dugmad „Radni pregled” i „Prikaz predavanja” skinuta sa odrzanih casova jer ih voditelj nije definisao. Kompozicija na telefonu: fotografije casa pune sirine bez praznina; traka radova: thumbnail tehnickog crteza uspravan kao svi ostali (rotacija ostaje samo prikaz crteza kao table unutar kartice).",
+    "en": "A rigor pass per the course lead order: the held-classes record now carries only what he explicitly said (his messages of 2 and 9 October extracted from the sessions) — the first class results rephrased, the second week record extended with the association visit whose photographs are still expected; the invented class decision (each team writes one row) removed from week 1 material (revision v6) and moved to the cloud; the next-class page is now empty (\"the next class has not been entered\") — the \"hand that holds\" proposal and the trying-out protocol wait for confirmation in the cloud (10 ideas); the working-preview and lecture-view buttons removed from held classes as undefined by the lead. Mobile composition: lesson photographs full-width with no gaps; the works strip: the technical drawing thumbnail upright like all the others (rotation remains only the in-card plate display)."
+   }
+  },
+  {
+   "datum": "2026-10-12",
+   "sta": {
+    "sr": "Naslovna prepravljena po prigovoru voditelja predmeta (nema smisla — samo animacija otvara se sveska): uklonjena je trodimenzionalna animacija i scena sa naslovne; naslovna je sada ulaz u predmet — jedna recenica o A3 radnoj svesci, zivi brojaci toka (odrzane nedelje, ideje u oblaku, naredna nedelja) i sedam vrata: Odrzano, Sledeci cas, Oblak ideja, Radovi i primeri, Biblioteka i izvori, Udruzenje i Predmet. Stampana A3 naslovnica radne sveske ostaje. Broj ideja u oblakupecaten je generatorom luske zajedno sa ostalim brojacima.",
+    "en": "The cover redesigned per the course lead note (it made no sense — only an animation opening a workbook): the 3D animation and scene are removed; the cover is now an entrance — one sentence about the A3 workbook, live flow counts (held weeks, ideas in the cloud, the next week) and seven doors: held classes, next class, cloud of ideas, works and examples, library and sources, the association, the course. The printable A3 workbook cover remains. The cloud-idea count is stamped by the shell generator with the other counts."
+   }
+  },
+  {
+   "datum": "2026-10-12",
+   "sta": {
+    "sr": "Po nalogu voditelja predmeta: veza „Zapis časa i izvorno gradivo” skinuta sa svakog održanog časa (vodila je na istu stranu — bila je samoupis, ne izvor); „Kako sarađujemo” izlazi iz zvaničnog dela — kartica skinuta iz „Za dalji rad” (ostaju granice po godištima i biblioteka; veza ostaje u podnožju); glavna navigacija je sada na vrhu svake strane na svim širinama (na telefonu je do sada bila skrivena, a donja traka je nosila sve veze) — donja traka je ukinuta kao duplikat. Kapije usklađene sa novim ugovorom.",
+    "en": "Per the course lead order: the \"class record and source material\" link removed from every held class (it pointed back to the same page — a self-entry, not a source); \"how we work together\" leaves the official part — the card removed from the helping section (limits by age and the library remain; the link stays in the footer); the main navigation now sits at the top of every page at every width (on phones it was hidden and a bottom bar carried the links) — the bottom bar is retired as a duplicate. Guards aligned with the new contract."
+   }
+  },
+  {
+   "datum": "2026-10-12",
+   "sta": {
+    "sr": "Poseta udruženju „Živimo zajedno” (09.10) unešena je kao gradivo druge nedelje: novi registar posete data/poseta.json (devet studenata učesnika), pet zapažanja o korišćenju radova u registru prototipova sa sedam fotografija izabranih bez lica, panel posete na strani održanog časa i nova strana poseta.html sa temeljnom analizom interakcije. Snimci i ostale fotografije ostaju u radnoj svesci.",
+    "en": "The visit to the Živimo zajedno association (9 Oct) is entered as week-two material: a new visit register data/poseta.json (nine student participants), five use observations in the prototype register with seven photographs chosen without faces, a visit panel on the held-classes page and a new page poseta.html with a full analysis of the interaction. The recordings and the remaining photographs stay in the working notebook."
+   }
+  }
+ ]
 }

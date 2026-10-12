@@ -11,6 +11,7 @@ import { readFile, readdir } from 'node:fs/promises';
 
 const root = new URL('../', import.meta.url);
 const registry = JSON.parse(await readFile(new URL('data/prototipovi.json', root), 'utf8'));
+const visit = JSON.parse(await readFile(new URL('data/poseta.json', root), 'utf8'));
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 function attributionRows(data) {
@@ -29,8 +30,30 @@ function attributionRows(data) {
   return rows;
 }
 
+// The 12.10.2026 instruction permits exactly the visit participants' names and student
+// numbers, on exactly two surfaces: the held page panel and the visit page. Field-level and
+// surface-level, like the author exception — no contacts, grades or other persons.
+function visitRows(data) {
+  assert.equal(data.schema, 'course-visit/v1');
+  assert.ok(Array.isArray(data.participants) && data.participants.length > 0, 'visit participants required');
+  assert.ok(data.source && typeof data.source.id === 'string' && data.source.id.trim());
+  for (const person of data.participants) {
+    assert.deepEqual(Object.keys(person).sort(), ['name', 'studentNumber'], 'only the authorized participant fields may be public');
+    assert.ok(typeof person.name === 'string' && person.name.trim());
+    assert.ok(/^\d{1,4}\/\d{2}(?:\d{2})?$/.test(person.studentNumber));
+  }
+  return data.participants;
+}
+
 function withoutAuthorizedAttribution(file, text, data) {
   attributionRows(data);
+  if (file === 'data/poseta.json') {
+    visitRows(visit);
+    const copy = JSON.parse(text);
+    visitRows(copy);
+    copy.participants = copy.participants.map(() => ({ name: '[visit-participant]', studentNumber: '[visit-number]' }));
+    return JSON.stringify(copy);
+  }
   if (file === 'data/prototipovi.json') {
     const copy = JSON.parse(text);
     for (const row of attributionRows(copy)) row.author = { name: '[attributed-author]', ...(Object.hasOwn(row.author, 'studentNumber') ? { studentNumber: '[attributed-number]' } : {}) };
@@ -46,6 +69,12 @@ function withoutAuthorizedAttribution(file, text, data) {
     const expected = `<span data-author-name>${escape(row.author.name)}</span>${Object.hasOwn(row.author, 'studentNumber') ? `<span data-author-number>${escape(row.author.studentNumber)}</span>` : ''}`;
     assert.equal(inner.trim().replace(/>\s+</g, '><'), expected, 'gallery attribution must match the exact authorized fields');
     return '<p>[attributed-author-fields]</p>';
+  }).replace(/<ul\b[^>]*\bdata-visit-participants="([^"]+)"[^>]*>([\s\S]*?)<\/ul>/g, (whole, id, inner) => {
+    assert.ok(['index.html', 'poseta.html'].includes(file), 'only the held page and the visit page publish participants');
+    assert.equal(id, visit.id, 'participant list must name the recorded visit');
+    const expected = visit.participants.map(person => `<li><span data-participant-name>${escape(person.name)}</span><span data-participant-number>${escape(person.studentNumber)}</span></li>`).join('');
+    assert.equal(inner.trim(), expected, 'participant list must match the exact authorized fields');
+    return '<ul>[visit-participant-fields]</ul>';
   });
 }
 
@@ -90,6 +119,9 @@ test('known private identities and attributed author data occur only in their ex
     for (const row of authors) for (const value of Object.values(row.author)) {
       for (const form of [value, escape(value)]) assert.ok(!text.includes(form), `${path} repeats attributed data outside its authorized field`);
     }
+    for (const person of visitRows(visit)) for (const value of Object.values(person)) {
+      for (const form of [value, escape(value)]) assert.ok(!text.includes(form), `${path} repeats participant data outside its authorized field`);
+    }
   }
 });
 
@@ -133,4 +165,19 @@ test('the interface waits on no consent', async () => {
     const gated = text.match(CONSENT_GATED);
     assert.ok(!gated, `${path} carries a consent-gated item: ${gated?.[0]}`);
   }
+});
+
+test('the visit exception is bounded to its two surfaces, its visit and its exact markup', () => {
+  const li = p => `<li><span data-participant-name>${escape(p.name)}</span><span data-participant-number>${escape(p.studentNumber)}</span></li>`;
+  const list = `<ul class="visit-participants" data-visit-participants="${visit.id}">${visit.participants.map(li).join('')}</ul>`;
+  const truncated = `<ul class="visit-participants" data-visit-participants="${visit.id}">${visit.participants.slice(0, 2).map(li).join('')}</ul>`;
+  assert.doesNotThrow(() => withoutAuthorizedAttribution('index.html', list, registry));
+  assert.doesNotThrow(() => withoutAuthorizedAttribution('poseta.html', list, registry));
+  assert.throws(() => withoutAuthorizedAttribution('udruzenje.html', list, registry), /held page and the visit page/);
+  assert.throws(() => withoutAuthorizedAttribution('index.html', truncated, registry), /exact authorized/);
+  assert.throws(() => withoutAuthorizedAttribution('index.html', list.replace('data-participant-name', 'data-participant-full-name'), registry), /exact authorized/);
+  const extra = structuredClone(visit); extra.participants[0].studentNumber = extra.participants[0].studentNumber + 'x';
+  assert.throws(() => visitRows(extra), /studentNumber/);
+  const leaked = withoutAuthorizedAttribution('index.html', list + '<p>' + visit.participants[0].name + '</p>', registry);
+  assert.ok(leaked.includes(visit.participants[0].name), 'a participant name outside the list must stay visible to the scan');
 });

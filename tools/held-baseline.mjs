@@ -5,11 +5,15 @@ import { setLanguage } from '../assets/core.js';
 import { heldIntro, heldSection } from '../assets/held-record.js';
 import { validateTok } from '../assets/tok-core.js';
 import { validateWeek } from '../assets/material.js';
+import { validateVisit } from '../assets/poseta-core.js';
 const root = new URL('../', import.meta.url);
 const json = async p => JSON.parse(await readFile(new URL(p, root), 'utf8'));
 const tok = await json('data/tok.json');
 const errors = validateTok(tok);
 if (errors.length) throw Error(errors.join('\n'));
+const visit = await json('data/poseta.json');
+const visitErrors = validateVisit(visit);
+if (visitErrors.length) throw Error(visitErrors.join('\n'));
 const weeks = new Map();
 for (const item of tok.odrzano) {
   if (!Number.isInteger(item.nedelja) || weeks.has(item.nedelja)) continue;
@@ -22,6 +26,6 @@ const target = new URL('index.html', root), before = await readFile(target, 'utf
 const top = /<!-- held-intro:start -->[\s\S]*?<!-- held-intro:end -->/;
 const body = /<section id="odrzano"[\s\S]*?<\/section>/;
 if (!top.test(before) || !body.test(before)) throw Error('Held baseline markers missing; nothing written.');
-const after = before.replace(top, `<!-- held-intro:start --><div id="held-intro">${heldIntro()}</div><!-- held-intro:end -->`).replace(body, heldSection(tok, weeks));
+const after = before.replace(top, `<!-- held-intro:start --><div id="held-intro">${heldIntro()}</div><!-- held-intro:end -->`).replace(body, heldSection(tok, weeks, visit));
 if (before !== after) await writeFile(target, after);
 console.log(JSON.stringify({ changed: before !== after, held: tok.odrzano.length, source: 'same static and runtime renderer' }));
