@@ -39,7 +39,9 @@ test('the image reading path translates descriptions and retains provenance with
     assert.ok(html.includes(esc(image.caption.en)));
   }
   assert.ok(html.includes('Photographs from the lesson material'));
-  assert.ok(html.includes(esc(item.izvor)), 'source locator must be retained');
+  // 12.10.2026 (course lead's order): the records-and-sources details is withdrawn from the
+  // page; the locator lives in data/tok.json, not on the public surface.
+  assert.ok(!html.includes(esc(item.izvor)), 'the source locator must not be shown on the page');
   setLanguage('sr');
 });
 
