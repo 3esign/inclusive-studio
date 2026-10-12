@@ -33,19 +33,25 @@ export function validateVisit(visit) {
 
 const srDate = iso => iso.split('-').reverse().join('.');
 
-/* ---------- the panel on the held page: an intro to the material, the participants, one door ---------- */
-
-export function renderVisitPanel(visit) {
+/* ---------- the lead on the held page: standing rule, course lead 12.10.2026 ----------
+   The newest association material opens the held page: summary and photographs first,
+   the participants discreetly, one door to the full analysis. */
+export function renderVisitLead(visit, prototypes) {
   if (validateVisit(visit).length) throw new Error('Invalid visit register.');
+  const photoById = new Map((prototypes?.observations || []).flatMap(o => (o.photos || []).map(ph => [ph.id, ph])));
+  const picks = ['poseta-2026-10-09-zmijica-1', 'poseta-2026-10-09-upadalica-1', 'poseta-2026-10-09-muzicka-kutija-2']
+    .map(id => photoById.get(id)).filter(Boolean).slice(0, 3);
   const items = visit.participants.map(person =>
     `<li><span data-participant-name>${esc(person.name)}</span><span data-participant-number>${esc(person.studentNumber)}</span></li>`).join('');
-  return `<div class="field-visit">
-  <p class="eyebrow">${tr('Association visit', 'Poseta udruženju')} „${esc(tx(visit.place).replace(/^Udruženje /, ''))}” · <time datetime="${esc(visit.occurredOn)}">${esc(srDate(visit.occurredOn))}.</time></p>
-  <p>${tr('The same day, the class left the classroom: the prototypes were handed to the association’s users at the table, without a word of guidance. What the hands did with each work — and what that says about the next step — is written on a page of its own.',
-          'Isti dan čas je izašao iz učionice: prototipovi su predati u ruke korisnika udruženja, bez ijedne reči usmeravanja. Šta su ruke radile sa svakim radom — i šta to govori o sledećem koraku — zapisano je na zasebnoj strani.')}</p>
-  <ul class="visit-participants" data-visit-participants="${esc(visit.id)}" aria-label="${tr('Students on the visit', 'Studenti na poseti')}">${items}</ul>
+  return `<section class="field-visit visit-lead" aria-labelledby="visit-lead-title">
+  <p class="eyebrow" id="visit-lead-title">${tr('Association visit', 'Poseta udruženju')} · <time datetime="${esc(visit.occurredOn)}">${esc(srDate(visit.occurredOn))}.</time></p>
+  <p>${tr('The users took the brought prototypes in their hands at the table, without a word of guidance. What the hands did with each work, what that means and what each prototype gains next stand on the analysis page.',
+          'Korisnici su donete prototipove uzeli u ruke za stolom, bez ijedne reči usmeravanja. Šta su ruke radile sa svakim radom, šta to znači i šta dobija svaki prototip dalje — stoji na strani analize.')}</p>
+  ${picks.length ? `<div class="visit-lead-photos">${picks.map(ph => `<figure class="visit-lead-photo"><a href="${esc(ph.src)}" aria-label="${tr('Open full image', 'Otvori celu sliku')}"><img src="${esc(ph.src)}" width="${ph.width}" height="${ph.height}" alt="${esc(tx(ph.alt))}" loading="lazy" decoding="async"></a></figure>`).join('')}</div>` : ''}
+  <p class="visit-compact-label">${tr('On the visit', 'Na poseti')}</p>
+  <ul class="visit-participants visit-compact" data-visit-participants="${esc(visit.id)}" aria-label="${tr('Students on the visit', 'Studenti na poseti')}">${items}</ul>
   <a class="button secondary" href="poseta.html">${tr('The full analysis of the visit', 'Temeljna analiza posete')} ↗</a>
-</div>`;
+</section>`;
 }
 
 /* ---------- the analysis page ---------- */
@@ -135,9 +141,24 @@ export function renderPoseta(visit, prototypes) {
 <section aria-labelledby="visit-patterns-title"><div class="section-heading"><div><p class="eyebrow">${tr('Across all works', 'Presjek kroz sve radove')}</p><h2 id="visit-patterns-title">${tr('What repeats', 'Šta se ponavlja')}</h2></div></div>
   <ol class="lesson-results visit-patterns">${patterns}</ol>
 </section>
-<section aria-labelledby="visit-next-title"><div class="section-heading"><div><p class="eyebrow">${tr('For the work ahead', 'Za dalji rad')}</p><h2 id="visit-next-title">${tr('Where this leads', 'Kuda ovo vodi')}</h2></div></div>
-  <p>${tr('The next steps above are ready to enter the cloud of ideas and the preparation of the next class. One method note for the next visit: record the empty table before the work is handed over — the change is measured by the difference.', 'Sledeći koraci gore spremni su da uđu u oblak ideja i pripremu sledećeg časa. Jedna metodska beleška za sledeću posetu: snimiti prazan sto pre predaje rada — promena se meri razlikom.')}</p>
-  <div class="actions"><a class="button secondary" href="oblak.html">${tr('Cloud of ideas', 'Oblak ideja')}</a><a class="button secondary" href="sledeci.html">${tr('Next class', 'Sledeći čas')}</a><a class="button secondary" href="prototipovi.html">${tr('Works and examples', 'Radovi i primeri')}</a></div>
+<section aria-labelledby="visit-next-title"><div class="section-heading"><div><p class="eyebrow">${tr('For the next prototype', 'Za sledeću verziju prototipa')}</p><h2 id="visit-next-title">${tr('Version 2 — and a first one.', 'Verzija 2 — i prvi prototip.')}</h2></div></div>
+  <p>${tr('The next class carries two orders: whoever brought a prototype brings the improved version, read against the findings above; whoever did not, brings the first one. This visit material is the appendix of that class — a record of real hands, not a report.', 'Sledeći čas nosi dve stavke: ko je doneo prototip, donosi unapređenu verziju, pročitanu kroz nalaze iznad; ko nije doneo, donosi prvi. Ovaj materijal posete je prilog tog časa — zapis stvarnih ruku, ne izveštaj.')}</p>
+  <h3 class="visit-moves-title">${tr('The moves the visit asks for', 'Potezi koje poseta traži')}</h3>
+  <ol class="lesson-results visit-patterns">
+    <li>${tr('Steady base: a non-slip layer under Zmijica, and under every work played on a smooth table — the second hand returns to play.', 'Stabilna podloga: antiklizni sloj ispod Zmijice, i ispod svakog rada koji se igra na gladnom stolu — druga ruka se vraća igri.')}</li>
+    <li>${tr('Adjustable difficulty: the Upadalica stick gap becomes a setting, the cups get values by colour — the game grows with skill.', 'Podesiva težina: razmak štapića Upadalice postaje podešavanje, čašice dobijaju vrednost po boji — igra raste sa veštinom.')}</li>
+    <li>${tr('A response outside the screen: the Music Box answers through the room — a speaker on the table, the flower on a wall.', 'Odziv van ekrana: Muzička Kutija odgovara kroz sobu — zvučnik na stolu, cvet na zidu.')}</li>
+    <li>${tr('An adult palette: wood and cloth instead of the loudest colours — the aesthetics of users who are not children.', 'Odrasla paleta: drvo i tkivo umesto najglasnijih boja — estetika korisnika koji nisu deca.')}</li>
+    <li>${tr('A number with a quantity: the Sudoku tiles pair with 1·, 2·· — matching instead of counting.', 'Broj sa količinom: pločice Sudokua se uparuju sa 1·, 2·· — pariranje umesto računanja.')}</li>
+  </ol>
+  <h3 class="visit-moves-title">${tr('Checked paths from the web', 'Provereni putevi sa mreže')}</h3>
+  <ul class="visit-links">
+    <li><a href="https://design.ncsu.edu/research/">Center for Universal Design, NC State ↗</a> — ${tr('the original text of the seven principles of universal design; measure every version against them.', 'izvorni tekst sedam principa univerzalnog dizajna; svaka verzija meri se o njima.')}</li>
+    <li><a href="https://www.makersmakingchange.com/">Makers Making Change ↗</a> — ${tr('step-by-step guides for adapting an off-the-shelf toy to a single switch (the battery-interrupter method) — the cheapest upgrade path for Version 2.', 'uputstva korak po korak za prilagođavanje postojeće igračke jednom prekidačem (metoda prekidača u bateriji) — najjeftiniji put unapređenja u verziji 2.')}</li>
+    <li><a href="https://universaldesign.ie/about-universal-design/">Centre for Excellence in Universal Design ↗</a> — ${tr('the seven principles explained through everyday examples, useful when writing the A3 sheet.', 'sedam principa objašnjenih na svakodnevnim primerima; koristi se kad se piše A3 list.')}</li>
+    <li><a href="resources.html">${tr('The course library', 'Biblioteka predmeta')}</a> — ${tr('standards, readings and reference pages already checked for the course.', 'standardi, čitanja i referentne strane već provereni za predmet.')}</li>
+  </ul>
+  <p class="help">${tr('Links checked 12.10.2026. They are directions for reading, not tasks: a Version 2 change is judged by what it does in real hands.', 'Veze proverene 12.10.2026. To su pravci za čitanje, ne zadaci: izmenu verzije 2 ocenjujemo po onome što uradi u stvarnim rukama.')}</p>
 </section>
 <aside class="prototype-context visit-source"><h2>${tr('Sources of this page', 'Izvori ove strane')}</h2><p>${esc(tx(visit.source.description))}</p><p>${tr('Attribution of each work stands in the gallery of works; the participants of the visit in the visit register. Faces are not published on this page.', 'Autorstvo svakog rada stoji u galeriji radova; učesnici posete u registru posete. Lica se na ovoj strani ne objavljuju.')}</p></aside>`;
 }

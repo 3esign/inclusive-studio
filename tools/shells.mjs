@@ -14,9 +14,7 @@ const root = new URL('../', import.meta.url);
 const esc = value => String(value).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 const primary = NAV.filter(item => item.group === 'primary');
-const archive = NAV.filter(item => item.group === 'archive');
 const footer = NAV.filter(item => item.group === 'footer');
-const inArchive = page => archive.some(item => item.href === page);
 
 // One true Serbian sentence per page, stamped into <title> and meta description.
 const DESC = {
@@ -62,10 +60,11 @@ const counts = {
 };
 
 function mainNav(page) {
+  // 12.10.2026 (course lead): the navigation carries the four notebook destinations only;
+  // the material pages stay published and reachable through in-content links.
   const current = item => (item.href === page ? ' aria-current="page"' : '');
   const head = primary.map(item => `<a data-nav="${item.id}" href="${item.href}"${current(item)}>${esc(item.sr)}</a>`).join('\n');
-  const rest = archive.map(item => `<a data-nav="${item.id}" href="${item.href}"${current(item)}>${esc(item.sr)}</a>`).join('');
-  return `<nav class="main-nav" aria-label="Glavna navigacija">${head}\n<details class="nav-more"><summary${inArchive(page) ? ' aria-current="true"' : ''}>Materijal</summary><div>${rest}</div></details></nav>`;
+  return `<nav class="main-nav" aria-label="Glavna navigacija">${head}</nav>`;
 }
 
 function tabbar(page) {

@@ -5,7 +5,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { setLanguage } from '../assets/core.js';
-import { renderPoseta, renderVisitPanel, validateVisit } from '../assets/poseta-core.js';
+import { renderPoseta, renderVisitLead, validateVisit } from '../assets/poseta-core.js';
 import { validatePrototypes } from '../assets/prototipovi-core.js';
 
 const root = new URL('../', import.meta.url);
@@ -54,11 +54,25 @@ test('the static page and the held panel are the renderer output, not a hand-tol
   const page = await readFile(new URL('poseta.html', root), 'utf8');
   assert.ok(page.includes(renderPoseta(visit, prototypes)), 'visit page baseline is stale: run tools/poseta-baseline.mjs');
   const index = await readFile(new URL('index.html', root), 'utf8');
-  assert.ok(index.includes(renderVisitPanel(visit)), 'held page panel is stale: run tools/held-baseline.mjs');
+  assert.ok(index.includes(renderVisitLead(visit, prototypes)), 'held page lead is stale: run tools/held-baseline.mjs');
   setLanguage('en');
   const english = renderPoseta(visit, prototypes);
   assert.ok(english.includes('Students on the visit'));
   assert.ok(english.includes('What was seen'));
+  setLanguage('sr');
+});
+
+test('the analysis page carries the version-2 brief and only checked external directions', async () => {
+  setLanguage('sr');
+  const page = await readFile(new URL('poseta.html', root), 'utf8');
+  assert.ok(page.includes('Verzija 2 — i prvi prototip.'), 'the next-class order must stand on the page');
+  assert.ok(page.includes('prilog tog časa'), 'the visit material is the appendix of the next class');
+  for (const link of ['https://design.ncsu.edu/research/', 'https://www.makersmakingchange.com/', 'https://universaldesign.ie/about-universal-design/']) {
+    assert.ok(page.includes('href="' + link + '"'), link + ' must be present');
+  }
+  for (const person of visit.participants) {
+    assert.equal(page.split(person.name).length - 1, 1, person.name + ' appears exactly once on the analysis page');
+  }
 });
 
 test('the visit and the held week tell the same story: one date, one register', async () => {

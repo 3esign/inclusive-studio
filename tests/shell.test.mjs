@@ -23,7 +23,8 @@ const MODULES = {
 };
 
 test('the established primary destinations and lecture/source routes cannot disappear together with generated shells', () => {
-  const primary = [['cover', 'naslovna.html'], ['flow', 'index.html'], ['next', 'sledeci.html'], ['cloud', 'oblak.html'], ['partner', 'udruzenje.html']];
+  // 12.10.2026 (course lead): four notebook destinations only; partner joined the archive.
+  const primary = [['cover', 'naslovna.html'], ['flow', 'index.html'], ['next', 'sledeci.html'], ['cloud', 'oblak.html']];
   assert.deepEqual(NAV.filter(item => item.group === 'primary').map(item => [item.id, item.href]), primary);
   for (const [id, href] of [['library', 'resources.html'], ['lecture', 'predavanje.html']]) {
     assert.equal(NAV.find(item => item.id === id)?.href, href, id + ' retains its existing route');
@@ -31,17 +32,19 @@ test('the established primary destinations and lecture/source routes cannot disa
   }
 });
 
-test('the pages are exactly the ones the navigation points at', () => {
-  const linked = NAV.map(item => item.href).sort();
-  assert.deepEqual(pages, [...new Set(linked)].sort());
+test('the navigation points only at real pages, and the material pages stay published', () => {
+  for (const item of NAV) assert.ok(pages.includes(item.href), item.href + ' must remain a real page');
+  for (const must of ['prototipovi.html', 'poseta.html', 'udruzenje.html', 'resources.html', 'ideja.html', 'predmet.html']) {
+    assert.ok(pages.includes(must), must + ' must stay a published page');
+  }
 });
 
-test('every page carries the same navigation, in the same order, labelled in Serbian', () => {
-  const expected = NAV.filter(item => item.group !== 'footer').map(item => item.id);
+test('every page carries the same four-door navigation, in the same order, labelled in Serbian', () => {
+  const expected = NAV.filter(item => item.group === 'primary').map(item => item.id);
   for (const page of pages) {
     const found = [...html[page].matchAll(/data-nav="([a-z]+)"/g)].map(match => match[1]);
     assert.deepEqual(found, expected, page);
-    for (const item of NAV.filter(entry => entry.group !== 'footer')) {
+    for (const item of NAV.filter(entry => entry.group === 'primary')) {
       assert.ok(html[page].includes(`>${item.sr}</a>`), `${page}: navigation label "${item.sr}" is missing — the shell language slipped`);
     }
     // 12.10.2026 (course lead's note): the top navigation is present at every width; the bottom tab bar is gone.
@@ -56,8 +59,10 @@ test('each page marks itself as the current one, exactly once', () => {
   for (const page of pages) {
     const item = NAV.find(entry => entry.href === page);
     const navCurrent = [...html[page].matchAll(/data-nav="([a-z]+)"[^>]*aria-current="page"/g)].map(m => m[1]);
-    if (item.group === 'footer') assert.deepEqual(navCurrent, [], page);
-    else assert.deepEqual(navCurrent, [item.id], page);
+    // 12.10.2026 (course lead): only the four primary doors mark themselves as current;
+    // material pages keep their data-view but carry no navigation highlight.
+    if (item && item.group === 'primary') assert.deepEqual(navCurrent, [item.id], page);
+    else assert.deepEqual(navCurrent, [], page);
     assert.equal(html[page].match(/data-view="([a-z]+)"/)[1], item.id, page);
   }
 });

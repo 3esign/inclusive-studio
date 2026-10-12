@@ -117,6 +117,12 @@ Primer postupka, **nije podatak za automatski upis**: stigne druga fotografija j
 
 Za šesti rad dodaje se novi `items[]` sa svim potvrđenim podacima i zasebnim odgovarajućim nalogom za atribuciju. Odobrenje ovih pet nije trajna dozvola za svakog budućeg autora. Ako potreban podatak nije poznat, sačuvati ga kao otvoren posao u postojećoj radnoj evidenciji umesto izmišljanja polja koje validator prihvata.
 
+## Materijal na vrhu, navigacija i obaveštenja · 12.10.2026. (drugi nalog istog dana)
+
+- **Pravilo koje stoji:** novi materijal iz udruženja objavljuje se na vrhu strane održanih časova, iznad pregleda radova — sažetak i fotografije prvi, učesnici diskretno (jedan sitan red), sa vratima ka temeljnoj analizi. Svaka buduća poseta dobija svoj registar i ide na isto mesto.
+- **Navigacija vodi kroz četiri odredišta** (Naslovna, Održano, Sledeći čas, Oblak ideja). Strane materijala (radovi, poseta, udruženje, biblioteka i ostale) ostaju objavljene i dohvatljive preko veza u sadržaju i naslovne; nisu navigacijske opcije.
+- **Sekcija „Obaveštenja“ je van prikaza** do potvrde sadržaja; podaci ostaju u kodu (`assets/course.js` — notices), a čekanje je zapisano kao ideja u oblaku sa izvorom i datumom.
+
 ## Registar posete · 12.10.2026.
 
 Poseta udruženju je gradivo nedelje kojoj pripada, a ne zaseban „događaj bez casa". Poseta od 09.10.2026. (nedelja 2) nosi dva registra i dve javne površine:

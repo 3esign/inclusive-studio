@@ -14,7 +14,10 @@ export const NAV = [
   { id: 'flow', href: 'index.html', group: 'primary', en: 'Held in class', sr: 'Održano' },
   { id: 'next', href: 'sledeci.html', group: 'primary', en: 'Next class', sr: 'Sledeći čas' },
   { id: 'cloud', href: 'oblak.html', group: 'primary', en: 'Cloud of ideas', sr: 'Oblak ideja' },
-  { id: 'partner', href: 'udruzenje.html', group: 'primary', en: 'The association', sr: 'Udruženje' },
+  // 12.10.2026 (course lead): the navigation shows the four notebook destinations only.
+  // The material pages stay published and reachable through in-content links; they are
+  // not navigation options, so the partner item lives in the archive group.
+  { id: 'partner', href: 'udruzenje.html', group: 'archive', en: 'The association', sr: 'Udruženje' },
   // The Material dropdown reads in the order the subject works: what a class is made of,
   // then the work across the semester, then the subject's own frame, then the open ends.
   { id: 'lecture', href: 'predavanje.html', group: 'archive', en: 'Lecture', sr: 'Predavanje' },
@@ -152,12 +155,9 @@ export function toggleComfort(key) {
 /* ---------- the shell around every page ---------- */
 function navMarkup(view) {
   const primary = NAV.filter(i => i.group === 'primary');
-  const archive = NAV.filter(i => i.group === 'archive');
   const label = item => esc(tr(item.en, item.sr));
   const current = item => (item.id === view ? ' aria-current="page"' : '');
-  const inArchive = archive.some(i => i.id === view);
-  return `${primary.map(i => `<a data-nav="${i.id}" href="${i.href}"${current(i)}>${label(i)}</a>`).join('')}
-<details class="nav-more"><summary${inArchive ? ' aria-current="true"' : ''}>${esc(tr('Material', 'Građa'))}</summary><div>${archive.map(i => `<a data-nav="${i.id}" href="${i.href}"${current(i)}>${label(i)}</a>`).join('')}</div></details>`;
+  return primary.map(i => `<a data-nav="${i.id}" href="${i.href}"${current(i)}>${label(i)}</a>`).join('');
 }
 
 function tabbarMarkup(view) {

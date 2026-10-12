@@ -899,3 +899,15 @@ body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width
 .visit-patterns li{padding-left:.2rem}
 .visit-source p{font-size:.92rem}
 @media (max-width:720px){.visit-photos{grid-template-columns:1fr}}
+
+.visit-lead-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin:.4rem 0 .2rem}
+.visit-lead-photo{margin:0}
+.visit-lead-photo img{width:100%;height:auto;display:block}
+.visit-compact-label{font-size:.8rem;letter-spacing:.075em;text-transform:uppercase;font-weight:700;margin:.9rem 0 .3rem;color:var(--muted)}
+.visit-participants.visit-compact{margin:0 0 1rem}
+.visit-participants.visit-compact li{padding:.16rem .55rem;font-size:.8rem}
+.visit-participants.visit-compact [data-participant-number]{font-size:.75rem}
+.visit-moves-title{margin:1.2rem 0 .4rem}
+.visit-links{list-style:none;padding:0;margin:.4rem 0}
+.visit-links li{margin-top:.55rem}
+@media (max-width:720px){.visit-lead-photos{grid-template-columns:1fr 1fr}}

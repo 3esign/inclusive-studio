@@ -3,11 +3,12 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { heldRecord, heldSection, heldIntro, lessonImages } from '../assets/held-record.js';
 import { setLanguage, esc } from '../assets/core.js';
-import { validateVisit } from '../assets/poseta-core.js';
+import { renderVisitLead, validateVisit } from '../assets/poseta-core.js';
 const root = new URL('../', import.meta.url);
 const json = async p => JSON.parse(await readFile(new URL(p, root), 'utf8'));
 const tok = await json('data/tok.json');
 const visit = await json('data/poseta.json');
+const prototypes = await json('data/prototipovi.json');
 assert.deepEqual(validateVisit(visit), [], 'visit register must pass its own rules');
 
 test('the held landing retains each lesson photograph, caption and result in static and live reading paths', async () => {
@@ -29,22 +30,24 @@ test('the held landing retains each lesson photograph, caption and result in sta
     for (const result of item.rezultati) assert.ok(rendered.includes(esc(result.sta.sr)), 'an actual outcome was lost');
   }
   assert.ok(page.includes(heldIntro()), 'static intro differs from live Serbian intro');
-  assert.ok(page.includes(heldSection(tok, weeks, visit)), 'static class records are stale: run tools/held-baseline.mjs');
+  assert.ok(page.includes(heldSection(tok, weeks)), 'static class records are stale: run tools/held-baseline.mjs');
 });
 
-test('the visit panel stands under its own week only, with every participant exactly once', () => {
+test('the visit lead is stamped on the held landing above the works overview', async () => {
   setLanguage('sr');
-  const weeks = new Map();
-  const panel = heldSection(tok, weeks, visit);
+  const page = await readFile(new URL('index.html', root), 'utf8');
+  const lead = renderVisitLead(visit, prototypes);
+  assert.ok(page.includes(lead), 'stale visit lead: run tools/held-baseline.mjs');
+  const leadPos = page.indexOf('field-visit visit-lead');
+  const teaserPos = page.indexOf('prototype-teaser:start');
+  assert.ok(leadPos >= 0 && teaserPos > leadPos, 'the newest association material must stand at the top');
   for (const person of visit.participants) {
-    assert.equal(panel.split(esc(person.name)).length - 1, 1, person.name + ' must appear exactly once');
+    assert.equal(page.split(esc(person.name)).length - 1, 1, person.name + ' must appear exactly once on the held page');
   }
-  const week2 = tok.odrzano.find(i => i.nedelja === visit.week);
-  const withPanel = heldRecord(week2, null, { visit });
-  const withoutPanel = heldRecord(tok.odrzano.find(i => i.nedelja !== visit.week), null, { visit });
-  assert.ok(withPanel.includes('data-visit-participants'), 'the panel must stand under the visit week');
-  assert.ok(!withoutPanel.includes('data-visit-participants'), 'the panel must not leak into other weeks');
-  assert.ok(withPanel.includes('Temeljna analiza posete'), 'the panel must open the analysis page');
+  assert.ok(lead.includes('visit-compact'), 'the participants are shown discreetly on the lead');
+  assert.ok(lead.includes('data/prototipovi/'), 'the lead shows photographs from the visit');
+  assert.ok(page.includes('Temeljna analiza posete'), 'the lead must open the analysis page');
+  assert.ok(!heldSection(tok, new Map()).includes('data-visit-participants'), 'the records stay free of the visit panel');
 });
 
 test('the image reading path translates descriptions and retains provenance without inventing a class photograph', async () => {

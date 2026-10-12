@@ -1,11 +1,14 @@
-// Regenerate only the held landing's content from the same renderer used in the browser.
-// Shells remain owned by tools/shells.mjs. No private sources or new claims are imported.
+// Regenerate the held landing's content from the same renderers used in the browser:
+// the visit lead (standing rule: the newest association material opens the page), the intro
+// and the held records. Shells remain owned by tools/shells.mjs. No private sources or new
+// claims are imported.
 import { readFile, writeFile } from 'node:fs/promises';
 import { setLanguage } from '../assets/core.js';
 import { heldIntro, heldSection } from '../assets/held-record.js';
+import { renderVisitLead, validateVisit } from '../assets/poseta-core.js';
 import { validateTok } from '../assets/tok-core.js';
 import { validateWeek } from '../assets/material.js';
-import { validateVisit } from '../assets/poseta-core.js';
+import { validatePrototypes } from '../assets/prototipovi-core.js';
 const root = new URL('../', import.meta.url);
 const json = async p => JSON.parse(await readFile(new URL(p, root), 'utf8'));
 const tok = await json('data/tok.json');
@@ -14,6 +17,9 @@ if (errors.length) throw Error(errors.join('\n'));
 const visit = await json('data/poseta.json');
 const visitErrors = validateVisit(visit);
 if (visitErrors.length) throw Error(visitErrors.join('\n'));
+const prototypes = await json('data/prototipovi.json');
+const prototypeErrors = validatePrototypes(prototypes);
+if (prototypeErrors.length) throw Error(prototypeErrors.join('\n'));
 const weeks = new Map();
 for (const item of tok.odrzano) {
   if (!Number.isInteger(item.nedelja) || weeks.has(item.nedelja)) continue;
@@ -23,9 +29,13 @@ for (const item of tok.odrzano) {
 }
 setLanguage('sr');
 const target = new URL('index.html', root), before = await readFile(target, 'utf8');
+const lead = /<!-- visit-lead:start -->[\s\S]*?<!-- visit-lead:end -->/;
 const top = /<!-- held-intro:start -->[\s\S]*?<!-- held-intro:end -->/;
 const body = /<section id="odrzano"[\s\S]*?<\/section>/;
-if (!top.test(before) || !body.test(before)) throw Error('Held baseline markers missing; nothing written.');
-const after = before.replace(top, `<!-- held-intro:start --><div id="held-intro">${heldIntro()}</div><!-- held-intro:end -->`).replace(body, heldSection(tok, weeks, visit));
+if (!lead.test(before) || !top.test(before) || !body.test(before)) throw Error('Held baseline markers missing; nothing written.');
+const after = before
+  .replace(lead, `<!-- visit-lead:start -->${renderVisitLead(visit, prototypes)}<!-- visit-lead:end -->`)
+  .replace(top, `<!-- held-intro:start --><div id="held-intro">${heldIntro()}</div><!-- held-intro:end -->`)
+  .replace(body, heldSection(tok, weeks));
 if (before !== after) await writeFile(target, after);
-console.log(JSON.stringify({ changed: before !== after, held: tok.odrzano.length, source: 'same static and runtime renderer' }));
+console.log(JSON.stringify({ changed: before !== after, held: tok.odrzano.length, visit: visit.id, source: 'same static and runtime renderer' }));

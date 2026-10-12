@@ -2,7 +2,6 @@
 // These are photographs in the lesson material, not evidence of an unrecorded class.
 import { esc, tr, tx, number } from './core.js';
 import { exercises } from './exercises.js';
-import { renderVisitPanel } from './poseta-core.js';
 
 export function lessonImages(week) {
   return (week?.blocks || []).filter(b => b.kind === 'image' && typeof b.src === 'string'
@@ -18,7 +17,7 @@ function photo(block, i, eager) {
   </figure>`;
 }
 
-export function heldRecord(item, week, { first = false, visit = null } = {}) {
+export function heldRecord(item, week, { first = false } = {}) {
   const n = Number.isInteger(item.nedelja) && item.nedelja > 0 ? item.nedelja : null;
   const href = n ? `index.html?w=${n}` : null;
   const images = lessonImages(week);
@@ -32,7 +31,6 @@ export function heldRecord(item, week, { first = false, visit = null } = {}) {
         <ul class="lesson-results">${item.rezultati.map(r => `<li>${esc(tx(r.sta))}</li>`).join('')}</ul>
       </div>
     </div>
-    ${visit && visit.week === item.nedelja ? renderVisitPanel(visit) : ''}
   </article>`;
 }
 
@@ -42,9 +40,9 @@ export function heldIntro() {
     <p class="lede">${tr('Lesson material, photographs and recorded outcomes.', 'Gradivo, fotografije i zabeleženi ishodi održanih časova.')}</p></div>`;
 }
 
-export function heldSection(tok, weeks, visit = null) {
+export function heldSection(tok, weeks) {
   const items = [...tok.odrzano].sort((a, b) => String(b.odrzan).localeCompare(String(a.odrzan)));
   return `<section id="odrzano" aria-labelledby="odrzano-title"><h2 id="odrzano-title" class="sr-only">${tr('Held classes and their material', 'Održani časovi i njihovo gradivo')}</h2>
-    <div class="held-records">${items.map((item, i) => heldRecord(item, weeks.get(item.nedelja), { first: i === 0, visit })).join('')}</div>
+    <div class="held-records">${items.map((item, i) => heldRecord(item, weeks.get(item.nedelja), { first: i === 0 })).join('')}</div>
     ${items.length ? '' : `<p class="notice">${tr('No held class has been recorded yet.', 'Još nije upisan nijedan održani čas.')}</p>`}</section>`;
 }

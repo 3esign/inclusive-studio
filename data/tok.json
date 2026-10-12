@@ -227,6 +227,32 @@
    },
    "izvor": "Pojavilo se u zapisu materijala nedelje 1 (blok „Odluka koja se upisuje”); voditelj predmeta 12.10.2026. nije potvrdio — sklonjeno sa strane održanih časova.",
    "datum": "2026-10-12"
+  },
+  {
+   "id": "sledeca-verzija-v2-i-prvi",
+   "naslov": {
+    "sr": "Sledeći čas: verzija 2 za one koji su doneli, prvi prototip za one koji nisu",
+    "en": "Next class: Version 2 for those who brought, a first prototype for those who did not"
+   },
+   "tekst": {
+    "sr": "Ko je doneo prototip, donosi unapređenu verziju pročitanu kroz nalaze posete udruženju; ko nije doneo, donosi prvi prototip. Materijal posete (zapažanja, fotografije, analiza) služi kao prilog tog časa — zapis stvarnih ruku, ne izveštaj.",
+    "en": "Whoever brought a prototype brings the improved version, read against the findings of the association visit; whoever did not, brings a first prototype. The visit material (observations, photographs, analysis) serves as the appendix of that class — a record of real hands, not a report."
+   },
+   "izvor": "Nalog voditelja predmeta, 12.10.2026. (uz pregled objavljene analize posete).",
+   "datum": "2026-10-12"
+  },
+  {
+   "id": "obavestenja-sekcija-ceka-aktivaciju",
+   "naslov": {
+    "sr": "Obaveštenja na sajtu — sekcija čeka aktivaciju",
+    "en": "Notices on the site — the section awaits activation"
+   },
+   "tekst": {
+    "sr": "Oglasna sekcija sa tri stavke postoji u kodu sajta (podaci potiču iz izjava voditelja od 02.10.), ali je 12.10.2026. izbačena iz prikaza nalogom voditelja — sadržaj još nije potvrđen za objavu. Vraća se tek kad voditelj potvrdi šta sekcija tačno nosi.",
+    "en": "A board section with three items exists in the site code (the data come from the course lead's statements of 2 October), but on 12 October 2026 the course lead ordered it out of the display — the content is not yet confirmed for publication. It returns only when the course lead confirms what the section carries."
+   },
+   "izvor": "Nalog voditelja predmeta, 12.10.2026. — izbaciti do daljeg; podaci ostaju u assets/course.js (notices).",
+   "datum": "2026-10-12"
   }
  ]
 }
