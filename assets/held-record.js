@@ -29,9 +29,6 @@ export function heldRecord(item, week, { first = false } = {}) {
       ${images.length ? `<div class="lesson-gallery${images.length === 3 ? ' count-3' : images.length === 1 ? ' count-1' : ''}" aria-label="${tr('Photographs from the lesson material', 'Fotografije iz gradiva časa')}">${images.map((b, i) => photo(b, i, first && i === 0)).join('')}</div>` : ''}
       <div class="lesson-reading"><p class="eyebrow">${tr('Recorded in class', 'Zabeleženo na času')}</p>
         <ul class="lesson-results">${item.rezultati.map(r => `<li>${esc(tx(r.sta))}</li>`).join('')}</ul>
-        <details class="lesson-provenance"><summary>${tr('Records and sources', 'Zapisi i izvori')}</summary>
-          <p>${esc(item.izvor)}</p><ol>${item.rezultati.map(r => `<li>${esc(tx(r.sta))}<br><small>${esc(r.izvor)}</small></li>`).join('')}</ol>
-        </details>
       </div>
     </div>
   </article>`;
