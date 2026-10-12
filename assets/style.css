@@ -896,7 +896,6 @@ body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width
 .visit-photos .prototype-photo{margin:0}
 .visit-no-photo{font-size:.92rem;color:var(--muted)}
 .visit-label{font-weight:700;margin-right:.45rem}
-.visit-patterns li{padding-left:.2rem}
 .visit-source p{font-size:.92rem}
 @media (max-width:720px){.visit-photos{grid-template-columns:1fr}}
 
