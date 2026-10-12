@@ -4,6 +4,7 @@
 // Participants' names live only in the visit register — never as literals in this source.
 
 import { esc, tr, tx, number } from './core.js';
+import { photograph } from './prototipovi-core.js';
 
 const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const STUDENT = /^\d{1,4}\/\d{2}(?:\d{2})?$/;
@@ -135,7 +136,7 @@ export function renderPoseta(visit, prototypes) {
     const observation = byWork.get(finding.work);
     const collected = byWork.get(finding.work) || [];
     const photos = collected.length
-      ? `<div class="visit-photos">${collected.map(p => `<figure class="prototype-photo"><a href="${esc(p.src)}" aria-label="${tr('Open full image', 'Otvori celu sliku')}"><img src="${esc(p.src)}" width="${p.width}" height="${p.height}" alt="${esc(tx(p.alt))}" loading="lazy" decoding="async"></a><figcaption>${esc(tx(p.caption))}</figcaption></figure>`).join('')}</div>`
+      ? `<div class="visit-photos">${collected.map(p => photograph(p)).join('')}</div>`
       : `<p class="visit-no-photo">${tr('The material of this work stays in the working notebook.', 'Materijal ovog rada ostaje u radnoj svesci.')}</p>`;
     const video = VIDEOS[finding.work]
       ? `<figure class="visit-video"><video controls preload="metadata" src="${VIDEOS[finding.work].file}"></video><figcaption>${esc(tx(VIDEOS[finding.work].caption))}</figcaption></figure>`

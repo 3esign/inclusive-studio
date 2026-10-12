@@ -77,7 +77,7 @@ function imageMarkup(p, eager = false) {
   const width = quarterTurn ? p.width / p.height * 100 : 100, height = quarterTurn ? p.height / p.width * 100 : 100;
   return `<span class="prototype-image rotated-image" style="aspect-ratio:${ratio};--rotation:${p.rotation}deg;--rotated-width:${width}%;--rotated-height:${height}%">${img}</span>`;
 }
-function photograph(p, eager = false) {
+export function photograph(p, eager = false) {
   return `<figure class="prototype-photo"><a href="${esc(p.src)}" aria-label="${tr('Open full image', 'Otvori celu sliku')}">${imageMarkup(p, eager)}</a><figcaption>${esc(tx(p.caption))}</figcaption></figure>`;
 }
 const weekLabel = week => `${tr('Week', 'Nedelja')} ${week}`;

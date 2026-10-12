@@ -41,6 +41,10 @@ test('the analysis page renders every participant once, links every finding and 
   }
   // The three claims stay separate: seen, reading, next step — labelled, not merged.
   for (const label of ['Viđeno', 'Čitanje', 'Sledeći korak']) assert.ok(html.includes(label));
+  // The sideways Zgradica photograph is displayed upright through the rotation field (12.10.2026 fix).
+  const zgradica = prototypes.observations.flatMap(o => o.photos).find(ph => ph.id === 'poseta-2026-10-09-zgradica-1');
+  assert.equal(zgradica.rotation, 90, 'the sideways photograph carries its display rotation');
+  assert.ok(html.split('id="zgradica-2026"')[1].split('</article>')[0].includes('rotated-image'), 'the rotation must render as a turned frame');
   // The three recordings are published beside their findings (course lead, 12.10.2026 evening).
   assert.equal((html.match(/<video controls/g) || []).length, 3, 'the three visit recordings must stand beside their findings');
   for (const file of ['poseta-2026-10-09-zgradica.mp4', 'poseta-2026-10-09-upadalica.mp4', 'poseta-2026-10-09-muzicka.mp4']) {

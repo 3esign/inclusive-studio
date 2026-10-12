@@ -64,6 +64,14 @@
     "sr": "Dopuna voditelja predmeta od 12.10.2026. (naveče): lica članova udruženja na fotografijama i snimcima mogu da se objave; natpisi „kadar bez lica“ se ukidaju i nema potrebe za njima; snimci se objavljuju uz nalaze. Imena korisnika i dalje se ne objavljuju, niti se lice vezuje za nalaz.",
     "en": "The course lead’s follow-up of 12 October 2026 (evening): the faces of the association’s members may be published in photographs and recordings; the “frame without a face” captions are withdrawn as unnecessary; recordings are published beside their findings. Members’ names are still not published, nor is a face tied to a finding."
    }
+  },
+  {
+   "id": "teacher-2026-10-12-fix",
+   "recordedOn": "2026-10-12",
+   "description": {
+    "sr": "Ispravka voditelja predmeta od 12.10.2026. uz snimak ekrana: fotografija rada Zgradica objavljena je bočno — izvorna datoteka nosi EXIF orijentaciju 6, a izvedenica bez oznake prikazuje senzorsku orijentaciju. Bajti fotografije i otisak se ne menjaju; ispravka je samo prikazno polje „rotation: 90”.",
+    "en": "The course lead’s fix of 12 October 2026 with a screenshot: the Zgradica photograph was published sideways — the source file carries EXIF orientation 6, and the derivative without the tag shows the sensor orientation. The photograph’s bytes and fingerprint stay unchanged; the fix is the display-only field “rotation: 90”."
+   }
   }
  ],
  "items": [
@@ -671,7 +679,8 @@
       "sr": "Zgradica — loptica i rupa na svakom spratu; poseta udruženju, 09.10.2026.",
       "en": "Zgradica — a ball and a hole on every floor; association visit, 9 October 2026."
      },
-     "sourceId": "teacher-2026-10-12-faces-ok"
+     "sourceId": "teacher-2026-10-12-faces-ok",
+     "rotation": 90
     }
    ],
    "kind": "association-use",
