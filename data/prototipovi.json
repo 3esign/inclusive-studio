@@ -56,6 +56,14 @@
     "sr": "Nalog voditelja predmeta uz isporučen materijal posete udruženju „Živimo zajedno”: 45 fotografija i tri snimka (10 s, 23 s, 5 s), nastalih 09.10.2026. između 13:54 i 14:11 po lokalnom vremenu. Za objavu su izabrane fotografije bez lica; snimci i ostale fotografije ostaju u radnoj svesci. Zapažanja posete upisana su uz pet radova; spisak studenata na poseti vodi registar posete (data/poseta.json).",
     "en": "The course lead’s instruction with the delivered material from the visit to the Živimo zajedno association: 45 photographs and three recordings (10 s, 23 s, 5 s), taken on 9 October 2026 between 13:54 and 14:11 local time. Photographs without faces were selected for publication; the recordings and the remaining photographs stay in the working notebook. Visit observations are recorded with five works; the list of students on the visit is kept in the visit register (data/poseta.json)."
    }
+  },
+  {
+   "id": "teacher-2026-10-12-faces-ok",
+   "recordedOn": "2026-10-12",
+   "description": {
+    "sr": "Dopuna voditelja predmeta od 12.10.2026. (naveče): lica članova udruženja na fotografijama i snimcima mogu da se objave; natpisi „kadar bez lica“ se ukidaju i nema potrebe za njima; snimci se objavljuju uz nalaze. Imena korisnika i dalje se ne objavljuju, niti se lice vezuje za nalaz.",
+    "en": "The course lead’s follow-up of 12 October 2026 (evening): the faces of the association’s members may be published in photographs and recordings; the “frame without a face” captions are withdrawn as unnecessary; recordings are published beside their findings. Members’ names are still not published, nor is a face tied to a finding."
+   }
   }
  ],
  "items": [
@@ -466,8 +474,8 @@
       "en": "Two hands over the wire path: the right hand pulls the green element along the wire, the left steadies the cardboard base with a yellow support on the table."
      },
      "caption": {
-      "sr": "Zmijica u rukama korisnice — izabrani kadar bez lica, poseta udruženju, 09.10.2026.",
-      "en": "Zmijica in a user’s hands — a frame chosen without a face, association visit, 9 October 2026."
+      "sr": "Zmijica u rukama korisnice — poseta udruženju, 09.10.2026.",
+      "en": "Zmijica in a user’s hands — association visit, 9 October 2026."
      },
      "sourceId": "teacher-2026-10-12-field"
     }
@@ -499,8 +507,8 @@
       "en": "Four hands around the cardboard box with sticks: a yellow ball hangs above the orange cups, fingers adjust the gap."
      },
      "caption": {
-      "sr": "Upadalica — dva para ruku, jedan pogodak; izabrani kadar bez lica, poseta udruženju, 09.10.2026.",
-      "en": "Upadalica — two pairs of hands, one drop; a frame chosen without a face, association visit, 9 October 2026."
+      "sr": "Upadalica — dva para ruku, jedan pogodak; poseta udruženju, 09.10.2026.",
+      "en": "Upadalica — two pairs of hands, one drop; association visit, 9 October 2026."
      },
      "sourceId": "teacher-2026-10-12-field"
     }
@@ -532,8 +540,8 @@
       "en": "Hands lay out black tiles with white raised numbers on the table, beside sorted tiles."
      },
      "caption": {
-      "sr": "Sudoku — slaganje pločica sa brojevima; izabrani kadar bez lica, poseta udruženju, 09.10.2026.",
-      "en": "Sudoku — laying out the numbered tiles; a frame chosen without a face, association visit, 9 October 2026."
+      "sr": "Sudoku — slaganje pločica sa brojevima; poseta udruženju, 09.10.2026.",
+      "en": "Sudoku — laying out the numbered tiles; association visit, 9 October 2026."
      },
      "sourceId": "teacher-2026-10-12-field"
     },
@@ -548,8 +556,8 @@
       "en": "A table with black tiles with raised numbers; a hand is just returning a tile to the row."
      },
      "caption": {
-      "sr": "Sudoku — pločice na stolu; izabrani kadar bez lica, poseta udruženju, 09.10.2026.",
-      "en": "Sudoku — tiles on the table; a frame chosen without a face, association visit, 9 October 2026."
+      "sr": "Sudoku — pločice na stolu; poseta udruženju, 09.10.2026.",
+      "en": "Sudoku — tiles on the table; association visit, 9 October 2026."
      },
      "sourceId": "teacher-2026-10-12-field"
     }
@@ -581,8 +589,8 @@
       "en": "The board seen from above: hands place coloured cones and figures into the holes."
      },
      "caption": {
-      "sr": "Pogodilica — grupa oko table; izabrani kadar bez lica, poseta udruženju, 09.10.2026.",
-      "en": "Pogodilica — a group around the board; a frame chosen without a face, association visit, 9 October 2026."
+      "sr": "Pogodilica — grupa oko table; poseta udruženju, 09.10.2026.",
+      "en": "Pogodilica — a group around the board; association visit, 9 October 2026."
      },
      "sourceId": "teacher-2026-10-12-field"
     }
@@ -638,6 +646,138 @@
    ],
    "publication": {
     "sourceId": "teacher-2026-10-12-field",
+    "scope": "association-observation"
+   }
+  },
+  {
+   "id": "poseta-2026-10-09-zgradica",
+   "prototypeId": "zgradica-2026",
+   "summary": {
+    "sr": "Na snimku od 23 sekunde korisnica pomera i okreće zgradu: loptica prolazi kroz rupu sprata i spušta se naniže, uz aplauz u pozadini. Fotografija je iz istog trenutka — rad je probavan i na krevetu, tamo gde je korisnik.",
+    "en": "On the 23-second recording a user shifts and turns the building: the ball passes through a floor’s hole and drops lower, with applause in the background. The photograph is from the same moment — the work was tried on the bed too, where the user was."
+   },
+   "photos": [
+    {
+     "id": "poseta-2026-10-09-zgradica-1",
+     "src": "data/prototipovi/zgradica-2026/poseta-2026-10-09-1.jpg",
+     "sha256": "83e3aa8a4912a9f221f45de4c236eda2ea9d04998cc5dd3068cab5de49d7e14e",
+     "width": 1280,
+     "height": 720,
+     "alt": {
+      "sr": "Korisnica drži žuto-beli toranj Zgradice objema rukama; otvorena prednja strana pokazuje unutrašnjost spratova sa rupama kroz koje se loptica spušta.",
+      "en": "A user holds the yellow-and-white Zgradica tower with both hands; the open front shows the floors’ interiors with the holes the ball drops through."
+     },
+     "caption": {
+      "sr": "Zgradica — loptica i rupa na svakom spratu; poseta udruženju, 09.10.2026.",
+      "en": "Zgradica — a ball and a hole on every floor; association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-faces-ok"
+    }
+   ],
+   "kind": "association-use",
+   "occurredOn": "2026-10-09",
+   "sourceId": "teacher-2026-10-12-faces-ok",
+   "publication": {
+    "sourceId": "teacher-2026-10-12-faces-ok",
+    "scope": "association-observation"
+   }
+  },
+  {
+   "id": "poseta-2026-10-09-zmijica-dopuna",
+   "prototypeId": "zmijica-2026",
+   "summary": {
+    "sr": "Drugi kadar istog trenutka: igra sa osmehom, sa plakatom udruženja u pozadini.",
+    "en": "A second frame of the same moment: play with a smile, the association’s poster behind."
+   },
+   "photos": [
+    {
+     "id": "poseta-2026-10-09-zmijica-2",
+     "src": "data/prototipovi/zmijica-2026/poseta-2026-10-09-2.jpg",
+     "sha256": "9015fc2025f5ae98983b7ea190e4057535f17aa73fca2cadf4fba5e168519d10",
+     "width": 960,
+     "height": 1280,
+     "alt": {
+      "sr": "Korisnica sa osmehom navlači zeleni element po žičanoj putanji; u pozadini sto i poster udruženja na zidu.",
+      "en": "A smiling user pulls the green element along the wire path; behind her the table and the association’s poster on the wall."
+     },
+     "caption": {
+      "sr": "Zmijica — igra sa osmehom; poseta udruženju, 09.10.2026.",
+      "en": "Zmijica — play with a smile; association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-faces-ok"
+    }
+   ],
+   "kind": "association-use",
+   "occurredOn": "2026-10-09",
+   "sourceId": "teacher-2026-10-12-faces-ok",
+   "publication": {
+    "sourceId": "teacher-2026-10-12-faces-ok",
+    "scope": "association-observation"
+   }
+  },
+  {
+   "id": "poseta-2026-10-09-pogodilica-dopuna",
+   "prototypeId": "pogodilica-2026",
+   "summary": {
+    "sr": "Drugi kadar istog trenutka: pažljivo nameštanje jednog stošca, uz ostale učesnike oko stola.",
+    "en": "A second frame of the same moment: carefully placing a single cone, with the other participants around the table."
+   },
+   "photos": [
+    {
+     "id": "poseta-2026-10-09-pogodilica-2",
+     "src": "data/prototipovi/pogodilica-2026/poseta-2026-10-09-2.jpg",
+     "sha256": "50d6fbc4addf9f19be72f210ce51dcfd530db63c1454ce9fc6724b27d0fe7f79",
+     "width": 960,
+     "height": 1280,
+     "alt": {
+      "sr": "Korisnik u kačketu pažljivo namešta stožac na tabli sa rupicama; oko stola ostali učesnici posete.",
+      "en": "A user in a cap carefully places a cone on the pegged board; around the table the other visit participants."
+     },
+     "caption": {
+      "sr": "Pogodilica — strpljenje u jednom potezu; poseta udruženju, 09.10.2026.",
+      "en": "Pogodilica — patience in a single move; association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-faces-ok"
+    }
+   ],
+   "kind": "association-use",
+   "occurredOn": "2026-10-09",
+   "sourceId": "teacher-2026-10-12-faces-ok",
+   "publication": {
+    "sourceId": "teacher-2026-10-12-faces-ok",
+    "scope": "association-observation"
+   }
+  },
+  {
+   "id": "poseta-2026-10-09-muzicka-kutija-dopuna",
+   "prototypeId": "muzicka-kutija-2026",
+   "summary": {
+    "sr": "Drugi kadar istog trenutka: podignuta ruka, osmeh i odziv aplikacije na pokret.",
+    "en": "A second frame of the same moment: a raised hand, a smile, and the application’s answer to the movement."
+   },
+   "photos": [
+    {
+     "id": "poseta-2026-10-09-muzicka-kutija-3",
+     "src": "data/prototipovi/muzicka-kutija-2026/poseta-2026-10-09-3.jpg",
+     "sha256": "c920c976247a31f08a0646e055c4ec0ad5e4fb0b445b5af742d8fcaaa6c1c343",
+     "width": 960,
+     "height": 1280,
+     "alt": {
+      "sr": "Korisnik u kačketu podiže ruku ispred laptopa sa osmehom; aplikacija cvetom odgovara na pokret.",
+      "en": "A user in a cap raises his hand in front of the laptop with a smile; the application answers the movement with a flower."
+     },
+     "caption": {
+      "sr": "Muzička Kutija — pokret koji se čuje; poseta udruženju, 09.10.2026.",
+      "en": "Muzička Kutija — a movement that is heard; association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-faces-ok"
+    }
+   ],
+   "kind": "association-use",
+   "occurredOn": "2026-10-09",
+   "sourceId": "teacher-2026-10-12-faces-ok",
+   "publication": {
+    "sourceId": "teacher-2026-10-12-faces-ok",
     "scope": "association-observation"
    }
   }

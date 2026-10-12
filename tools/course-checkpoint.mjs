@@ -238,7 +238,24 @@ export function comparePrototypeHistory(before, after) {
   const old = before || { sources: [], items: [], observations: [], revizije: [] };
   for (const key of ['sources', 'observations', 'revizije']) {
     const a = old[key] || [], b = after[key] || [];
-    if (b.length < a.length || a.some((row, i) => !same(row, b[i]))) errors.push(`${label}: ${key} prefix rewritten or deleted`);
+    if (b.length < a.length) errors.push(`${label}: ${key} prefix rewritten or deleted`);
+    if (key !== 'observations') {
+      if (a.some((row, i) => !same(row, b[i]))) errors.push(`${label}: ${key} prefix rewritten or deleted`);
+      continue;
+    }
+    // 12.10.2026 (course lead's order): observation wording may be corrected, but only when
+    // the same delta records a new source for the correction. The evidence itself — ids,
+    // works, dates, summaries, fingerprints and the photographs' order — stays append-only;
+    // new photographs arrive as new observation rows, never inside an established one.
+    const carriesNewSource = after.sources.some(source => !old.sources.some(prior => same(prior, source)));
+    a.forEach((row, i) => {
+      const next = b[i];
+      if (!next || !same(row, next) && !carriesNewSource) errors.push(`${label}: observations wording changed without a recorded source`);
+      if (next) {
+        const stripped = value => JSON.parse(JSON.stringify(value, (k, v) => (k === 'caption' ? undefined : v)));
+        if (!same(stripped(row), stripped(next))) errors.push(`${label}: observations prefix rewritten or deleted`);
+      }
+    });
   }
   const ids = new Set(), sources = new Set(after.sources.map(s => s?.id));
   for (const item of after.items) {

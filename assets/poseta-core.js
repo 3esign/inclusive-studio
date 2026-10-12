@@ -72,7 +72,7 @@ const FINDINGS = [
   {
     work: 'upadalica-2026',
     seen: { sr: 'Na snimku od deset sekundi čuje se brojanje naglas do pogotka — „tri, četiri… pao!” — i aplauz. Dva para ruku drže kutiju istovremeno; žuta loptica pada između štapića u narandžaste čašice.', en: 'On the ten-second recording a user counts aloud up to the drop — „three, four… it fell!” — followed by applause. Two pairs of hands hold the box at once; the yellow ball falls between the sticks into the orange cups.' },
-    reading: { sr: 'Igra je sama sebi izvela nivoe: što je veći razmak štapića, to je pogodak lakši. Brojanje se javilo bez ikakvog predloga — ritam i broj su prirodni deo igre. Rad drži jednu i dve osobe istovremeno.', en: 'The play produced its own difficulty levels: the wider the gap between the sticks, the easier the drop. The counting appeared without any suggestion — rhythm and number are a natural part of the game. The work holds one and two people at once.' },
+    reading: { sr: 'Igra je sama sebi izvela nivoe: što je veći razmak štapića, to je pogodak lakši. Brojanje se gradi glasom podrške („ti ćeš drži… tri, četiri…“) — ritam ne nameće igrač, nego ga zajednica meri sa korisnikom. Rad drži jednu i dve osobe istovremeno.', en: 'The play produced its own difficulty levels: the wider the gap between the sticks, the easier the drop. The counting is built by a voice of support (“you will hold… three, four…”) — the rhythm is not imposed by the player; the community keeps time with the user. The work holds one and two people at once.' },
     next: { sr: 'Čašicama dati vrednosti po boji (poeni), a razmak štapića učiniti podesivim — igra raste sa veštinom i ostaje zajednička.', en: 'Give the cups values by colour (points) and make the stick gap adjustable — the game grows with skill and stays shared.' }
   },
   {
@@ -95,6 +95,21 @@ const FINDINGS = [
   }
 ];
 
+const VIDEOS = {
+  'zgradica-2026': { file: 'assets/visit/poseta-2026-10-09-zgradica.mp4', caption: { sr: 'Dvadeset tri sekunde samostalne igre: pomeranjem zgrade loptica spušta se sprat po sprat; na kraju aplauz.', en: 'Twenty-three seconds of self-directed play: shifting the building lowers the ball floor by floor; applause at the end.' } },
+  'upadalica-2026': { file: 'assets/visit/poseta-2026-10-09-upadalica.mp4', caption: { sr: 'Brojanje do pogotka i aplauz — deset sekundi.', en: 'Counting up to the drop and applause — ten seconds.' } },
+  'muzicka-kutija-2026': { file: 'assets/visit/poseta-2026-10-09-muzicka.mp4', caption: { sr: 'Pokret rukom ispred ekrana i odziv aplikacije — pet sekundi.', en: 'A hand movement in front of the screen and the application’s answer — five seconds.' } }
+};
+
+const SPACE = [
+  { sr: 'Soba je dom, ne laboratorija: krevet, sofe i poster na zidu — igračke su žive u dnevnoj sobi udruženja, bez belih mantila. Prostor je već univerzalan; pitanje je samo da li je i igračka.', en: 'The room is a home, not a laboratory: a bed, sofas and a poster on the wall — the toys live in the association’s living room, no white coats. The room is already universal; the only question is whether the toy is.' },
+  { sr: 'Igračka ide čoveku: Zgradica je probavana i na krevetu — rad je došao tamo gde je korisnik, a ne obrnuto. Svaka verzija 2 treba da radi u krilu, na krevetu i uz sto.', en: 'The toy goes to the person: Zgradica was tried on the bed too — the work came to where the user was, not the other way round. Every Version 2 should work in a lap, on a bed and at a table.' },
+  { sr: 'Klupa uz zid je gledalište: oni koji ne igraju prate igru i aplaudiraju. Publika je deo mehanizma — prostor već zna za red čekanja, i igračka koja vodi računa o publici dobija viče.', en: 'The bench by the wall is the auditorium: those not playing follow the game and applaud. The audience is part of the mechanism — the room already knows turn-taking, and a toy that respects its audience gets more.' },
+  { sr: 'Glas podrške: na snimku Upadalice čuje se „ti ćeš drži… tri, četiri…“ — brojanje se ne nameće, nego se s prisutnim gradi zajedno. Podrška meri vreme sa korisnikom, umesto da mu pokazuje ruku.', en: 'A voice of support: on the Upadalica recording you hear “you will hold… three, four…” — the counting is not imposed, it is built together with those present. Support keeps time with the user instead of showing her hand.' },
+  { sr: 'Šema presipanja: ruke sipaju štapiće u kutiju i nazad — prenošenje materijala je igra sama po sebi. Verzija 2 može da joj da svrhu: broj prenetih štapića postaje rezultat.', en: 'The pouring schema: hands pour sticks into the box and back — transferring material is a game in itself. Version 2 can give it a purpose: the number of sticks carried becomes the score.' },
+  { sr: 'Otvorena prednja strana Zgradice: loptica se vidi na svakom spratu, pa mehanizam ne treba objašnjavati. Rad koji pokazuje svoj put uči brže od uputstva — zakon za svaki sledeći prototip.', en: 'Zgradica’s open front: the ball is visible on every floor, so the mechanism needs no explaining. A work that shows its own path teaches faster than an instruction — a rule for every next prototype.' }
+];
+
 const PATTERNS = [
   { sr: 'Četiri stila korišćenja u jednoj sobi: duboki samostalni istraživač, par ruku, grupa oko table i posmatrač sa strane. Nijedan dizajn ne pokriva sve — rotacija radova po stolu je najjeftinija univerzalna mera.', en: 'Four styles of use in one room: the deep solo explorer, a pair of hands, a group around a board, and a watcher from the side. No single design covers them all — rotating the works around the table is the cheapest universal measure.' },
   { sr: 'Proslava pokušaja: aplauz prati i promašaj. Dizajnirati tako da i promašaj daje povratnu informaciju — zvuk, pokret, promenu boje.', en: 'The celebration of the attempt: applause follows a miss too. Design so that a miss also gives feedback — a sound, a movement, a change of colour.' },
@@ -110,16 +125,24 @@ function ready(visit, prototypes) {
 
 export function renderPoseta(visit, prototypes) {
   ready(visit, prototypes);
-  const byWork = new Map((prototypes?.observations || []).map(o => [o.prototypeId, o]));
+  const byWork = new Map();
+  for (const o of prototypes?.observations || []) {
+    const list = byWork.get(o.prototypeId) || [];
+    list.push(...o.photos); byWork.set(o.prototypeId, list);
+  }
   const title = id => prototypes.items.find(item => item.id === id)?.title || id;
   const findings = FINDINGS.map((finding, i) => {
     const observation = byWork.get(finding.work);
-    const photos = observation
-      ? `<div class="visit-photos">${observation.photos.map(p => `<figure class="prototype-photo"><a href="${esc(p.src)}" aria-label="${tr('Open full image', 'Otvori celu sliku')}"><img src="${esc(p.src)}" width="${p.width}" height="${p.height}" alt="${esc(tx(p.alt))}" loading="lazy" decoding="async"></a><figcaption>${esc(tx(p.caption))}</figcaption></figure>`).join('')}</div>`
-      : `<p class="visit-no-photo">${tr('The material of this work stays in the working notebook — the recordings show a person, not only a toy.', 'Materijal ovog rada ostaje u radnoj svesci — snimak pokazuje osobu, ne samo igračku.')}</p>`;
+    const collected = byWork.get(finding.work) || [];
+    const photos = collected.length
+      ? `<div class="visit-photos">${collected.map(p => `<figure class="prototype-photo"><a href="${esc(p.src)}" aria-label="${tr('Open full image', 'Otvori celu sliku')}"><img src="${esc(p.src)}" width="${p.width}" height="${p.height}" alt="${esc(tx(p.alt))}" loading="lazy" decoding="async"></a><figcaption>${esc(tx(p.caption))}</figcaption></figure>`).join('')}</div>`
+      : `<p class="visit-no-photo">${tr('The material of this work stays in the working notebook.', 'Materijal ovog rada ostaje u radnoj svesci.')}</p>`;
+    const video = VIDEOS[finding.work]
+      ? `<figure class="visit-video"><video controls preload="metadata" src="${VIDEOS[finding.work].file}"></video><figcaption>${esc(tx(VIDEOS[finding.work].caption))}</figcaption></figure>`
+      : '';
     return `<article class="visit-finding" id="${esc(finding.work)}">
   <h3><span aria-hidden="true">${number(i + 1)}</span> ${esc(title(finding.work))} <a class="gallery-link" href="prototipovi.html#${esc(finding.work)}">${tr('authorship in the gallery', 'autorstvo u galeriji')} ↗</a></h3>
-  ${photos}
+  ${photos}${video}
   <p><span class="visit-label">${tr('Seen', 'Viđeno')}</span>${esc(tx(finding.seen))}</p>
   <p><span class="visit-label">${tr('Reading', 'Čitanje')}</span>${esc(tx(finding.reading))}</p>
   <p><span class="visit-label">${tr('Next step', 'Sledeći korak')}</span>${esc(tx(finding.next))}</p>
@@ -131,12 +154,15 @@ export function renderPoseta(visit, prototypes) {
   return `<div class="page-top flow-intro"><div><p class="eyebrow">${tr('Week', 'Nedelja')} ${visit.week} · ${tr('association visit', 'poseta udruženju')} · <time datetime="${esc(visit.occurredOn)}">${esc(srDate(visit.occurredOn))}.</time></p>
   <h1>${tr('The visit to the association.', 'Poseta udruženju.')}</h1></div>
   <p class="lede">${tr('The same day as the second class, the students brought the prototypes to the Živimo zajedno association and handed them to the users — without explanation, without guidance. This page is a full reading of what was seen: how each work was taken in hand, what those hands did on their own, and what that says about the next step of each prototype.', 'Isti dan kad i drugi čas, studenti su doneli prototipove u prostor udruženja „Živimo zajedno” i predali ih korisnicima — bez objašnjenja, bez usmeravanja. Ova strana je temeljno čitanje viđenog: kako je svaki rad primljen u ruke, šta su te ruke same od sebe radile i šta to govori o sledećem koraku svakog prototipa.')}</p></div>
-<p class="notice">${tr('How this was read: 45 photographs, three recordings (10, 23 and 5 seconds) and their sound, taken on 9 October 2026 between 13:54 and 14:11. It is not a test: there were no interviews and no one is graded — the work is judged, never the person. The photographs published here were chosen so that they show no faces; the recordings stay in the working notebook.', 'Kako je ovo pročitano: 45 fotografija, tri snimka (10, 23 i 5 sekundi) i njihov zvuk, nastali 09.10.2026. između 13:54 i 14:11. Nije ispitivanje: nije bilo intervjua i niko se ne ocenjuje — ocenjuje se rad, nikad osoba. Fotografije objavljene ovde izabrane su tako da ne pokazuju lica; snimci ostaju u radnoj svesci.')}</p>
+<p class="notice">${tr('How this was read: 45 photographs, three recordings (10, 23 and 5 seconds) and their sound, taken on 9 October 2026 between 13:54 and 14:11. It is not a test: there were no interviews and no one is graded — the work is judged, never the person. The recordings are published beside the findings they support.', 'Kako je ovo pročitano: 45 fotografija, tri snimka (10, 23 i 5 sekundi) i njihov zvuk, nastali 09.10.2026. između 13:54 i 14:11. Nije ispitivanje: nije bilo intervjua i niko se ne ocenjuje — ocenjuje se rad, nikad osoba. Snimci su objavljeni uz nalaze koje potkrepljuju.')}</p>
 <section aria-labelledby="visit-participants-title"><div class="section-heading"><div><p class="eyebrow">${tr('Who was there', 'Ko je bio tamo')}</p><h2 id="visit-participants-title">${tr('Students on the visit', 'Studenti na poseti')}</h2></div><p>${tr('Nine students, the same day as the second class.', 'Devetoro studenata, isti dan kad i drugi čas.')}</p></div>
   <ul class="visit-participants" data-visit-participants="${esc(visit.id)}" aria-label="${tr('Students on the visit', 'Studenti na poseti')}">${participants}</ul>
 </section>
 <section aria-labelledby="visit-findings-title"><div class="section-heading"><div><p class="eyebrow">${tr('Work by work', 'Rad po rad')}</p><h2 id="visit-findings-title">${tr('What was seen', 'Šta se videlo')}</h2></div><p>${tr('Seen — reading — next step: three separate claims, kept apart.', 'Viđeno — čitanje — sledeći korak: tri odvojene tvrdnje, čuvaju se odvojeno.')}</p></div>
   ${findings}
+</section>
+<section aria-labelledby="visit-space-title"><div class="section-heading"><div><p class="eyebrow">${tr('A second, closer look', 'Drugi, bliži pogled')}</p><h2 id="visit-space-title">${tr('The room and the people', 'Prostor i ljudi')}</h2></div><p>${tr('What the material shows beyond the toys themselves.', 'Šta materijal pokazuje i preko samih igračaka.')}</p></div>
+  <ol class="lesson-results visit-space">${SPACE.map(item => `<li>${esc(tx(item))}</li>`).join('')}</ol>
 </section>
 <section aria-labelledby="visit-patterns-title"><div class="section-heading"><div><p class="eyebrow">${tr('Across all works', 'Presjek kroz sve radove')}</p><h2 id="visit-patterns-title">${tr('What repeats', 'Šta se ponavlja')}</h2></div></div>
   <ol class="lesson-results visit-patterns">${patterns}</ol>
@@ -160,5 +186,5 @@ export function renderPoseta(visit, prototypes) {
   </ul>
   <p class="help">${tr('Links checked 12.10.2026. They are directions for reading, not tasks: a Version 2 change is judged by what it does in real hands.', 'Veze proverene 12.10.2026. To su pravci za čitanje, ne zadaci: izmenu verzije 2 ocenjujemo po onome što uradi u stvarnim rukama.')}</p>
 </section>
-<aside class="prototype-context visit-source"><h2>${tr('Sources of this page', 'Izvori ove strane')}</h2><p>${esc(tx(visit.source.description))}</p><p>${tr('Attribution of each work stands in the gallery of works; the participants of the visit in the visit register. Faces are not published on this page.', 'Autorstvo svakog rada stoji u galeriji radova; učesnici posete u registru posete. Lica se na ovoj strani ne objavljuju.')}</p></aside>`;
+<aside class="prototype-context visit-source"><h2>${tr('Sources of this page', 'Izvori ove strane')}</h2><p>${esc(tx(visit.source.description))}</p><p>${tr('Attribution of each work stands in the gallery of works; the participants of the visit in the visit register. The members’ names are not published, nor is a face tied to a finding.', 'Autorstvo svakog rada stoji u galeriji radova; učesnici posete u registru posete. Imena korisnika udruženja se ne objavljuju, niti se lice vezuje za nalaz.')}</p></aside>`;
 }

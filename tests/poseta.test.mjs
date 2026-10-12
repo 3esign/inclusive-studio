@@ -41,10 +41,16 @@ test('the analysis page renders every participant once, links every finding and 
   }
   // The three claims stay separate: seen, reading, next step — labelled, not merged.
   for (const label of ['Viđeno', 'Čitanje', 'Sledeći korak']) assert.ok(html.includes(label));
-  // The work that has no published photograph says so honestly instead of borrowing one.
-  assert.ok(html.split('id="zgradica-2026"')[1].split('</article>')[0].includes('radnoj svesci'), 'the finding without a photograph must say where its material stays');
-  // No unsupported verdicts: this was a visit, not a test.
-  for (const banned of ['uspešno testiran', 'odobren od udruženja', 'saglasnost za fotografije', 'bezbedno za sve']) {
+  // The three recordings are published beside their findings (course lead, 12.10.2026 evening).
+  assert.equal((html.match(/<video controls/g) || []).length, 3, 'the three visit recordings must stand beside their findings');
+  for (const file of ['poseta-2026-10-09-zgradica.mp4', 'poseta-2026-10-09-upadalica.mp4', 'poseta-2026-10-09-muzicka.mp4']) {
+    assert.ok(html.includes('assets/visit/' + file), file + ' must be present');
+  }
+  // The closer-look section stands between the findings and the patterns.
+  assert.ok(html.includes('Prostor i ljudi'), 'the second, closer look must be on the page');
+  assert.ok(html.indexOf('id="visit-space-title"') < html.indexOf('id="visit-patterns-title"'), 'the room and the people come before the patterns');
+  // No unsupported verdicts and no retired face-claims: this was a visit, not a test.
+  for (const banned of ['uspešno testiran', 'odobren od udruženja', 'saglasnost za fotografije', 'bezbedno za sve', 'bez lica', 'ne objavljuju lica']) {
     assert.ok(!html.includes(banned), `"${banned}" is a claim the material cannot support`);
   }
 });
@@ -64,6 +70,8 @@ test('the static page and the held panel are the renderer output, not a hand-tol
 
 test('the analysis page carries the version-2 brief and only checked external directions', async () => {
   setLanguage('sr');
+  assert.equal(prototypes.observations.length, 9, 'the five established rows plus the four evening additions');
+  for (const ph of prototypes.observations.flatMap(o => o.photos)) assert.ok((await readFile(new URL(ph.src, root))).length > 0, ph.src + ' must exist');
   const page = await readFile(new URL('poseta.html', root), 'utf8');
   assert.ok(page.includes('Verzija 2 — i prvi prototip.'), 'the next-class order must stand on the page');
   assert.ok(page.includes('prilog tog časa'), 'the visit material is the appendix of the next class');

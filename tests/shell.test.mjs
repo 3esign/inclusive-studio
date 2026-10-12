@@ -160,7 +160,7 @@ test('the CSS, the modules and the site\'s own images are the only assets the sh
       // files, vendored on purpose (assets/vendor/README.md carries their hashes).
       // vizuali/ (our own standard diagrams) and fieldwork/ (our own field sketch) are
       // first-party images; every one of them was drawn or photographed for this course.
-      assert.ok(/^assets\/(style\.css|[a-z0-9-]+\.(svg|js)|vizuali\/[a-z0-9-]+\.svg|fieldwork\/[a-z0-9-]+\.jpg|vendor\/three\.(module|core)\.min\.js)$/.test(reference), `${page}: unexpected asset ${reference}`);
+      assert.ok(/^assets\/(style\.css|[a-z0-9-]+\.(svg|js)|vizuali\/[a-z0-9-]+\.svg|fieldwork\/[a-z0-9-]+\.jpg|visit\/poseta-[a-z0-9-]+\.mp4|vendor\/three\.(module|core)\.min\.js)$/.test(reference), `${page}: unexpected asset ${reference}`);
     }
     // Nothing may call a third party at read time: no CDN, no analytics, no webfonts.
     assert.ok(!/https?:\/\/[^"]*\.(js|css|woff2?)/.test(html[page]), `${page}: loads a script, style or font from the network`);

@@ -910,3 +910,8 @@ body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width
 .visit-links{list-style:none;padding:0;margin:.4rem 0}
 .visit-links li{margin-top:.55rem}
 @media (max-width:720px){.visit-lead-photos{grid-template-columns:1fr 1fr}}
+
+.visit-video{margin:.25rem 0}
+.visit-video video{width:100%;max-width:440px;display:block;border:1px solid var(--line);border-radius:var(--radius);background:#111}
+.visit-video figcaption{font-size:.85rem;color:var(--muted);margin-top:.35rem}
+.visit-space li{padding:1rem 0 1rem 2rem}
