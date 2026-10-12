@@ -50,13 +50,19 @@ test('the only third-party code is vendored, hashed and stated', async () => {
   }
 });
 
-test('the scene is an enhancement, never a requirement', async () => {
+test('the cover is an entrance, not a show — no scene, the doors onward, counts without scripting', async () => {
+  // 12.10.2026 (course lead's note): the cover carried only the workbook animation and no
+  // entrance. The scene is gone; the cover states the subject and opens the seven doors.
   const module = await read('assets/naslovna.js');
-  assert.ok(module.includes('prefers-reduced-motion'), 'the scene ignores prefers-reduced-motion');
-  assert.ok(/try\s*\{[\s\S]*?import\('\.\/vendor\/three\.module\.min\.js'\)[\s\S]*?\}\s*catch/.test(module) || /catch\s*\{\s*return;\s*\}[\s\S]*import/.test(module) || module.includes("import('./vendor/three.module.min.js')"), 'three.js is not loaded behind a guarded dynamic import');
+  assert.ok(!module.includes('three'), 'the cover still loads a 3D scene');
+  assert.ok(!module.includes('cover-scene'), 'the cover still renders a scene');
   const cover = await read('naslovna.html');
-  assert.ok(cover.includes('class="cover-fallback"'), 'the cover has no drawn fallback for readers without WebGL');
+  assert.ok(!cover.includes('cover-scene'), 'the static cover still carries a scene');
   assert.ok(cover.includes('cover-doors'), 'the cover has no doors onward');
+  for (const href of ['index.html', 'sledeci.html', 'oblak.html', 'prototipovi.html', 'resources.html', 'udruzenje.html', 'predmet.html']) {
+    assert.ok(cover.includes(`href="${href}"`), `the cover door ${href} is missing`);
+  }
+  assert.ok(cover.includes('<b data-count="oblak">'), 'the cover does not stamp the cloud count');
 });
 
 test('the cover prints as the workbook\'s A3 title sheet', async () => {

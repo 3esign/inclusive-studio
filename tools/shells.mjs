@@ -121,7 +121,8 @@ for (const page of pages) {
     after = after
       .replace(/(<div class="cover-stage" data-odrzano=")\d*(" data-sledeci-nedelja=")\d*(")/, `$1${counts.odrzano}$2${counts.sledeciNedelja}$3`)
       .replace(/(<b data-count="odrzano">)[^<]*(<\/b>)/, `$1${counts.odrzano}$2`)
-      .replace(/(<b data-count="sledeci-nedelja">)[^<]*(<\/b>)/, `$1${counts.sledeciNedelja || '—'}$2`);
+      .replace(/(<b data-count="sledeci-nedelja">)[^<]*(<\/b>)/, `$1${counts.sledeciNedelja || '—'}$2`)
+      .replace(/(<b data-count="oblak">)[^<]*(<\/b>)/, `$1${counts['oblak-ideja']}$2`);
   }
   if (after !== before) { await writeFile(url, after); changed += 1; }
 }
