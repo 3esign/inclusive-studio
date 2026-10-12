@@ -36,8 +36,9 @@ export const NAV = [
   { id: 'ideas', href: 'ideja.html', group: 'archive', en: 'Idea atelier', sr: 'Radionica ideja' },
   { id: 'participate', href: 'ucestvuj.html', group: 'archive', en: 'Public board', sr: 'Javna tabla' },
   { id: 'editor', href: 'uredi.html', group: 'archive', en: 'Teacher: material', sr: 'Nastavnik: gradivo' },
-  { id: 'ethics', href: 'etika.html', group: 'footer', en: 'Working together', sr: 'Kako sarađujemo' },
-  { id: 'accessibility', href: 'pristupacnost.html', group: 'footer', en: 'Accessibility', sr: 'Pristupačnost' }
+  // 12.10.2026 (course lead): the footer carries the repository link only; the
+  // “Kako sarađujemo” and “Pristupačnost” links are withdrawn to the cloud of ideas
+  // (the pages stay published, awaiting the lead's confirmation to return).
 ];
 
 /* ---------- the flow strip: the three shelves, in the header of every page ----------
@@ -209,10 +210,6 @@ export function chrome(view, pageTitle) {
 
   const note = $('#footer-note');
   if (note) note.textContent = tr('A shared studio, open to revision.', 'Zajednički studio otvoren za doradu.');
-  const ethics = $('#footer-ethics');
-  if (ethics) ethics.textContent = tr('Working together', 'Kako sarađujemo');
-  const access = $('#footer-access');
-  if (access) access.textContent = tr('Accessibility', 'Pristupačnost');
 
   const item = navItem(view);
   const name = pageTitle || (item ? tr(item.en, item.sr) : tx(identity.short));

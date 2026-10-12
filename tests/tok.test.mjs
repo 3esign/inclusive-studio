@@ -96,7 +96,9 @@ test('the landing is the held record, in Serbian, naming all three parts even wi
   assert.ok(page.includes('href="oblak.html"'), 'the landing does not lead to the cloud page');
   // 12.10: nedeljni A3 list povucen sa strane odrzanih casova (ideja zivi u oblaku); sablon ostaje u banki vezbi i gradenu nedelje.
   assert.ok(!page.includes('href="assets/sablon-a3.svg"'), 'the held page no longer offers the A3 template (order of 12 October)');
-  for (const href of ['godista.html', 'etika.html', 'resources.html']) assert.ok(page.includes(`href="${href}"`), 'an approved helping card is missing');
+  // 12.10.2026 (course lead): the footer links to etika/pristupačnost are withdrawn to the cloud.
+  for (const href of ['godista.html', 'resources.html']) assert.ok(page.includes(`href="${href}"`), 'an approved helping card is missing');
+  assert.ok(!page.includes('href="etika.html"'), 'the withdrawn footer link must be gone from the held page');
 });
 
 test('the held page carries no preparation results and no cloud ideas — each has its own page', async () => {

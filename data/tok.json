@@ -253,6 +253,19 @@
    },
    "izvor": "Nalog voditelja predmeta, 12.10.2026. — izbaciti do daljeg; podaci ostaju u assets/course.js (notices).",
    "datum": "2026-10-12"
+  },
+  {
+   "id": "pristupacnost-i-etika-veke-cekaju",
+   "naslov": {
+    "sr": "Veze „Pristupačnost” i „Kako sarađujemo” — povučene, čekaju",
+    "en": "The “Accessibility” and “How we work” links — withdrawn, waiting"
+   },
+   "tekst": {
+    "sr": "Dve veze su 12.10.2026. povučene iz podnožja svake strane nalogom voditelja predmeta. Strane „Kako sarađujemo” (etika.html) i „Pristupačnost ovog sajta” (pristupacnost.html) ostaju objavljene na svojim adresama; veze se vraćaju kad voditelj potvrdi njihovo mesto.",
+    "en": "On 12 October 2026 the course lead ordered two links withdrawn from the footer of every page. The pages “Kako sarađujemo” (etika.html) and “Pristupačnost ovog sajta” (pristupacnost.html) stay published at their addresses; the links return when the lead confirms their place."
+   },
+   "izvor": "Nalog voditelja predmeta, 12.10.2026. (uz dva snimka ekrana podnožja).",
+   "datum": "2026-10-12"
   }
  ]
 }

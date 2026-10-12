@@ -110,8 +110,9 @@ for (const page of pages) {
     .replace(/<button id="reading-toggle" aria-pressed="false" hidden>[^<]*<\/button>/, '<button id="reading-toggle" aria-pressed="false" hidden>Jednostavan prikaz</button>')
     .replace(/<button id="language-toggle" class="language" lang="sr-Latn" hidden>[^<]*<\/button>/, '<button id="language-toggle" class="language" lang="en" hidden>English</button>')
     .replace(/<p id="footer-note">[^<]*<\/p>/, '<p id="footer-note">Zajednički studio otvoren za doradu.</p>')
-    .replace(/<a id="footer-ethics" href="etika.html">[^<]*<\/a>/, '<a id="footer-ethics" href="etika.html">Kako sarađujemo</a>')
-    .replace(/<a id="footer-access" href="pristupacnost.html">[^<]*<\/a>/, '<a id="footer-access" href="pristupacnost.html">Pristupačnost</a>');
+    // 12.10.2026 (course lead): the two footer links are withdrawn to the cloud of ideas.
+    .replace(/<a id="footer-ethics" href="etika.html">[^<]*<\/a>/, '')
+    .replace(/<a id="footer-access" href="pristupacnost.html">[^<]*<\/a>/, '');
   const strip = flowStrip();
   if (after.includes('<nav class="flow-strip"')) after = after.replace(/<nav class="flow-strip"[\s\S]*?<\/nav>/, strip);
   else after = after.replace(/(<div class="course-band">[\s\S]*?<\/div>)/, `$1\n${strip}`);

@@ -63,7 +63,9 @@ test('each page marks itself as the current one, exactly once', () => {
     // material pages keep their data-view but carry no navigation highlight.
     if (item && item.group === 'primary') assert.deepEqual(navCurrent, [item.id], page);
     else assert.deepEqual(navCurrent, [], page);
-    assert.equal(html[page].match(/data-view="([a-z]+)"/)[1], item.id, page);
+    const view = html[page].match(/data-view="([a-z]+)"/);
+    assert.ok(view, page + ' has no data-view');
+    if (item) assert.equal(view[1], item.id, page);
   }
 });
 
