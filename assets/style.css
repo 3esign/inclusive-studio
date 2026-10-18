@@ -915,3 +915,18 @@ body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width
 .visit-video video{width:100%;max-width:440px;display:block;border:1px solid var(--line);border-radius:var(--radius);background:#111}
 .visit-video figcaption{font-size:.85rem;color:var(--muted);margin-top:.35rem}
 .visit-space li{padding:1rem 0 1rem 2rem}
+
+/* cas-03: spisak radova trećeg časa — shooting order, one row per work */
+.cas03-rows{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line);counter-reset:rb}
+.cas03-rows li{margin:0;padding:.85rem 1rem;background:var(--paper);display:flex;flex-wrap:wrap;gap:.35rem .7rem;align-items:baseline;counter-increment:rb}
+.cas03-rows li::before{content:counter(rb);font-size:.78rem;font-variant-numeric:tabular-nums;color:var(--muted);min-width:2.1rem}
+.cas03-rows li.cas03-neizvesno{background:var(--wash)}
+.cas03-rows [data-cas03-name]{font-weight:600}
+.cas03-rows [data-cas03-indeks]{color:var(--muted);font-size:.85rem;font-variant-numeric:tabular-nums}
+.cas03-rad{font-weight:400}
+.cas03-slike{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.cas03-confirm{font-size:.78rem;border:1px solid var(--line);border-radius:30px;padding:.14rem .6rem;color:var(--muted)}
+.cas03-wave,.cas03-ask{font-size:.85rem;white-space:nowrap}
+.cas03-note{flex-basis:100%;font-size:.85rem;color:var(--muted);line-height:1.5}
+.cas03-missing{font-style:italic;color:var(--muted)}
+.cas03-questions li+li{margin-top:.65rem}

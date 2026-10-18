@@ -94,6 +94,63 @@
     }
    ],
    "izvor": "Izričita potvrda nastavnika 09.10.2026: druga nedelja održana danas, nastava petkom; data/material/w02.json — Zapisano posle časa."
+  },
+  {
+   "id": "cas-w03",
+   "vrsta": "cas",
+   "nedelja": 3,
+   "naslov": {
+    "sr": "Prototip pred objektivom — treći čas",
+    "en": "The prototype before the lens — third class"
+   },
+   "odrzan": "2026-10-16",
+   "rezultati": [
+    {
+     "sta": {
+      "sr": "Radovi studenata fotografisani su na času: spisak od 29 zapisa, zapisivan redom slikanja. Broj uz svaki zapis je broj fotografija u nizu — niz počinje kutijom odnosno slikom sa diplomskih, a završava se slikom iz okruženja u kome korisnica proba prototip. Spisak stoji na zasebnoj strani.",
+      "en": "The students' works were photographed in class: a list of 29 entries, recorded in shooting order. The number beside each entry is the count of photographs in the sequence — the sequence starts with the box and the degree photographs and ends with the picture of the environment in which a user tries the prototype. The list stands on its own page."
+     },
+     "izvor": "Nastavnik predmeta, 18.10.2026.; data/cas-03/spisak.json — izvor teacher-2026-10-18-cas-03; cas-03.html."
+    },
+    {
+     "sta": {
+      "sr": "Potvrda nastavnika 18.10.2026: Muzička kutija, Zmijica, Sudoku i Doljanovićev „Castle” već su u prvom talasu prototipa. Prva tri rada stoje u registru radova; „Castle” čeka unos u registar zajedno sa fotografijama.",
+      "en": "The teacher's confirmation of 18 October 2026: Muzička kutija, Zmijica, Sudoku and Doljanović's „Castle” already belong to the first wave of prototypes. The first three stand in the work register; „Castle” awaits its register entry together with the photographs."
+     },
+     "izvor": "Nastavnik predmeta, 18.10.2026.; data/prototipovi.json — muzicka-kutija-2026, zmijica-2026, sudoku-2026."
+    },
+    {
+     "sta": {
+      "sr": "Delovi spiska nisu sigurni i to je objavljeno: nastavnik je siguran u redosled do zapisa 16 (obojilica) uključno i od zapisa 21 (vijugava staza) uključno do kraja; zapisi 17–20 čekaju potvrdu studenata. Nepoznati nazivi radova i pitanja otvorena za razjašnjenje označeni su na strani spiska.",
+      "en": "Parts of the list are not certain, and that is published: the teacher is certain of the order up to entry 16 (obojilica) inclusive and from entry 21 (vijugava staza) inclusive to the end; entries 17–20 await the students' confirmation. Unrecorded work titles and open questions are marked on the list page."
+     },
+     "izvor": "Nastavnik predmeta, 18.10.2026.; data/cas-03/spisak.json — sigurno i razjasni."
+    },
+    {
+     "sta": {
+      "sr": "Iz udruženja su stigle fotografije sa praktičnih vežbi: direktor udruženja pohvalio je studentske prototipe, primetna je želja korisnika da isprobavaju prototipe koje studenti kreiraju, i pomenut je mogući konkurs od strane udruženja.",
+      "en": "Photographs from the association's practical session arrived: the association's director praised the student prototypes, the users' wish to try the prototypes students create was clear, and a possible competition run by the association was mentioned."
+     },
+     "izvor": "Nastavnik predmeta, 18.10.2026.; data/cas-03/spisak.json — analizaUdruzenja."
+    },
+    {
+     "sta": {
+      "sr": "Fotografije sa telefona nastavnika još nisu prenete: strana spiska i registar radova čekaju fotografije, pa se unos dopunjuje.",
+      "en": "The photographs from the teacher's phone have not yet been transferred: the list page and the work register wait for the photographs, and the entries are completed then."
+     },
+     "izvor": "Nastavnik predmeta, 18.10.2026.: „slike su na mom telefonu”."
+    }
+   ],
+   "prilog": [
+    {
+     "href": "cas-03.html",
+     "text": {
+      "sr": "Spisak radova trećeg časa — 29 radova redom slikanja, analiza iz udruženja i pitanja za razjašnjenje",
+      "en": "The list of the third class — 29 works in shooting order, the association's reading and the questions that wait for clarification"
+     }
+    }
+   ],
+   "izvor": "Nastavnik predmeta, 18.10.2026. (spisak radova trećeg časa i potvrda prvog talasa); data/material/w03.json — Zapisano posle časa."
   }
  ],
  "sledeci": [],

@@ -2,14 +2,14 @@
   "format": "inclusive-studio-material",
   "version": 1,
   "n": 3,
-  "state": "draft",
-  "updated": "2026-10-09",
+  "state": "published",
+  "updated": "2026-10-18",
   "title": {
     "en": "The hand that holds it",
     "sr": "Ruka koja drži"
   },
-  "date": null,
-  "dateStatus": "proposed",
+  "date": "2026-10-16",
+  "dateStatus": "confirmed",
   "aim": {
     "en": "By the end of the session you can build a table of measures in which every row names its instrument and its uncertainty — for a hand and for a building — and you can say which measured values shut which hand out of your object.",
     "sr": "Na kraju časa umeš da napraviš tabelu mera u kojoj svaki red navodi instrument i nesigurnost — za ruku i za zgradu — i umeš da kažeš koje izmerene vrednosti isključuju koju ruku iz tvog predmeta."
@@ -29,6 +29,46 @@
     }
   ],
   "blocks": [
+    {
+      "kind": "heading",
+      "text": {
+        "en": "Recorded after class — 16 October 2026",
+        "sr": "Zapisano posle časa — 16.10.2026."
+      }
+    },
+    {
+      "kind": "list",
+      "items": [
+        {
+          "en": "The students' works were photographed in class: 29 entries, recorded in shooting order. The number beside each entry counts photographs — the sequence starts with the box and the degree photographs and ends with the picture of the environment in which a user tries the prototype.",
+          "sr": "Radovi studenata fotografisani su na času: 29 zapisa, zapisivan redom slikanja. Broj uz svaki zapis je broj fotografija u nizu — niz počinje kutijom odnosno slikama sa diplomskih, a završava se slikom iz okruženja u kome korisnica proba prototip."
+        },
+        {
+          "en": "Confirmed on 18 October 2026: Muzička kutija, Zmijica, Sudoku and „Castle” already belong to the first wave of prototypes.",
+          "sr": "Potvrđeno 18.10.2026: Muzička kutija, Zmijica, Sudoku i „Castle” već su u prvom talasu prototipa."
+        },
+        {
+          "en": "Entries 17–20 await the students' confirmation; the unclear parts are marked on the list page, for the students to come forward with corrections.",
+          "sr": "Zapisi 17–20 čekaju potvrdu studenata; nejasni delovi su označeni na strani spiska, da se studenti jave sa ispravkama."
+        },
+        {
+          "en": "From the association: the director praised the student prototypes, the users' wish to try them was clear, and a possible competition run by the association was mentioned.",
+          "sr": "Iz udruženja: direktor je pohvalio studentske prototipe, primetna je želja korisnika da ih isprobavaju, i pomenut je mogući konkurs od strane udruženja."
+        },
+        {
+          "en": "The photographs are still on the teacher's phone — not yet transferred; the list page and the work register wait for them.",
+          "sr": "Fotografije su još na telefonu nastavnika — nisu prenete; strana spiska i registar radova ih čekaju."
+        }
+      ]
+    },
+    {
+      "kind": "link",
+      "href": "cas-03.html",
+      "text": {
+        "en": "Week 3 — the list of the third class: 29 works in shooting order, the association's reading and the questions that wait for clarification",
+        "sr": "Nedelja 3 — spisak radova trećeg časa: 29 radova redom slikanja, analiza iz udruženja i pitanja koja čekaju razjašnjenje"
+      }
+    },
     {
       "kind": "heading",
       "text": {
@@ -95,6 +135,14 @@
       "sta": {
         "en": "Redirected: the hand that holds it is the upper half (continues the prototype; works without one), the faculty table is the lower half. The week 4 Rulebook check keeps its input. The first draft stays in the repository history.",
         "sr": "Preusmereno: Ruka koja drži je gornji deo (nastavlja prototip; radi i bez njega), tabela fakulteta donji deo. Provera po Pravilniku u 4. nedelji zadržava svoj ulaz. Prvi nacrt ostaje u istoriji repozitorijuma."
+      }
+    },
+    {
+      "v": 3,
+      "datum": "2026-10-18",
+      "sta": {
+        "en": "Held on 16 October 2026 and published: the recorded-after-class section and the link to the third-class list page were added; the date is confirmed.",
+        "sr": "Održano 16.10.2026. i objavljeno: dopunjen je odeljak „Zapisano posle časa” i veza na stranu spiska radova trećeg časa; datum je potvrđen."
       }
     }
   ]

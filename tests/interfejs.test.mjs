@@ -12,6 +12,7 @@ import { readFile, readdir } from 'node:fs/promises';
 const root = new URL('../', import.meta.url);
 const registry = JSON.parse(await readFile(new URL('data/prototipovi.json', root), 'utf8'));
 const visit = JSON.parse(await readFile(new URL('data/poseta.json', root), 'utf8'));
+const cas03 = JSON.parse(await readFile(new URL('data/cas-03/spisak.json', root), 'utf8'));
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 function attributionRows(data) {
@@ -45,6 +46,22 @@ function visitRows(data) {
   return data.participants;
 }
 
+// The 18.10.2026 instruction permits the third-class list: each row carries a student's
+// name and student number beside the photographs it explains, on exactly one surface —
+// the class-list page. Field-level and surface-level, like the visit exception.
+function cas03Rows(data) {
+  assert.equal(data.schema, 'course-class-list/v1');
+  assert.ok(Array.isArray(data.radovi) && data.radovi.length > 0, 'class-list rows required');
+  assert.ok(data.source && typeof data.source.id === 'string' && data.source.id.trim());
+  for (const row of data.radovi) {
+    const fields = Object.keys(row).filter(key => key !== 'ime' && key !== 'indeks');
+    assert.deepEqual(fields.sort(), ['napomena', 'potvrditi', 'prviTalas', 'rad', 'razjasni', 'rb', 'slike'].filter(key => key in row), 'only the authorized list fields may be public');
+    assert.ok(row.ime === null || (typeof row.ime === 'string' && row.ime.trim()));
+    assert.ok(row.indeks === null || /^\d{1,4}\/\d{2}(?:\d{2})?$/.test(row.indeks));
+  }
+  return data.radovi;
+}
+
 function withoutAuthorizedAttribution(file, text, data) {
   attributionRows(data);
   if (file === 'data/poseta.json') {
@@ -57,6 +74,13 @@ function withoutAuthorizedAttribution(file, text, data) {
   if (file === 'data/prototipovi.json') {
     const copy = JSON.parse(text);
     for (const row of attributionRows(copy)) row.author = { name: '[attributed-author]', ...(Object.hasOwn(row.author, 'studentNumber') ? { studentNumber: '[attributed-number]' } : {}) };
+    return JSON.stringify(copy);
+  }
+  if (file === 'data/cas-03/spisak.json') {
+    cas03Rows(cas03);
+    const copy = JSON.parse(text);
+    cas03Rows(copy);
+    copy.radovi = copy.radovi.map(() => ({ ime: '[cas03-name]', indeks: '[cas03-number]' }));
     return JSON.stringify(copy);
   }
   // Renderer source contains template placeholders, not an emitted HTML attribution.
@@ -75,6 +99,13 @@ function withoutAuthorizedAttribution(file, text, data) {
     const expected = visit.participants.map(person => `<li><span data-participant-name>${escape(person.name)}</span><span data-participant-number>${escape(person.studentNumber)}</span></li>`).join('');
     assert.equal(inner.trim(), expected, 'participant list must match the exact authorized fields');
     return '<ul>[visit-participant-fields]</ul>';
+  }).replace(/<li\b[^>]*\bdata-cas03-row="(\d+)"[^>]*>([\s\S]*?)<\/li>/g, (whole, rb, inner) => {
+    assert.equal(file, 'cas-03.html', 'only the class-list page publishes the third-class rows');
+    const row = cas03.radovi.find(item => item.rb === Number(rb));
+    assert.ok(row, 'class-list row must match a recorded entry');
+    const expected = `<span data-cas03-name>${escape(row.ime || '—')}</span><span data-cas03-indeks>${escape(row.indeks || '—')}</span>`;
+    assert.ok(inner.startsWith(expected), 'class-list row must open with the exact authorized fields');
+    return '<li>[cas03-row-fields]</li>';
   });
 }
 
@@ -180,4 +211,21 @@ test('the visit exception is bounded to its two surfaces, its visit and its exac
   assert.throws(() => visitRows(extra), /studentNumber/);
   const leaked = withoutAuthorizedAttribution('index.html', list + '<p>' + visit.participants[0].name + '</p>', registry);
   assert.ok(leaked.includes(visit.participants[0].name), 'a participant name outside the list must stay visible to the scan');
+});
+
+test('the class-list exception is bounded to its one surface, its rows and its exact markup', () => {
+  cas03Rows(cas03);
+  const row = cas03.radovi.find(item => item.ime) || cas03.radovi[0];
+  const li = `<li data-cas03-row="${row.rb}"><span data-cas03-name>${escape(row.ime || '—')}</span><span data-cas03-indeks>${escape(row.indeks || '—')}</span><span class="cas03-rad">x</span></li>`;
+  assert.doesNotThrow(() => withoutAuthorizedAttribution('cas-03.html', li, registry));
+  assert.throws(() => withoutAuthorizedAttribution('index.html', li, registry), /class-list page/);
+  const renamed = li.replace(`<span data-cas03-name>${escape(row.ime || '—')}</span>`, `<span data-cas03-name>${escape(row.ime || '—')} plus</span>`);
+  assert.throws(() => withoutAuthorizedAttribution('cas-03.html', renamed, registry), /exact authorized/);
+  assert.throws(() => withoutAuthorizedAttribution('cas-03.html', li.replace('data-cas03-name', 'data-cas03-full-name'), registry), /exact authorized/);
+  assert.throws(() => withoutAuthorizedAttribution('cas-03.html', `<li data-cas03-row="99">${li.slice(li.indexOf('<span'))}</li>`, registry), /recorded entry/);
+  const extra = structuredClone(cas03); extra.radovi[0].email = 'fixture@example.invalid';
+  assert.throws(() => cas03Rows(extra), /authorized list fields/);
+  const badNumber = structuredClone(cas03); badNumber.radovi[1].indeks = badNumber.radovi[1].indeks + 'x';
+  assert.throws(() => cas03Rows(badNumber), /indeks/);
+  assert.ok(withoutAuthorizedAttribution('data/cas-03/spisak.json', JSON.stringify(cas03), registry).includes('[cas03-name]'), 'the register copy is redacted before the scan');
 });

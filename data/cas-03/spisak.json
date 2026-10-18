@@ -1,0 +1,61 @@
+{
+ "schema": "course-class-list/v1",
+ "id": "cas-03-radovi-2026-10-16",
+ "cas": "cas-w03",
+ "odrzan": "2026-10-16",
+ "source": {
+  "id": "teacher-2026-10-18-cas-03",
+  "recordedOn": "2026-10-18",
+  "description": {
+   "sr": "Nastavnikov spisak radova snimljenih na trećem času (16.10.2026), zapisivan redom slikanja. Broj uz svaki zapis je broj fotografija u nizu: niz počinje kutijom odnosno slikom sa diplomskih, a završava se slikom iz okruženja u kome korisnica proba prototip. Potvrda od 18.10.2026: Muzička kutija, Zmijica, Sudoku i Doljanovićev „Castle” već su u prvom talasu prototipa. Nastavnik je siguran u redosled do zapisa 16 (obojilica) uključno i od zapisa 21 (vijugava staza) uključno do kraja; zapisi 17–20 čeka se potvrda studenata.",
+   "en": "The teacher's list of works photographed at the third class (16 October 2026), recorded in shooting order. The number beside each entry is the count of photographs in the sequence: the sequence starts with the box and the degree photographs and ends with the picture of the environment in which a user tries the prototype. Confirmation of 18 October 2026: Muzička kutija, Zmijica, Sudoku and Doljanović's „Castle” already belong to the first wave of prototypes. The teacher is certain of the order up to entry 16 (obojilica) inclusive and from entry 21 (vijugava staza) inclusive to the end; entries 17–20 await the students' confirmation."
+  }
+ },
+ "napomena": {
+  "sr": "Brojevi su brojevi fotografija, ne ocene: svaki niz počinje kutijom odnosno slikom sa diplomskih, a završava se slikom iz okruženja gde korisnica proba prototip. Redosled je redosled slikanja.",
+  "en": "The numbers count photographs, not grades: each sequence starts with the box and the degree photographs and ends with the picture of the environment where a user tries the prototype. The order is the shooting order."
+ },
+ "sigurno": { "do": 16, "od": 21 },
+ "analizaUdruzenja": {
+  "sr": "Posle časa usledile su fotografije iz udruženja, sa praktičnih vežbi. Direktor udruženja pohvalio je studentske prototipe. Primetna je želja korisnika da isprobavaju prototipe koje studenti kreiraju. Pomenut je mogući konkurs od strane udruženja.",
+  "en": "After the class, photographs from the association's practical session followed. The association's director praised the student prototypes. The users' wish to try the prototypes students create was clear. A possible competition run by the association was mentioned."
+ },
+ "radovi": [
+  { "rb": 1,  "ime": "Ksenija Kočić",        "indeks": "19/24",  "rad": null, "slike": 7, "napomena": { "sr": "uz indeks stoji oznaka smera OA; naziv rada nije zabeležen", "en": "the programme mark OA stands beside the number; the work's title was not recorded" } },
+  { "rb": 2,  "ime": "Hana Demiri",          "indeks": "22/24",  "rad": null, "slike": 5, "napomena": { "sr": "uz indeks stoji oznaka smera OA; naziv rada nije zabeležen", "en": "the programme mark OA stands beside the number; the work's title was not recorded" } },
+  { "rb": 3,  "ime": "Lazović Sara",         "indeks": "106/24", "rad": "Slovo Prsti", "slike": 4 },
+  { "rb": 4,  "ime": "Maša Jotić",           "indeks": "134/24", "rad": "Touch", "slike": 2 },
+  { "rb": 5,  "ime": null, "indeks": null, "rad": "Music box", "slike": 1, "prviTalas": "muzicka-kutija-2026", "napomena": { "sr": "prvi talas prototipa — potvrda nastavnika 18.10.2026.", "en": "first wave of prototypes — the teacher's confirmation of 18 October 2026." } },
+  { "rb": 6,  "ime": "Igor Stablović",       "indeks": "6/24",   "rad": "iggyblox", "slike": 2 },
+  { "rb": 7,  "ime": "Imre Halas",           "indeks": "1/2024", "rad": "hansgadget — starlight", "slike": 6, "razjasni": "starlight-6-i-3", "napomena": { "sr": "u zapisu stoji „starlight 6 + 3” — jedan rad sa devet slika, ili dva rada?", "en": "the record says „starlight 6 + 3” — one work with nine photographs, or two works?" } },
+  { "rb": 8,  "ime": "Velemir Tijana",       "indeks": "51/24",  "rad": "zekino polje", "slike": 4 },
+  { "rb": 9,  "ime": "Karla Krdzovac",       "indeks": "109/24", "rad": "zen garden", "slike": 4 },
+  { "rb": 10, "ime": "Maša Marković",        "indeks": "121/24", "rad": "lavirint", "slike": 5 },
+  { "rb": 11, "ime": null, "indeks": null, "rad": "Zmijica", "slike": 1, "prviTalas": "zmijica-2026", "napomena": { "sr": "prvi talas prototipa — potvrda nastavnika 18.10.2026.", "en": "first wave of prototypes — the teacher's confirmation of 18 October 2026." } },
+  { "rb": 12, "ime": null, "indeks": null, "rad": "Sudoku", "slike": 2, "prviTalas": "sudoku-2026", "napomena": { "sr": "prvi talas prototipa — potvrda nastavnika 18.10.2026.", "en": "first wave of prototypes — the teacher's confirmation of 18 October 2026." } },
+  { "rb": 13, "ime": "Sofia Ocanto Jovičić", "indeks": "138/24", "rad": "kubismo", "slike": 3, "razjasni": "kubismo-ili-lego4all", "napomena": { "sr": "u spisku stoji „kubismo (ne lego4all)”; galerija radova vodi tehnički crtež „Lego4ll” pripisan istoj autorki — razjasniti naziv rada", "en": "the list says „kubismo (ne lego4all)”; the gallery carries the technical drawing „Lego4ll” attributed to the same author — the work's title needs clarifying" } },
+  { "rb": 14, "ime": "Marija Stojković",     "indeks": "126/24", "rad": "končići", "slike": 1 },
+  { "rb": 15, "ime": "Ivana Cvetković",      "indeks": "161/24", "rad": "padalica", "slike": 4 },
+  { "rb": 16, "ime": "Anja Bukurović",       "indeks": "85/24",  "rad": "obojilica", "slike": 6 },
+  { "rb": 17, "ime": "Lukić Miljana",        "indeks": "58/24",  "rad": "putanja", "slike": 6, "potvrditi": true },
+  { "rb": 18, "ime": "Katarina Petrović",    "indeks": "79/24",  "rad": "brza putanja", "slike": 4, "potvrditi": true },
+  { "rb": 19, "ime": "Sanja Hornjaček",      "indeks": "84/24",  "rad": "2d lavirint", "slike": 2, "potvrditi": true },
+  { "rb": 20, "ime": "Aleksa Vesić",         "indeks": "70/21",  "rad": null, "slike": null, "potvrditi": true, "napomena": { "sr": "ni naziv rada ni broj slika nisu zabeleženi", "en": "neither the work's title nor a photograph count was recorded" } },
+  { "rb": 21, "ime": "Aleksa Tašković",      "indeks": "36/24",  "rad": "vijugava staza", "slike": 2 },
+  { "rb": 22, "ime": "Lena Kovačić",         "indeks": "132/24", "rad": "lenin lavirint", "slike": 2 },
+  { "rb": 23, "ime": "Katarina Ušjak",       "indeks": "86/24",  "rad": "edukativna", "slike": 2 },
+  { "rb": 24, "ime": "Mihailo Maksimović",   "indeks": "68/24",  "rad": "amaze", "slike": 1 },
+  { "rb": 25, "ime": "Petra Kalenj",         "indeks": "18/24",  "rad": "stapici", "slike": 1 },
+  { "rb": 26, "ime": "Jana Grujić",          "indeks": "108/23", "rad": null, "slike": 1, "napomena": { "sr": "naziv rada nije zabeležen", "en": "the work's title was not recorded" } },
+  { "rb": 27, "ime": "Iva Mijanović",        "indeks": "28/24",  "rad": "fliper", "slike": 3 },
+  { "rb": 28, "ime": "Lena Dukić",           "indeks": "131/24", "rad": "stilopol", "slike": 2 },
+  { "rb": 29, "ime": "Filip Doljanovič",     "indeks": null, "rad": "Castle", "slike": 3, "razjasni": "castle-bez-indeksa", "napomena": { "sr": "prvi talas prototipa (potvrda nastavnika 18.10.2026); čeka unos u galeriju radova uz fotografije. Kompozicija od rolni toalet-papira i plave trake; materijal je saopšten u poruci. Bez broja indeksa u zapisu.", "en": "first wave of prototypes (the teacher's confirmation of 18 October 2026); awaits its gallery entry together with the photographs. A composition of toilet-paper rolls and blue tape; the material was stated in the message. No student number in the record." } }
+ ],
+ "razjasni": [
+  { "id": "zapisi-17-20", "sta": { "sr": "Zapisi 17–20 (putanja, brza putanja, 2d lavirint, Vesić): nastavnik nije siguran da je redosled ili pripisivanje tačno između obojilice i vijugave staze.", "en": "Entries 17–20 (putanja, brza putanja, 2d lavirint, Vesić): the teacher is not certain the order or the attribution is right between obojilica and vijugava staza." } },
+  { "id": "starlight-6-i-3", "sta": { "sr": "„starlight 6 + 3” — jedan rad sa devet fotografija, ili dva odvojena rada?", "en": "„starlight 6 + 3” — one work with nine photographs, or two separate works?" } },
+  { "id": "kubismo-ili-lego4all", "sta": { "sr": "Rad autorke zapisa 13 u ovom spisku zove se „kubismo”; tehnički crtež „Lego4ll” u galeriji pripisan je istoj autorki. Koji je naziv rada?", "en": "The work of entry 13's author is called „kubismo” in this list; the technical drawing „Lego4ll” in the gallery is attributed to the same author. Which is the work's title?" } },
+  { "id": "castle-bez-indeksa", "sta": { "sr": "„Castle” (Doljanović) — bez broja indeksa u zapisu.", "en": "„Castle” (Doljanović) — no student number in the record." } },
+  { "id": "bez-naziva", "sta": { "sr": "Zapisi 1, 2 i 26 nemaju zabeležen naziv rada; zapis 20 (Vesić) nema ni naziv ni broj slika.", "en": "Entries 1, 2 and 26 carry no recorded work title; entry 20 (Vesić) has neither a title nor a photograph count." } }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "schema": "course-prototypes/v1",
+ "sources": [
+  {
+   "id": "teacher-2026-10-16-cas-03",
+   "recordedOn": "2026-10-16",
+   "description": {
+    "sr": "Spisak nastavnika sa trećeg časa, zapisivan redosledom slikanja prototipova. Broj je broj fotografija u nizu: počinje kutirom/slikom sa diplomskih, završava slikom iz okruženja gde korisnica proba prototip.",
+    "en": "Teacher's list from the third class, recorded in photographic order. The number is the count of photographs in sequence: starts with the box/degree-photo, ends with the user trying the prototype in its environment."
+   }
+  }
+ ],
+ "items": [],
+ "observations": []
+}
