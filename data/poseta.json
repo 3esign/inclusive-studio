@@ -56,5 +56,375 @@
  "summary": {
   "sr": "Poseta udruženju održana je u petak 09.10.2026, istog dana kad je održan drugi čas. Studenti su doneli prototipove započete na prvom času; korisnici udruženja su ih probali na stolu, bez usmeravanja. Temeljna analiza interakcije objavljena je na strani Poseta udruženju; zapažanja uz pojedinačne radove stoje u registru radova.",
   "en": "The association visit took place on Friday, 9 October 2026, the same day as the second class. Students brought the prototypes begun in the first class; the association’s users tried them at the table, without prompting. A full analysis of the interaction is published on the Visit page; observations for individual works stand in the work register."
- }
+ },
+ "photos": [
+  {
+   "id": "poseta-scene-01",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-01.jpg",
+   "sha256": "4ee4c5fa86b5b6e70d493f9abdcc87383d6609bb38b661afced977014f57556a",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Ruke nagnuto drže lavirint od šarenih slamčica sa crnom kuglicom; kuglica se kreće kroz puteve.",
+    "en": "Hands tilt a marble maze made of colourful straws with a black ball; the ball travels through the paths."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 1 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 1 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-02",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-02.jpg",
+   "sha256": "bbb14d90332549bf253dbbea6b2812d524932617e7a4042e7fa8189db12aaa03",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Blizak prikaz slamenog lavirinta sa narandžastim i ljubičastim putevima, u rukama tokom probe.",
+    "en": "A close view of the straw maze with orange and purple paths, held in hands during the trial."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 2 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 2 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-03",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-03.jpg",
+   "sha256": "b98af6e65021d3e68c41a3abaee9b036797fb7255241f6ed99ae91279f9feff8",
+   "width": 1280,
+   "height": 721,
+   "alt": {
+    "sr": "Ruke provlače crveni špilu kroz papirni prototip sa nacrtanim šoljama i oblicima — vežba provođenja.",
+    "en": "Hands thread a red cord through a paper prototype with drawn mugs and shapes — a threading exercise."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 3 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 3 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-04",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-04.jpg",
+   "sha256": "0a8473fab7393325dba1b0a6a8d228fe92d3f7fc312358c6c5a90a4265a77df7",
+   "width": 1280,
+   "height": 721,
+   "alt": {
+    "sr": "Ruke sa crvenim špilom iznad štampanih listova sa skicama šolja i oblika; papirni prototip ili vežba dizajna.",
+    "en": "Hands with a red cord above printed sheets with mug and shape sketches; a paper prototype or a design exercise."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 4 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 4 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-05",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-05.jpg",
+   "sha256": "409f2668f753a32801065a08b4fd4725f714558e038b789edc073ff40197ed66",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Laptop na stolu prikazuje igru sa krugovima na ekranu — digitalni prototip u probi.",
+    "en": "A laptop on the table shows a circle-based game on the screen — a digital prototype in trial."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 5 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 5 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-06",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-06.jpg",
+   "sha256": "8f6bc38c77165704eb3d7350eb4d4f5f711612b9720f6b901891a389c5ad2fdf",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Obojeni štapići i male kartice sa oblicima raspoređeni po stolu — materijal igre slaganja i spareivanja.",
+    "en": "Coloured sticks and small shape cards laid out on the table — material of a sorting and matching game."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 6 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 6 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-07",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-07.jpg",
+   "sha256": "b03c1045f3645a1a275e0493187355b0ab42940baf112a26460f80b0a6697167",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Tablet prikazuje ručno nacrtanu skicu igre sa zupčanicima — radna skica dizajna.",
+    "en": "A tablet shows a hand-drawn game sketch with gears — a working design sketch."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 7 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 7 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-08",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-08.jpg",
+   "sha256": "60571f38b00d2ba737ec9c0150af5f96238c455e422b125d6d126c7799aea4a3",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Kutija u stilu flipera naginje se u rukama; zelena kuglica prolazi između čepova.",
+    "en": "A pinball-style box is tilted in hands; a green ball passes between cork pegs."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 8 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 8 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-09",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-09.jpg",
+   "sha256": "7b5161f7a66eba2451ec92c856422e6b58926ce2d90b32440ce34bcbee243498",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Ista bela kutija nagnuta, ruka vodi zelenu kuglicu kroz čepove.",
+    "en": "The same white box tilted, a hand guiding the green ball past the cork pegs."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 9 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 9 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-10",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-10.jpg",
+   "sha256": "dc0e76343d64f192e7147a370f95846bb98f64353ff0fdf94c218e0d4ec34854",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Blizak prikaz kutije sa zelenom kuglicom, čepovima i drvenim štapićima unutra.",
+    "en": "A close view of the box with a green ball, cork pieces and wooden sticks inside."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 10 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 10 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-11",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-11.jpg",
+   "sha256": "472a5ec06fea90837f75314f651c62643a1fd63feae0321ad37c4044bfbc70cf",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Makaze, olovke i flomasteri na stolu uz papirnu oznaku — materijal za izradu prototipova.",
+    "en": "Scissors, pens and markers on the table beside a paper sign — materials for building prototypes."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 11 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 11 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-12",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-12.jpg",
+   "sha256": "3142bd2f6a75937159917ac8cd3710d342af8b3b3de7f52c1a19fa991dbb7dd2",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Pena blok sa šarenim štapićima i crvenim kanapom — geobord igra oblika.",
+    "en": "A foam block with colourful sticks and red string — a geoboard shape game."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 12 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 12 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-13",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-13.jpg",
+   "sha256": "103b27d6bc5e35d8880eb6af4e6e9cae1ff0c05828cf81e7a3d503b62b4edd14",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Ruke ređaju kartonske kartice za memoriju sa ružičastim simbolima po stolu.",
+    "en": "Hands lay out cardboard memory cards with pink symbols on the table."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 13 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 13 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-14",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-14.jpg",
+   "sha256": "9e82c0847bf2fc9bc2ee72bfd89e526495645f859f2d0c148a410e036d43799f",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Ruke okreću iste šarene kartonske kartice na stolu — igra memorije u toku.",
+    "en": "Hands flip the same patterned cardboard cards on the table — a memory game in play."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 14 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 14 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-15",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-15.jpg",
+   "sha256": "2b05fac94e350f80684c4f84ed06ed0b71a427cd77eb01b4fed496a9d283e54e",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Kartonski lavirint sa belom vijugavom stazom i kuglicama, držan u rukama.",
+    "en": "A cardboard marble-run with a white winding track and marbles, held in hands."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 15 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 15 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-16",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-16.jpg",
+   "sha256": "cdb4da8612b465a0dbcfdae53fc6f12abf374c8de99e8fb1fbb8c68dee854058",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Osoba drži veliku kartonsku konstrukciju od spojivih blokova.",
+    "en": "A person holds a large cardboard construction of interlocking blocks."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 16 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 16 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-17",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-17.jpg",
+   "sha256": "54b713f239fa989071edfe53c46d74bc7eaeefadee88f15b2fc7de19a6c8a1f7",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Druga kartonska blok-struktura podignuta, osoba je pokazuje prstom.",
+    "en": "Another cardboard block structure held up, a person pointing at it."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 17 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 17 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-18",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-18.jpg",
+   "sha256": "d4b3ee6cf5b0a0c766cabae582c1358ab2a0dca05c8892ec26daf8fd1a6bb97b",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Slaganje kartonske slagalice od spojivih blokova.",
+    "en": "Assembling a cardboard interlocking-block puzzle."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 18 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 18 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-19",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-19.jpg",
+   "sha256": "aed4e4afcdb0f325c519132fd67d34f54aeaf8dd4bdfbd2ea920b96460e00c46",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Završena figura od kartonskih blokova u rukama.",
+    "en": "The finished cardboard block puzzle figure held in hands."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 19 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 19 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-20",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-20.jpg",
+   "sha256": "e28429a2d68bccfe826a8202c208df46cceed9633ec153696d95eae09dc53fd5",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Dve osobe pregledaju kartonsku blok-konstrukciju u zatvorenom prostoru.",
+    "en": "Two people examine the cardboard block construction indoors."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 20 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 20 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-21",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-21.jpg",
+   "sha256": "eae163891809c4a5fad0d84ce100f82d6125fc8f4c5aee137ab9f8196a2f8d62",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Osoba u kariranoj košulji drži kartonsku slagalicu od blokova.",
+    "en": "A person in a plaid shirt holds the cardboard block puzzle."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 21 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 21 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-22",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-22.jpg",
+   "sha256": "571fb730412fd0e07241a66da37119c121b26087d027cb0b61b5a2562fa8a872",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Kvadratni kartonski lavirint sa unutrašnjim pregradama i kuglicama u rukama.",
+    "en": "A square cardboard labyrinth with inner walls and marbles in hands."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 22 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 22 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  },
+  {
+   "id": "poseta-scene-23",
+   "src": "data/prototipovi/poseta-udruzenje/poseta-23.jpg",
+   "sha256": "c83549da214d1c08e5a4d7febdd4a2b16ad26342b5d476a90b1b6c0ce6948657",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Blizak prikaz kvadratnog kartonskog lavirinta nagnutog u rukama.",
+    "en": "A close view of the square cardboard maze tilted in hands."
+   },
+   "caption": {
+    "sr": "Scena sa posete udruženju (9.10.2026), slika 23 u nizu slikanja; rad nije povezan sa pojedinačnim prototipom iz registra.",
+    "en": "A scene from the association visit (9 Oct 2026), picture 23 in the shooting order; not tied to an individual registered prototype."
+   },
+   "sourceId": "teacher-2026-10-12-field"
+  }
+ ]
 }

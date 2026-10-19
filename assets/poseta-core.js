@@ -8,6 +8,8 @@ import { photograph } from './prototipovi-core.js';
 
 const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const STUDENT = /^\d{1,4}\/\d{2}(?:\d{2})?$/;
+const PHOTO = /^data\/prototipovi\/[a-z0-9-]+\/[a-z0-9-]+\.jpg$/;
+const SHA = /^[a-f0-9]{64}$/;
 const date = v => typeof v === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v) && Number.isFinite(Date.parse(v)) && new Date(v).toISOString().slice(0, 10) === v;
 const bilingual = v => v && typeof v === 'object' && !Array.isArray(v) && typeof v.sr === 'string' && v.sr.trim() && typeof v.en === 'string' && v.en.trim();
 const keys = (obj, allowed) => obj && typeof obj === 'object' && !Array.isArray(obj) && Object.keys(obj).every(k => allowed.includes(k));
@@ -16,7 +18,7 @@ export function validateVisit(visit) {
   const problems = [];
   const fail = (condition, message) => { if (!condition) problems.push(message); };
   fail(visit?.schema === 'course-visit/v1', 'Unknown visit register schema.');
-  fail(keys(visit, ['schema', 'id', 'week', 'occurredOn', 'place', 'source', 'participants', 'summary']), 'Unknown visit register fields.');
+  fail(keys(visit, ['schema', 'id', 'week', 'occurredOn', 'place', 'source', 'participants', 'summary', 'photos']), 'Unknown visit register fields.');
   fail(ID.test(visit?.id || ''), 'Visit id required.');
   fail(Number.isInteger(visit?.week) && visit.week > 0, 'Visit week must be a positive integer.');
   fail(date(visit?.occurredOn), 'Visit needs an actual date.');
@@ -28,6 +30,21 @@ export function validateVisit(visit) {
     fail(keys(person, ['name', 'studentNumber']) && typeof person.name === 'string' && person.name.trim() && STUDENT.test(person.studentNumber || ''), 'Each participant needs exactly a name and a student number.');
     fail(!names.has(person?.name), 'Duplicate participant name.');
     names.add(person?.name);
+  }
+  // Scenes of the visit: photographs of the day that belong to no single registered work.
+  // Same rule as the work register: fingerprint and dimensions from the final file, bilingual alt and caption.
+  const sceneSrc = new Set();
+  if (visit.photos !== undefined) fail(Array.isArray(visit.photos), 'Visit photos must be a list.');
+  for (const p of visit?.photos || []) {
+    const label = 'Visit photo ' + (p?.id || '?');
+    fail(keys(p, ['id', 'src', 'sha256', 'width', 'height', 'alt', 'caption', 'sourceId']), label + ': unknown photo fields.');
+    fail(ID.test(p?.id || ''), label + ': id required.');
+    fail(PHOTO.test(p?.src || '') && !sceneSrc.has(p.src), label + ': unique local photograph path required.');
+    sceneSrc.add(p.src);
+    fail(SHA.test(p?.sha256 || ''), label + ': photograph fingerprint required.');
+    fail(Number.isInteger(p?.width) && p.width > 0 && Number.isInteger(p?.height) && p.height > 0, label + ': image dimensions required.');
+    fail(bilingual(p?.alt) && bilingual(p?.caption), label + ': bilingual alt and caption required.');
+    fail(p?.sourceId === visit?.source?.id, label + ': sourceId must point at the visit source.');
   }
   return problems;
 }
@@ -161,6 +178,9 @@ export function renderPoseta(visit, prototypes) {
 </section>
 <section aria-labelledby="visit-findings-title"><div class="section-heading"><div><p class="eyebrow">${tr('Work by work', 'Rad po rad')}</p><h2 id="visit-findings-title">${tr('What was seen', 'Šta se videlo')}</h2></div><p>${tr('Seen — reading — next step: three separate claims, kept apart.', 'Viđeno — čitanje — sledeći korak: tri odvojene tvrdnje, čuvaju se odvojeno.')}</p></div>
   ${findings}
+</section>
+<section aria-labelledby="visit-scenes-title"><div class="section-heading"><div><p class="eyebrow">${tr('The rest of the day', 'Ostatak dana')}</p><h2 id="visit-scenes-title">${tr('Scenes without a single work', 'Scene bez jednog rada')}</h2></div><p>${tr('Photographs of the visit that belong to the day itself — materials, sketches, works still without a place in the register. They stand here untied, until a teacher’s word ties them.', 'Fotografije posete koje pripadaju danu samom — materijal, skice, radovi još bez mesta u registru. Stoje nevezani, dok nastavnička reč ne veže.')}</p></div>
+  <div class="visit-photos">${(visit.photos || []).map(p => photograph(p)).join('')}</div>
 </section>
 <section aria-labelledby="visit-space-title"><div class="section-heading"><div><p class="eyebrow">${tr('A second, closer look', 'Drugi, bliži pogled')}</p><h2 id="visit-space-title">${tr('The room and the people', 'Prostor i ljudi')}</h2></div><p>${tr('What the material shows beyond the toys themselves.', 'Šta materijal pokazuje i preko samih igračaka.')}</p></div>
   <ol class="lesson-results visit-space">${SPACE.map(item => `<li>${esc(tx(item))}</li>`).join('')}</ol>
