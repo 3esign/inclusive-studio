@@ -68,8 +68,8 @@
    "slike": 1,
    "prviTalas": "muzicka-kutija-2026",
    "napomena": {
-    "sr": "prvi talas prototipa — potvrda nastavnika 18.10.2026.",
-    "en": "first wave of prototypes — the teacher's confirmation of 18 October 2026."
+    "sr": "prvi talas prototipa — potvrda nastavnika 18.10.2026; isti autor, u galeriji označeno kao nastavak (potvrda 19.10.2026).",
+    "en": "first wave of prototypes — the teacher’s confirmation of 18 October 2026; same author, marked as a continuation in the gallery (confirmation of 19 October 2026)."
    }
   },
   {
@@ -120,8 +120,8 @@
    "slike": 1,
    "prviTalas": "zmijica-2026",
    "napomena": {
-    "sr": "prvi talas prototipa — potvrda nastavnika 18.10.2026.",
-    "en": "first wave of prototypes — the teacher's confirmation of 18 October 2026."
+    "sr": "prvi talas prototipa — potvrda nastavnika 18.10.2026; isti autor, u galeriji označeno kao nastavak (potvrda 19.10.2026).",
+    "en": "first wave of prototypes — the teacher’s confirmation of 18 October 2026; same author, marked as a continuation in the gallery (confirmation of 19 October 2026)."
    }
   },
   {
@@ -132,8 +132,8 @@
    "slike": 2,
    "prviTalas": "sudoku-2026",
    "napomena": {
-    "sr": "prvi talas prototipa — potvrda nastavnika 18.10.2026.",
-    "en": "first wave of prototypes — the teacher's confirmation of 18 October 2026."
+    "sr": "prvi talas prototipa — potvrda nastavnika 18.10.2026; isti autor, u galeriji označeno kao nastavak (potvrda 19.10.2026).",
+    "en": "first wave of prototypes — the teacher’s confirmation of 18 October 2026; same author, marked as a continuation in the gallery (confirmation of 19 October 2026)."
    }
   },
   {
@@ -273,9 +273,10 @@
    "slike": 3,
    "razjasni": "castle-bez-indeksa",
    "napomena": {
-    "sr": "prvi talas prototipa (potvrda nastavnika 18.10.2026); čeka unos u galeriju radova uz fotografije. Kompozicija od rolni toalet-papira i plave trake; materijal je saopšten u poruci. Bez broja indeksa u zapisu.",
-    "en": "first wave of prototypes (the teacher's confirmation of 18 October 2026); awaits its gallery entry together with the photographs. A composition of toilet-paper rolls and blue tape; the material was stated in the message. No student number in the record."
-   }
+    "sr": "prvi talas prototipa (potvrda nastavnika 18.10.2026); unesen u galeriju radova sa fotografijama 19.10.2026. Kompozicija od rolna toalet-papira i plave trake; materijal je saopšten u poruci. Bez broja indeksa u zapisu.",
+    "en": "first wave of prototypes (the teacher’s confirmation of 18 October 2026); entered the work gallery with photographs on 19 October 2026. A composition of toilet-paper rolls and blue tape; the material was stated in the message. No student number in the record."
+   },
+   "prviTalas": "29-castle"
   }
  ],
  "razjasni": [

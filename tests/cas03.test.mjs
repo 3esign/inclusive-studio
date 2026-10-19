@@ -35,10 +35,10 @@ test('the first wave names only real registry entries, and the certain zones are
   assert.deepEqual(validatePrototypes(prototypes), []);
   const ids = new Set(prototypes.items.map(item => item.id));
   for (const row of spisak.radovi) if (row.prviTalas) assert.ok(ids.has(row.prviTalas), `${row.prviTalas} is not in the work register`);
-  assert.equal(spisak.radovi.filter(row => row.prviTalas).length, 3, 'Muzička kutija, Zmijica and Sudoku — the photographed first wave');
-  // 18.10.2026: Doljanović's „Castle” is first wave too, but a register entry awaits photographs.
+  assert.equal(spisak.radovi.filter(row => row.prviTalas).length, 4, 'Muzička kutija, Zmijica, Sudoku and Castle — the photographed first wave');
+  // 19.10.2026: Doljanović's „Castle” entered the gallery with its photographs, so the field now points at the entry.
   const castle = spisak.radovi.find(row => /castle/i.test(row.rad || ''));
-  assert.ok(castle && !castle.prviTalas, 'Castle stays out of the prviTalas field until its gallery entry exists');
+  assert.equal(castle?.prviTalas, '29-castle', 'Castle links its gallery entry now that it exists with photographs');
   assert.deepEqual(spisak.radovi.filter(row => row.potvrditi).map(row => row.rb), [17, 18, 19, 20]);
   assert.equal(spisak.sigurno.do, 16);
   assert.equal(spisak.sigurno.od, 21);
@@ -67,7 +67,7 @@ test('the page renders both segments, marks the uncertain rows and prints every 
     assert.ok(html.includes(claim), `association statement missing: ${claim}`);
   }
   // Photographs are honestly awaited, not implied.
-  assert.ok(html.includes('telefonu nastavnika'));
+  assert.ok(html.includes('stigle sa telefona nastavnika'));
   for (const banned of ['fotografije su objavljene', 'galerija fotografija', 'saglasnost za fotografije', 'čeka saglasnost']) {
     assert.ok(!html.includes(banned), `"${banned}" is a claim the material cannot support`);
   }
