@@ -5,7 +5,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { setLanguage } from '../assets/core.js';
 import { heldIntro, heldSection } from '../assets/held-record.js';
-import { renderVisitLead, validateVisit } from '../assets/poseta-core.js';
+import { validateVisit } from '../assets/poseta-core.js';
 import { validateTok } from '../assets/tok-core.js';
 import { validateWeek } from '../assets/material.js';
 import { validatePrototypes } from '../assets/prototipovi-core.js';
@@ -29,13 +29,20 @@ for (const item of tok.odrzano) {
 }
 setLanguage('sr');
 const target = new URL('index.html', root), before = await readFile(target, 'utf8');
-const lead = /<!-- visit-lead:start -->[\s\S]*?<!-- visit-lead:end -->/;
+// The chronological rule (teacher's order of 19.10.2026): the landing reads oldest class
+// first; the visit and the works live inside their own week's record, so no block stands
+// above the record it belongs to. The standalone lead and the mixed teaser are gone.
+const lead = /[ \t]*<!-- visit-lead:start -->[\s\S]*?<!-- visit-lead:end -->\r?\n?/;
+const teaser = /[ \t]*<!-- prototype-teaser:start -->[\s\S]*?<!-- prototype-teaser:end -->\r?\n?/;
 const top = /<!-- held-intro:start -->[\s\S]*?<!-- held-intro:end -->/;
-const body = /<section id="odrzano"[\s\S]*?<\/section>/;
-if (!lead.test(before) || !top.test(before) || !body.test(before)) throw Error('Held baseline markers missing; nothing written.');
+// The section now nests the visit lead and the work strips, so it cannot end at the first
+// inner </section>; it ends where the onward nav begins — the landing's own closing edge.
+const body = /<section id="odrzano"[\s\S]*?(?=<nav class="onward")/;
+if (!top.test(before) || !body.test(before)) throw Error('Held baseline markers missing; nothing written.');
 const after = before
-  .replace(lead, `<!-- visit-lead:start -->${renderVisitLead(visit, prototypes)}<!-- visit-lead:end -->`)
+  .replace(lead, '')
+  .replace(teaser, '')
   .replace(top, `<!-- held-intro:start --><div id="held-intro">${heldIntro()}</div><!-- held-intro:end -->`)
-  .replace(body, heldSection(tok, weeks));
+  .replace(body, heldSection(tok, weeks, { visit, prototypes }));
 if (before !== after) await writeFile(target, after);
 console.log(JSON.stringify({ changed: before !== after, held: tok.odrzano.length, visit: visit.id, source: 'same static and runtime renderer' }));

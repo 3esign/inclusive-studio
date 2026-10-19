@@ -108,7 +108,15 @@ export function renderPrototypes(data) {
   <details class="prototype-sources"><summary>${tr('Record sources', 'Izvori zapisa')}</summary><ul>${data.sources.map(s => `<li>${esc(tx(s.description))} <span>${tr('Recorded', 'Zabeleženo')}: <time datetime="${esc(s.recordedOn)}">${esc(s.recordedOn.split('-').reverse().join('.'))}.</time></span></li>`).join('')}</ul></details>`;
 }
 
-export function prototypeTeaser(data) {
+// Without a week the strip shows every documented work (the next-class page keeps that view);
+// with a week it shows only that week's works, so the held landing never mixes weeks.
+export function prototypeTeaser(data, week = null) {
   ready(data);
-  return `<section class="prototype-teaser" aria-labelledby="prototype-teaser-title"><div><p class="eyebrow">${tr('Works and examples', 'Radovi i primeri')} · ${number(data.items.length)}</p><h2 id="prototype-teaser-title">${tr('Course work and examples.', 'Radovi i primeri iz nastave.')}</h2><p>${tr('Documented', 'Dokumentovano')}: ${weeksOf(data, 'documentedWeek').map(weekLabel).join(' · ')}.</p><a class="button" href="prototipovi.html">${tr('View the work', 'Pogledaj radove')} ↗</a></div><div class="prototype-strip" aria-label="${tr('Preview of the collected work', 'Pregled prikupljenih radova')}">${data.items.map((i, k) => `<a href="prototipovi.html#${esc(i.id)}">${imageMarkup((( { rotation, ...photo } ) => photo)(i.photos[0]))}<span>${number(k + 1)} · ${esc(i.title)} · ${weekLabel(i.documentedWeek)}</span></a>`).join('')}</div></section>`;
+  const items = Number.isInteger(week) ? data.items.filter(item => item.documentedWeek === week) : data.items;
+  if (!items.length) return '';
+  const headingId = Number.isInteger(week) ? `prototype-teaser-title-w${week}` : 'prototype-teaser-title';
+  const scope = Number.isInteger(week)
+    ? `${tr('Documented in class', 'Dokumentovano na času')}: ${weekLabel(week)}.`
+    : `${tr('Documented', 'Dokumentovano')}: ${weeksOf(data, 'documentedWeek').map(weekLabel).join(' · ')}.`;
+  return `<section class="prototype-teaser" aria-labelledby="${headingId}"><div><p class="eyebrow">${tr('Works and examples', 'Radovi i primeri')} · ${number(items.length)}</p><h2 id="${headingId}">${tr('Course work and examples.', 'Radovi i primeri iz nastave.')}</h2><p>${scope}</p><a class="button" href="prototipovi.html">${tr('View the work', 'Pogledaj radove')} ↗</a></div><div class="prototype-strip" aria-label="${tr('Preview of the collected work', 'Pregled prikupljenih radova')}">${items.map((i, k) => `<a href="prototipovi.html#${esc(i.id)}">${imageMarkup((( { rotation, ...photo } ) => photo)(i.photos[0]))}<span>${number(k + 1)} · ${esc(i.title)}${Number.isInteger(week) ? '' : ` · ${weekLabel(i.documentedWeek)}`}</span></a>`).join('')}</div></section>`;
 }

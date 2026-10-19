@@ -10,8 +10,8 @@ import { MATERIAL_INDEX, weekFile, validateIndex, validateWeek, currentWeek, wee
 import { resolveRefs, renderBlocks, weekLine } from './blocks.js';
 import { validateTok } from './tok-core.js';
 import { heldIntro, heldSection } from './held-record.js';
-import { prototypeTeaser, validatePrototypes } from './prototipovi-core.js';
-import { renderVisitLead, validateVisit } from './poseta-core.js';
+import { validatePrototypes } from './prototipovi-core.js';
+import { validateVisit } from './poseta-core.js';
 
 const params = new URLSearchParams(location.search);
 const showDrafts = params.get('draft') === '1';
@@ -149,9 +149,7 @@ function helpingView() {
 function landingView() {
   const tok = flow.tok;
   return `
-  ${flow.visit && flow.prototypes ? renderVisitLead(flow.visit, flow.prototypes) : ''}
-  ${flow.prototypes ? prototypeTeaser(flow.prototypes) : ''}
-  ${heldSection(tok, flow.weeks)}
+  ${heldSection(tok, flow.weeks, { visit: flow.visit || null, prototypes: flow.prototypes || null })}
   <nav class="onward" aria-label="${tr('Where the course goes next', 'Kuda predmet ide dalje')}">
     <a href="sledeci.html"><b>${tr('Next class', 'Sledeći čas')}</b><span>${tr('the preparation, on the shoulders of the last one', 'priprema, naslonjena na prethodni čas')} →</span></a>
     <a href="oblak.html"><b>${tr('Cloud of ideas', 'Oblak ideja')}</b><span>${tr('everything that still has no week', 'sve što još nema nedelju')} →</span></a>

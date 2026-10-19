@@ -2,6 +2,8 @@
 // These are photographs in the lesson material, not evidence of an unrecorded class.
 import { esc, tr, tx, number } from './core.js';
 import { exercises } from './exercises.js';
+import { renderVisitLead, validateVisit } from './poseta-core.js';
+import { prototypeTeaser, validatePrototypes } from './prototipovi-core.js';
 
 export function lessonImages(week) {
   return (week?.blocks || []).filter(b => b.kind === 'image' && typeof b.src === 'string'
@@ -41,9 +43,20 @@ export function heldIntro() {
     <p class="lede">${tr('Lesson material, photographs and recorded outcomes.', 'Gradivo, fotografije i zabeleženi ishodi održanih časova.')}</p></div>`;
 }
 
-export function heldSection(tok, weeks) {
-  const items = [...tok.odrzano].sort((a, b) => String(b.odrzan).localeCompare(String(a.odrzan)));
+// The course order is the reading order: the oldest held class opens, the newest closes —
+// the landing is a chronological record, never a newest-first feed. Each record carries
+// what belongs to its own week: the association visit of that week and that week's works.
+export function heldSection(tok, weeks, extras = {}) {
+  const items = [...tok.odrzano].sort((a, b) => String(a.odrzan).localeCompare(String(b.odrzan)));
+  const visit = extras.visit && !validateVisit(extras.visit).length ? extras.visit : null;
+  const prototypes = extras.prototypes && !validatePrototypes(extras.prototypes).length ? extras.prototypes : null;
+  const record = (item, i) => {
+    const parts = [heldRecord(item, weeks.get(item.nedelja), { first: i === 0 })];
+    if (visit && visit.week === item.nedelja) parts.push(renderVisitLead(visit, prototypes));
+    if (prototypes) parts.push(prototypeTeaser(prototypes, item.nedelja));
+    return parts.filter(Boolean).join('\n');
+  };
   return `<section id="odrzano" aria-labelledby="odrzano-title"><h2 id="odrzano-title" class="sr-only">${tr('Held classes and their material', 'Održani časovi i njihovo gradivo')}</h2>
-    <div class="held-records">${items.map((item, i) => heldRecord(item, weeks.get(item.nedelja), { first: i === 0 })).join('')}</div>
+    <div class="held-records">${items.map(record).join('')}</div>
     ${items.length ? '' : `<p class="notice">${tr('No held class has been recorded yet.', 'Još nije upisan nijedan održani čas.')}</p>`}</section>`;
 }

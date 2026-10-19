@@ -189,7 +189,7 @@ test('association-use observations need their own date, source, photograph and p
 });
 test('static, live and translated views preserve every author and prototype; summaries use the same registry', async () => {
   setLanguage('sr');
-  for (const [file, marker, expected] of [['prototipovi.html', 'prototipovi', renderPrototypes(data)], ['index.html', 'prototype-teaser', prototypeTeaser(data)], ['sledeci.html', 'prototype-teaser', prototypeTeaser(data)]]) {
+  for (const [file, marker, expected] of [['prototipovi.html', 'prototipovi', renderPrototypes(data)], ['sledeci.html', 'prototype-teaser', prototypeTeaser(data)]]) {
     const html = await readFile(new URL(file, root), 'utf8');
     assert.equal(html.split(`<!-- ${marker}:start -->`)[1].split(`<!-- ${marker}:end -->`)[0], expected);
   }
