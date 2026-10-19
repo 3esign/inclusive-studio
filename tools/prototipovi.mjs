@@ -39,7 +39,6 @@ for (const [src, photo] of photoMap) {
 setLanguage('sr');
 const regions = [
   ['prototipovi.html', 'prototipovi', renderPrototypes(data)],
-  ['index.html', 'prototype-teaser', prototypeTeaser(data)],
   ['sledeci.html', 'prototype-teaser', prototypeTeaser(data)]
 ];
 const updates = [];
