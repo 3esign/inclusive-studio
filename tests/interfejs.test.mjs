@@ -71,7 +71,7 @@ function withoutAuthorizedAttribution(file, text, data) {
     copy.participants = copy.participants.map(() => ({ name: '[visit-participant]', studentNumber: '[visit-number]' }));
     return JSON.stringify(copy);
   }
-  if (file === 'data/prototipovi.json') {
+  if (file === 'data/prototipovi.json' || file === 'data/cas-03/predlog-registra.json') {
     const copy = JSON.parse(text);
     for (const row of attributionRows(copy)) row.author = { name: '[attributed-author]', ...(Object.hasOwn(row.author, 'studentNumber') ? { studentNumber: '[attributed-number]' } : {}) };
     return JSON.stringify(copy);
