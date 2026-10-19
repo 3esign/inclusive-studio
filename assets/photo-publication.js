@@ -1,34 +1,12 @@
-// Emergency withdrawal, 19 October 2026: teacher requested removal of unrelated images.
-// The imported sequence has unverified photo-to-work attribution. Preserve evidence;
-// do not republish these records until each relationship has been reviewed.
-export const withheldWorkIds = Object.freeze([
-  "03-slovo-prsti",
-  "04-touch",
-  "05-music-box",
-  "06-iggyblox",
-  "07-hansgadget-starlight",
-  "08-zekino-polje",
-  "09-zen-garden",
-  "10-lavirint",
-  "11-zmijica",
-  "12-sudoku",
-  "13-kubismo",
-  "14-koncici",
-  "15-padalica",
-  "16-obojilica",
-  "17-putanja",
-  "18-brza-putanja",
-  "19-2d-lavirint",
-  "21-vijugava-staza",
-  "22-lenin-lavirint",
-  "23-edukativna",
-  "24-amaze",
-  "25-stapici",
-  "26-jana-grujic",
-  "27-fliper",
-  "28-stilopol",
-  "29-castle"
-]);
+// Publication gate. The 19 October 2026 withdrawal of the third-class batch is lifted.
+// Basis: the teacher's own list (data/cas-03/spisak.json) states how many photographs
+// were taken for each work, in shooting order — some more, some fewer. That list is the
+// proof of the photo-to-work link, and frame hashing confirms it per file: every
+// published photograph matches an original in its own folder (distance 0-5, see
+// data/brain/scratch/foto-povezivanje/frame-veza.txt). Rows 1-2 (Ksenija, Sara) were
+// shot before class and stay in the list as "not recorded", so they carry no photographs.
+// The visit keeps its own withdrawal until the teacher confirms its captions.
+export const withheldWorkIds = Object.freeze([]);
 export const withheldPhotoDirectories = Object.freeze([...withheldWorkIds, 'poseta-udruzenje']);
 export const publicPhoto = photo => !withheldPhotoDirectories.some(id => photo.src.startsWith('data/prototipovi/' + id + '/'));
 export function publishedPrototypes(data) {
