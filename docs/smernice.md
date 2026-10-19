@@ -1,5 +1,11 @@
 # Smernice — kako se ovaj sajt pravi i održava
 
+## Hitno povlačenje fotografija · 19.10.2026.
+
+Po nalogu nastavnika da se uklone nepovezani kadrovi, novi fotografski blok trećeg časa privremeno je povučen. Vizuelni pregled je pokazao beleške i stranicu knjige među fotografijama rada, isti predmet pod različitim naslovima i nepouzdanu vezu niza sa spiskom. Prethodno pravilo iz `data/cas-03/uloge-slika.json` (prva/poslednja slika svakog foldera) **nije merodavno** za selekciju ili autorstvo.
+
+`assets/photo-publication.js` određuje tačno povučene zapise i fotografske foldere; `_config.yml` sprečava njihovo služenje kroz GitHub Pages. Registar i izvorni bajtovi ostaju sačuvani kao dokaz, ne kao potvrda atribucije. Spisak trećeg časa i raniji radovi ostaju vidljivi. Fotografije trećeg časa i njegovog segmenta iz udruženja ne pripadaju drugoj nedelji samo zato što su uvežene uz stari registar posete. Vraćanje zahteva pregled svakog kadra, provereno povezivanje sa izvornim nalogom i spiskom, pa usklađeno uklanjanje blokade u prikazu i Pages konfiguraciji. Datum ili naziv foldera nisu dokaz identiteta rada.
+
 > Jedna rečenica: sajt predmeta govori istinu o toku nastave — šta je održano, šta se priprema, šta je tek ideja — na jednom jeziku, sa samo izričito odobrenom javnom atribucijom, uz proveru sadržaja, testova i stvarnog prikaza.
 > Ovaj fajl je veza između tog zakona i veština Svemira iz kojih je izveden. Ako se smernica i veština razilaze, popravi ovde — ili tamo, svesno.
 

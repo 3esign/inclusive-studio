@@ -1,4 +1,5 @@
 import { esc, tr, tx, number } from './core.js';
+import { publishedPrototypes, publicPhoto } from './photo-publication.js';
 
 const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const SHA = /^[a-f0-9]{64}$/;
@@ -78,6 +79,7 @@ function imageMarkup(p, eager = false) {
   return `<span class="prototype-image rotated-image" style="aspect-ratio:${ratio};--rotation:${p.rotation}deg;--rotated-width:${width}%;--rotated-height:${height}%">${img}</span>`;
 }
 export function photograph(p, eager = false) {
+  if (!publicPhoto(p)) return '';
   return `<figure class="prototype-photo"><a href="${esc(p.src)}" aria-label="${tr('Open full image', 'Otvori celu sliku')}">${imageMarkup(p, eager)}</a><figcaption>${esc(tx(p.caption))}</figcaption></figure>`;
 }
 const weekLabel = week => `${tr('Week', 'Nedelja')} ${week}`;
@@ -96,6 +98,7 @@ function card(item, index) {
 
 export function renderPrototypes(data) {
   ready(data);
+  data = publishedPrototypes(data);
   const n = data.items.length;
   const documentedWeeks = weeksOf(data, 'documentedWeek'), originWeeks = weeksOf(data, 'originWeek');
   const materialLinks = documentedWeeks.map(week => `<a class="button secondary" href="index.html?w=${week}">${tr('Documented material', 'Dokumentovano gradivo')} · ${weekLabel(week)}</a>`).join('');
@@ -112,6 +115,7 @@ export function renderPrototypes(data) {
 // with a week it shows only that week's works, so the held landing never mixes weeks.
 export function prototypeTeaser(data, week = null) {
   ready(data);
+  data = publishedPrototypes(data);
   const items = Number.isInteger(week) ? data.items.filter(item => item.documentedWeek === week) : data.items;
   if (!items.length) return '';
   const headingId = Number.isInteger(week) ? `prototype-teaser-title-w${week}` : 'prototype-teaser-title';

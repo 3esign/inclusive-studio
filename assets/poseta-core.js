@@ -1,3 +1,4 @@
+import { publicPhoto } from './photo-publication.js';
 // The association visit as course material: one visit register (data/poseta.json) and the
 // prototype register's observations feed the held page panel and the analysis page.
 // The same renderer serves the static baseline and the live view; nothing is retold by hand.
@@ -179,9 +180,9 @@ export function renderPoseta(visit, prototypes) {
 <section aria-labelledby="visit-findings-title"><div class="section-heading"><div><p class="eyebrow">${tr('Work by work', 'Rad po rad')}</p><h2 id="visit-findings-title">${tr('What was seen', 'Šta se videlo')}</h2></div><p>${tr('Seen — reading — next step: three separate claims, kept apart.', 'Viđeno — čitanje — sledeći korak: tri odvojene tvrdnje, čuvaju se odvojeno.')}</p></div>
   ${findings}
 </section>
-<section aria-labelledby="visit-scenes-title"><div class="section-heading"><div><p class="eyebrow">${tr('The rest of the day', 'Ostatak dana')}</p><h2 id="visit-scenes-title">${tr('Scenes without a single work', 'Scene bez jednog rada')}</h2></div><p>${tr('Photographs of the visit that belong to the day itself — materials, sketches, works still without a place in the register. They stand here untied, until a teacher’s word ties them.', 'Fotografije posete koje pripadaju danu samom — materijal, skice, radovi još bez mesta u registru. Stoje nevezani, dok nastavnička reč ne veže.')}</p></div>
-  <div class="visit-photos">${(visit.photos || []).map(p => photograph(p)).join('')}</div>
-</section>
+${(visit.photos || []).some(publicPhoto) ? `<section aria-labelledby="visit-scenes-title"><div class="section-heading"><div><p class="eyebrow">${tr('The rest of the day', 'Ostatak dana')}</p><h2 id="visit-scenes-title">${tr('Scenes without a single work', 'Scene bez jednog rada')}</h2></div><p>${tr('Photographs of the visit that belong to the day itself — materials, sketches, works still without a place in the register. They stand here untied, until a teacher’s word ties them.', 'Fotografije posete koje pripadaju danu samom — materijal, skice, radovi još bez mesta u registru. Stoje nevezani, dok nastavnička reč ne veže.')}</p></div>
+  <div class="visit-photos">${(visit.photos || []).filter(publicPhoto).map(p => photograph(p)).join('')}</div>
+</section>` : ''}
 <section aria-labelledby="visit-space-title"><div class="section-heading"><div><p class="eyebrow">${tr('A second, closer look', 'Drugi, bliži pogled')}</p><h2 id="visit-space-title">${tr('The room and the people', 'Prostor i ljudi')}</h2></div><p>${tr('What the material shows beyond the toys themselves.', 'Šta materijal pokazuje i preko samih igračaka.')}</p></div>
   <ol class="lesson-results visit-space">${SPACE.map(item => `<li>${esc(tx(item))}</li>`).join('')}</ol>
 </section>

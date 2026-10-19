@@ -48,7 +48,8 @@ test('the landing is chronological: each visit and each work strip stands inside
   assert.ok(w2Pos >= 0 && leadPos > w2Pos && w3Pos > leadPos, 'the visit lead must stand inside the week of the visit');
   // No mixed strip above the records: the first teaser on the page is week 2's.
   assert.ok(!page.includes('<!-- prototype-teaser:start -->'), 'the standalone mixed teaser is withdrawn from the landing');
-  assert.ok(page.indexOf('prototype-teaser-title-w2') < page.indexOf('prototype-teaser-title-w3'), 'work strips follow their weeks');
+  assert.ok(page.indexOf('prototype-teaser-title-w2') > w2Pos && page.indexOf('prototype-teaser-title-w2') < w3Pos, 'earlier work strip stays inside week two');
+  assert.ok(!page.includes('prototype-teaser-title-w3'), 'withdrawn third-class photos must not appear');
   for (const person of visit.participants) {
     assert.equal(page.split(esc(person.name)).length - 1, 1, person.name + ' must appear exactly once on the held page');
   }

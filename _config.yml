@@ -1,0 +1,29 @@
+# Preserve source evidence in Git, but do not serve the withdrawn photo batch.
+exclude:
+  - data/prototipovi/03-slovo-prsti
+  - data/prototipovi/04-touch
+  - data/prototipovi/05-music-box
+  - data/prototipovi/06-iggyblox
+  - data/prototipovi/07-hansgadget-starlight
+  - data/prototipovi/08-zekino-polje
+  - data/prototipovi/09-zen-garden
+  - data/prototipovi/10-lavirint
+  - data/prototipovi/11-zmijica
+  - data/prototipovi/12-sudoku
+  - data/prototipovi/13-kubismo
+  - data/prototipovi/14-koncici
+  - data/prototipovi/15-padalica
+  - data/prototipovi/16-obojilica
+  - data/prototipovi/17-putanja
+  - data/prototipovi/18-brza-putanja
+  - data/prototipovi/19-2d-lavirint
+  - data/prototipovi/21-vijugava-staza
+  - data/prototipovi/22-lenin-lavirint
+  - data/prototipovi/23-edukativna
+  - data/prototipovi/24-amaze
+  - data/prototipovi/25-stapici
+  - data/prototipovi/26-jana-grujic
+  - data/prototipovi/27-fliper
+  - data/prototipovi/28-stilopol
+  - data/prototipovi/29-castle
+  - data/prototipovi/poseta-udruzenje

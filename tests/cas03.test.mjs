@@ -55,7 +55,8 @@ test('the page renders both segments, marks the uncertain rows and prints every 
     const li = html.split(`data-cas03-row="${row.rb}"`)[1].split('</li>')[0];
     if (row.potvrditi) assert.ok(li.includes('cas03-neizvesno') && li.includes('čeka potvrdu'), `row ${row.rb} must be marked unconfirmed`);
     else assert.ok(!li.includes('cas03-neizvesno'), `row ${row.rb} is certain and must not carry the uncertain mark`);
-    if (row.prviTalas) assert.ok(li.includes(`href="prototipovi.html#${row.prviTalas}"`), `row ${row.rb} must link its gallery entry`);
+    if (row.prviTalas && row.prviTalas !== '29-castle') assert.ok(li.includes(`href="prototipovi.html#${row.prviTalas}"`), `row ${row.rb} must link its gallery entry`);
+    if (row.prviTalas === '29-castle') assert.ok(!li.includes('href="prototipovi.html#29-castle"'), 'withdrawn entry must not be a broken gallery link');
     if (row.razjasni) assert.ok(li.includes(`href="#${row.razjasni}"`), `row ${row.rb} must link its open question`);
   }
   for (const question of spisak.razjasni) {
@@ -67,7 +68,7 @@ test('the page renders both segments, marks the uncertain rows and prints every 
     assert.ok(html.includes(claim), `association statement missing: ${claim}`);
   }
   // Photographs are honestly awaited, not implied.
-  assert.ok(html.includes('stigle sa telefona nastavnika'));
+  assert.ok(html.includes('privremeno su povučene'));
   for (const banned of ['fotografije su objavljene', 'galerija fotografija', 'saglasnost za fotografije', 'čeka saglasnost']) {
     assert.ok(!html.includes(banned), `"${banned}" is a claim the material cannot support`);
   }

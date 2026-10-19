@@ -40,7 +40,7 @@ function included(rel) {
   if (rel === 'CHECKPOINT-RESTORE.json') return false;
   const parts = rel.split('/');
   if (parts.some(p => EXCLUDED.test(p))) return false;
-  return parts.length === 1 ? /\.(?:html|md|json|mjs|cjs|js|css|svg|txt)$|^\.gitignore$/i.test(rel) : DIRS.has(parts[0]);
+  return parts.length === 1 ? /\.(?:html|md|json|mjs|cjs|js|css|svg|txt|yml)$|^\.gitignore$/i.test(rel) : DIRS.has(parts[0]);
 }
 function rootPath(root, allowMissing = false) {
   const absolute = path.resolve(root);

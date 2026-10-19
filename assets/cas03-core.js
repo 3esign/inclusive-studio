@@ -5,6 +5,7 @@
 // (17–20), the open questions (razjasni) and the photographs still on the phone.
 
 import { esc, tr, tx, number } from './core.js';
+import { withheldWorkIds } from './photo-publication.js';
 
 const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const STUDENT = /^\d{1,4}\/\d{2}(?:\d{2})?$/;
@@ -55,7 +56,7 @@ export function renderCas03(spisak, prototypes) {
     const indeks = row.indeks || '—';
     const rad = row.rad ? esc(row.rad) : `<span class="cas03-missing">${tr('title not recorded', 'naziv nije zabeležen')}</span>`;
     const slike = row.slike === null ? `<span class="cas03-missing">${tr('count not recorded', 'broj nije zabeležen')}</span>` : tr(`${row.slike} photo${row.slike === 1 ? '' : 's'}`, `${row.slike} ${row.slike === 1 ? 'fotografija' : row.slike < 5 ? 'fotografije' : 'fotografija'}`);
-    const wave = row.prviTalas ? ` <a class="cas03-wave" href="prototipovi.html#${esc(row.prviTalas)}">${tr('first wave — gallery', 'prvi talas — galerija')} ↗</a>` : '';
+    const wave = row.prviTalas && !withheldWorkIds.includes(row.prviTalas) ? ` <a class="cas03-wave" href="prototipovi.html#${esc(row.prviTalas)}">${tr('first wave — gallery', 'prvi talas — galerija')} ↗</a>` : '';
     const ask = row.razjasni ? ` <a class="cas03-ask" href="#${esc(row.razjasni)}">${tr('open question', 'otvoreno pitanje')} ↓</a>` : '';
     const confirm = row.potvrditi ? ` <span class="cas03-confirm">${tr('awaits confirmation', 'čeka potvrdu')}</span>` : '';
     const note = row.napomena ? `<span class="cas03-note">${esc(tx(row.napomena))}</span>` : '';
@@ -68,7 +69,7 @@ export function renderCas03(spisak, prototypes) {
 <p class="notice">${esc(tx(spisak.napomena))}</p>
 <section aria-labelledby="cas03-rows-title"><div class="section-heading"><div><p class="eyebrow">${tr('Segment one', 'Prvi segment')}</p><h2 id="cas03-rows-title">${tr('Prototypes and photographs', 'Prototipi i slike')}</h2></div><p>${tr(`Entries 1–${number(spisak.sigurno.do)} and ${number(spisak.sigurno.od)}–${number(spisak.radovi.length)} stand as certain; the rows between are published as unconfirmed.`, `Zapisi 1–${number(spisak.sigurno.do)} i ${number(spisak.sigurno.od)}–${number(spisak.radovi.length)} stoje kao sigurni; redovi između objavljeni su kao nepotvrđeni.`)}</p></div>
   <ol class="cas03-rows" data-cas03-list="${esc(spisak.id)}" aria-label="${tr('Works in shooting order', 'Radovi redom slikanja')}">${rows}</ol>
-  <p class="help">${tr("Photographs have arrived from the teacher's phone: every documented work now has its gallery entry with authorship and photographs, and this list stands beside it. Entries 17–20 and works without a recorded title await confirmation — the list is below.", 'Fotografije su stigle sa telefona nastavnika: svaki dokumentovani rad sada ima unos u galeriji radova sa autorstvom i fotografijama, a ovaj spisak stoji uz njega. Zapisi 17–20 i radovi bez zabeleženog naziva čekaju potvrdu — popis je ispod.')}</p>
+  <p class="notice">${tr('New photographs from the third class are temporarily withdrawn while their content and links to the work list are checked. The list remains below; previous class records are unchanged.', 'Nove fotografije trećeg časa privremeno su povučene dok se provere njihov sadržaj i veze sa spiskom radova. Spisak ostaje ispod; zapisi prethodnih časova su sačuvani.')}</p>
 </section>
 <section aria-labelledby="cas03-udruzenje-title"><div class="section-heading"><div><p class="eyebrow">${tr('Segment two', 'Drugi segment')}</p><h2 id="cas03-udruzenje-title">${tr('From the association', 'Analiza iz udruženja')}</h2></div></div>
   <ol class="lesson-results">

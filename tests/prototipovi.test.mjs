@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto';
 import { setLanguage } from '../assets/core.js';
 import { validatePrototypes, renderPrototypes, prototypeTeaser } from '../assets/prototipovi-core.js';
 
+import { publishedPrototypes } from '../assets/photo-publication.js';
 const root = new URL('../', import.meta.url);
 const data = JSON.parse(await readFile(new URL('data/prototipovi.json', root), 'utf8'));
 const initial = [
@@ -46,8 +47,8 @@ test('an additional independent prototype renders without modifying templates or
   assert.deepEqual(validatePrototypes(next), []);
   const html = renderPrototypes(next);
   assert.match(html, /id="new-example"/);
-  for (const original of data.items) assert.ok(html.includes(`id="${original.id}"`));
-  assert.equal((html.match(/data-prototype-attribution=/g) || []).length, data.items.length + 1);
+  for (const original of publishedPrototypes(data).items) assert.ok(html.includes(`id="${original.id}"`));
+  assert.equal((html.match(/data-prototype-attribution=/g) || []).length, publishedPrototypes(data).items.length + 1);
 });
 test('documented week is required, positive and never precedes the start of work', () => {
   for (const value of [undefined, null, 0, -1, 1.5, '2', Infinity]) {
@@ -195,6 +196,6 @@ test('static, live and translated views preserve every author and prototype; sum
   }
   setLanguage('en'); const english = renderPrototypes(data);
   assert.match(english, /Works and examples/);
-  for (const item of data.items) { assert.ok(english.includes(item.author.name)); if (item.author.studentNumber !== undefined) assert.ok(english.includes(item.author.studentNumber)); assert.ok(english.includes(item.title)); }
+  for (const item of publishedPrototypes(data).items) { assert.ok(english.includes(item.author.name)); if (item.author.studentNumber !== undefined) assert.ok(english.includes(item.author.studentNumber)); assert.ok(english.includes(item.title)); }
   setLanguage('sr');
 });

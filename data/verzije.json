@@ -305,6 +305,13 @@
     "sr": "Po četvrtom nalogu dana: veze „Kako sarađujemo“ i „Pristupačnost“ povučene su iz podnožja svake strane; strane ostaju objavljene na svojim adresama, a povlačenje je zapisano kao ideja u oblaku (13 ideja). Podnožje nosi samo GitHub vezu.",
     "en": "By the day's fourth order: the “Kako sarađujemo” and “Pristupačnost” links are withdrawn from the footer of every page; the pages stay published at their addresses, and the withdrawal is recorded as an idea in the cloud (13 ideas). The footer carries the GitHub link only."
    }
+  },
+  {
+   "datum": "2026-10-19",
+   "sta": {
+    "sr": "Hitno povlačenje novog fotografskog bloka trećeg časa: vizuelni pregled otkrio je ne-prototipske kadrove i nepouzdane veze fotografija sa spiskom. Spisak i raniji zapisi ostaju. Izvori su sačuvani, sporni blok se ne prikazuje i isključen je iz Pages objave.",
+    "en": "Emergency withdrawal of the new third-class photo batch: visual review found unrelated frames and unreliable photo-to-work attribution. The list and earlier records remain. Source evidence is preserved; the disputed batch is hidden and excluded from the Pages build."
+   }
   }
  ]
 }
