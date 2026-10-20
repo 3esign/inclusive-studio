@@ -2,11 +2,11 @@
  "schema": "course-prototypes/v1",
  "sources": [
   {
-   "id": "teacher-2026-10-16-cas-03",
-   "recordedOn": "2026-10-16",
+   "id": "teacher-2026-10-18-cas-03",
+   "recordedOn": "2026-10-18",
    "description": {
-    "sr": "Brojevi su brojevi fotografija, ne ocene: svaki niz počinje kutijom odnosno slikom sa diplomskih, a završava se slikom iz okruženja gde korisnica proba prototip. Redosled je redosled slikanja.",
-    "en": "The numbers count photographs, not grades: each sequence starts with the box and the degree photographs and ends with the picture of the environment where a user tries the prototype. The order is the shooting order."
+    "sr": "Nastavnikov spisak radova snimljenih na trećem času (16.10.2026), zapisivan redom slikanja. Broj uz svaki zapis je broj fotografija u nizu: niz počinje kutijom odnosno slikom sa diplomskih, a završava se slikom iz okruženja u kome korisnica proba prototip. Potvrda od 18.10.2026: Muzička kutija, Zmijica, Sudoku i Doljanovićev „Castle” već su u prvom talasu prototipa. Nastavnik je siguran u redosled do zapisa 16 (obojilica) uključno i od zapisa 21 (vijugava staza) uključno do kraja; zapisi 17–20 čeka se potvrda studenata.",
+    "en": "The teacher's list of works photographed at the third class (16 October 2026), recorded in shooting order. The number beside each entry is the count of photographs in the sequence: the sequence starts with the box and the degree photographs and ends with the picture of the environment in which a user tries the prototype. Confirmation of 18 October 2026: Muzička kutija, Zmijica, Sudoku and Doljanović's „Castle” already belong to the first wave of prototypes. The teacher is certain of the order up to entry 16 (obojilica) inclusive and from entry 21 (vijugava staza) inclusive to the end; entries 17–20 await the students' confirmation."
    }
   }
  ],
@@ -18,20 +18,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Ksenija Kočić",
     "studentNumber": "19/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -48,10 +47,10 @@
       "en": "Photograph of the “null” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "01-ksenija-kocic-foto-02",
@@ -64,10 +63,10 @@
       "en": "Photograph of the “null” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja;.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "01-ksenija-kocic-foto-03",
@@ -80,10 +79,10 @@
       "en": "Photograph of the “null” prototype"
      },
      "caption": {
-      "sr": "Red 3 u nizu slikanja;.",
+      "sr": "Red 3 u nizu slikanja.",
       "en": "Frame 3 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "01-ksenija-kocic-foto-04",
@@ -96,10 +95,10 @@
       "en": "Photograph of the “null” prototype"
      },
      "caption": {
-      "sr": "Red 4 u nizu slikanja;.",
+      "sr": "Red 4 u nizu slikanja.",
       "en": "Frame 4 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "01-ksenija-kocic-foto-05",
@@ -112,10 +111,10 @@
       "en": "Photograph of the “null” prototype"
      },
      "caption": {
-      "sr": "Red 5 u nizu slikanja;.",
+      "sr": "Red 5 u nizu slikanja.",
       "en": "Frame 5 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "01-ksenija-kocic-foto-06",
@@ -128,10 +127,10 @@
       "en": "Photograph of the “null” prototype"
      },
      "caption": {
-      "sr": "Red 6 u nizu slikanja;.",
+      "sr": "Red 6 u nizu slikanja.",
       "en": "Frame 6 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "01-ksenija-kocic-foto-07",
@@ -144,10 +143,10 @@
       "en": "Photograph of the “null” prototype"
      },
      "caption": {
-      "sr": "Red 7 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 7 u nizu slikanja.",
       "en": "Frame 7 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -158,20 +157,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Hana Demiri",
     "studentNumber": "22/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -188,10 +186,10 @@
       "en": "Photograph of the “null” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "02-hana-demiri-foto-02",
@@ -204,10 +202,10 @@
       "en": "Photograph of the “null” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja;.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "02-hana-demiri-foto-03",
@@ -220,10 +218,10 @@
       "en": "Photograph of the “null” prototype"
      },
      "caption": {
-      "sr": "Red 3 u nizu slikanja;.",
+      "sr": "Red 3 u nizu slikanja.",
       "en": "Frame 3 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "02-hana-demiri-foto-04",
@@ -236,10 +234,10 @@
       "en": "Photograph of the “null” prototype"
      },
      "caption": {
-      "sr": "Red 4 u nizu slikanja;.",
+      "sr": "Red 4 u nizu slikanja.",
       "en": "Frame 4 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "02-hana-demiri-foto-05",
@@ -252,10 +250,10 @@
       "en": "Photograph of the “null” prototype"
      },
      "caption": {
-      "sr": "Red 5 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 5 u nizu slikanja.",
       "en": "Frame 5 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -266,20 +264,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Lazović Sara",
     "studentNumber": "106/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -296,10 +293,10 @@
       "en": "Photograph of the “Slovo Prsti” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "03-slovo-prsti-foto-02",
@@ -312,10 +309,10 @@
       "en": "Photograph of the “Slovo Prsti” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja;.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "03-slovo-prsti-foto-03",
@@ -328,10 +325,10 @@
       "en": "Photograph of the “Slovo Prsti” prototype"
      },
      "caption": {
-      "sr": "Red 3 u nizu slikanja;.",
+      "sr": "Red 3 u nizu slikanja.",
       "en": "Frame 3 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "03-slovo-prsti-foto-04",
@@ -344,10 +341,10 @@
       "en": "Photograph of the “Slovo Prsti” prototype"
      },
      "caption": {
-      "sr": "Red 4 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 4 u nizu slikanja.",
       "en": "Frame 4 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -358,20 +355,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Maša Jotić",
     "studentNumber": "134/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -388,10 +384,10 @@
       "en": "Photograph of the “Touch” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "04-touch-foto-02",
@@ -404,10 +400,10 @@
       "en": "Photograph of the “Touch” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -418,18 +414,17 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "nepoznat autor"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -446,10 +441,10 @@
       "en": "Photograph of the “Music box” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -460,20 +455,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Igor Stablović",
     "studentNumber": "6/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -490,10 +484,10 @@
       "en": "Photograph of the “iggyblox” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "06-iggyblox-foto-02",
@@ -506,10 +500,10 @@
       "en": "Photograph of the “iggyblox” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -520,20 +514,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Imre Halas",
     "studentNumber": "1/2024"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -550,10 +543,10 @@
       "en": "Photograph of the “hansgadget — starlight” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "07-hansgadget-starlight-foto-02",
@@ -566,10 +559,10 @@
       "en": "Photograph of the “hansgadget — starlight” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja;.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "07-hansgadget-starlight-foto-03",
@@ -582,10 +575,10 @@
       "en": "Photograph of the “hansgadget — starlight” prototype"
      },
      "caption": {
-      "sr": "Red 3 u nizu slikanja;.",
+      "sr": "Red 3 u nizu slikanja.",
       "en": "Frame 3 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "07-hansgadget-starlight-foto-04",
@@ -598,10 +591,10 @@
       "en": "Photograph of the “hansgadget — starlight” prototype"
      },
      "caption": {
-      "sr": "Red 4 u nizu slikanja;.",
+      "sr": "Red 4 u nizu slikanja.",
       "en": "Frame 4 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "07-hansgadget-starlight-foto-05",
@@ -614,10 +607,10 @@
       "en": "Photograph of the “hansgadget — starlight” prototype"
      },
      "caption": {
-      "sr": "Red 5 u nizu slikanja;.",
+      "sr": "Red 5 u nizu slikanja.",
       "en": "Frame 5 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "07-hansgadget-starlight-foto-06",
@@ -630,10 +623,10 @@
       "en": "Photograph of the “hansgadget — starlight” prototype"
      },
      "caption": {
-      "sr": "Red 6 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 6 u nizu slikanja.",
       "en": "Frame 6 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -644,20 +637,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Velemir Tijana",
     "studentNumber": "51/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -674,10 +666,10 @@
       "en": "Photograph of the “zekino polje” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "08-zekino-polje-foto-02",
@@ -690,10 +682,10 @@
       "en": "Photograph of the “zekino polje” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja;.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "08-zekino-polje-foto-03",
@@ -706,10 +698,10 @@
       "en": "Photograph of the “zekino polje” prototype"
      },
      "caption": {
-      "sr": "Red 3 u nizu slikanja;.",
+      "sr": "Red 3 u nizu slikanja.",
       "en": "Frame 3 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "08-zekino-polje-foto-04",
@@ -722,10 +714,10 @@
       "en": "Photograph of the “zekino polje” prototype"
      },
      "caption": {
-      "sr": "Red 4 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 4 u nizu slikanja.",
       "en": "Frame 4 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -736,20 +728,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Karla Krdzovac",
     "studentNumber": "109/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -766,10 +757,10 @@
       "en": "Photograph of the “zen garden” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "09-zen-garden-foto-02",
@@ -782,10 +773,10 @@
       "en": "Photograph of the “zen garden” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja;.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "09-zen-garden-foto-03",
@@ -798,10 +789,10 @@
       "en": "Photograph of the “zen garden” prototype"
      },
      "caption": {
-      "sr": "Red 3 u nizu slikanja;.",
+      "sr": "Red 3 u nizu slikanja.",
       "en": "Frame 3 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "09-zen-garden-foto-04",
@@ -814,10 +805,10 @@
       "en": "Photograph of the “zen garden” prototype"
      },
      "caption": {
-      "sr": "Red 4 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 4 u nizu slikanja.",
       "en": "Frame 4 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -828,20 +819,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Maša Marković",
     "studentNumber": "121/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -858,10 +848,10 @@
       "en": "Photograph of the “lavirint” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "10-lavirint-foto-02",
@@ -874,10 +864,10 @@
       "en": "Photograph of the “lavirint” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja;.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "10-lavirint-foto-03",
@@ -890,10 +880,10 @@
       "en": "Photograph of the “lavirint” prototype"
      },
      "caption": {
-      "sr": "Red 3 u nizu slikanja;.",
+      "sr": "Red 3 u nizu slikanja.",
       "en": "Frame 3 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "10-lavirint-foto-04",
@@ -906,10 +896,10 @@
       "en": "Photograph of the “lavirint” prototype"
      },
      "caption": {
-      "sr": "Red 4 u nizu slikanja;.",
+      "sr": "Red 4 u nizu slikanja.",
       "en": "Frame 4 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "10-lavirint-foto-05",
@@ -922,10 +912,10 @@
       "en": "Photograph of the “lavirint” prototype"
      },
      "caption": {
-      "sr": "Red 5 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 5 u nizu slikanja.",
       "en": "Frame 5 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -936,18 +926,17 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "nepoznat autor"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -964,10 +953,10 @@
       "en": "Photograph of the “Zmijica” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -978,18 +967,17 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "nepoznat autor"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -1006,10 +994,10 @@
       "en": "Photograph of the “Sudoku” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "12-sudoku-foto-02",
@@ -1022,10 +1010,10 @@
       "en": "Photograph of the “Sudoku” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -1036,20 +1024,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Sofia Ocanto Jovičić",
     "studentNumber": "138/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -1066,10 +1053,10 @@
       "en": "Photograph of the “kubismo” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "13-kubismo-foto-02",
@@ -1082,10 +1069,10 @@
       "en": "Photograph of the “kubismo” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja;.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "13-kubismo-foto-03",
@@ -1098,10 +1085,10 @@
       "en": "Photograph of the “kubismo” prototype"
      },
      "caption": {
-      "sr": "Red 3 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 3 u nizu slikanja.",
       "en": "Frame 3 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -1112,20 +1099,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Marija Stojković",
     "studentNumber": "126/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -1142,10 +1128,10 @@
       "en": "Photograph of the “končići” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -1156,20 +1142,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Ivana Cvetković",
     "studentNumber": "161/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -1186,10 +1171,10 @@
       "en": "Photograph of the “padalica” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "15-padalica-foto-02",
@@ -1202,10 +1187,10 @@
       "en": "Photograph of the “padalica” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja;.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "15-padalica-foto-03",
@@ -1218,10 +1203,10 @@
       "en": "Photograph of the “padalica” prototype"
      },
      "caption": {
-      "sr": "Red 3 u nizu slikanja;.",
+      "sr": "Red 3 u nizu slikanja.",
       "en": "Frame 3 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "15-padalica-foto-04",
@@ -1234,10 +1219,10 @@
       "en": "Photograph of the “padalica” prototype"
      },
      "caption": {
-      "sr": "Red 4 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 4 u nizu slikanja.",
       "en": "Frame 4 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -1248,20 +1233,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Anja Bukurović",
     "studentNumber": "85/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -1278,10 +1262,10 @@
       "en": "Photograph of the “obojilica” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "16-obojilica-foto-02",
@@ -1294,10 +1278,10 @@
       "en": "Photograph of the “obojilica” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja;.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "16-obojilica-foto-03",
@@ -1310,10 +1294,10 @@
       "en": "Photograph of the “obojilica” prototype"
      },
      "caption": {
-      "sr": "Red 3 u nizu slikanja;.",
+      "sr": "Red 3 u nizu slikanja.",
       "en": "Frame 3 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "16-obojilica-foto-04",
@@ -1326,10 +1310,10 @@
       "en": "Photograph of the “obojilica” prototype"
      },
      "caption": {
-      "sr": "Red 4 u nizu slikanja;.",
+      "sr": "Red 4 u nizu slikanja.",
       "en": "Frame 4 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "16-obojilica-foto-05",
@@ -1342,10 +1326,10 @@
       "en": "Photograph of the “obojilica” prototype"
      },
      "caption": {
-      "sr": "Red 5 u nizu slikanja;.",
+      "sr": "Red 5 u nizu slikanja.",
       "en": "Frame 5 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "16-obojilica-foto-06",
@@ -1358,10 +1342,10 @@
       "en": "Photograph of the “obojilica” prototype"
      },
      "caption": {
-      "sr": "Red 6 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 6 u nizu slikanja.",
       "en": "Frame 6 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -1372,22 +1356,22 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Lukić Miljana",
     "studentNumber": "58/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "attributionStatus": "pending",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
-    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika; attribucija čeka potvrdu studenta.",
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika; atribucija čeka potvrdu studenta.",
     "en": "Prototype from the third class (2026-10-16), teacher's record; attribution pending student confirmation."
    },
    "photos": [
@@ -1402,10 +1386,10 @@
       "en": "Photograph of the “putanja” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "17-putanja-foto-02",
@@ -1418,10 +1402,10 @@
       "en": "Photograph of the “putanja” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja;.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "17-putanja-foto-03",
@@ -1434,10 +1418,10 @@
       "en": "Photograph of the “putanja” prototype"
      },
      "caption": {
-      "sr": "Red 3 u nizu slikanja;.",
+      "sr": "Red 3 u nizu slikanja.",
       "en": "Frame 3 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "17-putanja-foto-04",
@@ -1450,10 +1434,10 @@
       "en": "Photograph of the “putanja” prototype"
      },
      "caption": {
-      "sr": "Red 4 u nizu slikanja;.",
+      "sr": "Red 4 u nizu slikanja.",
       "en": "Frame 4 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "17-putanja-foto-05",
@@ -1466,10 +1450,10 @@
       "en": "Photograph of the “putanja” prototype"
      },
      "caption": {
-      "sr": "Red 5 u nizu slikanja;.",
+      "sr": "Red 5 u nizu slikanja.",
       "en": "Frame 5 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "17-putanja-foto-06",
@@ -1482,10 +1466,10 @@
       "en": "Photograph of the “putanja” prototype"
      },
      "caption": {
-      "sr": "Red 6 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 6 u nizu slikanja.",
       "en": "Frame 6 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -1496,22 +1480,22 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Katarina Petrović",
     "studentNumber": "79/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "attributionStatus": "pending",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
-    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika; attribucija čeka potvrdu studenta.",
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika; atribucija čeka potvrdu studenta.",
     "en": "Prototype from the third class (2026-10-16), teacher's record; attribution pending student confirmation."
    },
    "photos": [
@@ -1526,10 +1510,10 @@
       "en": "Photograph of the “brza putanja” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "18-brza-putanja-foto-02",
@@ -1542,10 +1526,10 @@
       "en": "Photograph of the “brza putanja” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja;.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "18-brza-putanja-foto-03",
@@ -1558,10 +1542,10 @@
       "en": "Photograph of the “brza putanja” prototype"
      },
      "caption": {
-      "sr": "Red 3 u nizu slikanja;.",
+      "sr": "Red 3 u nizu slikanja.",
       "en": "Frame 3 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "18-brza-putanja-foto-04",
@@ -1574,10 +1558,10 @@
       "en": "Photograph of the “brza putanja” prototype"
      },
      "caption": {
-      "sr": "Red 4 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 4 u nizu slikanja.",
       "en": "Frame 4 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -1588,22 +1572,22 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Sanja Hornjaček",
     "studentNumber": "84/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "attributionStatus": "pending",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
-    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika; attribucija čeka potvrdu studenta.",
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika; atribucija čeka potvrdu studenta.",
     "en": "Prototype from the third class (2026-10-16), teacher's record; attribution pending student confirmation."
    },
    "photos": [
@@ -1618,10 +1602,10 @@
       "en": "Photograph of the “2d lavirint” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "19-2d-lavirint-foto-02",
@@ -1634,10 +1618,10 @@
       "en": "Photograph of the “2d lavirint” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -1648,20 +1632,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Aleksa Tašković",
     "studentNumber": "36/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -1678,10 +1661,10 @@
       "en": "Photograph of the “vijugava staza” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "21-vijugava-staza-foto-02",
@@ -1694,10 +1677,10 @@
       "en": "Photograph of the “vijugava staza” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -1708,20 +1691,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Lena Kovačić",
     "studentNumber": "132/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -1738,10 +1720,10 @@
       "en": "Photograph of the “lenin lavirint” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "22-lenin-lavirint-foto-02",
@@ -1754,10 +1736,10 @@
       "en": "Photograph of the “lenin lavirint” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -1768,20 +1750,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Katarina Ušjak",
     "studentNumber": "86/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -1798,10 +1779,10 @@
       "en": "Photograph of the “edukativna” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "23-edukativna-foto-02",
@@ -1814,10 +1795,10 @@
       "en": "Photograph of the “edukativna” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -1828,20 +1809,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Mihailo Maksimović",
     "studentNumber": "68/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -1858,10 +1838,10 @@
       "en": "Photograph of the “amaze” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -1872,20 +1852,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Petra Kalenj",
     "studentNumber": "18/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -1902,10 +1881,10 @@
       "en": "Photograph of the “stapici” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -1916,20 +1895,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Jana Grujić",
     "studentNumber": "108/23"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -1946,10 +1924,10 @@
       "en": "Photograph of the “null” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -1960,20 +1938,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Iva Mijanović",
     "studentNumber": "28/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -1990,10 +1967,10 @@
       "en": "Photograph of the “fliper” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "27-fliper-foto-02",
@@ -2006,10 +1983,10 @@
       "en": "Photograph of the “fliper” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja;.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "27-fliper-foto-03",
@@ -2022,10 +1999,10 @@
       "en": "Photograph of the “fliper” prototype"
      },
      "caption": {
-      "sr": "Red 3 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 3 u nizu slikanja.",
       "en": "Frame 3 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -2036,20 +2013,19 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Lena Dukić",
     "studentNumber": "131/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name",
      "studentNumber"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -2066,10 +2042,10 @@
       "en": "Photograph of the “stilopol” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "28-stilopol-foto-02",
@@ -2082,10 +2058,10 @@
       "en": "Photograph of the “stilopol” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   },
@@ -2096,18 +2072,17 @@
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
-   "originWeek": 3,
    "documentedWeek": 3,
    "author": {
     "name": "Filip Doljanovič"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-18-cas-03",
     "fields": [
      "name"
     ]
    },
-   "sourceId": "teacher-2026-10-16-cas-03",
+   "sourceId": "teacher-2026-10-18-cas-03",
    "description": {
     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
     "en": "Prototype from the third class (2026-10-16), teacher's record."
@@ -2124,10 +2099,10 @@
       "en": "Photograph of the “Castle” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja;.",
+      "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "29-castle-foto-02",
@@ -2140,10 +2115,10 @@
       "en": "Photograph of the “Castle” prototype"
      },
      "caption": {
-      "sr": "Red 2 u nizu slikanja;.",
+      "sr": "Red 2 u nizu slikanja.",
       "en": "Frame 2 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     },
     {
      "id": "29-castle-foto-03",
@@ -2156,10 +2131,10 @@
       "en": "Photograph of the “Castle” prototype"
      },
      "caption": {
-      "sr": "Red 3 u nizu slikanja; poslednja: korisnica proba prototip.",
+      "sr": "Red 3 u nizu slikanja.",
       "en": "Frame 3 in the photographic sequence."
      },
-     "sourceId": "teacher-2026-10-16-cas-03"
+     "sourceId": "teacher-2026-10-18-cas-03"
     }
    ]
   }

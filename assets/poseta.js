@@ -6,7 +6,7 @@ import { renderPoseta } from './poseta-core.js';
 let visit = null, prototypes = null;
 function render() { if (visit && prototypes) $('#visit-content').innerHTML = renderPoseta(visit, prototypes); }
 mount({ view: 'visit', render, title: () => tr('The visit', 'Poseta udruženju') });
-Promise.all([loadJSON('data/poseta.json'), loadJSON('data/prototipovi.json')]).then(([v, p]) => {
+Promise.all([loadJSON('data/poseta.json'), loadJSON('data/prototipovi-javno.json')]).then(([v, p]) => {
   visit = v; prototypes = p; render();
 }).catch(error => {
   // Keep the last generated, complete Serbian record when the live fetch fails.

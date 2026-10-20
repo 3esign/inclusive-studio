@@ -13,10 +13,13 @@ export const NAV = [
   { id: 'cover', href: 'naslovna.html', group: 'primary', en: 'Cover', sr: 'Naslovna' },
   { id: 'flow', href: 'index.html', group: 'primary', en: 'Held in class', sr: 'Održano' },
   { id: 'next', href: 'sledeci.html', group: 'primary', en: 'Next class', sr: 'Sledeći čas' },
+  // 20.10.2026 (kanon predmeta): sources are the fifth main destination of every course
+  // site — naslovna, održano, sledeći čas, izvori, oblak ideja.
+  { id: 'library', href: 'resources.html', group: 'primary', en: 'Sources', sr: 'Izvori' },
   { id: 'cloud', href: 'oblak.html', group: 'primary', en: 'Cloud of ideas', sr: 'Oblak ideja' },
-  // 12.10.2026 (course lead): the navigation shows the four notebook destinations only.
-  // The material pages stay published and reachable through in-content links; they are
-  // not navigation options, so the partner item lives in the archive group.
+  // 12.10.2026 (course lead): the material pages stay published and reachable through
+  // in-content links; they are not navigation options, so the partner item lives in the
+  // archive group.
   { id: 'partner', href: 'udruzenje.html', group: 'archive', en: 'The association', sr: 'Udruženje' },
   // The Material dropdown reads in the order the subject works: what a class is made of,
   // then the work across the semester, then the subject's own frame, then the open ends.
@@ -32,7 +35,6 @@ export const NAV = [
   { id: 'subject', href: 'predmet.html', group: 'archive', en: 'The course', sr: 'Predmet' },
   { id: 'schedule', href: 'program.html', group: 'archive', en: 'Calendar', sr: 'Kalendar' },
   { id: 'ages', href: 'godista.html', group: 'archive', en: 'By age', sr: 'Po godištima' },
-  { id: 'library', href: 'resources.html', group: 'archive', en: 'Library and sources', sr: 'Biblioteka i izvori' },
   { id: 'ideas', href: 'ideja.html', group: 'archive', en: 'Idea atelier', sr: 'Radionica ideja' },
   { id: 'participate', href: 'ucestvuj.html', group: 'archive', en: 'Public board', sr: 'Javna tabla' },
   { id: 'editor', href: 'uredi.html', group: 'archive', en: 'Teacher: material', sr: 'Nastavnik: gradivo' },

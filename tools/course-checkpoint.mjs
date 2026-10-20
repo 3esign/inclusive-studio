@@ -111,6 +111,12 @@ function readStable(p, max = LIMITS.fileBytes) {
 }
 function inventory(root) {
   const rows = [], keys = new Set(); let total = 0;
+  // Gitignored paths are local intake (e.g. raw phone photos), never part of the
+  // course site: they stay out of the snapshot scope and its size limits.
+  // A restored verification copy has no .git, so no ignore semantics apply there.
+  const ignored = exists(path.join(root, '.git'))
+    ? new Set(git(root, ['ls-files', '-o', '-i', '--exclude-standard', '-z']).split('\0').filter(Boolean))
+    : new Set();
   function visit(dir, prefix = '') {
     for (const entry of fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name, 'en'))) {
       if (EXCLUDED.test(entry.name)) continue;
@@ -123,7 +129,7 @@ function inventory(root) {
       const p = path.join(root, rel), s = fs.lstatSync(p);
       if (s.isDirectory()) visit(p, rel);
       else {
-        if (!included(rel)) continue;
+        if (!included(rel) || ignored.has(rel)) continue;
         if (!s.isFile() || s.size > LIMITS.fileBytes) fail('not a bounded regular file: ' + rel);
         if (keys.has(rel.toLowerCase())) fail('case-colliding paths');
         keys.add(rel.toLowerCase()); total += s.size;
@@ -170,7 +176,7 @@ export function capture({ root, store, onFile = () => {} }) {
     if (fresh.sha256 !== file.sha256 || !same(fresh.identity, file.identity)) fail('project bytes changed while capturing: ' + file.path);
   }
   const manifest = { format: FORMAT, kind: 'existing-state', at: new Date().toISOString(), root: ctx.root, git: beforeGit,
-    scope: { directories: [...DIRS], limits: LIMITS, includesRelevantUntracked: true, excludesSecretsAndNestedProjects: true }, files };
+    scope: { directories: [...DIRS], limits: LIMITS, includesRelevantUntracked: true, excludesGitIgnoredIntake: true, excludesSecretsAndNestedProjects: true }, files };
   const bytes = jsonBytes(manifest), id = sha(bytes);
   writeImmutable(path.join(ctx.store, 'manifests', id + '.json'), bytes);
   return { ok: true, id, kind: manifest.kind, files: files.length, bytes: files.reduce((n, f) => n + f.bytes, 0), head: beforeGit.head, store: ctx.store };

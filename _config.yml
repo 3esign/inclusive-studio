@@ -1,5 +1,19 @@
-# Only the visit set stays unserved until the teacher confirms its captions.
+# GitHub Pages serves the whole repository except the Jekyll "exclude" list below.
+# Public package = public excerpt (data/prototipovi-javno.json) + the teacher's list
+# (data/cas-03/spisak.json, the approved surface of uncertainty) + photos of published works.
+# The full register, the internal intake of cas-03 and photos of works whose attribution
+# is pending or deliberately unpublished stay unserved — cleaning the render is not enough.
+# The visit set also stays unserved until the teacher confirms its captions.
 # The third-class prototype folders are published again: the teacher's list is the
 # record of how many photographs each work got, in shooting order (see assets/photo-publication.js).
 exclude:
+  - data/prototipovi.json
   - data/prototipovi/poseta-udruzenje
+  - data/prototipovi/17-putanja
+  - data/prototipovi/18-brza-putanja
+  - data/prototipovi/19-2d-lavirint
+  - data/cas-03/predlog-registra.json
+  - data/cas-03/prihvat.json
+  - data/cas-03/uloge-slika.json
+  - data/cas-03/verifikacija-prijema.md
+  - data/cas-03/slike

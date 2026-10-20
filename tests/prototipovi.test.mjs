@@ -136,6 +136,25 @@ test('optional identity and origin fields must be omitted or contain valid expli
   assert.deepEqual(validatePrototypes(d), []);
   assert.match(renderPrototypes(d), /data-author-number>0049\/24<\/span>/, 'supplied formatting is preserved');
 });
+test('attribution status is confirmed by default or explicitly pending, and the page says which', () => {
+  const { d, drawing } = additionalWorks();
+  assert.equal(drawing.attributionStatus, undefined, 'the existing register stays valid without the new field');
+  assert.doesNotMatch(renderPrototypes(d), /attribution-pending/, 'confirmed works carry no pending mark');
+  drawing.attributionStatus = 'pending';
+  assert.deepEqual(validatePrototypes(d), [], 'a work may wait for the student confirmation of its attribution');
+  // Podrazumevano javno stanje: rad sa nepotvrđenom atribucijom ne izlazi u pregled.
+  assert.doesNotMatch(renderPrototypes(d), /data-attribution-status="pending"/, 'a pending work stays out of the public render');
+  assert.doesNotMatch(renderPrototypes(d), new RegExp('data-prototype="' + drawing.id + '"'), 'the pending card itself is withheld');
+  // Pregledni prikaz (nastavnikov pogled ili izričita odluka): kartica postoji i nosi oznaku.
+  assert.match(renderPrototypes(d, { showPending: true }), /data-attribution-status="pending"/, 'the review view states the pending status');
+  setLanguage('sr');
+  assert.match(renderPrototypes(d, { showPending: true }), /atribucija čeka potvrdu/, 'the Serbian review view says the attribution awaits confirmation');
+  for (const mutate of [i => { i.attributionStatus = 'maybe'; }, i => { i.attributionStatus = 'confirmed-but-ask-again'; }, i => { i.attributionStatus = null; }]) {
+    const broken = additionalWorks(); mutate(broken.drawing);
+    assert.ok(validatePrototypes(broken.d).length, 'unknown attribution status is rejected');
+    assert.throws(() => renderPrototypes(broken.d));
+  }
+});
 test('display-only rotation preserves source bytes and metadata; the strip thumbnails stay upright like every other work', () => {
   // 12.10.2026 (course lead's order): a rotated drawing is shown as a plate inside its card,
   // but the strip thumbnails keep the upright photograph so all tiles look the same.

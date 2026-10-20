@@ -39,7 +39,8 @@ export function validatePrototypes(data) {
   }
   const ids = new Set();
   for (const item of data.items) {
-    fail(keys(item, ['id', 'title', 'kind', 'author', 'authorRole', 'attribution', 'originWeek', 'documentedWeek', 'medium', 'status', 'sourceId', 'description', 'photos']), 'Unknown prototype fields.');
+    fail(keys(item, ['id', 'title', 'kind', 'author', 'authorRole', 'attribution', 'attributionStatus', 'originWeek', 'documentedWeek', 'medium', 'status', 'sourceId', 'description', 'photos']), 'Unknown prototype fields.');
+    fail(!has(item, 'attributionStatus') || ['confirmed', 'pending'].includes(item.attributionStatus), 'Unknown attribution status: a work is either confirmed or pending its attribution.');
     fail(ID.test(item?.id || '') && !ids.has(item.id), 'Invalid or duplicate prototype id.'); ids.add(item?.id);
     fail(text(item?.title) && bilingual(item?.description), 'Prototype title and bilingual description required.');
     const numbered = has(item?.author, 'studentNumber'), originKnown = has(item, 'originWeek');
@@ -91,14 +92,17 @@ function kindLabel(item) {
 function card(item, index) {
   const role = item.authorRole ? ` · ${item.authorRole === 'teacher' ? tr('Teacher’s example', 'Nastavnikov primer') : tr('Student work', 'Studentski rad')}` : '';
   const studentNumber = has(item.author, 'studentNumber') ? `<span data-author-number>${esc(item.author.studentNumber)}</span>` : '';
+  // Atribucija može biti nepotvrđena (čeka studentovu potvrdu) — ime i indeks ostaju uz
+  // svoj izvor, ali stranica ne sme da ih tvrdi kao potvrđeno autorstvo.
+  const pending = item.attributionStatus === 'pending' ? `<span data-attribution-pending> · ${tr('attribution pending student confirmation', 'atribucija čeka potvrdu studenta')}</span>` : '';
   const origin = has(item, 'originWeek') ? ` · ${tr('work begun in week', 'izrada započeta u nedelji')} ${item.originWeek}` : '';
   const status = item.status === 'documented' ? tr('Documented work', 'Dokumentovan rad') : tr('Brought work', 'Donet rad');
-  return `<article class="prototype-card" id="${esc(item.id)}" data-prototype="${esc(item.id)}" data-work-kind="${esc(item.kind || 'prototype')}"${item.authorRole ? ` data-author-role="${esc(item.authorRole)}"` : ''}><header><p class="prototype-meta"><span>${number(index + 1)}</span> <a href="index.html?w=${item.documentedWeek}">${weekLabel(item.documentedWeek)}</a> · ${kindLabel(item)}${role}</p><h2>${esc(item.title)}</h2><p class="prototype-author" data-prototype-attribution="${esc(item.id)}"><span data-author-name>${esc(item.author.name)}</span>${studentNumber}</p></header><div class="prototype-photos">${item.photos.map((p, j) => photograph(p, index === 0 && j === 0)).join('')}</div><p class="prototype-description">${esc(tx(item.description))}</p><p class="prototype-status">${status}${origin}</p></article>`;
+  return `<article class="prototype-card" id="${esc(item.id)}" data-prototype="${esc(item.id)}" data-work-kind="${esc(item.kind || 'prototype')}"${item.authorRole ? ` data-author-role="${esc(item.authorRole)}"` : ''}><header><p class="prototype-meta"><span>${number(index + 1)}</span> <a href="index.html?w=${item.documentedWeek}">${weekLabel(item.documentedWeek)}</a> · ${kindLabel(item)}${role}</p><h2>${esc(item.title)}</h2><p class="prototype-author" data-prototype-attribution="${esc(item.id)}"${item.attributionStatus ? ` data-attribution-status="${esc(item.attributionStatus)}"` : ''}><span data-author-name>${esc(item.author.name)}</span>${studentNumber}${pending}</p></header><div class="prototype-photos">${item.photos.map((p, j) => photograph(p, index === 0 && j === 0)).join('')}</div><p class="prototype-description">${esc(tx(item.description))}</p><p class="prototype-status">${status}${origin}</p></article>`;
 }
 
-export function renderPrototypes(data) {
+export function renderPrototypes(data, opts) {
   ready(data);
-  data = publishedPrototypes(data);
+  data = publishedPrototypes(data, opts);
   const n = data.items.length;
   const documentedWeeks = weeksOf(data, 'documentedWeek'), originWeeks = weeksOf(data, 'originWeek');
   const materialLinks = documentedWeeks.map(week => `<a class="button secondary" href="index.html?w=${week}">${tr('Documented material', 'Dokumentovano gradivo')} · ${weekLabel(week)}</a>`).join('');

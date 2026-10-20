@@ -61,8 +61,8 @@ const counts = {
 };
 
 function mainNav(page) {
-  // 12.10.2026 (course lead): the navigation carries the four notebook destinations only;
-  // the material pages stay published and reachable through in-content links.
+  // 20.10.2026 (kanon predmeta): the navigation carries the five main destinations
+  // (sources included); the material pages stay published through in-content links.
   const current = item => (item.href === page ? ' aria-current="page"' : '');
   const head = primary.map(item => `<a data-nav="${item.id}" href="${item.href}"${current(item)}>${esc(item.sr)}</a>`).join('\n');
   return `<nav class="main-nav" aria-label="Glavna navigacija">${head}</nav>`;

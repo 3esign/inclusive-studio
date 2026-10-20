@@ -6,13 +6,20 @@
 //          — predlog u obliku koji assets/prototipovi-core.js validira; registar
 //            data/prototipovi.json se NE menja automatski.
 import { createHash } from 'node:crypto';
-import { readdirSync, readFileSync, statSync, existsSync, writeFileSync } from 'node:fs';
-import { join, basename } from 'node:path';
+import { readdirSync, readFileSync, statSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
+import { join, basename, resolve } from 'node:path';
 
 const root = new URL('..', import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1');
 const dir = join(root, 'data', 'cas-03');
+// Opciona izlazna fascikla (prvi argument) — regeneracija u izolovanom izlazu bez diranja
+// postojećih fajlova (npr. Semirovog prihvat.json-a). Bez argumenta piše kao i ranije.
+const outDir = process.argv[2] ? resolve(process.argv[2]) : dir;
+mkdirSync(outDir, { recursive: true });
 const slikeDir = join(dir, 'slike');
 const spisak = JSON.parse(readFileSync(join(dir, 'spisak.json'), 'utf8'));
+// Izvor zapisa dolazi iz spiska (nastavnikov zapis od 18.10.2026); časan je održan 16.10,
+// ali dan časa nije dan zapisa — id i datum izvora moraju ostati onakvi kakvi su u spisku.
+const izvor = spisak.source;
 
 // JPEG/SOF + PNG dimenzije bez zavisnosti.
 function dimensions(buf) {
@@ -64,12 +71,15 @@ for (const rad of nalazi) {
     id,
     title: entry.rad || 'unnamed',
     kind: 'prototype', authorRole: 'student', medium: 'physical', status: 'documented',
-    originWeek: 3, documentedWeek: 3,
+    // Nedelja izrade nije zapisana u izvoru — originWeek se izostavlja (validator dozvoljava),
+    // jer jedino documentedWeek (treći čas) ima dokaz.
+    documentedWeek: 3,
     author: { name: entry.ime || 'nepoznat autor', ...(entry.indeks ? { studentNumber: entry.indeks } : {}) },
-    attribution: { sourceId: 'teacher-2026-10-16-cas-03', fields: entry.indeks ? ['name', 'studentNumber'] : ['name'] },
-    sourceId: 'teacher-2026-10-16-cas-03',
+    attribution: { sourceId: izvor.id, fields: entry.indeks ? ['name', 'studentNumber'] : ['name'] },
+    ...(entry.potvrditi ? { attributionStatus: 'pending' } : {}),
+    sourceId: izvor.id,
     description: {
-      sr: `Prototip sa trećeg časa (16.10.2026), zapis nastavnika${entry.potvrditi ? '; attribucija čeka potvrdu studenta' : ''}.`,
+      sr: `Prototip sa trećeg časa (16.10.2026), zapis nastavnika${entry.potvrditi ? '; atribucija čeka potvrdu studenta' : ''}.`,
       en: `Prototype from the third class (2026-10-16), teacher's record${entry.potvrditi ? '; attribution pending student confirmation' : ''}.`,
     },
     photos: rad.slike.filter(p => p.ok).map((p, i) => ({
@@ -77,8 +87,8 @@ for (const rad of nalazi) {
       src: `data/prototipovi/${id}/${p.file.toLowerCase()}`,
       sha256: p.sha256, width: p.width, height: p.height,
       alt: { sr: `Fotografija prototipa „${entry.rad}”`, en: `Photograph of the “${entry.rad}” prototype` },
-      caption: { sr: `Red ${i + 1} u nizu slikanja;${i + 1 === rad.slike.length ? ' poslednja: korisnica proba prototip' : ''}.`, en: `Frame ${i + 1} in the photographic sequence.` },
-      sourceId: 'teacher-2026-10-16-cas-03',
+      caption: { sr: `Red ${i + 1} u nizu slikanja.`, en: `Frame ${i + 1} in the photographic sequence.` },
+      sourceId: izvor.id,
     })),
   });
 }
@@ -86,15 +96,15 @@ for (const rad of nalazi) {
 const predlog = {
   schema: 'course-prototypes/v1',
   sources: [{
-    id: 'teacher-2026-10-16-cas-03', recordedOn: '2026-10-16',
-    description: spisak.napomena,
+    id: izvor.id, recordedOn: izvor.recordedOn,
+    description: izvor.description,
   }],
   items,
   observations: [],
 };
 
-writeFileSync(join(dir, 'prihvat.json'), JSON.stringify({ provereno: new Date().toISOString(), nalazi, evidencija }, null, 1));
-writeFileSync(join(dir, 'predlog-registra.json'), JSON.stringify(predlog, null, 1));
+writeFileSync(join(outDir, 'prihvat.json'), JSON.stringify({ provereno: new Date().toISOString(), nalazi, evidencija }, null, 1));
+writeFileSync(join(outDir, 'predlog-registra.json'), JSON.stringify(predlog, null, 1));
 
 const ukupno = nalazi.reduce((n, r) => n + r.slike.length, 0);
 console.log(`Radova u spisku: ${spisak.radovi.length}`);

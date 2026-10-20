@@ -23,8 +23,9 @@ const MODULES = {
 };
 
 test('the established primary destinations and lecture/source routes cannot disappear together with generated shells', () => {
-  // 12.10.2026 (course lead): four notebook destinations only; partner joined the archive.
-  const primary = [['cover', 'naslovna.html'], ['flow', 'index.html'], ['next', 'sledeci.html'], ['cloud', 'oblak.html']];
+  // 20.10.2026 (kanon predmeta): five main destinations — sources joined the primary row
+  // after the next class, so every course site carries the same five doors.
+  const primary = [['cover', 'naslovna.html'], ['flow', 'index.html'], ['next', 'sledeci.html'], ['library', 'resources.html'], ['cloud', 'oblak.html']];
   assert.deepEqual(NAV.filter(item => item.group === 'primary').map(item => [item.id, item.href]), primary);
   for (const [id, href] of [['library', 'resources.html'], ['lecture', 'predavanje.html']]) {
     assert.equal(NAV.find(item => item.id === id)?.href, href, id + ' retains its existing route');

@@ -91,3 +91,28 @@ test('the static baseline is stamped from the same renderer, and the course poin
   const landing = await readFile(new URL('index.html', root), 'utf8');
   assert.ok(landing.includes('href="cas-03.html"'), 'the held page links the list page');
 });
+
+test('the intake proposal keeps unconfirmed rows structurally unconfirmed and invents no photograph claims', async () => {
+  // 20.10.2026: redovi 17-20 nose „potvrditi“ u nastavnikovom spisku. Predlog registra
+  // sme da zadrži ime i indeks iz tog spiska (izvor je nastavnik), ali ne sme da ih
+  // tvrdi kao potvrđeno studentsko autorstvo — atribucija čeka studentovu potvrdu.
+  const predlog = await json('data/cas-03/predlog-registra.json');
+  assert.equal(predlog.items.length, 28, 'the proposal holds every photographed work; row 20 has no photograph');
+  assert.deepEqual(validatePrototypes(predlog), [], 'the proposal must satisfy the work-register rules');
+  const byRb = new Map(predlog.items.map(item => [Number(item.id.split('-')[0]), item]));
+  for (const row of spisak.radovi) {
+    const item = byRb.get(row.rb);
+    if (!item) continue;                                        // red bez fotografije (20) ne ulazi u predlog
+    if (row.potvrditi) {
+      assert.equal(item.attributionStatus, 'pending', `row ${row.rb} awaits student confirmation and must say so structurally`);
+      assert.ok(item.authorRole === 'student' && item.author?.name && item.attribution?.fields, `row ${row.rb} keeps its mandatory fields while pending`);
+    } else {
+      assert.notEqual(item.attributionStatus, 'pending', `row ${row.rb} is confirmed by the teacher's list and must not carry the pending mark`);
+    }
+  }
+  // Napomena o nizu slikanja opisuje strukturu celog talasa, nije dokaz za svaku fotografiju:
+  // nijedan pojedinačni potpis ne sme tvrditi da korisnica proba prototip.
+  for (const item of predlog.items) for (const photo of item.photos) {
+    assert.ok(!/proba prototip|user tries/i.test(photo.caption.sr + photo.caption.en), `${photo.id}: caption claims what no single photo can prove`);
+  }
+});

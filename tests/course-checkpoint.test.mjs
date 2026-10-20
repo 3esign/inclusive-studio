@@ -352,3 +352,17 @@ test('the course gate checks prototypes only in the restored copy and preserves 
     assert.equal(fs.existsSync(path.join(f.root, 'CHECKPOINT-RESTORE.json')), false);
   }
 });
+
+test('gitignored lokalni prijem ostaje van obuhvata snapshot-a', t => {
+  const f = fixture(t);
+  f.write('.gitignore', 'data/cas-03/slike/\n');
+  git(f.root, 'add', '.gitignore');
+  git(f.root, '-c', 'user.name=Fixture', '-c', 'user.email=fixture@example.invalid', '-c', 'core.hooksPath=', 'commit', '-qm', 'ignore intake');
+  f.write('data/cas-03/slike/17-putanja/01.jpg', 'sirova fotografija iz lokalnog prijema');
+  const snap = capture({ root: f.root, store: f.store });
+  const manifest = JSON.parse(fs.readFileSync(path.join(f.store, 'manifests', snap.id + '.json'), 'utf8'));
+  const paths = manifest.files.map(x => x.path);
+  assert.ok(!paths.includes('data/cas-03/slike/17-putanja/01.jpg'),
+    'gitignored prijem ne sme ulaziti u snapshot obuhvat');
+  assert.ok(paths.includes('data/material/w01.json'), 'praceni fajlovi ostaju u obuhvatu');
+});

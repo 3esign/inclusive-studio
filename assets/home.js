@@ -172,7 +172,7 @@ function landingRender() {
 
 async function loadLanding() {
   try {
-    const [tok, verzije, prototypes, visit] = await Promise.all([loadJSON('data/tok.json'), loadJSON('data/verzije.json'), loadJSON('data/prototipovi.json'), loadJSON('data/poseta.json')]);
+    const [tok, verzije, prototypes, visit] = await Promise.all([loadJSON('data/tok.json'), loadJSON('data/verzije.json'), loadJSON('data/prototipovi-javno.json'), loadJSON('data/poseta.json')]);
     const problems = validateTok(tok);
     if (problems.length) throw new Error(problems[0]);
     if (validatePrototypes(prototypes).length) throw new Error('Invalid prototype register.');

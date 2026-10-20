@@ -6,6 +6,7 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { setLanguage } from '../assets/core.js';
 import { validatePrototypes, renderPrototypes, prototypeTeaser } from '../assets/prototipovi-core.js';
+import { publishedPrototypes } from '../assets/photo-publication.js';
 
 const root = new URL('../', import.meta.url), actualRoot = await realpath(fileURLToPath(root));
 const check = process.argv.includes('--check');
@@ -36,6 +37,25 @@ for (const [src, photo] of photoMap) {
   const bytes = await readFile(file), size = dimensions(bytes);
   if (createHash('sha256').update(bytes).digest('hex') !== photo.sha256 || size.width !== photo.width || size.height !== photo.height) throw new Error('Photograph bytes or dimensions changed: ' + src);
 }
+// The public data set: the same registry seen through the publication gate. A work whose
+// attribution waits for the student's confirmation stays in the record (the full file) but
+// never travels to the reader — pages fetch this excerpt, so pending names, numbers and
+// photographs are not merely hidden by the renderer, they are not served at all.
+const publicData = (() => {
+  const gated = publishedPrototypes(data);
+  const published = new Set(gated.items.map(item => item.id));
+  return { ...gated, revizije: (data.revizije || []).filter(revision => published.has(revision.prototypeId)) };
+})();
+const publicText = JSON.stringify(publicData, null, 1) + '\n';
+const publicUrl = new URL('data/prototipovi-javno.json', root);
+{
+  const before = await readFile(publicUrl, 'utf8').catch(() => null);
+  if (before !== publicText) {
+    if (check) throw new Error('Regenerate the public prototype excerpt before release: data/prototipovi-javno.json');
+    await writeFile(publicUrl, publicText);
+  }
+}
+
 setLanguage('sr');
 const regions = [
   ['prototipovi.html', 'prototipovi', renderPrototypes(data)],
@@ -51,4 +71,4 @@ for (const [file, key, html] of regions) {
 }
 if (check && updates.length) throw new Error('Regenerate prototype views before release: ' + updates.map(u => u.file).join(', '));
 if (!check) for (const u of updates) await writeFile(u.url, u.after);
-console.log(JSON.stringify({ ok: true, mode: check ? 'check' : 'generate', prototypes: data.items.length, observations: data.observations.length, photographs: photoMap.size, rewritten: check ? 0 : updates.length }));
+console.log(JSON.stringify({ ok: true, mode: check ? 'check' : 'generate', prototypes: data.items.length, observations: data.observations.length, photographs: photoMap.size, rewritten: check ? 0 : updates.length, publicPrototypes: publicData.items.length }));

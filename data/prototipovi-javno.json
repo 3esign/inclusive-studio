@@ -1,0 +1,5260 @@
+{
+ "schema": "course-prototypes/v1",
+ "sources": [
+  {
+   "id": "teacher-2026-10-09",
+   "recordedOn": "2026-10-09",
+   "description": {
+    "sr": "Nastavnikov zapis uz pet dostavljenih fotografija: nazivi, imena autora, brojevi indeksa i podatak da su doneti prototipovi započeti na prvom času.",
+    "en": "The teacher’s record accompanying five supplied photographs: titles, author names, student numbers and the statement that the brought prototypes were begun in the first class."
+   }
+  },
+  {
+   "id": "teacher-2026-10-09-upadalica",
+   "recordedOn": "2026-10-09",
+   "description": {
+    "sr": "Nastavnikova dopuna prethodne zbirke donetih prototipova: naziv i atribucija šestog rada uz dostavljenu fotografiju.",
+    "en": "The teacher’s addition to the collection of brought prototypes: the title and attribution of the sixth work, with its supplied photograph."
+   }
+  },
+  {
+   "id": "teacher-2026-10-09-week-02",
+   "recordedOn": "2026-10-09",
+   "description": {
+    "sr": "Nastavnik je potvrdio da doneti prototipovi i najavljeni naredni krug fotografija pripadaju drugoj nedelji. Drugi čas održan je u petak, 09.10.2026; nastava je petkom. Izrada prototipova započeta je na prvom času.",
+    "en": "The teacher confirmed that the brought prototypes and the announced next batch of photographs belong to week two. The second class took place on Friday, 9 October 2026; classes meet on Fridays. The prototypes were begun in the first class."
+   }
+  },
+  {
+   "id": "teacher-2026-10-09-drawing-rattle",
+   "recordedOn": "2026-10-09",
+   "description": {
+    "sr": "Nastavnikova dopuna druge nedelje: tehnički crtež Lego4ll sa izričitom atribucijom i četiri fotografije njegovog prototipa zvečke, dizajniranog u Blenderu i 3D štampanog. Crtež je zasebna vrsta rada; poreklo izrade i indeks nisu navedeni. Fotografije iz udruženja slede u zasebnom krugu.",
+    "en": "The teacher’s addition to week two: the Lego4ll technical drawing with explicit attribution and four photographs of his rattle prototype, designed in Blender and 3D printed. The drawing is a distinct work type; the starting week and student number were not supplied. Photographs from the association will follow separately."
+   }
+  },
+  {
+   "id": "teacher-2026-10-09-correction",
+   "recordedOn": "2026-10-09",
+   "description": {
+    "sr": "Nastavnikova ispravka zbirke: fotografija isporučena za rad Zmijica prikazuje primer iz udruženja „Živimo zajedno”, donešen na prvi čas. Predmet pripada isključivo prvoj nedelji; atribucija studentu za ovu fotografiju je povučena. Fotografije iz posete udruženju se i dalje očekuju.",
+    "en": "The teacher’s correction to the collection: the photograph supplied for the work Zmijica shows the association’s example, brought to the first class. The object belongs exclusively to week one; the student attribution for this photograph is withdrawn. Photographs from the association visit are still awaited."
+   }
+  },
+  {
+   "id": "teacher-2026-10-12-correction",
+   "recordedOn": "2026-10-12",
+   "description": {
+    "sr": "Ispravka voditelja predmeta: rad Zmijica je studentski rad, ne primer iz udruženja. Prethodna ispravka od 09.10. pogrešno ga je vodila kao pozajmljeni primer. Rad se dokumentuje u nedelji 2 sa ostalim studentskim prototipovima; sa prikaza gradiva prvog časa je sklonjen. Atribucija je vraćena na originalno dostavljenu studentsku prijavu.",
+    "en": "The course lead's correction: the work Zmijica is a student work, not an association example. The earlier 9 October correction wrongly recorded it as a borrowed example. The work is documented in week 2 with the other student prototypes and is removed from the first class's material display. The attribution is restored to the originally supplied student record."
+   }
+  },
+  {
+   "id": "teacher-2026-10-12-field",
+   "recordedOn": "2026-10-12",
+   "description": {
+    "sr": "Nalog voditelja predmeta uz isporučen materijal posete udruženju „Živimo zajedno”: 45 fotografija i tri snimka (10 s, 23 s, 5 s), nastalih 09.10.2026. između 13:54 i 14:11 po lokalnom vremenu. Za objavu su izabrane fotografije bez lica; snimci i ostale fotografije ostaju u radnoj svesci. Zapažanja posete upisana su uz pet radova; spisak studenata na poseti vodi registar posete (data/poseta.json).",
+    "en": "The course lead’s instruction with the delivered material from the visit to the Živimo zajedno association: 45 photographs and three recordings (10 s, 23 s, 5 s), taken on 9 October 2026 between 13:54 and 14:11 local time. Photographs without faces were selected for publication; the recordings and the remaining photographs stay in the working notebook. Visit observations are recorded with five works; the list of students on the visit is kept in the visit register (data/poseta.json)."
+   }
+  },
+  {
+   "id": "teacher-2026-10-12-faces-ok",
+   "recordedOn": "2026-10-12",
+   "description": {
+    "sr": "Dopuna voditelja predmeta od 12.10.2026. (naveče): lica članova udruženja na fotografijama i snimcima mogu da se objave; natpisi „kadar bez lica“ se ukidaju i nema potrebe za njima; snimci se objavljuju uz nalaze. Imena korisnika i dalje se ne objavljuju, niti se lice vezuje za nalaz.",
+    "en": "The course lead’s follow-up of 12 October 2026 (evening): the faces of the association’s members may be published in photographs and recordings; the “frame without a face” captions are withdrawn as unnecessary; recordings are published beside their findings. Members’ names are still not published, nor is a face tied to a finding."
+   }
+  },
+  {
+   "id": "teacher-2026-10-12-fix",
+   "recordedOn": "2026-10-12",
+   "description": {
+    "sr": "Ispravka voditelja predmeta od 12.10.2026. uz snimak ekrana: fotografija rada Zgradica objavljena je bočno — izvorna datoteka nosi EXIF orijentaciju 6, a izvedenica bez oznake prikazuje senzorsku orijentaciju. Bajti fotografije i otisak se ne menjaju; ispravka je samo prikazno polje „rotation: 90”.",
+    "en": "The course lead’s fix of 12 October 2026 with a screenshot: the Zgradica photograph was published sideways — the source file carries EXIF orientation 6, and the derivative without the tag shows the sensor orientation. The photograph’s bytes and fingerprint stay unchanged; the fix is the display-only field “rotation: 90”."
+   }
+  },
+  {
+   "id": "teacher-2026-10-16-cas-03",
+   "recordedOn": "2026-10-16",
+   "description": {
+    "sr": "Brojevi su brojevi fotografija, ne ocene: svaki niz počinje kutijom odnosno slikom sa diplomskih, a završava se slikom iz okruženja gde korisnica proba prototip. Redosled je redosled slikanja.",
+    "en": "The numbers count photographs, not grades: each sequence starts with the box and the degree photographs and ends with the picture of the environment where a user tries the prototype. The order is the shooting order."
+   }
+  },
+  {
+   "id": "teacher-2026-10-19-nastavak",
+   "recordedOn": "2026-10-19",
+   "description": {
+    "sr": "Potvrda nastavnika od 19.10.2026: radovi „Music box”, „Zmijica” i „Sudoku” sa trećeg časa nastavci su prvotalasnih prototipova istih autora; u galeriji su označeni kao nastavak.",
+    "en": "The teacher’s confirmation of 19 October 2026: the “Music box”, “Zmijica” and “Sudoku” works from the third class continue the first-wave prototypes by the same authors; in the gallery they are marked as continuations."
+   }
+  },
+  {
+   "id": "teacher-2026-10-18-cas-03",
+   "recordedOn": "2026-10-18",
+   "description": {
+    "sr": "Nastavnikov spisak radova snimljenih na trećem času (16.10.2026), zapisivan redom slikanja. Broj uz svaki zapis je broj fotografija u nizu: niz počinje kutijom odnosno slikom sa diplomskih, a završava se slikom iz okruženja u kome korisnica proba prototip. Potvrda od 18.10.2026: Muzička kutija, Zmijica, Sudoku i Doljanovićev „Castle” već su u prvom talasu prototipa. Nastavnik je siguran u redosled do zapisa 16 (obojilica) uključno i od zapisa 21 (vijugava staza) uključno do kraja; zapisi 17–20 čeka se potvrda studenata.",
+    "en": "The teacher's list of works photographed at the third class (16 October 2026), recorded in shooting order. The number beside each entry is the count of photographs in the sequence: the sequence starts with the box and the degree photographs and ends with the picture of the environment in which a user tries the prototype. Confirmation of 18 October 2026: Muzička kutija, Zmijica, Sudoku and Doljanović's „Castle” already belong to the first wave of prototypes. The teacher is certain of the order up to entry 16 (obojilica) inclusive and from entry 21 (vijugava staza) inclusive to the end; entries 17–20 await the students' confirmation."
+   }
+  }
+ ],
+ "items": [
+  {
+   "id": "muzicka-kutija-2026",
+   "title": "Muzička Kutija",
+   "author": {
+    "name": "Nikola Pajić",
+    "studentNumber": "49/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-09",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "originWeek": 1,
+   "medium": "digital",
+   "status": "brought",
+   "sourceId": "teacher-2026-10-09",
+   "description": {
+    "sr": "Digitalni prototip prikazan na laptopu: scena sa cvetovima različitih boja i oblika, uz oznaku „Žuti cvet“.",
+    "en": "A digital prototype shown on a laptop: a scene of flowers in different colors and shapes, with the label “Žuti cvet” (“Yellow flower”)."
+   },
+   "photos": [
+    {
+     "id": "muzicka-kutija-2026-photo-01",
+     "src": "data/prototipovi/muzicka-kutija-2026/01.jpg",
+     "sha256": "b287f28a4f0ddf3f036d3ffb4d8e84a61647250836ef7d49cc037ae122205c97",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ekran laptopa prikazuje zelenu površinu sa raznobojnim stilizovanim cvetovima. Iznad scene stoje simbol note i tekst „Žuti cvet“; fotografija ne prenosi zvuk ili tok interakcije.",
+      "en": "A laptop screen shows a green field with colorful stylized flowers. A musical-note symbol and the words “Žuti cvet” appear above the scene; the photograph does not convey sound or the interaction sequence."
+     },
+     "caption": {
+      "sr": "Muzička Kutija — dostavljena fotografija prototipa.",
+      "en": "Muzička Kutija — supplied photograph of the prototype."
+     },
+     "sourceId": "teacher-2026-10-09"
+    }
+   ],
+   "documentedWeek": 2
+  },
+  {
+   "id": "zmijica-2026",
+   "title": "Zmijica",
+   "author": {
+    "name": "Ivana Simić",
+    "studentNumber": "141/2024"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-12-correction",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "medium": "physical",
+   "status": "brought",
+   "sourceId": "teacher-2026-10-12-correction",
+   "description": {
+    "sr": "Prostorna žičana putanja na kartonskoj podlozi, sa zelenim elementom na žici i izdignutim osloncima. Studentski prototip; dokumentovan u drugoj nedelji sa ostalim studentskim radovima.",
+    "en": "A spatial wire path on a cardboard base, with a green element on the wire and raised supports. A student prototype, documented in week two with the other student works."
+   },
+   "photos": [
+    {
+     "id": "zmijica-2026-photo-01",
+     "src": "data/prototipovi/zmijica-2026/01.jpg",
+     "sha256": "bd720059492d0db434998c7d2f39923e83d4a3e5a316d4bab93ebfa8130eaa9c",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
+      "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
+     },
+     "caption": {
+      "sr": "Zmijica — dostavljena fotografija prototipa.",
+      "en": "Zmijica — supplied photograph of the prototype."
+     },
+     "sourceId": "teacher-2026-10-09"
+    }
+   ],
+   "documentedWeek": 2,
+   "originWeek": 1
+  },
+  {
+   "id": "zgradica-2026",
+   "title": "Zgradica",
+   "author": {
+    "name": "Teodora Radojičić",
+    "studentNumber": "72/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-09",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "originWeek": 1,
+   "medium": "physical",
+   "status": "brought",
+   "sourceId": "teacher-2026-10-09",
+   "description": {
+    "sr": "Višeetažna kartonska konstrukcija sa unutrašnjim pregradama, otvorima i belom lopticom.",
+    "en": "A multilevel cardboard structure with internal partitions, openings and a white ball."
+   },
+   "photos": [
+    {
+     "id": "zgradica-2026-photo-01",
+     "src": "data/prototipovi/zgradica-2026/01.jpg",
+     "sha256": "548460e82415964a00ca0ced18618e21db98e1183174cdf199ac60ff1184e4c3",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Otvorena kartonska konstrukcija ima više horizontalnih nivoa sa pregradama koje obrazuju prolaze. Na gornjoj površini je kružni otvor, na nižem nivou bela loptica; rukom se pridržava prednja ivica.",
+      "en": "An open cardboard structure has several horizontal levels with partitions forming passages. A circular opening is visible on the upper surface and a white ball on a lower level; a hand holds the front edge."
+     },
+     "caption": {
+      "sr": "Zgradica — dostavljena fotografija prototipa.",
+      "en": "Zgradica — supplied photograph of the prototype."
+     },
+     "sourceId": "teacher-2026-10-09"
+    }
+   ],
+   "documentedWeek": 2
+  },
+  {
+   "id": "sudoku-2026",
+   "title": "Sudoku",
+   "author": {
+    "name": "Nađa Stanić",
+    "studentNumber": "151/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-09",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "originWeek": 1,
+   "medium": "physical",
+   "status": "brought",
+   "sourceId": "teacher-2026-10-09",
+   "description": {
+    "sr": "Kartonske ploče sa tamnim kvadratnim poljima i svetlim, izdignutim ciframa. Fotografija beleži fizički raspored elemenata.",
+    "en": "Cardboard boards with dark square cells and light-colored raised numerals. The photograph records the physical arrangement of the pieces."
+   },
+   "photos": [
+    {
+     "id": "sudoku-2026-photo-01",
+     "src": "data/prototipovi/sudoku-2026/01.jpg",
+     "sha256": "0f8dbac6f927a3d4ca052830609b41231fb119b77b4f4b6d3827f138faeecf2a",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Dve kartonske ploče na stolu podeljene su u kvadratna polja. Na tamnim površinama nalaze se ručno izrađene reljefne cifre od svetlog kartona; deo ploča izlazi iz kadra.",
+      "en": "Two cardboard boards on a table are divided into square cells. Hand-cut raised numerals in light cardboard sit on dark surfaces; parts of the boards extend outside the photograph."
+     },
+     "caption": {
+      "sr": "Sudoku — dostavljena fotografija prototipa.",
+      "en": "Sudoku — supplied photograph of the prototype."
+     },
+     "sourceId": "teacher-2026-10-09"
+    }
+   ],
+   "documentedWeek": 2
+  },
+  {
+   "id": "pogodilica-2026",
+   "title": "Pogodilica",
+   "author": {
+    "name": "Todorić Teodora",
+    "studentNumber": "39/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-09",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "originWeek": 1,
+   "medium": "physical",
+   "status": "brought",
+   "sourceId": "teacher-2026-10-09",
+   "description": {
+    "sr": "Obojeni delovi kartonske ambalaže i podloga sa oznakama boja. Na fotografiji se delovi rukama raspoređuju uz podlogu.",
+    "en": "Colored pieces of cardboard packaging and a base marked with colors. Hands are arranging pieces beside the base in the photograph."
+   },
+   "photos": [
+    {
+     "id": "pogodilica-2026-photo-01",
+     "src": "data/prototipovi/pogodilica-2026/01.jpg",
+     "sha256": "e78005d77caa5ea1ea28b6f755d1518cde2e07070e1cc68bdafe02d6364aa7ac",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Podloga od kartonske ambalaže za jaja ima izdignute vrhove sa obojenim oznakama. Oko nje su odvojeni delovi obojeni žuto, plavo, roze, crveno, zeleno, belo i ljubičasto; ruke drže dva dela.",
+      "en": "An egg-carton base has raised peaks marked with colors. Separate pieces around it are painted yellow, blue, pink, red, green, white and purple; hands hold two pieces."
+     },
+     "caption": {
+      "sr": "Pogodilica — dostavljena fotografija prototipa.",
+      "en": "Pogodilica — supplied photograph of the prototype."
+     },
+     "sourceId": "teacher-2026-10-09"
+    }
+   ],
+   "documentedWeek": 2
+  },
+  {
+   "id": "upadalica-2026",
+   "title": "Upadalica",
+   "author": {
+    "name": "Sara Janjić",
+    "studentNumber": "4/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-09-upadalica",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "originWeek": 1,
+   "medium": "physical",
+   "status": "brought",
+   "sourceId": "teacher-2026-10-09-upadalica",
+   "description": {
+    "sr": "Otvorena kartonska kutija sa narandžastim cilindričnim elementima i dvema crnim šipkama iznad njih. Na fotografiji se rukom pridržava žuti predmet.",
+    "en": "An open cardboard box with orange cylindrical pieces and two black rods above them. A hand holds a yellow object in the photograph."
+   },
+   "photos": [
+    {
+     "id": "upadalica-2026-photo-01",
+     "src": "data/prototipovi/upadalica-2026/01.jpg",
+     "sha256": "538bef7a7700254940f36d6044f3d38f938bbb0609f1849072ac5a602b09c32b",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "U otvorenoj kartonskoj kutiji nalaze se tri narandžasta cilindrična elementa, iznad kojih prolaze dve crne šipke. Ruka delimično zaklanja levi element i pridržava žuti predmet.",
+      "en": "An open cardboard box contains three orange cylindrical pieces with two black rods above them. A hand partly obscures the left piece while holding a yellow object."
+     },
+     "caption": {
+      "sr": "Upadalica — dostavljena fotografija prototipa.",
+      "en": "Upadalica — supplied photograph of the prototype."
+     },
+     "sourceId": "teacher-2026-10-09-upadalica"
+    }
+   ],
+   "documentedWeek": 2
+  },
+  {
+   "id": "lego4ll-2026",
+   "title": "Lego4ll",
+   "kind": "technical-drawing",
+   "authorRole": "student",
+   "author": {
+    "name": "Sofia Ocanto Jovičić"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-09-drawing-rattle",
+    "fields": [
+     "name"
+    ]
+   },
+   "documentedWeek": 2,
+   "medium": "drawing",
+   "status": "documented",
+   "sourceId": "teacher-2026-10-09-drawing-rattle",
+   "description": {
+    "sr": "Tehnički crtež dizajna: prostorni prikaz kvadratne podloge sa mrežom i kružnim i izduženim elementima, uz izdvojene delove i projekcije. Rad je dokumentovan kao crtež, a ne kao izrađen prototip.",
+    "en": "Technical design drawing: a spatial view of a square gridded base with circular and elongated elements, alongside separate components and projections. The work is documented as a drawing, not as a fabricated prototype."
+   },
+   "photos": [
+    {
+     "id": "lego4ll-2026-photo-01",
+     "src": "data/prototipovi/lego4ll-2026/01.jpg",
+     "sha256": "28c1bedd1eeb78cc0e99acda65bdc4123a0a48fea38b77ee752afd8a9868e8ff",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "List sa prostornim prikazom kvadratne mreže, kružnih i izduženih delova, kao i zasebnim projekcijama.",
+      "en": "A sheet showing a square grid, circular and elongated parts in perspective, with separate projections."
+     },
+     "caption": {
+      "sr": "Lego4ll — tehnički crtež. Fotografija je snimljena uspravno; prikazana je okrenuta da se crtež čita vodoravno.",
+      "en": "Lego4ll — technical drawing. The photograph was taken upright; it is shown rotated so the drawing reads horizontally."
+     },
+     "sourceId": "teacher-2026-10-09-drawing-rattle",
+     "rotation": -90
+    }
+   ]
+  },
+  {
+   "id": "zvecka-2026",
+   "title": "Zvečka",
+   "kind": "prototype",
+   "authorRole": "teacher",
+   "author": {
+    "name": "Semir Poturak"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-09-drawing-rattle",
+    "fields": [
+     "name"
+    ]
+   },
+   "documentedWeek": 2,
+   "medium": "physical",
+   "status": "documented",
+   "sourceId": "teacher-2026-10-09-drawing-rattle",
+   "description": {
+    "sr": "Nastavnikov prototip zvečke, dizajniran u Blenderu i izrađen 3D štampom. Četiri fotografije prikazuju kružne forme u plavoj, žutoj i crvenoj boji, koncentrične elemente i različite površinske detalje.",
+    "en": "The teacher’s rattle prototype, designed in Blender and fabricated by 3D printing. Four photographs show circular forms in blue, yellow and red, concentric elements and different surface details."
+   },
+   "photos": [
+    {
+     "id": "zvecka-2026-photo-01",
+     "src": "data/prototipovi/zvecka-2026/01.jpg",
+     "sha256": "1cef4e2cffc66f1a6386fd983a3847a83bafa49571ce96f9f33e795a2f925ab8",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Plavi kružni 3D štampani elementi sa koncentričnim prstenovima i reljefnim detaljima na podlozi štampača.",
+      "en": "Blue circular 3D-printed elements with concentric rings and raised details on the print bed."
+     },
+     "caption": {
+      "sr": "Plavi primerci — detalj koncentričnih elemenata i teksture.",
+      "en": "Blue examples — detail of the concentric elements and texture."
+     },
+     "sourceId": "teacher-2026-10-09-drawing-rattle"
+    },
+    {
+     "id": "zvecka-2026-photo-02",
+     "src": "data/prototipovi/zvecka-2026/02.jpg",
+     "sha256": "d6bda72ee0548dbc375f2116274399e9fec64314ea92998d597430c549c49e65",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Krupni plan plavog kružnog elementa sa reljefom u sredini i prstenovima oko njega.",
+      "en": "Close view of a blue circular element with a raised centre and surrounding rings."
+     },
+     "caption": {
+      "sr": "Plavi primerak — pogled na središnji detalj.",
+      "en": "Blue example — view of the central detail."
+     },
+     "sourceId": "teacher-2026-10-09-drawing-rattle"
+    },
+    {
+     "id": "zvecka-2026-photo-03",
+     "src": "data/prototipovi/zvecka-2026/03.jpg",
+     "sha256": "2d43a12639e565c9a5b5b94b9dd100d0982e844013a785956d3801ddcf0325c9",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Žuti kružni element na podlozi 3D štampača, sa prstenovima i nizovima otvora u površini.",
+      "en": "A yellow circular element on the 3D printer bed, with rings and rows of openings in the surface."
+     },
+     "caption": {
+      "sr": "Žuti primerak na podlozi 3D štampača.",
+      "en": "Yellow example on the 3D printer bed."
+     },
+     "sourceId": "teacher-2026-10-09-drawing-rattle"
+    },
+    {
+     "id": "zvecka-2026-photo-04",
+     "src": "data/prototipovi/zvecka-2026/04.jpg",
+     "sha256": "7444c61fa99076d6cb26f7b10f8e722b5ddcdd2528c2a800ceae4daa01e83bd1",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Više plavih, crvenih i žutih kružnih štampanih primeraka među nitima filamenta.",
+      "en": "Several blue, red and yellow circular printed examples among strands of filament."
+     },
+     "caption": {
+      "sr": "Zbirni pogled na štampane primerke u različitim bojama.",
+      "en": "Collected view of printed examples in different colours."
+     },
+     "sourceId": "teacher-2026-10-09-drawing-rattle"
+    }
+   ]
+  },
+  {
+   "id": "03-slovo-prsti",
+   "title": "Slovo Prsti",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Lazović Sara",
+    "studentNumber": "106/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "03-slovo-prsti-foto-02",
+     "src": "data/prototipovi/03-slovo-prsti/02.jpg",
+     "sha256": "74316ba22fd8feecbe7ff998268cdadec5f98660f0c7a2745ced6d234e180cee",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „Slovo Prsti”",
+      "en": "Photograph of the “Slovo Prsti” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    },
+    {
+     "id": "03-slovo-prsti-foto-03",
+     "src": "data/prototipovi/03-slovo-prsti/03.jpg",
+     "sha256": "38e8946c163ff4624a71c918f621fa1c16bab726e016e06a4708cac9034c0d72",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „Slovo Prsti”",
+      "en": "Photograph of the “Slovo Prsti” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "04-touch",
+   "title": "Touch",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Maša Jotić",
+    "studentNumber": "134/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "04-touch-foto-01",
+     "src": "data/prototipovi/04-touch/01.jpg",
+     "sha256": "c5bcc1366312959369111e5b6987670767803c70718a6dcb71c712a2e9f0d84a",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „Touch”",
+      "en": "Photograph of the “Touch” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "05-music-box",
+   "title": "Music box — nastavak",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "originWeek": 1,
+   "documentedWeek": 3,
+   "author": {
+    "name": "Nikola Pajić",
+    "studentNumber": "49/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-19-nastavak",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Nastavak prvotalasnog rada „Muzička Kutija” (1. čas) donet na treći čas (16.10.2026); autorstvo prema potvrdi nastavnika od 19.10.2026, zapis fotografija nastavnika.",
+    "en": "A continuation of the first-wave work “Muzička Kutija” (week 1) brought to the third class (2026-10-16); authorship per the teacher’s confirmation of 19 October 2026, photographs from the teacher’s record."
+   },
+   "photos": [
+    {
+     "id": "05-music-box-foto-01",
+     "src": "data/prototipovi/05-music-box/01.jpg",
+     "sha256": "7798ba28210fd5274166b7a40f9d737dedcc0421145cdedd9e7f4b9b18597a2e",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „Music box”",
+      "en": "Photograph of the “Music box” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "06-iggyblox",
+   "title": "iggyblox",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Igor Stablović",
+    "studentNumber": "6/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "06-iggyblox-foto-01",
+     "src": "data/prototipovi/06-iggyblox/01.jpg",
+     "sha256": "e7b227d0b6a928c8ffd8607a94b1875ca9ff7fc683de92286f9087fbe10d7e9a",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „iggyblox”",
+      "en": "Photograph of the “iggyblox” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "07-hansgadget-starlight",
+   "title": "hansgadget — starlight",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Imre Halas",
+    "studentNumber": "1/2024"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "07-hansgadget-starlight-foto-02",
+     "src": "data/prototipovi/07-hansgadget-starlight/02.jpg",
+     "sha256": "51c5936de1975c2ad2c24a1e85e9aab770fd998fd0972d101afce6b13aa4657f",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „hansgadget — starlight”",
+      "en": "Photograph of the “hansgadget — starlight” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    },
+    {
+     "id": "07-hansgadget-starlight-foto-03",
+     "src": "data/prototipovi/07-hansgadget-starlight/03.jpg",
+     "sha256": "4b92eba134a198b2941a2d474ec03df60c3f0cdd72a6e3f355580f5fd60954b3",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „hansgadget — starlight”",
+      "en": "Photograph of the “hansgadget — starlight” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    },
+    {
+     "id": "07-hansgadget-starlight-foto-04",
+     "src": "data/prototipovi/07-hansgadget-starlight/04.jpg",
+     "sha256": "f0157424041ecf6a42e874fdd987ca8cd07d2fd488976f1ad4d947b359d9883e",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „hansgadget — starlight”",
+      "en": "Photograph of the “hansgadget — starlight” prototype"
+     },
+     "caption": {
+      "sr": "Red 4 u nizu slikanja.",
+      "en": "Frame 4 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    },
+    {
+     "id": "07-hansgadget-starlight-foto-05",
+     "src": "data/prototipovi/07-hansgadget-starlight/05.jpg",
+     "sha256": "1d921a58c1002c67c21b2f308b421344f79d1a20dc796331655246ee59d5868b",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „hansgadget — starlight”",
+      "en": "Photograph of the “hansgadget — starlight” prototype"
+     },
+     "caption": {
+      "sr": "Red 5 u nizu slikanja.",
+      "en": "Frame 5 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "08-zekino-polje",
+   "title": "zekino polje",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Velemir Tijana",
+    "studentNumber": "51/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "08-zekino-polje-foto-02",
+     "src": "data/prototipovi/08-zekino-polje/02.jpg",
+     "sha256": "2a7f0579edf7ea106b08a2cac64df11e4a8abc0638c94398521bd320ba87cc58",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „zekino polje”",
+      "en": "Photograph of the “zekino polje” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    },
+    {
+     "id": "08-zekino-polje-foto-03",
+     "src": "data/prototipovi/08-zekino-polje/03.jpg",
+     "sha256": "0e31901eba85de65a2554aedcf0905828b91adc8985871625fc5296d8a2ffb41",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „zekino polje”",
+      "en": "Photograph of the “zekino polje” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "09-zen-garden",
+   "title": "zen garden",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Karla Krdzovac",
+    "studentNumber": "109/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "09-zen-garden-foto-02",
+     "src": "data/prototipovi/09-zen-garden/02.jpg",
+     "sha256": "4da5e476aa87dc8def1897d91cc38476389e565914d0dd612b54d67bc50e3103",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „zen garden”",
+      "en": "Photograph of the “zen garden” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    },
+    {
+     "id": "09-zen-garden-foto-03",
+     "src": "data/prototipovi/09-zen-garden/03.jpg",
+     "sha256": "e0dbf2c2dbbb901b00d10e18233ebb389c1e66965d79c435f1d1c03dd3098280",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „zen garden”",
+      "en": "Photograph of the “zen garden” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "10-lavirint",
+   "title": "lavirint",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Maša Marković",
+    "studentNumber": "121/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "10-lavirint-foto-02",
+     "src": "data/prototipovi/10-lavirint/02.jpg",
+     "sha256": "b008d1d4a41abd34a49fb27076a1b57d464c26c832870aaaecbb07eabfeb6d39",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „lavirint”",
+      "en": "Photograph of the “lavirint” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    },
+    {
+     "id": "10-lavirint-foto-03",
+     "src": "data/prototipovi/10-lavirint/03.jpg",
+     "sha256": "804450223a378d007c1b397dd4cf40aed35e1398dface15d996428fcbc1d9fe3",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „lavirint”",
+      "en": "Photograph of the “lavirint” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    },
+    {
+     "id": "10-lavirint-foto-04",
+     "src": "data/prototipovi/10-lavirint/04.jpg",
+     "sha256": "4737a596e66acf5d52822358ed65cebd71891a76c5281e8afc9f9e55e9fc1c62",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „lavirint”",
+      "en": "Photograph of the “lavirint” prototype"
+     },
+     "caption": {
+      "sr": "Red 4 u nizu slikanja.",
+      "en": "Frame 4 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "11-zmijica",
+   "title": "Zmijica — nastavak",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "originWeek": 1,
+   "documentedWeek": 3,
+   "author": {
+    "name": "Ivana Simić",
+    "studentNumber": "141/2024"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-19-nastavak",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Nastavak prvotalasnog rada „Zmijica” (1. čas) donet na treći čas (16.10.2026); autorstvo prema potvrdi nastavnika od 19.10.2026, zapis fotografija nastavnika.",
+    "en": "A continuation of the first-wave work “Zmijica” (week 1) brought to the third class (2026-10-16); authorship per the teacher’s confirmation of 19 October 2026, photographs from the teacher’s record."
+   },
+   "photos": [
+    {
+     "id": "11-zmijica-foto-01",
+     "src": "data/prototipovi/11-zmijica/01.jpg",
+     "sha256": "c74a92b47437cd0202474facf14c72a4e05de9b7d78957a0c42b105cb48178e9",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „Zmijica”",
+      "en": "Photograph of the “Zmijica” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "12-sudoku",
+   "title": "Sudoku — nastavak",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "originWeek": 1,
+   "documentedWeek": 3,
+   "author": {
+    "name": "Nađa Stanić",
+    "studentNumber": "151/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-19-nastavak",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Nastavak prvotalasnog rada „Sudoku” (1. čas) donet na treći čas (16.10.2026); autorstvo prema potvrdi nastavnika od 19.10.2026, zapis fotografija nastavnika.",
+    "en": "A continuation of the first-wave work “Sudoku” (week 1) brought to the third class (2026-10-16); authorship per the teacher’s confirmation of 19 October 2026, photographs from the teacher’s record."
+   },
+   "photos": [
+    {
+     "id": "12-sudoku-foto-01",
+     "src": "data/prototipovi/12-sudoku/01.jpg",
+     "sha256": "b1a1178812fb7eea1405a1e4d602a259987cab1c9d70e7f522fe5cae3a9b7e03",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „Sudoku”",
+      "en": "Photograph of the “Sudoku” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "13-kubismo",
+   "title": "kubismo",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Sofia Ocanto Jovičić",
+    "studentNumber": "138/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "13-kubismo-foto-02",
+     "src": "data/prototipovi/13-kubismo/02.jpg",
+     "sha256": "07d34703201465866b33cb89959f3e662f779c07ce992d07ca2753b72c4871ff",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „kubismo”",
+      "en": "Photograph of the “kubismo” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "14-koncici",
+   "title": "končići",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Marija Stojković",
+    "studentNumber": "126/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "14-koncici-foto-01",
+     "src": "data/prototipovi/14-koncici/01.jpg",
+     "sha256": "118a83bf9210ba07b642e7c2bc9a6ba5da3f1d6b10b9c94ed789038bb2007ce6",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „končići”",
+      "en": "Photograph of the “končići” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "15-padalica",
+   "title": "padalica",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Ivana Cvetković",
+    "studentNumber": "161/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "15-padalica-foto-02",
+     "src": "data/prototipovi/15-padalica/02.jpg",
+     "sha256": "7ee99e3714a031cee2c2f1892d33b08e9991c245b472e17d611f3e89a0cd2c93",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „padalica”",
+      "en": "Photograph of the “padalica” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    },
+    {
+     "id": "15-padalica-foto-03",
+     "src": "data/prototipovi/15-padalica/03.jpg",
+     "sha256": "f4996b8b13d457a0dff2def7a7dcb00035fdf57ab85bc6fb5bbe41366e1e4783",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „padalica”",
+      "en": "Photograph of the “padalica” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "16-obojilica",
+   "title": "obojilica",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Anja Bukurović",
+    "studentNumber": "85/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "16-obojilica-foto-02",
+     "src": "data/prototipovi/16-obojilica/02.jpg",
+     "sha256": "6d1b70e1cfd470808e56eaeb3f874b7965756f0b92a17f929259b2066b2805d2",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „obojilica”",
+      "en": "Photograph of the “obojilica” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    },
+    {
+     "id": "16-obojilica-foto-03",
+     "src": "data/prototipovi/16-obojilica/03.jpg",
+     "sha256": "cefbc554e9a271628e7ed3f994bd11bf8fb2917f254068fc458b87bc7d889a0b",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „obojilica”",
+      "en": "Photograph of the “obojilica” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    },
+    {
+     "id": "16-obojilica-foto-04",
+     "src": "data/prototipovi/16-obojilica/04.jpg",
+     "sha256": "0edca7ae447537d4d4692cb0f11fc92ec6f9e3c1524416ecf3c3abda008b7b33",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „obojilica”",
+      "en": "Photograph of the “obojilica” prototype"
+     },
+     "caption": {
+      "sr": "Red 4 u nizu slikanja.",
+      "en": "Frame 4 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    },
+    {
+     "id": "16-obojilica-foto-05",
+     "src": "data/prototipovi/16-obojilica/05.jpg",
+     "sha256": "45b78b674ace53165e8e4d1fa2670671e5c532e1584d4f237478b35adf437b63",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „obojilica”",
+      "en": "Photograph of the “obojilica” prototype"
+     },
+     "caption": {
+      "sr": "Red 5 u nizu slikanja.",
+      "en": "Frame 5 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "21-vijugava-staza",
+   "title": "vijugava staza",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Aleksa Tašković",
+    "studentNumber": "36/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "21-vijugava-staza-foto-01",
+     "src": "data/prototipovi/21-vijugava-staza/01.jpg",
+     "sha256": "2b00623754b725503ccdc3e2e28d45d1226e2c34d75ae27f868a1cf674dad54b",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „vijugava staza”",
+      "en": "Photograph of the “vijugava staza” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "22-lenin-lavirint",
+   "title": "lenin lavirint",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Lena Kovačić",
+    "studentNumber": "132/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "22-lenin-lavirint-foto-01",
+     "src": "data/prototipovi/22-lenin-lavirint/01.jpg",
+     "sha256": "7dbde16d9cfcad362c6f8e213912d8e27202fa9ccf81bfb7236bb8fdc296ebcf",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „lenin lavirint”",
+      "en": "Photograph of the “lenin lavirint” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "23-edukativna",
+   "title": "edukativna",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Katarina Ušjak",
+    "studentNumber": "86/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "23-edukativna-foto-01",
+     "src": "data/prototipovi/23-edukativna/01.jpg",
+     "sha256": "6e7358601894ad61d0502e795b6adc68d084561381cee31b277359bef73eb143",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „edukativna”",
+      "en": "Photograph of the “edukativna” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "24-amaze",
+   "title": "amaze",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Mihailo Maksimović",
+    "studentNumber": "68/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "24-amaze-foto-01",
+     "src": "data/prototipovi/24-amaze/01.jpg",
+     "sha256": "b07d4139b58262ce6b6db429deb874ad5b9ad0e7a0d61511158ea89354e558ac",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „amaze”",
+      "en": "Photograph of the “amaze” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "25-stapici",
+   "title": "stapici",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Petra Kalenj",
+    "studentNumber": "18/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "25-stapici-foto-01",
+     "src": "data/prototipovi/25-stapici/01.jpg",
+     "sha256": "a9cc2c641492f5f850f805105b202a6859445aee3a21b5be88ffea61516b2382",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „stapici”",
+      "en": "Photograph of the “stapici” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "26-jana-grujic",
+   "title": "Bez naziva",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Jana Grujić",
+    "studentNumber": "108/23"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "26-jana-grujic-foto-01",
+     "src": "data/prototipovi/26-jana-grujic/01.jpg",
+     "sha256": "f45a621a4e6597675d310f3d26b63d8bd0e68d8bef45c51bf989db5683981bca",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa bez zabeleženog naziva",
+      "en": "Photograph of a prototype whose title was not recorded"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "27-fliper",
+   "title": "fliper",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Iva Mijanović",
+    "studentNumber": "28/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "27-fliper-foto-02",
+     "src": "data/prototipovi/27-fliper/02.jpg",
+     "sha256": "ff62203b4e3eeef4c20880030d856f035193956be139b3193f77100e13c6d8f2",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „fliper”",
+      "en": "Photograph of the “fliper” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "28-stilopol",
+   "title": "stilopol",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 3,
+   "author": {
+    "name": "Lena Dukić",
+    "studentNumber": "131/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "28-stilopol-foto-01",
+     "src": "data/prototipovi/28-stilopol/01.jpg",
+     "sha256": "437ca12925497095230fd9a580a732eeeb2d21e2c65405fb3e3f5ddb308d8dda",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „stilopol”",
+      "en": "Photograph of the “stilopol” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  },
+  {
+   "id": "29-castle",
+   "title": "Castle",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "originWeek": 1,
+   "documentedWeek": 3,
+   "author": {
+    "name": "Filip Doljanovič"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "fields": [
+     "name"
+    ]
+   },
+   "sourceId": "teacher-2026-10-16-cas-03",
+   "description": {
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+    "en": "Prototype from the third class (2026-10-16), teacher's record."
+   },
+   "photos": [
+    {
+     "id": "29-castle-foto-02",
+     "src": "data/prototipovi/29-castle/02.jpg",
+     "sha256": "9678f07878ba154ee16fa62009e5dd1bb6158369b4089ad2eef42d2a9f73b82b",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „Castle”",
+      "en": "Photograph of the “Castle” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-16-cas-03"
+    }
+   ]
+  }
+ ],
+ "observations": [
+  {
+   "id": "poseta-2026-10-09-zmijica",
+   "prototypeId": "zmijica-2026",
+   "kind": "association-use",
+   "occurredOn": "2026-10-09",
+   "sourceId": "teacher-2026-10-12-field",
+   "summary": {
+    "sr": "Korisnica je sama navlačila zeleni element po žičanoj putanji, pritežući podlogu drugom rukom; rad je korišćen na stolu, bez usmeravanja.",
+    "en": "A user pulled the green element along the wire path by herself, steadying the base with her other hand; the work was used at the table, without prompting."
+   },
+   "photos": [
+    {
+     "id": "poseta-2026-10-09-zmijica-1",
+     "src": "data/prototipovi/zmijica-2026/poseta-2026-10-09-1.jpg",
+     "sha256": "f486ff6ebf016bdf1d50122050170eeabad4a15b82cfbfe0c4bb2793f309645e",
+     "width": 960,
+     "height": 1280,
+     "alt": {
+      "sr": "Dve ruke iznad žičane putanje: desna ruka navlači zeleni element po žici, leva pridržava kartonsku podlogu sa žutim osloncem na stolu.",
+      "en": "Two hands over the wire path: the right hand pulls the green element along the wire, the left steadies the cardboard base with a yellow support on the table."
+     },
+     "caption": {
+      "sr": "Zmijica u rukama korisnice — poseta udruženju, 09.10.2026.",
+      "en": "Zmijica in a user’s hands — association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-field"
+    }
+   ],
+   "publication": {
+    "sourceId": "teacher-2026-10-12-field",
+    "scope": "association-observation"
+   }
+  },
+  {
+   "id": "poseta-2026-10-09-upadalica",
+   "prototypeId": "upadalica-2026",
+   "kind": "association-use",
+   "occurredOn": "2026-10-09",
+   "sourceId": "teacher-2026-10-12-field",
+   "summary": {
+    "sr": "Na snimku od deset sekundi čuje se brojanje naglas do pogotka i aplauz; kutiju sa štapićima istovremeno drže dva para ruku.",
+    "en": "On the ten-second recording a user counts aloud up to the drop, followed by applause; two pairs of hands hold the box with the sticks at once."
+   },
+   "photos": [
+    {
+     "id": "poseta-2026-10-09-upadalica-1",
+     "src": "data/prototipovi/upadalica-2026/poseta-2026-10-09-1.jpg",
+     "sha256": "a82b6e89e5ae075dc1e73188da227ae5ae7afa2ca37a79f7afeca281a0a74dc7",
+     "width": 960,
+     "height": 1280,
+     "alt": {
+      "sr": "Četiri ruke oko kartonske kutije sa štapićima: žuta loptica visi iznad narandžastih čašica, prsti podešavaju razmak.",
+      "en": "Four hands around the cardboard box with sticks: a yellow ball hangs above the orange cups, fingers adjust the gap."
+     },
+     "caption": {
+      "sr": "Upadalica — dva para ruku, jedan pogodak; poseta udruženju, 09.10.2026.",
+      "en": "Upadalica — two pairs of hands, one drop; association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-field"
+    }
+   ],
+   "publication": {
+    "sourceId": "teacher-2026-10-12-field",
+    "scope": "association-observation"
+   }
+  },
+  {
+   "id": "poseta-2026-10-09-sudoku",
+   "prototypeId": "sudoku-2026",
+   "kind": "association-use",
+   "occurredOn": "2026-10-09",
+   "sourceId": "teacher-2026-10-12-field",
+   "summary": {
+    "sr": "Pločice sa reljefnim brojevima slagane su i razvrstavane po stolu; kontakti su bili kraći i mirniji nego kod ostalih radova — slaganje bez utrke.",
+    "en": "Tiles with raised numbers were laid out and sorted on the table; the contact was shorter and quieter than with the other works — arranging without a race."
+   },
+   "photos": [
+    {
+     "id": "poseta-2026-10-09-sudoku-1",
+     "src": "data/prototipovi/sudoku-2026/poseta-2026-10-09-1.jpg",
+     "sha256": "f08d3c11251a1d646881a4cf32c4b55d247e3bfe28ae902c898da1ef4ba6e7eb",
+     "width": 960,
+     "height": 1280,
+     "alt": {
+      "sr": "Ruke slažu crne pločice sa belim reljefnim brojevima na stolu, pored razvrstanih pločica.",
+      "en": "Hands lay out black tiles with white raised numbers on the table, beside sorted tiles."
+     },
+     "caption": {
+      "sr": "Sudoku — slaganje pločica sa brojevima; poseta udruženju, 09.10.2026.",
+      "en": "Sudoku — laying out the numbered tiles; association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-field"
+    },
+    {
+     "id": "poseta-2026-10-09-sudoku-2",
+     "src": "data/prototipovi/sudoku-2026/poseta-2026-10-09-2.jpg",
+     "sha256": "ff19952c2c702dfc72ac57b217e5f20a8f44ccab3cb425ec282f5e994691e661",
+     "width": 1280,
+     "height": 960,
+     "alt": {
+      "sr": "Sto sa crnim pločicama sa reljefnim brojevima; ruka upravo vraća pločicu u red.",
+      "en": "A table with black tiles with raised numbers; a hand is just returning a tile to the row."
+     },
+     "caption": {
+      "sr": "Sudoku — pločice na stolu; poseta udruženju, 09.10.2026.",
+      "en": "Sudoku — tiles on the table; association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-field"
+    }
+   ],
+   "publication": {
+    "sourceId": "teacher-2026-10-12-field",
+    "scope": "association-observation"
+   }
+  },
+  {
+   "id": "poseta-2026-10-09-pogodilica",
+   "prototypeId": "pogodilica-2026",
+   "kind": "association-use",
+   "occurredOn": "2026-10-09",
+   "sourceId": "teacher-2026-10-12-field",
+   "summary": {
+    "sr": "Tabla sa obojenim stošcima igrana je sa više strana stola istovremeno; po broju fotografija, najposećeniji rad posete.",
+    "en": "The board with coloured cones was played from several sides of the table at once; by photograph count, the most visited work of the visit."
+   },
+   "photos": [
+    {
+     "id": "poseta-2026-10-09-pogodilica-1",
+     "src": "data/prototipovi/pogodilica-2026/poseta-2026-10-09-1.jpg",
+     "sha256": "27fe9ed6916bb5b76ff630053e9da599650da701198cd9759f6575d8267be52b",
+     "width": 1280,
+     "height": 960,
+     "alt": {
+      "sr": "Tabla gledana odozgo: ruke slažu obojene stošce i figurice u polja sa rupicama.",
+      "en": "The board seen from above: hands place coloured cones and figures into the holes."
+     },
+     "caption": {
+      "sr": "Pogodilica — grupa oko table; poseta udruženju, 09.10.2026.",
+      "en": "Pogodilica — a group around the board; association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-field"
+    }
+   ],
+   "publication": {
+    "sourceId": "teacher-2026-10-12-field",
+    "scope": "association-observation"
+   }
+  },
+  {
+   "id": "poseta-2026-10-09-muzicka-kutija",
+   "prototypeId": "muzicka-kutija-2026",
+   "kind": "association-use",
+   "occurredOn": "2026-10-09",
+   "sourceId": "teacher-2026-10-12-field",
+   "summary": {
+    "sr": "Aplikacija za praćenje pokreta na laptopu: korisnik diže i spušta ruku ispred ekrana i dobija zvučni i slikovni odziv; posmatrano i otpozadi.",
+    "en": "A hand-tracking application on a laptop: the user raises and lowers a hand in front of the screen and receives a sound and visual response; also seen from behind."
+   },
+   "photos": [
+    {
+     "id": "poseta-2026-10-09-muzicka-kutija-1",
+     "src": "data/prototipovi/muzicka-kutija-2026/poseta-2026-10-09-1.jpg",
+     "sha256": "f708629e7c925957a34078bde10b2bfa56bc5fa05d8b7a4fc2443f97bd08c3ab",
+     "width": 960,
+     "height": 1280,
+     "alt": {
+      "sr": "Korisnik posmatran otpozadi sedi za stolom ispred laptopa; ruka mu je podignuta ispred ekrana.",
+      "en": "A user seen from behind sits at the table in front of a laptop; a hand is raised in front of the screen."
+     },
+     "caption": {
+      "sr": "Muzička Kutija — pokret ispred ekrana, posmatrano otpozadi; poseta udruženju, 09.10.2026.",
+      "en": "Muzička Kutija — a movement in front of the screen, seen from behind; association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-field"
+    },
+    {
+     "id": "poseta-2026-10-09-muzicka-kutija-2",
+     "src": "data/prototipovi/muzicka-kutija-2026/poseta-2026-10-09-2.jpg",
+     "sha256": "78f9e670f3d75c714096d12e7c6ec1f384a7f6f6d542d1ea4435190c538e2c17",
+     "width": 960,
+     "height": 1280,
+     "alt": {
+      "sr": "Ruka ispred ekrana laptopa na kom aplikacija cvetom odgovara na pokret.",
+      "en": "A hand in front of the laptop screen where the application answers the movement with a flower."
+     },
+     "caption": {
+      "sr": "Muzička Kutija — odziv aplikacije na pokret ruke; poseta udruženju, 09.10.2026.",
+      "en": "Muzička Kutija — the application’s response to a hand movement; association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-field"
+    }
+   ],
+   "publication": {
+    "sourceId": "teacher-2026-10-12-field",
+    "scope": "association-observation"
+   }
+  },
+  {
+   "id": "poseta-2026-10-09-zgradica",
+   "prototypeId": "zgradica-2026",
+   "summary": {
+    "sr": "Na snimku od 23 sekunde korisnica pomera i okreće zgradu: loptica prolazi kroz rupu sprata i spušta se naniže, uz aplauz u pozadini. Fotografija je iz istog trenutka — rad je probavan i na krevetu, tamo gde je korisnik.",
+    "en": "On the 23-second recording a user shifts and turns the building: the ball passes through a floor’s hole and drops lower, with applause in the background. The photograph is from the same moment — the work was tried on the bed too, where the user was."
+   },
+   "photos": [
+    {
+     "id": "poseta-2026-10-09-zgradica-1",
+     "src": "data/prototipovi/zgradica-2026/poseta-2026-10-09-1.jpg",
+     "sha256": "83e3aa8a4912a9f221f45de4c236eda2ea9d04998cc5dd3068cab5de49d7e14e",
+     "width": 1280,
+     "height": 720,
+     "alt": {
+      "sr": "Korisnica drži žuto-beli toranj Zgradice objema rukama; otvorena prednja strana pokazuje unutrašnjost spratova sa rupama kroz koje se loptica spušta.",
+      "en": "A user holds the yellow-and-white Zgradica tower with both hands; the open front shows the floors’ interiors with the holes the ball drops through."
+     },
+     "caption": {
+      "sr": "Zgradica — loptica i rupa na svakom spratu; poseta udruženju, 09.10.2026.",
+      "en": "Zgradica — a ball and a hole on every floor; association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-faces-ok",
+     "rotation": 90
+    }
+   ],
+   "kind": "association-use",
+   "occurredOn": "2026-10-09",
+   "sourceId": "teacher-2026-10-12-faces-ok",
+   "publication": {
+    "sourceId": "teacher-2026-10-12-faces-ok",
+    "scope": "association-observation"
+   }
+  },
+  {
+   "id": "poseta-2026-10-09-zmijica-dopuna",
+   "prototypeId": "zmijica-2026",
+   "summary": {
+    "sr": "Drugi kadar istog trenutka: igra sa osmehom, sa plakatom udruženja u pozadini.",
+    "en": "A second frame of the same moment: play with a smile, the association’s poster behind."
+   },
+   "photos": [
+    {
+     "id": "poseta-2026-10-09-zmijica-2",
+     "src": "data/prototipovi/zmijica-2026/poseta-2026-10-09-2.jpg",
+     "sha256": "9015fc2025f5ae98983b7ea190e4057535f17aa73fca2cadf4fba5e168519d10",
+     "width": 960,
+     "height": 1280,
+     "alt": {
+      "sr": "Korisnica sa osmehom navlači zeleni element po žičanoj putanji; u pozadini sto i poster udruženja na zidu.",
+      "en": "A smiling user pulls the green element along the wire path; behind her the table and the association’s poster on the wall."
+     },
+     "caption": {
+      "sr": "Zmijica — igra sa osmehom; poseta udruženju, 09.10.2026.",
+      "en": "Zmijica — play with a smile; association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-faces-ok"
+    }
+   ],
+   "kind": "association-use",
+   "occurredOn": "2026-10-09",
+   "sourceId": "teacher-2026-10-12-faces-ok",
+   "publication": {
+    "sourceId": "teacher-2026-10-12-faces-ok",
+    "scope": "association-observation"
+   }
+  },
+  {
+   "id": "poseta-2026-10-09-pogodilica-dopuna",
+   "prototypeId": "pogodilica-2026",
+   "summary": {
+    "sr": "Drugi kadar istog trenutka: pažljivo nameštanje jednog stošca, uz ostale učesnike oko stola.",
+    "en": "A second frame of the same moment: carefully placing a single cone, with the other participants around the table."
+   },
+   "photos": [
+    {
+     "id": "poseta-2026-10-09-pogodilica-2",
+     "src": "data/prototipovi/pogodilica-2026/poseta-2026-10-09-2.jpg",
+     "sha256": "50d6fbc4addf9f19be72f210ce51dcfd530db63c1454ce9fc6724b27d0fe7f79",
+     "width": 960,
+     "height": 1280,
+     "alt": {
+      "sr": "Korisnik u kačketu pažljivo namešta stožac na tabli sa rupicama; oko stola ostali učesnici posete.",
+      "en": "A user in a cap carefully places a cone on the pegged board; around the table the other visit participants."
+     },
+     "caption": {
+      "sr": "Pogodilica — strpljenje u jednom potezu; poseta udruženju, 09.10.2026.",
+      "en": "Pogodilica — patience in a single move; association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-faces-ok"
+    }
+   ],
+   "kind": "association-use",
+   "occurredOn": "2026-10-09",
+   "sourceId": "teacher-2026-10-12-faces-ok",
+   "publication": {
+    "sourceId": "teacher-2026-10-12-faces-ok",
+    "scope": "association-observation"
+   }
+  },
+  {
+   "id": "poseta-2026-10-09-muzicka-kutija-dopuna",
+   "prototypeId": "muzicka-kutija-2026",
+   "summary": {
+    "sr": "Drugi kadar istog trenutka: podignuta ruka, osmeh i odziv aplikacije na pokret.",
+    "en": "A second frame of the same moment: a raised hand, a smile, and the application’s answer to the movement."
+   },
+   "photos": [
+    {
+     "id": "poseta-2026-10-09-muzicka-kutija-3",
+     "src": "data/prototipovi/muzicka-kutija-2026/poseta-2026-10-09-3.jpg",
+     "sha256": "c920c976247a31f08a0646e055c4ec0ad5e4fb0b445b5af742d8fcaaa6c1c343",
+     "width": 960,
+     "height": 1280,
+     "alt": {
+      "sr": "Korisnik u kačketu podiže ruku ispred laptopa sa osmehom; aplikacija cvetom odgovara na pokret.",
+      "en": "A user in a cap raises his hand in front of the laptop with a smile; the application answers the movement with a flower."
+     },
+     "caption": {
+      "sr": "Muzička Kutija — pokret koji se čuje; poseta udruženju, 09.10.2026.",
+      "en": "Muzička Kutija — a movement that is heard; association visit, 9 October 2026."
+     },
+     "sourceId": "teacher-2026-10-12-faces-ok"
+    }
+   ],
+   "kind": "association-use",
+   "occurredOn": "2026-10-09",
+   "sourceId": "teacher-2026-10-12-faces-ok",
+   "publication": {
+    "sourceId": "teacher-2026-10-12-faces-ok",
+    "scope": "association-observation"
+   }
+  }
+ ],
+ "revizije": [
+  {
+   "v": 1,
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Potvrđena dokumentacija rada u nedelji 2; početak izrade u nedelji 1 ostaje sačuvan.",
+    "en": "Confirmed documentation in week 2; the start of making in week 1 is preserved."
+   },
+   "sourceId": "teacher-2026-10-09-week-02",
+   "prototypeId": "zmijica-2026",
+   "before": {
+    "id": "zmijica-2026",
+    "title": "Zmijica",
+    "author": {
+     "name": "Ivana Simić",
+     "studentNumber": "141/2024"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "originWeek": 1,
+    "medium": "physical",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09",
+    "description": {
+     "sr": "Prostorna žičana putanja na kartonskoj podlozi, sa zelenim elementom na žici i izdignutim osloncima.",
+     "en": "A spatial wire path on a cardboard base, with a green element on the wire and raised supports."
+    },
+    "photos": [
+     {
+      "id": "zmijica-2026-photo-01",
+      "src": "data/prototipovi/zmijica-2026/01.jpg",
+      "sha256": "bd720059492d0db434998c7d2f39923e83d4a3e5a316d4bab93ebfa8130eaa9c",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
+       "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
+      },
+      "caption": {
+       "sr": "Zmijica — dostavljena fotografija prototipa.",
+       "en": "Zmijica — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09"
+     }
+    ]
+   },
+   "after": {
+    "id": "zmijica-2026",
+    "title": "Zmijica",
+    "author": {
+     "name": "Ivana Simić",
+     "studentNumber": "141/2024"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "originWeek": 1,
+    "medium": "physical",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09",
+    "description": {
+     "sr": "Prostorna žičana putanja na kartonskoj podlozi, sa zelenim elementom na žici i izdignutim osloncima.",
+     "en": "A spatial wire path on a cardboard base, with a green element on the wire and raised supports."
+    },
+    "photos": [
+     {
+      "id": "zmijica-2026-photo-01",
+      "src": "data/prototipovi/zmijica-2026/01.jpg",
+      "sha256": "bd720059492d0db434998c7d2f39923e83d4a3e5a316d4bab93ebfa8130eaa9c",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
+       "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
+      },
+      "caption": {
+       "sr": "Zmijica — dostavljena fotografija prototipa.",
+       "en": "Zmijica — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09"
+     }
+    ],
+    "documentedWeek": 2
+   }
+  },
+  {
+   "v": 2,
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Potvrđena dokumentacija rada u nedelji 2; početak izrade u nedelji 1 ostaje sačuvan.",
+    "en": "Confirmed documentation in week 2; the start of making in week 1 is preserved."
+   },
+   "sourceId": "teacher-2026-10-09-week-02",
+   "prototypeId": "muzicka-kutija-2026",
+   "before": {
+    "id": "muzicka-kutija-2026",
+    "title": "Muzička Kutija",
+    "author": {
+     "name": "Nikola Pajić",
+     "studentNumber": "49/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "originWeek": 1,
+    "medium": "digital",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09",
+    "description": {
+     "sr": "Digitalni prototip prikazan na laptopu: scena sa cvetovima različitih boja i oblika, uz oznaku „Žuti cvet“.",
+     "en": "A digital prototype shown on a laptop: a scene of flowers in different colors and shapes, with the label “Žuti cvet” (“Yellow flower”)."
+    },
+    "photos": [
+     {
+      "id": "muzicka-kutija-2026-photo-01",
+      "src": "data/prototipovi/muzicka-kutija-2026/01.jpg",
+      "sha256": "b287f28a4f0ddf3f036d3ffb4d8e84a61647250836ef7d49cc037ae122205c97",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Ekran laptopa prikazuje zelenu površinu sa raznobojnim stilizovanim cvetovima. Iznad scene stoje simbol note i tekst „Žuti cvet“; fotografija ne prenosi zvuk ili tok interakcije.",
+       "en": "A laptop screen shows a green field with colorful stylized flowers. A musical-note symbol and the words “Žuti cvet” appear above the scene; the photograph does not convey sound or the interaction sequence."
+      },
+      "caption": {
+       "sr": "Muzička Kutija — dostavljena fotografija prototipa.",
+       "en": "Muzička Kutija — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09"
+     }
+    ]
+   },
+   "after": {
+    "id": "muzicka-kutija-2026",
+    "title": "Muzička Kutija",
+    "author": {
+     "name": "Nikola Pajić",
+     "studentNumber": "49/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "originWeek": 1,
+    "medium": "digital",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09",
+    "description": {
+     "sr": "Digitalni prototip prikazan na laptopu: scena sa cvetovima različitih boja i oblika, uz oznaku „Žuti cvet“.",
+     "en": "A digital prototype shown on a laptop: a scene of flowers in different colors and shapes, with the label “Žuti cvet” (“Yellow flower”)."
+    },
+    "photos": [
+     {
+      "id": "muzicka-kutija-2026-photo-01",
+      "src": "data/prototipovi/muzicka-kutija-2026/01.jpg",
+      "sha256": "b287f28a4f0ddf3f036d3ffb4d8e84a61647250836ef7d49cc037ae122205c97",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Ekran laptopa prikazuje zelenu površinu sa raznobojnim stilizovanim cvetovima. Iznad scene stoje simbol note i tekst „Žuti cvet“; fotografija ne prenosi zvuk ili tok interakcije.",
+       "en": "A laptop screen shows a green field with colorful stylized flowers. A musical-note symbol and the words “Žuti cvet” appear above the scene; the photograph does not convey sound or the interaction sequence."
+      },
+      "caption": {
+       "sr": "Muzička Kutija — dostavljena fotografija prototipa.",
+       "en": "Muzička Kutija — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09"
+     }
+    ],
+    "documentedWeek": 2
+   }
+  },
+  {
+   "v": 3,
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Potvrđena dokumentacija rada u nedelji 2; početak izrade u nedelji 1 ostaje sačuvan.",
+    "en": "Confirmed documentation in week 2; the start of making in week 1 is preserved."
+   },
+   "sourceId": "teacher-2026-10-09-week-02",
+   "prototypeId": "zgradica-2026",
+   "before": {
+    "id": "zgradica-2026",
+    "title": "Zgradica",
+    "author": {
+     "name": "Teodora Radojičić",
+     "studentNumber": "72/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "originWeek": 1,
+    "medium": "physical",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09",
+    "description": {
+     "sr": "Višeetažna kartonska konstrukcija sa unutrašnjim pregradama, otvorima i belom lopticom.",
+     "en": "A multilevel cardboard structure with internal partitions, openings and a white ball."
+    },
+    "photos": [
+     {
+      "id": "zgradica-2026-photo-01",
+      "src": "data/prototipovi/zgradica-2026/01.jpg",
+      "sha256": "548460e82415964a00ca0ced18618e21db98e1183174cdf199ac60ff1184e4c3",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Otvorena kartonska konstrukcija ima više horizontalnih nivoa sa pregradama koje obrazuju prolaze. Na gornjoj površini je kružni otvor, na nižem nivou bela loptica; rukom se pridržava prednja ivica.",
+       "en": "An open cardboard structure has several horizontal levels with partitions forming passages. A circular opening is visible on the upper surface and a white ball on a lower level; a hand holds the front edge."
+      },
+      "caption": {
+       "sr": "Zgradica — dostavljena fotografija prototipa.",
+       "en": "Zgradica — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09"
+     }
+    ]
+   },
+   "after": {
+    "id": "zgradica-2026",
+    "title": "Zgradica",
+    "author": {
+     "name": "Teodora Radojičić",
+     "studentNumber": "72/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "originWeek": 1,
+    "medium": "physical",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09",
+    "description": {
+     "sr": "Višeetažna kartonska konstrukcija sa unutrašnjim pregradama, otvorima i belom lopticom.",
+     "en": "A multilevel cardboard structure with internal partitions, openings and a white ball."
+    },
+    "photos": [
+     {
+      "id": "zgradica-2026-photo-01",
+      "src": "data/prototipovi/zgradica-2026/01.jpg",
+      "sha256": "548460e82415964a00ca0ced18618e21db98e1183174cdf199ac60ff1184e4c3",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Otvorena kartonska konstrukcija ima više horizontalnih nivoa sa pregradama koje obrazuju prolaze. Na gornjoj površini je kružni otvor, na nižem nivou bela loptica; rukom se pridržava prednja ivica.",
+       "en": "An open cardboard structure has several horizontal levels with partitions forming passages. A circular opening is visible on the upper surface and a white ball on a lower level; a hand holds the front edge."
+      },
+      "caption": {
+       "sr": "Zgradica — dostavljena fotografija prototipa.",
+       "en": "Zgradica — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09"
+     }
+    ],
+    "documentedWeek": 2
+   }
+  },
+  {
+   "v": 4,
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Potvrđena dokumentacija rada u nedelji 2; početak izrade u nedelji 1 ostaje sačuvan.",
+    "en": "Confirmed documentation in week 2; the start of making in week 1 is preserved."
+   },
+   "sourceId": "teacher-2026-10-09-week-02",
+   "prototypeId": "sudoku-2026",
+   "before": {
+    "id": "sudoku-2026",
+    "title": "Sudoku",
+    "author": {
+     "name": "Nađa Stanić",
+     "studentNumber": "151/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "originWeek": 1,
+    "medium": "physical",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09",
+    "description": {
+     "sr": "Kartonske ploče sa tamnim kvadratnim poljima i svetlim, izdignutim ciframa. Fotografija beleži fizički raspored elemenata.",
+     "en": "Cardboard boards with dark square cells and light-colored raised numerals. The photograph records the physical arrangement of the pieces."
+    },
+    "photos": [
+     {
+      "id": "sudoku-2026-photo-01",
+      "src": "data/prototipovi/sudoku-2026/01.jpg",
+      "sha256": "0f8dbac6f927a3d4ca052830609b41231fb119b77b4f4b6d3827f138faeecf2a",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Dve kartonske ploče na stolu podeljene su u kvadratna polja. Na tamnim površinama nalaze se ručno izrađene reljefne cifre od svetlog kartona; deo ploča izlazi iz kadra.",
+       "en": "Two cardboard boards on a table are divided into square cells. Hand-cut raised numerals in light cardboard sit on dark surfaces; parts of the boards extend outside the photograph."
+      },
+      "caption": {
+       "sr": "Sudoku — dostavljena fotografija prototipa.",
+       "en": "Sudoku — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09"
+     }
+    ]
+   },
+   "after": {
+    "id": "sudoku-2026",
+    "title": "Sudoku",
+    "author": {
+     "name": "Nađa Stanić",
+     "studentNumber": "151/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "originWeek": 1,
+    "medium": "physical",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09",
+    "description": {
+     "sr": "Kartonske ploče sa tamnim kvadratnim poljima i svetlim, izdignutim ciframa. Fotografija beleži fizički raspored elemenata.",
+     "en": "Cardboard boards with dark square cells and light-colored raised numerals. The photograph records the physical arrangement of the pieces."
+    },
+    "photos": [
+     {
+      "id": "sudoku-2026-photo-01",
+      "src": "data/prototipovi/sudoku-2026/01.jpg",
+      "sha256": "0f8dbac6f927a3d4ca052830609b41231fb119b77b4f4b6d3827f138faeecf2a",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Dve kartonske ploče na stolu podeljene su u kvadratna polja. Na tamnim površinama nalaze se ručno izrađene reljefne cifre od svetlog kartona; deo ploča izlazi iz kadra.",
+       "en": "Two cardboard boards on a table are divided into square cells. Hand-cut raised numerals in light cardboard sit on dark surfaces; parts of the boards extend outside the photograph."
+      },
+      "caption": {
+       "sr": "Sudoku — dostavljena fotografija prototipa.",
+       "en": "Sudoku — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09"
+     }
+    ],
+    "documentedWeek": 2
+   }
+  },
+  {
+   "v": 5,
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Potvrđena dokumentacija rada u nedelji 2; početak izrade u nedelji 1 ostaje sačuvan.",
+    "en": "Confirmed documentation in week 2; the start of making in week 1 is preserved."
+   },
+   "sourceId": "teacher-2026-10-09-week-02",
+   "prototypeId": "pogodilica-2026",
+   "before": {
+    "id": "pogodilica-2026",
+    "title": "Pogodilica",
+    "author": {
+     "name": "Todorić Teodora",
+     "studentNumber": "39/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "originWeek": 1,
+    "medium": "physical",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09",
+    "description": {
+     "sr": "Obojeni delovi kartonske ambalaže i podloga sa oznakama boja. Na fotografiji se delovi rukama raspoređuju uz podlogu.",
+     "en": "Colored pieces of cardboard packaging and a base marked with colors. Hands are arranging pieces beside the base in the photograph."
+    },
+    "photos": [
+     {
+      "id": "pogodilica-2026-photo-01",
+      "src": "data/prototipovi/pogodilica-2026/01.jpg",
+      "sha256": "e78005d77caa5ea1ea28b6f755d1518cde2e07070e1cc68bdafe02d6364aa7ac",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Podloga od kartonske ambalaže za jaja ima izdignute vrhove sa obojenim oznakama. Oko nje su odvojeni delovi obojeni žuto, plavo, roze, crveno, zeleno, belo i ljubičasto; ruke drže dva dela.",
+       "en": "An egg-carton base has raised peaks marked with colors. Separate pieces around it are painted yellow, blue, pink, red, green, white and purple; hands hold two pieces."
+      },
+      "caption": {
+       "sr": "Pogodilica — dostavljena fotografija prototipa.",
+       "en": "Pogodilica — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09"
+     }
+    ]
+   },
+   "after": {
+    "id": "pogodilica-2026",
+    "title": "Pogodilica",
+    "author": {
+     "name": "Todorić Teodora",
+     "studentNumber": "39/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "originWeek": 1,
+    "medium": "physical",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09",
+    "description": {
+     "sr": "Obojeni delovi kartonske ambalaže i podloga sa oznakama boja. Na fotografiji se delovi rukama raspoređuju uz podlogu.",
+     "en": "Colored pieces of cardboard packaging and a base marked with colors. Hands are arranging pieces beside the base in the photograph."
+    },
+    "photos": [
+     {
+      "id": "pogodilica-2026-photo-01",
+      "src": "data/prototipovi/pogodilica-2026/01.jpg",
+      "sha256": "e78005d77caa5ea1ea28b6f755d1518cde2e07070e1cc68bdafe02d6364aa7ac",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Podloga od kartonske ambalaže za jaja ima izdignute vrhove sa obojenim oznakama. Oko nje su odvojeni delovi obojeni žuto, plavo, roze, crveno, zeleno, belo i ljubičasto; ruke drže dva dela.",
+       "en": "An egg-carton base has raised peaks marked with colors. Separate pieces around it are painted yellow, blue, pink, red, green, white and purple; hands hold two pieces."
+      },
+      "caption": {
+       "sr": "Pogodilica — dostavljena fotografija prototipa.",
+       "en": "Pogodilica — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09"
+     }
+    ],
+    "documentedWeek": 2
+   }
+  },
+  {
+   "v": 6,
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Potvrđena dokumentacija rada u nedelji 2; početak izrade u nedelji 1 ostaje sačuvan.",
+    "en": "Confirmed documentation in week 2; the start of making in week 1 is preserved."
+   },
+   "sourceId": "teacher-2026-10-09-week-02",
+   "prototypeId": "upadalica-2026",
+   "before": {
+    "id": "upadalica-2026",
+    "title": "Upadalica",
+    "author": {
+     "name": "Sara Janjić",
+     "studentNumber": "4/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09-upadalica",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "originWeek": 1,
+    "medium": "physical",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09-upadalica",
+    "description": {
+     "sr": "Otvorena kartonska kutija sa narandžastim cilindričnim elementima i dvema crnim šipkama iznad njih. Na fotografiji se rukom pridržava žuti predmet.",
+     "en": "An open cardboard box with orange cylindrical pieces and two black rods above them. A hand holds a yellow object in the photograph."
+    },
+    "photos": [
+     {
+      "id": "upadalica-2026-photo-01",
+      "src": "data/prototipovi/upadalica-2026/01.jpg",
+      "sha256": "538bef7a7700254940f36d6044f3d38f938bbb0609f1849072ac5a602b09c32b",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "U otvorenoj kartonskoj kutiji nalaze se tri narandžasta cilindrična elementa, iznad kojih prolaze dve crne šipke. Ruka delimično zaklanja levi element i pridržava žuti predmet.",
+       "en": "An open cardboard box contains three orange cylindrical pieces with two black rods above them. A hand partly obscures the left piece while holding a yellow object."
+      },
+      "caption": {
+       "sr": "Upadalica — dostavljena fotografija prototipa.",
+       "en": "Upadalica — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09-upadalica"
+     }
+    ]
+   },
+   "after": {
+    "id": "upadalica-2026",
+    "title": "Upadalica",
+    "author": {
+     "name": "Sara Janjić",
+     "studentNumber": "4/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09-upadalica",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "originWeek": 1,
+    "medium": "physical",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09-upadalica",
+    "description": {
+     "sr": "Otvorena kartonska kutija sa narandžastim cilindričnim elementima i dvema crnim šipkama iznad njih. Na fotografiji se rukom pridržava žuti predmet.",
+     "en": "An open cardboard box with orange cylindrical pieces and two black rods above them. A hand holds a yellow object in the photograph."
+    },
+    "photos": [
+     {
+      "id": "upadalica-2026-photo-01",
+      "src": "data/prototipovi/upadalica-2026/01.jpg",
+      "sha256": "538bef7a7700254940f36d6044f3d38f938bbb0609f1849072ac5a602b09c32b",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "U otvorenoj kartonskoj kutiji nalaze se tri narandžasta cilindrična elementa, iznad kojih prolaze dve crne šipke. Ruka delimično zaklanja levi element i pridržava žuti predmet.",
+       "en": "An open cardboard box contains three orange cylindrical pieces with two black rods above them. A hand partly obscures the left piece while holding a yellow object."
+      },
+      "caption": {
+       "sr": "Upadalica — dostavljena fotografija prototipa.",
+       "en": "Upadalica — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09-upadalica"
+     }
+    ],
+    "documentedWeek": 2
+   }
+  },
+  {
+   "v": 7,
+   "datum": "2026-10-09",
+   "sta": {
+    "sr": "Prema nastavnikovoj ispravci, fotografija isporučena za ovaj rad prikazuje primer iz udruženja „Živimo zajedno” donešen na prvi čas, a ne studentski prototip. Atribucija studentu je povučena; rad se dokumentuje u nedelji 1 kao pozajmljeni primer. Ako postoji istoimeni zasebni studentski rad, čeka sopstvenu fotografiju.",
+    "en": "Following the teacher’s correction, the photograph supplied for this work shows the association’s example brought to the first class, not a student prototype. The student attribution is withdrawn; the work is documented in week one as a borrowed example. If a separate student work of the same name exists, it awaits its own photograph."
+   },
+   "sourceId": "teacher-2026-10-09-correction",
+   "prototypeId": "zmijica-2026",
+   "before": {
+    "id": "zmijica-2026",
+    "title": "Zmijica",
+    "author": {
+     "name": "Ivana Simić",
+     "studentNumber": "141/2024"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "originWeek": 1,
+    "medium": "physical",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09",
+    "description": {
+     "sr": "Prostorna žičana putanja na kartonskoj podlozi, sa zelenim elementom na žici i izdignutim osloncima.",
+     "en": "A spatial wire path on a cardboard base, with a green element on the wire and raised supports."
+    },
+    "photos": [
+     {
+      "id": "zmijica-2026-photo-01",
+      "src": "data/prototipovi/zmijica-2026/01.jpg",
+      "sha256": "bd720059492d0db434998c7d2f39923e83d4a3e5a316d4bab93ebfa8130eaa9c",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
+       "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
+      },
+      "caption": {
+       "sr": "Zmijica — dostavljena fotografija prototipa.",
+       "en": "Zmijica — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09"
+     }
+    ],
+    "documentedWeek": 2
+   },
+   "after": {
+    "id": "zmijica-2026",
+    "title": "Zmijica",
+    "author": {
+     "name": "Primer iz udruženja „Živimo zajedno”"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09-correction",
+     "fields": [
+      "name"
+     ]
+    },
+    "medium": "physical",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09-correction",
+    "description": {
+     "sr": "Prostorna žičana putanja na kartonskoj podlozi, sa zelenim elementom na žici i izdignutim osloncima. Primer pozajmljen iz udruženja „Živimo zajedno”; nastavnik ga je doneo na prvi čas kao podsticaj studentima da osmisle sopstvene prototipove.",
+     "en": "A spatial wire path on a cardboard base, with a green element on the wire and raised supports. An example borrowed from the association “Živimo zajedno”; the teacher brought it to the first class as a starting point for students designing their own prototypes."
+    },
+    "photos": [
+     {
+      "id": "zmijica-2026-photo-01",
+      "src": "data/prototipovi/zmijica-2026/01.jpg",
+      "sha256": "bd720059492d0db434998c7d2f39923e83d4a3e5a316d4bab93ebfa8130eaa9c",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
+       "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
+      },
+      "caption": {
+       "sr": "Zmijica — dostavljena fotografija prototipa.",
+       "en": "Zmijica — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09"
+     }
+    ],
+    "documentedWeek": 1
+   }
+  },
+  {
+   "v": 8,
+   "datum": "2026-10-12",
+   "prototypeId": "zmijica-2026",
+   "sourceId": "teacher-2026-10-12-correction",
+   "sta": {
+    "sr": "Zmijica je studentski rad (atribucija vraćena na originalno dostavljenu studentsku prijavu), ne primer iz udruženja. Rad se dokumentuje u nedelji 2; uklonjen iz prikaza gradiva prvog časa.",
+    "en": "Zmijica is a student work (attribution restored to the originally supplied student record), not an association example. The work is documented in week 2 and removed from the first class's material display."
+   },
+   "before": {
+    "id": "zmijica-2026",
+    "title": "Zmijica",
+    "author": {
+     "name": "Primer iz udruženja „Živimo zajedno”"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-09-correction",
+     "fields": [
+      "name"
+     ]
+    },
+    "medium": "physical",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-09-correction",
+    "description": {
+     "sr": "Prostorna žičana putanja na kartonskoj podlozi, sa zelenim elementom na žici i izdignutim osloncima. Primer pozajmljen iz udruženja „Živimo zajedno”; nastavnik ga je doneo na prvi čas kao podsticaj studentima da osmisle sopstvene prototipove.",
+     "en": "A spatial wire path on a cardboard base, with a green element on the wire and raised supports. An example borrowed from the association “Živimo zajedno”; the teacher brought it to the first class as a starting point for students designing their own prototypes."
+    },
+    "photos": [
+     {
+      "id": "zmijica-2026-photo-01",
+      "src": "data/prototipovi/zmijica-2026/01.jpg",
+      "sha256": "bd720059492d0db434998c7d2f39923e83d4a3e5a316d4bab93ebfa8130eaa9c",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
+       "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
+      },
+      "caption": {
+       "sr": "Zmijica — dostavljena fotografija prototipa.",
+       "en": "Zmijica — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09"
+     }
+    ],
+    "documentedWeek": 1
+   },
+   "after": {
+    "id": "zmijica-2026",
+    "title": "Zmijica",
+    "author": {
+     "name": "Ivana Simić",
+     "studentNumber": "141/2024"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-12-correction",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "medium": "physical",
+    "status": "brought",
+    "sourceId": "teacher-2026-10-12-correction",
+    "description": {
+     "sr": "Prostorna žičana putanja na kartonskoj podlozi, sa zelenim elementom na žici i izdignutim osloncima. Studentski prototip; dokumentovan u drugoj nedelji sa ostalim studentskim radovima.",
+     "en": "A spatial wire path on a cardboard base, with a green element on the wire and raised supports. A student prototype, documented in week two with the other student works."
+    },
+    "photos": [
+     {
+      "id": "zmijica-2026-photo-01",
+      "src": "data/prototipovi/zmijica-2026/01.jpg",
+      "sha256": "bd720059492d0db434998c7d2f39923e83d4a3e5a316d4bab93ebfa8130eaa9c",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Savijena žica prolazi kroz zeleni element iznad kartonske podloge. Putanja ima petlje i promene visine, a oslonci su od slojevitog kartona i žute kartonske kutije.",
+       "en": "A bent wire passes through a green element above a cardboard base. The path has loops and changes in height, with supports made from layered cardboard and a yellow cardboard box."
+      },
+      "caption": {
+       "sr": "Zmijica — dostavljena fotografija prototipa.",
+       "en": "Zmijica — supplied photograph of the prototype."
+      },
+      "sourceId": "teacher-2026-10-09"
+     }
+    ],
+    "documentedWeek": 2,
+    "originWeek": 1
+   }
+  },
+  {
+   "v": 12,
+   "datum": "2026-10-20",
+   "prototypeId": "05-music-box",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Potpis prve fotografije rada 05-music-box nosio je dopunu „poslednja: korisnica proba prototip“, koja opisuje redosled niza, ne samu fotografiju; zadržano je samo dokazano „Red 1 u nizu slikanja“ (u skladu s en natpisom).",
+    "en": "The caption of work 05-music-box's first photograph carried “last: user tries the prototype”, which describes the sequence order, not that photograph; only the proven “Frame 1 in the photographic sequence” is kept (matching the English caption)."
+   },
+   "before": {
+    "id": "05-music-box",
+    "title": "Music box — nastavak",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 1,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Nikola Pajić",
+     "studentNumber": "49/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-19-nastavak",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Nastavak prvotalasnog rada „Muzička Kutija” (1. čas) donet na treći čas (16.10.2026); autorstvo prema potvrdi nastavnika od 19.10.2026, zapis fotografija nastavnika.",
+     "en": "A continuation of the first-wave work “Muzička Kutija” (week 1) brought to the third class (2026-10-16); authorship per the teacher’s confirmation of 19 October 2026, photographs from the teacher’s record."
+    },
+    "photos": [
+     {
+      "id": "05-music-box-foto-01",
+      "src": "data/prototipovi/05-music-box/01.jpg",
+      "sha256": "7798ba28210fd5274166b7a40f9d737dedcc0421145cdedd9e7f4b9b18597a2e",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „Music box”",
+       "en": "Photograph of the “Music box” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja; poslednja: korisnica proba prototip.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "05-music-box",
+    "title": "Music box — nastavak",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 1,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Nikola Pajić",
+     "studentNumber": "49/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-19-nastavak",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Nastavak prvotalasnog rada „Muzička Kutija” (1. čas) donet na treći čas (16.10.2026); autorstvo prema potvrdi nastavnika od 19.10.2026, zapis fotografija nastavnika.",
+     "en": "A continuation of the first-wave work “Muzička Kutija” (week 1) brought to the third class (2026-10-16); authorship per the teacher’s confirmation of 19 October 2026, photographs from the teacher’s record."
+    },
+    "photos": [
+     {
+      "id": "05-music-box-foto-01",
+      "src": "data/prototipovi/05-music-box/01.jpg",
+      "sha256": "7798ba28210fd5274166b7a40f9d737dedcc0421145cdedd9e7f4b9b18597a2e",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „Music box”",
+       "en": "Photograph of the “Music box” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 13,
+   "datum": "2026-10-20",
+   "prototypeId": "11-zmijica",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Potpis prve fotografije rada 11-zmijica nosio je dopunu „poslednja: korisnica proba prototip“, koja opisuje redosled niza, ne samu fotografiju; zadržano je samo dokazano „Red 1 u nizu slikanja“ (u skladu s en natpisom).",
+    "en": "The caption of work 11-zmijica's first photograph carried “last: user tries the prototype”, which describes the sequence order, not that photograph; only the proven “Frame 1 in the photographic sequence” is kept (matching the English caption)."
+   },
+   "before": {
+    "id": "11-zmijica",
+    "title": "Zmijica — nastavak",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 1,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Ivana Simić",
+     "studentNumber": "141/2024"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-19-nastavak",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Nastavak prvotalasnog rada „Zmijica” (1. čas) donet na treći čas (16.10.2026); autorstvo prema potvrdi nastavnika od 19.10.2026, zapis fotografija nastavnika.",
+     "en": "A continuation of the first-wave work “Zmijica” (week 1) brought to the third class (2026-10-16); authorship per the teacher’s confirmation of 19 October 2026, photographs from the teacher’s record."
+    },
+    "photos": [
+     {
+      "id": "11-zmijica-foto-01",
+      "src": "data/prototipovi/11-zmijica/01.jpg",
+      "sha256": "c74a92b47437cd0202474facf14c72a4e05de9b7d78957a0c42b105cb48178e9",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „Zmijica”",
+       "en": "Photograph of the “Zmijica” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja; poslednja: korisnica proba prototip.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "11-zmijica",
+    "title": "Zmijica — nastavak",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 1,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Ivana Simić",
+     "studentNumber": "141/2024"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-19-nastavak",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Nastavak prvotalasnog rada „Zmijica” (1. čas) donet na treći čas (16.10.2026); autorstvo prema potvrdi nastavnika od 19.10.2026, zapis fotografija nastavnika.",
+     "en": "A continuation of the first-wave work “Zmijica” (week 1) brought to the third class (2026-10-16); authorship per the teacher’s confirmation of 19 October 2026, photographs from the teacher’s record."
+    },
+    "photos": [
+     {
+      "id": "11-zmijica-foto-01",
+      "src": "data/prototipovi/11-zmijica/01.jpg",
+      "sha256": "c74a92b47437cd0202474facf14c72a4e05de9b7d78957a0c42b105cb48178e9",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „Zmijica”",
+       "en": "Photograph of the “Zmijica” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 14,
+   "datum": "2026-10-20",
+   "prototypeId": "14-koncici",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Potpis prve fotografije rada 14-koncici nosio je dopunu „poslednja: korisnica proba prototip“, koja opisuje redosled niza, ne samu fotografiju; zadržano je samo dokazano „Red 1 u nizu slikanja“ (u skladu s en natpisom). Uklonjena i nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja.",
+    "en": "The caption of work 14-koncici's first photograph carried “last: user tries the prototype”, which describes the sequence order, not that photograph; only the proven “Frame 1 in the photographic sequence” is kept (matching the English caption). The unproven making-week (originWeek 3) is also removed: the list proves only the documentation week."
+   },
+   "before": {
+    "id": "14-koncici",
+    "title": "končići",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Marija Stojković",
+     "studentNumber": "126/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "14-koncici-foto-01",
+      "src": "data/prototipovi/14-koncici/01.jpg",
+      "sha256": "118a83bf9210ba07b642e7c2bc9a6ba5da3f1d6b10b9c94ed789038bb2007ce6",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „končići”",
+       "en": "Photograph of the “končići” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja; poslednja: korisnica proba prototip.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "14-koncici",
+    "title": "končići",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Marija Stojković",
+     "studentNumber": "126/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "14-koncici-foto-01",
+      "src": "data/prototipovi/14-koncici/01.jpg",
+      "sha256": "118a83bf9210ba07b642e7c2bc9a6ba5da3f1d6b10b9c94ed789038bb2007ce6",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „končići”",
+       "en": "Photograph of the “končići” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 15,
+   "datum": "2026-10-20",
+   "prototypeId": "24-amaze",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Potpis prve fotografije rada 24-amaze nosio je dopunu „poslednja: korisnica proba prototip“, koja opisuje redosled niza, ne samu fotografiju; zadržano je samo dokazano „Red 1 u nizu slikanja“ (u skladu s en natpisom). Uklonjena i nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja.",
+    "en": "The caption of work 24-amaze's first photograph carried “last: user tries the prototype”, which describes the sequence order, not that photograph; only the proven “Frame 1 in the photographic sequence” is kept (matching the English caption). The unproven making-week (originWeek 3) is also removed: the list proves only the documentation week."
+   },
+   "before": {
+    "id": "24-amaze",
+    "title": "amaze",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Mihailo Maksimović",
+     "studentNumber": "68/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "24-amaze-foto-01",
+      "src": "data/prototipovi/24-amaze/01.jpg",
+      "sha256": "b07d4139b58262ce6b6db429deb874ad5b9ad0e7a0d61511158ea89354e558ac",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „amaze”",
+       "en": "Photograph of the “amaze” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja; poslednja: korisnica proba prototip.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "24-amaze",
+    "title": "amaze",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Mihailo Maksimović",
+     "studentNumber": "68/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "24-amaze-foto-01",
+      "src": "data/prototipovi/24-amaze/01.jpg",
+      "sha256": "b07d4139b58262ce6b6db429deb874ad5b9ad0e7a0d61511158ea89354e558ac",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „amaze”",
+       "en": "Photograph of the “amaze” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 16,
+   "datum": "2026-10-20",
+   "prototypeId": "25-stapici",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Potpis prve fotografije rada 25-stapici nosio je dopunu „poslednja: korisnica proba prototip“, koja opisuje redosled niza, ne samu fotografiju; zadržano je samo dokazano „Red 1 u nizu slikanja“ (u skladu s en natpisom). Uklonjena i nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja.",
+    "en": "The caption of work 25-stapici's first photograph carried “last: user tries the prototype”, which describes the sequence order, not that photograph; only the proven “Frame 1 in the photographic sequence” is kept (matching the English caption). The unproven making-week (originWeek 3) is also removed: the list proves only the documentation week."
+   },
+   "before": {
+    "id": "25-stapici",
+    "title": "stapici",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Petra Kalenj",
+     "studentNumber": "18/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "25-stapici-foto-01",
+      "src": "data/prototipovi/25-stapici/01.jpg",
+      "sha256": "a9cc2c641492f5f850f805105b202a6859445aee3a21b5be88ffea61516b2382",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „stapici”",
+       "en": "Photograph of the “stapici” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja; poslednja: korisnica proba prototip.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "25-stapici",
+    "title": "stapici",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Petra Kalenj",
+     "studentNumber": "18/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "25-stapici-foto-01",
+      "src": "data/prototipovi/25-stapici/01.jpg",
+      "sha256": "a9cc2c641492f5f850f805105b202a6859445aee3a21b5be88ffea61516b2382",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „stapici”",
+       "en": "Photograph of the “stapici” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 17,
+   "datum": "2026-10-20",
+   "prototypeId": "26-jana-grujic",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Potpis prve fotografije rada 26-jana-grujic nosio je dopunu „poslednja: korisnica proba prototip“, koja opisuje redosled niza, ne samu fotografiju; zadržano je samo dokazano „Red 1 u nizu slikanja“ (u skladu s en natpisom). Uklonjena i nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja.",
+    "en": "The caption of work 26-jana-grujic's first photograph carried “last: user tries the prototype”, which describes the sequence order, not that photograph; only the proven “Frame 1 in the photographic sequence” is kept (matching the English caption). The unproven making-week (originWeek 3) is also removed: the list proves only the documentation week."
+   },
+   "before": {
+    "id": "26-jana-grujic",
+    "title": "Bez naziva",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Jana Grujić",
+     "studentNumber": "108/23"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "26-jana-grujic-foto-01",
+      "src": "data/prototipovi/26-jana-grujic/01.jpg",
+      "sha256": "f45a621a4e6597675d310f3d26b63d8bd0e68d8bef45c51bf989db5683981bca",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa bez zabeleženog naziva",
+       "en": "Photograph of a prototype whose title was not recorded"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja; poslednja: korisnica proba prototip.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "26-jana-grujic",
+    "title": "Bez naziva",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Jana Grujić",
+     "studentNumber": "108/23"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "26-jana-grujic-foto-01",
+      "src": "data/prototipovi/26-jana-grujic/01.jpg",
+      "sha256": "f45a621a4e6597675d310f3d26b63d8bd0e68d8bef45c51bf989db5683981bca",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa bez zabeleženog naziva",
+       "en": "Photograph of a prototype whose title was not recorded"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 18,
+   "datum": "2026-10-20",
+   "prototypeId": "03-slovo-prsti",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "03-slovo-prsti",
+    "title": "Slovo Prsti",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Lazović Sara",
+     "studentNumber": "106/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "03-slovo-prsti-foto-02",
+      "src": "data/prototipovi/03-slovo-prsti/02.jpg",
+      "sha256": "74316ba22fd8feecbe7ff998268cdadec5f98660f0c7a2745ced6d234e180cee",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „Slovo Prsti”",
+       "en": "Photograph of the “Slovo Prsti” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "03-slovo-prsti-foto-03",
+      "src": "data/prototipovi/03-slovo-prsti/03.jpg",
+      "sha256": "38e8946c163ff4624a71c918f621fa1c16bab726e016e06a4708cac9034c0d72",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „Slovo Prsti”",
+       "en": "Photograph of the “Slovo Prsti” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "03-slovo-prsti",
+    "title": "Slovo Prsti",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Lazović Sara",
+     "studentNumber": "106/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "03-slovo-prsti-foto-02",
+      "src": "data/prototipovi/03-slovo-prsti/02.jpg",
+      "sha256": "74316ba22fd8feecbe7ff998268cdadec5f98660f0c7a2745ced6d234e180cee",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „Slovo Prsti”",
+       "en": "Photograph of the “Slovo Prsti” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "03-slovo-prsti-foto-03",
+      "src": "data/prototipovi/03-slovo-prsti/03.jpg",
+      "sha256": "38e8946c163ff4624a71c918f621fa1c16bab726e016e06a4708cac9034c0d72",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „Slovo Prsti”",
+       "en": "Photograph of the “Slovo Prsti” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 19,
+   "datum": "2026-10-20",
+   "prototypeId": "04-touch",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "04-touch",
+    "title": "Touch",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Maša Jotić",
+     "studentNumber": "134/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "04-touch-foto-01",
+      "src": "data/prototipovi/04-touch/01.jpg",
+      "sha256": "c5bcc1366312959369111e5b6987670767803c70718a6dcb71c712a2e9f0d84a",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „Touch”",
+       "en": "Photograph of the “Touch” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "04-touch",
+    "title": "Touch",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Maša Jotić",
+     "studentNumber": "134/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "04-touch-foto-01",
+      "src": "data/prototipovi/04-touch/01.jpg",
+      "sha256": "c5bcc1366312959369111e5b6987670767803c70718a6dcb71c712a2e9f0d84a",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „Touch”",
+       "en": "Photograph of the “Touch” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 20,
+   "datum": "2026-10-20",
+   "prototypeId": "06-iggyblox",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "06-iggyblox",
+    "title": "iggyblox",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Igor Stablović",
+     "studentNumber": "6/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "06-iggyblox-foto-01",
+      "src": "data/prototipovi/06-iggyblox/01.jpg",
+      "sha256": "e7b227d0b6a928c8ffd8607a94b1875ca9ff7fc683de92286f9087fbe10d7e9a",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „iggyblox”",
+       "en": "Photograph of the “iggyblox” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "06-iggyblox",
+    "title": "iggyblox",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Igor Stablović",
+     "studentNumber": "6/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "06-iggyblox-foto-01",
+      "src": "data/prototipovi/06-iggyblox/01.jpg",
+      "sha256": "e7b227d0b6a928c8ffd8607a94b1875ca9ff7fc683de92286f9087fbe10d7e9a",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „iggyblox”",
+       "en": "Photograph of the “iggyblox” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 21,
+   "datum": "2026-10-20",
+   "prototypeId": "07-hansgadget-starlight",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "07-hansgadget-starlight",
+    "title": "hansgadget — starlight",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Imre Halas",
+     "studentNumber": "1/2024"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "07-hansgadget-starlight-foto-02",
+      "src": "data/prototipovi/07-hansgadget-starlight/02.jpg",
+      "sha256": "51c5936de1975c2ad2c24a1e85e9aab770fd998fd0972d101afce6b13aa4657f",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "07-hansgadget-starlight-foto-03",
+      "src": "data/prototipovi/07-hansgadget-starlight/03.jpg",
+      "sha256": "4b92eba134a198b2941a2d474ec03df60c3f0cdd72a6e3f355580f5fd60954b3",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "07-hansgadget-starlight-foto-04",
+      "src": "data/prototipovi/07-hansgadget-starlight/04.jpg",
+      "sha256": "f0157424041ecf6a42e874fdd987ca8cd07d2fd488976f1ad4d947b359d9883e",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 4 u nizu slikanja.",
+       "en": "Frame 4 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "07-hansgadget-starlight-foto-05",
+      "src": "data/prototipovi/07-hansgadget-starlight/05.jpg",
+      "sha256": "1d921a58c1002c67c21b2f308b421344f79d1a20dc796331655246ee59d5868b",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 5 u nizu slikanja.",
+       "en": "Frame 5 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "07-hansgadget-starlight",
+    "title": "hansgadget — starlight",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Imre Halas",
+     "studentNumber": "1/2024"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "07-hansgadget-starlight-foto-02",
+      "src": "data/prototipovi/07-hansgadget-starlight/02.jpg",
+      "sha256": "51c5936de1975c2ad2c24a1e85e9aab770fd998fd0972d101afce6b13aa4657f",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "07-hansgadget-starlight-foto-03",
+      "src": "data/prototipovi/07-hansgadget-starlight/03.jpg",
+      "sha256": "4b92eba134a198b2941a2d474ec03df60c3f0cdd72a6e3f355580f5fd60954b3",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "07-hansgadget-starlight-foto-04",
+      "src": "data/prototipovi/07-hansgadget-starlight/04.jpg",
+      "sha256": "f0157424041ecf6a42e874fdd987ca8cd07d2fd488976f1ad4d947b359d9883e",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 4 u nizu slikanja.",
+       "en": "Frame 4 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "07-hansgadget-starlight-foto-05",
+      "src": "data/prototipovi/07-hansgadget-starlight/05.jpg",
+      "sha256": "1d921a58c1002c67c21b2f308b421344f79d1a20dc796331655246ee59d5868b",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 5 u nizu slikanja.",
+       "en": "Frame 5 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 22,
+   "datum": "2026-10-20",
+   "prototypeId": "08-zekino-polje",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "08-zekino-polje",
+    "title": "zekino polje",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Velemir Tijana",
+     "studentNumber": "51/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "08-zekino-polje-foto-02",
+      "src": "data/prototipovi/08-zekino-polje/02.jpg",
+      "sha256": "2a7f0579edf7ea106b08a2cac64df11e4a8abc0638c94398521bd320ba87cc58",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „zekino polje”",
+       "en": "Photograph of the “zekino polje” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "08-zekino-polje-foto-03",
+      "src": "data/prototipovi/08-zekino-polje/03.jpg",
+      "sha256": "0e31901eba85de65a2554aedcf0905828b91adc8985871625fc5296d8a2ffb41",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „zekino polje”",
+       "en": "Photograph of the “zekino polje” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "08-zekino-polje",
+    "title": "zekino polje",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Velemir Tijana",
+     "studentNumber": "51/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "08-zekino-polje-foto-02",
+      "src": "data/prototipovi/08-zekino-polje/02.jpg",
+      "sha256": "2a7f0579edf7ea106b08a2cac64df11e4a8abc0638c94398521bd320ba87cc58",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „zekino polje”",
+       "en": "Photograph of the “zekino polje” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "08-zekino-polje-foto-03",
+      "src": "data/prototipovi/08-zekino-polje/03.jpg",
+      "sha256": "0e31901eba85de65a2554aedcf0905828b91adc8985871625fc5296d8a2ffb41",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „zekino polje”",
+       "en": "Photograph of the “zekino polje” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 23,
+   "datum": "2026-10-20",
+   "prototypeId": "09-zen-garden",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "09-zen-garden",
+    "title": "zen garden",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Karla Krdzovac",
+     "studentNumber": "109/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "09-zen-garden-foto-02",
+      "src": "data/prototipovi/09-zen-garden/02.jpg",
+      "sha256": "4da5e476aa87dc8def1897d91cc38476389e565914d0dd612b54d67bc50e3103",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „zen garden”",
+       "en": "Photograph of the “zen garden” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "09-zen-garden-foto-03",
+      "src": "data/prototipovi/09-zen-garden/03.jpg",
+      "sha256": "e0dbf2c2dbbb901b00d10e18233ebb389c1e66965d79c435f1d1c03dd3098280",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „zen garden”",
+       "en": "Photograph of the “zen garden” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "09-zen-garden",
+    "title": "zen garden",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Karla Krdzovac",
+     "studentNumber": "109/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "09-zen-garden-foto-02",
+      "src": "data/prototipovi/09-zen-garden/02.jpg",
+      "sha256": "4da5e476aa87dc8def1897d91cc38476389e565914d0dd612b54d67bc50e3103",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „zen garden”",
+       "en": "Photograph of the “zen garden” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "09-zen-garden-foto-03",
+      "src": "data/prototipovi/09-zen-garden/03.jpg",
+      "sha256": "e0dbf2c2dbbb901b00d10e18233ebb389c1e66965d79c435f1d1c03dd3098280",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „zen garden”",
+       "en": "Photograph of the “zen garden” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 24,
+   "datum": "2026-10-20",
+   "prototypeId": "10-lavirint",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "10-lavirint",
+    "title": "lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Maša Marković",
+     "studentNumber": "121/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "10-lavirint-foto-02",
+      "src": "data/prototipovi/10-lavirint/02.jpg",
+      "sha256": "b008d1d4a41abd34a49fb27076a1b57d464c26c832870aaaecbb07eabfeb6d39",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „lavirint”",
+       "en": "Photograph of the “lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "10-lavirint-foto-03",
+      "src": "data/prototipovi/10-lavirint/03.jpg",
+      "sha256": "804450223a378d007c1b397dd4cf40aed35e1398dface15d996428fcbc1d9fe3",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „lavirint”",
+       "en": "Photograph of the “lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "10-lavirint-foto-04",
+      "src": "data/prototipovi/10-lavirint/04.jpg",
+      "sha256": "4737a596e66acf5d52822358ed65cebd71891a76c5281e8afc9f9e55e9fc1c62",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „lavirint”",
+       "en": "Photograph of the “lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 4 u nizu slikanja.",
+       "en": "Frame 4 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "10-lavirint",
+    "title": "lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Maša Marković",
+     "studentNumber": "121/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "10-lavirint-foto-02",
+      "src": "data/prototipovi/10-lavirint/02.jpg",
+      "sha256": "b008d1d4a41abd34a49fb27076a1b57d464c26c832870aaaecbb07eabfeb6d39",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „lavirint”",
+       "en": "Photograph of the “lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "10-lavirint-foto-03",
+      "src": "data/prototipovi/10-lavirint/03.jpg",
+      "sha256": "804450223a378d007c1b397dd4cf40aed35e1398dface15d996428fcbc1d9fe3",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „lavirint”",
+       "en": "Photograph of the “lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "10-lavirint-foto-04",
+      "src": "data/prototipovi/10-lavirint/04.jpg",
+      "sha256": "4737a596e66acf5d52822358ed65cebd71891a76c5281e8afc9f9e55e9fc1c62",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „lavirint”",
+       "en": "Photograph of the “lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 4 u nizu slikanja.",
+       "en": "Frame 4 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 25,
+   "datum": "2026-10-20",
+   "prototypeId": "13-kubismo",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "13-kubismo",
+    "title": "kubismo",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Sofia Ocanto Jovičić",
+     "studentNumber": "138/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "13-kubismo-foto-02",
+      "src": "data/prototipovi/13-kubismo/02.jpg",
+      "sha256": "07d34703201465866b33cb89959f3e662f779c07ce992d07ca2753b72c4871ff",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „kubismo”",
+       "en": "Photograph of the “kubismo” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "13-kubismo",
+    "title": "kubismo",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Sofia Ocanto Jovičić",
+     "studentNumber": "138/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "13-kubismo-foto-02",
+      "src": "data/prototipovi/13-kubismo/02.jpg",
+      "sha256": "07d34703201465866b33cb89959f3e662f779c07ce992d07ca2753b72c4871ff",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „kubismo”",
+       "en": "Photograph of the “kubismo” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 26,
+   "datum": "2026-10-20",
+   "prototypeId": "15-padalica",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "15-padalica",
+    "title": "padalica",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Ivana Cvetković",
+     "studentNumber": "161/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "15-padalica-foto-02",
+      "src": "data/prototipovi/15-padalica/02.jpg",
+      "sha256": "7ee99e3714a031cee2c2f1892d33b08e9991c245b472e17d611f3e89a0cd2c93",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „padalica”",
+       "en": "Photograph of the “padalica” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "15-padalica-foto-03",
+      "src": "data/prototipovi/15-padalica/03.jpg",
+      "sha256": "f4996b8b13d457a0dff2def7a7dcb00035fdf57ab85bc6fb5bbe41366e1e4783",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „padalica”",
+       "en": "Photograph of the “padalica” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "15-padalica",
+    "title": "padalica",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Ivana Cvetković",
+     "studentNumber": "161/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "15-padalica-foto-02",
+      "src": "data/prototipovi/15-padalica/02.jpg",
+      "sha256": "7ee99e3714a031cee2c2f1892d33b08e9991c245b472e17d611f3e89a0cd2c93",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „padalica”",
+       "en": "Photograph of the “padalica” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "15-padalica-foto-03",
+      "src": "data/prototipovi/15-padalica/03.jpg",
+      "sha256": "f4996b8b13d457a0dff2def7a7dcb00035fdf57ab85bc6fb5bbe41366e1e4783",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „padalica”",
+       "en": "Photograph of the “padalica” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 27,
+   "datum": "2026-10-20",
+   "prototypeId": "16-obojilica",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "16-obojilica",
+    "title": "obojilica",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Anja Bukurović",
+     "studentNumber": "85/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "16-obojilica-foto-02",
+      "src": "data/prototipovi/16-obojilica/02.jpg",
+      "sha256": "6d1b70e1cfd470808e56eaeb3f874b7965756f0b92a17f929259b2066b2805d2",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „obojilica”",
+       "en": "Photograph of the “obojilica” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "16-obojilica-foto-03",
+      "src": "data/prototipovi/16-obojilica/03.jpg",
+      "sha256": "cefbc554e9a271628e7ed3f994bd11bf8fb2917f254068fc458b87bc7d889a0b",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „obojilica”",
+       "en": "Photograph of the “obojilica” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "16-obojilica-foto-04",
+      "src": "data/prototipovi/16-obojilica/04.jpg",
+      "sha256": "0edca7ae447537d4d4692cb0f11fc92ec6f9e3c1524416ecf3c3abda008b7b33",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „obojilica”",
+       "en": "Photograph of the “obojilica” prototype"
+      },
+      "caption": {
+       "sr": "Red 4 u nizu slikanja.",
+       "en": "Frame 4 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "16-obojilica-foto-05",
+      "src": "data/prototipovi/16-obojilica/05.jpg",
+      "sha256": "45b78b674ace53165e8e4d1fa2670671e5c532e1584d4f237478b35adf437b63",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „obojilica”",
+       "en": "Photograph of the “obojilica” prototype"
+      },
+      "caption": {
+       "sr": "Red 5 u nizu slikanja.",
+       "en": "Frame 5 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "16-obojilica",
+    "title": "obojilica",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Anja Bukurović",
+     "studentNumber": "85/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "16-obojilica-foto-02",
+      "src": "data/prototipovi/16-obojilica/02.jpg",
+      "sha256": "6d1b70e1cfd470808e56eaeb3f874b7965756f0b92a17f929259b2066b2805d2",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „obojilica”",
+       "en": "Photograph of the “obojilica” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "16-obojilica-foto-03",
+      "src": "data/prototipovi/16-obojilica/03.jpg",
+      "sha256": "cefbc554e9a271628e7ed3f994bd11bf8fb2917f254068fc458b87bc7d889a0b",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „obojilica”",
+       "en": "Photograph of the “obojilica” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "16-obojilica-foto-04",
+      "src": "data/prototipovi/16-obojilica/04.jpg",
+      "sha256": "0edca7ae447537d4d4692cb0f11fc92ec6f9e3c1524416ecf3c3abda008b7b33",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „obojilica”",
+       "en": "Photograph of the “obojilica” prototype"
+      },
+      "caption": {
+       "sr": "Red 4 u nizu slikanja.",
+       "en": "Frame 4 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "16-obojilica-foto-05",
+      "src": "data/prototipovi/16-obojilica/05.jpg",
+      "sha256": "45b78b674ace53165e8e4d1fa2670671e5c532e1584d4f237478b35adf437b63",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „obojilica”",
+       "en": "Photograph of the “obojilica” prototype"
+      },
+      "caption": {
+       "sr": "Red 5 u nizu slikanja.",
+       "en": "Frame 5 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 28,
+   "datum": "2026-10-20",
+   "prototypeId": "21-vijugava-staza",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "21-vijugava-staza",
+    "title": "vijugava staza",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Aleksa Tašković",
+     "studentNumber": "36/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "21-vijugava-staza-foto-01",
+      "src": "data/prototipovi/21-vijugava-staza/01.jpg",
+      "sha256": "2b00623754b725503ccdc3e2e28d45d1226e2c34d75ae27f868a1cf674dad54b",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „vijugava staza”",
+       "en": "Photograph of the “vijugava staza” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "21-vijugava-staza",
+    "title": "vijugava staza",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Aleksa Tašković",
+     "studentNumber": "36/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "21-vijugava-staza-foto-01",
+      "src": "data/prototipovi/21-vijugava-staza/01.jpg",
+      "sha256": "2b00623754b725503ccdc3e2e28d45d1226e2c34d75ae27f868a1cf674dad54b",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „vijugava staza”",
+       "en": "Photograph of the “vijugava staza” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 29,
+   "datum": "2026-10-20",
+   "prototypeId": "22-lenin-lavirint",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "22-lenin-lavirint",
+    "title": "lenin lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Lena Kovačić",
+     "studentNumber": "132/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "22-lenin-lavirint-foto-01",
+      "src": "data/prototipovi/22-lenin-lavirint/01.jpg",
+      "sha256": "7dbde16d9cfcad362c6f8e213912d8e27202fa9ccf81bfb7236bb8fdc296ebcf",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „lenin lavirint”",
+       "en": "Photograph of the “lenin lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "22-lenin-lavirint",
+    "title": "lenin lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Lena Kovačić",
+     "studentNumber": "132/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "22-lenin-lavirint-foto-01",
+      "src": "data/prototipovi/22-lenin-lavirint/01.jpg",
+      "sha256": "7dbde16d9cfcad362c6f8e213912d8e27202fa9ccf81bfb7236bb8fdc296ebcf",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „lenin lavirint”",
+       "en": "Photograph of the “lenin lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 30,
+   "datum": "2026-10-20",
+   "prototypeId": "23-edukativna",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "23-edukativna",
+    "title": "edukativna",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Katarina Ušjak",
+     "studentNumber": "86/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "23-edukativna-foto-01",
+      "src": "data/prototipovi/23-edukativna/01.jpg",
+      "sha256": "6e7358601894ad61d0502e795b6adc68d084561381cee31b277359bef73eb143",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „edukativna”",
+       "en": "Photograph of the “edukativna” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "23-edukativna",
+    "title": "edukativna",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Katarina Ušjak",
+     "studentNumber": "86/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "23-edukativna-foto-01",
+      "src": "data/prototipovi/23-edukativna/01.jpg",
+      "sha256": "6e7358601894ad61d0502e795b6adc68d084561381cee31b277359bef73eb143",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „edukativna”",
+       "en": "Photograph of the “edukativna” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 31,
+   "datum": "2026-10-20",
+   "prototypeId": "27-fliper",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "27-fliper",
+    "title": "fliper",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Iva Mijanović",
+     "studentNumber": "28/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "27-fliper-foto-02",
+      "src": "data/prototipovi/27-fliper/02.jpg",
+      "sha256": "ff62203b4e3eeef4c20880030d856f035193956be139b3193f77100e13c6d8f2",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „fliper”",
+       "en": "Photograph of the “fliper” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "27-fliper",
+    "title": "fliper",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Iva Mijanović",
+     "studentNumber": "28/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "27-fliper-foto-02",
+      "src": "data/prototipovi/27-fliper/02.jpg",
+      "sha256": "ff62203b4e3eeef4c20880030d856f035193956be139b3193f77100e13c6d8f2",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „fliper”",
+       "en": "Photograph of the “fliper” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 32,
+   "datum": "2026-10-20",
+   "prototypeId": "28-stilopol",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas.",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave."
+   },
+   "before": {
+    "id": "28-stilopol",
+    "title": "stilopol",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Lena Dukić",
+     "studentNumber": "131/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "28-stilopol-foto-01",
+      "src": "data/prototipovi/28-stilopol/01.jpg",
+      "sha256": "437ca12925497095230fd9a580a732eeeb2d21e2c65405fb3e3f5ddb308d8dda",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „stilopol”",
+       "en": "Photograph of the “stilopol” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "28-stilopol",
+    "title": "stilopol",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Lena Dukić",
+     "studentNumber": "131/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "28-stilopol-foto-01",
+      "src": "data/prototipovi/28-stilopol/01.jpg",
+      "sha256": "437ca12925497095230fd9a580a732eeeb2d21e2c65405fb3e3f5ddb308d8dda",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „stilopol”",
+       "en": "Photograph of the “stilopol” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 33,
+   "datum": "2026-10-20",
+   "prototypeId": "29-castle",
+   "sourceId": "teacher-2026-10-18-cas-03",
+   "sta": {
+    "sr": "Uklonjena nedokazana nedelja izrade (originWeek 3): spisak dokazuje samo nedelju dokumentovanja; potvrda od 18.10. izričito ubraja samo Muzičku kutiju, Zmijicu, Sudoku i „Castle“ u prvi talas. Za „Castle“ je upisano dokazano poreklo iz prvog talasa (originWeek 1).",
+    "en": "Removed the unproven making-week (originWeek 3): the list proves only the documentation week; the 18 Oct confirmation places only Muzička kutija, Zmijica, Sudoku and “Castle” in the first wave. “Castle” receives the proven first-wave origin (originWeek 1)."
+   },
+   "before": {
+    "id": "29-castle",
+    "title": "Castle",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 3,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Filip Doljanovič"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "29-castle-foto-02",
+      "src": "data/prototipovi/29-castle/02.jpg",
+      "sha256": "9678f07878ba154ee16fa62009e5dd1bb6158369b4089ad2eef42d2a9f73b82b",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „Castle”",
+       "en": "Photograph of the “Castle” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "29-castle",
+    "title": "Castle",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "originWeek": 1,
+    "documentedWeek": 3,
+    "author": {
+     "name": "Filip Doljanovič"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "29-castle-foto-02",
+      "src": "data/prototipovi/29-castle/02.jpg",
+      "sha256": "9678f07878ba154ee16fa62009e5dd1bb6158369b4089ad2eef42d2a9f73b82b",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „Castle”",
+       "en": "Photograph of the “Castle” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  }
+ ]
+}

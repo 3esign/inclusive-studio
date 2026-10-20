@@ -9,7 +9,15 @@
 export const withheldWorkIds = Object.freeze([]);
 export const withheldPhotoDirectories = Object.freeze([...withheldWorkIds, 'poseta-udruzenje']);
 export const publicPhoto = photo => !withheldPhotoDirectories.some(id => photo.src.startsWith('data/prototipovi/' + id + '/'));
-export function publishedPrototypes(data) {
-  const items = data.items.filter(item => !withheldWorkIds.includes(item.id));
+// A work whose attribution still waits for the student's confirmation (attributionStatus
+// 'pending', list rows 17–19 of the third class) is not published by default. The teacher
+// may later decide to show it with its marker; until then the evidence stays recorded,
+// out of the public gallery.
+const attributionPending = item => item.attributionStatus === 'pending';
+// showPending is the internal review view (the teacher's own look at the record, or a
+// future explicit decision to publish a pending work with its marker). Every public
+// page renders without it, so a pending attribution never reaches the gallery silently.
+export function publishedPrototypes(data, { showPending = false } = {}) {
+  const items = data.items.filter(item => !withheldWorkIds.includes(item.id) && (showPending || !attributionPending(item)));
   return { ...data, items, observations: data.observations.filter(event => items.some(item => item.id === event.prototypeId)) };
 }

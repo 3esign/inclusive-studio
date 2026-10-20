@@ -6,7 +6,7 @@ import { nextClassEntry, renderNextClass } from './next-class.js';
 let data = null;
 async function load() {
   try {
-    const [tok, prototypes] = await Promise.all([loadJSON('data/tok.json'), loadJSON('data/prototipovi.json')]);
+    const [tok, prototypes] = await Promise.all([loadJSON('data/tok.json'), loadJSON('data/prototipovi-javno.json')]);
     const entry = nextClassEntry(tok);
     const week = entry ? await loadJSON(weekFile(entry.nedelja)) : null;
     const refs = await resolveRefs(week?.blocks || []);

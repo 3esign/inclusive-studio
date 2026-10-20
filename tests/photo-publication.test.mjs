@@ -31,9 +31,43 @@ test('the publication gate is open for the works and closed only for the visit',
   assert.deepEqual([...withheldPhotoDirectories], ['poseta-udruzenje']);
 });
 
-test('every third-class work from the list is published, and no invented work exists', () => {
+test('the served public excerpt is the gated registry, with no pending attribution in it', () => {
+  // Pages fetch data/prototipovi-javno.json, not the full register: a pending attribution
+  // must be absent from the bytes the reader downloads, not merely hidden by the renderer.
+  const served = JSON.parse(read('data/prototipovi-javno.json'));
+  const gated = publishedPrototypes(data);
+  const published = new Set(gated.items.map(item => item.id));
+  const expected = { ...gated, revizije: data.revizije.filter(r => published.has(r.prototypeId)) };
+  assert.deepEqual(served, expected, 'the public excerpt must be exactly the gated registry');
+  const text = read('data/prototipovi-javno.json');
+  for (const item of week3.filter(i => i.attributionStatus === 'pending')) {
+    assert.ok(!text.includes(item.author.name), 'pending author name travels to the reader: ' + item.id);
+    assert.ok(!text.includes(item.author.studentNumber), 'pending student number travels to the reader: ' + item.id);
+    for (const photo of item.photos || []) assert.ok(!text.includes(photo.src), 'pending photograph travels to the reader: ' + photo.src);
+  }
+});
+
+test('a work whose attribution is pending is withheld from publication until confirmed', () => {
+  // Redosled 17–19 iz spiska čeka studentovu potvrdu: rad i njegove fotografije ne smeju
+  // u javni pregled dok atribucija nije potvrđena. Oznaka „čeka potvrdu" na kartici
+  // dovoljna je samo uz nastavnikovu izričitu odluku — podrazumevano se ne objavljuje.
+  const item = week3[0];
+  const pending = { ...item, attributionStatus: 'pending' };
+  const withPending = { ...data, items: [...data.items.filter(i => i.id !== item.id), pending], observations: data.observations };
+  const out = publishedPrototypes(withPending);
+  assert.ok(!out.items.some(i => i.id === item.id), 'pending work must not be published');
+  assert.ok(!out.observations.some(e => e.prototypeId === item.id), 'observations of a pending work must not be published');
+});
+
+test('every third-class work is recorded, and unpublished ones are exactly the pending three', () => {
   assert.equal(week3.length, 26);
-  assert.equal(publishedPrototypes(data).items.filter(i => i.documentedWeek === 3).length, 26);
+  // 26 recorded, 23 published: rows 17–19 await the students' confirmation (teacher's list
+  // of 18.10, zapisi 17–20) and stay out of the public gallery until confirmed.
+  const published = publishedPrototypes(data).items.filter(i => i.documentedWeek === 3);
+  assert.equal(published.length, 23);
+  const pending = week3.filter(i => i.attributionStatus === 'pending');
+  assert.deepEqual(pending.map(i => i.id), ['17-putanja', '18-brza-putanja', '19-2d-lavirint']);
+  for (const item of pending) assert.ok(!published.some(i => i.id === item.id), 'pending work must not be published: ' + item.id);
   assert.equal(data.items.filter(i => i.documentedWeek === 2).length, 8);
   for (const item of week3) {
     const row = rowOf(item);
@@ -72,7 +106,10 @@ test('published photographs follow the list exactly: the work frames, never the 
   }
 });
 
-test('photographs on disk, in the registry and in the list cover every original frame exactly once', () => {
+test('photographs on disk, in the registry and in the list cover every original frame exactly once', t => {
+  // Sirovi prijem je lokalni izvor, namerno van prenosivog snapshot-a:
+  // u restauriranoj verifikacionoj kopiji ova provera nema sta da cita.
+  if (!fs.existsSync(abs('data/cas-03/slike'))) t.skip('sirovi prijem (data/cas-03/slike) nije deo ove kopije');
   for (const item of week3) {
     const n = rowOf(item).slike;
     const originals = nums(framesIn('data/cas-03/slike/' + item.id));
@@ -105,14 +142,19 @@ test('the visit stays withdrawn, with its evidence intact', () => {
   for (const photo of visit.photos) assert.ok(!html.includes(photo.src), 'withheld visit photo leaked: ' + photo.src);
 });
 
-test('the gallery page shows all 26 third-class works and the eight earlier ones', () => {
+test('the gallery page shows the 23 published third-class works and the eight earlier ones', () => {
   setLanguage('sr');
   const html = read('prototipovi.html');
   const published = publishedPrototypes(data).items;
-  assert.equal(published.length, 34);
+  assert.equal(published.length, 31);
   for (const item of published) {
     assert.ok(html.includes('data-prototype="' + item.id + '"'), 'missing from gallery: ' + item.id);
     for (const photo of item.photos || []) assert.ok(html.includes(photo.src), 'missing photo in gallery: ' + photo.src);
+  }
+  for (const id of ['17-putanja', '18-brza-putanja', '19-2d-lavirint']) {
+    assert.ok(!html.includes('data-prototype="' + id + '"'), 'pending work must stay out of the gallery: ' + id);
+    const item = data.items.find(i => i.id === id);
+    for (const photo of item.photos || []) assert.ok(!html.includes(photo.src), 'pending work photo must stay out of the gallery: ' + photo.src);
   }
   for (const photo of visit.photos) assert.ok(!html.includes(photo.src), 'withheld visit photo in gallery: ' + photo.src);
 });
