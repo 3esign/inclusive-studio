@@ -3,7 +3,7 @@
   "version": 1,
   "n": 3,
   "state": "published",
-  "updated": "2026-10-18",
+  "updated": "2026-10-21",
   "title": {
     "en": "The hand that holds it",
     "sr": "Ruka koja drži"
@@ -40,33 +40,21 @@
       "kind": "list",
       "items": [
         {
-          "en": "The students' works were photographed in class: 29 entries, recorded in shooting order. The number beside each entry counts photographs — the sequence starts with the box and the degree photographs and ends with the picture of the environment in which a user tries the prototype.",
-          "sr": "Radovi studenata fotografisani su na času: 29 zapisa, zapisivan redom slikanja. Broj uz svaki zapis je broj fotografija u nizu — niz počinje kutijom odnosno slikama sa diplomskih, a završava se slikom iz okruženja u kome korisnica proba prototip."
+          "sr": "Predstavljeni su i fotografisani studentski radovi: skice, igre i prototipovi. Galerije pokazuju različite poglede na pojedinačne radove.",
+          "en": "Student sketches, games and prototypes were presented and photographed. The galleries show different views of individual works."
         },
         {
-          "en": "Confirmed on 18 October 2026: Muzička kutija, Zmijica, Sudoku and „Castle” already belong to the first wave of prototypes.",
-          "sr": "Potvrđeno 18.10.2026: Muzička kutija, Zmijica, Sudoku i „Castle” već su u prvom talasu prototipa."
-        },
-        {
-          "en": "Entries 17–20 await the students' confirmation; the unclear parts are marked on the list page, for the students to come forward with corrections.",
-          "sr": "Zapisi 17–20 čekaju potvrdu studenata; nejasni delovi su označeni na strani spiska, da se studenti jave sa ispravkama."
-        },
-        {
-          "en": "From the association: the director praised the student prototypes, the users' wish to try them was clear, and a possible competition run by the association was mentioned.",
-          "sr": "Iz udruženja: direktor je pohvalio studentske prototipe, primetna je želja korisnika da ih isprobavaju, i pomenut je mogući konkurs od strane udruženja."
-        },
-        {
-          "en": "The photographs are still on the teacher's phone — not yet transferred; the list page and the work register wait for them.",
-          "sr": "Fotografije su još na telefonu nastavnika — nisu prenete; strana spiska i registar radova ih čekaju."
+          "sr": "Iz udruženja su stigle fotografije sa praktičnih vežbi: direktor udruženja pohvalio je studentske prototipe, primetna je želja korisnika da isprobavaju prototipe koje studenti kreiraju, i pomenut je mogući konkurs od strane udruženja.",
+          "en": "Photographs from the association's practical session arrived: the association's director praised the student prototypes, the users' wish to try the prototypes students create was clear, and a possible competition run by the association was mentioned."
         }
       ]
     },
     {
       "kind": "link",
-      "href": "cas-03.html",
+      "href": "prototipovi.html#galerije-w03",
       "text": {
-        "en": "Week 3 — the list of the third class: 29 works in shooting order, the association's reading and the questions that wait for clarification",
-        "sr": "Nedelja 3 — spisak radova trećeg časa: 29 radova redom slikanja, analiza iz udruženja i pitanja koja čekaju razjašnjenje"
+        "sr": "Treći čas — galerije radova",
+        "en": "Third class — work galleries"
       }
     },
     {
@@ -143,6 +131,14 @@
       "sta": {
         "en": "Held on 16 October 2026 and published: the recorded-after-class section and the link to the third-class list page were added; the date is confirmed.",
         "sr": "Održano 16.10.2026. i objavljeno: dopunjen je odeljak „Zapisano posle časa” i veza na stranu spiska radova trećeg časa; datum je potvrđen."
+      }
+    },
+    {
+      "v": 4,
+      "datum": "2026-10-21",
+      "sta": {
+        "sr": "Po ispravci nastavnika 21.10: zapis časa sažet na nastavni sadržaj; povučeni spisak i stanje uvoza, dodate galerije bez automatske atribucije. Ostalo gradivo nije menjano.",
+        "en": "Teacher correction, 21 October: class record edited to teaching content; processing roster and import status removed, independent galleries linked. Remaining material unchanged."
       }
     }
   ]

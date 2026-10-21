@@ -19,7 +19,7 @@ const MODULES = {
   'igracka.html': 'toy.js', 'godista.html': 'ages.js',
   'naslovna.html': 'naslovna.js', 'udruzenje.html': 'udruzenje.js',
   'sledeci.html': 'sledeci.js', 'oblak.html': 'oblak.js', 'prototipovi.html': 'prototipovi.js',
-  'poseta.html': 'poseta.js', 'cas-03.html': 'classlist.js'
+  'poseta.html': 'poseta.js', 'cas-03.html': 'cas.js'
 };
 
 test('the established primary destinations and lecture/source routes cannot disappear together with generated shells', () => {
@@ -85,7 +85,7 @@ test('every page loads one module, and only the pages that need the big bundle g
   for (const page of pages) {
     const scripts = [...html[page].matchAll(/<script type="module" src="assets\/([a-z.-]+)"/g)].map(m => m[1]);
     assert.equal(scripts.length, 1, page);
-    assert.equal(scripts[0], MODULES[page] || 'studio.js', page);
+    assert.equal(scripts[0], MODULES[page] || (page.startsWith('galerija-') ? 'gallery-page.js' : 'studio.js'), page);
   }
   const lean = Object.keys(MODULES);
   for (const page of lean) assert.ok(!html[page].includes('studio.js'), page + ' must not load the legacy bundle');

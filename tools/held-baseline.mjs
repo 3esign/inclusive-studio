@@ -29,9 +29,7 @@ for (const item of tok.odrzano) {
 }
 setLanguage('sr');
 const target = new URL('index.html', root), before = await readFile(target, 'utf8');
-// The chronological rule (teacher's order of 19.10.2026): the landing reads oldest class
-// first; the visit and the works live inside their own week's record, so no block stands
-// above the record it belongs to. The standalone lead and the mixed teaser are gone.
+// Teacher, 21.10.2026: newest first, retaining each class and its own attachments.
 const lead = /[ \t]*<!-- visit-lead:start -->[\s\S]*?<!-- visit-lead:end -->\r?\n?/;
 const teaser = /[ \t]*<!-- prototype-teaser:start -->[\s\S]*?<!-- prototype-teaser:end -->\r?\n?/;
 const top = /<!-- held-intro:start -->[\s\S]*?<!-- held-intro:end -->/;

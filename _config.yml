@@ -1,11 +1,4 @@
-# GitHub Pages serves the whole repository except the Jekyll "exclude" list below.
-# Public package = public excerpt (data/prototipovi-javno.json) + the teacher's list
-# (data/cas-03/spisak.json, the approved surface of uncertainty) + photos of published works.
-# The full register, the internal intake of cas-03 and photos of works whose attribution
-# is pending or deliberately unpublished stay unserved — cleaning the render is not enough.
-# The visit set also stays unserved until the teacher confirms its captions.
-# The third-class prototype folders are published again: the teacher's list is the
-# record of how many photographs each work got, in shooting order (see assets/photo-publication.js).
+# Student publication excludes historical processing records and superseded image associations.
 exclude:
   - data/prototipovi.json
   - data/prototipovi/poseta-udruzenje
@@ -17,3 +10,35 @@ exclude:
   - data/cas-03/uloge-slika.json
   - data/cas-03/verifikacija-prijema.md
   - data/cas-03/slike
+  - data/cas-03/spisak.json
+  - assets/cas03-core.js
+  - data/prototipovi/03-slovo-prsti
+  - data/prototipovi/04-touch
+  - data/prototipovi/05-music-box
+  - data/prototipovi/06-iggyblox
+  - data/prototipovi/07-hansgadget-starlight
+  - data/prototipovi/08-zekino-polje
+  - data/prototipovi/09-zen-garden
+  - data/prototipovi/10-lavirint
+  - data/prototipovi/11-zmijica
+  - data/prototipovi/12-sudoku
+  - data/prototipovi/13-kubismo
+  - data/prototipovi/14-koncici
+  - data/prototipovi/15-padalica
+  - data/prototipovi/16-obojilica
+  - data/prototipovi/21-vijugava-staza
+  - data/prototipovi/22-lenin-lavirint
+  - data/prototipovi/23-edukativna
+  - data/prototipovi/24-amaze
+  - data/prototipovi/25-stapici
+  - data/prototipovi/26-jana-grujic
+  - data/prototipovi/27-fliper
+  - data/prototipovi/28-stilopol
+  - data/prototipovi/29-castle
+  - assets/classlist.js
+  - docs
+  - tests
+  - tools
+  - AGENTS.md
+  - LOG.md
+  - KNOWLEDGE.md

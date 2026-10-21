@@ -6,6 +6,7 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { setLanguage } from '../assets/core.js';
 import { validatePrototypes, renderPrototypes, prototypeTeaser } from '../assets/prototipovi-core.js';
+import { galleryDetail, galleryHref } from '../assets/galleries.js';
 import { publishedPrototypes } from '../assets/photo-publication.js';
 
 const root = new URL('../', import.meta.url), actualRoot = await realpath(fileURLToPath(root));
@@ -15,7 +16,7 @@ const data = JSON.parse(await readFile(new URL('data/prototipovi.json', root), '
 const problems = validatePrototypes(data);
 if (problems.length) throw new Error(problems.join('\n'));
 const photoMap = new Map();
-for (const item of [...data.items, ...data.observations, ...(data.revizije || []).flatMap(r => [r.before, r.after])]) for (const photo of item.photos || []) {
+for (const item of [...data.items, ...data.observations, ...(data.galleries || []), ...(data.revizije || []).flatMap(r => [r.before, r.after])]) for (const photo of item.photos || []) {
   if (photoMap.has(photo.src) && photoMap.get(photo.src).sha256 !== photo.sha256) throw new Error('One photo path has different fingerprints: ' + photo.src);
   photoMap.set(photo.src, photo);
 }
@@ -62,6 +63,17 @@ const regions = [
   ['sledeci.html', 'prototype-teaser', prototypeTeaser(data)]
 ];
 const updates = [];
+const shell = await readFile(new URL('prototipovi.html', root), 'utf8');
+for (const g of data.galleries || []) {
+  const file = galleryHref(g), url = new URL(file, root);
+  const after = shell.replace('src="assets/prototipovi.js"', 'src="assets/gallery-page.js"')
+    .replace('<body data-view="prototypes">', '<body data-view="prototypes" data-gallery="' + g.id + '">')
+    .replace(/(<meta name="description" content=")[^"]*(")/, '$1Galerija rada: ' + g.title.sr + '.$2')
+    .replace(/<title>[^<]*<\/title>/, '<title>' + g.title.sr + ' — Principi univerzalnog dizajna · Univerzitet „Union — Nikola Tesla”, Beograd</title>')
+    .replace(/<main([^>]*)>[\s\S]*?<\/main>/, '<main$1>' + galleryDetail(data, g.id) + '</main>');
+  const before = await readFile(url, 'utf8').catch(() => null);
+  if (before !== after) updates.push({url, file, after});
+}
 for (const [file, key, html] of regions) {
   const url = new URL(file, root), before = await readFile(url, 'utf8');
   const start = `<!-- ${key}:start -->`, end = `<!-- ${key}:end -->`;

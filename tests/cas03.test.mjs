@@ -74,22 +74,15 @@ test('the page renders both segments, marks the uncertain rows and prints every 
   }
 });
 
-test('the static baseline is stamped from the same renderer, and the course points at the page', async () => {
-  setLanguage('sr');
-  const page = await readFile(new URL('cas-03.html', root), 'utf8');
-  const start = '<!-- cas03-content:start -->', end = '<!-- cas03-content:end -->';
-  assert.equal(page.split(start).length, 2, 'baseline markers missing');
-  const baked = page.slice(page.indexOf(start) + start.length, page.indexOf(end));
-  assert.equal(baked, `<div id="cas03-content">${renderCas03(spisak, prototypes)}</div>`, 'the baked list is not the rendered register');
-  const week = await json('data/material/w03.json');
-  assert.equal(week.state, 'published');
-  assert.ok(week.blocks.some(block => block.kind === 'link' && block.href === 'cas-03.html'), 'the week material must link the list page');
-  const tok = await json('data/tok.json');
-  const held = tok.odrzano.find(item => item.id === 'cas-w03');
-  assert.ok(held && held.odrzan === '2026-10-16', 'the flow must hold the third class');
-  assert.ok(held.prilog?.some(p => p.href === 'cas-03.html'), 'the held record must link the list page as its prilog');
-  const landing = await readFile(new URL('index.html', root), 'utf8');
-  assert.ok(landing.includes('href="cas-03.html"'), 'the held page links the list page');
+test('third-class public URL and material open galleries, not the processing roster', async () => {
+  const html = await readFile(new URL('cas-03.html',root),'utf8');
+  assert.ok(html.includes('id="galerije-w03"'));
+  assert.ok(!html.includes('data-cas03-row='));
+  const week=await json('data/material/w03.json');
+  assert.ok(week.blocks.some(b=>b.kind==='link' && b.href==='prototipovi.html#galerije-w03'));
+  const tok=await json('data/tok.json');
+  assert.equal(tok.odrzano.find(i=>i.nedelja===3).odrzan,'2026-10-16');
+  assert.ok(tok.odrzano.find(i=>i.nedelja===3).prilog.some(p=>p.href==='prototipovi.html#galerije-w03'));
 });
 
 test('the intake proposal keeps unconfirmed rows structurally unconfirmed and invents no photograph claims', async () => {

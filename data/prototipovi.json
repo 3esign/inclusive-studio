@@ -96,6 +96,14 @@
     "sr": "Nastavnikov spisak radova snimljenih na trećem času (16.10.2026), zapisivan redom slikanja. Broj uz svaki zapis je broj fotografija u nizu: niz počinje kutijom odnosno slikom sa diplomskih, a završava se slikom iz okruženja u kome korisnica proba prototip. Potvrda od 18.10.2026: Muzička kutija, Zmijica, Sudoku i Doljanovićev „Castle” već su u prvom talasu prototipa. Nastavnik je siguran u redosled do zapisa 16 (obojilica) uključno i od zapisa 21 (vijugava staza) uključno do kraja; zapisi 17–20 čeka se potvrda studenata.",
     "en": "The teacher's list of works photographed at the third class (16 October 2026), recorded in shooting order. The number beside each entry is the count of photographs in the sequence: the sequence starts with the box and the degree photographs and ends with the picture of the environment in which a user tries the prototype. Confirmation of 18 October 2026: Muzička kutija, Zmijica, Sudoku and Doljanović's „Castle” already belong to the first wave of prototypes. The teacher is certain of the order up to entry 16 (obojilica) inclusive and from entry 21 (vijugava staza) inclusive to the end; entries 17–20 await the students' confirmation."
    }
+  },
+  {
+   "id": "teacher-2026-10-21-photo-groups",
+   "recordedOn": "2026-10-21",
+   "description": {
+    "sr": "Fotografije radova sa trećeg časa.",
+    "en": "Photographs of works from the third class."
+   }
   }
  ],
  "items": [
@@ -5873,6 +5881,1396 @@
      }
     ]
    }
+  }
+ ],
+ "galleries": [
+  {
+   "id": "kutija",
+   "title": {
+    "sr": "Kutija sa fiokama",
+    "en": "Box with drawers"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-kutija-01",
+     "src": "data/prototipovi/foto-kutija/01.jpg",
+     "sha256": "9c750fada067caa2890e3418705fc48f90dc66efb879c3a1a0f37829c6dc837a",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Kutija sa fiokama, prikaz 1",
+      "en": "Box with drawers, view 1"
+     },
+     "caption": {
+      "sr": "1 / 7",
+      "en": "1 / 7"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-kutija-02",
+     "src": "data/prototipovi/foto-kutija/02.jpg",
+     "sha256": "74316ba22fd8feecbe7ff998268cdadec5f98660f0c7a2745ced6d234e180cee",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Kutija sa fiokama, prikaz 2",
+      "en": "Box with drawers, view 2"
+     },
+     "caption": {
+      "sr": "2 / 7",
+      "en": "2 / 7"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-kutija-03",
+     "src": "data/prototipovi/foto-kutija/03.jpg",
+     "sha256": "38e8946c163ff4624a71c918f621fa1c16bab726e016e06a4708cac9034c0d72",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Kutija sa fiokama, prikaz 3",
+      "en": "Box with drawers, view 3"
+     },
+     "caption": {
+      "sr": "3 / 7",
+      "en": "3 / 7"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-kutija-04",
+     "src": "data/prototipovi/foto-kutija/04.jpg",
+     "sha256": "e5d3b855c66c1051f027544a82130994522ce1ae984bb71dcde655d8c56c90b5",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Kutija sa fiokama, prikaz 4",
+      "en": "Box with drawers, view 4"
+     },
+     "caption": {
+      "sr": "4 / 7",
+      "en": "4 / 7"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-kutija-05",
+     "src": "data/prototipovi/foto-kutija/05.jpg",
+     "sha256": "c5bcc1366312959369111e5b6987670767803c70718a6dcb71c712a2e9f0d84a",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Kutija sa fiokama, prikaz 5",
+      "en": "Box with drawers, view 5"
+     },
+     "caption": {
+      "sr": "5 / 7",
+      "en": "5 / 7"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-kutija-06",
+     "src": "data/prototipovi/foto-kutija/06.jpg",
+     "sha256": "fe5c716f7f70447e58f45def572112b3ff7ed11bd93e7d1abe7581e9cf234437",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Kutija sa fiokama, prikaz 6",
+      "en": "Box with drawers, view 6"
+     },
+     "caption": {
+      "sr": "6 / 7",
+      "en": "6 / 7"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-kutija-07",
+     "src": "data/prototipovi/foto-kutija/07.jpg",
+     "sha256": "7798ba28210fd5274166b7a40f9d737dedcc0421145cdedd9e7f4b9b18597a2e",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Kutija sa fiokama, prikaz 7",
+      "en": "Box with drawers, view 7"
+     },
+     "caption": {
+      "sr": "7 / 7",
+      "en": "7 / 7"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "touch",
+   "title": {
+    "sr": "Touch",
+    "en": "Touch"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-touch-01",
+     "src": "data/prototipovi/foto-touch/01.jpg",
+     "sha256": "e7b227d0b6a928c8ffd8607a94b1875ca9ff7fc683de92286f9087fbe10d7e9a",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Touch, prikaz 1",
+      "en": "Touch, view 1"
+     },
+     "caption": {
+      "sr": "1 / 5",
+      "en": "1 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-touch-02",
+     "src": "data/prototipovi/foto-touch/02.jpg",
+     "sha256": "6ee38e0d58a25450a874265a2c49144c3b388e5188a877eaaa390f2845007f37",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Touch, prikaz 2",
+      "en": "Touch, view 2"
+     },
+     "caption": {
+      "sr": "2 / 5",
+      "en": "2 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-touch-03",
+     "src": "data/prototipovi/foto-touch/03.jpg",
+     "sha256": "a6ec13c565abd91501b1565fe9a1c891cce5c63d6019c6b35f91ffbaa6221dc1",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Touch, prikaz 3",
+      "en": "Touch, view 3"
+     },
+     "caption": {
+      "sr": "3 / 5",
+      "en": "3 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-touch-04",
+     "src": "data/prototipovi/foto-touch/04.jpg",
+     "sha256": "51c5936de1975c2ad2c24a1e85e9aab770fd998fd0972d101afce6b13aa4657f",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Touch, prikaz 4",
+      "en": "Touch, view 4"
+     },
+     "caption": {
+      "sr": "4 / 5",
+      "en": "4 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-touch-05",
+     "src": "data/prototipovi/foto-touch/05.jpg",
+     "sha256": "4b92eba134a198b2941a2d474ec03df60c3f0cdd72a6e3f355580f5fd60954b3",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Touch, prikaz 5",
+      "en": "Touch, view 5"
+     },
+     "caption": {
+      "sr": "5 / 5",
+      "en": "5 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "nastavci",
+   "title": {
+    "sr": "Papirni nastavci za prste",
+    "en": "Paper finger attachments"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-nastavci-01",
+     "src": "data/prototipovi/foto-nastavci/01.jpg",
+     "sha256": "f0157424041ecf6a42e874fdd987ca8cd07d2fd488976f1ad4d947b359d9883e",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Papirni nastavci za prste, prikaz 1",
+      "en": "Paper finger attachments, view 1"
+     },
+     "caption": {
+      "sr": "1 / 4",
+      "en": "1 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-nastavci-02",
+     "src": "data/prototipovi/foto-nastavci/02.jpg",
+     "sha256": "1d921a58c1002c67c21b2f308b421344f79d1a20dc796331655246ee59d5868b",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Papirni nastavci za prste, prikaz 2",
+      "en": "Paper finger attachments, view 2"
+     },
+     "caption": {
+      "sr": "2 / 4",
+      "en": "2 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-nastavci-03",
+     "src": "data/prototipovi/foto-nastavci/03.jpg",
+     "sha256": "3e3e645dc96f28b6c6b93677ff094773a1c0d38ddc00cd68841da5e02fd709e3",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Papirni nastavci za prste, prikaz 3",
+      "en": "Paper finger attachments, view 3"
+     },
+     "caption": {
+      "sr": "3 / 4",
+      "en": "3 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-nastavci-04",
+     "src": "data/prototipovi/foto-nastavci/04.jpg",
+     "sha256": "f2140ef5f2bd354a0721f229dd02d805fa80ef1d68e6cec03ffd0982ef3f78d2",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Papirni nastavci za prste, prikaz 4",
+      "en": "Paper finger attachments, view 4"
+     },
+     "caption": {
+      "sr": "4 / 4",
+      "en": "4 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "vezivanje",
+   "title": {
+    "sr": "Trake i vezivanje",
+    "en": "Strips and lacing"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-vezivanje-01",
+     "src": "data/prototipovi/foto-vezivanje/01.jpg",
+     "sha256": "2a7f0579edf7ea106b08a2cac64df11e4a8abc0638c94398521bd320ba87cc58",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Trake i vezivanje, prikaz 1",
+      "en": "Strips and lacing, view 1"
+     },
+     "caption": {
+      "sr": "1 / 2",
+      "en": "1 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-vezivanje-02",
+     "src": "data/prototipovi/foto-vezivanje/02.jpg",
+     "sha256": "0e31901eba85de65a2554aedcf0905828b91adc8985871625fc5296d8a2ffb41",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Trake i vezivanje, prikaz 2",
+      "en": "Strips and lacing, view 2"
+     },
+     "caption": {
+      "sr": "2 / 2",
+      "en": "2 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "digitalni-prikaz",
+   "title": {
+    "sr": "Digitalni prikaz",
+    "en": "Digital display"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-digitalni-prikaz-01",
+     "src": "data/prototipovi/foto-digitalni-prikaz/01.jpg",
+     "sha256": "bf98d8ee81d041d1fdccbcdf5c924e164697874daa096c1660af63d1dccc9af0",
+     "width": 1280,
+     "height": 721,
+     "alt": {
+      "sr": "Digitalni prikaz, prikaz 1",
+      "en": "Digital display, view 1"
+     },
+     "caption": {
+      "sr": "1 / 1",
+      "en": "1 / 1"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "blokovi",
+   "title": {
+    "sr": "Povezani blokovi",
+    "en": "Connected blocks"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-blokovi-01",
+     "src": "data/prototipovi/foto-blokovi/01.jpg",
+     "sha256": "4ce0f837e1a613c57540694d188dce39428134b2915f0d3d37669b612ae3831b",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Povezani blokovi, prikaz 1",
+      "en": "Connected blocks, view 1"
+     },
+     "caption": {
+      "sr": "1 / 2",
+      "en": "1 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-blokovi-02",
+     "src": "data/prototipovi/foto-blokovi/02.jpg",
+     "sha256": "4da5e476aa87dc8def1897d91cc38476389e565914d0dd612b54d67bc50e3103",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Povezani blokovi, prikaz 2",
+      "en": "Connected blocks, view 2"
+     },
+     "caption": {
+      "sr": "2 / 2",
+      "en": "2 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "duga-staza",
+   "title": {
+    "sr": "Duga kartonska staza",
+    "en": "Long cardboard track"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-duga-staza-01",
+     "src": "data/prototipovi/foto-duga-staza/01.jpg",
+     "sha256": "e0dbf2c2dbbb901b00d10e18233ebb389c1e66965d79c435f1d1c03dd3098280",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Duga kartonska staza, prikaz 1",
+      "en": "Long cardboard track, view 1"
+     },
+     "caption": {
+      "sr": "1 / 6",
+      "en": "1 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-duga-staza-02",
+     "src": "data/prototipovi/foto-duga-staza/02.jpg",
+     "sha256": "86924032b725aa4075ac0bc109534e1c29245b82153185d44ee2fd52f6fd1b0a",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Duga kartonska staza, prikaz 2",
+      "en": "Long cardboard track, view 2"
+     },
+     "caption": {
+      "sr": "2 / 6",
+      "en": "2 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-duga-staza-03",
+     "src": "data/prototipovi/foto-duga-staza/03.jpg",
+     "sha256": "8716dc28c77783c867bca9bd7f6c501644acff488c869f9ebd8fcdb788bb4b18",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Duga kartonska staza, prikaz 3",
+      "en": "Long cardboard track, view 3"
+     },
+     "caption": {
+      "sr": "3 / 6",
+      "en": "3 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-duga-staza-04",
+     "src": "data/prototipovi/foto-duga-staza/04.jpg",
+     "sha256": "b008d1d4a41abd34a49fb27076a1b57d464c26c832870aaaecbb07eabfeb6d39",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Duga kartonska staza, prikaz 4",
+      "en": "Long cardboard track, view 4"
+     },
+     "caption": {
+      "sr": "4 / 6",
+      "en": "4 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-duga-staza-05",
+     "src": "data/prototipovi/foto-duga-staza/05.jpg",
+     "sha256": "804450223a378d007c1b397dd4cf40aed35e1398dface15d996428fcbc1d9fe3",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Duga kartonska staza, prikaz 5",
+      "en": "Long cardboard track, view 5"
+     },
+     "caption": {
+      "sr": "5 / 6",
+      "en": "5 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-duga-staza-06",
+     "src": "data/prototipovi/foto-duga-staza/06.jpg",
+     "sha256": "4737a596e66acf5d52822358ed65cebd71891a76c5281e8afc9f9e55e9fc1c62",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Duga kartonska staza, prikaz 6",
+      "en": "Long cardboard track, view 6"
+     },
+     "caption": {
+      "sr": "6 / 6",
+      "en": "6 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "moduli",
+   "title": {
+    "sr": "Ljubičasti moduli",
+    "en": "Purple modules"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-moduli-01",
+     "src": "data/prototipovi/foto-moduli/01.jpg",
+     "sha256": "dfc6803d73aab1921d5c4a7af0633cb699e7e281b9248de599367a6408141437",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ljubičasti moduli, prikaz 1",
+      "en": "Purple modules, view 1"
+     },
+     "caption": {
+      "sr": "1 / 4",
+      "en": "1 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-moduli-02",
+     "src": "data/prototipovi/foto-moduli/02.jpg",
+     "sha256": "deedbe62ec185828518ead659e4e34d913ee2491c711f5452da62e6134445cd8",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ljubičasti moduli, prikaz 2",
+      "en": "Purple modules, view 2"
+     },
+     "caption": {
+      "sr": "2 / 4",
+      "en": "2 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-moduli-03",
+     "src": "data/prototipovi/foto-moduli/03.jpg",
+     "sha256": "07d34703201465866b33cb89959f3e662f779c07ce992d07ca2753b72c4871ff",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ljubičasti moduli, prikaz 3",
+      "en": "Purple modules, view 3"
+     },
+     "caption": {
+      "sr": "3 / 4",
+      "en": "3 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-moduli-04",
+     "src": "data/prototipovi/foto-moduli/04.jpg",
+     "sha256": "cefdcc70dfceaa95ba0f8c4dd2b70ca533f6e4d331ed138f0901f593ed446192",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ljubičasti moduli, prikaz 4",
+      "en": "Purple modules, view 4"
+     },
+     "caption": {
+      "sr": "4 / 4",
+      "en": "4 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "pesak",
+   "title": {
+    "sr": "Slova u pesku",
+    "en": "Letters in sand"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-pesak-01",
+     "src": "data/prototipovi/foto-pesak/01.jpg",
+     "sha256": "118a83bf9210ba07b642e7c2bc9a6ba5da3f1d6b10b9c94ed789038bb2007ce6",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Slova u pesku, prikaz 1",
+      "en": "Letters in sand, view 1"
+     },
+     "caption": {
+      "sr": "1 / 4",
+      "en": "1 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-pesak-02",
+     "src": "data/prototipovi/foto-pesak/02.jpg",
+     "sha256": "f99d840a32f90278e68041b07f7fb976a83281c94beafd56bd212f07ef3303cc",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Slova u pesku, prikaz 2",
+      "en": "Letters in sand, view 2"
+     },
+     "caption": {
+      "sr": "2 / 4",
+      "en": "2 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-pesak-03",
+     "src": "data/prototipovi/foto-pesak/03.jpg",
+     "sha256": "7ee99e3714a031cee2c2f1892d33b08e9991c245b472e17d611f3e89a0cd2c93",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Slova u pesku, prikaz 3",
+      "en": "Letters in sand, view 3"
+     },
+     "caption": {
+      "sr": "3 / 4",
+      "en": "3 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-pesak-04",
+     "src": "data/prototipovi/foto-pesak/04.jpg",
+     "sha256": "f4996b8b13d457a0dff2def7a7dcb00035fdf57ab85bc6fb5bbe41366e1e4783",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Slova u pesku, prikaz 4",
+      "en": "Letters in sand, view 4"
+     },
+     "caption": {
+      "sr": "4 / 4",
+      "en": "4 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "useci",
+   "title": {
+    "sr": "Ploča sa usecima",
+    "en": "Board with grooves"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-useci-01",
+     "src": "data/prototipovi/foto-useci/01.jpg",
+     "sha256": "8340bae4b88d52f6cd3cb319df02205dfca03a2f95b5831404043bf2645c436d",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ploča sa usecima, prikaz 1",
+      "en": "Board with grooves, view 1"
+     },
+     "caption": {
+      "sr": "1 / 5",
+      "en": "1 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-useci-02",
+     "src": "data/prototipovi/foto-useci/02.jpg",
+     "sha256": "41b71e29362d8a4b375fa5ae63b62dcdbbb5e29c479d52f80edd50f4af054d49",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ploča sa usecima, prikaz 2",
+      "en": "Board with grooves, view 2"
+     },
+     "caption": {
+      "sr": "2 / 5",
+      "en": "2 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-useci-03",
+     "src": "data/prototipovi/foto-useci/03.jpg",
+     "sha256": "6d1b70e1cfd470808e56eaeb3f874b7965756f0b92a17f929259b2066b2805d2",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ploča sa usecima, prikaz 3",
+      "en": "Board with grooves, view 3"
+     },
+     "caption": {
+      "sr": "3 / 5",
+      "en": "3 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-useci-04",
+     "src": "data/prototipovi/foto-useci/04.jpg",
+     "sha256": "cefbc554e9a271628e7ed3f994bd11bf8fb2917f254068fc458b87bc7d889a0b",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ploča sa usecima, prikaz 4",
+      "en": "Board with grooves, view 4"
+     },
+     "caption": {
+      "sr": "4 / 5",
+      "en": "4 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-useci-05",
+     "src": "data/prototipovi/foto-useci/05.jpg",
+     "sha256": "0edca7ae447537d4d4692cb0f11fc92ec6f9e3c1524416ecf3c3abda008b7b33",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ploča sa usecima, prikaz 5",
+      "en": "Board with grooves, view 5"
+     },
+     "caption": {
+      "sr": "5 / 5",
+      "en": "5 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "sudoku-skica",
+   "title": {
+    "sr": "Sudoku — skica",
+    "en": "Sudoku — sketch"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-sudoku-skica-01",
+     "src": "data/prototipovi/foto-sudoku-skica/01.jpg",
+     "sha256": "55e4813d221160b24ed23a4cf90201dbe3ebdb825125c6a34af1ea8766fc8e76",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Sudoku — skica, prikaz 1",
+      "en": "Sudoku — sketch, view 1"
+     },
+     "caption": {
+      "sr": "1 / 2",
+      "en": "1 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-sudoku-skica-02",
+     "src": "data/prototipovi/foto-sudoku-skica/02.jpg",
+     "sha256": "ecda9664124971a828bf0cd6bafc7e3bad484025807f3e618a4c4b107f14d8d3",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Sudoku — skica, prikaz 2",
+      "en": "Sudoku — sketch, view 2"
+     },
+     "caption": {
+      "sr": "2 / 2",
+      "en": "2 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "kocka",
+   "title": {
+    "sr": "Taktilna kocka",
+    "en": "Tactile cube"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-kocka-01",
+     "src": "data/prototipovi/foto-kocka/01.jpg",
+     "sha256": "cb01f8d49f4234f90935272a7a299ee81f180495e96c730d51051c9cccfbf319",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Taktilna kocka, prikaz 1",
+      "en": "Tactile cube, view 1"
+     },
+     "caption": {
+      "sr": "1 / 3",
+      "en": "1 / 3"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-kocka-02",
+     "src": "data/prototipovi/foto-kocka/02.jpg",
+     "sha256": "f26c494a1b38eeade687f74b24c9cf166e1f5908f4e7174c3cb68e1763ab2510",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Taktilna kocka, prikaz 2",
+      "en": "Tactile cube, view 2"
+     },
+     "caption": {
+      "sr": "2 / 3",
+      "en": "2 / 3"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-kocka-03",
+     "src": "data/prototipovi/foto-kocka/03.jpg",
+     "sha256": "23325c7c1313369a9ea0b7824917d74de5d55444046115851b2e156f6cc61e62",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Taktilna kocka, prikaz 3",
+      "en": "Tactile cube, view 3"
+     },
+     "caption": {
+      "sr": "3 / 3",
+      "en": "3 / 3"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "gumice",
+   "title": {
+    "sr": "Ploča sa gumicama",
+    "en": "Rubber-band board"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-gumice-01",
+     "src": "data/prototipovi/foto-gumice/01.jpg",
+     "sha256": "5aeac46e12f0ee1e9d11fa0a27e513e15a18b06176fb34f486976141c063acdf",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ploča sa gumicama, prikaz 1",
+      "en": "Rubber-band board, view 1"
+     },
+     "caption": {
+      "sr": "1 / 1",
+      "en": "1 / 1"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "plavi-cepovi",
+   "title": {
+    "sr": "Staza sa plavim čepovima",
+    "en": "Track with blue caps"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-plavi-cepovi-01",
+     "src": "data/prototipovi/foto-plavi-cepovi/01.jpg",
+     "sha256": "6bee45d07c69af42cfc79a3f546d6e9df9903ebcf5c41dbb0d0f595c3832b2d2",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Staza sa plavim čepovima, prikaz 1",
+      "en": "Track with blue caps, view 1"
+     },
+     "caption": {
+      "sr": "1 / 4",
+      "en": "1 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-plavi-cepovi-02",
+     "src": "data/prototipovi/foto-plavi-cepovi/02.jpg",
+     "sha256": "dc147ddfdadc8d38d9120100651d254b9717ac3173abc01ec9f6807370df5e3c",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Staza sa plavim čepovima, prikaz 2",
+      "en": "Track with blue caps, view 2"
+     },
+     "caption": {
+      "sr": "2 / 4",
+      "en": "2 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-plavi-cepovi-03",
+     "src": "data/prototipovi/foto-plavi-cepovi/03.jpg",
+     "sha256": "35058d4fbd63648e7c186ae8582ea514d7eeb1fb571609aa382757bf3d1f02af",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Staza sa plavim čepovima, prikaz 3",
+      "en": "Track with blue caps, view 3"
+     },
+     "caption": {
+      "sr": "3 / 4",
+      "en": "3 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-plavi-cepovi-04",
+     "src": "data/prototipovi/foto-plavi-cepovi/04.jpg",
+     "sha256": "d9a41492f77ac5b1541fbd06cdd9393c2a33a183542d32bc335994acd327854d",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Staza sa plavim čepovima, prikaz 4",
+      "en": "Track with blue caps, view 4"
+     },
+     "caption": {
+      "sr": "4 / 4",
+      "en": "4 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "polja",
+   "title": {
+    "sr": "Ploče sa poljima i bojama",
+    "en": "Boards with fields and colours"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-polja-01",
+     "src": "data/prototipovi/foto-polja/01.jpg",
+     "sha256": "b026feed14972b365b46fc918b5de508933eb51b0dd68bf10cedce95eb9f8917",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ploče sa poljima i bojama, prikaz 1",
+      "en": "Boards with fields and colours, view 1"
+     },
+     "caption": {
+      "sr": "1 / 6",
+      "en": "1 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-polja-02",
+     "src": "data/prototipovi/foto-polja/02.jpg",
+     "sha256": "89fb9a278babc0b25a2fb990ebf52e5f4e656181d44c55566f74435f6d931f66",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ploče sa poljima i bojama, prikaz 2",
+      "en": "Boards with fields and colours, view 2"
+     },
+     "caption": {
+      "sr": "2 / 6",
+      "en": "2 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-polja-03",
+     "src": "data/prototipovi/foto-polja/03.jpg",
+     "sha256": "8af6d94fdcdc2b44c51a4fca81e5bde31c3ff30147b9613505b8644f23b990f6",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ploče sa poljima i bojama, prikaz 3",
+      "en": "Boards with fields and colours, view 3"
+     },
+     "caption": {
+      "sr": "3 / 6",
+      "en": "3 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-polja-04",
+     "src": "data/prototipovi/foto-polja/04.jpg",
+     "sha256": "2b00623754b725503ccdc3e2e28d45d1226e2c34d75ae27f868a1cf674dad54b",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ploče sa poljima i bojama, prikaz 4",
+      "en": "Boards with fields and colours, view 4"
+     },
+     "caption": {
+      "sr": "4 / 6",
+      "en": "4 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-polja-05",
+     "src": "data/prototipovi/foto-polja/05.jpg",
+     "sha256": "d7dd1aee650ac79d53fd5f6d5628cc23d362fb391b93348354650379e765f858",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ploče sa poljima i bojama, prikaz 5",
+      "en": "Boards with fields and colours, view 5"
+     },
+     "caption": {
+      "sr": "5 / 6",
+      "en": "5 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-polja-06",
+     "src": "data/prototipovi/foto-polja/06.jpg",
+     "sha256": "7dbde16d9cfcad362c6f8e213912d8e27202fa9ccf81bfb7236bb8fdc296ebcf",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Ploče sa poljima i bojama, prikaz 6",
+      "en": "Boards with fields and colours, view 6"
+     },
+     "caption": {
+      "sr": "6 / 6",
+      "en": "6 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "visoka-staza",
+   "title": {
+    "sr": "Visoka staza u kutiji",
+    "en": "Tall track in a box"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-visoka-staza-01",
+     "src": "data/prototipovi/foto-visoka-staza/01.jpg",
+     "sha256": "804d94993b70d6f2eddb66c65af68c3aab2e6df1392fa32697b05e91e7df804a",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Visoka staza u kutiji, prikaz 1",
+      "en": "Tall track in a box, view 1"
+     },
+     "caption": {
+      "sr": "1 / 6",
+      "en": "1 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-visoka-staza-02",
+     "src": "data/prototipovi/foto-visoka-staza/02.jpg",
+     "sha256": "6e7358601894ad61d0502e795b6adc68d084561381cee31b277359bef73eb143",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Visoka staza u kutiji, prikaz 2",
+      "en": "Tall track in a box, view 2"
+     },
+     "caption": {
+      "sr": "2 / 6",
+      "en": "2 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-visoka-staza-03",
+     "src": "data/prototipovi/foto-visoka-staza/03.jpg",
+     "sha256": "50be2330ee8edc944bcd7c8c04dda8be0c6a4c4a176b8e0bf84b71283ff28125",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Visoka staza u kutiji, prikaz 3",
+      "en": "Tall track in a box, view 3"
+     },
+     "caption": {
+      "sr": "3 / 6",
+      "en": "3 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-visoka-staza-04",
+     "src": "data/prototipovi/foto-visoka-staza/04.jpg",
+     "sha256": "b07d4139b58262ce6b6db429deb874ad5b9ad0e7a0d61511158ea89354e558ac",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Visoka staza u kutiji, prikaz 4",
+      "en": "Tall track in a box, view 4"
+     },
+     "caption": {
+      "sr": "4 / 6",
+      "en": "4 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-visoka-staza-05",
+     "src": "data/prototipovi/foto-visoka-staza/05.jpg",
+     "sha256": "a9cc2c641492f5f850f805105b202a6859445aee3a21b5be88ffea61516b2382",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Visoka staza u kutiji, prikaz 5",
+      "en": "Tall track in a box, view 5"
+     },
+     "caption": {
+      "sr": "5 / 6",
+      "en": "5 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-visoka-staza-06",
+     "src": "data/prototipovi/foto-visoka-staza/06.jpg",
+     "sha256": "f45a621a4e6597675d310f3d26b63d8bd0e68d8bef45c51bf989db5683981bca",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Visoka staza u kutiji, prikaz 6",
+      "en": "Tall track in a box, view 6"
+     },
+     "caption": {
+      "sr": "6 / 6",
+      "en": "6 / 6"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "prostorna-staza",
+   "title": {
+    "sr": "Prostorna kartonska staza",
+    "en": "Spatial cardboard track"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-prostorna-staza-01",
+     "src": "data/prototipovi/foto-prostorna-staza/01.jpg",
+     "sha256": "789dc692195acd3e5df157d60e105440d4b6852cbc4c4e43a4c2a716a0af4348",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Prostorna kartonska staza, prikaz 1",
+      "en": "Spatial cardboard track, view 1"
+     },
+     "caption": {
+      "sr": "1 / 4",
+      "en": "1 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-prostorna-staza-02",
+     "src": "data/prototipovi/foto-prostorna-staza/02.jpg",
+     "sha256": "ff62203b4e3eeef4c20880030d856f035193956be139b3193f77100e13c6d8f2",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Prostorna kartonska staza, prikaz 2",
+      "en": "Spatial cardboard track, view 2"
+     },
+     "caption": {
+      "sr": "2 / 4",
+      "en": "2 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-prostorna-staza-03",
+     "src": "data/prototipovi/foto-prostorna-staza/03.jpg",
+     "sha256": "f23d5025969389c04c231f8f9fc394123aebe722df0641751d35295f91ff35e9",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Prostorna kartonska staza, prikaz 3",
+      "en": "Spatial cardboard track, view 3"
+     },
+     "caption": {
+      "sr": "3 / 4",
+      "en": "3 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-prostorna-staza-04",
+     "src": "data/prototipovi/foto-prostorna-staza/04.jpg",
+     "sha256": "437ca12925497095230fd9a580a732eeeb2d21e2c65405fb3e3f5ddb308d8dda",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Prostorna kartonska staza, prikaz 4",
+      "en": "Spatial cardboard track, view 4"
+     },
+     "caption": {
+      "sr": "4 / 4",
+      "en": "4 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "lavirint",
+   "title": {
+    "sr": "Kartonski lavirint",
+    "en": "Cardboard maze"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-lavirint-01",
+     "src": "data/prototipovi/foto-lavirint/01.jpg",
+     "sha256": "1b98d138110fffa0b86a1266998d0c3dfd938f674375aa12dbe1607cb9ff46e9",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Kartonski lavirint, prikaz 1",
+      "en": "Cardboard maze, view 1"
+     },
+     "caption": {
+      "sr": "1 / 2",
+      "en": "1 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-lavirint-02",
+     "src": "data/prototipovi/foto-lavirint/02.jpg",
+     "sha256": "78c111552a8b71a8d5c6410a407ec48e257ac189671fe6a8ba79f72814743ce3",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Kartonski lavirint, prikaz 2",
+      "en": "Cardboard maze, view 2"
+     },
+     "caption": {
+      "sr": "2 / 2",
+      "en": "2 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "vijugava-staza",
+   "title": {
+    "sr": "Vijugava staza",
+    "en": "Winding track"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-vijugava-staza-01",
+     "src": "data/prototipovi/foto-vijugava-staza/01.jpg",
+     "sha256": "9678f07878ba154ee16fa62009e5dd1bb6158369b4089ad2eef42d2a9f73b82b",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Vijugava staza, prikaz 1",
+      "en": "Winding track, view 1"
+     },
+     "caption": {
+      "sr": "1 / 2",
+      "en": "1 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-vijugava-staza-02",
+     "src": "data/prototipovi/foto-vijugava-staza/02.jpg",
+     "sha256": "006d8272b69e50d89f6d86c3f3600eca1cf390d2a116b132b488d2491d045e4b",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Vijugava staza, prikaz 2",
+      "en": "Winding track, view 2"
+     },
+     "caption": {
+      "sr": "2 / 2",
+      "en": "2 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
+  },
+  {
+   "id": "castle",
+   "title": {
+    "sr": "Castle",
+    "en": "Castle"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-photo-groups",
+   "photos": [
+    {
+     "id": "foto-castle-01",
+     "src": "data/prototipovi/foto-castle/01.jpg",
+     "sha256": "c00dcbee6f2cb9070b690a62e6fcc0f5bd6a012afa5d5aba7e7378b4b1f14081",
+     "width": 1012,
+     "height": 1800,
+     "alt": {
+      "sr": "Castle, prikaz 1",
+      "en": "Castle, view 1"
+     },
+     "caption": {
+      "sr": "1 / 3",
+      "en": "1 / 3"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-castle-02",
+     "src": "data/prototipovi/foto-castle/02.jpg",
+     "sha256": "3519fb0f6d285447f12a573fff6c649daba976a89033e67a8f33cd2f1567d700",
+     "width": 1350,
+     "height": 1800,
+     "alt": {
+      "sr": "Castle, prikaz 2",
+      "en": "Castle, view 2"
+     },
+     "caption": {
+      "sr": "2 / 3",
+      "en": "2 / 3"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    },
+    {
+     "id": "foto-castle-03",
+     "src": "data/prototipovi/foto-castle/03.jpg",
+     "sha256": "9367bf3da63366385dc9fe03646d81bc43787796ba5b8c7aef00b5e24456280a",
+     "width": 1350,
+     "height": 1800,
+     "alt": {
+      "sr": "Castle, prikaz 3",
+      "en": "Castle, view 3"
+     },
+     "caption": {
+      "sr": "3 / 3",
+      "en": "3 / 3"
+     },
+     "sourceId": "teacher-2026-10-21-photo-groups"
+    }
+   ]
   }
  ]
 }

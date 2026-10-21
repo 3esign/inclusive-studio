@@ -19,7 +19,7 @@ const registry = JSON.parse(await readFile(new URL('data/prototipovi.json', root
 test('pun registar se ne servira — samo javni izvod', () => {
   assert.ok(excluded.has('data/prototipovi.json'), 'data/prototipovi.json mora biti u exclude');
   assert.ok(!excluded.has('data/prototipovi-javno.json'), 'javni izvod mora ostati serviran');
-  assert.ok(!excluded.has('data/cas-03/spisak.json'), 'nastavnicki spisak mora ostati serviran');
+  assert.ok(excluded.has('data/cas-03/spisak.json'), '21.10: processing roster stays outside the student surface');
 });
 
 test('fotografije radova sa nepotvrdenom atribucijom se ne serviraju', () => {
