@@ -939,11 +939,41 @@ body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width
 .work-gallery-tile{display:block;color:inherit;text-decoration:none;min-width:0}
 .work-gallery-tile img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:#e8e6df;border-radius:2px;transition:filter .2s}
 .work-gallery-tile:hover img{filter:brightness(.94)}
-.work-gallery-tile>span{display:flex;justify-content:space-between;gap:.6rem;padding:.7rem 0;border-bottom:1px solid #c4ccc4;line-height:1.35}
-.work-gallery-tile b{font-size:1rem;font-weight:600}.work-gallery-tile small{white-space:nowrap;font-size:.75rem;color:#485c51}
+.work-gallery-tile>span{display:grid;grid-template-columns:1fr auto;gap:.15rem .6rem;padding:.7rem 0;border-bottom:1px solid #c4ccc4;line-height:1.35}
+.work-gallery-tile b{font-size:1rem;font-weight:600;align-self:start}
+.work-gallery-tile small{white-space:nowrap;font-size:.75rem;color:#485c51;align-self:start}
+.work-gallery-tile .work-author{grid-column:1;white-space:normal}
+
+/* A work is addressed the way the teacher wrote it: student number, name, title. The two
+   fields sit in separate marked elements, so the separator belongs to the stylesheet. */
+.work-author,.work-identity{color:#4f6255}
+.work-author [data-author-number]::before,.work-identity [data-author-number]::before{content:" · "}
+.work-identity{display:block;font-size:1.05rem;margin:.1rem 0 2.2rem;letter-spacing:.01em}
+.work-identity [data-author-name]{font-weight:600;color:#23362b}
+
+/* Each class the student handed something in gets its own band on the work page. */
+.work-week{margin:0 0 3.5rem}
+.work-week>h2{font-size:1.05rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#4f6255;margin:0 0 .35rem;padding-bottom:.5rem;border-bottom:1px solid #c4ccc4}
+.work-week>.lede{font-size:1rem;margin:.9rem 0 1.2rem;max-width:60ch}
+.work-trial{background:#eef1ea;border-radius:3px;padding:1.4rem 1.6rem}
+.work-trial>h2{border-bottom:none;padding-bottom:0}
+.work-trial .note{font-size:.8rem;color:#5b6d61;margin:.6rem 0 0}
+
+/* Works that are on the list but have no photograph: named, never illustrated by a stand-in. */
+.work-awaited{margin:2.5rem 0 0;padding:1.4rem 1.6rem;background:#f2f1ea;border-radius:3px}
+.work-awaited h3{font-size:.8rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#4f6255;margin:0 0 .8rem}
+.work-awaited ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.6rem 1.5rem}
+.work-awaited li{line-height:1.4}.work-awaited li b{font-weight:600}
+.work-awaited .note{font-size:.8rem;color:#5b6d61;margin:1rem 0 0}
 .work-galleries{margin:3rem 0 4rem}.gallery-detail{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem;margin:2rem 0}
 .gallery-detail figure{margin:0;min-width:0}.gallery-detail img{display:block;width:100%;height:auto;max-height:85vh;object-fit:contain;background:#eae9e3}
-.gallery-detail figcaption{font-size:.85rem;margin-top:.4rem;color:#4f6255}.gallery-detail figure:first-child{grid-column:1/-1}
+.gallery-detail figcaption{font-size:.85rem;margin-top:.4rem;color:#4f6255}
+.gallery-detail figure:first-child{grid-column:1/-1}
+/* A portrait frame must not be stretched into a letterbox: the picture sets its own width. */
+.gallery-detail img{width:auto;max-width:100%;margin-inline:auto}
+.gallery-detail figure:first-child img{max-height:56vh}
+.gallery-detail figure:not(:first-child) img{max-height:40vh}
+.gallery-detail figure:first-child figcaption{text-align:center}
 .gallery-onward{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin:3rem 0}
 @media(min-width:800px){.cover-shell .cover-stage{display:grid;grid-template-columns:1fr 1.05fr;gap:3rem;align-items:center}}
 .cover-shell .cover-stage{padding:2rem 0 3rem;border:0;border-bottom:1px solid #b8c3b9;background:none;min-height:0}
@@ -957,6 +987,6 @@ body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width
 .cover-workbook{position:relative;background:#e8eddf;padding:1.5rem 2rem;border-left:5px solid #bdce69}.cover-a3{float:right;font:400 3rem Georgia,serif;color:#476040;margin-left:1rem}
 .cover-shell .cover-doors{margin-top:2rem}.cover-shell .cover-door{background:none}.cover-shell .cover-door-num{color:#476040}
 @media(max-width:800px){.work-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.work-gallery-heading{display:block}.cover-exhibit{margin:2rem .5rem 0}.cover-shell .cover-stage{padding:2rem 0}.cover-latest{grid-template-columns:1fr;gap:2rem}.gallery-detail{grid-template-columns:1fr;gap:1.5rem}}
-@media(max-width:400px){.work-gallery-tile>span{display:block}.work-gallery-tile small{display:block;margin-top:.25rem}.cover-workbook{padding:1.25rem}.work-gallery-grid{gap:.75rem}}
+@media(max-width:400px){.work-gallery-tile>span{display:block}.work-awaited,.work-trial{padding:1.1rem}.work-gallery-tile small{display:block;margin-top:.25rem}.cover-workbook{padding:1.25rem}.work-gallery-grid{gap:.75rem}}
 @media(prefers-reduced-motion:reduce){.work-gallery-tile img{transition:none}}
 @media print{.cover-exhibit,.cover-latest,.cover-stage,.cover-doors{display:none!important}.gallery-detail{display:block}.gallery-detail figure{break-inside:avoid;margin:1rem 0}.work-gallery-grid{grid-template-columns:repeat(3,1fr)}}

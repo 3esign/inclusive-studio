@@ -23,14 +23,35 @@ test('pun registar se ne servira — samo javni izvod', () => {
 });
 
 test('fotografije radova sa nepotvrdenom atribucijom se ne serviraju', () => {
+  // 21.10.2026: posle ponovnog preseka nijedan rad ne stoji kao „pending“ — svaki objavljeni
+  // rad nosi identitet koji je nastavnik dostavio. Kapija ipak mora da vazi ako se pending
+  // rad pojavi, pa se proverava i na stvarnim i na unetom primeru.
   const pending = registry.items.filter((i) => i.attributionStatus === 'pending');
-  assert.ok(pending.length > 0, 'test ocekuje bar jedan pending rad u registru');
   for (const item of pending) {
     for (const photo of item.photos || []) {
       const dir = photo.src.split('/').slice(0, -1).join('/');
       assert.ok(excluded.has(dir), `${dir} (pending ${item.id}) mora biti u exclude`);
     }
   }
+});
+
+test('nijedan folder slika van javnog izvoda ne ostaje serviran', async () => {
+  // Stariji presek i povuceni kadrovi ostaju u repou kao dokaz, ali Pages ih ne servira.
+  // Ovo vazi za svaki sledeci talas: folder koji javni izvod ne koristi mora biti iskljucen.
+  const javni = JSON.parse(await readFile(new URL('data/prototipovi-javno.json', root), 'utf8'));
+  const served = new Set();
+  for (const group of [javni.items, javni.observations, javni.galleries || []]) {
+    for (const it of group) for (const p of it.photos || []) served.add(p.src.split('/')[2]);
+  }
+  for (const r of javni.revizije || []) for (const side of ['before', 'after']) {
+    for (const p of r[side].photos || []) served.add(p.src.split('/')[2]);
+  }
+  const { readdir } = await import('node:fs/promises');
+  for (const name of await readdir(new URL('data/prototipovi', root))) {
+    if (served.has(name)) continue;
+    assert.ok(excluded.has('data/prototipovi/' + name), 'data/prototipovi/' + name + ' nije u javnom izvodu i mora biti u exclude');
+  }
+  assert.ok(served.size > 0);
 });
 
 test('izvornici prijema casa 03 se ne serviraju (samo spisak)', () => {

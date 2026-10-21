@@ -1,8 +1,10 @@
 // The third-class list as course material: one register of photographed works
 // (data/cas-03/spisak.json), rendered by the same code that stamps the static baseline.
 // Students' names live only in the register — never as literals in this source.
-// What the teacher has not confirmed is published as unconfirmed: the uncertain rows
-// (17–20), the open questions (razjasni) and the photographs still on the phone.
+// 21.10.2026: the sequence was re-cut against the list after the twelve opening frames
+// (trousers, degree presentations) were found to stand in front of it. Every work was then
+// recognised in its own photographs. What is still open — a work with no frames in the
+// transfer, a missing title or number — is published as open, never filled in by guess.
 
 import { esc, tr, tx, number } from './core.js';
 import { withheldWorkIds } from './photo-publication.js';
@@ -19,8 +21,8 @@ export function validateCas03(spisak) {
   fail(ID.test(spisak?.id || ''), 'List id required.');
   fail(date(spisak?.odrzan), 'List needs the class date.');
   fail(bilingual(spisak?.napomena) && bilingual(spisak?.analizaUdruzenja), 'The list note and the association note must be bilingual.');
+  fail(bilingual(spisak?.presek) && bilingual(spisak?.prenos), 'How the sequence was cut, and what the transfer is missing, must both be stated bilingually.');
   fail(keys(spisak?.source, ['id', 'recordedOn', 'description']) && ID.test(spisak.source?.id || '') && date(spisak.source?.recordedOn) && bilingual(spisak.source?.description), 'List source requires an id, a record date and a bilingual description.');
-  fail(keys(spisak?.sigurno, ['do', 'od']) && spisak.sigurno?.do >= 1 && spisak.sigurno?.od > spisak.sigurno?.do, 'The certain zones must be given as do/od row numbers.');
   fail(Array.isArray(spisak?.radovi) && spisak.radovi.length > 0, 'List rows required.');
   const questionIds = new Set((spisak?.razjasni || []).map(q => q?.id));
   (spisak?.radovi || []).forEach((row, i) => {
@@ -30,15 +32,14 @@ export function validateCas03(spisak) {
     fail(row.indeks === null || STUDENT.test(row.indeks || ''), `${at}: indeks is a student number or null.`);
     fail(row.rad === null || (typeof row.rad === 'string' && row.rad.trim()), `${at}: rad is a title or null.`);
     fail(row.slike === null || (Number.isInteger(row.slike) && row.slike >= 0), `${at}: slike is a photograph count or null.`);
-    fail(!('prviTalas' in row) || ID.test(row.prviTalas || ''), `${at}: prviTalas must be a registry id.`);
+    fail(!('galerija' in row) || ID.test(row.galerija || ''), `${at}: galerija must be a work id.`);
     fail(!('razjasni' in row) || questionIds.has(row.razjasni), `${at}: razjasni must name a listed question.`);
     fail(row.napomena === undefined || bilingual(row.napomena), `${at}: napomena must be bilingual.`);
-    fail(keys(row, ['rb', 'ime', 'indeks', 'rad', 'slike', ...(row.prviTalas ? ['prviTalas'] : []), ...(row.razjasni ? ['razjasni'] : []), ...(row.potvrditi ? ['potvrditi'] : []), ...(row.napomena ? ['napomena'] : [])]), `${at}: unknown row fields.`);
+    // A row either opens its work's page or openly waits for its photographs. Never both and
+    // never neither — an unexplained row is how one object came to wear several students' names.
+    fail(('galerija' in row) !== (row.ceka === true), `${at}: a row shows its work or states that it waits.`);
+    fail(keys(row, ['rb', 'ime', 'indeks', 'rad', 'slike', ...(row.galerija ? ['galerija'] : []), ...(row.ceka ? ['ceka'] : []), ...(row.razjasni ? ['razjasni'] : []), ...(row.napomena ? ['napomena'] : [])]), `${at}: unknown row fields.`);
   });
-  // The uncertain zone must be exactly the gap between the certain zones — no more, no less.
-  const gap = (spisak?.radovi || []).filter(row => row.potvrditi).map(row => row.rb);
-  const expected = spisak?.radovi ? (spisak.radovi.slice(spisak.sigurno?.do, spisak.sigurno?.od - 1).map(row => row.rb)) : [];
-  fail(JSON.stringify(gap) === JSON.stringify(expected), 'The potvrditi rows must be exactly the rows between the certain zones.');
   fail(Array.isArray(spisak?.razjasni), 'razjasni must be a list.');
   for (const q of spisak?.razjasni || []) fail(keys(q, ['id', 'sta']) && ID.test(q?.id || '') && bilingual(q?.sta), 'Each razjasni question needs an id and bilingual text.');
   return problems;
@@ -49,27 +50,30 @@ const srDate = iso => iso.split('-').reverse().join('.');
 
 export function renderCas03(spisak, prototypes) {
   const problems = validateCas03(spisak);
-  for (const row of spisak?.radovi || []) if (row.prviTalas && !prototypes?.items?.some(item => item.id === row.prviTalas)) problems.push(`Row ${row.rb}: prviTalas "${row.prviTalas}" is not in the work register.`);
+  for (const row of spisak?.radovi || []) {
+    if (row.galerija && !prototypes?.galleries?.some(g => g.id === row.galerija)) problems.push(`Row ${row.rb}: galerija "${row.galerija}" is not in the work register.`);
+    if (row.ceka && !prototypes?.cekaju?.some(w => w.listOrder === row.rb)) problems.push(`Row ${row.rb}: an awaiting row must match an awaited work.`);
+  }
   if (problems.length) throw new Error(problems.join('\n'));
   const rows = spisak.radovi.map(row => {
     const name = row.ime || '—';
     const indeks = row.indeks || '—';
     const rad = row.rad ? esc(row.rad) : `<span class="cas03-missing">${tr('title not recorded', 'naziv nije zabeležen')}</span>`;
     const slike = row.slike === null ? `<span class="cas03-missing">${tr('count not recorded', 'broj nije zabeležen')}</span>` : tr(`${row.slike} photo${row.slike === 1 ? '' : 's'}`, `${row.slike} ${row.slike === 1 ? 'fotografija' : row.slike < 5 ? 'fotografije' : 'fotografija'}`);
-    const wave = row.prviTalas && !withheldWorkIds.includes(row.prviTalas) ? ` <a class="cas03-wave" href="prototipovi.html#${esc(row.prviTalas)}">${tr('first wave — gallery', 'prvi talas — galerija')} ↗</a>` : '';
+    const wave = row.galerija && !withheldWorkIds.includes(row.galerija) ? ` <a class="cas03-wave" href="galerija-${esc(row.galerija)}.html">${tr('open the work', 'otvori rad')} ↗</a>` : '';
     const ask = row.razjasni ? ` <a class="cas03-ask" href="#${esc(row.razjasni)}">${tr('open question', 'otvoreno pitanje')} ↓</a>` : '';
-    const confirm = row.potvrditi ? ` <span class="cas03-confirm">${tr('awaits confirmation', 'čeka potvrdu')}</span>` : '';
+    const confirm = row.ceka ? ` <span class="cas03-confirm">${tr('photographs still to come', 'fotografije tek stižu')}</span>` : '';
     const note = row.napomena ? `<span class="cas03-note">${esc(tx(row.napomena))}</span>` : '';
-    return `<li data-cas03-row="${row.rb}"${row.potvrditi ? ' class="cas03-neizvesno"' : ''}><span data-cas03-name>${esc(name)}</span><span data-cas03-indeks>${esc(indeks)}</span><span class="cas03-rad">${rad}</span><span class="cas03-slike">${slike}</span>${confirm}${wave}${ask}${note}</li>`;
+    return `<li data-cas03-row="${row.rb}"${row.ceka ? ' class="cas03-neizvesno"' : ''}><span data-cas03-name>${esc(name)}</span><span data-cas03-indeks>${esc(indeks)}</span><span class="cas03-rad">${rad}</span><span class="cas03-slike">${slike}</span>${confirm}${wave}${ask}${note}</li>`;
   }).join('');
   const questions = spisak.razjasni.map(q => `<li id="${esc(q.id)}">${esc(tx(q.sta))}</li>`).join('');
   return `<div class="page-top flow-intro"><div><p class="eyebrow">${tr('Week', 'Nedelja')} 3 · ${tr('third class', 'treći čas')} · <time datetime="${esc(spisak.odrzan)}">${esc(srDate(spisak.odrzan))}.</time></p>
   <h1>${tr('The list of the third class.', 'Spisak radova trećeg časa.')}</h1></div>
-  <p class="lede">${tr('Twenty-nine works photographed in class, in shooting order. The number beside each entry counts photographs, and every sequence is read the same way: it starts with the box and the degree photographs and ends with the picture of the environment in which a user tries the prototype.', 'Dvadeset devet radova fotografisano na času, redom kojim su slikani. Broj uz svaki zapis broji fotografije, a svaki niz se čita isto: počinje kutijom odnosno slikama sa diplomskih, a završava se slikom iz okruženja u kome korisnica proba prototip.')}</p></div>
+  <p class="lede">${tr(`${spisak.radovi.length} works photographed in class, in shooting order. Each row opens its own page: every view of that work, and every week the same student handed something in.`, `${spisak.radovi.length} radova fotografisano na času, redom kojim su slikani. Svaki red otvara svoju stranicu: svi prikazi tog rada i sve nedelje u kojima je isti student nešto predao.`)}</p></div>
 <p class="notice">${esc(tx(spisak.napomena))}</p>
-<section aria-labelledby="cas03-rows-title"><div class="section-heading"><div><p class="eyebrow">${tr('Segment one', 'Prvi segment')}</p><h2 id="cas03-rows-title">${tr('Prototypes and photographs', 'Prototipi i slike')}</h2></div><p>${tr(`Entries 1–${number(spisak.sigurno.do)} and ${number(spisak.sigurno.od)}–${number(spisak.radovi.length)} stand as certain; the rows between are published as unconfirmed.`, `Zapisi 1–${number(spisak.sigurno.do)} i ${number(spisak.sigurno.od)}–${number(spisak.radovi.length)} stoje kao sigurni; redovi između objavljeni su kao nepotvrđeni.`)}</p></div>
+<section aria-labelledby="cas03-rows-title"><div class="section-heading"><div><p class="eyebrow">${tr('Segment one', 'Prvi segment')}</p><h2 id="cas03-rows-title">${tr('Prototypes and photographs', 'Prototipi i slike')}</h2></div><p>${esc(tx(spisak.presek))}</p></div>
   <ol class="cas03-rows" data-cas03-list="${esc(spisak.id)}" aria-label="${tr('Works in shooting order', 'Radovi redom slikanja')}">${rows}</ol>
-  <p class="notice">${tr('Every photograph taken in the third class is published with the work it belongs to, read in shooting order: each sequence starts with the box and the degree photographs and ends with the picture of the environment in which a user tries the prototype. The number beside each entry is the number of photographs that work got.', 'Svaka fotografija snimljena na trećem času objavljena je uz rad kome pripada, čitana redom slikanja: svaki niz počinje kutijom odnosno slikama sa diplomskih, a završava se slikom iz okruženja u kome korisnica proba prototip. Broj uz svaki zapis jeste broj fotografija koje je taj rad dobio.')}</p>
+  <p class="notice">${esc(tx(spisak.prenos))}</p>
 </section>
 <section aria-labelledby="cas03-udruzenje-title"><div class="section-heading"><div><p class="eyebrow">${tr('Segment two', 'Drugi segment')}</p><h2 id="cas03-udruzenje-title">${tr('From the association', 'Analiza iz udruženja')}</h2></div></div>
   <ol class="lesson-results">

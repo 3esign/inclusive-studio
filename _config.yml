@@ -42,3 +42,23 @@ exclude:
   - AGENTS.md
   - LOG.md
   - KNOWLEDGE.md
+  - data/prototipovi/foto-blokovi
+  - data/prototipovi/foto-castle
+  - data/prototipovi/foto-digitalni-prikaz
+  - data/prototipovi/foto-duga-staza
+  - data/prototipovi/foto-gumice
+  - data/prototipovi/foto-kocka
+  - data/prototipovi/foto-kutija
+  - data/prototipovi/foto-lavirint
+  - data/prototipovi/foto-moduli
+  - data/prototipovi/foto-nastavci
+  - data/prototipovi/foto-pesak
+  - data/prototipovi/foto-plavi-cepovi
+  - data/prototipovi/foto-polja
+  - data/prototipovi/foto-prostorna-staza
+  - data/prototipovi/foto-sudoku-skica
+  - data/prototipovi/foto-touch
+  - data/prototipovi/foto-useci
+  - data/prototipovi/foto-vezivanje
+  - data/prototipovi/foto-vijugava-staza
+  - data/prototipovi/foto-visoka-staza

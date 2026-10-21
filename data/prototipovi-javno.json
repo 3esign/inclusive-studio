@@ -66,11 +66,11 @@
    }
   },
   {
-   "id": "teacher-2026-10-21-photo-groups",
+   "id": "teacher-2026-10-21-spisak",
    "recordedOn": "2026-10-21",
    "description": {
-    "sr": "Fotografije radova sa trećeg časa.",
-    "en": "Photographs of works from the third class."
+    "sr": "Nastavnikov spisak radova trećeg časa, ponovo dostavljen 21.10.2026: broj indeksa, ime i prezime studenta i naziv prototipa, redom slikanja, sa brojem fotografija po radu. Niz počinje kutijom, posle kadrova sa diplomskih, i teče bez prekida kroz učionicu pa kroz praktične vežbe u udruženju.",
+    "en": "The teacher's list of the third class's works, re-supplied on 21 October 2026: student number, full name and prototype title, in shooting order, with the photograph count per work. The sequence begins with the box, after the degree-presentation frames, and runs unbroken through the classroom and then through the practical session at the association."
    }
   }
  ],
@@ -576,39 +576,6 @@
    }
   },
   {
-   "id": "poseta-2026-10-09-pogodilica",
-   "prototypeId": "pogodilica-2026",
-   "kind": "association-use",
-   "occurredOn": "2026-10-09",
-   "sourceId": "teacher-2026-10-12-field",
-   "summary": {
-    "sr": "Tabla sa obojenim stošcima igrana je sa više strana stola istovremeno; po broju fotografija, najposećeniji rad posete.",
-    "en": "The board with coloured cones was played from several sides of the table at once; by photograph count, the most visited work of the visit."
-   },
-   "photos": [
-    {
-     "id": "poseta-2026-10-09-pogodilica-1",
-     "src": "data/prototipovi/pogodilica-2026/poseta-2026-10-09-1.jpg",
-     "sha256": "27fe9ed6916bb5b76ff630053e9da599650da701198cd9759f6575d8267be52b",
-     "width": 1280,
-     "height": 960,
-     "alt": {
-      "sr": "Tabla gledana odozgo: ruke slažu obojene stošce i figurice u polja sa rupicama.",
-      "en": "The board seen from above: hands place coloured cones and figures into the holes."
-     },
-     "caption": {
-      "sr": "Pogodilica — grupa oko table; poseta udruženju, 09.10.2026.",
-      "en": "Pogodilica — a group around the board; association visit, 9 October 2026."
-     },
-     "sourceId": "teacher-2026-10-12-field"
-    }
-   ],
-   "publication": {
-    "sourceId": "teacher-2026-10-12-field",
-    "scope": "association-observation"
-   }
-  },
-  {
    "id": "poseta-2026-10-09-muzicka-kutija",
    "prototypeId": "muzicka-kutija-2026",
    "kind": "association-use",
@@ -712,39 +679,6 @@
      "caption": {
       "sr": "Zmijica — igra sa osmehom; poseta udruženju, 09.10.2026.",
       "en": "Zmijica — play with a smile; association visit, 9 October 2026."
-     },
-     "sourceId": "teacher-2026-10-12-faces-ok"
-    }
-   ],
-   "kind": "association-use",
-   "occurredOn": "2026-10-09",
-   "sourceId": "teacher-2026-10-12-faces-ok",
-   "publication": {
-    "sourceId": "teacher-2026-10-12-faces-ok",
-    "scope": "association-observation"
-   }
-  },
-  {
-   "id": "poseta-2026-10-09-pogodilica-dopuna",
-   "prototypeId": "pogodilica-2026",
-   "summary": {
-    "sr": "Drugi kadar istog trenutka: pažljivo nameštanje jednog stošca, uz ostale učesnike oko stola.",
-    "en": "A second frame of the same moment: carefully placing a single cone, with the other participants around the table."
-   },
-   "photos": [
-    {
-     "id": "poseta-2026-10-09-pogodilica-2",
-     "src": "data/prototipovi/pogodilica-2026/poseta-2026-10-09-2.jpg",
-     "sha256": "50d6fbc4addf9f19be72f210ce51dcfd530db63c1454ce9fc6724b27d0fe7f79",
-     "width": 960,
-     "height": 1280,
-     "alt": {
-      "sr": "Korisnik u kačketu pažljivo namešta stožac na tabli sa rupicama; oko stola ostali učesnici posete.",
-      "en": "A user in a cap carefully places a cone on the pegged board; around the table the other visit participants."
-     },
-     "caption": {
-      "sr": "Pogodilica — strpljenje u jednom potezu; poseta udruženju, 09.10.2026.",
-      "en": "Pogodilica — patience in a single move; association visit, 9 October 2026."
      },
      "sourceId": "teacher-2026-10-12-faces-ok"
     }
@@ -1535,1392 +1469,1948 @@
  ],
  "galleries": [
   {
-   "id": "kutija",
+   "id": "w3-kocic",
    "title": {
-    "sr": "Kutija sa fiokama",
-    "en": "Box with drawers"
+    "sr": "Bez naziva",
+    "en": "Untitled"
    },
    "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
+   "sourceId": "teacher-2026-10-21-spisak",
    "photos": [
     {
-     "id": "foto-kutija-01",
-     "src": "data/prototipovi/foto-kutija/01.jpg",
+     "id": "w3-kocic-01",
+     "src": "data/prototipovi/w3-kocic/01.jpg",
      "sha256": "9c750fada067caa2890e3418705fc48f90dc66efb879c3a1a0f37829c6dc837a",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Kutija sa fiokama, prikaz 1",
-      "en": "Box with drawers, view 1"
+      "sr": "Bez naziva — bela kutija sa fiokama, poklopac ukrašen geometrijskim oblicima u boji; prikaz 1 od 7.",
+      "en": "Untitled — a white box with drawers, its lid decorated with colored geometric shapes; view 1 of 7."
      },
      "caption": {
       "sr": "1 / 7",
       "en": "1 / 7"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-kutija-02",
-     "src": "data/prototipovi/foto-kutija/02.jpg",
+     "id": "w3-kocic-02",
+     "src": "data/prototipovi/w3-kocic/02.jpg",
      "sha256": "74316ba22fd8feecbe7ff998268cdadec5f98660f0c7a2745ced6d234e180cee",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Kutija sa fiokama, prikaz 2",
-      "en": "Box with drawers, view 2"
+      "sr": "Bez naziva — bela kutija sa fiokama, poklopac ukrašen geometrijskim oblicima u boji; prikaz 2 od 7.",
+      "en": "Untitled — a white box with drawers, its lid decorated with colored geometric shapes; view 2 of 7."
      },
      "caption": {
       "sr": "2 / 7",
       "en": "2 / 7"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-kutija-03",
-     "src": "data/prototipovi/foto-kutija/03.jpg",
+     "id": "w3-kocic-03",
+     "src": "data/prototipovi/w3-kocic/03.jpg",
      "sha256": "38e8946c163ff4624a71c918f621fa1c16bab726e016e06a4708cac9034c0d72",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Kutija sa fiokama, prikaz 3",
-      "en": "Box with drawers, view 3"
+      "sr": "Bez naziva — bela kutija sa fiokama, poklopac ukrašen geometrijskim oblicima u boji; prikaz 3 od 7.",
+      "en": "Untitled — a white box with drawers, its lid decorated with colored geometric shapes; view 3 of 7."
      },
      "caption": {
       "sr": "3 / 7",
       "en": "3 / 7"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-kutija-04",
-     "src": "data/prototipovi/foto-kutija/04.jpg",
+     "id": "w3-kocic-04",
+     "src": "data/prototipovi/w3-kocic/04.jpg",
      "sha256": "e5d3b855c66c1051f027544a82130994522ce1ae984bb71dcde655d8c56c90b5",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Kutija sa fiokama, prikaz 4",
-      "en": "Box with drawers, view 4"
+      "sr": "Bez naziva — bela kutija sa fiokama, poklopac ukrašen geometrijskim oblicima u boji; prikaz 4 od 7.",
+      "en": "Untitled — a white box with drawers, its lid decorated with colored geometric shapes; view 4 of 7."
      },
      "caption": {
       "sr": "4 / 7",
       "en": "4 / 7"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-kutija-05",
-     "src": "data/prototipovi/foto-kutija/05.jpg",
+     "id": "w3-kocic-05",
+     "src": "data/prototipovi/w3-kocic/05.jpg",
      "sha256": "c5bcc1366312959369111e5b6987670767803c70718a6dcb71c712a2e9f0d84a",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Kutija sa fiokama, prikaz 5",
-      "en": "Box with drawers, view 5"
+      "sr": "Bez naziva — bela kutija sa fiokama, poklopac ukrašen geometrijskim oblicima u boji; prikaz 5 od 7.",
+      "en": "Untitled — a white box with drawers, its lid decorated with colored geometric shapes; view 5 of 7."
      },
      "caption": {
       "sr": "5 / 7",
       "en": "5 / 7"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-kutija-06",
-     "src": "data/prototipovi/foto-kutija/06.jpg",
+     "id": "w3-kocic-06",
+     "src": "data/prototipovi/w3-kocic/06.jpg",
      "sha256": "fe5c716f7f70447e58f45def572112b3ff7ed11bd93e7d1abe7581e9cf234437",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Kutija sa fiokama, prikaz 6",
-      "en": "Box with drawers, view 6"
+      "sr": "Bez naziva — bela kutija sa fiokama, poklopac ukrašen geometrijskim oblicima u boji; prikaz 6 od 7.",
+      "en": "Untitled — a white box with drawers, its lid decorated with colored geometric shapes; view 6 of 7."
      },
      "caption": {
       "sr": "6 / 7",
       "en": "6 / 7"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-kutija-07",
-     "src": "data/prototipovi/foto-kutija/07.jpg",
+     "id": "w3-kocic-07",
+     "src": "data/prototipovi/w3-kocic/07.jpg",
      "sha256": "7798ba28210fd5274166b7a40f9d737dedcc0421145cdedd9e7f4b9b18597a2e",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Kutija sa fiokama, prikaz 7",
-      "en": "Box with drawers, view 7"
+      "sr": "Bez naziva — bela kutija sa fiokama, poklopac ukrašen geometrijskim oblicima u boji; prikaz 7 od 7.",
+      "en": "Untitled — a white box with drawers, its lid decorated with colored geometric shapes; view 7 of 7."
      },
      "caption": {
       "sr": "7 / 7",
       "en": "7 / 7"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     }
-   ]
+   ],
+   "author": {
+    "name": "Ksenija Kočić",
+    "studentNumber": "19/24"
+   },
+   "listOrder": 1
   },
   {
-   "id": "touch",
+   "id": "w3-demiri",
+   "title": {
+    "sr": "Bez naziva",
+    "en": "Untitled"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-demiri-01",
+     "src": "data/prototipovi/w3-demiri/01.jpg",
+     "sha256": "e7b227d0b6a928c8ffd8607a94b1875ca9ff7fc683de92286f9087fbe10d7e9a",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Bez naziva — prugasta kutija sa obojenim pregradama i pufnama razvrstanim po boji; prikaz 1 od 5.",
+      "en": "Untitled — a striped box with colored compartments holding pompoms sorted by color; view 1 of 5."
+     },
+     "caption": {
+      "sr": "1 / 5",
+      "en": "1 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-demiri-02",
+     "src": "data/prototipovi/w3-demiri/02.jpg",
+     "sha256": "6ee38e0d58a25450a874265a2c49144c3b388e5188a877eaaa390f2845007f37",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Bez naziva — prugasta kutija sa obojenim pregradama i pufnama razvrstanim po boji; prikaz 2 od 5.",
+      "en": "Untitled — a striped box with colored compartments holding pompoms sorted by color; view 2 of 5."
+     },
+     "caption": {
+      "sr": "2 / 5",
+      "en": "2 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-demiri-03",
+     "src": "data/prototipovi/w3-demiri/03.jpg",
+     "sha256": "a6ec13c565abd91501b1565fe9a1c891cce5c63d6019c6b35f91ffbaa6221dc1",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Bez naziva — prugasta kutija sa obojenim pregradama i pufnama razvrstanim po boji; prikaz 3 od 5.",
+      "en": "Untitled — a striped box with colored compartments holding pompoms sorted by color; view 3 of 5."
+     },
+     "caption": {
+      "sr": "3 / 5",
+      "en": "3 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-demiri-04",
+     "src": "data/prototipovi/w3-demiri/04.jpg",
+     "sha256": "51c5936de1975c2ad2c24a1e85e9aab770fd998fd0972d101afce6b13aa4657f",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Bez naziva — prugasta kutija sa obojenim pregradama i pufnama razvrstanim po boji; prikaz 4 od 5.",
+      "en": "Untitled — a striped box with colored compartments holding pompoms sorted by color; view 4 of 5."
+     },
+     "caption": {
+      "sr": "4 / 5",
+      "en": "4 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-demiri-05",
+     "src": "data/prototipovi/w3-demiri/05.jpg",
+     "sha256": "4b92eba134a198b2941a2d474ec03df60c3f0cdd72a6e3f355580f5fd60954b3",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Bez naziva — prugasta kutija sa obojenim pregradama i pufnama razvrstanim po boji; prikaz 5 od 5.",
+      "en": "Untitled — a striped box with colored compartments holding pompoms sorted by color; view 5 of 5."
+     },
+     "caption": {
+      "sr": "5 / 5",
+      "en": "5 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Hana Demiri",
+    "studentNumber": "22/24"
+   },
+   "listOrder": 2
+  },
+  {
+   "id": "w3-slovo-prsti",
+   "title": {
+    "sr": "Slovo Prsti",
+    "en": "Slovo Prsti"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-slovo-prsti-01",
+     "src": "data/prototipovi/w3-slovo-prsti/01.jpg",
+     "sha256": "f0157424041ecf6a42e874fdd987ca8cd07d2fd488976f1ad4d947b359d9883e",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Slovo Prsti — papirni konusi sa ispisanim slovima koji se navlače na prste; prikaz 1 od 4.",
+      "en": "Slovo Prsti — paper cones with letters written on them, worn over the fingers; view 1 of 4."
+     },
+     "caption": {
+      "sr": "1 / 4",
+      "en": "1 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-slovo-prsti-02",
+     "src": "data/prototipovi/w3-slovo-prsti/02.jpg",
+     "sha256": "1d921a58c1002c67c21b2f308b421344f79d1a20dc796331655246ee59d5868b",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Slovo Prsti — papirni konusi sa ispisanim slovima koji se navlače na prste; prikaz 2 od 4.",
+      "en": "Slovo Prsti — paper cones with letters written on them, worn over the fingers; view 2 of 4."
+     },
+     "caption": {
+      "sr": "2 / 4",
+      "en": "2 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-slovo-prsti-03",
+     "src": "data/prototipovi/w3-slovo-prsti/03.jpg",
+     "sha256": "3e3e645dc96f28b6c6b93677ff094773a1c0d38ddc00cd68841da5e02fd709e3",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Slovo Prsti — papirni konusi sa ispisanim slovima koji se navlače na prste; prikaz 3 od 4.",
+      "en": "Slovo Prsti — paper cones with letters written on them, worn over the fingers; view 3 of 4."
+     },
+     "caption": {
+      "sr": "3 / 4",
+      "en": "3 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-slovo-prsti-04",
+     "src": "data/prototipovi/w3-slovo-prsti/04.jpg",
+     "sha256": "f2140ef5f2bd354a0721f229dd02d805fa80ef1d68e6cec03ffd0982ef3f78d2",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Slovo Prsti — papirni konusi sa ispisanim slovima koji se navlače na prste; prikaz 4 od 4.",
+      "en": "Slovo Prsti — paper cones with letters written on them, worn over the fingers; view 4 of 4."
+     },
+     "caption": {
+      "sr": "4 / 4",
+      "en": "4 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Lazović Sara",
+    "studentNumber": "106/24"
+   },
+   "listOrder": 3
+  },
+  {
+   "id": "w3-touch",
    "title": {
     "sr": "Touch",
     "en": "Touch"
    },
    "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
+   "sourceId": "teacher-2026-10-21-spisak",
    "photos": [
     {
-     "id": "foto-touch-01",
-     "src": "data/prototipovi/foto-touch/01.jpg",
-     "sha256": "e7b227d0b6a928c8ffd8607a94b1875ca9ff7fc683de92286f9087fbe10d7e9a",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Touch, prikaz 1",
-      "en": "Touch, view 1"
-     },
-     "caption": {
-      "sr": "1 / 5",
-      "en": "1 / 5"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-touch-02",
-     "src": "data/prototipovi/foto-touch/02.jpg",
-     "sha256": "6ee38e0d58a25450a874265a2c49144c3b388e5188a877eaaa390f2845007f37",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Touch, prikaz 2",
-      "en": "Touch, view 2"
-     },
-     "caption": {
-      "sr": "2 / 5",
-      "en": "2 / 5"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-touch-03",
-     "src": "data/prototipovi/foto-touch/03.jpg",
-     "sha256": "a6ec13c565abd91501b1565fe9a1c891cce5c63d6019c6b35f91ffbaa6221dc1",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Touch, prikaz 3",
-      "en": "Touch, view 3"
-     },
-     "caption": {
-      "sr": "3 / 5",
-      "en": "3 / 5"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-touch-04",
-     "src": "data/prototipovi/foto-touch/04.jpg",
-     "sha256": "51c5936de1975c2ad2c24a1e85e9aab770fd998fd0972d101afce6b13aa4657f",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Touch, prikaz 4",
-      "en": "Touch, view 4"
-     },
-     "caption": {
-      "sr": "4 / 5",
-      "en": "4 / 5"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-touch-05",
-     "src": "data/prototipovi/foto-touch/05.jpg",
-     "sha256": "4b92eba134a198b2941a2d474ec03df60c3f0cdd72a6e3f355580f5fd60954b3",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Touch, prikaz 5",
-      "en": "Touch, view 5"
-     },
-     "caption": {
-      "sr": "5 / 5",
-      "en": "5 / 5"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    }
-   ]
-  },
-  {
-   "id": "nastavci",
-   "title": {
-    "sr": "Papirni nastavci za prste",
-    "en": "Paper finger attachments"
-   },
-   "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
-   "photos": [
-    {
-     "id": "foto-nastavci-01",
-     "src": "data/prototipovi/foto-nastavci/01.jpg",
-     "sha256": "f0157424041ecf6a42e874fdd987ca8cd07d2fd488976f1ad4d947b359d9883e",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Papirni nastavci za prste, prikaz 1",
-      "en": "Paper finger attachments, view 1"
-     },
-     "caption": {
-      "sr": "1 / 4",
-      "en": "1 / 4"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-nastavci-02",
-     "src": "data/prototipovi/foto-nastavci/02.jpg",
-     "sha256": "1d921a58c1002c67c21b2f308b421344f79d1a20dc796331655246ee59d5868b",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Papirni nastavci za prste, prikaz 2",
-      "en": "Paper finger attachments, view 2"
-     },
-     "caption": {
-      "sr": "2 / 4",
-      "en": "2 / 4"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-nastavci-03",
-     "src": "data/prototipovi/foto-nastavci/03.jpg",
-     "sha256": "3e3e645dc96f28b6c6b93677ff094773a1c0d38ddc00cd68841da5e02fd709e3",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Papirni nastavci za prste, prikaz 3",
-      "en": "Paper finger attachments, view 3"
-     },
-     "caption": {
-      "sr": "3 / 4",
-      "en": "3 / 4"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-nastavci-04",
-     "src": "data/prototipovi/foto-nastavci/04.jpg",
-     "sha256": "f2140ef5f2bd354a0721f229dd02d805fa80ef1d68e6cec03ffd0982ef3f78d2",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Papirni nastavci za prste, prikaz 4",
-      "en": "Paper finger attachments, view 4"
-     },
-     "caption": {
-      "sr": "4 / 4",
-      "en": "4 / 4"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    }
-   ]
-  },
-  {
-   "id": "vezivanje",
-   "title": {
-    "sr": "Trake i vezivanje",
-    "en": "Strips and lacing"
-   },
-   "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
-   "photos": [
-    {
-     "id": "foto-vezivanje-01",
-     "src": "data/prototipovi/foto-vezivanje/01.jpg",
+     "id": "w3-touch-01",
+     "src": "data/prototipovi/w3-touch/01.jpg",
      "sha256": "2a7f0579edf7ea106b08a2cac64df11e4a8abc0638c94398521bd320ba87cc58",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Trake i vezivanje, prikaz 1",
-      "en": "Strips and lacing, view 1"
+      "sr": "Touch — daska sa nizom crnih čičak-štapića i zlatnom trakom za opipavanje; prikaz 1 od 2.",
+      "en": "Touch — a board with a row of black pipe cleaners and a gold strand to touch; view 1 of 2."
      },
      "caption": {
       "sr": "1 / 2",
       "en": "1 / 2"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-vezivanje-02",
-     "src": "data/prototipovi/foto-vezivanje/02.jpg",
+     "id": "w3-touch-02",
+     "src": "data/prototipovi/w3-touch/02.jpg",
      "sha256": "0e31901eba85de65a2554aedcf0905828b91adc8985871625fc5296d8a2ffb41",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Trake i vezivanje, prikaz 2",
-      "en": "Strips and lacing, view 2"
+      "sr": "Touch — daska sa nizom crnih čičak-štapića i zlatnom trakom za opipavanje; prikaz 2 od 2.",
+      "en": "Touch — a board with a row of black pipe cleaners and a gold strand to touch; view 2 of 2."
      },
      "caption": {
       "sr": "2 / 2",
       "en": "2 / 2"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     }
-   ]
+   ],
+   "author": {
+    "name": "Maša Jotić",
+    "studentNumber": "134/24"
+   },
+   "listOrder": 4
   },
   {
-   "id": "digitalni-prikaz",
+   "id": "w3-music-box",
    "title": {
-    "sr": "Digitalni prikaz",
-    "en": "Digital display"
+    "sr": "Music box",
+    "en": "Music box"
    },
    "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
+   "sourceId": "teacher-2026-10-21-spisak",
    "photos": [
     {
-     "id": "foto-digitalni-prikaz-01",
-     "src": "data/prototipovi/foto-digitalni-prikaz/01.jpg",
+     "id": "w3-music-box-01",
+     "src": "data/prototipovi/w3-music-box/01.jpg",
      "sha256": "bf98d8ee81d041d1fdccbcdf5c924e164697874daa096c1660af63d1dccc9af0",
      "width": 1280,
      "height": 721,
      "alt": {
-      "sr": "Digitalni prikaz, prikaz 1",
-      "en": "Digital display, view 1"
+      "sr": "Music box — ekran laptopa sa karticama zvučnih i pokretnih igara; prikaz 1 od 1.",
+      "en": "Music box — a laptop screen with cards for sound and movement games; view 1 of 1."
      },
      "caption": {
       "sr": "1 / 1",
       "en": "1 / 1"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     }
-   ]
+   ],
+   "author": {
+    "name": "Nikola Pajić",
+    "studentNumber": "49/24"
+   },
+   "listOrder": 5,
+   "continues": "muzicka-kutija-2026"
   },
   {
-   "id": "blokovi",
+   "id": "w3-iggyblox",
    "title": {
-    "sr": "Povezani blokovi",
-    "en": "Connected blocks"
+    "sr": "iggyblox",
+    "en": "iggyblox"
    },
    "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
+   "sourceId": "teacher-2026-10-21-spisak",
    "photos": [
     {
-     "id": "foto-blokovi-01",
-     "src": "data/prototipovi/foto-blokovi/01.jpg",
+     "id": "w3-iggyblox-01",
+     "src": "data/prototipovi/w3-iggyblox/01.jpg",
      "sha256": "4ce0f837e1a613c57540694d188dce39428134b2915f0d3d37669b612ae3831b",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Povezani blokovi, prikaz 1",
-      "en": "Connected blocks, view 1"
+      "sr": "iggyblox — spojeni blokovi obojeni belo i crveno; prikaz 1 od 2.",
+      "en": "iggyblox — connected blocks painted white and red; view 1 of 2."
      },
      "caption": {
       "sr": "1 / 2",
       "en": "1 / 2"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-blokovi-02",
-     "src": "data/prototipovi/foto-blokovi/02.jpg",
+     "id": "w3-iggyblox-02",
+     "src": "data/prototipovi/w3-iggyblox/02.jpg",
      "sha256": "4da5e476aa87dc8def1897d91cc38476389e565914d0dd612b54d67bc50e3103",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Povezani blokovi, prikaz 2",
-      "en": "Connected blocks, view 2"
+      "sr": "iggyblox — spojeni blokovi obojeni belo i crveno; prikaz 2 od 2.",
+      "en": "iggyblox — connected blocks painted white and red; view 2 of 2."
      },
      "caption": {
       "sr": "2 / 2",
       "en": "2 / 2"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     }
-   ]
+   ],
+   "author": {
+    "name": "Igor Stablović",
+    "studentNumber": "6/24"
+   },
+   "listOrder": 6
   },
   {
-   "id": "duga-staza",
+   "id": "w3-hansgadget",
    "title": {
-    "sr": "Duga kartonska staza",
-    "en": "Long cardboard track"
+    "sr": "hansgadget",
+    "en": "hansgadget"
    },
    "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
+   "sourceId": "teacher-2026-10-21-spisak",
    "photos": [
     {
-     "id": "foto-duga-staza-01",
-     "src": "data/prototipovi/foto-duga-staza/01.jpg",
+     "id": "w3-hansgadget-01",
+     "src": "data/prototipovi/w3-hansgadget/01.jpg",
      "sha256": "e0dbf2c2dbbb901b00d10e18233ebb389c1e66965d79c435f1d1c03dd3098280",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Duga kartonska staza, prikaz 1",
-      "en": "Long cardboard track, view 1"
+      "sr": "hansgadget — kartonska letva sa izrezanim oblicima i kuglicom na vođici; prikaz 1 od 6.",
+      "en": "hansgadget — a cardboard strip with cut-out shapes and a bead on a guide wire; view 1 of 6."
      },
      "caption": {
       "sr": "1 / 6",
       "en": "1 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-duga-staza-02",
-     "src": "data/prototipovi/foto-duga-staza/02.jpg",
+     "id": "w3-hansgadget-02",
+     "src": "data/prototipovi/w3-hansgadget/02.jpg",
      "sha256": "86924032b725aa4075ac0bc109534e1c29245b82153185d44ee2fd52f6fd1b0a",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Duga kartonska staza, prikaz 2",
-      "en": "Long cardboard track, view 2"
+      "sr": "hansgadget — kartonska letva sa izrezanim oblicima i kuglicom na vođici; prikaz 2 od 6.",
+      "en": "hansgadget — a cardboard strip with cut-out shapes and a bead on a guide wire; view 2 of 6."
      },
      "caption": {
       "sr": "2 / 6",
       "en": "2 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-duga-staza-03",
-     "src": "data/prototipovi/foto-duga-staza/03.jpg",
+     "id": "w3-hansgadget-03",
+     "src": "data/prototipovi/w3-hansgadget/03.jpg",
      "sha256": "8716dc28c77783c867bca9bd7f6c501644acff488c869f9ebd8fcdb788bb4b18",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Duga kartonska staza, prikaz 3",
-      "en": "Long cardboard track, view 3"
+      "sr": "hansgadget — kartonska letva sa izrezanim oblicima i kuglicom na vođici; prikaz 3 od 6.",
+      "en": "hansgadget — a cardboard strip with cut-out shapes and a bead on a guide wire; view 3 of 6."
      },
      "caption": {
       "sr": "3 / 6",
       "en": "3 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-duga-staza-04",
-     "src": "data/prototipovi/foto-duga-staza/04.jpg",
+     "id": "w3-hansgadget-04",
+     "src": "data/prototipovi/w3-hansgadget/04.jpg",
      "sha256": "b008d1d4a41abd34a49fb27076a1b57d464c26c832870aaaecbb07eabfeb6d39",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Duga kartonska staza, prikaz 4",
-      "en": "Long cardboard track, view 4"
+      "sr": "hansgadget — kartonska letva sa izrezanim oblicima i kuglicom na vođici; prikaz 4 od 6.",
+      "en": "hansgadget — a cardboard strip with cut-out shapes and a bead on a guide wire; view 4 of 6."
      },
      "caption": {
       "sr": "4 / 6",
       "en": "4 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-duga-staza-05",
-     "src": "data/prototipovi/foto-duga-staza/05.jpg",
+     "id": "w3-hansgadget-05",
+     "src": "data/prototipovi/w3-hansgadget/05.jpg",
      "sha256": "804450223a378d007c1b397dd4cf40aed35e1398dface15d996428fcbc1d9fe3",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Duga kartonska staza, prikaz 5",
-      "en": "Long cardboard track, view 5"
+      "sr": "hansgadget — kartonska letva sa izrezanim oblicima i kuglicom na vođici; prikaz 5 od 6.",
+      "en": "hansgadget — a cardboard strip with cut-out shapes and a bead on a guide wire; view 5 of 6."
      },
      "caption": {
       "sr": "5 / 6",
       "en": "5 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-duga-staza-06",
-     "src": "data/prototipovi/foto-duga-staza/06.jpg",
+     "id": "w3-hansgadget-06",
+     "src": "data/prototipovi/w3-hansgadget/06.jpg",
      "sha256": "4737a596e66acf5d52822358ed65cebd71891a76c5281e8afc9f9e55e9fc1c62",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Duga kartonska staza, prikaz 6",
-      "en": "Long cardboard track, view 6"
+      "sr": "hansgadget — kartonska letva sa izrezanim oblicima i kuglicom na vođici; prikaz 6 od 6.",
+      "en": "hansgadget — a cardboard strip with cut-out shapes and a bead on a guide wire; view 6 of 6."
      },
      "caption": {
       "sr": "6 / 6",
       "en": "6 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     }
-   ]
+   ],
+   "author": {
+    "name": "Imre Halas",
+    "studentNumber": "1/2024"
+   },
+   "listOrder": 7
   },
   {
-   "id": "moduli",
+   "id": "w3-starlight",
    "title": {
-    "sr": "Ljubičasti moduli",
-    "en": "Purple modules"
+    "sr": "starlight",
+    "en": "starlight"
    },
    "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
+   "sourceId": "teacher-2026-10-21-spisak",
    "photos": [
     {
-     "id": "foto-moduli-01",
-     "src": "data/prototipovi/foto-moduli/01.jpg",
-     "sha256": "dfc6803d73aab1921d5c4a7af0633cb699e7e281b9248de599367a6408141437",
+     "id": "w3-starlight-01",
+     "src": "data/prototipovi/w3-starlight/01.jpg",
+     "sha256": "1f52d8cf4406a197f0adbcc557f4224c3cfce282d7f3c65b6714bbd0be668907",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Ljubičasti moduli, prikaz 1",
-      "en": "Purple modules, view 1"
-     },
-     "caption": {
-      "sr": "1 / 4",
-      "en": "1 / 4"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-moduli-02",
-     "src": "data/prototipovi/foto-moduli/02.jpg",
-     "sha256": "deedbe62ec185828518ead659e4e34d913ee2491c711f5452da62e6134445cd8",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Ljubičasti moduli, prikaz 2",
-      "en": "Purple modules, view 2"
-     },
-     "caption": {
-      "sr": "2 / 4",
-      "en": "2 / 4"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-moduli-03",
-     "src": "data/prototipovi/foto-moduli/03.jpg",
-     "sha256": "07d34703201465866b33cb89959f3e662f779c07ce992d07ca2753b72c4871ff",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Ljubičasti moduli, prikaz 3",
-      "en": "Purple modules, view 3"
-     },
-     "caption": {
-      "sr": "3 / 4",
-      "en": "3 / 4"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-moduli-04",
-     "src": "data/prototipovi/foto-moduli/04.jpg",
-     "sha256": "cefdcc70dfceaa95ba0f8c4dd2b70ca533f6e4d331ed138f0901f593ed446192",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Ljubičasti moduli, prikaz 4",
-      "en": "Purple modules, view 4"
-     },
-     "caption": {
-      "sr": "4 / 4",
-      "en": "4 / 4"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    }
-   ]
-  },
-  {
-   "id": "pesak",
-   "title": {
-    "sr": "Slova u pesku",
-    "en": "Letters in sand"
-   },
-   "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
-   "photos": [
-    {
-     "id": "foto-pesak-01",
-     "src": "data/prototipovi/foto-pesak/01.jpg",
-     "sha256": "118a83bf9210ba07b642e7c2bc9a6ba5da3f1d6b10b9c94ed789038bb2007ce6",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Slova u pesku, prikaz 1",
-      "en": "Letters in sand, view 1"
-     },
-     "caption": {
-      "sr": "1 / 4",
-      "en": "1 / 4"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-pesak-02",
-     "src": "data/prototipovi/foto-pesak/02.jpg",
-     "sha256": "f99d840a32f90278e68041b07f7fb976a83281c94beafd56bd212f07ef3303cc",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Slova u pesku, prikaz 2",
-      "en": "Letters in sand, view 2"
-     },
-     "caption": {
-      "sr": "2 / 4",
-      "en": "2 / 4"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-pesak-03",
-     "src": "data/prototipovi/foto-pesak/03.jpg",
-     "sha256": "7ee99e3714a031cee2c2f1892d33b08e9991c245b472e17d611f3e89a0cd2c93",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Slova u pesku, prikaz 3",
-      "en": "Letters in sand, view 3"
-     },
-     "caption": {
-      "sr": "3 / 4",
-      "en": "3 / 4"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-pesak-04",
-     "src": "data/prototipovi/foto-pesak/04.jpg",
-     "sha256": "f4996b8b13d457a0dff2def7a7dcb00035fdf57ab85bc6fb5bbe41366e1e4783",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Slova u pesku, prikaz 4",
-      "en": "Letters in sand, view 4"
-     },
-     "caption": {
-      "sr": "4 / 4",
-      "en": "4 / 4"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    }
-   ]
-  },
-  {
-   "id": "useci",
-   "title": {
-    "sr": "Ploča sa usecima",
-    "en": "Board with grooves"
-   },
-   "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
-   "photos": [
-    {
-     "id": "foto-useci-01",
-     "src": "data/prototipovi/foto-useci/01.jpg",
-     "sha256": "8340bae4b88d52f6cd3cb319df02205dfca03a2f95b5831404043bf2645c436d",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Ploča sa usecima, prikaz 1",
-      "en": "Board with grooves, view 1"
-     },
-     "caption": {
-      "sr": "1 / 5",
-      "en": "1 / 5"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-useci-02",
-     "src": "data/prototipovi/foto-useci/02.jpg",
-     "sha256": "41b71e29362d8a4b375fa5ae63b62dcdbbb5e29c479d52f80edd50f4af054d49",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Ploča sa usecima, prikaz 2",
-      "en": "Board with grooves, view 2"
-     },
-     "caption": {
-      "sr": "2 / 5",
-      "en": "2 / 5"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-useci-03",
-     "src": "data/prototipovi/foto-useci/03.jpg",
-     "sha256": "6d1b70e1cfd470808e56eaeb3f874b7965756f0b92a17f929259b2066b2805d2",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Ploča sa usecima, prikaz 3",
-      "en": "Board with grooves, view 3"
-     },
-     "caption": {
-      "sr": "3 / 5",
-      "en": "3 / 5"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-useci-04",
-     "src": "data/prototipovi/foto-useci/04.jpg",
-     "sha256": "cefbc554e9a271628e7ed3f994bd11bf8fb2917f254068fc458b87bc7d889a0b",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Ploča sa usecima, prikaz 4",
-      "en": "Board with grooves, view 4"
-     },
-     "caption": {
-      "sr": "4 / 5",
-      "en": "4 / 5"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-useci-05",
-     "src": "data/prototipovi/foto-useci/05.jpg",
-     "sha256": "0edca7ae447537d4d4692cb0f11fc92ec6f9e3c1524416ecf3c3abda008b7b33",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Ploča sa usecima, prikaz 5",
-      "en": "Board with grooves, view 5"
-     },
-     "caption": {
-      "sr": "5 / 5",
-      "en": "5 / 5"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    }
-   ]
-  },
-  {
-   "id": "sudoku-skica",
-   "title": {
-    "sr": "Sudoku — skica",
-    "en": "Sudoku — sketch"
-   },
-   "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
-   "photos": [
-    {
-     "id": "foto-sudoku-skica-01",
-     "src": "data/prototipovi/foto-sudoku-skica/01.jpg",
-     "sha256": "55e4813d221160b24ed23a4cf90201dbe3ebdb825125c6a34af1ea8766fc8e76",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Sudoku — skica, prikaz 1",
-      "en": "Sudoku — sketch, view 1"
-     },
-     "caption": {
-      "sr": "1 / 2",
-      "en": "1 / 2"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    },
-    {
-     "id": "foto-sudoku-skica-02",
-     "src": "data/prototipovi/foto-sudoku-skica/02.jpg",
-     "sha256": "ecda9664124971a828bf0cd6bafc7e3bad484025807f3e618a4c4b107f14d8d3",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Sudoku — skica, prikaz 2",
-      "en": "Sudoku — sketch, view 2"
-     },
-     "caption": {
-      "sr": "2 / 2",
-      "en": "2 / 2"
-     },
-     "sourceId": "teacher-2026-10-21-photo-groups"
-    }
-   ]
-  },
-  {
-   "id": "kocka",
-   "title": {
-    "sr": "Taktilna kocka",
-    "en": "Tactile cube"
-   },
-   "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
-   "photos": [
-    {
-     "id": "foto-kocka-01",
-     "src": "data/prototipovi/foto-kocka/01.jpg",
-     "sha256": "cb01f8d49f4234f90935272a7a299ee81f180495e96c730d51051c9cccfbf319",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Taktilna kocka, prikaz 1",
-      "en": "Tactile cube, view 1"
+      "sr": "starlight — kartonski štapić sa vrhom od folije, uz svesku sa beleškama; prikaz 1 od 3.",
+      "en": "starlight — a cardboard wand with a foil tip, beside a notebook of notes; view 1 of 3."
      },
      "caption": {
       "sr": "1 / 3",
       "en": "1 / 3"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-kocka-02",
-     "src": "data/prototipovi/foto-kocka/02.jpg",
-     "sha256": "f26c494a1b38eeade687f74b24c9cf166e1f5908f4e7174c3cb68e1763ab2510",
+     "id": "w3-starlight-02",
+     "src": "data/prototipovi/w3-starlight/02.jpg",
+     "sha256": "c74a92b47437cd0202474facf14c72a4e05de9b7d78957a0c42b105cb48178e9",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Taktilna kocka, prikaz 2",
-      "en": "Tactile cube, view 2"
+      "sr": "starlight — kartonski štapić sa vrhom od folije, uz svesku sa beleškama; prikaz 2 od 3.",
+      "en": "starlight — a cardboard wand with a foil tip, beside a notebook of notes; view 2 of 3."
      },
      "caption": {
       "sr": "2 / 3",
       "en": "2 / 3"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-kocka-03",
-     "src": "data/prototipovi/foto-kocka/03.jpg",
-     "sha256": "23325c7c1313369a9ea0b7824917d74de5d55444046115851b2e156f6cc61e62",
+     "id": "w3-starlight-03",
+     "src": "data/prototipovi/w3-starlight/03.jpg",
+     "sha256": "b1a1178812fb7eea1405a1e4d602a259987cab1c9d70e7f522fe5cae3a9b7e03",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Taktilna kocka, prikaz 3",
-      "en": "Tactile cube, view 3"
+      "sr": "starlight — kartonski štapić sa vrhom od folije, uz svesku sa beleškama; prikaz 3 od 3.",
+      "en": "starlight — a cardboard wand with a foil tip, beside a notebook of notes; view 3 of 3."
      },
      "caption": {
       "sr": "3 / 3",
       "en": "3 / 3"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     }
-   ]
+   ],
+   "author": {
+    "name": "Imre Halas",
+    "studentNumber": "1/2024"
+   },
+   "listOrder": 8
   },
   {
-   "id": "gumice",
+   "id": "w3-zekino-polje",
    "title": {
-    "sr": "Ploča sa gumicama",
-    "en": "Rubber-band board"
+    "sr": "zekino polje",
+    "en": "zekino polje"
    },
    "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
+   "sourceId": "teacher-2026-10-21-spisak",
    "photos": [
     {
-     "id": "foto-gumice-01",
-     "src": "data/prototipovi/foto-gumice/01.jpg",
-     "sha256": "5aeac46e12f0ee1e9d11fa0a27e513e15a18b06176fb34f486976141c063acdf",
+     "id": "w3-zekino-polje-01",
+     "src": "data/prototipovi/w3-zekino-polje/01.jpg",
+     "sha256": "dfc6803d73aab1921d5c4a7af0633cb699e7e281b9248de599367a6408141437",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Ploča sa gumicama, prikaz 1",
-      "en": "Rubber-band board, view 1"
+      "sr": "zekino polje — kartonske pločice sa utisnutim cvetovima i belim krugovima; prikaz 1 od 4.",
+      "en": "zekino polje — cardboard tiles with printed flowers and white circles; view 1 of 4."
+     },
+     "caption": {
+      "sr": "1 / 4",
+      "en": "1 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-zekino-polje-02",
+     "src": "data/prototipovi/w3-zekino-polje/02.jpg",
+     "sha256": "deedbe62ec185828518ead659e4e34d913ee2491c711f5452da62e6134445cd8",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "zekino polje — kartonske pločice sa utisnutim cvetovima i belim krugovima; prikaz 2 od 4.",
+      "en": "zekino polje — cardboard tiles with printed flowers and white circles; view 2 of 4."
+     },
+     "caption": {
+      "sr": "2 / 4",
+      "en": "2 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-zekino-polje-03",
+     "src": "data/prototipovi/w3-zekino-polje/03.jpg",
+     "sha256": "07d34703201465866b33cb89959f3e662f779c07ce992d07ca2753b72c4871ff",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "zekino polje — kartonske pločice sa utisnutim cvetovima i belim krugovima; prikaz 3 od 4.",
+      "en": "zekino polje — cardboard tiles with printed flowers and white circles; view 3 of 4."
+     },
+     "caption": {
+      "sr": "3 / 4",
+      "en": "3 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-zekino-polje-04",
+     "src": "data/prototipovi/w3-zekino-polje/04.jpg",
+     "sha256": "cefdcc70dfceaa95ba0f8c4dd2b70ca533f6e4d331ed138f0901f593ed446192",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "zekino polje — kartonske pločice sa utisnutim cvetovima i belim krugovima; prikaz 4 od 4.",
+      "en": "zekino polje — cardboard tiles with printed flowers and white circles; view 4 of 4."
+     },
+     "caption": {
+      "sr": "4 / 4",
+      "en": "4 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Velemir Tijana",
+    "studentNumber": "51/24"
+   },
+   "listOrder": 9,
+   "probanje": {
+    "occurredOn": "2026-10-16",
+    "sourceId": "teacher-2026-10-21-udruzenje",
+    "sta": {
+     "sr": "Korisnica prevlači prste preko pločica i premešta ih po stolu; rad se koristi raširen po površini, ne u ruci.",
+     "en": "A user runs her fingers over the tiles and moves them about the table; the work is used spread out on the surface, not held."
+    }
+   }
+  },
+  {
+   "id": "w3-zen-garden",
+   "title": {
+    "sr": "zen garden",
+    "en": "zen garden"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-zen-garden-01",
+     "src": "data/prototipovi/w3-zen-garden/01.jpg",
+     "sha256": "118a83bf9210ba07b642e7c2bc9a6ba5da3f1d6b10b9c94ed789038bb2007ce6",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "zen garden — drvena kutija sa peskom i kartice sa slovima; prikaz 1 od 4.",
+      "en": "zen garden — a wooden tray of sand with letter cards; view 1 of 4."
+     },
+     "caption": {
+      "sr": "1 / 4",
+      "en": "1 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-zen-garden-02",
+     "src": "data/prototipovi/w3-zen-garden/02.jpg",
+     "sha256": "f99d840a32f90278e68041b07f7fb976a83281c94beafd56bd212f07ef3303cc",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "zen garden — drvena kutija sa peskom i kartice sa slovima; prikaz 2 od 4.",
+      "en": "zen garden — a wooden tray of sand with letter cards; view 2 of 4."
+     },
+     "caption": {
+      "sr": "2 / 4",
+      "en": "2 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-zen-garden-03",
+     "src": "data/prototipovi/w3-zen-garden/03.jpg",
+     "sha256": "7ee99e3714a031cee2c2f1892d33b08e9991c245b472e17d611f3e89a0cd2c93",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "zen garden — drvena kutija sa peskom i kartice sa slovima; prikaz 3 od 4.",
+      "en": "zen garden — a wooden tray of sand with letter cards; view 3 of 4."
+     },
+     "caption": {
+      "sr": "3 / 4",
+      "en": "3 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-zen-garden-04",
+     "src": "data/prototipovi/w3-zen-garden/04.jpg",
+     "sha256": "f4996b8b13d457a0dff2def7a7dcb00035fdf57ab85bc6fb5bbe41366e1e4783",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "zen garden — drvena kutija sa peskom i kartice sa slovima; prikaz 4 od 4.",
+      "en": "zen garden — a wooden tray of sand with letter cards; view 4 of 4."
+     },
+     "caption": {
+      "sr": "4 / 4",
+      "en": "4 / 4"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Karla Krdzovac",
+    "studentNumber": "109/24"
+   },
+   "listOrder": 10
+  },
+  {
+   "id": "w3-lavirint",
+   "title": {
+    "sr": "lavirint",
+    "en": "lavirint"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-lavirint-01",
+     "src": "data/prototipovi/w3-lavirint/01.jpg",
+     "sha256": "8340bae4b88d52f6cd3cb319df02205dfca03a2f95b5831404043bf2645c436d",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "lavirint — kartonska ploča sa užlebljenim putanjama u obliku slova; prikaz 1 od 5.",
+      "en": "lavirint — a cardboard board with grooved letter-shaped paths; view 1 of 5."
+     },
+     "caption": {
+      "sr": "1 / 5",
+      "en": "1 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-lavirint-02",
+     "src": "data/prototipovi/w3-lavirint/02.jpg",
+     "sha256": "41b71e29362d8a4b375fa5ae63b62dcdbbb5e29c479d52f80edd50f4af054d49",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "lavirint — kartonska ploča sa užlebljenim putanjama u obliku slova; prikaz 2 od 5.",
+      "en": "lavirint — a cardboard board with grooved letter-shaped paths; view 2 of 5."
+     },
+     "caption": {
+      "sr": "2 / 5",
+      "en": "2 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-lavirint-03",
+     "src": "data/prototipovi/w3-lavirint/03.jpg",
+     "sha256": "6d1b70e1cfd470808e56eaeb3f874b7965756f0b92a17f929259b2066b2805d2",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "lavirint — kartonska ploča sa užlebljenim putanjama u obliku slova; prikaz 3 od 5.",
+      "en": "lavirint — a cardboard board with grooved letter-shaped paths; view 3 of 5."
+     },
+     "caption": {
+      "sr": "3 / 5",
+      "en": "3 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-lavirint-04",
+     "src": "data/prototipovi/w3-lavirint/04.jpg",
+     "sha256": "cefbc554e9a271628e7ed3f994bd11bf8fb2917f254068fc458b87bc7d889a0b",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "lavirint — kartonska ploča sa užlebljenim putanjama u obliku slova; prikaz 4 od 5.",
+      "en": "lavirint — a cardboard board with grooved letter-shaped paths; view 4 of 5."
+     },
+     "caption": {
+      "sr": "4 / 5",
+      "en": "4 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-lavirint-05",
+     "src": "data/prototipovi/w3-lavirint/05.jpg",
+     "sha256": "0edca7ae447537d4d4692cb0f11fc92ec6f9e3c1524416ecf3c3abda008b7b33",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "lavirint — kartonska ploča sa užlebljenim putanjama u obliku slova; prikaz 5 od 5.",
+      "en": "lavirint — a cardboard board with grooved letter-shaped paths; view 5 of 5."
+     },
+     "caption": {
+      "sr": "5 / 5",
+      "en": "5 / 5"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Maša Marković",
+    "studentNumber": "121/24"
+   },
+   "listOrder": 11
+  },
+  {
+   "id": "w3-zmijica",
+   "title": {
+    "sr": "Zmijica",
+    "en": "Zmijica"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-zmijica-01",
+     "src": "data/prototipovi/w3-zmijica/01.jpg",
+     "sha256": "45b78b674ace53165e8e4d1fa2670671e5c532e1584d4f237478b35adf437b63",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Zmijica — odštampan list sa predlogom za popravku prototipa „Zmijica”; prikaz 1 od 1.",
+      "en": "Zmijica — a printed sheet proposing a repair of the “Zmijica” prototype; view 1 of 1."
      },
      "caption": {
       "sr": "1 / 1",
       "en": "1 / 1"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     }
-   ]
+   ],
+   "author": {
+    "name": "Ivana Simić",
+    "studentNumber": "141/2024"
+   },
+   "listOrder": 12,
+   "continues": "zmijica-2026"
   },
   {
-   "id": "plavi-cepovi",
+   "id": "w3-sudoku",
    "title": {
-    "sr": "Staza sa plavim čepovima",
-    "en": "Track with blue caps"
+    "sr": "Sudoku",
+    "en": "Sudoku"
    },
    "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
+   "sourceId": "teacher-2026-10-21-spisak",
    "photos": [
     {
-     "id": "foto-plavi-cepovi-01",
-     "src": "data/prototipovi/foto-plavi-cepovi/01.jpg",
+     "id": "w3-sudoku-01",
+     "src": "data/prototipovi/w3-sudoku/01.jpg",
+     "sha256": "55e4813d221160b24ed23a4cf90201dbe3ebdb825125c6a34af1ea8766fc8e76",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Sudoku — skica sudoku polja u boji, crtana na papiru; prikaz 1 od 2.",
+      "en": "Sudoku — a colored sudoku grid sketched on paper; view 1 of 2."
+     },
+     "caption": {
+      "sr": "1 / 2",
+      "en": "1 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-sudoku-02",
+     "src": "data/prototipovi/w3-sudoku/02.jpg",
+     "sha256": "ecda9664124971a828bf0cd6bafc7e3bad484025807f3e618a4c4b107f14d8d3",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Sudoku — skica sudoku polja u boji, crtana na papiru; prikaz 2 od 2.",
+      "en": "Sudoku — a colored sudoku grid sketched on paper; view 2 of 2."
+     },
+     "caption": {
+      "sr": "2 / 2",
+      "en": "2 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Nađa Stanić",
+    "studentNumber": "151/24"
+   },
+   "listOrder": 13,
+   "continues": "sudoku-2026"
+  },
+  {
+   "id": "w3-kubismo",
+   "title": {
+    "sr": "kubismo",
+    "en": "kubismo"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-kubismo-01",
+     "src": "data/prototipovi/w3-kubismo/01.jpg",
+     "sha256": "cb01f8d49f4234f90935272a7a299ee81f180495e96c730d51051c9cccfbf319",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "kubismo — kartonska kocka sa izvučenim talasastim stranicama; prikaz 1 od 3.",
+      "en": "kubismo — a cardboard cube with corrugated faces pulled outward; view 1 of 3."
+     },
+     "caption": {
+      "sr": "1 / 3",
+      "en": "1 / 3"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-kubismo-02",
+     "src": "data/prototipovi/w3-kubismo/02.jpg",
+     "sha256": "f26c494a1b38eeade687f74b24c9cf166e1f5908f4e7174c3cb68e1763ab2510",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "kubismo — kartonska kocka sa izvučenim talasastim stranicama; prikaz 2 od 3.",
+      "en": "kubismo — a cardboard cube with corrugated faces pulled outward; view 2 of 3."
+     },
+     "caption": {
+      "sr": "2 / 3",
+      "en": "2 / 3"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-kubismo-03",
+     "src": "data/prototipovi/w3-kubismo/03.jpg",
+     "sha256": "23325c7c1313369a9ea0b7824917d74de5d55444046115851b2e156f6cc61e62",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "kubismo — kartonska kocka sa izvučenim talasastim stranicama; prikaz 3 od 3.",
+      "en": "kubismo — a cardboard cube with corrugated faces pulled outward; view 3 of 3."
+     },
+     "caption": {
+      "sr": "3 / 3",
+      "en": "3 / 3"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Sofia Ocanto Jovičić",
+    "studentNumber": "138/24"
+   },
+   "listOrder": 14,
+   "continues": "lego4ll-2026"
+  },
+  {
+   "id": "w3-koncici",
+   "title": {
+    "sr": "končići",
+    "en": "končići"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-koncici-01",
+     "src": "data/prototipovi/w3-koncici/01.jpg",
+     "sha256": "5aeac46e12f0ee1e9d11fa0a27e513e15a18b06176fb34f486976141c063acdf",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "končići — crvena ploča sa ekserčićima i rastegnutim koncima, uz kartice oblika; prikaz 1 od 1.",
+      "en": "končići — a red board with pins and stretched threads, beside shape cards; view 1 of 1."
+     },
+     "caption": {
+      "sr": "1 / 1",
+      "en": "1 / 1"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Marija Stojković",
+    "studentNumber": "126/24"
+   },
+   "listOrder": 15
+  },
+  {
+   "id": "w3-padalica",
+   "title": {
+    "sr": "padalica",
+    "en": "padalica"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-padalica-01",
+     "src": "data/prototipovi/w3-padalica/01.jpg",
      "sha256": "6bee45d07c69af42cfc79a3f546d6e9df9903ebcf5c41dbb0d0f595c3832b2d2",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Staza sa plavim čepovima, prikaz 1",
-      "en": "Track with blue caps, view 1"
+      "sr": "padalica — uspravna bela kutija sa plavim čepovima nanizanim na štapiće; prikaz 1 od 4.",
+      "en": "padalica — an upright white box with blue caps threaded on skewers; view 1 of 4."
      },
      "caption": {
       "sr": "1 / 4",
       "en": "1 / 4"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-plavi-cepovi-02",
-     "src": "data/prototipovi/foto-plavi-cepovi/02.jpg",
+     "id": "w3-padalica-02",
+     "src": "data/prototipovi/w3-padalica/02.jpg",
      "sha256": "dc147ddfdadc8d38d9120100651d254b9717ac3173abc01ec9f6807370df5e3c",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Staza sa plavim čepovima, prikaz 2",
-      "en": "Track with blue caps, view 2"
+      "sr": "padalica — uspravna bela kutija sa plavim čepovima nanizanim na štapiće; prikaz 2 od 4.",
+      "en": "padalica — an upright white box with blue caps threaded on skewers; view 2 of 4."
      },
      "caption": {
       "sr": "2 / 4",
       "en": "2 / 4"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-plavi-cepovi-03",
-     "src": "data/prototipovi/foto-plavi-cepovi/03.jpg",
+     "id": "w3-padalica-03",
+     "src": "data/prototipovi/w3-padalica/03.jpg",
      "sha256": "35058d4fbd63648e7c186ae8582ea514d7eeb1fb571609aa382757bf3d1f02af",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Staza sa plavim čepovima, prikaz 3",
-      "en": "Track with blue caps, view 3"
+      "sr": "padalica — uspravna bela kutija sa plavim čepovima nanizanim na štapiće; prikaz 3 od 4.",
+      "en": "padalica — an upright white box with blue caps threaded on skewers; view 3 of 4."
      },
      "caption": {
       "sr": "3 / 4",
       "en": "3 / 4"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-plavi-cepovi-04",
-     "src": "data/prototipovi/foto-plavi-cepovi/04.jpg",
+     "id": "w3-padalica-04",
+     "src": "data/prototipovi/w3-padalica/04.jpg",
      "sha256": "d9a41492f77ac5b1541fbd06cdd9393c2a33a183542d32bc335994acd327854d",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Staza sa plavim čepovima, prikaz 4",
-      "en": "Track with blue caps, view 4"
+      "sr": "padalica — uspravna bela kutija sa plavim čepovima nanizanim na štapiće; prikaz 4 od 4.",
+      "en": "padalica — an upright white box with blue caps threaded on skewers; view 4 of 4."
      },
      "caption": {
       "sr": "4 / 4",
       "en": "4 / 4"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     }
-   ]
+   ],
+   "author": {
+    "name": "Ivana Cvetković",
+    "studentNumber": "161/24"
+   },
+   "listOrder": 16
   },
   {
-   "id": "polja",
+   "id": "w3-obojilica",
    "title": {
-    "sr": "Ploče sa poljima i bojama",
-    "en": "Boards with fields and colours"
+    "sr": "obojilica",
+    "en": "obojilica"
    },
    "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
+   "sourceId": "teacher-2026-10-21-spisak",
    "photos": [
     {
-     "id": "foto-polja-01",
-     "src": "data/prototipovi/foto-polja/01.jpg",
+     "id": "w3-obojilica-01",
+     "src": "data/prototipovi/w3-obojilica/01.jpg",
      "sha256": "b026feed14972b365b46fc918b5de508933eb51b0dd68bf10cedce95eb9f8917",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Ploče sa poljima i bojama, prikaz 1",
-      "en": "Boards with fields and colours, view 1"
+      "sr": "obojilica — kartonska tabla sa obojenim tačkama i čepovima koji se uparuju; prikaz 1 od 6.",
+      "en": "obojilica — a cardboard board with colored dots and caps to be matched; view 1 of 6."
      },
      "caption": {
       "sr": "1 / 6",
       "en": "1 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-polja-02",
-     "src": "data/prototipovi/foto-polja/02.jpg",
+     "id": "w3-obojilica-02",
+     "src": "data/prototipovi/w3-obojilica/02.jpg",
      "sha256": "89fb9a278babc0b25a2fb990ebf52e5f4e656181d44c55566f74435f6d931f66",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Ploče sa poljima i bojama, prikaz 2",
-      "en": "Boards with fields and colours, view 2"
+      "sr": "obojilica — kartonska tabla sa obojenim tačkama i čepovima koji se uparuju; prikaz 2 od 6.",
+      "en": "obojilica — a cardboard board with colored dots and caps to be matched; view 2 of 6."
      },
      "caption": {
       "sr": "2 / 6",
       "en": "2 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-polja-03",
-     "src": "data/prototipovi/foto-polja/03.jpg",
+     "id": "w3-obojilica-03",
+     "src": "data/prototipovi/w3-obojilica/03.jpg",
      "sha256": "8af6d94fdcdc2b44c51a4fca81e5bde31c3ff30147b9613505b8644f23b990f6",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Ploče sa poljima i bojama, prikaz 3",
-      "en": "Boards with fields and colours, view 3"
+      "sr": "obojilica — kartonska tabla sa obojenim tačkama i čepovima koji se uparuju; prikaz 3 od 6.",
+      "en": "obojilica — a cardboard board with colored dots and caps to be matched; view 3 of 6."
      },
      "caption": {
       "sr": "3 / 6",
       "en": "3 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-polja-04",
-     "src": "data/prototipovi/foto-polja/04.jpg",
+     "id": "w3-obojilica-04",
+     "src": "data/prototipovi/w3-obojilica/04.jpg",
      "sha256": "2b00623754b725503ccdc3e2e28d45d1226e2c34d75ae27f868a1cf674dad54b",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Ploče sa poljima i bojama, prikaz 4",
-      "en": "Boards with fields and colours, view 4"
+      "sr": "obojilica — kartonska tabla sa obojenim tačkama i čepovima koji se uparuju; prikaz 4 od 6.",
+      "en": "obojilica — a cardboard board with colored dots and caps to be matched; view 4 of 6."
      },
      "caption": {
       "sr": "4 / 6",
       "en": "4 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-polja-05",
-     "src": "data/prototipovi/foto-polja/05.jpg",
+     "id": "w3-obojilica-05",
+     "src": "data/prototipovi/w3-obojilica/05.jpg",
      "sha256": "d7dd1aee650ac79d53fd5f6d5628cc23d362fb391b93348354650379e765f858",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Ploče sa poljima i bojama, prikaz 5",
-      "en": "Boards with fields and colours, view 5"
+      "sr": "obojilica — kartonska tabla sa obojenim tačkama i čepovima koji se uparuju; prikaz 5 od 6.",
+      "en": "obojilica — a cardboard board with colored dots and caps to be matched; view 5 of 6."
      },
      "caption": {
       "sr": "5 / 6",
       "en": "5 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-polja-06",
-     "src": "data/prototipovi/foto-polja/06.jpg",
+     "id": "w3-obojilica-06",
+     "src": "data/prototipovi/w3-obojilica/06.jpg",
      "sha256": "7dbde16d9cfcad362c6f8e213912d8e27202fa9ccf81bfb7236bb8fdc296ebcf",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Ploče sa poljima i bojama, prikaz 6",
-      "en": "Boards with fields and colours, view 6"
+      "sr": "obojilica — kartonska tabla sa obojenim tačkama i čepovima koji se uparuju; prikaz 6 od 6.",
+      "en": "obojilica — a cardboard board with colored dots and caps to be matched; view 6 of 6."
      },
      "caption": {
       "sr": "6 / 6",
       "en": "6 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     }
-   ]
+   ],
+   "author": {
+    "name": "Anja Bukurović",
+    "studentNumber": "85/24"
+   },
+   "listOrder": 17
   },
   {
-   "id": "visoka-staza",
+   "id": "w3-putanja",
    "title": {
-    "sr": "Visoka staza u kutiji",
-    "en": "Tall track in a box"
+    "sr": "putanja",
+    "en": "putanja"
    },
    "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
+   "sourceId": "teacher-2026-10-21-spisak",
    "photos": [
     {
-     "id": "foto-visoka-staza-01",
-     "src": "data/prototipovi/foto-visoka-staza/01.jpg",
+     "id": "w3-putanja-01",
+     "src": "data/prototipovi/w3-putanja/01.jpg",
      "sha256": "804d94993b70d6f2eddb66c65af68c3aab2e6df1392fa32697b05e91e7df804a",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Visoka staza u kutiji, prikaz 1",
-      "en": "Tall track in a box, view 1"
+      "sr": "putanja — uspravna kutija sa kartonskim kosinama i papirnim čašama na dnu; prikaz 1 od 6.",
+      "en": "putanja — an upright box with cardboard ramps and paper cups at the bottom; view 1 of 6."
      },
      "caption": {
       "sr": "1 / 6",
       "en": "1 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-visoka-staza-02",
-     "src": "data/prototipovi/foto-visoka-staza/02.jpg",
+     "id": "w3-putanja-02",
+     "src": "data/prototipovi/w3-putanja/02.jpg",
      "sha256": "6e7358601894ad61d0502e795b6adc68d084561381cee31b277359bef73eb143",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Visoka staza u kutiji, prikaz 2",
-      "en": "Tall track in a box, view 2"
+      "sr": "putanja — uspravna kutija sa kartonskim kosinama i papirnim čašama na dnu; prikaz 2 od 6.",
+      "en": "putanja — an upright box with cardboard ramps and paper cups at the bottom; view 2 of 6."
      },
      "caption": {
       "sr": "2 / 6",
       "en": "2 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-visoka-staza-03",
-     "src": "data/prototipovi/foto-visoka-staza/03.jpg",
+     "id": "w3-putanja-03",
+     "src": "data/prototipovi/w3-putanja/03.jpg",
      "sha256": "50be2330ee8edc944bcd7c8c04dda8be0c6a4c4a176b8e0bf84b71283ff28125",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Visoka staza u kutiji, prikaz 3",
-      "en": "Tall track in a box, view 3"
+      "sr": "putanja — uspravna kutija sa kartonskim kosinama i papirnim čašama na dnu; prikaz 3 od 6.",
+      "en": "putanja — an upright box with cardboard ramps and paper cups at the bottom; view 3 of 6."
      },
      "caption": {
       "sr": "3 / 6",
       "en": "3 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-visoka-staza-04",
-     "src": "data/prototipovi/foto-visoka-staza/04.jpg",
+     "id": "w3-putanja-04",
+     "src": "data/prototipovi/w3-putanja/04.jpg",
      "sha256": "b07d4139b58262ce6b6db429deb874ad5b9ad0e7a0d61511158ea89354e558ac",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Visoka staza u kutiji, prikaz 4",
-      "en": "Tall track in a box, view 4"
+      "sr": "putanja — uspravna kutija sa kartonskim kosinama i papirnim čašama na dnu; prikaz 4 od 6.",
+      "en": "putanja — an upright box with cardboard ramps and paper cups at the bottom; view 4 of 6."
      },
      "caption": {
       "sr": "4 / 6",
       "en": "4 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-visoka-staza-05",
-     "src": "data/prototipovi/foto-visoka-staza/05.jpg",
+     "id": "w3-putanja-05",
+     "src": "data/prototipovi/w3-putanja/05.jpg",
      "sha256": "a9cc2c641492f5f850f805105b202a6859445aee3a21b5be88ffea61516b2382",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Visoka staza u kutiji, prikaz 5",
-      "en": "Tall track in a box, view 5"
+      "sr": "putanja — uspravna kutija sa kartonskim kosinama i papirnim čašama na dnu; prikaz 5 od 6.",
+      "en": "putanja — an upright box with cardboard ramps and paper cups at the bottom; view 5 of 6."
      },
      "caption": {
       "sr": "5 / 6",
       "en": "5 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-visoka-staza-06",
-     "src": "data/prototipovi/foto-visoka-staza/06.jpg",
+     "id": "w3-putanja-06",
+     "src": "data/prototipovi/w3-putanja/06.jpg",
      "sha256": "f45a621a4e6597675d310f3d26b63d8bd0e68d8bef45c51bf989db5683981bca",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Visoka staza u kutiji, prikaz 6",
-      "en": "Tall track in a box, view 6"
+      "sr": "putanja — uspravna kutija sa kartonskim kosinama i papirnim čašama na dnu; prikaz 6 od 6.",
+      "en": "putanja — an upright box with cardboard ramps and paper cups at the bottom; view 6 of 6."
      },
      "caption": {
       "sr": "6 / 6",
       "en": "6 / 6"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     }
-   ]
+   ],
+   "author": {
+    "name": "Lukić Miljana",
+    "studentNumber": "58/24"
+   },
+   "listOrder": 18
   },
   {
-   "id": "prostorna-staza",
+   "id": "w3-brza-putanja",
    "title": {
-    "sr": "Prostorna kartonska staza",
-    "en": "Spatial cardboard track"
+    "sr": "brza putanja",
+    "en": "brza putanja"
    },
    "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
+   "sourceId": "teacher-2026-10-21-spisak",
    "photos": [
     {
-     "id": "foto-prostorna-staza-01",
-     "src": "data/prototipovi/foto-prostorna-staza/01.jpg",
+     "id": "w3-brza-putanja-01",
+     "src": "data/prototipovi/w3-brza-putanja/01.jpg",
      "sha256": "789dc692195acd3e5df157d60e105440d4b6852cbc4c4e43a4c2a716a0af4348",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Prostorna kartonska staza, prikaz 1",
-      "en": "Spatial cardboard track, view 1"
+      "sr": "brza putanja — prostorna kartonska konstrukcija sa ukrštenim gredama; prikaz 1 od 4.",
+      "en": "brza putanja — a spatial cardboard structure of crossing beams; view 1 of 4."
      },
      "caption": {
       "sr": "1 / 4",
       "en": "1 / 4"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-prostorna-staza-02",
-     "src": "data/prototipovi/foto-prostorna-staza/02.jpg",
+     "id": "w3-brza-putanja-02",
+     "src": "data/prototipovi/w3-brza-putanja/02.jpg",
      "sha256": "ff62203b4e3eeef4c20880030d856f035193956be139b3193f77100e13c6d8f2",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Prostorna kartonska staza, prikaz 2",
-      "en": "Spatial cardboard track, view 2"
+      "sr": "brza putanja — prostorna kartonska konstrukcija sa ukrštenim gredama; prikaz 2 od 4.",
+      "en": "brza putanja — a spatial cardboard structure of crossing beams; view 2 of 4."
      },
      "caption": {
       "sr": "2 / 4",
       "en": "2 / 4"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-prostorna-staza-03",
-     "src": "data/prototipovi/foto-prostorna-staza/03.jpg",
+     "id": "w3-brza-putanja-03",
+     "src": "data/prototipovi/w3-brza-putanja/03.jpg",
      "sha256": "f23d5025969389c04c231f8f9fc394123aebe722df0641751d35295f91ff35e9",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Prostorna kartonska staza, prikaz 3",
-      "en": "Spatial cardboard track, view 3"
+      "sr": "brza putanja — prostorna kartonska konstrukcija sa ukrštenim gredama; prikaz 3 od 4.",
+      "en": "brza putanja — a spatial cardboard structure of crossing beams; view 3 of 4."
      },
      "caption": {
       "sr": "3 / 4",
       "en": "3 / 4"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-prostorna-staza-04",
-     "src": "data/prototipovi/foto-prostorna-staza/04.jpg",
+     "id": "w3-brza-putanja-04",
+     "src": "data/prototipovi/w3-brza-putanja/04.jpg",
      "sha256": "437ca12925497095230fd9a580a732eeeb2d21e2c65405fb3e3f5ddb308d8dda",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Prostorna kartonska staza, prikaz 4",
-      "en": "Spatial cardboard track, view 4"
+      "sr": "brza putanja — prostorna kartonska konstrukcija sa ukrštenim gredama; prikaz 4 od 4.",
+      "en": "brza putanja — a spatial cardboard structure of crossing beams; view 4 of 4."
      },
      "caption": {
       "sr": "4 / 4",
       "en": "4 / 4"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     }
-   ]
+   ],
+   "author": {
+    "name": "Katarina Petrović",
+    "studentNumber": "79/24"
+   },
+   "listOrder": 19,
+   "probanje": {
+    "occurredOn": "2026-10-16",
+    "sourceId": "teacher-2026-10-21-udruzenje",
+    "sta": {
+     "sr": "Konstrukcija prelazi iz ruke u ruku, i stojeći i sedeći; okreće se i gleda sa više strana.",
+     "en": "The structure passes from hand to hand, both standing and seated; it is turned and looked at from several sides."
+    }
+   }
   },
   {
-   "id": "lavirint",
+   "id": "w3-2d-lavirint",
    "title": {
-    "sr": "Kartonski lavirint",
-    "en": "Cardboard maze"
+    "sr": "2d lavirint",
+    "en": "2d lavirint"
    },
    "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
+   "sourceId": "teacher-2026-10-21-spisak",
    "photos": [
     {
-     "id": "foto-lavirint-01",
-     "src": "data/prototipovi/foto-lavirint/01.jpg",
+     "id": "w3-2d-lavirint-01",
+     "src": "data/prototipovi/w3-2d-lavirint/01.jpg",
      "sha256": "1b98d138110fffa0b86a1266998d0c3dfd938f674375aa12dbe1607cb9ff46e9",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Kartonski lavirint, prikaz 1",
-      "en": "Cardboard maze, view 1"
+      "sr": "2d lavirint — ravan kartonski lavirint sa uspravnim pregradama; prikaz 1 od 2.",
+      "en": "2d lavirint — a flat cardboard labyrinth with upright walls; view 1 of 2."
      },
      "caption": {
       "sr": "1 / 2",
       "en": "1 / 2"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-lavirint-02",
-     "src": "data/prototipovi/foto-lavirint/02.jpg",
+     "id": "w3-2d-lavirint-02",
+     "src": "data/prototipovi/w3-2d-lavirint/02.jpg",
      "sha256": "78c111552a8b71a8d5c6410a407ec48e257ac189671fe6a8ba79f72814743ce3",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Kartonski lavirint, prikaz 2",
-      "en": "Cardboard maze, view 2"
+      "sr": "2d lavirint — ravan kartonski lavirint sa uspravnim pregradama; prikaz 2 od 2.",
+      "en": "2d lavirint — a flat cardboard labyrinth with upright walls; view 2 of 2."
      },
      "caption": {
       "sr": "2 / 2",
       "en": "2 / 2"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     }
-   ]
+   ],
+   "author": {
+    "name": "Sanja Hornjaček",
+    "studentNumber": "84/24"
+   },
+   "listOrder": 20,
+   "probanje": {
+    "occurredOn": "2026-10-16",
+    "sourceId": "teacher-2026-10-21-udruzenje",
+    "sta": {
+     "sr": "Lavirint se drži u krilu obema rukama i naginje; pregrade se prate prstima.",
+     "en": "The labyrinth is held in the lap with both hands and tilted; the walls are followed with the fingers."
+    }
+   }
   },
   {
-   "id": "vijugava-staza",
+   "id": "w3-vijugava-staza",
    "title": {
-    "sr": "Vijugava staza",
-    "en": "Winding track"
+    "sr": "vijugava staza",
+    "en": "vijugava staza"
    },
    "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
+   "sourceId": "teacher-2026-10-21-spisak",
    "photos": [
     {
-     "id": "foto-vijugava-staza-01",
-     "src": "data/prototipovi/foto-vijugava-staza/01.jpg",
+     "id": "w3-vijugava-staza-01",
+     "src": "data/prototipovi/w3-vijugava-staza/01.jpg",
      "sha256": "9678f07878ba154ee16fa62009e5dd1bb6158369b4089ad2eef42d2a9f73b82b",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Vijugava staza, prikaz 1",
-      "en": "Winding track, view 1"
+      "sr": "vijugava staza — plitka kutija sa vijugavom belo-plavom stazom; prikaz 1 od 2.",
+      "en": "vijugava staza — a shallow tray with a winding white and blue track; view 1 of 2."
      },
      "caption": {
       "sr": "1 / 2",
       "en": "1 / 2"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-vijugava-staza-02",
-     "src": "data/prototipovi/foto-vijugava-staza/02.jpg",
+     "id": "w3-vijugava-staza-02",
+     "src": "data/prototipovi/w3-vijugava-staza/02.jpg",
      "sha256": "006d8272b69e50d89f6d86c3f3600eca1cf390d2a116b132b488d2491d045e4b",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Vijugava staza, prikaz 2",
-      "en": "Winding track, view 2"
+      "sr": "vijugava staza — plitka kutija sa vijugavom belo-plavom stazom; prikaz 2 od 2.",
+      "en": "vijugava staza — a shallow tray with a winding white and blue track; view 2 of 2."
      },
      "caption": {
       "sr": "2 / 2",
       "en": "2 / 2"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     }
-   ]
+   ],
+   "author": {
+    "name": "Aleksa Tašković",
+    "studentNumber": "36/24"
+   },
+   "listOrder": 22,
+   "probanje": {
+    "occurredOn": "2026-10-16",
+    "sourceId": "teacher-2026-10-21-udruzenje",
+    "sta": {
+     "sr": "Kutija sa stazom stoji u krilu korisnika, nagnuta; staza se prati odozgo.",
+     "en": "The tray with the track rests tilted in a user's lap; the track is followed from above."
+    }
+   }
   },
   {
-   "id": "castle",
+   "id": "w3-lenin-lavirint",
+   "title": {
+    "sr": "lenin lavirint",
+    "en": "lenin lavirint"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-lenin-lavirint-01",
+     "src": "data/prototipovi/w3-lenin-lavirint/01.jpg",
+     "sha256": "4ee4c5fa86b5b6e70d493f9abdcc87383d6609bb38b661afced977014f57556a",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "lenin lavirint — lavirint složen od obojenih plastičnih štapića na beloj podlozi, sa kuglicom; prikaz 1 od 2.",
+      "en": "lenin lavirint — a labyrinth built of colored plastic rods on a white base, with a ball; view 1 of 2."
+     },
+     "caption": {
+      "sr": "1 / 2",
+      "en": "1 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-lenin-lavirint-02",
+     "src": "data/prototipovi/w3-lenin-lavirint/02.jpg",
+     "sha256": "bbb14d90332549bf253dbbea6b2812d524932617e7a4042e7fa8189db12aaa03",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "lenin lavirint — lavirint složen od obojenih plastičnih štapića na beloj podlozi, sa kuglicom; prikaz 2 od 2.",
+      "en": "lenin lavirint — a labyrinth built of colored plastic rods on a white base, with a ball; view 2 of 2."
+     },
+     "caption": {
+      "sr": "2 / 2",
+      "en": "2 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Lena Kovačić",
+    "studentNumber": "132/24"
+   },
+   "listOrder": 23
+  },
+  {
+   "id": "w3-edukativna",
+   "title": {
+    "sr": "edukativna",
+    "en": "edukativna"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-edukativna-01",
+     "src": "data/prototipovi/w3-edukativna/01.jpg",
+     "sha256": "b98af6e65021d3e68c41a3abaee9b036797fb7255241f6ed99ae91279f9feff8",
+     "width": 1280,
+     "height": 721,
+     "alt": {
+      "sr": "edukativna — beli valjkasti predmet sa crvenom vođicom, uz odštampane crteže istog predmeta; prikaz 1 od 2.",
+      "en": "edukativna — a white cylindrical object with a red guide, beside printed drawings of it; view 1 of 2."
+     },
+     "caption": {
+      "sr": "1 / 2",
+      "en": "1 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-edukativna-02",
+     "src": "data/prototipovi/w3-edukativna/02.jpg",
+     "sha256": "0a8473fab7393325dba1b0a6a8d228fe92d3f7fc312358c6c5a90a4265a77df7",
+     "width": 1280,
+     "height": 721,
+     "alt": {
+      "sr": "edukativna — beli valjkasti predmet sa crvenom vođicom, uz odštampane crteže istog predmeta; prikaz 2 od 2.",
+      "en": "edukativna — a white cylindrical object with a red guide, beside printed drawings of it; view 2 of 2."
+     },
+     "caption": {
+      "sr": "2 / 2",
+      "en": "2 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Katarina Ušjak",
+    "studentNumber": "86/24"
+   },
+   "listOrder": 24
+  },
+  {
+   "id": "w3-amaze",
+   "title": {
+    "sr": "amaze",
+    "en": "amaze"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-amaze-01",
+     "src": "data/prototipovi/w3-amaze/01.jpg",
+     "sha256": "409f2668f753a32801065a08b4fd4725f714558e038b789edc073ff40197ed66",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "amaze — ekran laptopa sa trodimenzionalnim modelom u izradi; prikaz 1 od 1.",
+      "en": "amaze — a laptop screen with a three-dimensional model in progress; view 1 of 1."
+     },
+     "caption": {
+      "sr": "1 / 1",
+      "en": "1 / 1"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Mihailo Maksimović",
+    "studentNumber": "68/24"
+   },
+   "listOrder": 25
+  },
+  {
+   "id": "w3-stapici",
+   "title": {
+    "sr": "stapici",
+    "en": "stapici"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-stapici-01",
+     "src": "data/prototipovi/w3-stapici/01.jpg",
+     "sha256": "8f6bc38c77165704eb3d7350eb4d4f5f711612b9720f6b901891a389c5ad2fdf",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "stapici — obojeni štapići na stolu uz kartice sa obrascima za slaganje; prikaz 1 od 1.",
+      "en": "stapici — colored sticks on the table beside pattern cards to copy; view 1 of 1."
+     },
+     "caption": {
+      "sr": "1 / 1",
+      "en": "1 / 1"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Petra Kalenj",
+    "studentNumber": "18/24"
+   },
+   "listOrder": 26
+  },
+  {
+   "id": "w3-grujic",
+   "title": {
+    "sr": "Bez naziva",
+    "en": "Untitled"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-grujic-01",
+     "src": "data/prototipovi/w3-grujic/01.jpg",
+     "sha256": "b03c1045f3645a1a275e0493187355b0ab42940baf112a26460f80b0a6697167",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Bez naziva — skica mehanizma na tabletu, crtana preko mreže; prikaz 1 od 1.",
+      "en": "Untitled — a sketch of a mechanism on a tablet, drawn over a grid; view 1 of 1."
+     },
+     "caption": {
+      "sr": "1 / 1",
+      "en": "1 / 1"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Jana Grujić",
+    "studentNumber": "108/23"
+   },
+   "listOrder": 27
+  },
+  {
+   "id": "w3-fliper",
+   "title": {
+    "sr": "fliper",
+    "en": "fliper"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-fliper-01",
+     "src": "data/prototipovi/w3-fliper/01.jpg",
+     "sha256": "60571f38b00d2ba737ec9c0150af5f96238c455e422b125d6d126c7799aea4a3",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "fliper — drvena ploča sa plutanim diskovima, vođicama i zelenim dugmetom; prikaz 1 od 3.",
+      "en": "fliper — a wooden board with cork discs, guide rails and a green knob; view 1 of 3."
+     },
+     "caption": {
+      "sr": "1 / 3",
+      "en": "1 / 3"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-fliper-02",
+     "src": "data/prototipovi/w3-fliper/02.jpg",
+     "sha256": "7b5161f7a66eba2451ec92c856422e6b58926ce2d90b32440ce34bcbee243498",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "fliper — drvena ploča sa plutanim diskovima, vođicama i zelenim dugmetom; prikaz 2 od 3.",
+      "en": "fliper — a wooden board with cork discs, guide rails and a green knob; view 2 of 3."
+     },
+     "caption": {
+      "sr": "2 / 3",
+      "en": "2 / 3"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-fliper-03",
+     "src": "data/prototipovi/w3-fliper/03.jpg",
+     "sha256": "dc0e76343d64f192e7147a370f95846bb98f64353ff0fdf94c218e0d4ec34854",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "fliper — drvena ploča sa plutanim diskovima, vođicama i zelenim dugmetom; prikaz 3 od 3.",
+      "en": "fliper — a wooden board with cork discs, guide rails and a green knob; view 3 of 3."
+     },
+     "caption": {
+      "sr": "3 / 3",
+      "en": "3 / 3"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Iva Mijanović",
+    "studentNumber": "28/24"
+   },
+   "listOrder": 28
+  },
+  {
+   "id": "w3-stilopol",
+   "title": {
+    "sr": "stilopol",
+    "en": "stilopol"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "photos": [
+    {
+     "id": "w3-stilopol-01",
+     "src": "data/prototipovi/w3-stilopol/01.jpg",
+     "sha256": "472a5ec06fea90837f75314f651c62643a1fd63feae0321ad37c4044bfbc70cf",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "stilopol — blok stiropora sa zabodenim bojicama i razapetim koncem; prikaz 1 od 2.",
+      "en": "stilopol — a block of styrofoam with crayons stuck in it and thread strung between them; view 1 of 2."
+     },
+     "caption": {
+      "sr": "1 / 2",
+      "en": "1 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    },
+    {
+     "id": "w3-stilopol-02",
+     "src": "data/prototipovi/w3-stilopol/02.jpg",
+     "sha256": "3142bd2f6a75937159917ac8cd3710d342af8b3b3de7f52c1a19fa991dbb7dd2",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "stilopol — blok stiropora sa zabodenim bojicama i razapetim koncem; prikaz 2 od 2.",
+      "en": "stilopol — a block of styrofoam with crayons stuck in it and thread strung between them; view 2 of 2."
+     },
+     "caption": {
+      "sr": "2 / 2",
+      "en": "2 / 2"
+     },
+     "sourceId": "teacher-2026-10-21-spisak"
+    }
+   ],
+   "author": {
+    "name": "Lena Dukić",
+    "studentNumber": "131/24"
+   },
+   "listOrder": 29
+  },
+  {
+   "id": "w3-castle",
    "title": {
     "sr": "Castle",
     "en": "Castle"
    },
    "documentedWeek": 3,
-   "sourceId": "teacher-2026-10-21-photo-groups",
+   "sourceId": "teacher-2026-10-21-spisak",
    "photos": [
     {
-     "id": "foto-castle-01",
-     "src": "data/prototipovi/foto-castle/01.jpg",
-     "sha256": "c00dcbee6f2cb9070b690a62e6fcc0f5bd6a012afa5d5aba7e7378b4b1f14081",
-     "width": 1012,
-     "height": 1800,
+     "id": "w3-castle-01",
+     "src": "data/prototipovi/w3-castle/01.jpg",
+     "sha256": "1d9613e3cd82324836bfb28aa498a66d062f7793930a9ce96a903e8d980bf2ae",
+     "width": 2160,
+     "height": 3840,
      "alt": {
-      "sr": "Castle, prikaz 1",
-      "en": "Castle, view 1"
+      "sr": "Castle — kula složena od rolni toaletnog papira i staza od plave trake; prikaz 1 od 3.",
+      "en": "Castle — a tower built from toilet paper rolls, and a track of blue tape; view 1 of 3."
      },
      "caption": {
       "sr": "1 / 3",
       "en": "1 / 3"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-castle-02",
-     "src": "data/prototipovi/foto-castle/02.jpg",
-     "sha256": "3519fb0f6d285447f12a573fff6c649daba976a89033e67a8f33cd2f1567d700",
-     "width": 1350,
-     "height": 1800,
+     "id": "w3-castle-02",
+     "src": "data/prototipovi/w3-castle/02.jpg",
+     "sha256": "6b9844bb705ba81aebfeed0a0289d7737d6cd3ef99e7d04b59606f7bea9ff2f0",
+     "width": 3840,
+     "height": 5120,
      "alt": {
-      "sr": "Castle, prikaz 2",
-      "en": "Castle, view 2"
+      "sr": "Castle — kula složena od rolni toaletnog papira i staza od plave trake; prikaz 2 od 3.",
+      "en": "Castle — a tower built from toilet paper rolls, and a track of blue tape; view 2 of 3."
      },
      "caption": {
       "sr": "2 / 3",
       "en": "2 / 3"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     },
     {
-     "id": "foto-castle-03",
-     "src": "data/prototipovi/foto-castle/03.jpg",
-     "sha256": "9367bf3da63366385dc9fe03646d81bc43787796ba5b8c7aef00b5e24456280a",
-     "width": 1350,
-     "height": 1800,
+     "id": "w3-castle-03",
+     "src": "data/prototipovi/w3-castle/03.jpg",
+     "sha256": "430f4847ff4ba3e3f0c7fa0d83f91aea16b0cc055ee4fadcf435e8cb9e976479",
+     "width": 3840,
+     "height": 5120,
      "alt": {
-      "sr": "Castle, prikaz 3",
-      "en": "Castle, view 3"
+      "sr": "Castle — kula složena od rolni toaletnog papira i staza od plave trake; prikaz 3 od 3.",
+      "en": "Castle — a tower built from toilet paper rolls, and a track of blue tape; view 3 of 3."
      },
      "caption": {
       "sr": "3 / 3",
       "en": "3 / 3"
      },
-     "sourceId": "teacher-2026-10-21-photo-groups"
+     "sourceId": "teacher-2026-10-21-spisak"
     }
-   ]
+   ],
+   "author": {
+    "name": "Filip Doljanovič"
+   },
+   "listOrder": 30
+  }
+ ],
+ "cekaju": [
+  {
+   "id": "w3-vesic",
+   "title": {
+    "sr": "Bez naziva",
+    "en": "Untitled"
+   },
+   "author": {
+    "name": "Aleksa Vesić",
+    "studentNumber": "70/21"
+   },
+   "documentedWeek": 3,
+   "sourceId": "teacher-2026-10-21-spisak",
+   "listOrder": 21,
+   "expectedPhotos": null,
+   "reason": {
+    "sr": "Broj fotografija nije upisan na spisku, a u nizu snimanja nema kadra ovog rada; čeka se autorova potvrda.",
+    "en": "No photograph count was recorded on the list, and the shooting sequence holds no frame of this work; the author's confirmation is awaited."
+   }
   }
  ]
 }

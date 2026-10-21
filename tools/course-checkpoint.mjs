@@ -238,15 +238,33 @@ function weekChecks(before, after) {
 export function comparePrototypeHistory(before, after) {
   if (!before && !after) return [];
   const errors = [], label = PROTOTYPES;
+  // 21.10.2026: history stays append-only unless the same delta records the withdrawal —
+  // the whole removed row, its date, its source and its reason. Nothing may vanish silently;
+  // a row that is merely dropped is still a rewritten prefix.
+  const retired = new Map((after?.povuceno || []).map(w => [w?.id, w]));
+  const withdrawn = (id, row) => {
+    const w = retired.get(id);
+    if (!w || !same(w.zapis, row)) return false;
+    return typeof w.datum === 'string' && typeof w.sourceId === 'string' && !!w.razlog;
+  };
   const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
   const shape = r => r?.schema === 'course-prototypes/v1' && ['sources', 'items', 'observations'].every(k => Array.isArray(r[k]) && r[k].every(object)) && (r.revizije === undefined || Array.isArray(r.revizije));
   if (!shape(after) || (before && !shape(before))) return [`${label}: missing or invalid registry`];
   const old = before || { sources: [], items: [], observations: [], revizije: [] };
   for (const key of ['sources', 'observations', 'revizije']) {
     const a = old[key] || [], b = after[key] || [];
-    if (b.length < a.length) errors.push(`${label}: ${key} prefix rewritten or deleted`);
+    // Each earlier row must still be in place, or be recorded as withdrawn in this delta.
+    const kept = key === 'revizije'
+      ? b.filter(Boolean)
+      : b;
+    const survives = (row, i) => same(row, kept[i]);
     if (key !== 'observations') {
-      if (a.some((row, i) => !same(row, b[i]))) errors.push(`${label}: ${key} prefix rewritten or deleted`);
+      let j = 0;
+      for (const row of a) {
+        if (same(row, kept[j])) { j++; continue; }
+        const id = key === 'revizije' ? `revizija-${row?.v}-${row?.prototypeId}` : row?.id;
+        if (!withdrawn(id, row)) errors.push(`${label}: ${key} prefix rewritten or deleted`);
+      }
       continue;
     }
     // 12.10.2026 (course lead's order): observation wording and display-only fields (caption,
@@ -254,10 +272,13 @@ export function comparePrototypeHistory(before, after) {
     // correction. The evidence itself — ids, works, dates, summaries, fingerprints and the
     // photographs' order — stays append-only; new photographs arrive as new rows.
     const carriesNewSource = after.sources.some(source => !old.sources.some(prior => same(prior, source)));
-    a.forEach((row, i) => {
-      const next = b[i];
-      if (!next || !same(row, next) && !carriesNewSource) errors.push(`${label}: observations wording changed without a recorded source`);
-      if (next) {
+    let cursor = 0;
+    a.forEach(row => {
+      if (withdrawn(row?.id, row)) return;
+      const next = b[cursor++];
+      if (!next) { errors.push(`${label}: observations prefix rewritten or deleted`); return; }
+      if (!same(row, next) && !carriesNewSource) errors.push(`${label}: observations wording changed without a recorded source`);
+      {
         const stripped = value => JSON.parse(JSON.stringify(value, (k, v) => (k === 'caption' || k === 'rotation' ? undefined : v)));
         if (!same(stripped(row), stripped(next))) errors.push(`${label}: observations prefix rewritten or deleted`);
       }
@@ -268,7 +289,13 @@ export function comparePrototypeHistory(before, after) {
     if (!item?.id || ids.has(item.id)) errors.push(`${label}: missing or duplicate prototype id`);
     ids.add(item?.id);
   }
-  if (after.items.length < old.items.length || old.items.some((item, i) => item.id !== after.items[i]?.id)) errors.push(`${label}: existing prototype removed, reordered or renamed`);
+  {
+    let j = 0;
+    for (const item of old.items) {
+      if (item.id === after.items[j]?.id) { j++; continue; }
+      if (!withdrawn(item.id, item)) errors.push(`${label}: existing prototype removed, reordered or renamed`);
+    }
+  }
   const date = value => typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value) && Number.isFinite(Date.parse(value + 'T00:00:00Z')) && new Date(value + 'T00:00:00Z').toISOString().slice(0, 10) === value;
   const text = value => typeof value === 'string' && value.trim().length > 0;
   const revisions = after.revizije || [], previousCount = (old.revizije || []).length;

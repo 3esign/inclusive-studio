@@ -74,7 +74,10 @@ test('the static page and the held panel are the renderer output, not a hand-tol
 
 test('the analysis page carries the version-2 brief and only checked external directions', async () => {
   setLanguage('sr');
-  assert.equal(prototypes.observations.length, 9, 'the five established rows plus the four evening additions');
+  // 21.10.2026: two rows were withdrawn. Their photographs show the room with several works
+  // on the tables, and a different work being handled — neither shows the work they claimed.
+  assert.equal(prototypes.observations.length, 7, 'nine rows less the two the photographs did not support');
+  assert.ok(!prototypes.observations.some(o => o.prototypeId === 'pogodilica-2026'), 'no observation may outlive its evidence');
   for (const ph of prototypes.observations.flatMap(o => o.photos)) assert.ok((await readFile(new URL(ph.src, root))).length > 0, ph.src + ' must exist');
   const page = await readFile(new URL('poseta.html', root), 'utf8');
   assert.ok(page.includes('Verzija 2 — i prvi prototip.'), 'the next-class order must stand on the page');

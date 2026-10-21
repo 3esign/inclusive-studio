@@ -1,4 +1,6 @@
-// Teacher correction 21.10.2026: counts and sequence are not author attribution.
+// Teacher instruction 21.10.2026: each third-class work is published with the identity the
+// teacher supplied — student number, name, title — as its own page. The earlier weeks keep
+// their separate records, and the gate still decides what is actually served.
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -13,16 +15,19 @@ test('the served excerpt is exactly the public gate and retains the earlier eigh
  assert.deepEqual(JSON.parse(read('data/prototipovi-javno.json')),out);
  assert.deepEqual(out.items,data.items.filter(i=>i.documentedWeek===2));
  assert.equal(out.items.length,8);
- assert.equal(out.galleries.length,20);
+ assert.equal(out.galleries.length,data.galleries.length);
+ assert.equal(out.cekaju.length,data.cekaju.length,'a work still owed its photographs is named, not hidden');
 });
-test('historical third-class author associations never travel in public data or cards',()=>{
- const out=publishedPrototypes(data),html=renderPrototypes(data),text=JSON.stringify(out);
- assert.equal(data.items.filter(i=>i.documentedWeek===3).length,26,'historical evidence must remain');
- for(const i of data.items.filter(i=>i.documentedWeek===3)){
-   assert.ok(!out.items.some(p=>p.id===i.id));
-   assert.ok(!html.includes('data-prototype="'+i.id+'"'));
-   for(const p of i.photos) assert.ok(!text.includes(p.src));
+test('every served work names a source that is served with it',()=>{
+ const out=publishedPrototypes(data),served=new Set(out.sources.map(s=>s.id));
+ for(const work of [...out.galleries,...out.cekaju,...out.items]){
+   assert.ok(served.has(work.sourceId),work.id+': its source must travel with it');
+   for(const p of work.photos||[]) assert.ok(served.has(p.sourceId),p.id+': photo source must travel with it');
  }
+ // The third class is no longer carried as items; its works are served as their own pages.
+ assert.equal(data.items.filter(i=>i.documentedWeek===3).length,0);
+ const html=renderPrototypes(data);
+ for(const g of out.galleries) assert.ok(html.includes('galerija-'+g.id+'.html'),g.id+' must be reachable from the gallery page');
 });
 test('pending attribution in an earlier class is withheld, including related observations',()=>{
  const copy=structuredClone(data),item=copy.items.find(i=>i.documentedWeek===2);item.attributionStatus='pending';

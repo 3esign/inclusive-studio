@@ -51,8 +51,14 @@ test('the landing is chronological: each visit and each work strip stands inside
   assert.ok(page.indexOf('prototype-teaser-title-w2') > w2Pos && page.indexOf('prototype-teaser-title-w2') < page.indexOf('Nedelja 1</p>'), 'earlier work strip stays inside week two');
   // 19.10.2026: the third-class works are published, so their strip stands inside week three.
   assert.ok(page.indexOf('id="galerije-w03"') > w3Pos && page.indexOf('id="galerije-w03"') < w2Pos, 'the week-3 work strip must stand inside week three');
+  // A participant on the visit may also be the author of a published work. The name may
+  // therefore stand twice — once in the visit panel, once as an authorized attribution —
+  // but never loose in prose: every occurrence must sit inside a marked element.
+  const marked = page.replace(/<(p|small)\b[^>]*\bdata-prototype-attribution="[^"]+"[^>]*>[\s\S]*?<\/\1>/g, '')
+    .replace(/<ul\b[^>]*\bdata-visit-participants="[^"]+"[^>]*>[\s\S]*?<\/ul>/g, '');
   for (const person of visit.participants) {
-    assert.equal(page.split(esc(person.name)).length - 1, 1, person.name + ' must appear exactly once on the held page');
+    assert.ok(page.includes(esc(person.name)), person.name + ' must stand on the held page');
+    assert.ok(!marked.includes(esc(person.name)), person.name + ' must never stand outside an authorized field');
   }
   assert.ok(lead.includes('visit-compact'), 'the participants are shown discreetly on the lead');
   assert.ok(lead.includes('data/prototipovi/'), 'the lead shows photographs from the visit');

@@ -17,7 +17,7 @@ export function validatePrototypes(data) {
   const errors = [], fail = (condition, message) => { if (!condition) errors.push(message); };
   fail(data?.schema === 'course-prototypes/v1', 'Unknown prototype register.');
   if (!Array.isArray(data?.sources) || !Array.isArray(data?.items) || !Array.isArray(data?.observations)) return [...errors, 'sources, items and observations must be arrays.'];
-  fail(keys(data, ['schema', 'sources', 'items', 'observations', 'revizije', 'galleries']), 'Unknown register fields.');
+  fail(keys(data, ['schema', 'sources', 'items', 'observations', 'revizije', 'galleries', 'cekaju', 'povuceno']), 'Unknown register fields.');
   const sources = new Set();
   for (const s of data.sources) {
     fail(s && ID.test(s.id || '') && !sources.has(s.id), 'Invalid or duplicate source id.');
@@ -58,10 +58,30 @@ export function validatePrototypes(data) {
   const galleryIds = new Set();
   fail(data.galleries === undefined || Array.isArray(data.galleries), 'Galleries must be an array.');
   for (const g of data.galleries || []) {
-    fail(keys(g, ['id', 'title', 'documentedWeek', 'sourceId', 'photos']) && ID.test(g.id || '') && !galleryIds.has(g.id), 'Invalid or duplicate gallery.');
+    fail(keys(g, ['id', 'title', 'documentedWeek', 'sourceId', 'photos', 'author', 'listOrder', 'continues', 'probanje']) && ID.test(g.id || '') && !galleryIds.has(g.id), 'Invalid or duplicate gallery.');
     galleryIds.add(g.id);
     fail(bilingual(g.title) && Number.isInteger(g.documentedWeek) && g.documentedWeek > 0 && sources.has(g.sourceId), 'Gallery title, week and source required.');
+    // A work carries its author's name, and the student number when the teacher supplied one.
+    fail(keys(g.author, ['name', 'studentNumber']) && text(g.author?.name), 'Gallery requires the author exactly as supplied.');
+    fail(!has(g.author, 'studentNumber') || /^\d{1,4}\/\d{2}(?:\d{2})?$/.test(g.author.studentNumber), 'Student number must match the supplied form.');
+    fail(Number.isInteger(g.listOrder) && g.listOrder > 0, 'Gallery keeps its place in the teacher’s list.');
     photos(g.photos, g.id);
+  }
+  for (const g of data.galleries || []) {
+    fail(!has(g, 'continues') || ids.has(g.continues), 'A continued work must name a prototype already in the register.');
+    // What a user did with the work is an account of frames that were actually looked at:
+    // it needs its own date and source, and it never travels without them.
+    if (has(g, 'probanje')) fail(keys(g.probanje, ['occurredOn', 'sourceId', 'sta']) && date(g.probanje.occurredOn) && sources.has(g.probanje.sourceId) && bilingual(g.probanje.sta), g.id + ': a trial account needs its date, source and bilingual text.');
+  }
+  // Works on the list whose photographs have not arrived: named, counted, never illustrated.
+  fail(data.cekaju === undefined || Array.isArray(data.cekaju), 'Awaited works must be an array.');
+  for (const w of data.cekaju || []) {
+    fail(keys(w, ['id', 'title', 'author', 'documentedWeek', 'sourceId', 'listOrder', 'expectedPhotos', 'reason']) && ID.test(w.id || '') && !galleryIds.has(w.id), 'Invalid or duplicate awaited work.');
+    galleryIds.add(w.id);
+    fail(bilingual(w.title) && bilingual(w.reason) && sources.has(w.sourceId), 'Awaited work needs a title, reason and source.');
+    fail(keys(w.author, ['name', 'studentNumber']) && text(w.author?.name), 'Awaited work requires the author exactly as supplied.');
+    fail(Number.isInteger(w.documentedWeek) && w.documentedWeek > 0 && Number.isInteger(w.listOrder) && w.listOrder > 0, 'Awaited work keeps its class and list place.');
+    fail(w.expectedPhotos === null || (Number.isInteger(w.expectedPhotos) && w.expectedPhotos > 0), 'Expected photograph count is a positive integer or explicitly unknown.');
   }
   const events = new Set();
   for (const event of data.observations) {
@@ -71,6 +91,19 @@ export function validatePrototypes(data) {
     fail(date(event?.occurredOn) && sources.has(event?.sourceId) && bilingual(event?.summary), 'Observation needs an actual date, source and bilingual account.');
     fail(keys(event?.publication, ['sourceId', 'scope']) && sources.has(event?.publication?.sourceId) && event?.publication?.scope === 'association-observation', 'Observation publication context required.');
     photos(event?.photos, event?.id || 'Observation');
+  }
+  // 21.10.2026: a record may leave the published register, but never quietly. Withdrawal
+  // keeps the whole original row, the date, the source and the reason, so the earlier claim
+  // stays readable and the reason it fell can be checked against the evidence.
+  fail(data.povuceno === undefined || Array.isArray(data.povuceno), 'Withdrawals must be an array.');
+  const withdrawn = new Set();
+  for (const w of data.povuceno || []) {
+    fail(keys(w, ['id', 'vrsta', 'datum', 'sourceId', 'razlog', 'zapis']) && text(w?.id) && !withdrawn.has(w.id), 'Invalid or duplicate withdrawal.');
+    withdrawn.add(w?.id);
+    fail(['item', 'observation', 'revizija'].includes(w?.vrsta), 'A withdrawal must name what kind of record it removed.');
+    fail(date(w?.datum) && sources.has(w?.sourceId) && bilingual(w?.razlog), 'A withdrawal needs its date, source and bilingual reason.');
+    fail(w?.zapis && typeof w.zapis === 'object' && !Array.isArray(w.zapis), 'A withdrawal keeps the whole record it removed.');
+    fail(!ids.has(w?.id) && !events.has(w?.id), 'A withdrawn record may not also stand in the register: ' + w?.id);
   }
   fail(data.revizije === undefined || Array.isArray(data.revizije), 'Revision history must be an array.');
   for (const r of Array.isArray(data.revizije) ? data.revizije : []) {

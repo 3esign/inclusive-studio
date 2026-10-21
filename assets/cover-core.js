@@ -22,7 +22,7 @@ export function renderCover(tok, data) {
   const ideje = tok.ideje.length;
   const latest = [...tok.odrzano].sort((a,b) => b.odrzan.localeCompare(a.odrzan))[0];
   const groups = data.galleries || [];
-  const selected = ['castle', 'touch', 'kutija'].map(id => groups.find(g => g.id === id)).filter(Boolean);
+  const selected = ['w3-obojilica', 'w3-kocic', 'w3-padalica'].map(id => groups.find(g => g.id === id)).filter(Boolean);
   return `
 <div class="cover-stage" data-odrzano="${odrzano}" data-sledeci-nedelja="${sledeci ?? ''}" data-ideje="${ideje}">
   <div class="cover-title">
