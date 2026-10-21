@@ -1,39 +1,70 @@
-# Prijem nastavnog materijala · pravilo 21.10.2026.
+# Prijem materijala sa časa — postupak koji sledeći talas slaže sam
 
-Ova nastavnikova ispravka ima prednost nad starijim opisima spiska i redosleda. Header ostaje: Naslovna, Održano, Sledeći čas, Izvori, Oblak ideja. Održano se sortira po datumu opadajuće. Naslovna raste odabranim stvarnim radovima i sažecima. Na studentskoj površini ostaje nastavni sadržaj, ne stanje prenosa, tehnički problemi i pitanja iz obrade materijala.
+Presek 21.10.2026. Ovaj postupak je napisan iz greške koja se tri puta vraćala: spisak radova
+i niz fotografija poklapaju se **samo ako se zna gde niz počinje**, a to se ne vidi iz imena
+foldera ni iz zbira brojeva.
 
-## Jedan prilog, dve nezavisne veze
+## 1. Sačuvaj izvor pre bilo čega
 
-`data/prototipovi.json` ostaje jedini registar. `items` čuva ranije zapise i atribucije; `galleries` grupiše slike istog predmeta bez autora. Galerija ima stabilan ID, nastavnu nedelju, izvor i svaku fotografiju sa otiskom, dimenzijama i opisom. Autor se ne zaključuje iz broja slika, naziva foldera, rednog broja, datuma ili otiska. Izričita dozvola za imena nije dokaz koje ime pripada kojoj fotografiji.
+Originalni kadrovi idu u arhivu na telu sa prostorom (`D:\Svemir\archive\<predmet>-<cas>-<datum>`),
+sa svojim vremenima izmene. **Vremena su dokaz i ne smeju se izgubiti kopiranjem bez `-p`.**
+Optimizovane kopije za sajt nemaju EXIF; arhiva je jedino mesto gde se vreme snimanja čita.
 
-Treći čas ima 20 vizuelno pregledanih galerija sa 73 fotografije. Kutija je jedna galerija od 7 slika; Touch 5; visoka staza u kutiji 6; prostorna kartonska staza 4; Castle 3 fotografije iz WhatsApp-a (rolne i plava staza). Sudoku skica ima 2 prikaza. Naslovi ostalih galerija su opisi vidljivog predmeta, ne preuzeti naslovi iz spiska. Fotografija Zmijicine skice nije pouzdano prepoznata; ne menjati je proizvoljnom slikom beležnice.
+## 2. Popiši priloge po izvoru, ne po folderu
 
-Istorijski `items` treće nedelje i `data/cas-03/spisak.json` ostaju dokaz prethodne obrade. Javna kapija ih ne koristi. Stari importer i `uloge-slika.json` nisu dozvoljeni put za novo povezivanje fotografija: globalno odbacivanje prve/poslednje slike po folderu bilo je pogrešno. `_config.yml` isključuje tu evidenciju iz Pages prikaza; ovo nije brisanje iz istorije javnog Git repozitorijuma.
+Kamera, WhatsApp i upload su različiti izvori i stižu u različito vreme. Folder u arhivi je
+pretpostavka nekog ranijeg uma, ne činjenica. Castle je dva puta bio pogrešan jer je ime
+foldera prihvaćeno kao nalaz: tri prave fotografije bile su u WhatsApp-u, a tri susedna kadra
+sa telefona su Erazmus slajdovi.
 
-## Sledeći talas
+## 3. Nađi početak niza gledanjem, pa ga potvrdi vremenom
 
-1. Pročitaj novu poruku i prethodnu važeću instrukciju. Razdvoji opšti šablon, OR i PUD; novija konkretna ispravka ima prednost. Zabeleži izvor, datum i namenu.
-2. Smesti original u privatni projektni prijem. Evidentiraj bajtove i poreklo; proveri Camera i relevantne aplikacijske foldere. Ne kopiraj nepovezane fotografije u javni projekat.
-3. Pregledaj svaki kadar u dovoljnoj veličini. Grupisanje zasnivaj na stvarnom predmetu i nastavnikovom objašnjenju. Kada nije jasno, zadrži pitanje u prijemu. Ne objavljuj pretpostavljenu atribuciju.
-4. Dodaj galeriju u postojeći registar; ne preimenuj stare ID-jeve. Galerija nije automatski nov prototip ili novi autor. Stariji radovi i njihove slike ne menjaju nedelju uvođenjem novog talasa.
-5. Napiši kratak nastavni sažetak u `tok.json`; detalje u odgovarajućem `wNN.json`, uz novu reviziju. Najava ostaje priprema dok nastavnik ne potvrdi održavanje. Ideje nisu obaveze.
-6. Generiši javni izvod, pojedinačne galerije, naslovnu i tok:
+Nastavnikov spisak počinje od prvog rada. Pre njega u rolni može stajati bilo šta — 16.10.2026.
+stajalo je dvanaest kadrova: pantalone koje je kamera uhvatila i diplomske prezentacije.
+Primena spiska od prvog kadra pomerila je svaki rad za dvanaest mesta i dala jednom predmetu
+imena više studenata. Početak se nalazi tako što se otvori prvi kadar koji prikazuje rad, pa
+se vreme tog kadra uporedi sa ostalima: niz rada je gust (minuti), ono ispred njega je retko.
 
-   `node tools/prototipovi.mjs`
+## 4. Čitaj niz kroz sve prostorije
 
-   `node tools/cover.mjs`
+Snimanje se ne prekida na vratima učionice. 16.10.2026. niz teče 12:22–13:28 u učionici pa
+13:29–14:06 na praktičnim vežbama u udruženju, bez prekida — poslednjih sedam radova sa spiska
+slikano je tamo. Folder je bio nazvan „poseta-udruzenje” i vezan za raniji datum; vremena su
+to opovrgla. **Ako spisku „nedostaju” kadrovi, pretpostavka je pogrešna pre nego što su kadrovi
+izgubljeni.**
 
-   `node tools/held-baseline.mjs`
+## 5. Zatvori zbir
 
-   `node tools/next-baseline.mjs`
+Ukupno primljeno = ono ispred niza + zbir svih radova sa spiska + kadrovi probanja na kraju.
+Dok zbir ne zatvori **bez ostatka**, presek nije gotov. 16.10.2026: 12 + 86 + 11 = 109.
 
-   `node tools/cas03-baseline.mjs`
+## 6. Veži sliku za rad sa tri potvrde
 
-   `node tools/shells.mjs`
+Veza fotografije i rada drži kad se slože **sve tri**:
 
-7. Proveri identičnost statičkog i živog prikaza, foto-grupe, najnoviji čas prvi, očuvane ranije nedelje, SR/EN, telefon, tastaturu i rad bez JavaScript-a. Pokreni testove i checkpoint gate iz `docs/checkpoints.md`. Broj zelenih testova nije zamena za vizuelni pregled; test koji čuva pogrešnu pretpostavku ispravi uz izvor.
-8. U ovlašćenom obimu objavi imenovane putanje. Proveri Pages build i stvarne URL-ove. Ostavi commit, dokaz, nejasnoće i sledeći korak u projektnom tragu.
+1. predmet prepoznat na kadru (gleda se, ne pretpostavlja),
+2. broj kadrova jednak broju sa spiska,
+3. vreme koje pada u očekivani deo niza.
 
-## Dizajn prema sadržaju
+Jedna potvrda sama nije dokaz. Broj kadrova je najslabija — po njemu su nastale sve dosadašnje
+greške. Ako se tri potvrde ne slažu, red ostaje imenovan i označen kao da čeka; ne popunjava se
+najbližim slobodnim kadrom.
 
-Za ovu izmenu razmotreni su fotografska urednička naslovna i prostorna polica radova. Izabrana je prva: stvarni predmeti daju karakter, serifni naslov i mirna hijerarhija pomažu čitanju; dodatna 3D interakcija ne doprinosi ovom zadatku. Drugi zadatak može opravdati 2D alat, animaciju ili 3D prostor. Ovo nije univerzalni vizuelni šablon za OR ili ostale sajtove.
+## 7. Razdvoji rad od probanja
+
+Kadrovi koji prikazuju predmet su rad. Kadrovi koji prikazuju ljude kako rad isprobavaju su
+zapažanje: idu kao tekst uz rad, sa datumom i izvorom, a slike ostaju van serviranja dok za
+njih ne postoji zasebna saglasnost. Nijedan opis interakcije ne sme biti napisan sa kadra na
+kome je više radova odjednom — tako je nastala „Pogodilica” koju nijedna fotografija ne pokazuje.
+
+## 8. Objavi tek posle gledanja
+
+`npm test` i `npm run verify:course` hvataju strukturu, ne sadržaj. Pre objave se otvara stvarna
+stranica: naziv, indeks i ime uz rad, broj slika, mobilni prikaz, SR/EN. Zeleni testovi nisu
+potvrda da je slika kod pravog studenta.
+
+## 9. Povlačenje se zapisuje
+
+Zapis koji izlazi iz registra ide u `povuceno` sa celim sadržajem, datumom, izvorom i razlogom.
+Provera osnovne linije odbija brisanje bez takvog zapisa. Pravilo nije „ništa se ne briše”, nego
+**ništa ne nestaje nemo**.
