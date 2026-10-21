@@ -15,6 +15,7 @@ const tok = await json('data/tok.json');
 const errors = validateTok(tok);
 if (errors.length) throw Error(errors.join('\n'));
 const visit = await json('data/poseta.json');
+const visits = [await json('data/poseta-w03.json')];
 const visitErrors = validateVisit(visit);
 if (visitErrors.length) throw Error(visitErrors.join('\n'));
 const prototypes = await json('data/prototipovi.json');
@@ -41,6 +42,6 @@ const after = before
   .replace(lead, '')
   .replace(teaser, '')
   .replace(top, `<!-- held-intro:start --><div id="held-intro">${heldIntro()}</div><!-- held-intro:end -->`)
-  .replace(body, heldSection(tok, weeks, { visit, prototypes }));
+  .replace(body, heldSection(tok, weeks, { visit, prototypes, visits }));
 if (before !== after) await writeFile(target, after);
 console.log(JSON.stringify({ changed: before !== after, held: tok.odrzano.length, visit: visit.id, source: 'same static and runtime renderer' }));

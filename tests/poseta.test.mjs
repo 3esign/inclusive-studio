@@ -33,12 +33,14 @@ test('the analysis page renders every participant once, links every finding and 
   for (const person of visit.participants) {
     assert.equal(html.split(person.name).length - 1, 1, person.name + ' appears more than once');
   }
-  for (const work of ['zmijica-2026', 'zgradica-2026', 'upadalica-2026', 'pogodilica-2026', 'sudoku-2026', 'muzicka-kutija-2026']) {
+  for (const work of ['zmijica-2026', 'zgradica-2026', 'upadalica-2026', 'sudoku-2026', 'muzicka-kutija-2026']) {
     assert.ok(html.includes(`href="prototipovi.html#${work}"`), work + ' finding must link its gallery entry');
   }
   for (const observation of prototypes.observations) {
     for (const photo of observation.photos) assert.ok(html.includes(`src="${photo.src}"`), photo.src + ' must come from the observation register');
   }
+  assert.ok(!html.includes('id="pogodilica-2026"'), 'withdrawn observation must also remove its narrative finding');
+  assert.ok(!html.includes('najposećeniji') && !html.includes('najdečja paleta'), 'photo counts do not establish popularity or preferences');
   // The three claims stay separate: seen, reading, next step — labelled, not merged.
   for (const label of ['Viđeno', 'Čitanje', 'Sledeći korak']) assert.ok(html.includes(label));
   // The sideways Zgradica photograph is displayed upright through the rotation field (12.10.2026 fix).

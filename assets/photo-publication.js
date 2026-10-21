@@ -7,7 +7,7 @@ export const publicPhoto = photo => !withheldPhotoDirectories.some(id => photo.s
 export function publishedPrototypes(data, { showPending = false } = {}) {
   const items = data.items.filter(item => item.documentedWeek !== 3 && (showPending || item.attributionStatus !== 'pending'));
   const observations = data.observations.filter(event => items.some(item => item.id === event.prototypeId));
-  const sourceIds = new Set([...items, ...observations, ...(data.galleries || []), ...(data.cekaju || [])].flatMap(item => [item.sourceId, item.attribution?.sourceId, item.publication?.sourceId, ...(item.photos || []).map(p => p.sourceId)]).filter(Boolean));
+  const sourceIds = new Set([...items, ...observations, ...(data.galleries || []), ...(data.cekaju || [])].flatMap(item => [item.sourceId, item.attribution?.sourceId, item.publication?.sourceId, item.probanje?.sourceId, ...(item.photos || []).map(p => p.sourceId)]).filter(Boolean));
   const revizije = (data.revizije || []).filter(r => items.some(i => i.id === r.prototypeId));
   for (const r of revizije) sourceIds.add(r.sourceId);
   // Withdrawn records are evidence of what was once claimed. They stay in the register and

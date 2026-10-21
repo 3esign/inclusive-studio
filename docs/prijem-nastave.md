@@ -68,3 +68,10 @@ potvrda da je slika kod pravog studenta.
 Zapis koji izlazi iz registra ide u `povuceno` sa celim sadržajem, datumom, izvorom i razlogom.
 Provera osnovne linije odbija brisanje bez takvog zapisa. Pravilo nije „ništa se ne briše”, nego
 **ništa ne nestaje nemo**.
+
+
+## Dopuna 21.10.2026 — poseta trećeg časa
+
+Nastavnik je odobrio objavu novih fotografija trećeg časa i dostavio devet učesnika i Drive folder. Zapis je `data/poseta-w03.json`; fotografije su u zasebnom folderu `data/prototipovi/poseta-w03/`. Prikaz je unutar trećeg časa i njegovog priloga, bez prepisivanja drugog časa. Jedan registar hrani statični i živi prikaz. Svaki nalaz citira konkretne ID-jeve fotografija; predlog za probanje nije tvrdnja da je već isproban.
+
+Spisak posete nije ispravka autorstva rada: drugačiji indeks ili oblik imena sačuvati po izvoru, bez tihog spajanja. Objava ovih fotografija ne odobrava automatski sledeći fotografski niz. Povlačenje netačnog zapažanja zahteva i uklanjanje pratećeg narativa iz renderer-a: test mora proveriti da ga više nema na stvarnoj strani.

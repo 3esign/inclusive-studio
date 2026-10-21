@@ -12,6 +12,8 @@ import { readFile, readdir } from 'node:fs/promises';
 const root = new URL('../', import.meta.url);
 const registry = JSON.parse(await readFile(new URL('data/prototipovi.json', root), 'utf8'));
 const visit = JSON.parse(await readFile(new URL('data/poseta.json', root), 'utf8'));
+const visitW03 = JSON.parse(await readFile(new URL('data/poseta-w03.json', root), 'utf8'));
+const visits = [visit, visitW03];
 const cas03 = JSON.parse(await readFile(new URL('data/cas-03/spisak.json', root), 'utf8'));
 const GALLERY_SURFACES = new Set(['cas-03.html', 'naslovna.html', 'index.html', 'sledeci.html']);
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -76,10 +78,11 @@ function cas03Rows(data) {
 
 function withoutAuthorizedAttribution(file, text, data) {
   attributionRows(data);
-  if (file === 'data/poseta.json') {
+  if (file === 'data/poseta.json' || file === 'data/poseta-w03.json') {
     visitRows(visit);
     const copy = JSON.parse(text);
     visitRows(copy);
+    assert.deepEqual(copy.participants, (file === 'data/poseta.json' ? visit : visitW03).participants);
     copy.participants = copy.participants.map(() => ({ name: '[visit-participant]', studentNumber: '[visit-number]' }));
     return JSON.stringify(copy);
   }
@@ -109,9 +112,11 @@ function withoutAuthorizedAttribution(file, text, data) {
     assert.equal(inner.trim().replace(/>\s+</g, '><'), expected, 'gallery attribution must match the exact authorized fields');
     return `<${tag}>[attributed-author-fields]</${tag}>`;
   }).replace(/<ul\b[^>]*\bdata-visit-participants="([^"]+)"[^>]*>([\s\S]*?)<\/ul>/g, (whole, id, inner) => {
-    assert.ok(['index.html', 'poseta.html'].includes(file), 'only the held page and the visit page publish participants');
-    assert.equal(id, visit.id, 'participant list must name the recorded visit');
-    const expected = visit.participants.map(person => `<li><span data-participant-name>${escape(person.name)}</span><span data-participant-number>${escape(person.studentNumber)}</span></li>`).join('');
+    const recorded = visits.find(v => v.id === id);
+    assert.ok(recorded, 'participant list must name the recorded visit');
+    const surfaces = recorded.week === 2 ? ['index.html', 'poseta.html'] : ['index.html', 'cas-03.html'];
+    assert.ok(surfaces.includes(file), 'only the held page and the visit page publish participants');
+    const expected = recorded.participants.map(person => `<li><span data-participant-name>${escape(person.name)}</span><span data-participant-number>${escape(person.studentNumber)}</span></li>`).join('');
     assert.equal(inner.trim(), expected, 'participant list must match the exact authorized fields');
     return '<ul>[visit-participant-fields]</ul>';
   }).replace(/<li\b[^>]*\bdata-cas03-row="(\d+)"[^>]*>([\s\S]*?)<\/li>/g, (whole, rb, inner) => {
@@ -165,7 +170,7 @@ test('known private identities and attributed author data occur only in their ex
     for (const row of authors) for (const value of Object.values(row.author)) {
       for (const form of [value, escape(value)]) assert.ok(!text.includes(form), `${path} repeats attributed data outside its authorized field`);
     }
-    for (const person of visitRows(visit)) for (const value of Object.values(person)) {
+    for (const person of visits.flatMap(visitRows)) for (const value of Object.values(person)) {
       for (const form of [value, escape(value)]) assert.ok(!text.includes(form), `${path} repeats participant data outside its authorized field`);
     }
   }
@@ -243,4 +248,13 @@ test('the class-list exception is bounded to its one surface, its rows and its e
   const badNumber = structuredClone(cas03); badNumber.radovi[1].indeks = badNumber.radovi[1].indeks + 'x';
   assert.throws(() => cas03Rows(badNumber), /indeks/);
   assert.ok(withoutAuthorizedAttribution('data/cas-03/spisak.json', JSON.stringify(cas03), registry).includes('[cas03-name]'), 'the register copy is redacted before the scan');
+});
+
+test('third-class participants are authorized only on their own class and held page', () => {
+  const inner = visitW03.participants.map(p => `<li><span data-participant-name>${escape(p.name)}</span><span data-participant-number>${escape(p.studentNumber)}</span></li>`).join('');
+  const html = `<ul data-visit-participants="${visitW03.id}">${inner}</ul>`;
+  for (const page of ['index.html', 'cas-03.html']) assert.doesNotThrow(() => withoutAuthorizedAttribution(page, html, registry));
+  for (const page of ['poseta.html', 'naslovna.html', 'udruzenje.html']) assert.throws(() => withoutAuthorizedAttribution(page, html, registry));
+  assert.throws(() => withoutAuthorizedAttribution('cas-03.html', html.replace('74/2024', '84/2024'), registry), /exact authorized/);
+  assert.throws(() => withoutAuthorizedAttribution('cas-03.html', html.replace(inner, inner + '<li>extra person</li>'), registry), /exact authorized/);
 });

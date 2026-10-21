@@ -56,7 +56,7 @@ export function galleryDetail(data, id) {
   const head = `<p class="eyebrow"><a href="prototipovi.html#${anchor}">${tr('Works and examples', 'Radovi i primeri')}</a> / ${tr('Class', 'Čas')} ${g.documentedWeek}</p><h1>${esc(tx(g.title))}</h1>${authorMarkup(g, 'work-identity', 'p')}`;
   const thisWeek = `<section class="work-week"><h2>${tr('Class', 'Čas')} ${g.documentedWeek}</h2><p class="lede">${g.photos.length} ${tr('views of the work', 'prikaza rada')} · <a href="index.html?w=${g.documentedWeek}">${tr('Class material', 'Gradivo časa')}</a></p>${photoGrid(g.photos)}</section>`;
 
-  const trial = g.probanje ? `<section class="work-week work-trial"><h2>${tr('Tried by users', 'Probali korisnici')} · ${esc(g.probanje.occurredOn.split('-').reverse().join('.'))}.</h2><p class="lede">${esc(tx(g.probanje.sta))}</p><p class="note">${tr('The photographs of this trial show the people who tried the work and are not published.', 'Fotografije ovog probanja prikazuju ljude koji su rad isprobali i ne objavljuju se.')}</p></section>` : '';
+  const trial = g.probanje ? `<section class="work-week work-trial"><h2>${tr('Tried by users', 'Probali korisnici')} · ${esc(g.probanje.occurredOn.split('-').reverse().join('.'))}.</h2><p class="lede">${esc(tx(g.probanje.sta))}</p><p class="note"><a href="cas-03.html#poseta-w03">${tr('Photographs from the third-class visit', 'Fotografije posete sa trećeg časa')} ↗</a></p></section>` : '';
   let history = '';
   if (earlier) {
     history += `<section class="work-week"><h2>${tr('Class', 'Čas')} ${earlier.documentedWeek}</h2><p class="lede">${esc(tx(earlier.description))}</p>${photoGrid(earlier.photos)}</section>`;

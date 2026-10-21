@@ -1,6 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
+import { validatePrototypes } from '../assets/prototipovi-core.js';
 
 // GitHub Pages servira ceo repo osim Jekyll "exclude" liste (_config.yml).
 // Javni paket sme da sadrzi samo: javni izvod registra (prototipovi-javno.json),
@@ -15,6 +16,12 @@ const excluded = new Set(
 );
 
 const registry = JSON.parse(await readFile(new URL('data/prototipovi.json', root), 'utf8'));
+
+test('the public excerpt retains trial sources and passes the browser validator', async () => {
+  const publicData = JSON.parse(await readFile(new URL('data/prototipovi-javno.json', root), 'utf8'));
+  assert.deepEqual(validatePrototypes(publicData), []);
+  for (const g of publicData.galleries || []) if (g.probanje) assert.ok(publicData.sources.some(s => s.id === g.probanje.sourceId));
+});
 
 test('pun registar se ne servira — samo javni izvod', () => {
   assert.ok(excluded.has('data/prototipovi.json'), 'data/prototipovi.json mora biti u exclude');
@@ -40,6 +47,9 @@ test('nijedan folder slika van javnog izvoda ne ostaje serviran', async () => {
   // Ovo vazi za svaki sledeci talas: folder koji javni izvod ne koristi mora biti iskljucen.
   const javni = JSON.parse(await readFile(new URL('data/prototipovi-javno.json', root), 'utf8'));
   const served = new Set();
+  // Teacher, 21 October: the third-class visit has its own authorized scene register.
+  const visit = JSON.parse(await readFile(new URL('data/poseta-w03.json', root), 'utf8'));
+  for (const p of visit.photos) served.add(p.src.split('/')[2]);
   for (const group of [javni.items, javni.observations, javni.galleries || []]) {
     for (const it of group) for (const p of it.photos || []) served.add(p.src.split('/')[2]);
   }

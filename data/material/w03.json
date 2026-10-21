@@ -58,6 +58,14 @@
       }
     },
     {
+      "kind": "link",
+      "href": "cas-03.html#poseta-w03",
+      "text": {
+        "sr": "Poseta udruženju — fotografije, učesnici i zapažanja",
+        "en": "Association visit — photographs, participants and observations"
+      }
+    },
+    {
       "kind": "heading",
       "text": {
         "en": "The hand is the first object we measure",
@@ -139,6 +147,14 @@
       "sta": {
         "sr": "Po ispravci nastavnika 21.10: zapis časa sažet na nastavni sadržaj; povučeni spisak i stanje uvoza, dodate galerije bez automatske atribucije. Ostalo gradivo nije menjano.",
         "en": "Teacher correction, 21 October: class record edited to teaching content; processing roster and import status removed, independent galleries linked. Remaining material unchanged."
+      }
+    },
+    {
+      "v": 5,
+      "datum": "2026-10-21",
+      "sta": {
+        "sr": "Dodat zaseban zapis posete trećeg časa po nalogu nastavnika: fotografije, spisak učesnika i opažanja sa granicama zaključivanja.",
+        "en": "Added the separate third-class visit record as requested by the teacher: photographs, participants and observations with limits of inference."
       }
     }
   ]

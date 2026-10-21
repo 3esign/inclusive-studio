@@ -2,7 +2,7 @@
 // These are photographs in the lesson material, not evidence of an unrecorded class.
 import { esc, tr, tx, number } from './core.js';
 import { exercises } from './exercises.js';
-import { renderVisitLead, validateVisit } from './poseta-core.js';
+import { renderVisitLead, renderVisitRecord, validateVisit } from './poseta-core.js';
 import { prototypeTeaser, validatePrototypes } from './prototipovi-core.js';
 
 export function lessonImages(week) {
@@ -51,6 +51,7 @@ export function heldSection(tok, weeks, extras = {}) {
   const record = (item, i) => {
     const parts = [heldRecord(item, weeks.get(item.nedelja), { first: i === 0 })];
     if (visit && visit.week === item.nedelja) parts.push(renderVisitLead(visit, prototypes));
+    for (const extra of extras.visits || []) if (extra.week === item.nedelja) parts.push(renderVisitRecord(extra, { compact: true }));
     if (prototypes) parts.push(prototypeTeaser(prototypes, item.nedelja));
     return parts.filter(Boolean).join('\n');
   };

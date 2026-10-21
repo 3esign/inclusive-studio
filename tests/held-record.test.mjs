@@ -8,6 +8,7 @@ const root = new URL('../', import.meta.url);
 const json = async p => JSON.parse(await readFile(new URL(p, root), 'utf8'));
 const tok = await json('data/tok.json');
 const visit = await json('data/poseta.json');
+const visits = [await json('data/poseta-w03.json')];
 const prototypes = await json('data/prototipovi.json');
 assert.deepEqual(validateVisit(visit), [], 'visit register must pass its own rules');
 
@@ -30,7 +31,7 @@ test('the held landing retains each lesson photograph, caption and result in sta
     for (const result of item.rezultati) assert.ok(rendered.includes(esc(result.sta.sr)), 'an actual outcome was lost');
   }
   assert.ok(page.includes(heldIntro()), 'static intro differs from live Serbian intro');
-  assert.ok(page.includes(heldSection(tok, weeks, { visit, prototypes })), 'static class records are stale: run tools/held-baseline.mjs');
+  assert.ok(page.includes(heldSection(tok, weeks, { visit, prototypes, visits })), 'static class records are stale: run tools/held-baseline.mjs');
 });
 
 test('the landing is chronological: each visit and each work strip stands inside its own week', async () => {
