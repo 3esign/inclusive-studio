@@ -109,7 +109,8 @@ test('published photographs follow the list exactly: the work frames, never the 
 test('photographs on disk, in the registry and in the list cover every original frame exactly once', t => {
   // Sirovi prijem je lokalni izvor, namerno van prenosivog snapshot-a:
   // u restauriranoj verifikacionoj kopiji ova provera nema sta da cita.
-  if (!fs.existsSync(abs('data/cas-03/slike'))) t.skip('sirovi prijem (data/cas-03/slike) nije deo ove kopije');
+  // t.skip() ne prekida telo testa — bez return-a asercije nastavljaju i pad se krije kao preskok.
+  if (!fs.existsSync(abs('data/cas-03/slike'))) return t.skip('sirovi prijem (data/cas-03/slike) nije deo ove kopije');
   for (const item of week3) {
     const n = rowOf(item).slike;
     const originals = nums(framesIn('data/cas-03/slike/' + item.id));

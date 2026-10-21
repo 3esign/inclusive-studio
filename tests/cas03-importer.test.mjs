@@ -35,7 +35,8 @@ function readJson(p) { return JSON.parse(readFileSync(p, 'utf8')); }
 test('importer runs for real and refuses to claim confirmed authorship for rows awaiting confirmation', t => {
   // Sirovi prijem je lokalni izvor, namerno van prenosivog snapshot-a:
   // u restauriranoj verifikacionoj kopiji ova provera nema sta da cita.
-  if (!existsSync(join(repo, 'data', 'cas-03', 'slike'))) t.skip('sirovi prijem (data/cas-03/slike) nije deo ove kopije');
+  // t.skip() ne prekida telo testa — bez return-a asercije nastavljaju i pad se krije kao preskok.
+  if (!existsSync(join(repo, 'data', 'cas-03', 'slike'))) return t.skip('sirovi prijem (data/cas-03/slike) nije deo ove kopije');
   const spisak = readJson(sourceSpisak);
   const { res, out, work } = runImporter();
   try {
