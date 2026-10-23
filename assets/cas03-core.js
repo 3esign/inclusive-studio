@@ -14,6 +14,7 @@
 // pretending every row waits for a frame that was already cut.
 
 import { esc, tr, tx, number } from './core.js';
+import { photograph } from './prototipovi-core.js';
 import { withheldWorkIds } from './photo-publication.js';
 
 const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -135,11 +136,12 @@ export function renderCas03(spisak, prototypes, poseta = null) {
     { sr: 'Pomenut je mogući konkurs od strane udruženja.', en: 'A possible competition run by the association was mentioned.' },
   ]).map(n => `\n    <li>${esc(tx(n))}</li>`).join('');
   // The field part of the class has its own register: who went to the association that
-  // day. It is a roster, not a finding — the findings wait for the photographs.
+  // day — and, once the frames are transferred, the photographs of the visit and what can
+  // be read from them. Both come from that one register; nothing is retold here by hand.
   const posetaSection = poseta && Array.isArray(poseta.participants) && poseta.participants.length ? `
 <section class="field-visit" aria-labelledby="cas03-poseta-title"><div class="section-heading"><div><p class="eyebrow">${tr('Recorded attendance', 'Zavedeno prisustvo')} · <time datetime="${esc(poseta.occurredOn)}">${esc(srDate(poseta.occurredOn))}.</time></p><h2 id="cas03-poseta-title">${tr('On the association visit', 'Na poseti udruženju')}</h2></div><p>${tr(`${poseta.participants.length} students are recorded on the visit, in the order the teacher wrote them.`, `${number(poseta.participants.length)} studenata je zavedeno na poseti, redom kojim ih je nastavnik zapisao.`)}</p></div>
   <ul class="visit-participants visit-compact" data-visit-participants="${esc(poseta.id)}" aria-label="${tr('Students on the visit', 'Studenti na poseti')}">${poseta.participants.map(person => `<li><span data-participant-name>${esc(person.name)}</span><span data-participant-number>${esc(person.studentNumber)}</span></li>`).join('')}</ul>
-  <p class="help">${esc(tx(poseta.summary))}</p>
+  <p class="help">${esc(tx(poseta.summary))}</p>${posetaFotografije(poseta)}
 </section>` : '';
   const prijem = spisak.prijem ? `<p class="help">${tr('Intake', 'Prijem')}: ${esc(spisak.prijem.uredjaj)} · ${esc(spisak.prijem.putanja)} · ${tr('sequence begins with', 'niz počinje snimkom')} <code>${esc(spisak.prijem.prviSnimak)}</code>. ${esc(tx(spisak.prijem.napomena))}</p>` : '';
   return `<div class="page-top flow-intro"><div><p class="eyebrow">${tr('Week', 'Nedelja')} ${nedelja} · ${esc(tx(redni))} · <time datetime="${esc(spisak.odrzan)}">${esc(srDate(spisak.odrzan))}.</time></p>
@@ -155,6 +157,21 @@ export function renderCas03(spisak, prototypes, poseta = null) {
   <p class="help">${esc(tx(spisak.analizaUdruzenja))}</p>
 </section>${posetaSection}${ispravke}${renderRazjasni(spisak)}
 <aside class="prototype-context"><h2>${tr('Sources of this page', 'Izvori ove strane')}</h2><p>${esc(tx(spisak.source.description))}</p><p>${tr('Attribution of the documented works stands in the gallery of works; this list carries names and student numbers only beside the photographs they explain.', 'Autorstvo dokumentovanih radova stoji u galeriji radova; ovaj spisak nosi imena i brojeve indeksa samo uz fotografije koje objašnjava.')}</p></aside>`;
+}
+
+
+// The visit's own photographs: frames of the day at the association, each with the
+// fingerprint and the bilingual caption of the register. Findings cite frames by their
+// place in the sequence, so a reader can check the claim against the picture.
+function posetaFotografije(poseta) {
+  const photos = (poseta.photos || []).filter(p => p && p.src);
+  if (!photos.length) return '';
+  const figures = photos.map(p => photograph(p).replace('<figure class="prototype-photo">', `<figure class="prototype-photo" id="${esc(p.id)}">`)).filter(Boolean).join('');
+  if (!figures) return '';
+  const findings = (poseta.findings || []).map(f => `<article class="visit-finding"><h4>${esc(tx(f.title))}</h4><p><strong>${tr('Visible in the photographs', 'Vidljivo na fotografijama')}.</strong> ${esc(tx(f.seen))}</p><p><strong>${tr('Proposal for the next trial', 'Predlog za sledeće probanje')}.</strong> ${esc(tx(f.next))}</p><p>${tr('Photographs', 'Fotografije')}: ${(f.photoIds || []).map(id => `<a href="#${esc(id)}">${photos.findIndex(p => p.id === id) + 1}</a>`).join(' · ')}</p></article>`).join('');
+  return `
+  <div class="visit-photos">${figures}</div>${findings ? `
+  <div class="visit-readings"><h3>${tr('From observation to the next trial', 'Od zapažanja do sledećeg probanja')}</h3><p>${tr('These photographs record positions and grips. They do not establish duration, independent use, understanding of rules or a successful outcome.', 'Fotografije beleže položaje i hvatove. Ne potvrđuju trajanje, samostalnost, razumevanje pravila ili uspešan ishod.')}</p>${findings}</div>` : ''}`;
 }
 
 // Corrections and open questions are the same two blocks wherever a class is read: the

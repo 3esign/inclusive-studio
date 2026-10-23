@@ -77,3 +77,37 @@ Novo što se traži:
 
 Prisustvo na predavanju i dalje nije vođeno — to je granica ove evidencije, a ne otvoreno
 pitanje: ovaj spisak zavodi one koji su se pojavili u spisku radova i na poseti.
+
+## 24.10.2026 — čitanje iz samih kadrova
+
+Nastavnik je rez prepustio čitanju fotografija. Tri stvari su time zatvorene, jedna je
+ostala otvorena i dobila razlog.
+
+1. **Rez 15/19 — zatvoren.** Jedini crtež u celom nizu (12:20) stoji tačno na mestu
+   jedinog zapisa uz koji u spisku piše da je doneta skica, a ne prototip. Lavirint od
+   crnih slamčica (12:40) pripada sledećem zapisu sa fotografijama.
+2. **Naziv zapisa 22 — zatvoren.** Na prvom kadru tog niza leži poster „dizajn igračke”
+   sa opisanom tehnikom: palcem se pritisne kraj kutije, naciljava se loptica i zateže
+   gumica. To je praćka. Naziv više ne počiva na redosledu snimanja.
+3. **Zapisi 23 i 24 — i dalje otvoreni, ali sa razlogom.** Uz zapis 23 je bela ploča sa
+   slamčicama kroz koju je provučen tanak konac; uz zapis 24 ogledalska ploča sa sivim
+   krugovima, **debelim trobojnim kanapom** i karticama sa tačkama. „Stubići” opisuju
+   slamčice, „igra sa užetom” kanap — što je obrnuto od redosleda u spisku. Fotografije
+   nisu pomerane; traži se potvrda da li su dva naziva zamenjena. Ovo nije pretpostavka
+   umesto nastavnika nego nalaz sa obrazloženjem.
+4. **Digitalni rad (zapis 6) nije slabije dokumentovan.** Tri kadra sa časa pokazuju
+   interfejs — tri težine, pedala, pesmica, snimanje, puštanje, klavijatura sa imenovanim
+   tonovima — i autora kako svira pokretom ruke. Dva kadra iz udruženja pokazuju isti rad
+   na stolu, uz miša. Sopstveni interfejs rada piše da je na teškom nivou kamera manje
+   precizna.
+
+### Fotografije posete su objavljene
+
+Od 31 kadra objavljeno je **28**, uz opis pisan posle gledanja i uz četiri nalaza koji se
+pozivaju na brojeve kadrova. **Tri kadra se ne objavljuju** jer se na njima prepoznaju
+lica korisnika udruženja; ostaju u sirovom prijemu (`data/cas-04/slike-poseta`), koji je u
+`_config.yml` van serviranja. To nije tehnička prepreka nego granica pristanka: spisak
+učesnika pokriva studente, a ne korisnike udruženja.
+
+Granica nalaza ostaje ista: fotografije beleže položaje i hvatove. Ne potvrđuju trajanje,
+samostalnost, razumevanje pravila ni uspešan ishod.

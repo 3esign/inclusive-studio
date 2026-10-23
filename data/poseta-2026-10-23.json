@@ -11,32 +11,612 @@
   "id": "teacher-2026-10-23-poseta",
   "recordedOn": "2026-10-23",
   "description": {
-   "sr": "Spisak studenata na poseti udruženju 23.10.2026, kako ga je nastavnik zapisao istog dana, redom. Poseta je održana posle četvrtog časa: prototipi su u udruženju dalje razrađivani, dokumentovani i testirani sa korisnicima. Fotografije iz udruženja snimljene su u istom nizu kao i fotografije prototipa, posle njih, i još nisu prenete sa telefona — zato ovaj registar za sada nosi samo spisak, bez fotografija i bez nalaza.",
-   "en": "The list of students on the association visit of 23 October 2026, as the teacher wrote it the same day, in order. The visit followed the fourth class: at the association the prototypes were developed further, documented and tested with users. The photographs from the association were taken in the same sequence as the prototype photographs, after them, and have not yet been transferred from the phone — so for now this register carries only the list, without photographs and without findings."
+   "sr": "Spisak studenata na poseti udruženju 23.10.2026, kako ga je nastavnik zapisao istog dana, redom. Poseta je održana posle četvrtog časa: prototipi su u udruženju dalje razrađivani, dokumentovani i testirani sa korisnicima. Fotografije iz udruženja snimljene su u istom nizu kao i fotografije prototipa, posle njih, i prenete su sa telefona 24.10.2026.",
+   "en": "The list of students on the association visit of 23 October 2026, as the teacher wrote it the same day, in order. The visit followed the fourth class: at the association the prototypes were developed further, documented and tested with users. The photographs from the association were taken in the same sequence as the prototype photographs, after them, and were transferred from the phone on 24 October 2026."
   }
  },
  "participants": [
-  { "name": "Dunja Ljubičić", "studentNumber": "38/24" },
-  { "name": "Anđela Mićković", "studentNumber": "37/24" },
-  { "name": "Ana Rangelov", "studentNumber": "149/24" },
-  { "name": "Anđela Banković", "studentNumber": "64/24" },
-  { "name": "Hana Demiri", "studentNumber": "22/24" },
-  { "name": "Ksenija Kočić", "studentNumber": "19/24" },
-  { "name": "Ivana Simić", "studentNumber": "141/24" },
-  { "name": "Katarina Petrović", "studentNumber": "79/24" },
-  { "name": "Vanja Trkulja", "studentNumber": "124/24" },
-  { "name": "Nađa Stanić", "studentNumber": "151/24" },
-  { "name": "Lazar Leo Čopić", "studentNumber": "142/24" },
-  { "name": "Lena Kovačić", "studentNumber": "132/24" },
-  { "name": "Sara Janjić", "studentNumber": "4/24" },
-  { "name": "Andreja Bošković", "studentNumber": "26/24" },
-  { "name": "Andrej Parezanović", "studentNumber": "43/24" },
-  { "name": "Iva Mijanović", "studentNumber": "28/24" },
-  { "name": "Nikola Pajić", "studentNumber": "49/24" }
+  {
+   "name": "Dunja Ljubičić",
+   "studentNumber": "38/24"
+  },
+  {
+   "name": "Anđela Mićković",
+   "studentNumber": "37/24"
+  },
+  {
+   "name": "Ana Rangelov",
+   "studentNumber": "149/24"
+  },
+  {
+   "name": "Anđela Banković",
+   "studentNumber": "64/24"
+  },
+  {
+   "name": "Hana Demiri",
+   "studentNumber": "22/24"
+  },
+  {
+   "name": "Ksenija Kočić",
+   "studentNumber": "19/24"
+  },
+  {
+   "name": "Ivana Simić",
+   "studentNumber": "141/24"
+  },
+  {
+   "name": "Katarina Petrović",
+   "studentNumber": "79/24"
+  },
+  {
+   "name": "Vanja Trkulja",
+   "studentNumber": "124/24"
+  },
+  {
+   "name": "Nađa Stanić",
+   "studentNumber": "151/24"
+  },
+  {
+   "name": "Lazar Leo Čopić",
+   "studentNumber": "142/24"
+  },
+  {
+   "name": "Lena Kovačić",
+   "studentNumber": "132/24"
+  },
+  {
+   "name": "Sara Janjić",
+   "studentNumber": "4/24"
+  },
+  {
+   "name": "Andreja Bošković",
+   "studentNumber": "26/24"
+  },
+  {
+   "name": "Andrej Parezanović",
+   "studentNumber": "43/24"
+  },
+  {
+   "name": "Iva Mijanović",
+   "studentNumber": "28/24"
+  },
+  {
+   "name": "Nikola Pajić",
+   "studentNumber": "49/24"
+  }
  ],
  "summary": {
-  "sr": "Druga poseta udruženju, u petak 23.10.2026, istog dana kad je održan četvrti čas. Sedamnaest studenata je ponelo prototipe u udruženje i tamo ih razrađivalo, dokumentovalo i testiralo sa korisnicima. Šesnaest imena sa ovog spiska stoji i u spisku radova četvrtog časa; jedno ne stoji — to je osamnaesto zavedeno prisustvo tog dana, bez zavedenog rada. Fotografije iz udruženja još nisu prenete sa telefona, pa ovaj zapis nosi spisak i ono što se zna, bez nalaza po radu; temeljna analiza se piše kad fotografije stignu.",
-  "en": "The second association visit, on Friday 23 October 2026, the same day as the fourth class. Seventeen students took their prototypes to the association and there developed, documented and tested them with users. Sixteen names on this list also stand in the fourth-class list of works; one does not — that is the eighteenth recorded attendance of the day, without a filed work. The photographs from the association have not yet been transferred from the phone, so this record carries the list and what is known, without per-work findings; the full analysis is written when the photographs arrive."
+  "sr": "Druga poseta udruženju, u petak 23.10.2026, istog dana kad je održan četvrti čas. Sedamnaest studenata je ponelo prototipe u udruženje i tamo ih razrađivalo, dokumentovalo i testiralo sa korisnicima. Šesnaest imena sa ovog spiska stoji i u spisku radova četvrtog časa; jedno ne stoji — to je osamnaesto zavedeno prisustvo tog dana, bez zavedenog rada. Od trideset jednog snimljenog kadra objavljeno je dvadeset osam; tri kadra na kojima se prepoznaju lica korisnika udruženja ostaju van serviranja.",
+  "en": "The second association visit, on Friday 23 October 2026, the same day the fourth class was held. Seventeen students brought their prototypes to the association and there developed, documented and tested them with users. Sixteen names on this list also stand in the fourth class’s list of works; one does not — that is the eighteenth recorded attendance of the day, without a recorded work. Of thirty-one frames taken, twenty-eight are published; three frames in which the faces of association users are recognizable stay out of serving."
  },
- "photos": []
+ "photos": [
+  {
+   "id": "w04-camera-01",
+   "src": "data/prototipovi/poseta-w04/camera-01.jpg",
+   "sha256": "741667be6f183428e4e867e6eccdac59b9034b3743b4a769e543b4e5ce8f897c",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Ruke drže belu kutiju sa plutanim čepovima i drvenim štapićima; uz ivicu crveni žeton.",
+    "en": "Hands hold a white box with cork discs and wooden skewers; a red token by the edge."
+   },
+   "caption": {
+    "sr": "Ruke drže belu kutiju sa plutanim čepovima i drvenim štapićima; uz ivicu crveni žeton.",
+    "en": "Hands hold a white box with cork discs and wooden skewers; a red token by the edge."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-02",
+   "src": "data/prototipovi/poseta-w04/camera-02.jpg",
+   "sha256": "711407b28d4e38ef8809b810d050d36c91e4d14c7f4f826a4f182b8d1c5a707f",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Prst pritiska crveni žeton na istoj kutiji sa čepovima i štapićima.",
+    "en": "A finger presses the red token on the same box with corks and skewers."
+   },
+   "caption": {
+    "sr": "Prst pritiska crveni žeton na istoj kutiji sa čepovima i štapićima.",
+    "en": "A finger presses the red token on the same box with corks and skewers."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-04",
+   "src": "data/prototipovi/poseta-w04/camera-04.jpg",
+   "sha256": "1339cef11eee7603b00c96d4e6fcb64b25d98ef8ed18371ead6a223c80cf8d99",
+   "width": 1280,
+   "height": 721,
+   "alt": {
+    "sr": "Ruke okreću okrugli karton sa isečenim poljima od rebrastog papira u žutoj, ljubičastoj i narandžastoj boji.",
+    "en": "Hands turn a round cardboard disc with corrugated-paper fields in yellow, purple and orange."
+   },
+   "caption": {
+    "sr": "Ruke okreću okrugli karton sa isečenim poljima od rebrastog papira u žutoj, ljubičastoj i narandžastoj boji.",
+    "en": "Hands turn a round cardboard disc with corrugated-paper fields in yellow, purple and orange."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-05",
+   "src": "data/prototipovi/poseta-w04/camera-05.jpg",
+   "sha256": "ab3ccda64a5f460c44072f05ecd559575361b9530673ba08970b7163648d90c3",
+   "width": 1280,
+   "height": 721,
+   "alt": {
+    "sr": "Ruke drže štampani list sa oblicima — kuća, sunce, krošnje — naslonjen na belu kutiju sa žutom fiokom.",
+    "en": "Hands hold a printed sheet of shapes — a house, a sun, treetops — resting on a white box with a yellow drawer."
+   },
+   "caption": {
+    "sr": "Ruke drže štampani list sa oblicima — kuća, sunce, krošnje — naslonjen na belu kutiju sa žutom fiokom.",
+    "en": "Hands hold a printed sheet of shapes — a house, a sun, treetops — resting on a white box with a yellow drawer."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-07",
+   "src": "data/prototipovi/poseta-w04/camera-07.jpg",
+   "sha256": "e31154d9fd3010166bc13e8f745e5b9bd16d48f1cb27c1541d2aa5d0703f3096",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Tri otvorena pregrade na vrhu bele kutije; ruka spušta malu pločicu, u žutoj fioci stoje obojeni delovi.",
+    "en": "Three open compartments on top of a white box; a hand lowers a small tile, the yellow drawer holds coloured pieces."
+   },
+   "caption": {
+    "sr": "Tri otvorena pregrade na vrhu bele kutije; ruka spušta malu pločicu, u žutoj fioci stoje obojeni delovi.",
+    "en": "Three open compartments on top of a white box; a hand lowers a small tile, the yellow drawer holds coloured pieces."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-08",
+   "src": "data/prototipovi/poseta-w04/camera-08.jpg",
+   "sha256": "b7b1fdf16eb32d46ba07d60b189d71ad2405617b54f0a020685ec733a9eb11f2",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Obojene kartonske kutije sa isečenim oblicima na belom stolu; ruka se pruža ka njima, pored stoji čaša sa pertlanim poklopcem.",
+    "en": "Painted cardboard boxes with cut-out shapes on a white table; a hand reaches for them, a cup with a laced lid stands nearby."
+   },
+   "caption": {
+    "sr": "Obojene kartonske kutije sa isečenim oblicima na belom stolu; ruka se pruža ka njima, pored stoji čaša sa pertlanim poklopcem.",
+    "en": "Painted cardboard boxes with cut-out shapes on a white table; a hand reaches for them, a cup with a laced lid stands nearby."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-09",
+   "src": "data/prototipovi/poseta-w04/camera-09.jpg",
+   "sha256": "e84423ee11e8058695a54c11d787a76de00f2c4a698220e3631abb2295db4d61",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Ruka bira pločicu sa tačkama iznad kutije sa devet polja; oko nje kockice sa brojevima i pločice sa tačkama.",
+    "en": "A hand picks a dotted tile above a nine-field box; number cubes and dotted tiles lie around it."
+   },
+   "caption": {
+    "sr": "Ruka bira pločicu sa tačkama iznad kutije sa devet polja; oko nje kockice sa brojevima i pločice sa tačkama.",
+    "en": "A hand picks a dotted tile above a nine-field box; number cubes and dotted tiles lie around it."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-10",
+   "src": "data/prototipovi/poseta-w04/camera-10.jpg",
+   "sha256": "e7019db0fdfd559344f812bd0b61d49a1599342d4a72511d199654864fc67443",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Kutija sa devet polja i brojevima, pločice sa tačkama i drvena ploča sa žičanom petljom — više predmeta u upotrebi istovremeno.",
+    "en": "A nine-field box with numbers, dotted tiles and a wooden board with a wire loop — several objects in use at once."
+   },
+   "caption": {
+    "sr": "Kutija sa devet polja i brojevima, pločice sa tačkama i drvena ploča sa žičanom petljom — više predmeta u upotrebi istovremeno.",
+    "en": "A nine-field box with numbers, dotted tiles and a wooden board with a wire loop — several objects in use at once."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-11",
+   "src": "data/prototipovi/poseta-w04/camera-11.jpg",
+   "sha256": "8b769d9c3677ba81f604c54fd43d46f0d131faad881cee9fa4ad56ea366d7660",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Ruka spušta ljubičastu kockicu u polje kremaste kutije; kockice sa brojevima 8, 6, 3 i 7 stoje na stolu.",
+    "en": "A hand lowers a lilac cube into a field of the cream box; cubes with 8, 6, 3 and 7 stand on the table."
+   },
+   "caption": {
+    "sr": "Ruka spušta ljubičastu kockicu u polje kremaste kutije; kockice sa brojevima 8, 6, 3 i 7 stoje na stolu.",
+    "en": "A hand lowers a lilac cube into a field of the cream box; cubes with 8, 6, 3 and 7 stand on the table."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-12",
+   "src": "data/prototipovi/poseta-w04/camera-12.jpg",
+   "sha256": "fbe3d837238030274cfd4aa26288262a749723fb889f8ec97610a20bc72c07ab",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Više ruku drži obojene kocke sa isečenim oblicima i sastavlja ih jednu uz drugu.",
+    "en": "Several hands hold painted cubes with cut-out shapes and fit them against one another."
+   },
+   "caption": {
+    "sr": "Više ruku drži obojene kocke sa isečenim oblicima i sastavlja ih jednu uz drugu.",
+    "en": "Several hands hold painted cubes with cut-out shapes and fit them against one another."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-13",
+   "src": "data/prototipovi/poseta-w04/camera-13.jpg",
+   "sha256": "e54b98d083f89ed8a760858671a6fe621f0528cfa53b3cf3d188a45dc1fd18e7",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Laptop na belom stolu, otvoren ka sedećim učesnicima — digitalni rad u upotrebi u prostoru udruženja.",
+    "en": "A laptop on a white table, open towards seated participants — the digital work in use in the association’s room."
+   },
+   "caption": {
+    "sr": "Laptop na belom stolu, otvoren ka sedećim učesnicima — digitalni rad u upotrebi u prostoru udruženja.",
+    "en": "A laptop on a white table, open towards seated participants — the digital work in use in the association’s room."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-14",
+   "src": "data/prototipovi/poseta-w04/camera-14.jpg",
+   "sha256": "99db7c681ed7168bfb041f286d70b80ef08f9d035cb59e48458318cd7dcb6470",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Ruke drže belu kutiju sa pločastom slagalicom na vrhu; prsti pomeraju plavi deo.",
+    "en": "Hands hold a white box with a tile puzzle on top; fingers move the blue piece."
+   },
+   "caption": {
+    "sr": "Ruke drže belu kutiju sa pločastom slagalicom na vrhu; prsti pomeraju plavi deo.",
+    "en": "Hands hold a white box with a tile puzzle on top; fingers move the blue piece."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-15",
+   "src": "data/prototipovi/poseta-w04/camera-15.jpg",
+   "sha256": "562bf4a628041c4e21a7dbb32cb0a87cd10364168aa55020df6335d8dcc87cae",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Obojene kutije sa isečenim oblicima na belom stolu; dve ruke drže crvenu i narandžastu jednu iznad druge.",
+    "en": "Painted boxes with cut-out shapes on a white table; two hands hold the red and the orange one above each other."
+   },
+   "caption": {
+    "sr": "Obojene kutije sa isečenim oblicima na belom stolu; dve ruke drže crvenu i narandžastu jednu iznad druge.",
+    "en": "Painted boxes with cut-out shapes on a white table; two hands hold the red and the orange one above each other."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-16",
+   "src": "data/prototipovi/poseta-w04/camera-16.jpg",
+   "sha256": "5d42221cc42144804cf09084885e3018d62783b80d7c779051f68ec96572bfd9",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Crni platneni poklopac sa metalnim rupicama i belim pertlama na beloj čaši; ruka drži zeleni deo uz otvor.",
+    "en": "A black fabric lid with metal eyelets and white laces on a white cup; a hand holds a green piece by the opening."
+   },
+   "caption": {
+    "sr": "Crni platneni poklopac sa metalnim rupicama i belim pertlama na beloj čaši; ruka drži zeleni deo uz otvor.",
+    "en": "A black fabric lid with metal eyelets and white laces on a white cup; a hand holds a green piece by the opening."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-17",
+   "src": "data/prototipovi/poseta-w04/camera-17.jpg",
+   "sha256": "70556b2fa21559798ed1666c163bde5d38c8fa73f82743080dc4d93e1319fb5d",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Blizak prikaz pertlanog poklopca na čaši; kroz rupice je provučena pertla ukršteno.",
+    "en": "A close view of the laced lid on the cup; the lace is threaded crosswise through the eyelets."
+   },
+   "caption": {
+    "sr": "Blizak prikaz pertlanog poklopca na čaši; kroz rupice je provučena pertla ukršteno.",
+    "en": "A close view of the laced lid on the cup; the lace is threaded crosswise through the eyelets."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-18",
+   "src": "data/prototipovi/poseta-w04/camera-18.jpg",
+   "sha256": "3a9cb382a2699caeba96bd50ada229612e51fbd3dc5a093ac4f32a94f74d71c4",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Ruka drži čašu sa narandžastim okvirom oblika; unutra se vide obojeni delovi.",
+    "en": "A hand holds the cup with an orange shape frame; coloured pieces show inside."
+   },
+   "caption": {
+    "sr": "Ruka drži čašu sa narandžastim okvirom oblika; unutra se vide obojeni delovi.",
+    "en": "A hand holds the cup with an orange shape frame; coloured pieces show inside."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-19",
+   "src": "data/prototipovi/poseta-w04/camera-19.jpg",
+   "sha256": "dc13a1f85314770135a27489fb96a1b5f5882ed287c5f2fc9bcbf5d1a3bf4383",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Čaša sa ljubičastim okvirom oblika, poklopac podignut; druga ruka prilazi otvoru.",
+    "en": "The cup with a purple shape frame, the lid lifted; a second hand approaches the opening."
+   },
+   "caption": {
+    "sr": "Čaša sa ljubičastim okvirom oblika, poklopac podignut; druga ruka prilazi otvoru.",
+    "en": "The cup with a purple shape frame, the lid lifted; a second hand approaches the opening."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-20",
+   "src": "data/prototipovi/poseta-w04/camera-20.jpg",
+   "sha256": "1c649160a6dbce62f58d70c441174166301be0b87d554c292f5f7c970be63f84",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Čaša sa pertlanim poklopcem na belom poslužavniku; ruka drži zeleni deo spremno za umetanje.",
+    "en": "The cup with its laced lid on a white tray; a hand holds a green piece ready to insert."
+   },
+   "caption": {
+    "sr": "Čaša sa pertlanim poklopcem na belom poslužavniku; ruka drži zeleni deo spremno za umetanje.",
+    "en": "The cup with its laced lid on a white tray; a hand holds a green piece ready to insert."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-21",
+   "src": "data/prototipovi/poseta-w04/camera-21.jpg",
+   "sha256": "90c21e6be55276c3168f81147b7faf5e400fefa86b4f51a017fd7a188bed5a13",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Ruka podiže pertlani poklopac sa čaše.",
+    "en": "A hand lifts the laced lid off the cup."
+   },
+   "caption": {
+    "sr": "Ruka podiže pertlani poklopac sa čaše.",
+    "en": "A hand lifts the laced lid off the cup."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-22",
+   "src": "data/prototipovi/poseta-w04/camera-22.jpg",
+   "sha256": "868e592dee6082ba7ffa05acd7cef414da4c6a6cdd8227a7d53c1e9c309dbcd8",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Dve ruke zatežu pertlu kroz rupice poklopca, iznad belog stola.",
+    "en": "Two hands pull the lace through the lid’s eyelets above a white table."
+   },
+   "caption": {
+    "sr": "Dve ruke zatežu pertlu kroz rupice poklopca, iznad belog stola.",
+    "en": "Two hands pull the lace through the lid’s eyelets above a white table."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-23",
+   "src": "data/prototipovi/poseta-w04/camera-23.jpg",
+   "sha256": "8cd4f894b82ed0070026fcdc78aa17315c6a2fc74c8e4af16647bae44487e89d",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Jedna ruka pridržava poklopac, druga prstom pokazuje otvor u ljubičastom okviru.",
+    "en": "One hand steadies the lid while the other points a finger at the opening in the purple frame."
+   },
+   "caption": {
+    "sr": "Jedna ruka pridržava poklopac, druga prstom pokazuje otvor u ljubičastom okviru.",
+    "en": "One hand steadies the lid while the other points a finger at the opening in the purple frame."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-24",
+   "src": "data/prototipovi/poseta-w04/camera-24.jpg",
+   "sha256": "293faaafffbae2a137278657182dbdb68e0b51d397052d18c94fce15c189e4ff",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Palac prelazi preko zelenog dela u žutom okviru na zidu čaše.",
+    "en": "A thumb passes over the green piece in the yellow frame on the cup’s wall."
+   },
+   "caption": {
+    "sr": "Palac prelazi preko zelenog dela u žutom okviru na zidu čaše.",
+    "en": "A thumb passes over the green piece in the yellow frame on the cup’s wall."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-25",
+   "src": "data/prototipovi/poseta-w04/camera-25.jpg",
+   "sha256": "e32e83cce9fa1e47e9623e94e6c593bdd8888ebf9c5dbe984cee644c5d874105",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Ruke oko bele kutije sa pločastom slagalicom na vrhu i obojenim oblicima po stranama; prsti drže jedan deo.",
+    "en": "Hands around a white box with a tile puzzle on top and coloured shapes along its sides; fingers hold one piece."
+   },
+   "caption": {
+    "sr": "Ruke oko bele kutije sa pločastom slagalicom na vrhu i obojenim oblicima po stranama; prsti drže jedan deo.",
+    "en": "Hands around a white box with a tile puzzle on top and coloured shapes along its sides; fingers hold one piece."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-26",
+   "src": "data/prototipovi/poseta-w04/camera-26.jpg",
+   "sha256": "77304a50cff32127135ec4b22670ba7cc7ada44ab773f09ab509ae96874958fc",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Dve ruke uz laptop na belom stolu, jedna na mišu — digitalni rad se koristi sedeći za stolom.",
+    "en": "Two hands at a laptop on a white table, one on the mouse — the digital work used sitting at a table."
+   },
+   "caption": {
+    "sr": "Dve ruke uz laptop na belom stolu, jedna na mišu — digitalni rad se koristi sedeći za stolom.",
+    "en": "Two hands at a laptop on a white table, one on the mouse — the digital work used sitting at a table."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-27",
+   "src": "data/prototipovi/poseta-w04/camera-27.jpg",
+   "sha256": "8444ce6809ea51937762a95e901171fa10e905a40233edc0c43077304e91dc10",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Kutija sa brojevima i pločice sa tačkama na stolu; ruka spušta kockicu sa brojem tri u prazno polje.",
+    "en": "The number box and dotted tiles on the table; a hand lowers the cube with number three into an empty field."
+   },
+   "caption": {
+    "sr": "Kutija sa brojevima i pločice sa tačkama na stolu; ruka spušta kockicu sa brojem tri u prazno polje.",
+    "en": "The number box and dotted tiles on the table; a hand lowers the cube with number three into an empty field."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-28",
+   "src": "data/prototipovi/poseta-w04/camera-28.jpg",
+   "sha256": "9187e996af83486c7fc8dc01735aadd25bf0d1c946553e6a736316db926e4e98",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Ruka pomera zelenu i plavu kutiju sa isečenim oblicima; crvena i ljubičasta stoje uz njih.",
+    "en": "A hand moves the green and blue boxes with cut-out shapes; the red and purple ones stand beside them."
+   },
+   "caption": {
+    "sr": "Ruka pomera zelenu i plavu kutiju sa isečenim oblicima; crvena i ljubičasta stoje uz njih.",
+    "en": "A hand moves the green and blue boxes with cut-out shapes; the red and purple ones stand beside them."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-30",
+   "src": "data/prototipovi/poseta-w04/camera-30.jpg",
+   "sha256": "254e17920b9c3ae2bab26abd0e51e12e16570046a31c309f0917fbd1dfa7c70a",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Ruka drži narandžasti krstić iznad čaše sa okvirima oblika; plava kutija stoji u uglu stola.",
+    "en": "A hand holds an orange cross piece above the cup with shape frames; the blue box sits in the corner of the table."
+   },
+   "caption": {
+    "sr": "Ruka drži narandžasti krstić iznad čaše sa okvirima oblika; plava kutija stoji u uglu stola.",
+    "en": "A hand holds an orange cross piece above the cup with shape frames; the blue box sits in the corner of the table."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  },
+  {
+   "id": "w04-camera-31",
+   "src": "data/prototipovi/poseta-w04/camera-31.jpg",
+   "sha256": "50cf554a501b9897e43e26c6b1959eb3d842288c61177a095355e565af0e8b91",
+   "width": 721,
+   "height": 1280,
+   "alt": {
+    "sr": "Dve ruke oko čaše sa pertlanim poklopcem; iza njih složene obojene kutije.",
+    "en": "Two hands around the cup with the laced lid; behind them the painted boxes are stacked."
+   },
+   "caption": {
+    "sr": "Dve ruke oko čaše sa pertlanim poklopcem; iza njih složene obojene kutije.",
+    "en": "Two hands around the cup with the laced lid; behind them the painted boxes are stacked."
+   },
+   "sourceId": "teacher-2026-10-23-poseta"
+  }
+ ],
+ "findings": [
+  {
+   "title": {
+    "sr": "Predmet retko stoji sam",
+    "en": "The object rarely stands on its own"
+   },
+   "photoIds": [
+    "w04-camera-01",
+    "w04-camera-14",
+    "w04-camera-21",
+    "w04-camera-31"
+   ],
+   "seen": {
+    "sr": "Na većini kadrova predmet drže dve ruke, ili ga jedna ruka pridržava dok druga istražuje. Pertlani poklopac se podiže obema rukama, kutija sa čepovima se naginje dok se igra.",
+    "en": "In most frames two hands hold the object, or one hand steadies it while the other explores. The laced lid is lifted with both hands, the box with corks is tilted while being played."
+   },
+   "next": {
+    "sr": "U sledećem probanju proveriti da li predmet ostaje stabilan na stolu dok ga koristi jedna ruka. Zabeležiti klizanje, potrebu za pridržavanjem i razliku između stola i krila.",
+    "en": "In the next trial check whether the object stays stable on the table while one hand uses it. Record slipping, the need for steadying, and the difference between table and lap."
+   }
+  },
+  {
+   "title": {
+    "sr": "Umetanje i provlačenje se ponavljaju",
+    "en": "Inserting and threading repeat"
+   },
+   "photoIds": [
+    "w04-camera-07",
+    "w04-camera-16",
+    "w04-camera-22",
+    "w04-camera-30"
+   ],
+   "seen": {
+    "sr": "Četiri različita rada traže isti pokret: umetanje dela u otvor ili provlačenje pertle kroz rupicu. Na kadrovima se vidi hvat sa dva prsta i prilaz otvoru pod uglom.",
+    "en": "Four different works ask for the same movement: inserting a piece into an opening or threading a lace through an eyelet. The frames show a two-finger grip and an angled approach to the opening."
+   },
+   "next": {
+    "sr": "Uporediti veličine otvora između radova i zabeležiti koji otvor prima deo iz prvog pokušaja. Fotografije ne potvrđuju uspeh, samo položaj ruke.",
+    "en": "Compare opening sizes across the works and record which opening accepts the piece on the first attempt. The photographs do not establish success, only hand position."
+   }
+  },
+  {
+   "title": {
+    "sr": "Brojevi i tačke uz isti predmet",
+    "en": "Numbers and dots on the same object"
+   },
+   "photoIds": [
+    "w04-camera-09",
+    "w04-camera-10",
+    "w04-camera-11",
+    "w04-camera-27"
+   ],
+   "seen": {
+    "sr": "Komplet sa brojevima koristi se u više kadrova: kockice sa ciframa idu u polja, a pločice sa tačkama stoje uz njih kao drugi zapis iste količine.",
+    "en": "The number set appears in several frames: digit cubes go into the fields while dotted tiles lie beside them as a second notation of the same quantity."
+   },
+   "next": {
+    "sr": "Proveriti da li se cifra i tačke koriste naizmenično ili odvojeno, i da li je potrebno uputstvo pre prve upotrebe.",
+    "en": "Check whether digits and dots are used interchangeably or separately, and whether an instruction is needed before first use."
+   }
+  },
+  {
+   "title": {
+    "sr": "Digitalni rad traži sto, miša i mirnu podlogu",
+    "en": "The digital work needs a table, a mouse and a steady surface"
+   },
+   "photoIds": [
+    "w04-camera-13",
+    "w04-camera-26"
+   ],
+   "seen": {
+    "sr": "Jedini digitalni rad posete koristi se sa laptopa na stolu, uz miša; u kadrovima je ruka na mišu, a ne pred kamerom.",
+    "en": "The only digital work of the visit is used from a laptop on a table, with a mouse; in the frames a hand is on the mouse, not in front of the camera."
+   },
+   "next": {
+    "sr": "Probati i upravljanje pokretom ruke pred kamerom na lakšem nivou i zabeležiti razliku. Samo sopstveni interfejs rada kaže da je na teškom nivou kamera manje precizna.",
+    "en": "Also try hand-movement control in front of the camera at an easier level and record the difference. The work’s own interface states that the camera is less precise at the hard level."
+   }
+  }
+ ]
 }

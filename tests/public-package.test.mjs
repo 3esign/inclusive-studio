@@ -47,9 +47,16 @@ test('nijedan folder slika van javnog izvoda ne ostaje serviran', async () => {
   // Ovo vazi za svaki sledeci talas: folder koji javni izvod ne koristi mora biti iskljucen.
   const javni = JSON.parse(await readFile(new URL('data/prototipovi-javno.json', root), 'utf8'));
   const served = new Set();
-  // Teacher, 21 October: the third-class visit has its own authorized scene register.
-  const visit = JSON.parse(await readFile(new URL('data/poseta-w03.json', root), 'utf8'));
-  for (const p of visit.photos) served.add(p.src.split('/')[2]);
+  // Teacher, 21 October: a visit has its own authorized scene register. 24.10.2026: there
+  // is more than one such visit now, so every visit register counts as a public source —
+  // naming one by hand would hide the next batch instead of checking it.
+  const { readdir: readVisitDir } = await import('node:fs/promises');
+  const visitFiles = (await readVisitDir(new URL('data/', root))).filter(name => /^poseta[\w.-]*\.json$/.test(name));
+  assert.ok(visitFiles.length >= 2, 'svaki registar posete mora da bude prepoznat kao javni izvor');
+  for (const name of visitFiles) {
+    const visit = JSON.parse(await readFile(new URL('data/' + name, root), 'utf8'));
+    for (const p of visit.photos || []) served.add(p.src.split('/')[2]);
+  }
   for (const group of [javni.items, javni.observations, javni.galleries || []]) {
     for (const it of group) for (const p of it.photos || []) served.add(p.src.split('/')[2]);
   }

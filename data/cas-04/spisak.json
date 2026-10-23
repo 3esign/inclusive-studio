@@ -33,8 +33,8 @@
   "od": 28
  },
  "nizNapomena": {
-  "sr": "Svaka fotografija snimljena na četvrtom času biće objavljena uz rad kome pripada, čitana redom slikanja — fotografije još nisu prenete sa telefona. Broj uz svaki zapis jeste broj fotografija koje je taj rad dobio; prvo idu fotografije prototipa, pa fotografije iz udruženja.",
-  "en": "Every photograph taken at the fourth class will be published with the work it belongs to, read in shooting order — the photographs have not yet been transferred from the phone. The number beside each entry is the number of photographs that work got; the prototype photographs come first, then those from the association."
+  "sr": "Svaka fotografija snimljena na četvrtom času objavljena je uz rad kome pripada, čitana redom slikanja. Broj uz svaki zapis jeste broj fotografija prototipa koje je taj rad dobio; fotografije iz udruženja stoje zajedno, u delu o poseti, jer tamo jedan kadar često pokazuje više radova odjednom.",
+  "en": "Every photograph taken at the fourth class is published with the work it belongs to, read in shooting order. The number beside each entry counts the prototype photographs that work received; the association photographs stand together, in the visit part, because there a single frame often shows several works at once."
  },
  "udruzenjeNalazi": [
   {
@@ -51,8 +51,8 @@
   }
  ],
  "analizaUdruzenja": {
-  "sr": "Posle rada na prototipovima otišli smo u udruženje: prototipi su dalje razrađivani, dokumentovani i testirani sa korisnicima. Fotografije iz udruženja slede u istom nizu, posle fotografija prototipa.",
-  "en": "After the prototype work we went to the association: the prototypes were developed further, documented and tested with users. The photographs from the association follow in the same sequence, after the prototype photographs."
+  "sr": "Posle rada na prototipovima otišli smo u udruženje: prototipi su dalje razrađivani, dokumentovani i testirani sa korisnicima. Fotografije iz udruženja i ono što se iz njih čita stoje niže, u delu o poseti.",
+  "en": "After the prototype work we went to the association: the prototypes were developed further, documented and tested with users. The photographs from the association and what can be read from them stand below, in the visit part."
  },
  "radovi": [
   {
@@ -360,24 +360,17 @@
    }
   },
   {
-   "id": "nazivi-redova-22-24",
+   "id": "nazivi-redova-23-24",
    "sta": {
-    "sr": "Tri rada snimljena jedan za drugim — poslužavnik sa papirnim lopticama i gumicom, bela ploča sa slamčicama kroz koju je provučen konac, i ogledalska ploča sa sivim tačkama i kanapom — nose u spisku nazive „praćka”, „igra sa užetom” i „stubići”. Redosled snimanja slaže se sa redosledom spiska, ali nijedan naziv se sam po sebi ne vidi na kadru; potvrda koji naziv ide uz koji predmet se traži.",
-    "en": "Three works photographed one after another — a tray with paper balls and an elastic band, a white board with straw segments threaded by a cord, and a mirrored sheet with grey dots and a twine — carry the titles “praćka”, “igra sa užetom” and “stubići” in the list. The shooting order matches the list order, but no title is visible in the frame itself; confirmation of which title belongs to which object is requested."
+    "sr": "Zapis 22 je zatvoren: na prvom kadru tog niza leži poster rada, a na njemu piše tehnika — „palcem pritisnemo kraj kutije, naciljamo lopticu i zategnemo gumicu”. To je praćka, pa naziv više ne počiva na redosledu. Ostaju zapisi 23 i 24, i to sa razlogom: uz zapis 23 je bela ploča sa slamčicama kroz koju je provučen tanak konac, uz zapis 24 ogledalska ploča sa sivim krugovima, debelim trobojnim kanapom i karticama sa tačkama i crvenom linijom. „Stubići” opisuju slamčice, a „igra sa užetom” debeli kanap — što je obrnuto od redosleda u spisku. Fotografije nisu dirane; traži se potvrda da li su dva naziva zamenjena.",
+    "en": "Entry 22 is closed: the first frame of that run shows the work’s own poster, and the poster states the technique — “press the end of the box with your thumb, aim the ball and tighten the elastic”. That is a slingshot, so the title no longer rests on sequence alone. Entries 23 and 24 remain open, and for a reason: entry 23 carries a white board with straw segments threaded by a thin cord, entry 24 a mirrored sheet with grey circles, a thick tricolour twine and cards with dots and a red line. “Stubići” describes the straws and “igra sa užetom” the thick twine — the reverse of the order in the list. The photographs have not been touched; confirmation is requested whether the two titles are swapped."
    }
   },
   {
-   "id": "stanisic-skica-ili-lavirint",
+   "id": "music-box-digitalni-rad",
    "sta": {
-    "sr": "Uz zapis 15 stoji da je donet crtež, a ne prototip. Jedan kadar (12:20:14) zaista pokazuje olovkom crtanu skicu tri varijante kružne staze, i taj kadar je pripisan tom zapisu. Tri kadra odmah posle njega (12:40:40–12:40:43) pokazuju lavirint od crnih slamčica zalepljenih na sivu ploču — pripisani su sledećem zapisu sa fotografijama. Potvrda ovog reza se traži.",
-    "en": "Entry 15 is recorded as a drawing brought to class, not a prototype. One frame (12:20:14) indeed shows a pencil sketch of three variants of a looped track, and that frame is attributed to that entry. The three frames right after it (12:40:40–12:40:43) show a maze of black straws glued to a grey board — these are attributed to the next entry with photographs. Confirmation of this cut is requested."
-   }
-  },
-  {
-   "id": "music-box-nije-predmet",
-   "sta": {
-    "sr": "Zapis 6 je jedini rad ovog časa koji nije fizički predmet: kadrovi pokazuju veb-aplikaciju sa klavijaturom koja se svira pokretom ruke pred kamerom, i autora kako je pokazuje. Zato je u registru upisan kao digitalan rad, a ne kao prototip od materijala.",
-    "en": "Entry 6 is the only work of this class that is not a physical object: the frames show a web application with a keyboard played by hand movement in front of the camera, and its author demonstrating it. It is therefore recorded in the register as a digital work, not as a prototype made of materials."
+    "sr": "Zapis 6 je jedini rad ovog časa koji nije fizički predmet, ali nije ni slabije dokumentovan. Tri kadra sa časa pokazuju autora kako svira pokretom ruke pred kamerom i sam interfejs: tri težine, pedalu, pesmicu, snimanje i puštanje, i klavijaturu sa imenovanim tonovima. Dva kadra iz udruženja pokazuju isti rad u upotrebi na stolu. U registru je upisan kao digitalan rad — to je opis medija, ne manjak građe.",
+    "en": "Entry 6 is the only work of this class that is not a physical object, but it is not less documented either. Three frames from the class show the author playing by hand movement in front of the camera, and the interface itself: three difficulty levels, a pedal, a tune, recording and playback, and a keyboard with named notes. Two frames from the association show the same work in use on a table. The register records it as a digital work — that describes the medium, not a shortage of material."
    }
   }
  ],
@@ -469,13 +462,37 @@
     "sr": "Tri zapisa dobila su drugačiji broj fotografija nego što je rukom zapisano, jer kadrovi pokazuju drugi predmet nego što bi rez po zapisanom broju dao: zapis 14 ima jedan kadar umesto dva (drugi je skica zapisa 15), zapis 22 sedam umesto pet, zapis 26 dva umesto tri (kadar pre njih je poster zapisa 25). Ukupan broj od 87 fotografija nije se promenio.",
     "en": "Three entries received a different photograph count than the handwritten one, because the frames show a different object than a cut by the written numbers would give: entry 14 has one frame instead of two (the second is entry 15’s sketch), entry 22 seven instead of five, entry 26 two instead of three (the frame before them is entry 25’s poster). The total of 87 photographs did not change."
    }
+  },
+  {
+   "id": "c04-rez-15-19",
+   "sta": {
+    "sr": "Zatvoreno 24.10.2026, po nastavnikovom nalogu da rez bude pročitan iz samih kadrova: kadar u 12:20 pokazuje olovkom crtanu skicu tri varijante kružne staze i pripada zapisu 15, uz koji u spisku i stoji da je doneta skica, a ne prototip. Tri kadra u 12:40 pokazuju lavirint od crnih slamčica zalepljenih na sivu ploču i pripadaju zapisu 19. Jedini crtež u nizu stoji tačno na mestu jedinog zapisa koji crtež najavljuje.",
+    "en": "Closed on 24 October 2026, on the teacher’s instruction that the cut be read from the frames themselves: the 12:20 frame shows a pencil sketch of three variants of a looped track and belongs to entry 15, beside which the list itself records that a sketch, not a prototype, was brought. The three frames at 12:40 show a maze of black straws glued to a grey board and belong to entry 19. The only drawing in the sequence stands exactly where the only entry announcing a drawing stands."
+   },
+   "izvor": "Rez pročitan iz kadrova, 24.10.2026."
+  },
+  {
+   "id": "c04-pracka-poster",
+   "sta": {
+    "sr": "Zatvoreno 24.10.2026: naziv rada zapisa 22 potvrđen je iz samog kadra. Na prvom kadru tog niza leži poster „dizajn igračke” sa opisanom tehnikom — pritisak palcem na kraj kutije, ciljanje loptice i zatezanje gumice — i sa pet opcija igre i spiskom sposobnosti koje igra razvija. Niz od sedam kadrova ostaje kako je zaveden.",
+    "en": "Closed on 24 October 2026: the title of entry 22 is confirmed from the frame itself. The first frame of that run shows a “toy design” poster with the technique described — a thumb pressing the end of the box, aiming the ball, tightening the elastic — along with five play options and a list of the abilities the game develops. The run of seven frames stands as recorded."
+   },
+   "izvor": "Poster rada na fotografiji, 24.10.2026."
+  },
+  {
+   "id": "c04-poseta-fotografije",
+   "sta": {
+    "sr": "Fotografije iz udruženja su objavljene: od trideset jednog kadra na stranu je stalo dvadeset osam, uz opis pisan posle gledanja i uz četiri nalaza koji se pozivaju na brojeve kadrova. Tri kadra na kojima se prepoznaju lica korisnika udruženja ostaju van serviranja — stoje u sirovom prijemu, kao dokaz da niz nije sečen po volji, ali se ne objavljuju.",
+    "en": "The photographs from the association are published: of thirty-one frames, twenty-eight stand on the page, each with a description written after looking and with four findings that cite frames by number. Three frames in which the faces of association users are recognizable stay out of serving — they remain in the raw intake as evidence that the sequence was not cut at will, but they are not published."
+   },
+   "izvor": "Prenos sa telefona i objava, 24.10.2026."
   }
  ],
  "posetaRegistar": "data/poseta-2026-10-23.json",
  "vezaneGalerije": true,
  "prenos": {
-  "sr": "Fotografije su prenete sa telefona 24.10.2026. (Galaxy S23 FE, /Internal storage/DCIM/Camera): 87 kadrova prototipova i 31 kadar posete udruženju, razdvojenih pauzom od 29 minuta u nizu snimanja. Kadrovi posete još nisu objavljeni.",
-  "en": "The photographs were transferred from the phone on 24 October 2026 (Galaxy S23 FE, /Internal storage/DCIM/Camera): 87 prototype frames and 31 frames from the association visit, separated by a 29-minute pause in the shooting sequence. The visit frames are not published yet."
+  "sr": "Fotografije su prenete sa telefona 24.10.2026. (Galaxy S23 FE, /Internal storage/DCIM/Camera): 87 kadrova prototipova i 31 kadar posete udruženju, razdvojenih pauzom od 29 minuta u nizu snimanja. Kadrovi prototipa objavljeni su uz redove spiska, a kadrovi posete u delu o poseti — osim tri na kojima se prepoznaju lica korisnika udruženja.",
+  "en": "The photographs were transferred from the phone on 24 October 2026 (Galaxy S23 FE, /Internal storage/DCIM/Camera): 87 prototype frames and 31 frames from the association visit, separated by a 29-minute pause in the shooting sequence. The prototype frames are published beside the rows of the list and the visit frames in the visit part — except three in which the faces of association users are recognizable."
  },
  "presek": {
   "sr": "Niz je prvo razvrstan po predmetu koji se na kadru vidi, pa tek onda upoređen sa brojevima iz spiska; tri reda su zbog toga dobila drugačiji broj. Poreklo svakog kadra — ime fajla i vreme snimanja — stoji u data/cas-04/poreklo-kadrova.json.",
