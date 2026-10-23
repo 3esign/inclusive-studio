@@ -26,7 +26,10 @@ const nums = files => files.map(f => Number(f.replace('.jpg', ''))).sort((a, b) 
 const week3 = data.items.filter(item => item.documentedWeek === 3);
 const rowOf = item => list.radovi.find(r => String(r.rb).padStart(2, '0') === item.id.slice(0, 2));
 
-test('the publication gate is open for the works and closed only for the visit', () => {
+test('the publication gate is closed for the visit alone, once the misfiled frames were separated', () => {
+  // 23.10.2026, second record: the three disputed frames were looked at and attributed —
+  // the two under „brza putanja” are one work (renamed), the one beside „2d lavirint”
+  // belongs to the author of list row 20. No third-class work is withheld any more.
   assert.deepEqual([...withheldWorkIds], []);
   assert.deepEqual([...withheldPhotoDirectories], ['poseta-udruzenje']);
 });
@@ -41,6 +44,11 @@ test('the served public excerpt is the gated registry, with no pending attributi
   assert.deepEqual(served, expected, 'the public excerpt must be exactly the gated registry');
   const text = read('data/prototipovi-javno.json');
   for (const item of week3.filter(i => i.attributionStatus === 'pending')) {
+    assert.ok(!text.includes('"' + item.id + '"'), 'pending record travels to the reader: ' + item.id);
+    // The name may still be served — but only through a work of the same person whose
+    // attribution the teacher did confirm, never through this pending record.
+    const alsoPublished = gated.items.some(other => other.author?.name === item.author.name);
+    if (alsoPublished) continue;
     assert.ok(!text.includes(item.author.name), 'pending author name travels to the reader: ' + item.id);
     assert.ok(!text.includes(item.author.studentNumber), 'pending student number travels to the reader: ' + item.id);
     for (const photo of item.photos || []) assert.ok(!text.includes(photo.src), 'pending photograph travels to the reader: ' + photo.src);
@@ -59,14 +67,14 @@ test('a work whose attribution is pending is withheld from publication until con
   assert.ok(!out.observations.some(e => e.prototypeId === item.id), 'observations of a pending work must not be published');
 });
 
-test('every third-class work is recorded, and unpublished ones are exactly the pending three', () => {
+test('every third-class work is recorded, and none is left unattributed', () => {
   assert.equal(week3.length, 26);
-  // 26 recorded, 23 published: rows 17–19 await the students' confirmation (teacher's list
-  // of 18.10, zapisi 17–20) and stay out of the public gallery until confirmed.
+  // 26 recorded, 26 published: the separation of 23.10.2026 returned every disputed frame
+  // to its author, so no third-class work waits on an attribution any more.
   const published = publishedPrototypes(data).items.filter(i => i.documentedWeek === 3);
-  assert.equal(published.length, 23);
+  assert.equal(published.length, 26);
   const pending = week3.filter(i => i.attributionStatus === 'pending');
-  assert.deepEqual(pending.map(i => i.id), ['17-putanja', '18-brza-putanja', '19-2d-lavirint']);
+  assert.deepEqual(pending.map(i => i.id), []);
   for (const item of pending) assert.ok(!published.some(i => i.id === item.id), 'pending work must not be published: ' + item.id);
   assert.equal(data.items.filter(i => i.documentedWeek === 2).length, 8);
   for (const item of week3) {
@@ -143,20 +151,22 @@ test('the visit stays withdrawn, with its evidence intact', () => {
   for (const photo of visit.photos) assert.ok(!html.includes(photo.src), 'withheld visit photo leaked: ' + photo.src);
 });
 
-test('the gallery page shows the 23 published third-class works and the eight earlier ones', () => {
+test('the gallery page shows the 26 published third-class works and the eight earlier ones', () => {
   setLanguage('sr');
   const html = read('prototipovi.html');
   const published = publishedPrototypes(data).items;
-  assert.equal(published.length, 31);
+  assert.equal(published.length, 34);
   for (const item of published) {
     assert.ok(html.includes('data-prototype="' + item.id + '"'), 'missing from gallery: ' + item.id);
     for (const photo of item.photos || []) assert.ok(html.includes(photo.src), 'missing photo in gallery: ' + photo.src);
   }
+  // 23.10.2026: all three separated works are in the gallery, each with its own frames.
   for (const id of ['17-putanja', '18-brza-putanja', '19-2d-lavirint']) {
-    assert.ok(!html.includes('data-prototype="' + id + '"'), 'pending work must stay out of the gallery: ' + id);
+    assert.ok(html.includes('data-prototype="' + id + '"'), 'separated work must be in the gallery: ' + id);
     const item = data.items.find(i => i.id === id);
-    for (const photo of item.photos || []) assert.ok(!html.includes(photo.src), 'pending work photo must stay out of the gallery: ' + photo.src);
+    for (const photo of item.photos || []) assert.ok(html.includes(photo.src), 'separated work photo must be in the gallery: ' + photo.src);
   }
+  assert.equal(data.items.find(i => i.id === '18-brza-putanja').title, '3d lavirint', 'the renamed work keeps its folder but not its wrong title');
   for (const photo of visit.photos) assert.ok(!html.includes(photo.src), 'withheld visit photo in gallery: ' + photo.src);
 });
 
@@ -175,7 +185,9 @@ test('the list page keeps all 29 rows, including the unconfirmed ones', () => {
   assert.equal(list.radovi.length, 29);
   assert.equal(rendered.match(/data-cas03-row="\d+"/g).length, 29);
   assert.equal(html.match(/data-cas03-row="\d+"/g).length, 29);
-  assert.ok(html.includes('20-'), 'row 20 must stay visible as unconfirmed');
+  const row20 = rendered.match(/<li data-cas03-row="20"[^>]*>/)[0];
+  assert.match(row20, /cas03-neizvesno/, 'row 20 must stay visible as unconfirmed');
+  assert.ok(html.includes(row20), 'the static page must carry the same unconfirmed row 20');
 });
 
 test('teasers and prototypes render from one source of truth', () => {

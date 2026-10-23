@@ -73,7 +73,8 @@ test('importer runs for real and refuses to claim confirmed authorship for rows 
   }
 });
 
-test('importer cites the recorded source date, not the class day', () => {
+test('importer cites the recorded source date, not the class day', t => {
+  if (!existsSync(join(repo, 'data', 'cas-03', 'slike'))) return t.skip('sirovi prijem (data/cas-03/slike) nije deo ove kopije');
   const spisak = readJson(sourceSpisak);
   const { res, out, work } = runImporter();
   try {
@@ -89,7 +90,8 @@ test('importer cites the recorded source date, not the class day', () => {
   }
 });
 
-test('importer never invents a signature for the last photograph of a row', () => {
+test('importer never invents a signature for the last photograph of a row', t => {
+  if (!existsSync(join(repo, 'data', 'cas-03', 'slike'))) return t.skip('sirovi prijem (data/cas-03/slike) nije deo ove kopije');
   const spisak = readJson(sourceSpisak);
   const { res, out, work } = runImporter();
   try {

@@ -9,9 +9,6 @@
 exclude:
   - data/prototipovi.json
   - data/prototipovi/poseta-udruzenje
-  - data/prototipovi/17-putanja
-  - data/prototipovi/18-brza-putanja
-  - data/prototipovi/19-2d-lavirint
   - data/cas-03/predlog-registra.json
   - data/cas-03/prihvat.json
   - data/cas-03/uloge-slika.json

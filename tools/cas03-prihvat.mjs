@@ -103,10 +103,19 @@ const predlog = {
   observations: [],
 };
 
+const ukupno = nalazi.reduce((n, r) => n + r.slike.length, 0);
+
+// Cuvar: bez ulaznih fotografija alat ne prepisuje postojeci prihvat praznim.
+if (ukupno === 0) {
+  console.log(`Radova u spisku: ${spisak.radovi.length}`);
+  console.log('Folderi sa slikama: 0, fotografija: 0 — postojeci prihvat.json i predlog-registra.json nisu dirani.');
+  console.log('Cekam slike: prebaci ih u data/cas-03/slike/<rb>-<slug>/ i pokreni ponovo.');
+  process.exit(0);
+}
+
 writeFileSync(join(outDir, 'prihvat.json'), JSON.stringify({ provereno: new Date().toISOString(), nalazi, evidencija }, null, 1));
 writeFileSync(join(outDir, 'predlog-registra.json'), JSON.stringify(predlog, null, 1));
 
-const ukupno = nalazi.reduce((n, r) => n + r.slike.length, 0);
 console.log(`Radova u spisku: ${spisak.radovi.length}`);
 console.log(`Folderi sa slikama: ${nalazi.filter(r => r.postoji).length}, fotografija: ${ukupno}, u predlogu registra: ${predlog.items.length}`);
 for (const g of evidencija) console.log('!', g);

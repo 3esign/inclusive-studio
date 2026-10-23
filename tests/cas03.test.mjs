@@ -17,7 +17,9 @@ test('the class-list register passes its own rules: twenty-nine rows, a real dat
   assert.deepEqual(validateCas03(spisak), []);
   assert.equal(spisak.odrzan, '2026-10-16');
   assert.equal(spisak.radovi.length, 29);
-  assert.equal(spisak.radovi.filter(row => row.potvrditi).length, 4);
+  // 23.10.2026: the separation of the three disputed frames confirmed rows 17-19; only
+  // row 20 stays open, the name left without a filed work.
+  assert.equal(spisak.radovi.filter(row => row.potvrditi).length, 1);
   for (const problem of [
     { ...spisak, schema: 'course-class-list/v2' },
     { ...spisak, radovi: [] },
@@ -39,8 +41,8 @@ test('the first wave names only real registry entries, and the certain zones are
   // 19.10.2026: Doljanović's „Castle” entered the gallery with its photographs, so the field now points at the entry.
   const castle = spisak.radovi.find(row => /castle/i.test(row.rad || ''));
   assert.equal(castle?.prviTalas, '29-castle', 'Castle links its gallery entry now that it exists with photographs');
-  assert.deepEqual(spisak.radovi.filter(row => row.potvrditi).map(row => row.rb), [17, 18, 19, 20]);
-  assert.equal(spisak.sigurno.do, 16);
+  assert.deepEqual(spisak.radovi.filter(row => row.potvrditi).map(row => row.rb), [20]);
+  assert.equal(spisak.sigurno.do, 19);
   assert.equal(spisak.sigurno.od, 21);
 });
 
@@ -103,11 +105,12 @@ test('the intake proposal keeps unconfirmed rows structurally unconfirmed and in
   for (const row of spisak.radovi) {
     const item = byRb.get(row.rb);
     if (!item) continue;                                        // red bez fotografije (20) ne ulazi u predlog
+    // 23.10.2026: the proposal is the frozen 18.10 intake artefact, so a row confirmed
+    // later may still stand pending in it. What must never happen is the other way round:
+    // a row that still awaits confirmation claimed as confirmed in the proposal.
     if (row.potvrditi) {
       assert.equal(item.attributionStatus, 'pending', `row ${row.rb} awaits student confirmation and must say so structurally`);
       assert.ok(item.authorRole === 'student' && item.author?.name && item.attribution?.fields, `row ${row.rb} keeps its mandatory fields while pending`);
-    } else {
-      assert.notEqual(item.attributionStatus, 'pending', `row ${row.rb} is confirmed by the teacher's list and must not carry the pending mark`);
     }
   }
   // Napomena o nizu slikanja opisuje strukturu celog talasa, nije dokaz za svaku fotografiju:

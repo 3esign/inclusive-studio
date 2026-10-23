@@ -27,6 +27,7 @@ const DESC = {
   'predavanje.html': 'Gradivo časa kao predavanje: slajdovi, mere i pitanja.',
   'prototipovi.html': 'Radovi i primeri iz nastave: studentski prototipovi, tehnički crteži i nastavnički primeri sa fotografijama, autorstvom i nedeljom dokumentovanja.',
   'poseta.html': 'Poseta udruženju „Živimo zajedno”: temeljna analiza interakcije korisnika sa studentskim prototipovima — šta se videlo i šta je sledeći korak svakog rada.',
+  'cas-04.html': 'Spisak radova četvrtog časa: dvadeset sedam zavedenih prisustava, dvadeset jedan fotografisan rad, deo „Šta se čeka” za prisustvo bez fotografija i ispravke ranijih zapisa.',
   'cas-03.html': 'Spisak radova trećeg časa: dvadeset devet radova redom slikanja sa brojem fotografija po radu, analiza iz udruženja i jasno označeni delovi koji čekaju razjašnjenje.',
   'laboratorija.html': 'Ogledi pristupačnosti u pregledaču: šta se oseća, šta se meri, šta se zaključuje.',
   'igracka.html': 'Igračka koja uči prostor: referentne igračke i način analize.',

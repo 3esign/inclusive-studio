@@ -1,0 +1,42 @@
+{
+ "schema": "course-visit/v1",
+ "id": "poseta-udruzenje-2026-10-23",
+ "week": 4,
+ "occurredOn": "2026-10-23",
+ "place": {
+  "sr": "Udruženje „Živimo zajedno”, Beograd",
+  "en": "The Živimo zajedno association, Belgrade"
+ },
+ "source": {
+  "id": "teacher-2026-10-23-poseta",
+  "recordedOn": "2026-10-23",
+  "description": {
+   "sr": "Spisak studenata na poseti udruženju 23.10.2026, kako ga je nastavnik zapisao istog dana, redom. Poseta je održana posle četvrtog časa: prototipi su u udruženju dalje razrađivani, dokumentovani i testirani sa korisnicima. Fotografije iz udruženja snimljene su u istom nizu kao i fotografije prototipa, posle njih, i još nisu prenete sa telefona — zato ovaj registar za sada nosi samo spisak, bez fotografija i bez nalaza.",
+   "en": "The list of students on the association visit of 23 October 2026, as the teacher wrote it the same day, in order. The visit followed the fourth class: at the association the prototypes were developed further, documented and tested with users. The photographs from the association were taken in the same sequence as the prototype photographs, after them, and have not yet been transferred from the phone — so for now this register carries only the list, without photographs and without findings."
+  }
+ },
+ "participants": [
+  { "name": "Dunja Ljubičić", "studentNumber": "38/24" },
+  { "name": "Anđela Mićković", "studentNumber": "37/24" },
+  { "name": "Ana Rangelov", "studentNumber": "149/24" },
+  { "name": "Anđela Banković", "studentNumber": "64/24" },
+  { "name": "Hana Demiri", "studentNumber": "22/24" },
+  { "name": "Ksenija Kočić", "studentNumber": "19/24" },
+  { "name": "Ivana Simić", "studentNumber": "141/24" },
+  { "name": "Katarina Petrović", "studentNumber": "79/24" },
+  { "name": "Vanja Trkulja", "studentNumber": "124/24" },
+  { "name": "Nađa Stanić", "studentNumber": "151/24" },
+  { "name": "Lazar Leo Čopić", "studentNumber": "142/24" },
+  { "name": "Lena Kovačić", "studentNumber": "132/24" },
+  { "name": "Sara Janjić", "studentNumber": "4/24" },
+  { "name": "Andreja Bošković", "studentNumber": "26/24" },
+  { "name": "Andrej Parezanović", "studentNumber": "43/24" },
+  { "name": "Iva Mijanović", "studentNumber": "28/24" },
+  { "name": "Nikola Pajić", "studentNumber": "49/24" }
+ ],
+ "summary": {
+  "sr": "Druga poseta udruženju, u petak 23.10.2026, istog dana kad je održan četvrti čas. Sedamnaest studenata je ponelo prototipe u udruženje i tamo ih razrađivalo, dokumentovalo i testiralo sa korisnicima. Šesnaest imena sa ovog spiska stoji i u spisku radova četvrtog časa; jedno ne stoji — to je osamnaesto zavedeno prisustvo tog dana, bez zavedenog rada. Fotografije iz udruženja još nisu prenete sa telefona, pa ovaj zapis nosi spisak i ono što se zna, bez nalaza po radu; temeljna analiza se piše kad fotografije stignu.",
+  "en": "The second association visit, on Friday 23 October 2026, the same day as the fourth class. Seventeen students took their prototypes to the association and there developed, documented and tested them with users. Sixteen names on this list also stand in the fourth-class list of works; one does not — that is the eighteenth recorded attendance of the day, without a filed work. The photographs from the association have not yet been transferred from the phone, so this record carries the list and what is known, without per-work findings; the full analysis is written when the photographs arrive."
+ },
+ "photos": []
+}

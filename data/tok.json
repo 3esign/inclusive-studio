@@ -151,6 +151,91 @@
     }
    ],
    "izvor": "Nastavnik predmeta, 18.10.2026. (spisak radova trećeg časa i potvrda prvog talasa); data/material/w03.json — Zapisano posle časa."
+  },
+  {
+   "id": "cas-w04",
+   "vrsta": "cas",
+   "nedelja": 4,
+   "naslov": {
+    "sr": "Prototip u rukama korisnika — četvrti čas",
+    "en": "The prototype in the users’ hands — fourth class"
+   },
+   "odrzan": "2026-10-23",
+   "rezultati": [
+    {
+     "sta": {
+      "sr": "Rad na prototipovima je nastavljen: razrada, dokumentovanje i testiranje. Zavedeno je 27 prisustava, redom vođenja spiska; 21 rad je fotografisan, ukupno 87 fotografija. Spisak stoji na zasebnoj strani.",
+      "en": "The prototype work continued: development, documentation and testing. Twenty-seven attendances were recorded, in the order the list was kept; 21 works were photographed, 87 photographs in all. The list stands on its own page."
+     },
+     "izvor": "Nastavnik predmeta, 23.10.2026.; data/cas-04/spisak.json — izvor teacher-2026-10-23-cas-04; cas-04.html."
+    },
+    {
+     "sta": {
+      "sr": "Posle rada na prototipovima otišli smo u udruženje: prototipi su tamo dalje razrađivani, dokumentovani i testirani sa korisnicima. Fotografije iz udruženja idu u istom nizu, posle fotografija prototipa.",
+      "en": "After the prototype work we went to the association: there the prototypes were developed further, documented and tested with users. The photographs from the association follow in the same sequence, after the prototype photographs."
+     },
+     "izvor": "Nastavnik predmeta, 23.10.2026.; data/cas-04/spisak.json — izvor teacher-2026-10-23-cas-04; cas-04.html."
+    },
+    {
+     "sta": {
+      "sr": "Šest zapisa nosi prisustvo bez fotografija i nije izostavljeno iz evidencije: stoje u delu „Šta se čeka”, sa onim što je za svaki najavljeno — prototip sledeće nedelje, novi prototip, ili rad još u fazi istraživanja.",
+      "en": "Six entries carry attendance without photographs and are not left out of the record: they stand in the „What we wait for” part, each with what it announced — a prototype next week, a new prototype, or work still at the research stage."
+     },
+     "izvor": "Nastavnik predmeta, 23.10.2026.; data/cas-04/spisak.json — izvor teacher-2026-10-23-cas-04; cas-04.html."
+    },
+    {
+     "sta": {
+      "sr": "Zavedene su tri ispravke ranijih zapisa trećeg časa: pripisivanje rada „putanja”, fotografija pogrešno zavedena pod „brza putanja” i fotografija koja je stajala uz „2d lavirint”. Ispravke ne brišu raniji zapis — upisane su uz njega, sa izvorom i datumom, a pogođene fotografije stoje povučene iz galerije dok se ne razdvoje.",
+      "en": "Three corrections to earlier third-class records were filed: the attribution of „putanja”, the photograph wrongly filed under „brza putanja”, and the photograph that stood beside „2d lavirint”. A correction never erases the earlier record — it is written beside it, with its source and date, and the affected photographs stay withdrawn from the gallery until they are separated."
+     },
+     "izvor": "Nastavnik predmeta, 23.10.2026.; data/cas-04/spisak.json — izvor teacher-2026-10-23-cas-04; cas-04.html."
+    },
+    {
+     "sta": {
+      "sr": "Dva naziva rada su zavedena kao preimenovanja: „Brojkice” umesto ranijeg „sudoku” i „taktilna kutija” za rad kome naziv nije bio zabeležen na trećem času.",
+      "en": "Two work titles were filed as renamings: „Brojkice” replacing the earlier „sudoku”, and „taktilna kutija” for the work whose title was not recorded at the third class."
+     },
+     "izvor": "Nastavnik predmeta, 23.10.2026.; data/cas-04/spisak.json — izvor teacher-2026-10-23-cas-04; cas-04.html."
+    },
+    {
+     "sta": {
+      "sr": "Fotografije su na telefonu nastavnika (Galaxy S23 FE, /Internal storage/DCIM/Camera); niz počinje snimkom 20261023_112141.jpg. Nisu prenete: strana spiska i registar radova ih čekaju, pa se unos dopunjuje.",
+      "en": "The photographs are on the teacher’s phone (Galaxy S23 FE, /Internal storage/DCIM/Camera); the sequence begins with 20261023_112141.jpg. They have not been transferred: the list page and the work register wait for them, and the entries are completed then."
+     },
+     "izvor": "Nastavnik predmeta, 23.10.2026.: „slike su na telefonu”; data/cas-04/spisak.json — prijem."
+    },
+    {
+     "sta": {
+      "sr": "Poseta udruženju je zavedena kao zaseban registar istog dana: sedamnaest studenata, redom kojim ih je nastavnik zapisao. Šesnaest imena stoji i u spisku radova; jedno ne stoji — to je osamnaesto zavedeno prisustvo tog dana, bez zavedenog rada.",
+      "en": "The association visit is filed as its own register of the same day: seventeen students, in the order the teacher wrote them. Sixteen names also stand in the list of works; one does not — that is the eighteenth recorded attendance of the day, without a filed work."
+     },
+     "izvor": "Nastavnik predmeta, 23.10.2026. (dopuna uz spisak četvrtog časa); data/poseta-2026-10-23.json; data/cas-04/spisak.json."
+    },
+    {
+     "sta": {
+      "sr": "Pet pitanja koja su stajala otvorena zatvorena su istog dana: naziv rada zapisa 4, broj indeksa zapisa 8, godišta van generacije 2024, „starlight 6 + 3” kao dva rada istog autora i autorstvo rada „kubismo”. Naziv „brza putanja” uslovno je pripisan imenu zapisa 20 trećeg časa i i dalje čeka potvrdu studentkinje.",
+      "en": "Five questions that stood open were closed the same day: the title of entry 4, the student number of entry 8, the years outside the 2024 cohort, „starlight 6 + 3” as two works by the same author, and the authorship of „kubismo”. The title „brza putanja” is provisionally attributed to the name in entry 20 of the third class and still awaits the student’s confirmation."
+     },
+     "izvor": "Nastavnik predmeta, 23.10.2026. (dopuna uz spisak četvrtog časa); data/poseta-2026-10-23.json; data/cas-04/spisak.json."
+    },
+    {
+     "sta": {
+      "sr": "Zapisano kao granica evidencije: prisustvo na predavanju do sada nije vođeno. Spiskovi časova zavode one koji su se pojavili u spisku radova i na poseti — ko je bio na času a nije zaveden, iz njih se ne vidi.",
+      "en": "Recorded as a limit of the record: attendance at the lecture has not been kept so far. The class lists record those who appeared in the list of works and on the visit — whoever was in class without being recorded is not visible in them."
+     },
+     "izvor": "Nastavnik predmeta, 23.10.2026.: „evidenciju prisustva na samom predavanju do sad nisam vodio”."
+    }
+   ],
+   "prilog": [
+    {
+     "href": "cas-04.html",
+     "text": {
+      "sr": "Spisak radova četvrtog časa — 27 zavedenih prisustava, 21 fotografisan rad, deo „Šta se čeka” i ispravke ranijih zapisa",
+      "en": "The list of the fourth class — 27 recorded attendances, 21 photographed works, the „What we wait for” part and the corrections to earlier records"
+     }
+    }
+   ],
+   "izvor": "Nastavnik predmeta, 23.10.2026. (spisak radova četvrtog časa, ispravke ranijih zapisa i put do fotografija); data/material/w04.json — Zapisano posle časa."
   }
  ],
  "sledeci": [],

@@ -23,8 +23,9 @@ test('pun registar se ne servira — samo javni izvod', () => {
 });
 
 test('fotografije radova sa nepotvrdenom atribucijom se ne serviraju', () => {
+  // 23.10.2026: posle razdvajanja fotografija nijedan rad nije pending. Pravilo ostaje
+  // provereno i prazno: cim se neki rad vrati u pending, njegov folder mora u exclude.
   const pending = registry.items.filter((i) => i.attributionStatus === 'pending');
-  assert.ok(pending.length > 0, 'test ocekuje bar jedan pending rad u registru');
   for (const item of pending) {
     for (const photo of item.photos || []) {
       const dir = photo.src.split('/').slice(0, -1).join('/');

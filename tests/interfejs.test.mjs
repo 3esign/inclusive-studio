@@ -11,8 +11,19 @@ import { readFile, readdir } from 'node:fs/promises';
 
 const root = new URL('../', import.meta.url);
 const registry = JSON.parse(await readFile(new URL('data/prototipovi.json', root), 'utf8'));
-const visit = JSON.parse(await readFile(new URL('data/poseta.json', root), 'utf8'));
-const cas03 = JSON.parse(await readFile(new URL('data/cas-03/spisak.json', root), 'utf8'));
+// Each visit has its own register; the roster may stand only where that register is named.
+const VISITS = ['data/poseta.json', 'data/poseta-2026-10-23.json'];
+const visitByFile = {};
+for (const file of VISITS) visitByFile[file] = JSON.parse(await readFile(new URL(file, root), 'utf8'));
+const visits = Object.values(visitByFile);
+const visit = visitByFile['data/poseta.json'];
+// Every class list is gated the same way: the page names its register, the register is
+// the only place a student's name may stand, and the row markup must match it exactly.
+const CLASS_LISTS = { 'cas-03.html': 'data/cas-03/spisak.json', 'cas-04.html': 'data/cas-04/spisak.json' };
+const classLists = {};
+for (const [page, file] of Object.entries(CLASS_LISTS)) classLists[page] = { file, data: JSON.parse(await readFile(new URL(file, root), 'utf8')) };
+const listByFile = Object.fromEntries(Object.values(classLists).map(entry => [entry.file, entry.data]));
+const cas03 = classLists['cas-03.html'].data;
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 function attributionRows(data) {
@@ -64,8 +75,8 @@ function cas03Rows(data) {
 
 function withoutAuthorizedAttribution(file, text, data) {
   attributionRows(data);
-  if (file === 'data/poseta.json') {
-    visitRows(visit);
+  if (visitByFile[file]) {
+    visitRows(visitByFile[file]);
     const copy = JSON.parse(text);
     visitRows(copy);
     copy.participants = copy.participants.map(() => ({ name: '[visit-participant]', studentNumber: '[visit-number]' }));
@@ -76,8 +87,8 @@ function withoutAuthorizedAttribution(file, text, data) {
     for (const row of attributionRows(copy)) row.author = { name: '[attributed-author]', ...(Object.hasOwn(row.author, 'studentNumber') ? { studentNumber: '[attributed-number]' } : {}) };
     return JSON.stringify(copy);
   }
-  if (file === 'data/cas-03/spisak.json') {
-    cas03Rows(cas03);
+  if (listByFile[file]) {
+    cas03Rows(listByFile[file]);
     const copy = JSON.parse(text);
     cas03Rows(copy);
     copy.radovi = copy.radovi.map(() => ({ ime: '[cas03-name]', indeks: '[cas03-number]' }));
@@ -94,14 +105,16 @@ function withoutAuthorizedAttribution(file, text, data) {
     assert.equal(inner.trim().replace(/>\s+</g, '><'), expected, 'gallery attribution must match the exact authorized fields');
     return '<p>[attributed-author-fields]</p>';
   }).replace(/<ul\b[^>]*\bdata-visit-participants="([^"]+)"[^>]*>([\s\S]*?)<\/ul>/g, (whole, id, inner) => {
-    assert.ok(['index.html', 'poseta.html'].includes(file), 'only the held page and the visit page publish participants');
-    assert.equal(id, visit.id, 'participant list must name the recorded visit');
-    const expected = visit.participants.map(person => `<li><span data-participant-name>${escape(person.name)}</span><span data-participant-number>${escape(person.studentNumber)}</span></li>`).join('');
+    const named = visits.find(record => record.id === id);
+    assert.ok(named, 'participant list must name a recorded visit');
+    const onClassPage = classLists[file] && classLists[file].data.posetaRegistar && visitByFile[classLists[file].data.posetaRegistar] === named;
+    assert.ok(['index.html', 'poseta.html'].includes(file) || onClassPage, 'participants stand on the held page, the visit page, or the class page whose register names that visit');
+    const expected = named.participants.map(person => `<li><span data-participant-name>${escape(person.name)}</span><span data-participant-number>${escape(person.studentNumber)}</span></li>`).join('');
     assert.equal(inner.trim(), expected, 'participant list must match the exact authorized fields');
     return '<ul>[visit-participant-fields]</ul>';
   }).replace(/<li\b[^>]*\bdata-cas03-row="(\d+)"[^>]*>([\s\S]*?)<\/li>/g, (whole, rb, inner) => {
-    assert.equal(file, 'cas-03.html', 'only the class-list page publishes the third-class rows');
-    const row = cas03.radovi.find(item => item.rb === Number(rb));
+    assert.ok(classLists[file], 'only a class-list page publishes class rows');
+    const row = classLists[file].data.radovi.find(item => item.rb === Number(rb));
     assert.ok(row, 'class-list row must match a recorded entry');
     const expected = `<span data-cas03-name>${escape(row.ime || '—')}</span><span data-cas03-indeks>${escape(row.indeks || '—')}</span>`;
     assert.ok(inner.startsWith(expected), 'class-list row must open with the exact authorized fields');
@@ -150,7 +163,7 @@ test('known private identities and attributed author data occur only in their ex
     for (const row of authors) for (const value of Object.values(row.author)) {
       for (const form of [value, escape(value)]) assert.ok(!text.includes(form), `${path} repeats attributed data outside its authorized field`);
     }
-    for (const person of visitRows(visit)) for (const value of Object.values(person)) {
+    for (const person of visits.flatMap(visitRows)) for (const value of Object.values(person)) {
       for (const form of [value, escape(value)]) assert.ok(!text.includes(form), `${path} repeats participant data outside its authorized field`);
     }
   }
@@ -198,13 +211,20 @@ test('the interface waits on no consent', async () => {
   }
 });
 
-test('the visit exception is bounded to its two surfaces, its visit and its exact markup', () => {
+test('the visit exception is bounded to its named surfaces, its visit and its exact markup', () => {
   const li = p => `<li><span data-participant-name>${escape(p.name)}</span><span data-participant-number>${escape(p.studentNumber)}</span></li>`;
   const list = `<ul class="visit-participants" data-visit-participants="${visit.id}">${visit.participants.map(li).join('')}</ul>`;
   const truncated = `<ul class="visit-participants" data-visit-participants="${visit.id}">${visit.participants.slice(0, 2).map(li).join('')}</ul>`;
   assert.doesNotThrow(() => withoutAuthorizedAttribution('index.html', list, registry));
   assert.doesNotThrow(() => withoutAuthorizedAttribution('poseta.html', list, registry));
-  assert.throws(() => withoutAuthorizedAttribution('udruzenje.html', list, registry), /held page and the visit page/);
+  assert.throws(() => withoutAuthorizedAttribution('udruzenje.html', list, registry), /class page whose register names that visit/);
+  // A class page carries only the roster of the visit its own register names.
+  const second = visitByFile['data/poseta-2026-10-23.json'];
+  const secondList = `<ul class="visit-participants" data-visit-participants="${second.id}">${second.participants.map(li).join('')}</ul>`;
+  assert.doesNotThrow(() => withoutAuthorizedAttribution('cas-04.html', secondList, registry));
+  assert.throws(() => withoutAuthorizedAttribution('cas-03.html', secondList, registry), /class page whose register names that visit/);
+  assert.throws(() => withoutAuthorizedAttribution('cas-04.html', list, registry), /class page whose register names that visit/);
+  assert.throws(() => withoutAuthorizedAttribution('index.html', list.replace(visit.id, 'poseta-koja-ne-postoji'), registry), /must name a recorded visit/);
   assert.throws(() => withoutAuthorizedAttribution('index.html', truncated, registry), /exact authorized/);
   assert.throws(() => withoutAuthorizedAttribution('index.html', list.replace('data-participant-name', 'data-participant-full-name'), registry), /exact authorized/);
   const extra = structuredClone(visit); extra.participants[0].studentNumber = extra.participants[0].studentNumber + 'x';

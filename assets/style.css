@@ -917,9 +917,12 @@ body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width
 .visit-space li{padding:1rem 0 1rem 2rem}
 
 /* cas-03: spisak radova trećeg časa — shooting order, one row per work */
-.cas03-rows{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line);counter-reset:rb}
-.cas03-rows li{margin:0;padding:.85rem 1rem;background:var(--paper);display:flex;flex-wrap:wrap;gap:.35rem .7rem;align-items:baseline;counter-increment:rb}
-.cas03-rows li::before{content:counter(rb);font-size:.78rem;font-variant-numeric:tabular-nums;color:var(--muted);min-width:2.1rem}
+.cas03-rows{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.cas03-rows li{margin:0;padding:.85rem 1rem;background:var(--paper);display:flex;flex-wrap:wrap;gap:.35rem .7rem;align-items:baseline}
+/* 23.10.2026: the row number is the register's rb, not a counter. A list that shows only
+   part of the class (the photographed rows, or the ones waiting) must keep the real
+   numbers, so a student finds the same number here and in the teacher's list. */
+.cas03-rows li::before{content:attr(data-cas03-row);font-size:.78rem;font-variant-numeric:tabular-nums;color:var(--muted);min-width:2.1rem}
 .cas03-rows li.cas03-neizvesno{background:var(--wash)}
 .cas03-rows [data-cas03-name]{font-weight:600}
 .cas03-rows [data-cas03-indeks]{color:var(--muted);font-size:.85rem;font-variant-numeric:tabular-nums}
@@ -929,4 +932,7 @@ body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width
 .cas03-wave,.cas03-ask{font-size:.85rem;white-space:nowrap}
 .cas03-note{flex-basis:100%;font-size:.85rem;color:var(--muted);line-height:1.5}
 .cas03-missing{font-style:italic;color:var(--muted)}
+.cas03-bez{font-size:.85rem;color:var(--muted)}
+.cas03-cekamo li{background:var(--wash)}
+.cas03-ispravke li+li{margin-top:.65rem}
 .cas03-questions li+li{margin-top:.65rem}

@@ -3,97 +3,145 @@
   "version": 1,
   "updated": "2026-10-02",
   "current": 2,
-  "note": { "en": "Add a week by writing data/material/wNN.json and listing it here. The site shows published weeks; drafts stay visible only with ?draft=1.", "sr": "Nedelja se dodaje fajlom data/material/wNN.json i redom u ovoj listi. Sajt prikazuje objavljene nedelje; nacrti se vide samo uz ?draft=1." },
+  "note": {
+    "en": "Add a week by writing data/material/wNN.json and listing it here. The site shows published weeks; drafts stay visible only with ?draft=1.",
+    "sr": "Nedelja se dodaje fajlom data/material/wNN.json i redom u ovoj listi. Sajt prikazuje objavljene nedelje; nacrti se vide samo uz ?draft=1."
+  },
   "weeks": [
     {
       "n": 1,
       "file": "w01.json",
       "state": "published",
-      "title": { "en": "A toy that teaches space", "sr": "Igračka koja uči prostor" }
+      "title": {
+        "en": "A toy that teaches space",
+        "sr": "Igračka koja uči prostor"
+      }
     },
     {
       "n": 2,
       "file": "w02.json",
       "state": "published",
-      "title": { "en": "The prototype on the table", "sr": "Prototip na stolu" }
+      "title": {
+        "en": "The prototype on the table",
+        "sr": "Prototip na stolu"
+      }
     },
     {
       "n": 3,
       "file": "w03.json",
       "state": "published",
-      "title": { "en": "The hand that holds it", "sr": "Ruka koja drži" }
+      "title": {
+        "en": "The hand that holds it",
+        "sr": "Ruka koja drži"
+      }
     },
     {
       "n": 4,
       "file": "w04.json",
-      "state": "draft",
-      "title": { "en": "The Rulebook against your own drawing", "sr": "Pravilnik naspram tvog crteža" }
+      "state": "published",
+      "title": {
+        "en": "The prototype in the users’ hands",
+        "sr": "Prototip u rukama korisnika"
+      }
     },
     {
       "n": 5,
       "file": "w05.json",
       "state": "draft",
-      "title": { "en": "Where regulation ends", "sr": "Gde propis prestaje" }
+      "title": {
+        "en": "Where regulation ends",
+        "sr": "Gde propis prestaje"
+      }
     },
     {
       "n": 6,
       "file": "w06.json",
       "state": "draft",
-      "title": { "en": "The obstacle record on site", "sr": "Popis prepreka na terenu" }
+      "title": {
+        "en": "The obstacle record on site",
+        "sr": "Popis prepreka na terenu"
+      }
     },
     {
       "n": 7,
       "file": "w07.json",
       "state": "draft",
-      "title": { "en": "The slope map from 151 points", "sr": "Mapa nagiba iz 151 tačke" }
+      "title": {
+        "en": "The slope map from 151 points",
+        "sr": "Mapa nagiba iz 151 tačke"
+      }
     },
     {
       "n": 8,
       "file": "w08.json",
       "state": "draft",
-      "title": { "en": "The access matrix and public space", "sr": "Matrica pristupa i javni prostor" }
+      "title": {
+        "en": "The access matrix and public space",
+        "sr": "Matrica pristupa i javni prostor"
+      }
     },
     {
       "n": 9,
       "file": "w09.json",
       "state": "draft",
-      "title": { "en": "Sensory load and children's spaces", "sr": "Senzorno opterećenje i prostori za decu" }
+      "title": {
+        "en": "Sensory load and children's spaces",
+        "sr": "Senzorno opterećenje i prostori za decu"
+      }
     },
     {
       "n": 10,
       "file": "w10.json",
       "state": "draft",
-      "title": { "en": "The walkthrough that changes the drawing", "sr": "Participativna provera koja menja crtež" }
+      "title": {
+        "en": "The walkthrough that changes the drawing",
+        "sr": "Participativna provera koja menja crtež"
+      }
     },
     {
       "n": 11,
       "file": "w11.json",
       "state": "draft",
-      "title": { "en": "Three ways up the hill", "sr": "Tri načina da se savlada padina" }
+      "title": {
+        "en": "Three ways up the hill",
+        "sr": "Tri načina da se savlada padina"
+      }
     },
     {
       "n": 12,
       "file": "w12.json",
       "state": "draft",
-      "title": { "en": "Find the way without seeing the sign", "sr": "Nađi put bez gledanja u znak" }
+      "title": {
+        "en": "Find the way without seeing the sign",
+        "sr": "Nađi put bez gledanja u znak"
+      }
     },
     {
       "n": 13,
       "file": "w13.json",
       "state": "draft",
-      "title": { "en": "The detail that carries the project", "sr": "Detalj koji nosi projekat" }
+      "title": {
+        "en": "The detail that carries the project",
+        "sr": "Detalj koji nosi projekat"
+      }
     },
     {
       "n": 14,
       "file": "w14.json",
       "state": "draft",
-      "title": { "en": "Audit another project and measure finished buildings", "sr": "Oceni tuđi projekat i izmeri gotovu zgradu" }
+      "title": {
+        "en": "Audit another project and measure finished buildings",
+        "sr": "Oceni tuđi projekat i izmeri gotovu zgradu"
+      }
     },
     {
       "n": 15,
       "file": "w15.json",
       "state": "draft",
-      "title": { "en": "Accessible handover and AI claim check", "sr": "Pristupačna predaja i provera AI tvrdnji" }
+      "title": {
+        "en": "Accessible handover and AI claim check",
+        "sr": "Pristupačna predaja i provera AI tvrdnji"
+      }
     }
   ]
 }

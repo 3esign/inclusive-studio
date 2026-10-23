@@ -43,11 +43,12 @@ export function heldIntro() {
     <p class="lede">${tr('Lesson material, photographs and recorded outcomes.', 'Gradivo, fotografije i zabeleženi ishodi održanih časova.')}</p></div>`;
 }
 
-// The course order is the reading order: the oldest held class opens, the newest closes —
-// the landing is a chronological record, never a newest-first feed. Each record carries
+// 23.10.2026 (nastavnik predmeta): the newest held class opens the landing. The record
+// stays chronological, only read from the near end — a student arriving after a class
+// finds that class first, not after scrolling the whole semester. Each record carries
 // what belongs to its own week: the association visit of that week and that week's works.
 export function heldSection(tok, weeks, extras = {}) {
-  const items = [...tok.odrzano].sort((a, b) => String(a.odrzan).localeCompare(String(b.odrzan)));
+  const items = [...tok.odrzano].sort((a, b) => String(b.odrzan).localeCompare(String(a.odrzan)));
   const visit = extras.visit && !validateVisit(extras.visit).length ? extras.visit : null;
   const prototypes = extras.prototypes && !validatePrototypes(extras.prototypes).length ? extras.prototypes : null;
   const record = (item, i) => {

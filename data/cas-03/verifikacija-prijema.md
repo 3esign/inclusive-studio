@@ -12,7 +12,7 @@ u `slike/` (86 po radima + 23 u `poseta-udruzenje/`), nezavisno povučenih na PC
 
 - **109/109 heševa identično** — svaki lokalni fajl je bajt-veran original sa telefona.
 - **0 duplikata** u heš-skupu — nijedna fotografija nije dodeljena dvaput.
-- **86 = zbir po `spisak.json`** — svi redovi osim rb 20 (Aleksa Vesić, 0 po spisku).
+- **86 = zbir po `spisak.json`** — svi redovi osim rb 20 (bez fotografija po spisku; ime se vodi samo u registru).
 - **Hronologija bez rupa i preklapanja:** rb1 08:46 → rb2 do 11:03 → rb3–rb29
   12:22–13:28 → `poseta-udruzenje/` 13:29–14:06. Redosled slikanja monoton kroz ceo niz.
 - `prihvat.json`: 86 slika čita dimenzije, 0 nečitljivih. `predlog-registra.json`: 28 stavki.

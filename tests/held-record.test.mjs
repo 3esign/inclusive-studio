@@ -33,24 +33,25 @@ test('the held landing retains each lesson photograph, caption and result in sta
   assert.ok(page.includes(heldSection(tok, weeks, { visit, prototypes })), 'static class records are stale: run tools/held-baseline.mjs');
 });
 
-test('the landing is chronological: each visit and each work strip stands inside its own week', async () => {
+test('the landing opens with the newest class: each visit and each work strip stands inside its own week', async () => {
   setLanguage('sr');
   const page = await readFile(new URL('index.html', root), 'utf8');
   const lead = renderVisitLead(visit, prototypes);
   assert.ok(page.includes(lead), 'stale visit lead: run tools/held-baseline.mjs');
-  // Course order (teacher's instruction of 19.10.2026): the oldest class opens the page.
+  // Course order (teacher's instruction of 23.10.2026, replacing the one of 19.10.2026):
+  // the newest held class opens the page; the record below it stays chronological.
   const weekMarks = [...page.matchAll(/Nedelja (\d+)<\/p>/g)].map(match => Number(match[1]));
-  assert.deepEqual(weekMarks, [...tok.odrzano].sort((a, b) => a.nedelja - b.nedelja).map(item => item.nedelja), 'records must read oldest first');
-  // The visit belongs to its week: after the week-2 record, before the week-3 record.
+  assert.deepEqual(weekMarks, [...tok.odrzano].sort((a, b) => b.nedelja - a.nedelja).map(item => item.nedelja), 'records must read newest first');
+  // The visit belongs to its week: still inside week two, which now stands below week three.
   const leadPos = page.indexOf('field-visit visit-lead');
   const w2Pos = page.indexOf('Nedelja 2</p>');
   const w3Pos = page.indexOf('Nedelja 3</p>');
-  assert.ok(w2Pos >= 0 && leadPos > w2Pos && w3Pos > leadPos, 'the visit lead must stand inside the week of the visit');
+  assert.ok(w2Pos >= 0 && leadPos > w2Pos && w3Pos < w2Pos, 'the visit lead must stand inside the week of the visit');
   // No mixed strip above the records: the first teaser on the page is week 2's.
   assert.ok(!page.includes('<!-- prototype-teaser:start -->'), 'the standalone mixed teaser is withdrawn from the landing');
-  assert.ok(page.indexOf('prototype-teaser-title-w2') > w2Pos && page.indexOf('prototype-teaser-title-w2') < w3Pos, 'earlier work strip stays inside week two');
+  assert.ok(page.indexOf('prototype-teaser-title-w2') > w2Pos, 'earlier work strip stays inside week two');
   // 19.10.2026: the third-class works are published, so their strip stands inside week three.
-  assert.ok(page.indexOf('prototype-teaser-title-w3') > w3Pos, 'the week-3 work strip must stand inside week three');
+  assert.ok(page.indexOf('prototype-teaser-title-w3') > w3Pos && page.indexOf('prototype-teaser-title-w3') < w2Pos, 'the week-3 work strip must stand inside week three');
   for (const person of visit.participants) {
     assert.equal(page.split(esc(person.name)).length - 1, 1, person.name + ' must appear exactly once on the held page');
   }
@@ -76,14 +77,14 @@ test('the image reading path translates descriptions and retains provenance with
   setLanguage('sr');
 });
 
-test('oldest held date opens the reading path; a malformed image cannot become an executable link', () => {
+test('newest held date opens the reading path; a malformed image cannot become an executable link', () => {
   setLanguage('sr');
   const record = (n, date) => Object.freeze({ nedelja: n, naslov: { sr: `Čas ${n}` }, odrzan: date, rezultati: [], izvor: 'zapis' });
   const old = record(1, '2026-10-02');
   const records = Object.freeze([record(2, '2026-10-09'), record(10, '2026-12-04'), old, record(3, '2026-10-16')]);
   const before = JSON.stringify(records);
   const html = heldSection({ odrzano: records }, new Map());
-  assert.deepEqual([...html.matchAll(/<h3>Čas (\d+)<\/h3>/g)].map(match => Number(match[1])), [1, 2, 3, 10]);
+  assert.deepEqual([...html.matchAll(/<h3>Čas (\d+)<\/h3>/g)].map(match => Number(match[1])), [10, 3, 2, 1]);
   assert.equal(JSON.stringify(records), before, 'display order must not rewrite the original course record');
   assert.deepEqual(lessonImages({ blocks: [
     { kind: 'image', src: 'javascript:alert(1)' },

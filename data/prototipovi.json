@@ -96,6 +96,38 @@
     "sr": "Nastavnikov spisak radova snimljenih na trećem času (16.10.2026), zapisivan redom slikanja. Broj uz svaki zapis je broj fotografija u nizu: niz počinje kutijom odnosno slikom sa diplomskih, a završava se slikom iz okruženja u kome korisnica proba prototip. Potvrda od 18.10.2026: Muzička kutija, Zmijica, Sudoku i Doljanovićev „Castle” već su u prvom talasu prototipa. Nastavnik je siguran u redosled do zapisa 16 (obojilica) uključno i od zapisa 21 (vijugava staza) uključno do kraja; zapisi 17–20 čeka se potvrda studenata.",
     "en": "The teacher's list of works photographed at the third class (16 October 2026), recorded in shooting order. The number beside each entry is the count of photographs in the sequence: the sequence starts with the box and the degree photographs and ends with the picture of the environment in which a user tries the prototype. Confirmation of 18 October 2026: Muzička kutija, Zmijica, Sudoku and Doljanović's „Castle” already belong to the first wave of prototypes. The teacher is certain of the order up to entry 16 (obojilica) inclusive and from entry 21 (vijugava staza) inclusive to the end; entries 17–20 await the students' confirmation."
    }
+  },
+  {
+   "id": "teacher-2026-10-23-cas-04",
+   "recordedOn": "2026-10-23",
+   "description": {
+    "sr": "Nastavnikov zapis četvrtog časa (23.10.2026) sa tri ispravke zapisa trećeg časa: pripisivanje rada „putanja”, fotografija pogrešno zavedena pod „brza putanja” i fotografija koja je stajala uz „2d lavirint”.",
+    "en": "The teacher’s record of the fourth class (23 October 2026) with three corrections to third-class records: the attribution of „putanja”, the photograph wrongly filed under „brza putanja”, and the photograph that stood beside „2d lavirint”."
+   }
+  },
+  {
+   "id": "teacher-2026-10-23-foto-razdvajanje",
+   "recordedOn": "2026-10-23",
+   "description": {
+    "sr": "Drugi zapis nastavnika od 23.10.2026, po gledanju sve tri sporne fotografije: pod zapisima 17–19 trećeg časa fotografije pripadaju imenu iz sledećeg reda spiska. „Putanja” je rad autorke zapisa 18, fotografija pod „brza putanja” je „3d lavirint” autorke zapisa 19, a fotografija uz „2d lavirint” je rad autora zapisa 20. Ime iz zapisa 17 ostaje bez zavedenog rada.",
+    "en": "The teacher’s second record of 23 October 2026, after looking at all three disputed photographs: under entries 17–19 of the third class the photographs belong to the name in the next row of the list. „Putanja” is the work of entry 18’s author, the photograph under „brza putanja” is „3d lavirint” by entry 19’s author, and the photograph beside „2d lavirint” is the work of entry 20’s author. The name in entry 17 stays without a filed work."
+   }
+  },
+  {
+   "id": "teacher-2026-10-23-vasic-mijanovic",
+   "recordedOn": "2026-10-23",
+   "description": {
+    "sr": "Treći zapis nastavnika od 23.10.2026: prezime autora zapisa 19 spiska trećeg časa je „Vasić”; broj indeksa ostaje kako je zapisan 18.10. i čeka potvrdu. Broj indeksa zapisa 27 četvrtog časa ispravljen je — godište je 2024.",
+    "en": "The teacher’s third record of 23 October 2026: the surname of entry 19’s author in the third-class list is „Vasić”; the student number stands as recorded on 18 October and awaits confirmation. The student number of entry 27 of the fourth class was corrected — the year is 2024."
+   }
+  },
+  {
+   "id": "teacher-2026-10-23-dopuna",
+   "recordedOn": "2026-10-23",
+   "description": {
+    "sr": "Četvrti zapis nastavnika od 23.10.2026: rad autorke zapisa 4 četvrtog časa zove se „putanja”; naziv „brza putanja” uslovno pripada imenu zapisa 20 trećeg časa i čeka potvrdu; „3d lavirint” i „2d lavirint” potvrđeni su autorima kod kojih stoje. Broj indeksa autorke „3d lavirinta” vraća se na onaj zapisan 18.10, jer razlika nije bila prijavljena kao greška. Godište van generacije 2024 nije greška — ima studenata koji nisu položili godinu. „starlight 6 + 3” su dva rada istog autora. Evidencija prisustva na predavanju do sada nije vođena.",
+    "en": "The teacher’s fourth record of 23 October 2026: the work of entry 4 of the fourth class is titled „putanja”; the title „brza putanja” provisionally belongs to the name in entry 20 of the third class and awaits confirmation; „3d lavirint” and „2d lavirint” are confirmed with the authors they stand beside. The student number of the author of „3d lavirint” returns to the one recorded on 18 October, because the difference was not reported as an error. A year outside the 2024 cohort is not an error — some students have not passed the year. „starlight 6 + 3” are two works by the same author. Attendance at the lecture has not been kept so far."
+   }
   }
  ],
  "items": [
@@ -692,8 +724,8 @@
    },
    "sourceId": "teacher-2026-10-16-cas-03",
    "description": {
-    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
-    "en": "Prototype from the third class (2026-10-16), teacher's record."
+    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika. Nastavnik je 23.10.2026. potvrdio da je isti autor doneo dva prototipa: „hansgadget” i „starlight”. Niz od devet fotografija deli se na dva rada; razdvajanje čeka prenos fotografija.",
+    "en": "Prototype from the third class (2026-10-16), the teacher’s record. On 23 October 2026 the teacher confirmed that the same author brought two prototypes: „hansgadget” and „starlight”. The sequence of nine photographs splits between two works; the separation waits for the photographs to be transferred."
    },
    "photos": [
     {
@@ -1288,11 +1320,11 @@
    "status": "documented",
    "documentedWeek": 3,
    "author": {
-    "name": "Lukić Miljana",
-    "studentNumber": "58/24"
+    "name": "Katarina Petrović",
+    "studentNumber": "79/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-23-foto-razdvajanje",
     "fields": [
      "name",
      "studentNumber"
@@ -1300,8 +1332,8 @@
    },
    "sourceId": "teacher-2026-10-16-cas-03",
    "description": {
-    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika; atribucija čeka potvrdu studenta.",
-    "en": "Prototype from the third class (2026-10-16), teacher's record; attribution pending student confirmation."
+    "sr": "Prototip sa trećeg časa (16.10.2026). Autorstvo ispravljeno i potvrđeno 23.10.2026. po nastavnikovom zapisu i gledanju fotografija.",
+    "en": "Prototype from the third class (2026-10-16). Authorship corrected and confirmed on 23 October 2026 by the teacher’s record and by looking at the photographs."
    },
    "photos": [
     {
@@ -1368,23 +1400,22 @@
      },
      "sourceId": "teacher-2026-10-16-cas-03"
     }
-   ],
-   "attributionStatus": "pending"
+   ]
   },
   {
    "id": "18-brza-putanja",
-   "title": "brza putanja",
+   "title": "3d lavirint",
    "kind": "prototype",
    "authorRole": "student",
    "medium": "physical",
    "status": "documented",
    "documentedWeek": 3,
    "author": {
-    "name": "Katarina Petrović",
-    "studentNumber": "79/24"
+    "name": "Sanja Hornjaček",
+    "studentNumber": "84/24"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-23-dopuna",
     "fields": [
      "name",
      "studentNumber"
@@ -1392,8 +1423,8 @@
    },
    "sourceId": "teacher-2026-10-16-cas-03",
    "description": {
-    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika; atribucija čeka potvrdu studenta.",
-    "en": "Prototype from the third class (2026-10-16), teacher's record; attribution pending student confirmation."
+    "sr": "Prototip sa trećeg časa (16.10.2026). Rad je 23.10.2026. zaveden pod tačnim nazivom „3d lavirint”; ranije je stajao kao „brza putanja” sa pogrešnim autorstvom. Autorstvo i broj indeksa potvrđeni su istog dana. Putanje fotografija zadržavaju stari naziv foldera da otisci ostanu proverivi.",
+    "en": "Prototype from the third class (2026-10-16). On 23 October 2026 the work was filed under its correct title „3d lavirint”; it earlier stood as „brza putanja” with the wrong authorship. The authorship and the student number were confirmed the same day. The photograph paths keep the old folder name so the fingerprints stay verifiable."
    },
    "photos": [
     {
@@ -1403,8 +1434,8 @@
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Fotografija prototipa „brza putanja”",
-      "en": "Photograph of the “brza putanja” prototype"
+      "sr": "Fotografija prototipa „3d lavirint”",
+      "en": "Photograph of the “3d lavirint” prototype"
      },
      "caption": {
       "sr": "Red 2 u nizu slikanja.",
@@ -1419,8 +1450,8 @@
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Fotografija prototipa „brza putanja”",
-      "en": "Photograph of the “brza putanja” prototype"
+      "sr": "Fotografija prototipa „3d lavirint”",
+      "en": "Photograph of the “3d lavirint” prototype"
      },
      "caption": {
       "sr": "Red 3 u nizu slikanja.",
@@ -1428,8 +1459,7 @@
      },
      "sourceId": "teacher-2026-10-16-cas-03"
     }
-   ],
-   "attributionStatus": "pending"
+   ]
   },
   {
    "id": "19-2d-lavirint",
@@ -1440,11 +1470,11 @@
    "status": "documented",
    "documentedWeek": 3,
    "author": {
-    "name": "Sanja Hornjaček",
-    "studentNumber": "84/24"
+    "name": "Aleksa Vasić",
+    "studentNumber": "70/21"
    },
    "attribution": {
-    "sourceId": "teacher-2026-10-16-cas-03",
+    "sourceId": "teacher-2026-10-23-dopuna",
     "fields": [
      "name",
      "studentNumber"
@@ -1452,8 +1482,8 @@
    },
    "sourceId": "teacher-2026-10-16-cas-03",
    "description": {
-    "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika; atribucija čeka potvrdu studenta.",
-    "en": "Prototype from the third class (2026-10-16), teacher's record; attribution pending student confirmation."
+    "sr": "Prototip sa trećeg časa (16.10.2026). Autorstvo zavedeno 23.10.2026. gledanjem fotografije: rad pripada autoru zapisa 19 spiska trećeg časa. Prezime i broj indeksa potvrđeni su istog dana; godište van generacije 2024 nije greška.",
+    "en": "Prototype from the third class (2026-10-16). Authorship filed on 23 October 2026 by looking at the photograph: the work belongs to the author of entry 19 of the third-class list. The surname and the student number were confirmed the same day; a year outside the 2024 cohort is not an error."
    },
    "photos": [
     {
@@ -1472,8 +1502,7 @@
      },
      "sourceId": "teacher-2026-10-16-cas-03"
     }
-   ],
-   "attributionStatus": "pending"
+   ]
   },
   {
    "id": "21-vijugava-staza",
@@ -5868,6 +5897,1357 @@
       "caption": {
        "sr": "Red 2 u nizu slikanja.",
        "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 34,
+   "datum": "2026-10-23",
+   "sta": {
+    "sr": "Atribucija je ispravljena: rad je pripisan autorki koju je nastavnik naveo 23.10.2026, umesto imena zavedenog na trećem času. Fotografija snimljena pod nazivom „brza putanja” pripada ovom radu.",
+    "en": "The attribution is corrected: the work is attributed to the author the teacher named on 23 October 2026, replacing the name recorded at the third class. The photograph taken under the title „brza putanja” belongs to this work."
+   },
+   "sourceId": "teacher-2026-10-23-cas-04",
+   "prototypeId": "17-putanja",
+   "before": {
+    "id": "17-putanja",
+    "title": "putanja",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Lukić Miljana",
+     "studentNumber": "58/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika; atribucija čeka potvrdu studenta.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record; attribution pending student confirmation."
+    },
+    "photos": [
+     {
+      "id": "17-putanja-foto-02",
+      "src": "data/prototipovi/17-putanja/02.jpg",
+      "sha256": "cb01f8d49f4234f90935272a7a299ee81f180495e96c730d51051c9cccfbf319",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "17-putanja-foto-03",
+      "src": "data/prototipovi/17-putanja/03.jpg",
+      "sha256": "f26c494a1b38eeade687f74b24c9cf166e1f5908f4e7174c3cb68e1763ab2510",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "17-putanja-foto-04",
+      "src": "data/prototipovi/17-putanja/04.jpg",
+      "sha256": "23325c7c1313369a9ea0b7824917d74de5d55444046115851b2e156f6cc61e62",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 4 u nizu slikanja.",
+       "en": "Frame 4 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "17-putanja-foto-05",
+      "src": "data/prototipovi/17-putanja/05.jpg",
+      "sha256": "5aeac46e12f0ee1e9d11fa0a27e513e15a18b06176fb34f486976141c063acdf",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 5 u nizu slikanja.",
+       "en": "Frame 5 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ],
+    "attributionStatus": "pending"
+   },
+   "after": {
+    "id": "17-putanja",
+    "title": "putanja",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Katarina Petrović",
+     "studentNumber": "79/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-23-cas-04",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026). Autorstvo ispravljeno 23.10.2026. po nastavnikovom zapisu; jedna fotografija zavedena pod „brza putanja” pripada ovom radu i čeka razdvajanje.",
+     "en": "Prototype from the third class (2026-10-16). Authorship corrected on 23 October 2026 by the teacher’s record; one photograph filed under „brza putanja” belongs to this work and awaits separation."
+    },
+    "photos": [
+     {
+      "id": "17-putanja-foto-02",
+      "src": "data/prototipovi/17-putanja/02.jpg",
+      "sha256": "cb01f8d49f4234f90935272a7a299ee81f180495e96c730d51051c9cccfbf319",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "17-putanja-foto-03",
+      "src": "data/prototipovi/17-putanja/03.jpg",
+      "sha256": "f26c494a1b38eeade687f74b24c9cf166e1f5908f4e7174c3cb68e1763ab2510",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "17-putanja-foto-04",
+      "src": "data/prototipovi/17-putanja/04.jpg",
+      "sha256": "23325c7c1313369a9ea0b7824917d74de5d55444046115851b2e156f6cc61e62",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 4 u nizu slikanja.",
+       "en": "Frame 4 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "17-putanja-foto-05",
+      "src": "data/prototipovi/17-putanja/05.jpg",
+      "sha256": "5aeac46e12f0ee1e9d11fa0a27e513e15a18b06176fb34f486976141c063acdf",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 5 u nizu slikanja.",
+       "en": "Frame 5 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 35,
+   "datum": "2026-10-23",
+   "sta": {
+    "sr": "Fotografije zavedene pod ovim radom nisu njegove: jedna pripada radu „putanja”, druga radu „3d lavirint”. Rad je povučen iz galerije dok se fotografije ne razdvoje; zapis i heševi ostaju.",
+    "en": "The photographs filed under this work are not its own: one belongs to „putanja”, the other to „3d lavirint”. The work is withdrawn from the gallery until the photographs are separated; the record and the hashes remain."
+   },
+   "sourceId": "teacher-2026-10-23-cas-04",
+   "prototypeId": "18-brza-putanja",
+   "before": {
+    "id": "18-brza-putanja",
+    "title": "brza putanja",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Katarina Petrović",
+     "studentNumber": "79/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika; atribucija čeka potvrdu studenta.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record; attribution pending student confirmation."
+    },
+    "photos": [
+     {
+      "id": "18-brza-putanja-foto-02",
+      "src": "data/prototipovi/18-brza-putanja/02.jpg",
+      "sha256": "35058d4fbd63648e7c186ae8582ea514d7eeb1fb571609aa382757bf3d1f02af",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „brza putanja”",
+       "en": "Photograph of the “brza putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "18-brza-putanja-foto-03",
+      "src": "data/prototipovi/18-brza-putanja/03.jpg",
+      "sha256": "d9a41492f77ac5b1541fbd06cdd9393c2a33a183542d32bc335994acd327854d",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „brza putanja”",
+       "en": "Photograph of the “brza putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ],
+    "attributionStatus": "pending"
+   },
+   "after": {
+    "id": "18-brza-putanja",
+    "title": "brza putanja",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Katarina Petrović",
+     "studentNumber": "79/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Zapis sa trećeg časa (16.10.2026). Nastavnik je 23.10.2026. utvrdio da dve fotografije pod ovim nazivom pripadaju dvama drugim radovima; dok se ne razdvoje, rad stoji povučen iz galerije.",
+     "en": "Record from the third class (2026-10-16). On 23 October 2026 the teacher established that the two photographs under this title belong to two other works; until they are separated, the work stands withdrawn from the gallery."
+    },
+    "photos": [
+     {
+      "id": "18-brza-putanja-foto-02",
+      "src": "data/prototipovi/18-brza-putanja/02.jpg",
+      "sha256": "35058d4fbd63648e7c186ae8582ea514d7eeb1fb571609aa382757bf3d1f02af",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „brza putanja”",
+       "en": "Photograph of the “brza putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "18-brza-putanja-foto-03",
+      "src": "data/prototipovi/18-brza-putanja/03.jpg",
+      "sha256": "d9a41492f77ac5b1541fbd06cdd9393c2a33a183542d32bc335994acd327854d",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „brza putanja”",
+       "en": "Photograph of the “brza putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ],
+    "attributionStatus": "pending"
+   }
+  },
+  {
+   "v": 36,
+   "datum": "2026-10-23",
+   "sta": {
+    "sr": "Fotografija zavedena uz ovaj rad prikazuje rad drugog studenta, koji nije u spisku četvrtog časa. Rad je povučen iz galerije dok se njegov zapis ne zavede sa izvorom.",
+    "en": "The photograph filed beside this work shows the work of another student, who is not in the fourth-class list. The work is withdrawn from the gallery until his record is filed with its source."
+   },
+   "sourceId": "teacher-2026-10-23-cas-04",
+   "prototypeId": "19-2d-lavirint",
+   "before": {
+    "id": "19-2d-lavirint",
+    "title": "2d lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Sanja Hornjaček",
+     "studentNumber": "84/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika; atribucija čeka potvrdu studenta.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record; attribution pending student confirmation."
+    },
+    "photos": [
+     {
+      "id": "19-2d-lavirint-foto-01",
+      "src": "data/prototipovi/19-2d-lavirint/01.jpg",
+      "sha256": "89fb9a278babc0b25a2fb990ebf52e5f4e656181d44c55566f74435f6d931f66",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „2d lavirint”",
+       "en": "Photograph of the “2d lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ],
+    "attributionStatus": "pending"
+   },
+   "after": {
+    "id": "19-2d-lavirint",
+    "title": "2d lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Sanja Hornjaček",
+     "studentNumber": "84/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Zapis sa trećeg časa (16.10.2026). Nastavnik je 23.10.2026. utvrdio da priložena fotografija nije ovog rada; rad stoji povučen iz galerije dok se autorstvo fotografije ne zavede.",
+     "en": "Record from the third class (2026-10-16). On 23 October 2026 the teacher established that the attached photograph is not of this work; the work stands withdrawn from the gallery until the photograph’s authorship is filed."
+    },
+    "photos": [
+     {
+      "id": "19-2d-lavirint-foto-01",
+      "src": "data/prototipovi/19-2d-lavirint/01.jpg",
+      "sha256": "89fb9a278babc0b25a2fb990ebf52e5f4e656181d44c55566f74435f6d931f66",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „2d lavirint”",
+       "en": "Photograph of the “2d lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ],
+    "attributionStatus": "pending"
+   }
+  },
+  {
+   "v": 37,
+   "datum": "2026-10-23",
+   "sta": {
+    "sr": "Fotografije ovog rada potvrđene su gledanjem: rad je autorke zapisa 18 spiska trećeg časa, kako je i ispravljeno ranije istog dana. Pripisivanje je sada potvrđeno izvorom, ne pretpostavkom.",
+    "en": "This work’s photographs were confirmed by looking at them: the work belongs to the author of entry 18 of the third-class list, as corrected earlier the same day. The attribution now rests on a source, not an assumption."
+   },
+   "sourceId": "teacher-2026-10-23-foto-razdvajanje",
+   "prototypeId": "17-putanja",
+   "before": {
+    "id": "17-putanja",
+    "title": "putanja",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Katarina Petrović",
+     "studentNumber": "79/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-23-cas-04",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026). Autorstvo ispravljeno 23.10.2026. po nastavnikovom zapisu; jedna fotografija zavedena pod „brza putanja” pripada ovom radu i čeka razdvajanje.",
+     "en": "Prototype from the third class (2026-10-16). Authorship corrected on 23 October 2026 by the teacher’s record; one photograph filed under „brza putanja” belongs to this work and awaits separation."
+    },
+    "photos": [
+     {
+      "id": "17-putanja-foto-02",
+      "src": "data/prototipovi/17-putanja/02.jpg",
+      "sha256": "cb01f8d49f4234f90935272a7a299ee81f180495e96c730d51051c9cccfbf319",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "17-putanja-foto-03",
+      "src": "data/prototipovi/17-putanja/03.jpg",
+      "sha256": "f26c494a1b38eeade687f74b24c9cf166e1f5908f4e7174c3cb68e1763ab2510",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "17-putanja-foto-04",
+      "src": "data/prototipovi/17-putanja/04.jpg",
+      "sha256": "23325c7c1313369a9ea0b7824917d74de5d55444046115851b2e156f6cc61e62",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 4 u nizu slikanja.",
+       "en": "Frame 4 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "17-putanja-foto-05",
+      "src": "data/prototipovi/17-putanja/05.jpg",
+      "sha256": "5aeac46e12f0ee1e9d11fa0a27e513e15a18b06176fb34f486976141c063acdf",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 5 u nizu slikanja.",
+       "en": "Frame 5 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "17-putanja",
+    "title": "putanja",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Katarina Petrović",
+     "studentNumber": "79/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-23-foto-razdvajanje",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026). Autorstvo ispravljeno i potvrđeno 23.10.2026. po nastavnikovom zapisu i gledanju fotografija.",
+     "en": "Prototype from the third class (2026-10-16). Authorship corrected and confirmed on 23 October 2026 by the teacher’s record and by looking at the photographs."
+    },
+    "photos": [
+     {
+      "id": "17-putanja-foto-02",
+      "src": "data/prototipovi/17-putanja/02.jpg",
+      "sha256": "cb01f8d49f4234f90935272a7a299ee81f180495e96c730d51051c9cccfbf319",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "17-putanja-foto-03",
+      "src": "data/prototipovi/17-putanja/03.jpg",
+      "sha256": "f26c494a1b38eeade687f74b24c9cf166e1f5908f4e7174c3cb68e1763ab2510",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "17-putanja-foto-04",
+      "src": "data/prototipovi/17-putanja/04.jpg",
+      "sha256": "23325c7c1313369a9ea0b7824917d74de5d55444046115851b2e156f6cc61e62",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 4 u nizu slikanja.",
+       "en": "Frame 4 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "17-putanja-foto-05",
+      "src": "data/prototipovi/17-putanja/05.jpg",
+      "sha256": "5aeac46e12f0ee1e9d11fa0a27e513e15a18b06176fb34f486976141c063acdf",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „putanja”",
+       "en": "Photograph of the “putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 5 u nizu slikanja.",
+       "en": "Frame 5 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 38,
+   "datum": "2026-10-23",
+   "sta": {
+    "sr": "Naziv i autorstvo ispravljeni: fotografije pod „brza putanja” prikazuju „3d lavirint”, rad autorke zapisa 19 spiska trećeg časa odnosno zapisa 8 četvrtog časa. Rad se vraća u galeriju.",
+    "en": "Title and authorship corrected: the photographs filed under „brza putanja” show „3d lavirint”, the work of entry 19 of the third-class list and entry 8 of the fourth. The work returns to the gallery."
+   },
+   "sourceId": "teacher-2026-10-23-foto-razdvajanje",
+   "prototypeId": "18-brza-putanja",
+   "before": {
+    "id": "18-brza-putanja",
+    "title": "brza putanja",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Katarina Petrović",
+     "studentNumber": "79/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Zapis sa trećeg časa (16.10.2026). Nastavnik je 23.10.2026. utvrdio da dve fotografije pod ovim nazivom pripadaju dvama drugim radovima; dok se ne razdvoje, rad stoji povučen iz galerije.",
+     "en": "Record from the third class (2026-10-16). On 23 October 2026 the teacher established that the two photographs under this title belong to two other works; until they are separated, the work stands withdrawn from the gallery."
+    },
+    "photos": [
+     {
+      "id": "18-brza-putanja-foto-02",
+      "src": "data/prototipovi/18-brza-putanja/02.jpg",
+      "sha256": "35058d4fbd63648e7c186ae8582ea514d7eeb1fb571609aa382757bf3d1f02af",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „brza putanja”",
+       "en": "Photograph of the “brza putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "18-brza-putanja-foto-03",
+      "src": "data/prototipovi/18-brza-putanja/03.jpg",
+      "sha256": "d9a41492f77ac5b1541fbd06cdd9393c2a33a183542d32bc335994acd327854d",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „brza putanja”",
+       "en": "Photograph of the “brza putanja” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ],
+    "attributionStatus": "pending"
+   },
+   "after": {
+    "id": "18-brza-putanja",
+    "title": "3d lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Sanja Hornjaček",
+     "studentNumber": "74/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-23-foto-razdvajanje",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026). Rad je 23.10.2026. zaveden pod tačnim nazivom „3d lavirint”; ranije je stajao kao „brza putanja” sa pogrešnim autorstvom. Putanje fotografija zadržavaju stari naziv foldera da otisci ostanu proverivi.",
+     "en": "Prototype from the third class (2026-10-16). On 23 October 2026 the work was filed under its correct title „3d lavirint”; it earlier stood as „brza putanja” with the wrong authorship. The photograph paths keep the old folder name so the fingerprints stay verifiable."
+    },
+    "photos": [
+     {
+      "id": "18-brza-putanja-foto-02",
+      "src": "data/prototipovi/18-brza-putanja/02.jpg",
+      "sha256": "35058d4fbd63648e7c186ae8582ea514d7eeb1fb571609aa382757bf3d1f02af",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „3d lavirint”",
+       "en": "Photograph of the “3d lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "18-brza-putanja-foto-03",
+      "src": "data/prototipovi/18-brza-putanja/03.jpg",
+      "sha256": "d9a41492f77ac5b1541fbd06cdd9393c2a33a183542d32bc335994acd327854d",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „3d lavirint”",
+       "en": "Photograph of the “3d lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 39,
+   "datum": "2026-10-23",
+   "sta": {
+    "sr": "Fotografija uz ovaj rad pripisana je autoru zapisa 20 spiska trećeg časa — jedinom imenu u nizu 17–20 koje je ostalo bez rada pre ove ispravke. Rad se vraća u galeriju.",
+    "en": "The photograph beside this work is attributed to the author of entry 20 of the third-class list — the only name in the 17–20 run left without a work before this correction. The work returns to the gallery."
+   },
+   "sourceId": "teacher-2026-10-23-foto-razdvajanje",
+   "prototypeId": "19-2d-lavirint",
+   "before": {
+    "id": "19-2d-lavirint",
+    "title": "2d lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Sanja Hornjaček",
+     "studentNumber": "84/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Zapis sa trećeg časa (16.10.2026). Nastavnik je 23.10.2026. utvrdio da priložena fotografija nije ovog rada; rad stoji povučen iz galerije dok se autorstvo fotografije ne zavede.",
+     "en": "Record from the third class (2026-10-16). On 23 October 2026 the teacher established that the attached photograph is not of this work; the work stands withdrawn from the gallery until the photograph’s authorship is filed."
+    },
+    "photos": [
+     {
+      "id": "19-2d-lavirint-foto-01",
+      "src": "data/prototipovi/19-2d-lavirint/01.jpg",
+      "sha256": "89fb9a278babc0b25a2fb990ebf52e5f4e656181d44c55566f74435f6d931f66",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „2d lavirint”",
+       "en": "Photograph of the “2d lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ],
+    "attributionStatus": "pending"
+   },
+   "after": {
+    "id": "19-2d-lavirint",
+    "title": "2d lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Aleksa Vesić",
+     "studentNumber": "70/21"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-23-foto-razdvajanje",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026). Autorstvo zavedeno 23.10.2026. gledanjem fotografije: rad pripada autoru zapisa 20 spiska trećeg časa. Nastavnik je ime tog dana zapisao u drugom obliku prezimena i bez indeksa; objavljeno je kako stoji u spisku, oblik prezimena potvrđuje se na času.",
+     "en": "Prototype from the third class (2026-10-16). Authorship filed on 23 October 2026 by looking at the photograph: the work belongs to the author of entry 20 of the third-class list. That day the teacher wrote the surname in a different form and without a student number; it is published as the list has it, and the form is confirmed in class."
+    },
+    "photos": [
+     {
+      "id": "19-2d-lavirint-foto-01",
+      "src": "data/prototipovi/19-2d-lavirint/01.jpg",
+      "sha256": "89fb9a278babc0b25a2fb990ebf52e5f4e656181d44c55566f74435f6d931f66",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „2d lavirint”",
+       "en": "Photograph of the “2d lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 40,
+   "datum": "2026-10-23",
+   "sta": {
+    "sr": "Prezime autora ispravljeno po nastavnikovoj potvrdi istog dana; broj indeksa nije promenjen i izričito čeka potvrdu. Opis sada upućuje na red spiska kako stoji posle razdvajanja fotografija.",
+    "en": "The author’s surname was corrected on the teacher’s confirmation the same day; the student number is unchanged and explicitly awaits confirmation. The description now points at the list row as it stands after the photographs were separated."
+   },
+   "sourceId": "teacher-2026-10-23-vasic-mijanovic",
+   "prototypeId": "19-2d-lavirint",
+   "before": {
+    "id": "19-2d-lavirint",
+    "title": "2d lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Aleksa Vesić",
+     "studentNumber": "70/21"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-23-foto-razdvajanje",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026). Autorstvo zavedeno 23.10.2026. gledanjem fotografije: rad pripada autoru zapisa 20 spiska trećeg časa. Nastavnik je ime tog dana zapisao u drugom obliku prezimena i bez indeksa; objavljeno je kako stoji u spisku, oblik prezimena potvrđuje se na času.",
+     "en": "Prototype from the third class (2026-10-16). Authorship filed on 23 October 2026 by looking at the photograph: the work belongs to the author of entry 20 of the third-class list. That day the teacher wrote the surname in a different form and without a student number; it is published as the list has it, and the form is confirmed in class."
+    },
+    "photos": [
+     {
+      "id": "19-2d-lavirint-foto-01",
+      "src": "data/prototipovi/19-2d-lavirint/01.jpg",
+      "sha256": "89fb9a278babc0b25a2fb990ebf52e5f4e656181d44c55566f74435f6d931f66",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „2d lavirint”",
+       "en": "Photograph of the “2d lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "19-2d-lavirint",
+    "title": "2d lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Aleksa Vasić",
+     "studentNumber": "70/21"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-23-vasic-mijanovic",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026). Autorstvo zavedeno 23.10.2026. gledanjem fotografije: rad pripada autoru zapisa 19 spiska trećeg časa, kako spisak stoji posle razdvajanja fotografija istog dana. Prezime je potvrđeno u ovom obliku; broj indeksa stoji kako je zapisan 18.10. i čeka potvrdu na času.",
+     "en": "Prototype from the third class (2026-10-16). Authorship filed on 23 October 2026 by looking at the photograph: the work belongs to the author of entry 19 of the third-class list, as the list stands after the same day’s separation of the photographs. The surname is confirmed in this form; the student number stands as recorded on 18 October and awaits confirmation in class."
+    },
+    "photos": [
+     {
+      "id": "19-2d-lavirint-foto-01",
+      "src": "data/prototipovi/19-2d-lavirint/01.jpg",
+      "sha256": "89fb9a278babc0b25a2fb990ebf52e5f4e656181d44c55566f74435f6d931f66",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „2d lavirint”",
+       "en": "Photograph of the “2d lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 41,
+   "datum": "2026-10-23",
+   "sta": {
+    "sr": "Broj indeksa autorke vraćen je na onaj iz spiska od 18.10.2026. Razlika zapisana 23.10. nije bila prijavljena kao greška — autorka je prijavila pogrešno pripisanu fotografiju, ne broj indeksa. Pitanje o broju se zatvara.",
+    "en": "The author’s student number is returned to the one from the list of 18 October 2026. The difference recorded on 23 October was not reported as an error — the author reported a wrongly attributed photograph, not her student number. The question about the number is closed."
+   },
+   "sourceId": "teacher-2026-10-23-dopuna",
+   "prototypeId": "18-brza-putanja",
+   "before": {
+    "id": "18-brza-putanja",
+    "title": "3d lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Sanja Hornjaček",
+     "studentNumber": "74/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-23-foto-razdvajanje",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026). Rad je 23.10.2026. zaveden pod tačnim nazivom „3d lavirint”; ranije je stajao kao „brza putanja” sa pogrešnim autorstvom. Putanje fotografija zadržavaju stari naziv foldera da otisci ostanu proverivi.",
+     "en": "Prototype from the third class (2026-10-16). On 23 October 2026 the work was filed under its correct title „3d lavirint”; it earlier stood as „brza putanja” with the wrong authorship. The photograph paths keep the old folder name so the fingerprints stay verifiable."
+    },
+    "photos": [
+     {
+      "id": "18-brza-putanja-foto-02",
+      "src": "data/prototipovi/18-brza-putanja/02.jpg",
+      "sha256": "35058d4fbd63648e7c186ae8582ea514d7eeb1fb571609aa382757bf3d1f02af",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „3d lavirint”",
+       "en": "Photograph of the “3d lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "18-brza-putanja-foto-03",
+      "src": "data/prototipovi/18-brza-putanja/03.jpg",
+      "sha256": "d9a41492f77ac5b1541fbd06cdd9393c2a33a183542d32bc335994acd327854d",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „3d lavirint”",
+       "en": "Photograph of the “3d lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "18-brza-putanja",
+    "title": "3d lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Sanja Hornjaček",
+     "studentNumber": "84/24"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-23-dopuna",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026). Rad je 23.10.2026. zaveden pod tačnim nazivom „3d lavirint”; ranije je stajao kao „brza putanja” sa pogrešnim autorstvom. Autorstvo i broj indeksa potvrđeni su istog dana. Putanje fotografija zadržavaju stari naziv foldera da otisci ostanu proverivi.",
+     "en": "Prototype from the third class (2026-10-16). On 23 October 2026 the work was filed under its correct title „3d lavirint”; it earlier stood as „brza putanja” with the wrong authorship. The authorship and the student number were confirmed the same day. The photograph paths keep the old folder name so the fingerprints stay verifiable."
+    },
+    "photos": [
+     {
+      "id": "18-brza-putanja-foto-02",
+      "src": "data/prototipovi/18-brza-putanja/02.jpg",
+      "sha256": "35058d4fbd63648e7c186ae8582ea514d7eeb1fb571609aa382757bf3d1f02af",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „3d lavirint”",
+       "en": "Photograph of the “3d lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "18-brza-putanja-foto-03",
+      "src": "data/prototipovi/18-brza-putanja/03.jpg",
+      "sha256": "d9a41492f77ac5b1541fbd06cdd9393c2a33a183542d32bc335994acd327854d",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „3d lavirint”",
+       "en": "Photograph of the “3d lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 42,
+   "datum": "2026-10-23",
+   "sta": {
+    "sr": "Broj indeksa potvrđen: godište 2021 nije greška, jer ima studenata koji slušaju predmet a nisu položili godinu. Zapis više ne stoji kao nepotvrđen.",
+    "en": "The student number is confirmed: the year 2021 is not an error, because some students attend the course without having passed the year. The record no longer stands as unconfirmed."
+   },
+   "sourceId": "teacher-2026-10-23-dopuna",
+   "prototypeId": "19-2d-lavirint",
+   "before": {
+    "id": "19-2d-lavirint",
+    "title": "2d lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Aleksa Vasić",
+     "studentNumber": "70/21"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-23-vasic-mijanovic",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026). Autorstvo zavedeno 23.10.2026. gledanjem fotografije: rad pripada autoru zapisa 19 spiska trećeg časa, kako spisak stoji posle razdvajanja fotografija istog dana. Prezime je potvrđeno u ovom obliku; broj indeksa stoji kako je zapisan 18.10. i čeka potvrdu na času.",
+     "en": "Prototype from the third class (2026-10-16). Authorship filed on 23 October 2026 by looking at the photograph: the work belongs to the author of entry 19 of the third-class list, as the list stands after the same day’s separation of the photographs. The surname is confirmed in this form; the student number stands as recorded on 18 October and awaits confirmation in class."
+    },
+    "photos": [
+     {
+      "id": "19-2d-lavirint-foto-01",
+      "src": "data/prototipovi/19-2d-lavirint/01.jpg",
+      "sha256": "89fb9a278babc0b25a2fb990ebf52e5f4e656181d44c55566f74435f6d931f66",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „2d lavirint”",
+       "en": "Photograph of the “2d lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "19-2d-lavirint",
+    "title": "2d lavirint",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Aleksa Vasić",
+     "studentNumber": "70/21"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-23-dopuna",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026). Autorstvo zavedeno 23.10.2026. gledanjem fotografije: rad pripada autoru zapisa 19 spiska trećeg časa. Prezime i broj indeksa potvrđeni su istog dana; godište van generacije 2024 nije greška.",
+     "en": "Prototype from the third class (2026-10-16). Authorship filed on 23 October 2026 by looking at the photograph: the work belongs to the author of entry 19 of the third-class list. The surname and the student number were confirmed the same day; a year outside the 2024 cohort is not an error."
+    },
+    "photos": [
+     {
+      "id": "19-2d-lavirint-foto-01",
+      "src": "data/prototipovi/19-2d-lavirint/01.jpg",
+      "sha256": "89fb9a278babc0b25a2fb990ebf52e5f4e656181d44c55566f74435f6d931f66",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „2d lavirint”",
+       "en": "Photograph of the “2d lavirint” prototype"
+      },
+      "caption": {
+       "sr": "Red 1 u nizu slikanja.",
+       "en": "Frame 1 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   }
+  },
+  {
+   "v": 43,
+   "datum": "2026-10-23",
+   "sta": {
+    "sr": "Zapis „starlight 6 + 3” sa trećeg časa objašnjen je 23.10.2026: to su dva rada istog autora, a ne jedan rad sa devet fotografija. Ovaj zapis nosi prvi od njih; drugi se zavodi kad mu fotografije budu razdvojene.",
+    "en": "The „starlight 6 + 3” entry from the third class was explained on 23 October 2026: these are two works by the same author, not one work with nine photographs. This record carries the first of them; the second is filed when its photographs are separated."
+   },
+   "sourceId": "teacher-2026-10-23-dopuna",
+   "prototypeId": "07-hansgadget-starlight",
+   "before": {
+    "id": "07-hansgadget-starlight",
+    "title": "hansgadget — starlight",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Imre Halas",
+     "studentNumber": "1/2024"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika.",
+     "en": "Prototype from the third class (2026-10-16), teacher's record."
+    },
+    "photos": [
+     {
+      "id": "07-hansgadget-starlight-foto-02",
+      "src": "data/prototipovi/07-hansgadget-starlight/02.jpg",
+      "sha256": "51c5936de1975c2ad2c24a1e85e9aab770fd998fd0972d101afce6b13aa4657f",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "07-hansgadget-starlight-foto-03",
+      "src": "data/prototipovi/07-hansgadget-starlight/03.jpg",
+      "sha256": "4b92eba134a198b2941a2d474ec03df60c3f0cdd72a6e3f355580f5fd60954b3",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "07-hansgadget-starlight-foto-04",
+      "src": "data/prototipovi/07-hansgadget-starlight/04.jpg",
+      "sha256": "f0157424041ecf6a42e874fdd987ca8cd07d2fd488976f1ad4d947b359d9883e",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 4 u nizu slikanja.",
+       "en": "Frame 4 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "07-hansgadget-starlight-foto-05",
+      "src": "data/prototipovi/07-hansgadget-starlight/05.jpg",
+      "sha256": "1d921a58c1002c67c21b2f308b421344f79d1a20dc796331655246ee59d5868b",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 5 u nizu slikanja.",
+       "en": "Frame 5 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     }
+    ]
+   },
+   "after": {
+    "id": "07-hansgadget-starlight",
+    "title": "hansgadget — starlight",
+    "kind": "prototype",
+    "authorRole": "student",
+    "medium": "physical",
+    "status": "documented",
+    "documentedWeek": 3,
+    "author": {
+     "name": "Imre Halas",
+     "studentNumber": "1/2024"
+    },
+    "attribution": {
+     "sourceId": "teacher-2026-10-16-cas-03",
+     "fields": [
+      "name",
+      "studentNumber"
+     ]
+    },
+    "sourceId": "teacher-2026-10-16-cas-03",
+    "description": {
+     "sr": "Prototip sa trećeg časa (16.10.2026), zapis nastavnika. Nastavnik je 23.10.2026. potvrdio da je isti autor doneo dva prototipa: „hansgadget” i „starlight”. Niz od devet fotografija deli se na dva rada; razdvajanje čeka prenos fotografija.",
+     "en": "Prototype from the third class (2026-10-16), the teacher’s record. On 23 October 2026 the teacher confirmed that the same author brought two prototypes: „hansgadget” and „starlight”. The sequence of nine photographs splits between two works; the separation waits for the photographs to be transferred."
+    },
+    "photos": [
+     {
+      "id": "07-hansgadget-starlight-foto-02",
+      "src": "data/prototipovi/07-hansgadget-starlight/02.jpg",
+      "sha256": "51c5936de1975c2ad2c24a1e85e9aab770fd998fd0972d101afce6b13aa4657f",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 2 u nizu slikanja.",
+       "en": "Frame 2 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "07-hansgadget-starlight-foto-03",
+      "src": "data/prototipovi/07-hansgadget-starlight/03.jpg",
+      "sha256": "4b92eba134a198b2941a2d474ec03df60c3f0cdd72a6e3f355580f5fd60954b3",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 3 u nizu slikanja.",
+       "en": "Frame 3 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "07-hansgadget-starlight-foto-04",
+      "src": "data/prototipovi/07-hansgadget-starlight/04.jpg",
+      "sha256": "f0157424041ecf6a42e874fdd987ca8cd07d2fd488976f1ad4d947b359d9883e",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 4 u nizu slikanja.",
+       "en": "Frame 4 in the photographic sequence."
+      },
+      "sourceId": "teacher-2026-10-16-cas-03"
+     },
+     {
+      "id": "07-hansgadget-starlight-foto-05",
+      "src": "data/prototipovi/07-hansgadget-starlight/05.jpg",
+      "sha256": "1d921a58c1002c67c21b2f308b421344f79d1a20dc796331655246ee59d5868b",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+       "sr": "Fotografija prototipa „hansgadget — starlight”",
+       "en": "Photograph of the “hansgadget — starlight” prototype"
+      },
+      "caption": {
+       "sr": "Red 5 u nizu slikanja.",
+       "en": "Frame 5 in the photographic sequence."
       },
       "sourceId": "teacher-2026-10-16-cas-03"
      }

@@ -1,0 +1,428 @@
+{
+ "schema": "course-class-list/v1",
+ "id": "cas-04-radovi-2026-10-23",
+ "cas": "cas-w04",
+ "odrzan": "2026-10-23",
+ "nedelja": 4,
+ "redni": {
+  "sr": "četvrti čas",
+  "en": "fourth class"
+ },
+ "naslov": {
+  "sr": "Spisak radova četvrtog časa.",
+  "en": "The list of the fourth class."
+ },
+ "lede": {
+  "sr": "Dvadeset sedam zavedenih prisustava, redom kojim je nastavnik vodio spisak. Dvadeset jedan rad je fotografisan — ukupno 87 fotografija; šest zapisa nosi prisustvo bez fotografija i stoji u delu „Šta se čeka”. Posle prototipa snimljene su fotografije iz udruženja, gde su radovi dalje razrađivani, dokumentovani i testirani.",
+  "en": "Twenty-seven recorded attendances, in the order the teacher kept the list. Twenty-one works were photographed — 87 photographs in all; six entries carry attendance without photographs and stand in the „What we wait for” part. After the prototypes came the photographs from the association, where the works were developed further, documented and tested."
+ },
+ "source": {
+  "id": "teacher-2026-10-23-cas-04",
+  "recordedOn": "2026-10-23",
+  "description": {
+   "sr": "Nastavnikov spisak četvrtog časa (23.10.2026), zapisivan redom vođenja spiska; broj uz zapis je broj fotografija tog rada. Čas je nastavak rada na prototipovima: razrada, dokumentovanje i testiranje u udruženju. Fotografije su na telefonu nastavnika (Galaxy S23 FE, /Internal storage/DCIM/Camera); niz počinje snimkom 20261023_112141.jpg. Prvo idu fotografije prototipa, pa fotografije iz udruženja. Uz spisak su zavedene i tri ispravke ranijih zapisa.",
+   "en": "The teacher’s list of the fourth class (23 October 2026), recorded in the order the list was kept; the number beside an entry is that work’s photograph count. The class continued the prototype work: development, documentation and testing at the association. The photographs are on the teacher’s phone (Galaxy S23 FE, /Internal storage/DCIM/Camera); the sequence begins with 20261023_112141.jpg. The prototype photographs come first, then those from the association. Three corrections to earlier records are filed with the list."
+  }
+ },
+ "napomena": {
+  "sr": "Brojevi su brojevi fotografija, ne ocene. Zapisi bez fotografija nisu izostavljeni: oni nose zavedeno prisustvo i stoje u delu „Šta se čeka”, sa onim što je za taj rad najavljeno.",
+  "en": "The numbers count photographs, not grades. Entries without photographs are not omitted: they carry recorded attendance and stand in the „What we wait for” part, with what was announced for that work."
+ },
+ "sigurno": {
+  "do": 27,
+  "od": 28
+ },
+ "nizNapomena": {
+  "sr": "Svaka fotografija snimljena na četvrtom času objavljena je uz rad kome pripada, čitana redom slikanja. Broj uz svaki zapis jeste broj fotografija koje je taj rad dobio; prvo idu fotografije prototipa, pa fotografije iz udruženja.",
+  "en": "Every photograph taken at the fourth class is published with the work it belongs to, read in shooting order. The number beside each entry is the number of photographs that work got; the prototype photographs come first, then those from the association."
+ },
+ "udruzenjeNalazi": [
+  {
+   "sr": "Prototipi su u udruženju dalje razrađivani — rad se nastavio na licu mesta, ne samo na času.",
+   "en": "At the association the prototypes were developed further — the work continued on the spot, not only in class."
+  },
+  {
+   "sr": "Radovi su dokumentovani: fotografije iz udruženja idu u istom nizu, posle fotografija prototipa.",
+   "en": "The works were documented: the photographs from the association follow in the same sequence, after the prototype photographs."
+  },
+  {
+   "sr": "Prototipi su testirani sa korisnicima udruženja.",
+   "en": "The prototypes were tested with the association’s users."
+  }
+ ],
+ "analizaUdruzenja": {
+  "sr": "Posle rada na prototipovima otišli smo u udruženje: prototipi su dalje razrađivani, dokumentovani i testirani sa korisnicima. Fotografije iz udruženja slede u istom nizu, posle fotografija prototipa.",
+  "en": "After the prototype work we went to the association: the prototypes were developed further, documented and tested with users. The photographs from the association follow in the same sequence, after the prototype photographs."
+ },
+ "radovi": [
+  {
+   "rb": 1,
+   "ime": "Andrej Rackov",
+   "indeks": "41/24",
+   "rad": "Fliper 2",
+   "slike": 4
+  },
+  {
+   "rb": 2,
+   "ime": "Vanja Trkulja",
+   "indeks": "124/24",
+   "rad": "uklopko",
+   "slike": 8
+  },
+  {
+   "rb": 3,
+   "ime": "Maša Marković",
+   "indeks": "121/24",
+   "rad": "lavirint",
+   "slike": 3
+  },
+  {
+   "rb": 4,
+   "ime": "Katarina Petrović",
+   "indeks": "79/24",
+   "rad": "putanja",
+   "slike": 4,
+   "napomena": {
+    "sr": "naziv potvrđen 23.10.2026: rad se zove „putanja”; „brza putanja” je naziv drugog rada, sa spiska trećeg časa",
+    "en": "title confirmed on 23 October 2026: the work is called „putanja”; „brza putanja” is another work’s title, from the third-class list"
+   }
+  },
+  {
+   "rb": 5,
+   "ime": "Ivana Simić",
+   "indeks": "141/24",
+   "rad": "Zmijica",
+   "slike": 3
+  },
+  {
+   "rb": 6,
+   "ime": "Nikola Pajić",
+   "indeks": "49/24",
+   "rad": "Music Box",
+   "slike": 3
+  },
+  {
+   "rb": 7,
+   "ime": "Andrej Parezanović",
+   "indeks": "43/24",
+   "rad": null,
+   "slike": 0,
+   "napomena": {
+    "sr": "prisustvo; prototip se čeka sledeće nedelje",
+    "en": "present; the prototype is expected next week"
+   }
+  },
+  {
+   "rb": 8,
+   "ime": "Sanja Hornjaček",
+   "indeks": "84/24",
+   "rad": "3d lavirint",
+   "slike": 3,
+   "napomena": {
+    "sr": "broj indeksa ispravljen 23.10.2026: važi onaj iz spiska trećeg časa; danas je zapisan sa zamenjenim ciframa",
+    "en": "student number corrected on 23 October 2026: the one from the third-class list holds; today it was written with the digits swapped"
+   }
+  },
+  {
+   "rb": 9,
+   "ime": "Nađa Stanić",
+   "indeks": "151/24",
+   "rad": "Brojkice",
+   "slike": 12,
+   "napomena": {
+    "sr": "„Brojkice” je novi naziv umesto ranijeg „sudoku”",
+    "en": "„Brojkice” is the new title replacing the earlier „sudoku”"
+   }
+  },
+  {
+   "rb": 10,
+   "ime": "Tijana Velemir",
+   "indeks": "51/24",
+   "rad": "zekino polje",
+   "slike": 4
+  },
+  {
+   "rb": 11,
+   "ime": "Karla Krdžovac",
+   "indeks": "109/24",
+   "rad": "zen garden",
+   "slike": 0,
+   "napomena": {
+    "sr": "prisustvo; novi prototip se čeka sledeće nedelje, danas bez fotografija",
+    "en": "present; a new prototype is expected next week, no photographs today"
+   }
+  },
+  {
+   "rb": 12,
+   "ime": "Vasilije Jovanović",
+   "indeks": "115/24",
+   "rad": "sound box",
+   "slike": 3
+  },
+  {
+   "rb": 13,
+   "ime": "Marko Jakovljević",
+   "indeks": "150/24",
+   "rad": "istraživanje",
+   "slike": 0,
+   "napomena": {
+    "sr": "prisustvo; rad je u fazi istraživanja, bez fotografisanog prototipa",
+    "en": "present; the work is at the research stage, no photographed prototype"
+   }
+  },
+  {
+   "rb": 14,
+   "ime": "Katarina Ušjak",
+   "indeks": "86/24",
+   "rad": "edukativna",
+   "slike": 2
+  },
+  {
+   "rb": 15,
+   "ime": "Luka Stanišić",
+   "indeks": "44/24",
+   "rad": null,
+   "slike": 1,
+   "razjasni": "stanisic-skica",
+   "napomena": {
+    "sr": "danas je doneta skica; prototip se očekuje sledeći čas",
+    "en": "a sketch was brought today; the prototype is expected at the next class"
+   }
+  },
+  {
+   "rb": 16,
+   "ime": "Andreja Bošković",
+   "indeks": "26/24",
+   "rad": null,
+   "slike": 0,
+   "napomena": {
+    "sr": "prisustvo; još uvek bez prototipa",
+    "en": "present; still without a prototype"
+   }
+  },
+  {
+   "rb": 17,
+   "ime": "Sara Janjić",
+   "indeks": "4/24",
+   "rad": null,
+   "slike": 0,
+   "napomena": {
+    "sr": "prisustvo; bez fotografija",
+    "en": "present; no photographs"
+   }
+  },
+  {
+   "rb": 18,
+   "ime": "Lena Kovačić",
+   "indeks": "132/24",
+   "rad": "lenin lavirint",
+   "slike": 0,
+   "napomena": {
+    "sr": "prisustvo; danas bez fotografija",
+    "en": "present; no photographs today"
+   }
+  },
+  {
+   "rb": 19,
+   "ime": "Anđela Banković",
+   "indeks": "64/24",
+   "rad": "mozgalica",
+   "slike": 3
+  },
+  {
+   "rb": 20,
+   "ime": "Ana Rangelov",
+   "indeks": "149/24",
+   "rad": "tragovi boja",
+   "slike": 4
+  },
+  {
+   "rb": 21,
+   "ime": "Anđela Mićković",
+   "indeks": "37/24",
+   "rad": "hobotnica",
+   "slike": 6
+  },
+  {
+   "rb": 22,
+   "ime": "Iva Žunić",
+   "indeks": "110/24",
+   "rad": "praćka",
+   "slike": 5
+  },
+  {
+   "rb": 23,
+   "ime": "Dunja Ljubičić",
+   "indeks": "38/24",
+   "rad": "igra sa užetom",
+   "slike": 2
+  },
+  {
+   "rb": 24,
+   "ime": "Elena Tagkiri",
+   "indeks": "196/25",
+   "rad": "stubići",
+   "slike": 3,
+   "napomena": {
+    "sr": "godište van generacije 2024 potvrđeno je 23.10.2026. kao ispravno — predmet slušaju i studenti koji nisu položili godinu",
+    "en": "the year outside the 2024 cohort was confirmed as correct on 23 October 2026 — the course is also attended by students who have not passed the year"
+   }
+  },
+  {
+   "rb": 25,
+   "ime": "Ksenija Kočić",
+   "indeks": "19/24",
+   "rad": "taktilna kutija",
+   "slike": 9,
+   "napomena": {
+    "sr": "naziv je zaveden danas kao preimenovanje; u spisku trećeg časa naziv rada nije bio zabeležen",
+    "en": "the title was recorded today as a renaming; the third-class list carried no title for this work"
+   }
+  },
+  {
+   "rb": 26,
+   "ime": "Hana Demiri",
+   "indeks": "22/24",
+   "rad": null,
+   "slike": 3,
+   "razjasni": "bez-naziva-c04",
+   "napomena": {
+    "sr": "naziv rada nije zabeležen",
+    "en": "the work’s title was not recorded"
+   }
+  },
+  {
+   "rb": 27,
+   "ime": "Iva Mijanović",
+   "indeks": "28/24",
+   "rad": "fliper",
+   "slike": 2,
+   "napomena": {
+    "sr": "broj indeksa ispravljen 23.10.2026. po nastavnikovoj potvrdi: danas je zapisan sa zamenjenim delovima, godište je 2024 kao kod cele generacije.",
+    "en": "the student number was corrected on 23 October 2026 on the teacher’s confirmation: today it was written with its parts swapped; the year is 2024, as for the whole cohort."
+   }
+  }
+ ],
+ "razjasni": [
+  {
+   "id": "stanisic-skica",
+   "sta": {
+    "sr": "Zapis 15: danas je doneta skica, ne prototip — jedna fotografija. Naziv rada nije zabeležen; prototip se očekuje sledeći čas.",
+    "en": "Entry 15: a sketch was brought today, not a prototype — one photograph. The work’s title was not recorded; the prototype is expected at the next class."
+   }
+  },
+  {
+   "id": "bez-naziva-c04",
+   "sta": {
+    "sr": "Zapisi 15 i 26 nemaju zabeležen naziv rada, iako imaju fotografije.",
+    "en": "Entries 15 and 26 carry no recorded work title, although they have photographs."
+   }
+  },
+  {
+   "id": "fotografije-c03-u-arhivi",
+   "sta": {
+    "sr": "Treći čas: u javnom registru stoji 42 od 86 fotografija koje spisak navodi. Ostatak je 20.10. arhiviran na arhivsko telo i nije u ovom repou; zapisi 1 i 2 trećeg časa zato još nemaju ni jednu objavljenu fotografiju ni zapis u galeriji radova.",
+    "en": "The third class: the public register carries 42 of the 86 photographs the list states. The rest was archived to the archive body on 20 October and is not in this repository; entries 1 and 2 of the third class therefore still have no published photograph and no work-register record."
+   }
+  },
+  {
+   "id": "copic-van-spiska",
+   "sta": {
+    "sr": "Na spisku posete udruženju stoji jedno ime koje nije na ovom spisku radova — osamnaesto prisustvo tog dana, bez zavedenog rada. Prisustvo je zavedeno u registru posete; rad se čeka.",
+    "en": "The association-visit list carries one name that is not on this list of works — an eighteenth attendance that day, without a filed work. The attendance is recorded in the visit register; the work is awaited."
+   }
+  },
+  {
+   "id": "prisustvo-nije-prozivka",
+   "sta": {
+    "sr": "Evidencija prisustva na predavanju do sada nije vođena. Ovaj spisak zavodi one koji su se pojavili u spisku radova i na poseti; ko je bio na času a nije zaveden, iz njega se ne vidi. Ako nedostaješ, javi na času.",
+    "en": "Attendance at the lecture has not been kept so far. This list records those who appeared in the list of works and on the visit; whoever was in class without being recorded is not visible here. If you are missing, say so in class."
+   }
+  }
+ ],
+ "ispravke": [
+  {
+   "id": "putanja-katarina",
+   "izvor": "Nastavnik predmeta, 23.10.2026.",
+   "sta": {
+    "sr": "Rad „putanja” sa trećeg časa pripisuje se autorki zapisa 4 ovog spiska, a ne imenu koje je tada zavedeno: fotografija koja stoji pod „brza putanja” snimljena je njenog prototipa, koji sada nosi naziv „putanja”. Atribucija se menja u registru radova, ne na ovoj strani.",
+    "en": "The „putanja” work from the third class is attributed to the author of entry 4 of this list, not to the name recorded then: the photograph filed under „brza putanja” shows her prototype, now titled „putanja”. The attribution changes in the work register, not on this page."
+   }
+  },
+  {
+   "id": "brza-putanja-3d-lavirint",
+   "izvor": "Nastavnik predmeta, 23.10.2026.",
+   "sta": {
+    "sr": "Zatvoreno 23.10.2026: obe fotografije pod „brza putanja” prikazuju „3d lavirint”, rad iz zapisa 8 ovog spiska. Rad je u registru preimenovan i vraćen u galeriju; naziv „brza putanja” više ne stoji ni uz jedan rad.",
+    "en": "Closed on 23 October 2026: both photographs under „brza putanja” show „3d lavirint”, the work of entry 8 of this list. In the register the work is renamed and returned to the gallery; the title „brza putanja” no longer stands beside any work."
+   }
+  },
+  {
+   "id": "sanja-aleksa-vasic",
+   "izvor": "Nastavnik predmeta, 23.10.2026.",
+   "sta": {
+    "sr": "Zatvoreno 23.10.2026: fotografija koja je stajala uz „2d lavirint” (treći čas) pripisana je autoru zapisa 19 spiska trećeg časa, koji nije na ovom spisku. Rad je vraćen u galeriju; prezime je potvrđeno, broj indeksa se potvrđuje na času.",
+    "en": "Closed on 23 October 2026: the photograph that stood beside „2d lavirint” (third class) is attributed to the author of entry 19 of the third-class list, who is not on this list. The work is back in the gallery; the surname is confirmed, the student number is confirmed in class."
+   }
+  },
+  {
+   "id": "miljana-bez-rada-c03",
+   "izvor": "Nastavnik predmeta, 23.10.2026.",
+   "sta": {
+    "sr": "Posledica razdvajanja: ime iz zapisa 20 spiska trećeg časa ostalo je bez zavedenog rada, jer su sva tri niza fotografija pripisana imenima iz sledećih redova. Zapis se vodi otvoren u spisku trećeg časa.",
+    "en": "A consequence of the separation: the name in entry 20 of the third-class list is left without a filed work, because all three photograph sequences went to the names in the following rows. The entry stays open in the third-class list."
+   }
+  },
+  {
+   "id": "mijanovic-indeks",
+   "izvor": "Nastavnik predmeta, 23.10.2026. (treći zapis tog dana)",
+   "sta": {
+    "sr": "Broj indeksa zapisa 27 ovog spiska ispravljen je: danas je bio zapisan sa zamenjenim delovima, a godište je 2024, kao kod cele generacije. Spisak trećeg časa je uz isto ime od početka nosio tačan broj, pa je pitanje zatvoreno.",
+    "en": "The student number of entry 27 of this list was corrected: today it was written with its parts swapped, while the year is 2024, as for the whole cohort. The third-class list carried the correct number beside the same name from the start, so the question is closed."
+   }
+  },
+  {
+   "id": "c04-naziv-putanja",
+   "izvor": "Nastavnik predmeta, 23.10.2026. (dopuna uz spisak četvrtog časa).",
+   "sta": {
+    "sr": "Zatvoreno: rad zapisa 4 zove se „putanja”. Naziv „brza putanja” pripada drugom radu — zapisu 20 spiska trećeg časa, uslovno i uz traženu potvrdu.",
+    "en": "Closed: the work of entry 4 is called „putanja”. The title „brza putanja” belongs to another work — entry 20 of the third-class list, provisionally and with confirmation requested."
+   }
+  },
+  {
+   "id": "c04-indeks-zapis-8",
+   "izvor": "Nastavnik predmeta, 23.10.2026. (dopuna uz spisak četvrtog časa).",
+   "sta": {
+    "sr": "Zatvoreno: broj indeksa zapisa 8 je onaj iz spiska trećeg časa. Razlika zapisana danas bila je greška u prepisu, ne prijava studentkinje.",
+    "en": "Closed: the student number of entry 8 is the one from the third-class list. The difference written today was a transcription slip, not a report by the student."
+   }
+  },
+  {
+   "id": "c04-godista-potvrdjena",
+   "izvor": "Nastavnik predmeta, 23.10.2026. (dopuna uz spisak četvrtog časa).",
+   "sta": {
+    "sr": "Zatvoreno: godište koje odudara od generacije 2024 nije greška. Predmet slušaju i studenti koji nisu položili godinu, pa takav broj indeksa ostaje kako je zapisan.",
+    "en": "Closed: a year that differs from the 2024 cohort is not an error. The course is also attended by students who have not passed the year, so such a student number stands as recorded."
+   }
+  },
+  {
+   "id": "c04-poseta-spisak",
+   "izvor": "Nastavnik predmeta, 23.10.2026. (dopuna uz spisak četvrtog časa).",
+   "sta": {
+    "sr": "Spisak sa posete udruženju istog dana zaveden je kao zaseban registar: sedamnaest imena, redom kojim ih je nastavnik zapisao. Fotografije iz udruženja još nisu prenete, pa analiza posete čeka.",
+    "en": "The list from the same day’s association visit is filed as its own register: seventeen names, in the order the teacher wrote them. The photographs from the association have not been transferred, so the visit analysis waits."
+   }
+  }
+ ],
+ "prijem": {
+  "uredjaj": "Galaxy S23 FE",
+  "putanja": "/Internal storage/DCIM/Camera",
+  "prviSnimak": "20261023_112141.jpg",
+  "prviSnimakVreme": "2026-10-23T11:21:41",
+  "napomena": {
+   "sr": "Prvi snimak niza prikazuje kutiju od kartona sa unutrašnjim pregradama i plastičnim čašama — prva fotografija prvog rada u spisku. Fotografije još nisu prenete sa telefona.",
+   "en": "The first frame of the sequence shows a cardboard box with inner dividers and plastic cups — the first photograph of the first work in the list. The photographs have not yet been transferred from the phone."
+  }
+ },
+ "posetaRegistar": "data/poseta-2026-10-23.json"
+}
