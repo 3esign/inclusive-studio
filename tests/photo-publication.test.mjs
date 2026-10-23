@@ -42,9 +42,10 @@ test('the visit keeps its existing withdrawal and evidence',()=>{
 });
 test('public gallery and third-class teaser link to one page per reviewed object',()=>{
  setLanguage('sr');const html=read('prototipovi.html'),teaser=prototypeTeaser(data,3);
+ // Najava na strani narednog časa pokazuje jednu nedelju; pregled radova pokazuje sve.
  for(const g of data.galleries){
    const link='href="galerija-'+g.id+'.html"';
-   assert.equal(teaser.split(link).length-1,1);
+   if(g.documentedWeek===3) assert.equal(teaser.split(link).length-1,1);
    assert.equal(html.split(link).length-1,1);
  }
  assert.ok(html.includes(renderPrototypes(data)));
@@ -61,7 +62,8 @@ test('processing status and roster uncertainty do not return to the teaching sum
    const spisak=JSON.parse(read(name));
    if(spisak.prijem) pending.add(spisak.cas);
  }
- assert.ok(pending.size,'the exception must be anchored to a real register, not assumed');
+ // 24.10: kad nijedan registar više ne čeka prenos, izuzetak nestaje sam od sebe i
+ // pravilo važi za sve časove — zato se prazan skup ne smatra greškom, nego punim stanjem.
  for(const item of tok.odrzano) for(const r of item.rezultati){
    assert.doesNotMatch(r.sta.sr,/zapisi \d|\d+ zapisa|redom slikanja|čeka potvrdu/i,item.id);
    if(!pending.has(item.id)) assert.doesNotMatch(r.sta.sr,/nisu prenete|još nisu prenete/i,item.id);

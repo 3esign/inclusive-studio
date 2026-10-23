@@ -65,8 +65,9 @@ const PREFIX_FRAMES=new Set([
 
 test('every work carries the supplied identity and exactly the listed number of frames', async()=>{
   assert.deepEqual(validatePrototypes(data),[]);
-  const shown=new Map(data.galleries.map(g=>[g.id,g]));
-  const waiting=new Map((data.cekaju||[]).map(w=>[w.id,w]));
+  // LIST je spisak trećeg časa; registar od 24.10.2026 nosi i četvrti, pa se gleda nedelja.
+  const shown=new Map(data.galleries.filter(g=>g.documentedWeek===3).map(g=>[g.id,g]));
+  const waiting=new Map((data.cekaju||[]).filter(w=>w.documentedWeek===3).map(w=>[w.id,w]));
   assert.equal(shown.size+waiting.size,LIST.length,'the list and the register hold the same works');
   const hashes=new Set();
   for(const [order,id,number,name,title,count] of LIST){

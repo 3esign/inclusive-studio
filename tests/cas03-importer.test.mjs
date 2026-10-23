@@ -105,8 +105,8 @@ test('the live register never claims a confirmed status the list does not establ
   // 23.10.2026: a waiting row stands in `cekaju`, never among the published works, and
   // the register claims no attribution status for it.
   for (const entry of spisak.radovi.filter(r => r.ceka)) {
-    assert.ok(!(live.galleries || []).some(g => g.listOrder === entry.rb), `row ${entry.rb} waits and may not be published as a work`);
-    const waiting = (live.cekaju || []).find(w => w.listOrder === entry.rb);
+    assert.ok(!(live.galleries || []).some(g => g.documentedWeek === 3 && g.listOrder === entry.rb), `row ${entry.rb} waits and may not be published as a work`);
+    const waiting = (live.cekaju || []).find(w => w.documentedWeek === 3 && w.listOrder === entry.rb);
     assert.ok(waiting, `row ${entry.rb} waits and must stand in cekaju`);
     assert.ok(!('attributionStatus' in waiting), `row ${entry.rb}: a waiting work claims no confirmation status`);
   }

@@ -16,7 +16,7 @@ const prototypes = await json('data/prototipovi.json');
 test('the class-list register passes its own rules: every listed work, a real date, a source', () => {
   assert.deepEqual(validateCas03(spisak), []);
   assert.equal(spisak.odrzan, '2026-10-16');
-  assert.equal(spisak.radovi.length, prototypes.galleries.length + prototypes.cekaju.length);
+  assert.equal(spisak.radovi.length, prototypes.galleries.filter(g => g.documentedWeek === 3).length + prototypes.cekaju.filter(w => w.documentedWeek === 3).length);
   for (const problem of [
     { ...spisak, schema: 'course-class-list/v2' },
     { ...spisak, radovi: [] },
@@ -38,8 +38,10 @@ test('the class-list register passes its own rules: every listed work, a real da
 
 test('the list and the work register tell the same story, row for row', () => {
   assert.deepEqual(validatePrototypes(prototypes), []);
-  const works = new Map(prototypes.galleries.map(g => [g.listOrder, g]));
-  const waiting = new Map(prototypes.cekaju.map(w => [w.listOrder, w]));
+  // Redni broj reda jedinstven je unutar jednog časa, ne u celom registru: od 24.10.2026
+  // tu stoje i galerije četvrtog časa, pa se bira nedelja ovog spiska.
+  const works = new Map(prototypes.galleries.filter(g => g.documentedWeek === 3).map(g => [g.listOrder, g]));
+  const waiting = new Map(prototypes.cekaju.filter(w => w.documentedWeek === 3).map(w => [w.listOrder, w]));
   for (const row of spisak.radovi) {
     const work = works.get(row.rb) ?? waiting.get(row.rb);
     assert.ok(work, `row ${row.rb} has no work in the register`);

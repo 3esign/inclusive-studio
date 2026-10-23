@@ -11,6 +11,10 @@ exclude:
   - data/cas-03/verifikacija-prijema.md
   - data/cas-03/slike
   - data/cas-03/spisak.json
+  - data/cas-04/predlog-registra.json
+  - data/cas-04/prihvat.json
+  - data/cas-04/slike
+  - data/cas-04/slike-poseta
   - data/prototipovi/03-slovo-prsti
   - data/prototipovi/04-touch
   - data/prototipovi/05-music-box

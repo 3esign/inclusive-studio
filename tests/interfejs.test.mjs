@@ -101,7 +101,7 @@ function withoutAuthorizedAttribution(file, text, data) {
     copy.participants = copy.participants.map(() => ({ name: '[visit-participant]', studentNumber: '[visit-number]' }));
     return JSON.stringify(copy);
   }
-  if (file === 'data/prototipovi.json' || file === 'data/prototipovi-javno.json' || file === 'data/cas-03/predlog-registra.json') {
+  if (file === 'data/prototipovi.json' || file === 'data/prototipovi-javno.json' || /^data\/cas-\d{2}\/predlog-registra\.json$/.test(file)) {
     const copy = JSON.parse(text);
     for (const row of attributionRows(copy)) row.author = { name: '[attributed-author]', ...(Object.hasOwn(row.author, 'studentNumber') ? { studentNumber: '[attributed-number]' } : {}) };
     for (const title of [...(copy.galleries || []), ...(copy.cekaju || [])]) { title.title = { sr: '[work-title]', en: '[work-title]' }; for (const photo of title.photos || []) photo.alt = { sr: '[work-alt]', en: '[work-alt]' }; }

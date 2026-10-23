@@ -52,3 +52,28 @@ isto pravilo koje važi na sajtu. Brojevi redova trećeg časa prate spisak od *
 Hešovanje kadrova dokazuje da fajl nije zamenjen — **ne dokazuje** da kadar prikazuje rad
 uz koji stoji. To je razlika koja je 23.10. i proizvela zamenu imena uz tri niza. Jedini
 dokaz da kadar pripada radu ostaje nastavnikovo čitanje fotografije.
+
+## 24.10.2026 — fotografije su prenete
+
+Osamdeset sedam kadrova četvrtog časa i trideset jedan kadar iz udruženja preneti su sa
+telefona. Materijalno pitanje „fotografije su na telefonu” time je zatvoreno; strana
+četvrtog časa nosi galeriju uz svaki red koji ima kadar.
+
+Niz je razvrstan po predmetu koji se na kadru vidi, pa tek onda upoređen sa rukom
+zapisanim brojevima. Tri reda su se razišla sa spiskom i ispravljena su: red 14 ima jedan
+kadar umesto dva, red 22 sedam umesto pet, red 26 dva umesto tri. Ukupno je i dalje 87.
+
+Novo što se traži:
+
+1. **Tri naziva, tri predmeta.** Poslužavnik sa papirnim lopticama, bela ploča sa
+   slamčicama i koncem, i ogledalska ploča sa tačkama i kanapom snimljeni su jedan za
+   drugim i u spisku nose nazive „praćka”, „igra sa užetom” i „stubići” tim redom. Redosled
+   se slaže, ali nijedan naziv se ne vidi na kadru — potvrda se traži.
+2. **Red 15 i red 19.** Uz red 15 piše da je doneta skica. Jedan kadar u 12:20 zaista
+   pokazuje olovkom crtanu skicu i pripisan je tom redu; lavirint od crnih slamčica iz 12:40
+   pripisan je redu 19. Potvrda ovog reza se traži.
+3. **Kadrovi iz udruženja.** Trideset jedan kadar stoji neobjavljen dok se natpisi ne
+   potvrde.
+
+Prisustvo na predavanju i dalje nije vođeno — to je granica ove evidencije, a ne otvoreno
+pitanje: ovaj spisak zavodi one koji su se pojavili u spisku radova i na poseti.
