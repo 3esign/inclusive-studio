@@ -48,7 +48,10 @@ test('an additional independent prototype renders without modifying templates or
   const html = renderPrototypes(next);
   assert.match(html, /id="new-example"/);
   for (const original of publishedPrototypes(data).items) assert.ok(html.includes(`id="${original.id}"`));
-  assert.equal((html.match(/data-prototype-attribution=/g) || []).length, publishedPrototypes(data).items.length + 1);
+  // The page now also attributes each third-class work in its tile; count only the cards.
+  const itemIds = new Set(next.items.map(i => i.id));
+  const attributed = [...html.matchAll(/data-prototype-attribution="([^"]+)"/g)].map(m => m[1]).filter(id => itemIds.has(id));
+  assert.equal(attributed.length, publishedPrototypes(data).items.length + 1);
 });
 test('documented week is required, positive and never precedes the start of work', () => {
   for (const value of [undefined, null, 0, -1, 1.5, '2', Infinity]) {
@@ -107,7 +110,7 @@ test('drawings and teacher examples omit unknown personal data and origin withou
     }
     assert.ok(html.includes(language === 'sr' ? 'Radovi i primeri.' : 'Works and examples.'));
     assert.doesNotMatch(teaser, /undefined|null|Work begun|Početak izrade/);
-    const onlyNew = { ...d, items: [drawing, teacher], revizije: [], observations: [] };
+    const onlyNew = { ...d, items: [drawing, teacher], revizije: [], observations: [], galleries: [], cekaju: [] };
     assert.deepEqual(validatePrototypes(onlyNew), []);
     assert.doesNotMatch(renderPrototypes(onlyNew), /index\.html\?w=1(?:"|&)/, 'unknown origin is never replaced with week one');
   }

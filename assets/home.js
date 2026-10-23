@@ -149,7 +149,7 @@ function helpingView() {
 function landingView() {
   const tok = flow.tok;
   return `
-  ${heldSection(tok, flow.weeks, { visit: flow.visit || null, prototypes: flow.prototypes || null })}
+  ${heldSection(tok, flow.weeks, { visits: flow.visits || [], visit: flow.visit || null, prototypes: flow.prototypes || null })}
   <nav class="onward" aria-label="${tr('Where the course goes next', 'Kuda predmet ide dalje')}">
     <a href="sledeci.html"><b>${tr('Next class', 'Sledeći čas')}</b><span>${tr('the preparation, on the shoulders of the last one', 'priprema, naslonjena na prethodni čas')} →</span></a>
     <a href="oblak.html"><b>${tr('Cloud of ideas', 'Oblak ideja')}</b><span>${tr('everything that still has no week', 'sve što još nema nedelju')} →</span></a>
@@ -172,7 +172,7 @@ function landingRender() {
 
 async function loadLanding() {
   try {
-    const [tok, verzije, prototypes, visit] = await Promise.all([loadJSON('data/tok.json'), loadJSON('data/verzije.json'), loadJSON('data/prototipovi-javno.json'), loadJSON('data/poseta.json')]);
+    const [tok, verzije, prototypes, visit, visitW03] = await Promise.all([loadJSON('data/tok.json'), loadJSON('data/verzije.json'), loadJSON('data/prototipovi-javno.json'), loadJSON('data/poseta.json'), loadJSON('data/poseta-w03.json')]);
     const problems = validateTok(tok);
     if (problems.length) throw new Error(problems[0]);
     if (validatePrototypes(prototypes).length) throw new Error('Invalid prototype register.');
@@ -186,7 +186,8 @@ async function loadLanding() {
         weeks.set(item.nedelja, week);
       }
     }
-    flow = { tok, verzije, weeks, prototypes, visit };
+    if (validateVisit(visitW03).length) throw new Error('Invalid third-class visit register.');
+    flow = { tok, verzije, weeks, prototypes, visit, visits: [visitW03] };
     const nextCas = tok.sledeci.filter(item => item.vrsta === 'cas' && typeof item.nedelja === 'number')[0];
     setFlowCounts({ odrzano: tok.odrzano.length, sledeciNedelja: nextCas ? nextCas.nedelja : '', 'oblak-ideja': tok.ideje.length });
     announce(tr('The held classes are loaded.', 'Održani časovi su učitani.'));

@@ -6,6 +6,8 @@
 //          — predlog u obliku koji assets/prototipovi-core.js validira; registar
 //            data/prototipovi.json se NE menja automatski.
 // Čuvar (20.10.2026): bez ijedne ulazne fotografije alat ne prepisuje postojeći prihvat.
+// 23.10.2026: red spiska više ne nosi zastavicu nesigurnosti — ili pokazuje svoj rad ili
+// kaže da čeka fotografije, pa predlog ne proizvodi `attributionStatus`.
 import { createHash } from 'node:crypto';
 import { readdirSync, readFileSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
@@ -92,11 +94,10 @@ for (const rad of nalazi) {
     documentedWeek: nedelja,
     author: { name: entry.ime || 'nepoznat autor', ...(entry.indeks ? { studentNumber: entry.indeks } : {}) },
     attribution: { sourceId: izvor.id, fields: entry.indeks ? ['name', 'studentNumber'] : ['name'] },
-    ...(entry.potvrditi ? { attributionStatus: 'pending' } : {}),
     sourceId: izvor.id,
     description: {
-      sr: `Prototip sa časa ${danSr} (nedelja ${nedelja}), zapis nastavnika${entry.potvrditi ? '; atribucija čeka potvrdu studenta' : ''}.`,
-      en: `Prototype from the class of ${spisak.odrzan} (week ${nedelja}), teacher's record${entry.potvrditi ? '; attribution pending student confirmation' : ''}.`,
+      sr: `Prototip sa časa ${danSr} (nedelja ${nedelja}), zapis nastavnika.`,
+      en: `Prototype from the class of ${spisak.odrzan} (week ${nedelja}), teacher's record.`,
     },
     photos: rad.slike.filter(p => p.ok).map((p, i) => ({
       id: `${id}-foto-${String(i + 1).padStart(2, '0')}`,

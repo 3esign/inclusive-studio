@@ -19,7 +19,7 @@ export function validateVisit(visit) {
   const problems = [];
   const fail = (condition, message) => { if (!condition) problems.push(message); };
   fail(visit?.schema === 'course-visit/v1', 'Unknown visit register schema.');
-  fail(keys(visit, ['schema', 'id', 'week', 'occurredOn', 'place', 'source', 'participants', 'summary', 'photos']), 'Unknown visit register fields.');
+  fail(keys(visit, ['schema', 'id', 'week', 'occurredOn', 'place', 'source', 'participants', 'summary', 'photos', 'findings']), 'Unknown visit register fields.');
   fail(ID.test(visit?.id || ''), 'Visit id required.');
   fail(Number.isInteger(visit?.week) && visit.week > 0, 'Visit week must be a positive integer.');
   fail(date(visit?.occurredOn), 'Visit needs an actual date.');
@@ -46,6 +46,14 @@ export function validateVisit(visit) {
     fail(Number.isInteger(p?.width) && p.width > 0 && Number.isInteger(p?.height) && p.height > 0, label + ': image dimensions required.');
     fail(bilingual(p?.alt) && bilingual(p?.caption), label + ': bilingual alt and caption required.');
     fail(p?.sourceId === visit?.source?.id, label + ': sourceId must point at the visit source.');
+  }
+  if (visit.findings !== undefined) {
+    fail(Array.isArray(visit.findings), 'Visit findings must be a list.');
+    const photoIds = new Set((visit.photos || []).map(p => p.id));
+    for (const f of visit.findings || []) {
+      fail(keys(f, ['title', 'photoIds', 'seen', 'next']) && bilingual(f.title) && bilingual(f.seen) && bilingual(f.next), 'Finding needs bilingual title, observation and proposed next step.');
+      fail(Array.isArray(f.photoIds) && f.photoIds.length > 0 && f.photoIds.every(id => photoIds.has(id)), 'Finding must cite photographs in this visit.');
+    }
   }
   return problems;
 }
@@ -95,12 +103,6 @@ const FINDINGS = [
     next: { sr: 'Čašicama dati vrednosti po boji (poeni), a razmak štapića učiniti podesivim — igra raste sa veštinom i ostaje zajednička.', en: 'Give the cups values by colour (points) and make the stick gap adjustable — the game grows with skill and stays shared.' }
   },
   {
-    work: 'pogodilica-2026',
-    seen: { sr: 'Tabla sa obojenim stošcima igrana je sa više strana stola istovremeno — po broju fotografija, najposećeniji rad posete. Ruke slažu stošce po boji i gađaju cilj.', en: 'The board with coloured cones was played from several sides of the table at once — by photograph count, the most visited work of the visit. Hands sort cones by colour and aim at the target.' },
-    reading: { sr: 'Grupa se ovde skuplja sama od sebe: tabla je dovoljno velika da primi više ruku, a pravila dovoljno jasna da se igra nastavi bez objašnjenja. Paleta je najdečja na celoj zbirci — jedina koja vizuelno „objavljuje” da je igra za decu.', en: 'A group gathers here on its own: the board is large enough for several hands, and the rules are clear enough for the play to continue without explanation. The palette is the most childish of the whole collection — the only one that visually „announces” a children’s game.' },
-    next: { sr: 'Prigušiti paletu ka prirodnim materijalima (drvo, karton, tkivo) — odrasli korisnici zaslužuju estetiku za sebe; pravila koja rade i u paru i sam.', en: 'Mute the palette towards natural materials (wood, cardboard, cloth) — adult users deserve an aesthetics of their own; rules that work in a pair and alone.' }
-  },
-  {
     work: 'sudoku-2026',
     seen: { sr: 'Pločice sa reljefnim brojevima slagane su i razvrstavane po stolu; kontakti su bili kraći i mirniji nego kod ostalih radova — slaganje bez utrke.', en: 'Tiles with raised numbers were laid out and sorted on the table; the contact was shorter and quieter than with the other works — arranging without a race.' },
     reading: { sr: 'Najviši kontrast zbirke (crno na belom) i reljef koji se čita prstom — jak dizajn za slabovidne. Ali broj je apstrakcija: na materijalu se vidi slaganje, ne i igra sa pravilom. Nedostaje most od broja do zadatka.', en: 'The highest contrast of the collection (black on white) and a relief that can be read by finger — strong design for low-vision users. But a number is an abstraction: the material shows arranging, not yet a game with a rule. The bridge from number to task is missing.' },
@@ -134,7 +136,7 @@ const PATTERNS = [
   { sr: 'Proslava pokušaja: aplauz prati i promašaj. Dizajnirati tako da i promašaj daje povratnu informaciju — zvuk, pokret, promenu boje.', en: 'The celebration of the attempt: applause follows a miss too. Design so that a miss also gives feedback — a sound, a movement, a change of colour.' },
   { sr: 'Sto je arena: svi fizički radovi korišćeni su na stolu. Stabilnost podloge je univerzalni uslov — vidljivo kod Zmijice, čija se podloga klizala dok se igralo.', en: 'The table is the arena: every physical work was used on the table. A steady base is a universal condition — visible with Zmijica, whose base slid during play.' },
   { sr: 'Zvuk drži pažnju bez ekrana: brojanje, aplauz, odziv aplikacije. Igračka koja „odgovara” zvukom ostaje u sobi.', en: 'Sound holds attention without a screen: counting, applause, the application’s response. A work that „answers” with sound stays in the room.' },
-  { sr: 'Odrasla estetika je pristupačnost: drvo i crno-beli kontrast su najbolje primljeni, a najdečja paleta najmanje zadržava. Materijal i boja su deo univerzalnog dizajna, ne ukras.', en: 'An adult aesthetics is accessibility: wood and black-and-white contrast were received best, and the most childish palette held attention least. Material and colour are part of universal design, not decoration.' }
+  { sr: 'Materijal i boju treba birati sa korisnicima: fotografije ne dokazuju koja paleta duže zadržava pažnju.', en: 'Choose materials and colours with users: photographs do not establish which palette holds attention longer.' }
 ];
 
 function ready(visit, prototypes) {
@@ -150,7 +152,7 @@ export function renderPoseta(visit, prototypes) {
     list.push(...o.photos); byWork.set(o.prototypeId, list);
   }
   const title = id => prototypes.items.find(item => item.id === id)?.title || id;
-  const findings = FINDINGS.map((finding, i) => {
+  const findings = FINDINGS.filter(f => byWork.has(f.work)).map((finding, i) => {
     const observation = byWork.get(finding.work);
     const collected = byWork.get(finding.work) || [];
     const photos = collected.length
@@ -196,7 +198,7 @@ ${(visit.photos || []).some(publicPhoto) ? `<section aria-labelledby="visit-scen
     <li>${tr('Steady base: a non-slip layer under Zmijica, and under every work played on a smooth table — the second hand returns to play.', 'Stabilna podloga: antiklizni sloj ispod Zmijice, i ispod svakog rada koji se igra na gladnom stolu — druga ruka se vraća igri.')}</li>
     <li>${tr('Adjustable difficulty: the Upadalica stick gap becomes a setting, the cups get values by colour — the game grows with skill.', 'Podesiva težina: razmak štapića Upadalice postaje podešavanje, čašice dobijaju vrednost po boji — igra raste sa veštinom.')}</li>
     <li>${tr('A response outside the screen: the Music Box answers through the room — a speaker on the table, the flower on a wall.', 'Odziv van ekrana: Muzička Kutija odgovara kroz sobu — zvučnik na stolu, cvet na zidu.')}</li>
-    <li>${tr('An adult palette: wood and cloth instead of the loudest colours — the aesthetics of users who are not children.', 'Odrasla paleta: drvo i tkivo umesto najglasnijih boja — estetika korisnika koji nisu deca.')}</li>
+    <li>${tr('Offer material and colour alternatives and ask users about their preferences.', 'Ponuditi različite materijale i boje i pitati korisnike šta im odgovara.')}</li>
     <li>${tr('A number with a quantity: the Sudoku tiles pair with 1·, 2·· — matching instead of counting.', 'Broj sa količinom: pločice Sudokua se uparuju sa 1·, 2·· — pariranje umesto računanja.')}</li>
   </ol>
   <h3 class="visit-moves-title">${tr('Checked paths from the web', 'Provereni putevi sa mreže')}</h3>
@@ -209,4 +211,16 @@ ${(visit.photos || []).some(publicPhoto) ? `<section aria-labelledby="visit-scen
   <p class="help">${tr('Links checked 12.10.2026. They are directions for reading, not tasks: a Version 2 change is judged by what it does in real hands.', 'Veze proverene 12.10.2026. To su pravci za čitanje, ne zadaci: izmenu verzije 2 ocenjujemo po onome što uradi u stvarnim rukama.')}</p>
 </section>
 <aside class="prototype-context visit-source"><h2>${tr('Sources of this page', 'Izvori ove strane')}</h2><p>${esc(tx(visit.source.description))}</p><p>${tr('Attribution of each work stands in the gallery of works; the participants of the visit in the visit register. The members’ names are not published, nor is a face tied to a finding.', 'Autorstvo svakog rada stoji u galeriji radova; učesnici posete u registru posete. Imena korisnika udruženja se ne objavljuju, niti se lice vezuje za nalaz.')}</p></aside>`;
+}
+
+// A dated visit record: camera scenes stay separate from work attribution.
+export function renderVisitRecord(visit, { compact = false } = {}) {
+  const problems = validateVisit(visit);
+  if (problems.length) throw Error(problems.join('\n'));
+  const anchor = `poseta-w${String(visit.week).padStart(2, '0')}`;
+  const participants = visit.participants.map(p => `<li><span data-participant-name>${esc(p.name)}</span><span data-participant-number>${esc(p.studentNumber)}</span></li>`).join('');
+  const photos = compact ? [visit.photos[0], visit.photos[2], visit.photos.at(-1)] : visit.photos;
+  const figures = photos.map(p => `<figure id="${compact ? 'lead-' : ''}${esc(p.id)}"><a href="${esc(p.src)}" aria-label="${tr('Open full image', 'Otvori celu sliku')}"><img src="${esc(p.src)}" width="${p.width}" height="${p.height}" alt="${esc(tx(p.alt))}" loading="lazy" decoding="async"></a>${compact ? '' : `<figcaption>${esc(tx(p.caption))}</figcaption>`}</figure>`).join('');
+  const findings = compact ? '' : `<section class="visit-readings"><h3>${tr('From observation to the next trial', 'Od zapažanja do sledećeg probanja')}</h3><p>${tr('These photographs document positions and grips. They do not establish duration, independent use, understanding of rules or a successful outcome.', 'Fotografije beleže položaje i hvatove. Ne potvrđuju trajanje, samostalnost, razumevanje pravila ili uspešan ishod.')}</p>${(visit.findings || []).map(f => `<article class="visit-finding"><h4>${esc(tx(f.title))}</h4><p><strong>${tr('Visible in the photographs', 'Vidljivo na fotografijama')}.</strong> ${esc(tx(f.seen))}</p><p><strong>${tr('Proposal for the next trial', 'Predlog za sledeće probanje')}.</strong> ${esc(tx(f.next))}</p><p>${tr('Photographs', 'Fotografije')}: ${f.photoIds.map(id => `<a href="#${esc(id)}">${visit.photos.findIndex(p => p.id === id)+1}</a>`).join(' · ')}</p></article>`).join('')}</section>`;
+  return `<section class="field-visit visit-record" id="${anchor}${compact ? '-lead' : ''}" aria-labelledby="${anchor}${compact ? '-lead' : ''}-title"><p class="eyebrow">${tr('Class', 'Čas')} ${visit.week} · <time datetime="${esc(visit.occurredOn)}">${esc(srDate(visit.occurredOn))}.</time></p><h2 id="${anchor}${compact ? '-lead' : ''}-title">${tr('Visit to the association', 'Poseta udruženju')}</h2><p class="lede">${esc(tx(visit.summary))}</p><div class="${compact ? 'visit-lead-photos' : 'gallery-detail'}">${figures}</div><h3>${tr('Students on the visit', 'Studenti na poseti')}</h3><ul class="visit-participants visit-compact" data-visit-participants="${esc(visit.id)}">${participants}</ul>${compact ? `<p><a class="button secondary" href="cas-03.html#${anchor}">${tr('All photographs and observations', 'Sve fotografije i zapažanja')} ↗</a></p>` : findings}</section>`;
 }

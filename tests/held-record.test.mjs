@@ -8,6 +8,7 @@ const root = new URL('../', import.meta.url);
 const json = async p => JSON.parse(await readFile(new URL(p, root), 'utf8'));
 const tok = await json('data/tok.json');
 const visit = await json('data/poseta.json');
+const visits = [await json('data/poseta-w03.json')];
 const prototypes = await json('data/prototipovi.json');
 assert.deepEqual(validateVisit(visit), [], 'visit register must pass its own rules');
 
@@ -30,30 +31,35 @@ test('the held landing retains each lesson photograph, caption and result in sta
     for (const result of item.rezultati) assert.ok(rendered.includes(esc(result.sta.sr)), 'an actual outcome was lost');
   }
   assert.ok(page.includes(heldIntro()), 'static intro differs from live Serbian intro');
-  assert.ok(page.includes(heldSection(tok, weeks, { visit, prototypes })), 'static class records are stale: run tools/held-baseline.mjs');
+  assert.ok(page.includes(heldSection(tok, weeks, { visit, prototypes, visits })), 'static class records are stale: run tools/held-baseline.mjs');
 });
 
-test('the landing opens with the newest class: each visit and each work strip stands inside its own week', async () => {
+test('the landing is chronological: each visit and each work strip stands inside its own week', async () => {
   setLanguage('sr');
   const page = await readFile(new URL('index.html', root), 'utf8');
   const lead = renderVisitLead(visit, prototypes);
   assert.ok(page.includes(lead), 'stale visit lead: run tools/held-baseline.mjs');
-  // Course order (teacher's instruction of 23.10.2026, replacing the one of 19.10.2026):
-  // the newest held class opens the page; the record below it stays chronological.
+  // Teacher correction of 21.10.2026 supersedes the previous oldest-first assumption.
   const weekMarks = [...page.matchAll(/Nedelja (\d+)<\/p>/g)].map(match => Number(match[1]));
   assert.deepEqual(weekMarks, [...tok.odrzano].sort((a, b) => b.nedelja - a.nedelja).map(item => item.nedelja), 'records must read newest first');
-  // The visit belongs to its week: still inside week two, which now stands below week three.
+  // The visit belongs to its week: after the week-2 record, before the week-1 record.
   const leadPos = page.indexOf('field-visit visit-lead');
   const w2Pos = page.indexOf('Nedelja 2</p>');
   const w3Pos = page.indexOf('Nedelja 3</p>');
-  assert.ok(w2Pos >= 0 && leadPos > w2Pos && w3Pos < w2Pos, 'the visit lead must stand inside the week of the visit');
+  assert.ok(w2Pos >= 0 && leadPos > w2Pos && w3Pos < w2Pos && leadPos < page.indexOf('Nedelja 1</p>'), 'the visit lead must stand inside the week of the visit');
   // No mixed strip above the records: the first teaser on the page is week 2's.
   assert.ok(!page.includes('<!-- prototype-teaser:start -->'), 'the standalone mixed teaser is withdrawn from the landing');
-  assert.ok(page.indexOf('prototype-teaser-title-w2') > w2Pos, 'earlier work strip stays inside week two');
+  assert.ok(page.indexOf('prototype-teaser-title-w2') > w2Pos && page.indexOf('prototype-teaser-title-w2') < page.indexOf('Nedelja 1</p>'), 'earlier work strip stays inside week two');
   // 19.10.2026: the third-class works are published, so their strip stands inside week three.
-  assert.ok(page.indexOf('prototype-teaser-title-w3') > w3Pos && page.indexOf('prototype-teaser-title-w3') < w2Pos, 'the week-3 work strip must stand inside week three');
+  assert.ok(page.indexOf('id="galerije-w03"') > w3Pos && page.indexOf('id="galerije-w03"') < w2Pos, 'the week-3 work strip must stand inside week three');
+  // A participant on the visit may also be the author of a published work. The name may
+  // therefore stand twice — once in the visit panel, once as an authorized attribution —
+  // but never loose in prose: every occurrence must sit inside a marked element.
+  const marked = page.replace(/<(p|small)\b[^>]*\bdata-prototype-attribution="[^"]+"[^>]*>[\s\S]*?<\/\1>/g, '')
+    .replace(/<ul\b[^>]*\bdata-visit-participants="[^"]+"[^>]*>[\s\S]*?<\/ul>/g, '');
   for (const person of visit.participants) {
-    assert.equal(page.split(esc(person.name)).length - 1, 1, person.name + ' must appear exactly once on the held page');
+    assert.ok(page.includes(esc(person.name)), person.name + ' must stand on the held page');
+    assert.ok(!marked.includes(esc(person.name)), person.name + ' must never stand outside an authorized field');
   }
   assert.ok(lead.includes('visit-compact'), 'the participants are shown discreetly on the lead');
   assert.ok(lead.includes('data/prototipovi/'), 'the lead shows photographs from the visit');

@@ -26,6 +26,9 @@ const BEZ_DIJAKRITIKA = new Set([
   'Sveska koja raste.'
 ]);
 
+const galleries = JSON.parse(await readFile(new URL('data/prototipovi-javno.json',root),'utf8')).galleries;
+for (const gallery of galleries) BEZ_DIJAKRITIKA.add(gallery.title.sr);
+
 const DIACRITICS = /[čćžšđ]/i;
 
 test('every static headline greets in Serbian', async () => {

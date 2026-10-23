@@ -12,25 +12,43 @@ import { readFile, readdir } from 'node:fs/promises';
 const root = new URL('../', import.meta.url);
 const registry = JSON.parse(await readFile(new URL('data/prototipovi.json', root), 'utf8'));
 // Each visit has its own register; the roster may stand only where that register is named.
-const VISITS = ['data/poseta.json', 'data/poseta-2026-10-23.json'];
+const VISITS = ['data/poseta.json', 'data/poseta-w03.json', 'data/poseta-2026-10-23.json'];
 const visitByFile = {};
 for (const file of VISITS) visitByFile[file] = JSON.parse(await readFile(new URL(file, root), 'utf8'));
 const visits = Object.values(visitByFile);
 const visit = visitByFile['data/poseta.json'];
-// Every class list is gated the same way: the page names its register, the register is
-// the only place a student's name may stand, and the row markup must match it exactly.
+const visitW03 = visitByFile['data/poseta-w03.json'];
+// Every class list is gated the same way: the page names its register, the register is the
+// only place a student's name may stand, and the row markup must match it exactly.
 const CLASS_LISTS = { 'cas-03.html': 'data/cas-03/spisak.json', 'cas-04.html': 'data/cas-04/spisak.json' };
 const classLists = {};
 for (const [page, file] of Object.entries(CLASS_LISTS)) classLists[page] = { file, data: JSON.parse(await readFile(new URL(file, root), 'utf8')) };
 const listByFile = Object.fromEntries(Object.values(classLists).map(entry => [entry.file, entry.data]));
 const cas03 = classLists['cas-03.html'].data;
+// A visit roster stands on the held page, the visit page, or the class page whose own
+// register names that visit — and nowhere else.
+const visitSurfaces = record => ['index.html', 'poseta.html', ...Object.entries(classLists)
+  .filter(([, entry]) => entry.data.posetaRegistar && visitByFile[entry.data.posetaRegistar] === record)
+  .map(([page]) => page)];
+const GALLERY_SURFACES = new Set(['cas-03.html', 'naslovna.html', 'index.html', 'sledeci.html']);
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 function attributionRows(data) {
   assert.equal(data.schema, 'course-prototypes/v1');
   const sources = new Set(data.sources.map(source => source.id));
   const rows = [...data.items, ...(data.revizije || []).flatMap(revision => [revision.before, revision.after])];
-  for (const row of rows) {
+  // 21.10.2026: a third-class work publishes the identity the teacher supplied — student
+  // number, name, prototype title. Its source stands on the work itself, not a separate grant.
+  const works = [...(data.galleries || []), ...(data.cekaju || [])];
+  for (const work of works) {
+    const numbered = Object.hasOwn(work.author, 'studentNumber');
+    assert.deepEqual(Object.keys(work.author).sort(), numbered ? ['name', 'studentNumber'] : ['name'], 'only the authorized author fields may be public');
+    assert.ok(sources.has(work.sourceId), 'a published work needs a recorded source');
+    assert.ok(typeof work.author.name === 'string' && work.author.name.trim());
+    if (numbered) assert.ok(/^\d{1,4}\/\d{2}(?:\d{2})?$/.test(work.author.studentNumber));
+  }
+  rows.push(...works);
+  for (const row of rows.filter(row => row.attribution)) {
     const numbered = Object.hasOwn(row.author, 'studentNumber');
     const fields = numbered ? ['name', 'studentNumber'] : ['name'];
     assert.deepEqual(Object.keys(row.author).sort(), fields, 'only the authorized author fields may be public');
@@ -66,7 +84,7 @@ function cas03Rows(data) {
   assert.ok(data.source && typeof data.source.id === 'string' && data.source.id.trim());
   for (const row of data.radovi) {
     const fields = Object.keys(row).filter(key => key !== 'ime' && key !== 'indeks');
-    assert.deepEqual(fields.sort(), ['napomena', 'potvrditi', 'prviTalas', 'rad', 'razjasni', 'rb', 'slike'].filter(key => key in row), 'only the authorized list fields may be public');
+    assert.deepEqual(fields.sort(), ['ceka', 'galerija', 'napomena', 'rad', 'razjasni', 'rb', 'slike'].filter(key => key in row), 'only the authorized list fields may be public');
     assert.ok(row.ime === null || (typeof row.ime === 'string' && row.ime.trim()));
     assert.ok(row.indeks === null || /^\d{1,4}\/\d{2}(?:\d{2})?$/.test(row.indeks));
   }
@@ -79,12 +97,16 @@ function withoutAuthorizedAttribution(file, text, data) {
     visitRows(visitByFile[file]);
     const copy = JSON.parse(text);
     visitRows(copy);
+    assert.deepEqual(copy.participants, visitByFile[file].participants);
     copy.participants = copy.participants.map(() => ({ name: '[visit-participant]', studentNumber: '[visit-number]' }));
     return JSON.stringify(copy);
   }
   if (file === 'data/prototipovi.json' || file === 'data/prototipovi-javno.json' || file === 'data/cas-03/predlog-registra.json') {
     const copy = JSON.parse(text);
     for (const row of attributionRows(copy)) row.author = { name: '[attributed-author]', ...(Object.hasOwn(row.author, 'studentNumber') ? { studentNumber: '[attributed-number]' } : {}) };
+    for (const title of [...(copy.galleries || []), ...(copy.cekaju || [])]) { title.title = { sr: '[work-title]', en: '[work-title]' }; for (const photo of title.photos || []) photo.alt = { sr: '[work-alt]', en: '[work-alt]' }; }
+    // A withdrawn record keeps the author it once named; it is evidence, not a public field.
+    for (const gone of copy.povuceno || []) gone.zapis = { id: gone.id, redacted: '[withdrawn-record]' };
     return JSON.stringify(copy);
   }
   if (listByFile[file]) {
@@ -97,19 +119,18 @@ function withoutAuthorizedAttribution(file, text, data) {
   // Renderer source contains template placeholders, not an emitted HTML attribution.
   // Keep source text fully visible to the name/data scan; redact only actual HTML.
   if (!file.endsWith('.html')) return text;
-  return text.replace(/<p\b[^>]*\bdata-prototype-attribution="([^"]+)"[^>]*>([\s\S]*?)<\/p>/g, (whole, id, inner) => {
-    assert.equal(file, 'prototipovi.html', 'only the canonical gallery publishes attribution');
-    const row = data.items.find(item => item.id === id);
+  return text.replace(/<(p|small)\b[^>]*\bdata-prototype-attribution="([^"]+)"[^>]*>([\s\S]*?)<\/\1>/g, (whole, tag, id, inner) => {
+    assert.ok(file === 'prototipovi.html' || GALLERY_SURFACES.has(file) || /^galerija-[a-z0-9-]+\.html$/.test(file), 'only the work surfaces publish attribution');
+    const row = [...data.items, ...(data.galleries || []), ...(data.cekaju || [])].find(item => item.id === id);
     assert.ok(row, 'attribution marker must name an existing prototype');
     const expected = `<span data-author-name>${escape(row.author.name)}</span>${Object.hasOwn(row.author, 'studentNumber') ? `<span data-author-number>${escape(row.author.studentNumber)}</span>` : ''}`;
     assert.equal(inner.trim().replace(/>\s+</g, '><'), expected, 'gallery attribution must match the exact authorized fields');
-    return '<p>[attributed-author-fields]</p>';
+    return `<${tag}>[attributed-author-fields]</${tag}>`;
   }).replace(/<ul\b[^>]*\bdata-visit-participants="([^"]+)"[^>]*>([\s\S]*?)<\/ul>/g, (whole, id, inner) => {
-    const named = visits.find(record => record.id === id);
-    assert.ok(named, 'participant list must name a recorded visit');
-    const onClassPage = classLists[file] && classLists[file].data.posetaRegistar && visitByFile[classLists[file].data.posetaRegistar] === named;
-    assert.ok(['index.html', 'poseta.html'].includes(file) || onClassPage, 'participants stand on the held page, the visit page, or the class page whose register names that visit');
-    const expected = named.participants.map(person => `<li><span data-participant-name>${escape(person.name)}</span><span data-participant-number>${escape(person.studentNumber)}</span></li>`).join('');
+    const recorded = visits.find(v => v.id === id);
+    assert.ok(recorded, 'participant list must name a recorded visit');
+    assert.ok(visitSurfaces(recorded).includes(file), 'participants stand on the held page, the visit page, or the class page whose register names that visit');
+    const expected = recorded.participants.map(person => `<li><span data-participant-name>${escape(person.name)}</span><span data-participant-number>${escape(person.studentNumber)}</span></li>`).join('');
     assert.equal(inner.trim(), expected, 'participant list must match the exact authorized fields');
     return '<ul>[visit-participant-fields]</ul>';
   }).replace(/<li\b[^>]*\bdata-cas03-row="(\d+)"[^>]*>([\s\S]*?)<\/li>/g, (whole, rb, inner) => {
@@ -175,7 +196,7 @@ test('the attribution exception cannot hide unrelated text, extra identifiers or
   assert.doesNotMatch(withoutAuthorizedAttribution('prototipovi.html', author, data), NAMES);
   assert.match(withoutAuthorizedAttribution('prototipovi.html', author + '<p>Dejan</p>', data), NAMES);
   assert.match(withoutAuthorizedAttribution('assets/prototipovi-core.js', author, data), NAMES, 'source literals do not receive an HTML exception');
-  assert.throws(() => withoutAuthorizedAttribution('udruzenje.html', author, data), /canonical gallery/);
+  assert.throws(() => withoutAuthorizedAttribution('udruzenje.html', author, data), /the work surfaces publish attribution/);
   assert.throws(() => withoutAuthorizedAttribution('prototipovi.html', author.replace('</p>', '<span>Dejan</span></p>'), data), /exact authorized/);
   const extra = structuredClone(data); extra.items[0].author.email = 'fixture@example.invalid';
   assert.throws(() => attributionRows(extra), /authorized author fields/);
@@ -189,7 +210,7 @@ test('name-only teacher attribution is limited to the sourced author field and e
   assert.doesNotMatch(withoutAuthorizedAttribution('data/prototipovi.json', JSON.stringify(data), data), NAMES);
   assert.match(withoutAuthorizedAttribution('prototipovi.html', author + '<p>Semir Fixture</p>', data), NAMES);
   assert.match(withoutAuthorizedAttribution('assets/prototipovi-core.js', author, data), NAMES);
-  assert.throws(() => withoutAuthorizedAttribution('index.html', author, data), /canonical gallery/);
+  assert.throws(() => withoutAuthorizedAttribution('etika.html', author, data), /the work surfaces publish attribution/);
   for (const extra of ['<span data-author-number>49/24</span>', '<span>Teacher</span>', '<a href="mailto:fixture@example.invalid">contact</a>']) {
     assert.throws(() => withoutAuthorizedAttribution('prototipovi.html', author.replace('</p>', extra + '</p>'), data), /exact authorized/);
   }
@@ -233,12 +254,13 @@ test('the visit exception is bounded to its named surfaces, its visit and its ex
   assert.ok(leaked.includes(visit.participants[0].name), 'a participant name outside the list must stay visible to the scan');
 });
 
-test('the class-list exception is bounded to its one surface, its rows and its exact markup', () => {
+test('the class-list exception is bounded to its own surface, its rows and its exact markup', () => {
   cas03Rows(cas03);
   const row = cas03.radovi.find(item => item.ime) || cas03.radovi[0];
   const li = `<li data-cas03-row="${row.rb}"><span data-cas03-name>${escape(row.ime || '—')}</span><span data-cas03-indeks>${escape(row.indeks || '—')}</span><span class="cas03-rad">x</span></li>`;
   assert.doesNotThrow(() => withoutAuthorizedAttribution('cas-03.html', li, registry));
   assert.throws(() => withoutAuthorizedAttribution('index.html', li, registry), /class-list page/);
+  assert.throws(() => withoutAuthorizedAttribution('cas-04.html', li, registry), /recorded entry|exact authorized/);
   const renamed = li.replace(`<span data-cas03-name>${escape(row.ime || '—')}</span>`, `<span data-cas03-name>${escape(row.ime || '—')} plus</span>`);
   assert.throws(() => withoutAuthorizedAttribution('cas-03.html', renamed, registry), /exact authorized/);
   assert.throws(() => withoutAuthorizedAttribution('cas-03.html', li.replace('data-cas03-name', 'data-cas03-full-name'), registry), /exact authorized/);
@@ -248,4 +270,13 @@ test('the class-list exception is bounded to its one surface, its rows and its e
   const badNumber = structuredClone(cas03); badNumber.radovi[1].indeks = badNumber.radovi[1].indeks + 'x';
   assert.throws(() => cas03Rows(badNumber), /indeks/);
   assert.ok(withoutAuthorizedAttribution('data/cas-03/spisak.json', JSON.stringify(cas03), registry).includes('[cas03-name]'), 'the register copy is redacted before the scan');
+});
+
+test('third-class participants are authorized only on their own class and held page', () => {
+  const inner = visitW03.participants.map(p => `<li><span data-participant-name>${escape(p.name)}</span><span data-participant-number>${escape(p.studentNumber)}</span></li>`).join('');
+  const html = `<ul data-visit-participants="${visitW03.id}">${inner}</ul>`;
+  for (const page of ['index.html', 'poseta.html', 'cas-03.html']) assert.doesNotThrow(() => withoutAuthorizedAttribution(page, html, registry));
+  for (const page of ['naslovna.html', 'udruzenje.html', 'cas-04.html']) assert.throws(() => withoutAuthorizedAttribution(page, html, registry));
+  assert.throws(() => withoutAuthorizedAttribution('cas-03.html', html.replace('74/2024', '84/2024'), registry), /exact authorized/);
+  assert.throws(() => withoutAuthorizedAttribution('cas-03.html', html.replace(inner, inner + '<li>extra person</li>'), registry), /exact authorized/);
 });

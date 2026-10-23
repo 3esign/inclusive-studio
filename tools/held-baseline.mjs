@@ -15,6 +15,7 @@ const tok = await json('data/tok.json');
 const errors = validateTok(tok);
 if (errors.length) throw Error(errors.join('\n'));
 const visit = await json('data/poseta.json');
+const visits = [await json('data/poseta-w03.json')];
 const visitErrors = validateVisit(visit);
 if (visitErrors.length) throw Error(visitErrors.join('\n'));
 const prototypes = await json('data/prototipovi.json');
@@ -29,9 +30,7 @@ for (const item of tok.odrzano) {
 }
 setLanguage('sr');
 const target = new URL('index.html', root), before = await readFile(target, 'utf8');
-// The chronological rule (teacher's order of 19.10.2026): the landing reads oldest class
-// first; the visit and the works live inside their own week's record, so no block stands
-// above the record it belongs to. The standalone lead and the mixed teaser are gone.
+// Teacher, 21.10.2026: newest first, retaining each class and its own attachments.
 const lead = /[ \t]*<!-- visit-lead:start -->[\s\S]*?<!-- visit-lead:end -->\r?\n?/;
 const teaser = /[ \t]*<!-- prototype-teaser:start -->[\s\S]*?<!-- prototype-teaser:end -->\r?\n?/;
 const top = /<!-- held-intro:start -->[\s\S]*?<!-- held-intro:end -->/;
@@ -43,6 +42,6 @@ const after = before
   .replace(lead, '')
   .replace(teaser, '')
   .replace(top, `<!-- held-intro:start --><div id="held-intro">${heldIntro()}</div><!-- held-intro:end -->`)
-  .replace(body, heldSection(tok, weeks, { visit, prototypes }));
+  .replace(body, heldSection(tok, weeks, { visit, prototypes, visits }));
 if (before !== after) await writeFile(target, after);
 console.log(JSON.stringify({ changed: before !== after, held: tok.odrzano.length, visit: visit.id, source: 'same static and runtime renderer' }));

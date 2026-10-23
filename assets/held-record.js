@@ -2,7 +2,7 @@
 // These are photographs in the lesson material, not evidence of an unrecorded class.
 import { esc, tr, tx, number } from './core.js';
 import { exercises } from './exercises.js';
-import { renderVisitLead, validateVisit } from './poseta-core.js';
+import { renderVisitLead, renderVisitRecord, validateVisit } from './poseta-core.js';
 import { prototypeTeaser, validatePrototypes } from './prototipovi-core.js';
 
 export function lessonImages(week) {
@@ -34,7 +34,7 @@ export function heldRecord(item, week, { first = false } = {}) {
         ${(item.prilog || []).map(p => `<p class="lesson-prilog"><a href="${esc(p.href)}">${esc(tx(p.text))} ↗</a></p>`).join('')}
       </div>
     </div>
-  </article>`;
+  </article>`.replace(/[ \t]+\r?\n/g, '\n');
 }
 
 export function heldIntro() {
@@ -43,10 +43,7 @@ export function heldIntro() {
     <p class="lede">${tr('Lesson material, photographs and recorded outcomes.', 'Gradivo, fotografije i zabeleženi ishodi održanih časova.')}</p></div>`;
 }
 
-// 23.10.2026 (nastavnik predmeta): the newest held class opens the landing. The record
-// stays chronological, only read from the near end — a student arriving after a class
-// finds that class first, not after scrolling the whole semester. Each record carries
-// what belongs to its own week: the association visit of that week and that week's works.
+// Teacher, 21.10.2026: newest held class first; each attachment stays with its own class.
 export function heldSection(tok, weeks, extras = {}) {
   const items = [...tok.odrzano].sort((a, b) => String(b.odrzan).localeCompare(String(a.odrzan)));
   const visit = extras.visit && !validateVisit(extras.visit).length ? extras.visit : null;
@@ -54,6 +51,7 @@ export function heldSection(tok, weeks, extras = {}) {
   const record = (item, i) => {
     const parts = [heldRecord(item, weeks.get(item.nedelja), { first: i === 0 })];
     if (visit && visit.week === item.nedelja) parts.push(renderVisitLead(visit, prototypes));
+    for (const extra of extras.visits || []) if (extra.week === item.nedelja) parts.push(renderVisitRecord(extra, { compact: true }));
     if (prototypes) parts.push(prototypeTeaser(prototypes, item.nedelja));
     return parts.filter(Boolean).join('\n');
   };

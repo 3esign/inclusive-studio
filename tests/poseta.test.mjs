@@ -33,12 +33,14 @@ test('the analysis page renders every participant once, links every finding and 
   for (const person of visit.participants) {
     assert.equal(html.split(person.name).length - 1, 1, person.name + ' appears more than once');
   }
-  for (const work of ['zmijica-2026', 'zgradica-2026', 'upadalica-2026', 'pogodilica-2026', 'sudoku-2026', 'muzicka-kutija-2026']) {
+  for (const work of ['zmijica-2026', 'zgradica-2026', 'upadalica-2026', 'sudoku-2026', 'muzicka-kutija-2026']) {
     assert.ok(html.includes(`href="prototipovi.html#${work}"`), work + ' finding must link its gallery entry');
   }
   for (const observation of prototypes.observations) {
     for (const photo of observation.photos) assert.ok(html.includes(`src="${photo.src}"`), photo.src + ' must come from the observation register');
   }
+  assert.ok(!html.includes('id="pogodilica-2026"'), 'withdrawn observation must also remove its narrative finding');
+  assert.ok(!html.includes('najposećeniji') && !html.includes('najdečja paleta'), 'photo counts do not establish popularity or preferences');
   // The three claims stay separate: seen, reading, next step — labelled, not merged.
   for (const label of ['Viđeno', 'Čitanje', 'Sledeći korak']) assert.ok(html.includes(label));
   // The sideways Zgradica photograph is displayed upright through the rotation field (12.10.2026 fix).
@@ -74,7 +76,10 @@ test('the static page and the held panel are the renderer output, not a hand-tol
 
 test('the analysis page carries the version-2 brief and only checked external directions', async () => {
   setLanguage('sr');
-  assert.equal(prototypes.observations.length, 9, 'the five established rows plus the four evening additions');
+  // 21.10.2026: two rows were withdrawn. Their photographs show the room with several works
+  // on the tables, and a different work being handled — neither shows the work they claimed.
+  assert.equal(prototypes.observations.length, 7, 'nine rows less the two the photographs did not support');
+  assert.ok(!prototypes.observations.some(o => o.prototypeId === 'pogodilica-2026'), 'no observation may outlive its evidence');
   for (const ph of prototypes.observations.flatMap(o => o.photos)) assert.ok((await readFile(new URL(ph.src, root))).length > 0, ph.src + ' must exist');
   const page = await readFile(new URL('poseta.html', root), 'utf8');
   assert.ok(page.includes('Verzija 2 — i prvi prototip.'), 'the next-class order must stand on the page');

@@ -1,72 +1,54 @@
-# Evidencija predmeta — šta je zatvoreno, šta nemamo (presek 23.10.2026, dopunjen uveče)
+# Šta je zatvoreno, a šta još stoji otvoreno — presek 23.10.2026
 
-Pregled svega što je nastavnik dostavio do danas, upoređeno red po red: spisak trećeg časa
-(izvor 18.10.2026), spisak četvrtog časa (izvor 23.10.2026), registar posete 23.10, registar
-radova i tok predmeta. Imena i brojevi indeksa nisu u ovom dokumentu — po pravilu sajta stoje
-samo u registrima i u redovima spiska. Ovde se govori brojem reda.
+Interni presek (ovaj folder se ne servira). Govori brojem reda, nikad imenom ni indeksom —
+isto pravilo koje važi na sajtu. Brojevi redova trećeg časa prate spisak od **21.10.2026
+(30 redova)**; raniji presek od 29 redova više ne važi i nije merodavan.
 
-## Zatvoreno 23.10.2026
+## Zatvoreno danas
 
-Prvi talas, popodne:
+| šta je stajalo otvoreno | kako je zatvoreno |
+|---|---|
+| zamena imena uz tri niza fotografija trećeg časa (redovi 18–21) | fotografije ostale gde jesu, imena pomerena za jedan red; rad reda 19 preimenovan u „3d lavirint” |
+| naziv rada reda 4 četvrtog časa | „putanja”; „brza putanja” je naziv drugog rada |
+| broj indeksa reda 19 trećeg / reda 8 četvrtog časa | važi broj iz spiska od 21.10; razlika zapisana 23.10. bila je greška u prepisu |
+| broj indeksa reda 27 četvrtog časa | delovi su bili zamenjeni; godište je 2024 |
+| godišta van generacije 2024 | nisu greška — predmet slušaju i studenti koji nisu položili godinu |
+| „starlight 6 + 3” | dva rada istog studenta, već razdvojena u registru (redovi 7 i 8) |
+| autorstvo rada „kubismo” | nije sporno; red 14 trećeg časa |
+| nazivi dva rada sa trećeg časa | red 1 → „taktilna kutija”, red 13 → „Brojkice” |
+| 44 od 86 fotografija trećeg časa „nisu u repou” | **netačno od 21.10** — repo nosi svih 89 fotografija trećeg časa, broj po radu se poklapa sa spiskom |
+| prozivka | nije propust nego granica: prisustvo na predavanju do sada nije vođeno, i to je objavljeno na obe strane časa |
 
-- **Razdvajanje fotografija, treći čas, redovi 17–20.** Sva tri niza fotografija pripisana su
-  imenima iz sledećeg reda. Tri rada vraćena u galeriju, revizije v37–v39 nose before/after.
-- **Prezime autora reda 19 (treći čas)** potvrđeno; revizija v40.
-- **Broj indeksa reda 27 (četvrti čas)** ispravljen: delovi su bili zamenjeni, godište je 2024.
-- **Dva preimenovanja** zavedena (red 9 i red 25 četvrtog časa).
+## Traži se od studenta ili od nastavnika (8)
 
-Drugi talas, uveče (izvor `teacher-2026-10-23-dopuna`):
+1. **Treći čas, red 21** — naziv „brza putanja” pripisan je uslovno, kao nastavnikova
+   pretpostavka. Autorka to potvrđuje ili ispravlja na času; fotografisanog rada nema.
+2. **Treći čas, red 20** — broj indeksa. Objavljen je kako je dostavljen 21.10
+   (godište 21). Prezime je zavedeno po nalogu od 23.10; registar posete od 16.10 nosi
+   drugačiji zapis istog prezimena i nije menjan, jer je to zaseban izvor.
+3. **Treći čas, redovi 2 i 27** — radovi bez zabeleženog naziva.
+4. **Treći čas, red 30** — bez broja indeksa.
+5. **Četvrti čas, red 15** — danas je doneta skica, ne prototip; naziv rada nije zabeležen.
+6. **Četvrti čas, red 26** — rad ima fotografije, ali nema zabeležen naziv.
+7. **Poseta 23.10, jedno ime** — osamnaesto zavedeno prisustvo tog dana, bez rada na
+   spisku časa. Rad se čeka.
+8. **Spisak upisanih** — ne postoji, pa se „prisutan/nije prisutan” ne može izračunati,
+   samo „pojavio se na spisku radova ili na poseti”. Prvi i drugi čas nemaju spisak
+   prisustva uopšte.
 
-- **Naziv rada reda 4 četvrtog časa** je **„putanja”**. Pitanje zatvoreno.
-- **Naziv „brza putanja”** pripisan je radu **reda 20 trećeg časa** — jedinom redu koji je posle
-  razdvajanja ostao bez rada. Uslovno, bez fotografije; potvrda se i dalje traži od studentkinje.
-- **Broj indeksa reda 18 trećeg časa / reda 8 četvrtog** razrešen: važi onaj iz spiska od 18.10.
-  Razlika zapisana 23.10. bila je omaška u prepisu, ne prijava studentkinje. Revizija v41.
-- **Godišta van generacije 2024** (redovi 7, 19 i 26 trećeg časa, red 24 četvrtog) potvrđena su
-  kao ispravna: predmet slušaju i studenti koji nisu položili godinu. Tri pitanja zatvorena,
-  revizija v42 za red 19.
-- **„starlight 6 + 3”** su **dva rada istog autora**, ne jedan niz od devet fotografija.
-  Revizija v43; razdvajanje kadrova čeka prenos fotografija.
-- **Autorstvo „kubismo”** nije sporno; otvoren je ostao samo naziv (vidi stavku 3 ispod).
-- **Poseta udruženju 23.10.** zavedena kao zaseban registar: `data/poseta-2026-10-23.json`,
-  17 imena, redom kako ih je nastavnik zapisao. Prikazuje se na strani četvrtog časa.
-- **Prisustvo na predavanju do sada nije vođeno** — zapisano kao granica evidencije, ne kao
-  propust koji se krije. Spiskovi zavode one koji su se pojavili u spisku radova i na poseti.
+## Materijal koji nije u repou (3)
 
-## Nemamo — podatak koji se traži od studenta ili nastavnika
+1. **87 fotografija četvrtog časa** — na telefonu nastavnika (Galaxy S23 FE,
+   `/Internal storage/DCIM/Camera`), niz počinje snimkom `20261023_112141.jpg`.
+   Prihvat: `node tools/cas-prihvat.mjs 04` posle prebacivanja u
+   `data/cas-04/slike/<rb>-<slug>/`. Alat ispiše sva 21 očekivana foldera sa brojem
+   fotografija, uporedi nađeno sa zapisanim i ne dira registar.
+2. **Fotografije posete 23.10** — u istom nizu, posle fotografija prototipa. Dok ne
+   stignu, registar posete nosi samo spisak, bez nalaza po radu.
+3. **Peti čas** — nije upisan; `data/schedule.json` je i dalje `unconfirmed`.
 
-| # | Šta nije jasno | Gde stoji otvoreno |
-|---|---|---|
-| 1 | **Rad reda 20 trećeg časa.** „brza putanja” mu je pripisana kao najverovatnije rešenje, bez fotografije. Je li to njen rad i je li bio donet? | `cas-03.html` → `miljana-brza-putanja` |
-| 2 | **Naziv rada bez zapisa:** redovi 15 i 26 četvrtog časa; redovi 1, 2 i 26 trećeg. | oba spiska |
-| 3 | **„kubismo” ili „Lego4ll”** — autor je poznat, naziv nije. Fotografije pokazuju dva različita artefakta (prototip i CAD crtež), pa je verovatno isto kao „starlight”: dva rada. | `cas-03.html` → `kubismo-ili-lego4all` |
-| 4 | **Red 29 trećeg časa bez broja indeksa.** | `cas-03.html` → `castle-bez-indeksa` |
-| 5 | **Jedno ime je bilo na poseti udruženju, a nije u spisku radova četvrtog časa** — osamnaesto prisustvo tog dana, bez zavedenog rada. | `cas-04.html` → `copic-van-spiska` |
-| 6 | **Nema spiska upisanih studenata.** Dok ga nema, „prisutan / nije prisutan” se ne može izračunati — samo „pojavio se u evidenciji”. Nastavnik je potvrdio da prozivku nije vodio. | `cas-04.html` → `prisustvo-nije-prozivka` |
-| 7 | **Prvi i drugi čas nemaju spisak prisustva.** Održani su (02.10. i 09.10.); evidencija za njih ima radove prvog talasa i spisak posete od 09.10. | `data/tok.json` |
-| 8 | **Veza kadra i rada nije potvrđena gledanjem.** Pregled fotografija 23.10. (`docs/ANALIZA-FOTOGRAFIJA-2026-10-23.md`) našao je foldere u kojima dva kadra prikazuju dva različita predmeta — rez niza je verovatno promašen i izvan redova 17–20. | taj dokument, odeljak 1 |
+## Granice ovog preseka
 
-## Nemamo — materijal koji je kod nastavnika ili na arhivskom telu
-
-1. **87 fotografija četvrtog časa** (prototipi, pa udruženje) su još na telefonu. Kad se prenesu:
-   `data/cas-04/slike/<rb>-<slug>/`, pa `node tools/cas-prihvat.mjs 04` — alat uporedi nađeno sa
-   brojem iz spiska i prijavi odstupanje, registar ne dira.
-2. **44 od 86 fotografija trećeg časa nisu u ovom repou.** Registar objavljuje 42; ostatak je
-   20.10. arhiviran na telo 3izajn (tar SHA proveren na oba kraja) i lokalna kopija je obrisana.
-   Posledica: redovi 1 i 2 trećeg časa nemaju ni jednu objavljenu fotografiju ni zapis u galeriji,
-   iako spisak za njih navodi dvanaest fotografija. **Ovaj niz treba vratiti ceo** — bez njega se
-   rezovi iz stavke 8 ne mogu ispraviti.
-3. **23 fotografije posete udruženju** (09.10.) stoje povučene iz objave dok nastavnik ne
-   potvrdi natpise. Poseta od 23.10. još nema nijednu fotografiju.
-4. **Peti čas nije upisan** (`tok.json → sledeci: []`), a kalendar je `unconfirmed` bez ijednog
-   događaja. Datum i naziv dolaze od nastavnika.
-
-## Brojevi preseka
-
-- Održano: četiri časa (02.10, 09.10, 16.10, 23.10) i dve posete udruženju (09.10, 23.10).
-- Treći čas: 29 redova, 86 fotografija po spisku, 42 objavljene.
-- Četvrti čas: 27 redova, 21 fotografisan rad, 87 fotografija — nijedna još prenesena.
-- Poseta 23.10: 17 zavedenih imena, 0 fotografija u registru.
-- Galerija radova: 34 rada, 64 fotografije, 43 revizije.
-- Otvorenih pitanja na stranama: treći čas 4, četvrti čas 5.
-- Baterija: 237 testova, 233 prolaza, 0 padova, 4 preskočena (sirovi prijem nije u ovoj kopiji).
+Hešovanje kadrova dokazuje da fajl nije zamenjen — **ne dokazuje** da kadar prikazuje rad
+uz koji stoji. To je razlika koja je 23.10. i proizvela zamenu imena uz tri niza. Jedini
+dokaz da kadar pripada radu ostaje nastavnikovo čitanje fotografije.

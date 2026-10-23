@@ -1,5 +1,7 @@
 # Smernice — kako se ovaj sajt pravi i održava
 
+**21.10.2026 — važeće:** [Prijem nastavnog materijala](prijem-nastave.md) nadjačava starije pravilo povezivanja po spisku i prikaz pitanja iz obrade. Fotografije trećeg časa prikazuju se kao pregledane galerije bez automatske atribucije. Održano: najnoviji datum prvi.
+
 ## Hitno povlačenje fotografija · 19.10.2026.
 
 Po nalogu nastavnika da se uklone nepovezani kadrovi, novi fotografski blok trećeg časa privremeno je povučen. Vizuelni pregled je pokazao beleške i stranicu knjige među fotografijama rada, isti predmet pod različitim naslovima i nepouzdanu vezu niza sa spiskom. Prethodno pravilo iz `data/cas-03/uloge-slika.json` (prva/poslednja slika svakog foldera) **nije merodavno** za selekciju ili autorstvo.

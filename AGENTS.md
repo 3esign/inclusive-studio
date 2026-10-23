@@ -1,5 +1,7 @@
 # Inclusive Studio — ulaz za sledeći rad
 
+**Važeća ispravka 21.10.2026:** prvo pročitaj [prijem nastave](docs/prijem-nastave.md). Najnoviji čas ide na vrh. Slike grupiši po predmetu u zasebne galerije, bez uparivanja sa spiskom; operativna evidencija nije studentski sadržaj. Ovo nadjačava starije pretpostavke ispod i u alatima prijema.
+
 Ovo je sajt predmeta Principi univerzalnog dizajna, ne opšti portal niti evidencija ocena. U Svemir radnom prostoru prvo poštuj njegov kanon; ovaj fajl dodaje projektne granice. Pre izmene pročitaj [smernice](docs/smernice.md), [checkpoint ugovor](docs/checkpoints.md), poslednje relevantne stavke `LOG.md` i podatke koje menjaš. Stariji opis u README-u nije izvor novih nastavnih činjenica.
 
 ## Šta ostaje stabilno

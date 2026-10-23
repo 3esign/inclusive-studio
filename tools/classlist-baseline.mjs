@@ -17,7 +17,15 @@ setLanguage('sr');
 
 const start = '<!-- cas03-content:start -->', end = '<!-- cas03-content:end -->';
 const named = process.argv.slice(2);
-const pages = named.length ? named : (await readdir(root)).filter(name => /^cas-\d+\.html$/.test(name)).sort();
+// A class page declares itself with data-view="classlist"; the pages that outgrew their
+// list (the third class now shows galleries) are built by their own tool, not this one.
+const candidates = named.length ? named : (await readdir(root)).filter(name => /^cas-\d+\.html$/.test(name)).sort();
+const pages = [];
+for (const name of candidates) {
+  const text = await readFile(new URL(name, root), 'utf8');
+  if (text.includes('data-view="classlist"')) pages.push(name);
+  else if (named.length) throw Error(`${name}: not a class-list page (data-view="classlist" is missing).`);
+}
 const report = [];
 for (const page of pages) {
   const target = new URL(page, root), before = await readFile(target, 'utf8');
