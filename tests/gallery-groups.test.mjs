@@ -119,13 +119,19 @@ test('a continued work gathers every week the same student handed in',async()=>{
   assert.ok(validatePrototypes(bad).length);
 });
 
+// 24.10.2026: a work page also carries the frames of that work from the association
+// visits, so the static page is compared against the renderer fed the same registers.
+const manifest=JSON.parse((await read('data/dnevnik.json')).toString());
+const visits=[];
+for(const entry of manifest.visits) visits.push(Object.assign(JSON.parse((await read(entry.file)).toString()),{page:entry.page}));
+
 test('each work has its own complete static page and bilingual runtime',async()=>{
   for(const g of data.galleries){
     setLanguage('sr');const html=(await read(`galerija-${g.id}.html`)).toString();
-    assert.ok(html.includes(galleryDetail(data,g.id)));
+    assert.ok(html.includes(galleryDetail(data,g.id,visits)));
     assert.ok(html.includes(g.author.name),g.id+' names its author on the page');
     for(const p of g.photos) assert.ok(html.includes(`src="${p.src}"`));
-    setLanguage('en');assert.ok(galleryDetail(data,g.id).includes(g.title.en));
+    setLanguage('en');assert.ok(galleryDetail(data,g.id,visits).includes(g.title.en));
   }
   setLanguage('sr');
 });

@@ -57,6 +57,12 @@ const publicUrl = new URL('data/prototipovi-javno.json', root);
   }
 }
 
+// A work page shows the work in the users' hands too; the visit registers come from the
+// same manifest the journal uses, so there is one list of visits for the whole site.
+const manifest = JSON.parse(await readFile(new URL('data/dnevnik.json', root), 'utf8'));
+const visits = [];
+for (const entry of manifest.visits) visits.push(Object.assign(JSON.parse(await readFile(new URL(entry.file, root), 'utf8')), { page: entry.page }));
+
 setLanguage('sr');
 const regions = [
   ['prototipovi.html', 'prototipovi', renderPrototypes(data)],
@@ -70,7 +76,7 @@ for (const g of data.galleries || []) {
     .replace('<body data-view="prototypes">', '<body data-view="prototypes" data-gallery="' + g.id + '">')
     .replace(/(<meta name="description" content=")[^"]*(")/, '$1Galerija rada: ' + g.title.sr + '.$2')
     .replace(/<title>[^<]*<\/title>/, '<title>' + g.title.sr + ' — Principi univerzalnog dizajna · Univerzitet „Union — Nikola Tesla”, Beograd</title>')
-    .replace(/<main([^>]*)>[\s\S]*?<\/main>/, '<main$1>' + galleryDetail(data, g.id) + '</main>');
+    .replace(/<main([^>]*)>[\s\S]*?<\/main>/, '<main$1>' + galleryDetail(data, g.id, visits) + '</main>');
   const before = await readFile(url, 'utf8').catch(() => null);
   if (before !== after) updates.push({url, file, after});
 }

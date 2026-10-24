@@ -36,7 +36,7 @@ export function validateCas03(spisak) {
   fail(spisak?.prenos === undefined || bilingual(spisak.prenos), 'prenos must be bilingual.');
   fail(spisak?.sigurno === undefined || (keys(spisak.sigurno, ['do', 'od']) && spisak.sigurno?.do >= 1 && spisak.sigurno?.od > spisak.sigurno?.do), 'The certain zones, when given, are do/od row numbers.');
   // The week, the ordinal and the headline are register facts: a class names itself.
-  fail(keys(spisak, ['schema', 'id', 'cas', 'odrzan', 'nedelja', 'redni', 'naslov', 'lede', 'source', 'napomena', 'sigurno', 'vezaneGalerije', 'presek', 'prenos', 'nizNapomena', 'udruzenjeNalazi', 'analizaUdruzenja', 'radovi', 'razjasni', 'ispravke', 'prijem', 'posetaRegistar']), 'Unknown class-list fields.');
+  fail(keys(spisak, ['schema', 'id', 'cas', 'odrzan', 'nedelja', 'redni', 'naslov', 'lede', 'source', 'napomena', 'sigurno', 'vezaneGalerije', 'presek', 'prenos', 'nizNapomena', 'udruzenjeNalazi', 'analizaUdruzenja', 'radovi', 'razjasni', 'ispravke', 'prijem', 'posetaRegistar', 'posetaStrana']), 'Unknown class-list fields.');
   fail(spisak?.nedelja === undefined || (Number.isInteger(spisak.nedelja) && spisak.nedelja >= 1), 'nedelja must be a week number.');
   fail(spisak?.redni === undefined || bilingual(spisak.redni), 'redni (the ordinal of the class) must be bilingual.');
   fail(spisak?.naslov === undefined || bilingual(spisak.naslov), 'naslov must be bilingual.');
@@ -46,6 +46,7 @@ export function validateCas03(spisak) {
   // A class whose field part has its own visit register names it here; the register stays
   // the single source of that day's roster (data/poseta-*.json, course-visit/v1).
   fail(spisak?.posetaRegistar === undefined || (typeof spisak.posetaRegistar === 'string' && /^data\/[\w./-]+\.json$/.test(spisak.posetaRegistar)), 'posetaRegistar must be a path to a visit register.');
+  fail(spisak?.posetaStrana === undefined || (spisak.posetaRegistar !== undefined && /^[a-z0-9-]+\.html$/.test(spisak.posetaStrana || '')), 'posetaStrana names the page that opens that visit in full.');
   // Corrections to earlier records are published with their own source, like every result.
   fail(spisak?.ispravke === undefined || Array.isArray(spisak.ispravke), 'ispravke must be a list.');
   for (const fix of spisak?.ispravke || []) fail(keys(fix, ['id', 'sta', 'izvor']) && ID.test(fix?.id || '') && bilingual(fix?.sta) && typeof fix?.izvor === 'string' && fix.izvor.trim(), 'Each correction needs an id, bilingual text and a source.');
@@ -135,43 +136,46 @@ export function renderCas03(spisak, prototypes, poseta = null) {
     { sr: 'Primetna je želja korisnika da isprobavaju prototipe koje studenti kreiraju.', en: "The users' wish to try the prototypes the students create was clear." },
     { sr: 'Pomenut je mogući konkurs od strane udruženja.', en: 'A possible competition run by the association was mentioned.' },
   ]).map(n => `\n    <li>${esc(tx(n))}</li>`).join('');
-  // The field part of the class has its own register: who went to the association that
-  // day — and, once the frames are transferred, the photographs of the visit and what can
-  // be read from them. Both come from that one register; nothing is retold here by hand.
-  const posetaSection = poseta && Array.isArray(poseta.participants) && poseta.participants.length ? `
-<section class="field-visit" aria-labelledby="cas03-poseta-title"><div class="section-heading"><div><p class="eyebrow">${tr('Recorded attendance', 'Zavedeno prisustvo')} · <time datetime="${esc(poseta.occurredOn)}">${esc(srDate(poseta.occurredOn))}.</time></p><h2 id="cas03-poseta-title">${tr('On the association visit', 'Na poseti udruženju')}</h2></div><p>${tr(`${poseta.participants.length} students are recorded on the visit, in the order the teacher wrote them.`, `${number(poseta.participants.length)} studenata je zavedeno na poseti, redom kojim ih je nastavnik zapisao.`)}</p></div>
+  // 24.10.2026, teacher: the association visit is the attachment that opens the class.
+  // It stands at the top with a handful of frames and one door to the whole dossier; the
+  // roster and the reading come from that visit's own register, never retold here.
+  const posetaPrilog = poseta && Array.isArray(poseta.participants) && poseta.participants.length ? `
+<section class="field-visit visit-attachment" aria-labelledby="cas03-poseta-title"><div class="section-heading"><div><p class="eyebrow">${tr('Attachment', 'Prilog')} · ${tr('association visit', 'poseta udruženju')} · <time datetime="${esc(poseta.occurredOn)}">${esc(srDate(poseta.occurredOn))}.</time></p><h2 id="cas03-poseta-title">${esc(tx(poseta.place))}</h2></div><p>${esc(tx(poseta.summary))}</p></div>
+  ${posetaKorice(poseta, spisak.posetaStrana)}
+  <p class="visit-compact-label">${tr('On the visit', 'Na poseti')} · ${number(poseta.participants.length)}</p>
   <ul class="visit-participants visit-compact" data-visit-participants="${esc(poseta.id)}" aria-label="${tr('Students on the visit', 'Studenti na poseti')}">${poseta.participants.map(person => `<li><span data-participant-name>${esc(person.name)}</span><span data-participant-number>${esc(person.studentNumber)}</span></li>`).join('')}</ul>
-  <p class="help">${esc(tx(poseta.summary))}</p>${posetaFotografije(poseta)}
+  ${spisak.posetaStrana ? `<p><a class="button" href="${esc(spisak.posetaStrana)}">${tr('Open the whole visit: every frame, work by work', 'Otvori celu posetu: svi kadrovi, rad po rad')} ↗</a></p>` : ''}
 </section>` : '';
-  const prijem = spisak.prijem ? `<p class="help">${tr('Intake', 'Prijem')}: ${esc(spisak.prijem.uredjaj)} · ${esc(spisak.prijem.putanja)} · ${tr('sequence begins with', 'niz počinje snimkom')} <code>${esc(spisak.prijem.prviSnimak)}</code>. ${esc(tx(spisak.prijem.napomena))}</p>` : '';
   return `<div class="page-top flow-intro"><div><p class="eyebrow">${tr('Week', 'Nedelja')} ${nedelja} · ${esc(tx(redni))} · <time datetime="${esc(spisak.odrzan)}">${esc(srDate(spisak.odrzan))}.</time></p>
   <h1>${esc(tx(naslov))}</h1></div>
-  <p class="lede">${esc(tx(lede))}</p></div>
-<p class="notice">${esc(tx(spisak.napomena))}</p>
-<section aria-labelledby="cas03-rows-title"><div class="section-heading"><div><p class="eyebrow">${tr('Segment one', 'Prvi segment')}</p><h2 id="cas03-rows-title">${tr('Prototypes and photographs', 'Prototipi i slike')}</h2></div><p>${certainty}</p></div>
-  <ol class="cas03-rows" data-cas03-list="${esc(spisak.id)}" aria-label="${tr('Works in shooting order', 'Radovi redom slikanja')}">${rows}</ol>${nizBlok}${prijem}
+  <p class="lede">${esc(tx(lede))}</p></div>${posetaPrilog}
+<section aria-labelledby="cas03-rows-title"><div class="section-heading"><div><p class="eyebrow">${tr('In class', 'Na času')}</p><h2 id="cas03-rows-title">${tr('Prototypes and photographs', 'Prototipi i slike')}</h2></div><p>${certainty}</p></div>
+  <p class="notice">${esc(tx(spisak.napomena))}</p>
+  <ol class="cas03-rows" data-cas03-list="${esc(spisak.id)}" aria-label="${tr('Works in shooting order', 'Radovi redom slikanja')}">${rows}</ol>${nizBlok}
+  <p class="help"><a href="dnevnik.html">${tr('The journal: every student, every week, everything linked', 'Dnevnik: svaki student, svaka nedelja, sve povezano')} ↗</a></p>
 </section>${cekajuSection}
-<section aria-labelledby="cas03-udruzenje-title"><div class="section-heading"><div><p class="eyebrow">${tr('Segment two', 'Drugi segment')}</p><h2 id="cas03-udruzenje-title">${tr('From the association', 'Analiza iz udruženja')}</h2></div></div>
+<section aria-labelledby="cas03-udruzenje-title"><div class="section-heading"><div><p class="eyebrow">${tr('From the field', 'Sa terena')}</p><h2 id="cas03-udruzenje-title">${tr('From the association', 'Analiza iz udruženja')}</h2></div></div>
   <ol class="lesson-results">${nalazi}
   </ol>
   <p class="help">${esc(tx(spisak.analizaUdruzenja))}</p>
-</section>${posetaSection}${ispravke}${renderRazjasni(spisak)}
+</section>${ispravke}${renderRazjasni(spisak)}
 <aside class="prototype-context"><h2>${tr('Sources of this page', 'Izvori ove strane')}</h2><p>${esc(tx(spisak.source.description))}</p><p>${tr('Attribution of the documented works stands in the gallery of works; this list carries names and student numbers only beside the photographs they explain.', 'Autorstvo dokumentovanih radova stoji u galeriji radova; ovaj spisak nosi imena i brojeve indeksa samo uz fotografije koje objašnjava.')}</p></aside>`;
 }
 
 
-// The visit's own photographs: frames of the day at the association, each with the
-// fingerprint and the bilingual caption of the register. Findings cite frames by their
-// place in the sequence, so a reader can check the claim against the picture.
-function posetaFotografije(poseta) {
-  const photos = (poseta.photos || []).filter(p => p && p.src);
-  if (!photos.length) return '';
-  const figures = photos.map(p => photograph(p).replace('<figure class="prototype-photo">', `<figure class="prototype-photo" id="${esc(p.id)}">`)).filter(Boolean).join('');
-  if (!figures) return '';
-  const findings = (poseta.findings || []).map(f => `<article class="visit-finding"><h4>${esc(tx(f.title))}</h4><p><strong>${tr('Visible in the photographs', 'Vidljivo na fotografijama')}.</strong> ${esc(tx(f.seen))}</p><p><strong>${tr('Proposal for the next trial', 'Predlog za sledeće probanje')}.</strong> ${esc(tx(f.next))}</p><p>${tr('Photographs', 'Fotografije')}: ${(f.photoIds || []).map(id => `<a href="#${esc(id)}">${photos.findIndex(p => p.id === id) + 1}</a>`).join(' · ')}</p></article>`).join('');
-  return `
-  <div class="visit-photos">${figures}</div>${findings ? `
-  <div class="visit-readings"><h3>${tr('From observation to the next trial', 'Od zapažanja do sledećeg probanja')}</h3><p>${tr('These photographs record positions and grips. They do not establish duration, independent use, understanding of rules or a successful outcome.', 'Fotografije beleže položaje i hvatove. Ne potvrđuju trajanje, samostalnost, razumevanje pravila ili uspešan ishod.')}</p>${findings}</div>` : ''}`;
+// The cover of the attachment: one frame per work recognised that day, up to four, each
+// opening that work inside the dossier. A visit whose frames are not yet transferred has
+// no cover and says so by its absence, not by a sentence about a phone.
+function posetaKorice(poseta, strana) {
+  const photos = (poseta.photos || []).filter(p => p && p.src && (p.radovi || []).length);
+  if (!photos.length || !strana) return '';
+  const seen = new Set();
+  const picks = photos.filter(p => {
+    const id = p.radovi[0];
+    if (seen.has(id)) return false;
+    seen.add(id); return true;
+  }).slice(0, 4);
+  return `<div class="visit-cover">${picks.map(p => `<a class="visit-cover-frame" href="${esc(strana)}#poseta-${esc(p.radovi[0])}"><img src="${esc(p.src)}" width="${p.width}" height="${p.height}" alt="${esc(tx(p.alt))}" loading="eager" decoding="async"></a>`).join('')}</div>`;
 }
 
 // Corrections and open questions are the same two blocks wherever a class is read: the

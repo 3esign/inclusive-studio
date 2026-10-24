@@ -111,3 +111,27 @@ učesnika pokriva studente, a ne korisnike udruženja.
 
 Granica nalaza ostaje ista: fotografije beleže položaje i hvatove. Ne potvrđuju trajanje,
 samostalnost, razumevanje pravila ni uspešan ishod.
+
+## Dopuna 24.10.2026 — poseta objavljena cela, radovi prepoznati na kadrovima
+
+**Zatvoreno:**
+
+| šta je stajalo otvoreno | kako je zatvoreno |
+|---|---|
+| tri kadra posete zadržana zbog lica korisnika | nastavnikova odluka: svih 31 kadar je objavljen |
+| „fotografije iz udruženja još nisu prenete, analiza čeka” | prilog posete je cel: 31 kadar, 8 prepoznatih radova, nalaz i sledeća proba uz svaki |
+| nejasno koji rad se vidi na kom kadru posete | svaki kadar nosi polje `radovi` u registru posete; prepoznavanje je ljudska tvrdnja, zapisana kao takva |
+
+**Novo otvoreno iz samih kadrova:**
+
+1. **Red 27 četvrtog časa nosi dva različita predmeta.** Registar pod istim imenom vodi
+   plitku kutiju sa plutanim diskovima (treća nedelja) i kutiju sa izrezanim žlebom
+   (četvrta). U udruženju je bila samo ona iz treće nedelje. Pitanje: da li su to dva rada
+   ili je jedan pogrešno zaveden.
+2. **Red 26 četvrtog časa i dalje bez naziva**, iako rad ima i kadrove sa časa i kadar sa
+   posete. Naziv se traži od autorke.
+3. **Redovi 23 i 24 četvrtog časa** — nazivi i dalje izgledaju zamenjeni; nije dirano.
+4. **Jedno ime bez broja indeksa** ostaje u dnevniku: spojeno je po imenu sa zapisom iz
+   registra radova, i to je na strani izričito napisano.
+5. **Trinaest od dvadeset jednog fotografisanog rada nije stiglo do korisnika.** Nije
+   greška, ali nije ni odluka — pred sledeću posetu treba unapred zapisati koji radovi idu.

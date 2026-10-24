@@ -17,6 +17,35 @@ export function authorMarkup(work, cls, tag = 'small') {
 }
 const coverPhoto = g => g.photos[0];
 
+// 24.10.2026: a work page shows the work in the users' hands, not only on the class
+// table. The frames come from the visit registers, which name the work on the frame —
+// the page never guesses which picture belongs to which work.
+function association(work, visits) {
+  const blocks = visits.map(visit => {
+    const frames = (visit.photos || []).filter(p => (p.radovi || []).includes(work.id));
+    if (!frames.length) return '';
+    const finding = (visit.findings || []).find(f => f.work === work.id);
+    const date = String(visit.occurredOn).split('-').reverse().join('.');
+    const figures = frames.map(p => `<figure><a href="${esc(p.src)}" aria-label="${tr('Open image', 'Otvori sliku')}"><img src="${esc(p.src)}" width="${p.width}" height="${p.height}" alt="${esc(tx(p.alt))}" loading="lazy" decoding="async"></a><figcaption>${esc(tx(p.caption))}</figcaption></figure>`).join('');
+    const read = finding ? `<div class="visit-reading"><h3>${esc(tx(finding.title))}</h3><p><span class="visit-label">${tr('Seen', 'Viđeno')}</span>${esc(tx(finding.seen))}</p><p><span class="visit-label">${tr('Next trial', 'Sledeća proba')}</span>${esc(tx(finding.next))}</p></div>` : '';
+    const page = visit.page || 'poseta.html';
+    return `<section class="work-week work-association"><h2>${tr('In the users’ hands', 'U rukama korisnika')} · ${esc(date)}.</h2><p class="lede">${frames.length} ${frames.length === 1 ? tr('frame', 'kadar') : tr('frames', 'kadrova')} ${tr('from the association visit', 'sa posete udruženju')} · <a href="${esc(page)}#poseta-${esc(work.id)}">${tr('the whole visit', 'cela poseta')} ↗</a></p>${read}<div class="gallery-detail">${figures}</div></section>`;
+  }).filter(Boolean);
+  return blocks.join('');
+}
+
+// Everything the same hand handed in: one student, every week, in one place.
+function sameHand(data, work) {
+  const key = value => String(value || '').trim().toLowerCase();
+  const mine = item => key(item.author?.studentNumber) === key(work.author?.studentNumber) && key(item.author?.name) === key(work.author?.name);
+  const others = (data.galleries || []).filter(g => g.id !== work.id && mine(g)).sort((a, b) => b.documentedWeek - a.documentedWeek);
+  const awaited = (data.cekaju || []).filter(mine);
+  if (!others.length && !awaited.length) return '';
+  const rows = others.map(g => `<li><a href="${galleryHref(g)}"><b>${esc(tx(g.title))}</b></a> <small>${tr('week', 'nedelja')} ${g.documentedWeek} · ${g.photos.length} ${tr('images', 'slika')}</small></li>`).join('')
+    + awaited.map(w => `<li><b>${esc(tx(w.title))}</b> <small>${tr('week', 'nedelja')} ${w.documentedWeek} · ${tr('photographs still to come', 'fotografije tek stižu')}</small></li>`).join('');
+  return `<section class="work-week work-samehand"><h2>${tr('The same hand, other weeks', 'Ista ruka, ostale nedelje')}</h2><ul class="work-trail">${rows}</ul><p class="note"><a href="dnevnik.html">${tr('The whole record of this student in the journal', 'Ceo zapis ovog studenta u dnevniku')} ↗</a></p></section>`;
+}
+
 export function galleryTiles(galleries, limit = Infinity) {
   return `<div class="work-gallery-grid">${galleries.slice(0, limit).map(g => {
     const p = coverPhoto(g);
@@ -45,13 +74,13 @@ function photoGrid(photos) {
 
 // The work page: everything one student handed in for one prototype, newest class first,
 // then the earlier weeks it grew out of. Each week keeps its own date and its own source.
-export function galleryDetail(data, id) {
+export function galleryDetail(data, id, visits = []) {
   const g = (data.galleries || []).find(g => g.id === id);
   if (!g) throw Error('Unknown gallery: ' + id);
   const anchor = 'galerije-w' + String(g.documentedWeek).padStart(2, '0');
   const groups = data.galleries, next = groups[(groups.indexOf(g) + 1) % groups.length];
   const earlier = g.continues ? (data.items || []).find(it => it.id === g.continues) : null;
-  const visits = earlier ? (data.observations || []).filter(o => o.prototypeId === earlier.id) : [];
+  const earlierTrials = earlier ? (data.observations || []).filter(o => o.prototypeId === earlier.id) : [];
 
   const head = `<p class="eyebrow"><a href="prototipovi.html#${anchor}">${tr('Works and examples', 'Radovi i primeri')}</a> / ${tr('Class', 'Čas')} ${g.documentedWeek}</p><h1>${esc(tx(g.title))}</h1>${authorMarkup(g, 'work-identity', 'p')}`;
   const thisWeek = `<section class="work-week"><h2>${tr('Class', 'Čas')} ${g.documentedWeek}</h2><p class="lede">${g.photos.length} ${tr('views of the work', 'prikaza rada')} · <a href="index.html?w=${g.documentedWeek}">${tr('Class material', 'Gradivo časa')}</a></p>${photoGrid(g.photos)}</section>`;
@@ -60,8 +89,8 @@ export function galleryDetail(data, id) {
   let history = '';
   if (earlier) {
     history += `<section class="work-week"><h2>${tr('Class', 'Čas')} ${earlier.documentedWeek}</h2><p class="lede">${esc(tx(earlier.description))}</p>${photoGrid(earlier.photos)}</section>`;
-    for (const o of visits) history += `<section class="work-week"><h2>${tr('Tried at the association', 'Isprobano u udruženju')} · ${esc(o.occurredOn.split('-').reverse().join('.'))}.</h2><p class="lede">${esc(tx(o.summary))}</p>${photoGrid(o.photos)}</section>`;
+    for (const o of earlierTrials) history += `<section class="work-week"><h2>${tr('Tried at the association', 'Isprobano u udruženju')} · ${esc(o.occurredOn.split('-').reverse().join('.'))}.</h2><p class="lede">${esc(tx(o.summary))}</p>${photoGrid(o.photos)}</section>`;
   }
 
-  return `${head}${thisWeek}${trial}${history}<nav class="gallery-onward"><a class="button secondary" href="prototipovi.html#${anchor}">← ${tr('All works', 'Svi radovi')}</a><a class="button" href="${galleryHref(next)}">${esc(tx(next.title))} →</a></nav>`;
+  return `${head}${thisWeek}${association(g, visits)}${trial}${history}${sameHand(data, g)}<nav class="gallery-onward"><a class="button secondary" href="prototipovi.html#${anchor}">← ${tr('All works', 'Svi radovi')}</a><a class="button" href="${galleryHref(next)}">${esc(tx(next.title))} →</a></nav>`;
 }

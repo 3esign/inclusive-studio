@@ -1,378 +1,371 @@
 {
- "format": "inclusive-studio-tok",
- "version": 2,
- "nacelo": {
-  "sr": "Pripremljeno nije održano. Održano bez upisanih rezultata nije završeno. Ideja nema nedelju dok ne uđe u pripremu sledećeg časa. Svaka stavka nosi izvor i datum.",
-  "en": "Prepared is not held. Held without recorded results is not complete. An idea carries no week until it enters the preparation for the next class. Every item carries a source and a date."
- },
- "odrzano": [
-  {
-   "id": "cas-w01",
-   "vrsta": "cas",
-   "nedelja": 1,
-   "naslov": {
-    "sr": "Igračka koja uči prostor — prvi čas",
-    "en": "A toy that teaches space — first class"
-   },
-   "odrzan": "2026-10-02",
-   "rezultati": [
+  "format": "inclusive-studio-tok",
+  "version": 2,
+  "nacelo": {
+    "sr": "Pripremljeno nije održano. Održano bez upisanih rezultata nije završeno. Ideja nema nedelju dok ne uđe u pripremu sledećeg časa. Svaka stavka nosi izvor i datum.",
+    "en": "Prepared is not held. Held without recorded results is not complete. An idea carries no week until it enters the preparation for the next class. Every item carries a source and a date."
+  },
+  "odrzano": [
     {
-     "sta": {
-      "sr": "Nastavnik je doneo igračku iz udruženja „Živimo zajedno” na prvi čas kao primer i podsticaj da studenti osmisle sopstvene prototipove.",
-      "en": "The teacher brought a toy from the Živimo zajedno association to the first class as an example and a prompt for students to design their own prototypes."
-     },
-     "izvor": "Nastavnik predmeta, 02.10.2026. i ispravka 09.10.2026; LOG.md 02.10."
+      "id": "cas-w01",
+      "vrsta": "cas",
+      "nedelja": 1,
+      "naslov": {
+        "sr": "Igračka koja uči prostor — prvi čas",
+        "en": "A toy that teaches space — first class"
+      },
+      "odrzan": "2026-10-02",
+      "rezultati": [
+        {
+          "sta": {
+            "sr": "Nastavnik je doneo igračku iz udruženja „Živimo zajedno” na prvi čas kao primer i podsticaj da studenti osmisle sopstvene prototipove.",
+            "en": "The teacher brought a toy from the Živimo zajedno association to the first class as an example and a prompt for students to design their own prototypes."
+          },
+          "izvor": "Nastavnik predmeta, 02.10.2026. i ispravka 09.10.2026; LOG.md 02.10."
+        },
+        {
+          "sta": {
+            "sr": "Studenti su osmišljavali i dizajnirali koncepte igračaka na papiru — da prirodno privlače pažnju, budu zanimljive i edukativne i da razvijaju motoriku.",
+            "en": "Students designed toy concepts on paper — toys that naturally attract attention, are interesting and educational, and develop motor skills."
+          },
+          "izvor": "Nastavnik predmeta, 02.10.2026: „studenti su osmišljavali i dizajnirali svoje koncepte igračaka…”."
+        },
+        {
+          "sta": {
+            "sr": "Posetio nas je direktor udruženja „Živimo zajedno”.",
+            "en": "The director of the Živimo zajedno association visited the class."
+          },
+          "izvor": "Nastavnik predmeta, 02.10.2026: „posetio nas je direktor udruženja zivimo zajedno”."
+        },
+        {
+          "sta": {
+            "sr": "Zadatak za sledeću nedelju: jedan mali prototip — maketa u duhu DIY-a i reciklaze, materijala za ponovnu upotrebu, ne isključivo; deo rada ide i na 3D štampu.",
+            "en": "Assignment for the next week: one small prototype — a mock-up in the DIY and recycling spirit, reusable materials, not exclusively; part of the work will also be 3D printed."
+          },
+          "izvor": "Nastavnik predmeta, 02.10.2026: „studenti imaju zadatak da naprave jedan mali prototip za sledeću nedelju — maketu u stilu diy, reciklaze, reusable materijals ali ne isključivo tako da ćemo i 3d stampati”."
+        }
+      ],
+      "izvor": "Nastavnik predmeta, 02.10.2026 (poruka sa slike i opisa prvog časa); ispravka 09.10.2026."
     },
     {
-     "sta": {
-      "sr": "Studenti su osmišljavali i dizajnirali koncepte igračaka na papiru — da prirodno privlače pažnju, budu zanimljive i edukativne i da razvijaju motoriku.",
-      "en": "Students designed toy concepts on paper — toys that naturally attract attention, are interesting and educational, and develop motor skills."
-     },
-     "izvor": "Nastavnik predmeta, 02.10.2026: „studenti su osmišljavali i dizajnirali svoje koncepte igračaka…”."
+      "id": "cas-w02",
+      "vrsta": "cas",
+      "nedelja": 2,
+      "naslov": {
+        "sr": "Prototip na stolu — drugi čas",
+        "en": "The prototype on the table — second class"
+      },
+      "odrzan": "2026-10-09",
+      "rezultati": [
+        {
+          "sta": {
+            "sr": "Studenti su doneli izrađene prototipove započete na prvom času.",
+            "en": "Students brought the prototypes begun in the first class."
+          },
+          "izvor": "Nastavnik predmeta, 09.10.2026; data/prototipovi.json — izvor teacher-2026-10-09-week-02."
+        },
+        {
+          "sta": {
+            "sr": "Zbirka druge nedelje dopunjena je tehničkim crtežom Lego4ll i nastavnikovim prototipom zvečke, dizajniranim u Blenderu i 3D štampanim. Četiri fotografije zvečke prikazuju jedan rad.",
+            "en": "The week-two collection was expanded with the Lego4ll technical drawing and the teacher’s rattle prototype, designed in Blender and 3D printed. The four rattle photographs document one work."
+          },
+          "izvor": "Nastavnikova dopuna 09.10.2026; data/prototipovi.json — teacher-2026-10-09-drawing-rattle."
+        },
+        {
+          "sta": {
+            "sr": "Poseta udruženju „Živimo zajedno” održana je isti dan: korisnici su probali donete prototipove na stolu, bez usmeravanja. Zapažanja su upisana u registar radova, a temeljna analiza interakcije stoji na zasebnoj strani.",
+            "en": "The visit to the Živimo zajedno association took place the same day: users tried the brought prototypes at the table, without prompting. The observations are recorded in the work register, and a full analysis of the interaction stands on its own page."
+          },
+          "izvor": "Nastavnik predmeta, 12.10.2026; data/poseta.json — registar posete; data/prototipovi.json — zapažanja posete."
+        }
+      ],
+      "izvor": "Izričita potvrda nastavnika 09.10.2026: druga nedelja održana danas, nastava petkom; data/material/w02.json — Zapisano posle časa."
     },
     {
-     "sta": {
-      "sr": "Posetio nas je direktor udruženja „Živimo zajedno”.",
-      "en": "The director of the Živimo zajedno association visited the class."
-     },
-     "izvor": "Nastavnik predmeta, 02.10.2026: „posetio nas je direktor udruženja zivimo zajedno”."
+      "id": "cas-w03",
+      "vrsta": "cas",
+      "nedelja": 3,
+      "naslov": {
+        "sr": "Prototipovi i iskustva iz udruženja — treći čas",
+        "en": "Prototypes and experiences from the association — third class"
+      },
+      "odrzan": "2026-10-16",
+      "rezultati": [
+        {
+          "sta": {
+            "sr": "Predstavljeni su i fotografisani studentski radovi: skice, igre i prototipovi. Galerije pokazuju različite poglede na pojedinačne radove.",
+            "en": "Student sketches, games and prototypes were presented and photographed. The galleries show different views of individual works."
+          },
+          "izvor": "Nastavnik, 18.10. i ispravka 21.10.2026."
+        },
+        {
+          "sta": {
+            "sr": "Iz udruženja su stigle fotografije sa praktičnih vežbi: direktor udruženja pohvalio je studentske prototipe, primetna je želja korisnika da isprobavaju prototipe koje studenti kreiraju, i pomenut je mogući konkurs od strane udruženja.",
+            "en": "Photographs from the association's practical session arrived: the association's director praised the student prototypes, the users' wish to try the prototypes students create was clear, and a possible competition run by the association was mentioned."
+          },
+          "izvor": "Nastavnik predmeta, 18.10.2026.; data/cas-03/spisak.json — analizaUdruzenja."
+        }
+      ],
+      "prilog": [
+        {
+          "href": "prototipovi.html#galerije-w03",
+          "text": {
+            "sr": "Radovi sa trećeg časa — galerije",
+            "en": "Works from the third class — galleries"
+          }
+        },
+        {
+          "href": "cas-03.html#poseta-w03",
+          "text": {
+            "sr": "Poseta udruženju · 16.10.2026.",
+            "en": "Association visit · 16 October 2026"
+          }
+        }
+      ],
+      "izvor": "Nastavnik predmeta, 18.10.2026. (spisak radova trećeg časa i potvrda prvog talasa); data/material/w03.json — Zapisano posle časa."
     },
     {
-     "sta": {
-      "sr": "Zadatak za sledeću nedelju: jedan mali prototip — maketa u duhu DIY-a i reciklaze, materijala za ponovnu upotrebu, ne isključivo; deo rada ide i na 3D štampu.",
-      "en": "Assignment for the next week: one small prototype — a mock-up in the DIY and recycling spirit, reusable materials, not exclusively; part of the work will also be 3D printed."
-     },
-     "izvor": "Nastavnik predmeta, 02.10.2026: „studenti imaju zadatak da naprave jedan mali prototip za sledeću nedelju — maketu u stilu diy, reciklaze, reusable materijals ali ne isključivo tako da ćemo i 3d stampati”."
+      "id": "cas-w04",
+      "vrsta": "cas",
+      "nedelja": 4,
+      "naslov": {
+        "sr": "Prototip u rukama korisnika — četvrti čas",
+        "en": "The prototype in the users’ hands — fourth class"
+      },
+      "odrzan": "2026-10-23",
+      "rezultati": [
+        {
+          "sta": {
+            "sr": "Rad na prototipovima je nastavljen: razrada, dokumentovanje i testiranje. Na spisku časa stoji 27 prisustava, a 21 rad je fotografisan — ukupno 87 fotografija.",
+            "en": "The prototype work continued: development, documentation and testing. The class list carries 27 attendances, and 21 works were photographed — 87 photographs in all."
+          },
+          "izvor": "Nastavnik predmeta, 23.10.2026 (spisak četvrtog časa i spisak posete)."
+        },
+        {
+          "sta": {
+            "sr": "Posle časa prototipi su odneti u udruženje i probani sa korisnicima. Na trideset jednom kadru prepoznato je osam radova; uz svaki stoji nalaz i sledeća proba.",
+            "en": "After the class the prototypes were taken to the association and tried with users. Eight works are recognised across thirty-one frames; each carries a finding and a next trial."
+          },
+          "izvor": "Prepoznavanje radova na kadrovima posete, 24.10.2026."
+        },
+        {
+          "sta": {
+            "sr": "Šest studenata je bilo na času bez prototipa. Prisustvo je zavedeno, a uz svako stoji ono što je najavljeno: prototip sledeće nedelje, novi prototip, ili rad koji je još u fazi istraživanja.",
+            "en": "Six students attended without a prototype. The attendance is recorded, and beside each stands what was announced: a prototype next week, a new prototype, or work still at the research stage."
+          },
+          "izvor": "Nastavnik predmeta, 23.10.2026 (spisak četvrtog časa i spisak posete)."
+        },
+        {
+          "sta": {
+            "sr": "Razrešena je zamena imena uz tri niza fotografija sa trećeg časa: fotografije su ostale gde jesu, a imena su pomerena na svoje mesto. Jedno ime je time ostalo bez fotografisanog rada; autorka to potvrđuje na času.",
+            "en": "The name mix-up beside three photograph sequences from the third class was resolved: the photographs stayed where they were and the names moved to their places. One name is thereby left without a photographed work; its author confirms this in class."
+          },
+          "izvor": "Nastavnik predmeta, 23.10.2026, uz tri dostavljene fotografije."
+        },
+        {
+          "sta": {
+            "sr": "Dva rada sa trećeg časa dobila su nove nazive: „Brojkice” i „taktilna kutija”. Raniji nazivi ostaju u istoriji registra.",
+            "en": "Two works from the third class were given new titles: “Brojkice” and “taktilna kutija”. The earlier titles stay in the register’s history."
+          },
+          "izvor": "Nastavnik predmeta, 23.10.2026 (spisak četvrtog časa i spisak posete)."
+        }
+      ],
+      "prilog": [
+        {
+          "href": "poseta-w04.html",
+          "text": {
+            "sr": "Prilog: poseta udruženju 23.10.2026 — svih 31 kadar, osam prepoznatih radova, nalaz i sledeća proba uz svaki",
+            "en": "Attachment: the association visit of 23 October 2026 — all 31 frames, eight recognised works, a finding and a next trial beside each"
+          }
+        },
+        {
+          "href": "cas-04.html",
+          "text": {
+            "sr": "Spisak radova četvrtog časa — 27 zavedenih prisustava, 21 fotografisan rad i deo „Šta se čeka”",
+            "en": "The list of the fourth class — 27 recorded attendances, 21 photographed works and the „What we wait for” part"
+          }
+        },
+        {
+          "href": "dnevnik.html",
+          "text": {
+            "sr": "Dnevnik — svaki student, svaka nedelja, radovi i posete na jednom mestu",
+            "en": "The journal — every student, every week, works and visits in one place"
+          }
+        }
+      ],
+      "izvor": "Nastavnik predmeta, 23.10.2026. (spisak radova četvrtog časa i ispravke ranijih zapisa); prepoznavanje radova na kadrovima posete, 24.10.2026; data/material/w04.json — Zapisano posle časa."
     }
-   ],
-   "izvor": "Nastavnik predmeta, 02.10.2026 (poruka sa slike i opisa prvog časa); ispravka 09.10.2026."
-  },
-  {
-   "id": "cas-w02",
-   "vrsta": "cas",
-   "nedelja": 2,
-   "naslov": {
-    "sr": "Prototip na stolu — drugi čas",
-    "en": "The prototype on the table — second class"
-   },
-   "odrzan": "2026-10-09",
-   "rezultati": [
+  ],
+  "sledeci": [],
+  "ideje": [
     {
-     "sta": {
-      "sr": "Studenti su doneli izrađene prototipove započete na prvom času.",
-      "en": "Students brought the prototypes begun in the first class."
-     },
-     "izvor": "Nastavnik predmeta, 09.10.2026; data/prototipovi.json — izvor teacher-2026-10-09-week-02."
+      "id": "korisnici-probavaju-prototipe",
+      "naslov": {
+        "sr": "Korisnici probavaju prototipe",
+        "en": "Users try the prototypes"
+      },
+      "tekst": {
+        "sr": "Poneti prototipe u udruženje da ih korisnici probaju na svojim rukama — posmatrati, ne objašnjavati.",
+        "en": "Bring the prototypes to the association so users can try them with their own hands — observe, do not explain."
+      },
+      "izvor": "Razgovor sa nastavnikom, 09.10.2026. („da možda korisnici probaju”).",
+      "datum": "2026-10-09"
     },
     {
-     "sta": {
-      "sr": "Zbirka druge nedelje dopunjena je tehničkim crtežom Lego4ll i nastavnikovim prototipom zvečke, dizajniranim u Blenderu i 3D štampanim. Četiri fotografije zvečke prikazuju jedan rad.",
-      "en": "The week-two collection was expanded with the Lego4ll technical drawing and the teacher’s rattle prototype, designed in Blender and 3D printed. The four rattle photographs document one work."
-     },
-     "izvor": "Nastavnikova dopuna 09.10.2026; data/prototipovi.json — teacher-2026-10-09-drawing-rattle."
+      "id": "a3-sledeca-faza-dizajna",
+      "naslov": {
+        "sr": "Sledeći A3 kao sledeća faza dizajna",
+        "en": "The next A3 as the next design phase"
+      },
+      "tekst": {
+        "sr": "Novi A3 može, a ne mora da se nadoveze na dizajn prototipa — npr. merenje, prelazak sa zamisli na broj.",
+        "en": "A new A3 may or may not build on the prototype's design — e.g. measured, moving from idea to number."
+      },
+      "izvor": "Razgovor sa nastavnikom, 09.10.2026. („možda sutra A3 je sledeća faza dizajna”).",
+      "datum": "2026-10-09"
     },
     {
-     "sta": {
-      "sr": "Poseta udruženju „Živimo zajedno” održana je isti dan: korisnici su probali donete prototipove na stolu, bez usmeravanja. Zapažanja su upisana u registar radova, a temeljna analiza interakcije stoji na zasebnoj strani.",
-      "en": "The visit to the Živimo zajedno association took place the same day: users tried the brought prototypes at the table, without prompting. The observations are recorded in the work register, and a full analysis of the interaction stands on its own page."
-     },
-     "izvor": "Nastavnik predmeta, 12.10.2026; data/poseta.json — registar posete; data/prototipovi.json — zapažanja posete."
+      "id": "sta-se-stvarno-slomilo",
+      "naslov": {
+        "sr": "Šta se stvarno slomilo",
+        "en": "What actually broke"
+      },
+      "tekst": {
+        "sr": "Posle svakog časa sa prototipovima upisati šta se stvarno slomilo i koliko ih je stiglo — od toga se uči i to su rezultati, ne utisci.",
+        "en": "After every class with prototypes, record what actually broke and how many arrived — that is learned from, and those are results, not impressions."
+      },
+      "izvor": "LOG.md 02.10.2026. i 09.10.2026. (obaveza upisa posle 2. nedelje).",
+      "datum": "2026-10-02"
+    },
+    {
+      "id": "maketa-i-prototip-na-dve-strane",
+      "naslov": {
+        "sr": "Maketa i prototip na dve strane A3",
+        "en": "Mock-up and prototype on two sides of one A3"
+      },
+      "tekst": {
+        "sr": "Prikazivanje zamisli prototipa i makete na prvoj nedelji — dve strane istog lista, dva načina dokazivanja.",
+        "en": "Showing the prototype idea and the mock-up in the first week — two sides of the same sheet, two ways of proving."
+      },
+      "izvor": "Razgovor sa nastavnikom, 09.10.2026. (opis prve nedelje).",
+      "datum": "2026-10-09"
+    },
+    {
+      "id": "sva-merenja-ruku-u-jednu-tabelu",
+      "naslov": {
+        "sr": "Sva merenja ruku u jednu tabelu",
+        "en": "Every hand measurement in one table"
+      },
+      "tekst": {
+        "sr": "Nedelja 3 donosi merenja pravih ruku. Sabrati merenja svih timova u jednu tabelu i pročitati raspon — najmanja, najveća, i da li propisana mera pokriva svakog.",
+        "en": "Week 3 brings measurements of real hands. Gather every team's measurements into one table and read the spread — smallest, largest, and whether the required dimension covers everyone."
+      },
+      "izvor": "Zadatak „Ruka koja drži” (materijal nedelje 2, izvor teacher-2026-10-09-week-02); dopuna oblaka po nalogu voditelja predmeta od 10.10.2026.",
+      "datum": "2026-10-11"
+    },
+    {
+      "id": "a3-listovi-u-prostoru-udruzenja",
+      "naslov": {
+        "sr": "A3 listovi u prostoru udruženja",
+        "en": "The A3 sheets in the association's room"
+      },
+      "tekst": {
+        "sr": "Kad se nakupi nekoliko nedeljnih A3 listova, poneti ih u udruženje i rasporediti na sto — da korisnici vide ceo semestar odjednom i kažu šta im je najviše pomoglo.",
+        "en": "When several weekly A3 sheets have accumulated, bring them to the association and lay them on the table — so users see the whole semester at once and say what helped them most."
+      },
+      "izvor": "Poseta udruženja „Živimo zajedno” na prvom času (02.10.2026, zapis w01); dopuna oblaka po nalogu voditelja predmeta od 10.10.2026.",
+      "datum": "2026-10-11"
+    },
+    {
+      "id": "nedeljni-a3-list-radne-sveske",
+      "naslov": {
+        "sr": "Nedeljni A3 list radne sveske",
+        "en": "The weekly A3 sheet of the workbook"
+      },
+      "tekst": {
+        "sr": "Zamisao da svaki čas doprinosi jednim A3 listom radne sveske predmeta — gradi se na času i potpisuje. Prikaz „A3 list nedelje” na strani održanih časova povučen je 12.10. jer voditelj predmeta nije definisao taj prikaz; ideja ostaje u oblaku dok se ne potvrdi.",
+        "en": "The idea that each class contributes one A3 sheet to the course workbook — built in class and signed. The “week's A3 sheet” display on the held-classes page was withdrawn on 12 October because the course lead had not defined it; the idea stays in the cloud until confirmed."
+      },
+      "izvor": "Nalog voditelja predmeta, 12.10.2026. (sređivanje strane održanih časova).",
+      "datum": "2026-10-12"
+    },
+    {
+      "id": "ruka-koja-drzi-predlog-treceg-casa",
+      "naslov": {
+        "sr": "Ruka koja drži — predlog trećeg časa",
+        "en": "The hand that holds — a third-class proposal"
+      },
+      "tekst": {
+        "sr": "Predlog iz „Sledećeg lista” gradiva druge nedelje: jedan A3, dva dela — tri stvarne ruke × pet mera i tri broja tolerancije, dole tabela fakulteta. Nije potvrđen; strana sledećeg časa ostaje prazna dok voditelj predmeta ne upiše plan.",
+        "en": "A proposal from the week-2 material's “Next sheet”: one A3, two parts — three real hands × five measurements and three tolerance numbers, with the faculty table below. Not confirmed; the next-class page stays empty until the course lead enters a plan."
+      },
+      "izvor": "Sledeći list u gradivu nedelje 2 (data/material/w02.json); sklonjeno sa strane sledećeg časa nalogom voditelja predmeta, 12.10.2026 — čeka potvrdu.",
+      "datum": "2026-10-12"
+    },
+    {
+      "id": "probavanje-prototipa-u-udruzenju",
+      "naslov": {
+        "sr": "Probavanje prototipa u udruženju",
+        "en": "Trying the prototypes at the association"
+      },
+      "tekst": {
+        "sr": "Protokol probavanja: bezbednosna kapija pre ruku, „tuđe ruke” bez objašnjenja, merenje po korisniku, bez simulacije i bez objave bez odobrenja. Susret u udruženju i snimanje još nisu dogovoreni; prva poseta radi povratne informacije je obavljena, fotografije se očekuju.",
+        "en": "A trying-out protocol: the safety gate before hands, “other hands” without explanation, per-user measurement, no simulation and no publication without approval. The association visit and photography are not yet agreed; the first feedback visit has happened, photographs are expected."
+      },
+      "izvor": "Protokol probavanja prototipova u udruženju (docs/probavanje-u-udruzenju.md); sa strane sledećeg časa sklonjeno nalogom voditelja predmeta, 12.10.2026.",
+      "datum": "2026-10-12"
+    },
+    {
+      "id": "tim-upisuje-jedan-red-o-igracki",
+      "naslov": {
+        "sr": "Svaki tim upisuje jedan red — pokret ruke i radnja na prostoru",
+        "en": "Each team writes one row — hand movement and action in space"
+      },
+      "tekst": {
+        "sr": "Idea sa zapisnika prvog časa: svaki tim upisuje jedan red o pokretu ruke i radnji na prostoru koje njihova igračka vežba. Pojavila se u zapisu, ali voditelj predmeta je nije potvrdio; čeka njegovu odluku.",
+        "en": "An idea from the first class's record: each team writes one row about the hand movement and the action in space their toy practises. It appeared in the record, but the course lead has not confirmed it; awaiting his decision."
+      },
+      "izvor": "Pojavilo se u zapisu materijala nedelje 1 (blok „Odluka koja se upisuje”); voditelj predmeta 12.10.2026. nije potvrdio — sklonjeno sa strane održanih časova.",
+      "datum": "2026-10-12"
+    },
+    {
+      "id": "sledeca-verzija-v2-i-prvi",
+      "naslov": {
+        "sr": "Sledeći čas: verzija 2 za one koji su doneli, prvi prototip za one koji nisu",
+        "en": "Next class: Version 2 for those who brought, a first prototype for those who did not"
+      },
+      "tekst": {
+        "sr": "Ko je doneo prototip, donosi unapređenu verziju pročitanu kroz nalaze posete udruženju; ko nije doneo, donosi prvi prototip. Materijal posete (zapažanja, fotografije, analiza) služi kao prilog tog časa — zapis stvarnih ruku, ne izveštaj.",
+        "en": "Whoever brought a prototype brings the improved version, read against the findings of the association visit; whoever did not, brings a first prototype. The visit material (observations, photographs, analysis) serves as the appendix of that class — a record of real hands, not a report."
+      },
+      "izvor": "Nalog voditelja predmeta, 12.10.2026. (uz pregled objavljene analize posete).",
+      "datum": "2026-10-12"
+    },
+    {
+      "id": "obavestenja-sekcija-ceka-aktivaciju",
+      "naslov": {
+        "sr": "Obaveštenja na sajtu — sekcija čeka aktivaciju",
+        "en": "Notices on the site — the section awaits activation"
+      },
+      "tekst": {
+        "sr": "Oglasna sekcija sa tri stavke postoji u kodu sajta (podaci potiču iz izjava voditelja od 02.10.), ali je 12.10.2026. izbačena iz prikaza nalogom voditelja — sadržaj još nije potvrđen za objavu. Vraća se tek kad voditelj potvrdi šta sekcija tačno nosi.",
+        "en": "A board section with three items exists in the site code (the data come from the course lead's statements of 2 October), but on 12 October 2026 the course lead ordered it out of the display — the content is not yet confirmed for publication. It returns only when the course lead confirms what the section carries."
+      },
+      "izvor": "Nalog voditelja predmeta, 12.10.2026. — izbaciti do daljeg; podaci ostaju u assets/course.js (notices).",
+      "datum": "2026-10-12"
+    },
+    {
+      "id": "pristupacnost-i-etika-veke-cekaju",
+      "naslov": {
+        "sr": "Veze „Pristupačnost” i „Kako sarađujemo” — povučene, čekaju",
+        "en": "The “Accessibility” and “How we work” links — withdrawn, waiting"
+      },
+      "tekst": {
+        "sr": "Dve veze su 12.10.2026. povučene iz podnožja svake strane nalogom voditelja predmeta. Strane „Kako sarađujemo” (etika.html) i „Pristupačnost ovog sajta” (pristupacnost.html) ostaju objavljene na svojim adresama; veze se vraćaju kad voditelj potvrdi njihovo mesto.",
+        "en": "On 12 October 2026 the course lead ordered two links withdrawn from the footer of every page. The pages “Kako sarađujemo” (etika.html) and “Pristupačnost ovog sajta” (pristupacnost.html) stay published at their addresses; the links return when the lead confirms their place."
+      },
+      "izvor": "Nalog voditelja predmeta, 12.10.2026. (uz dva snimka ekrana podnožja).",
+      "datum": "2026-10-12"
     }
-   ],
-   "izvor": "Izričita potvrda nastavnika 09.10.2026: druga nedelja održana danas, nastava petkom; data/material/w02.json — Zapisano posle časa."
-  },
-  {
-   "id": "cas-w03",
-   "vrsta": "cas",
-   "nedelja": 3,
-   "naslov": {
-    "sr": "Prototipovi i iskustva iz udruženja — treći čas",
-    "en": "Prototypes and experiences from the association — third class"
-   },
-   "odrzan": "2026-10-16",
-   "rezultati": [
-    {
-     "sta": {
-      "sr": "Predstavljeni su i fotografisani studentski radovi: skice, igre i prototipovi. Galerije pokazuju različite poglede na pojedinačne radove.",
-      "en": "Student sketches, games and prototypes were presented and photographed. The galleries show different views of individual works."
-     },
-     "izvor": "Nastavnik, 18.10. i ispravka 21.10.2026."
-    },
-    {
-     "sta": {
-      "sr": "Iz udruženja su stigle fotografije sa praktičnih vežbi: direktor udruženja pohvalio je studentske prototipe, primetna je želja korisnika da isprobavaju prototipe koje studenti kreiraju, i pomenut je mogući konkurs od strane udruženja.",
-      "en": "Photographs from the association's practical session arrived: the association's director praised the student prototypes, the users' wish to try the prototypes students create was clear, and a possible competition run by the association was mentioned."
-     },
-     "izvor": "Nastavnik predmeta, 18.10.2026.; data/cas-03/spisak.json — analizaUdruzenja."
-    }
-   ],
-   "prilog": [
-    {
-     "href": "prototipovi.html#galerije-w03",
-     "text": {
-      "sr": "Radovi sa trećeg časa — galerije",
-      "en": "Works from the third class — galleries"
-     }
-    },
-    {
-     "href": "cas-03.html#poseta-w03",
-     "text": {
-      "sr": "Poseta udruženju · 16.10.2026.",
-      "en": "Association visit · 16 October 2026"
-     }
-    }
-   ],
-   "izvor": "Nastavnik predmeta, 18.10.2026. (spisak radova trećeg časa i potvrda prvog talasa); data/material/w03.json — Zapisano posle časa."
-  },
-  {
-   "id": "cas-w04",
-   "vrsta": "cas",
-   "nedelja": 4,
-   "naslov": {
-    "sr": "Prototip u rukama korisnika — četvrti čas",
-    "en": "The prototype in the users’ hands — fourth class"
-   },
-   "odrzan": "2026-10-23",
-   "rezultati": [
-    {
-     "sta": {
-      "sr": "Rad na prototipovima je nastavljen: razrada, dokumentovanje i testiranje. Na spisku časa stoji 27 prisustava, a 21 rad je fotografisan — ukupno 87 fotografija.",
-      "en": "The prototype work continued: development, documentation and testing. The class list carries 27 attendances, and 21 works were photographed — 87 photographs in all."
-     },
-     "izvor": "Nastavnik predmeta, 23.10.2026 (spisak četvrtog časa i spisak posete)."
-    },
-    {
-     "sta": {
-      "sr": "Posle časa otišli smo u udruženje: prototipi su tamo dalje razrađivani, dokumentovani i testirani sa korisnicima.",
-      "en": "After the class we went to the association: there the prototypes were developed further, documented and tested with users."
-     },
-     "izvor": "Nastavnik predmeta, 23.10.2026 (spisak četvrtog časa i spisak posete)."
-    },
-    {
-     "sta": {
-      "sr": "Šest studenata je bilo na času bez prototipa. Prisustvo je zavedeno, a uz svako stoji ono što je najavljeno: prototip sledeće nedelje, novi prototip, ili rad koji je još u fazi istraživanja.",
-      "en": "Six students attended without a prototype. The attendance is recorded, and beside each stands what was announced: a prototype next week, a new prototype, or work still at the research stage."
-     },
-     "izvor": "Nastavnik predmeta, 23.10.2026 (spisak četvrtog časa i spisak posete)."
-    },
-    {
-     "sta": {
-      "sr": "Razrešena je zamena imena uz tri niza fotografija sa trećeg časa: fotografije su ostale gde jesu, a imena su pomerena na svoje mesto. Jedno ime je time ostalo bez fotografisanog rada; autorka to potvrđuje na času.",
-      "en": "The name mix-up beside three photograph sequences from the third class was resolved: the photographs stayed where they were and the names moved to their places. One name is thereby left without a photographed work; its author confirms this in class."
-     },
-     "izvor": "Nastavnik predmeta, 23.10.2026, uz tri dostavljene fotografije."
-    },
-    {
-     "sta": {
-      "sr": "Dva rada sa trećeg časa dobila su nove nazive: „Brojkice” i „taktilna kutija”. Raniji nazivi ostaju u istoriji registra.",
-      "en": "Two works from the third class were given new titles: “Brojkice” and “taktilna kutija”. The earlier titles stay in the register’s history."
-     },
-     "izvor": "Nastavnik predmeta, 23.10.2026 (spisak četvrtog časa i spisak posete)."
-    },
-    {
-     "sta": {
-      "sr": "Fotografije ovog časa prenete su sa telefona 24.10.2026: 87 kadrova prototipova i 31 kadar iz udruženja. Strana časa nosi galerije uz redove spiska; kadrovi iz udruženja još nisu objavljeni.",
-      "en": "The photographs of this class were transferred from the phone on 24 October 2026: 87 prototype frames and 31 from the association. The class page carries galleries beside the list rows; the association frames are not published yet."
-     },
-     "izvor": "Nastavnik predmeta, 23.10.2026 (spisak četvrtog časa i spisak posete)."
-    },
-    {
-     "sta": {
-      "sr": "Poseta udruženju zavedena je kao zaseban registar istog dana: sedamnaest studenata, redom kojim ih je nastavnik zapisao. Jedno ime sa posete nema rad na spisku časa — to je osamnaesto zavedeno prisustvo tog dana.",
-      "en": "The association visit is filed as its own register for the same day: seventeen students, in the order the teacher wrote them. One name from the visit has no work on the class list — that is the eighteenth recorded attendance of the day."
-     },
-     "izvor": "Nastavnik predmeta, 23.10.2026 (spisak četvrtog časa i spisak posete)."
-    },
-    {
-     "sta": {
-      "sr": "Zapisano kao granica evidencije: prisustvo na predavanju do sada nije vođeno. Spiskovi časova zavode one koji su se pojavili u spisku radova i na poseti — ko je bio na času a nije zaveden, iz njih se ne vidi.",
-      "en": "Recorded as a limit of the record: attendance at the lecture has not been kept so far. The class lists record those who appeared in the list of works and on the visit — whoever was in class without being recorded is not visible in them."
-     },
-     "izvor": "Nastavnik predmeta, 23.10.2026 (spisak četvrtog časa i spisak posete)."
-    }
-   ],
-   "prilog": [
-    {
-     "href": "cas-04.html",
-     "text": {
-      "sr": "Spisak radova četvrtog časa — 27 zavedenih prisustava, 21 fotografisan rad, deo „Šta se čeka” i ispravke ranijih zapisa",
-      "en": "The list of the fourth class — 27 recorded attendances, 21 photographed works, the „What we wait for” part and the corrections to earlier records"
-     }
-    }
-   ],
-   "izvor": "Nastavnik predmeta, 23.10.2026. (spisak radova četvrtog časa, ispravke ranijih zapisa i put do fotografija); data/material/w04.json — Zapisano posle časa."
-  }
- ],
- "sledeci": [],
- "ideje": [
-  {
-   "id": "korisnici-probavaju-prototipe",
-   "naslov": {
-    "sr": "Korisnici probavaju prototipe",
-    "en": "Users try the prototypes"
-   },
-   "tekst": {
-    "sr": "Poneti prototipe u udruženje da ih korisnici probaju na svojim rukama — posmatrati, ne objašnjavati.",
-    "en": "Bring the prototypes to the association so users can try them with their own hands — observe, do not explain."
-   },
-   "izvor": "Razgovor sa nastavnikom, 09.10.2026. („da možda korisnici probaju”).",
-   "datum": "2026-10-09"
-  },
-  {
-   "id": "a3-sledeca-faza-dizajna",
-   "naslov": {
-    "sr": "Sledeći A3 kao sledeća faza dizajna",
-    "en": "The next A3 as the next design phase"
-   },
-   "tekst": {
-    "sr": "Novi A3 može, a ne mora da se nadoveze na dizajn prototipa — npr. merenje, prelazak sa zamisli na broj.",
-    "en": "A new A3 may or may not build on the prototype's design — e.g. measured, moving from idea to number."
-   },
-   "izvor": "Razgovor sa nastavnikom, 09.10.2026. („možda sutra A3 je sledeća faza dizajna”).",
-   "datum": "2026-10-09"
-  },
-  {
-   "id": "sta-se-stvarno-slomilo",
-   "naslov": {
-    "sr": "Šta se stvarno slomilo",
-    "en": "What actually broke"
-   },
-   "tekst": {
-    "sr": "Posle svakog časa sa prototipovima upisati šta se stvarno slomilo i koliko ih je stiglo — od toga se uči i to su rezultati, ne utisci.",
-    "en": "After every class with prototypes, record what actually broke and how many arrived — that is learned from, and those are results, not impressions."
-   },
-   "izvor": "LOG.md 02.10.2026. i 09.10.2026. (obaveza upisa posle 2. nedelje).",
-   "datum": "2026-10-02"
-  },
-  {
-   "id": "maketa-i-prototip-na-dve-strane",
-   "naslov": {
-    "sr": "Maketa i prototip na dve strane A3",
-    "en": "Mock-up and prototype on two sides of one A3"
-   },
-   "tekst": {
-    "sr": "Prikazivanje zamisli prototipa i makete na prvoj nedelji — dve strane istog lista, dva načina dokazivanja.",
-    "en": "Showing the prototype idea and the mock-up in the first week — two sides of the same sheet, two ways of proving."
-   },
-   "izvor": "Razgovor sa nastavnikom, 09.10.2026. (opis prve nedelje).",
-   "datum": "2026-10-09"
-  },
-  {
-   "id": "sva-merenja-ruku-u-jednu-tabelu",
-   "naslov": {
-    "sr": "Sva merenja ruku u jednu tabelu",
-    "en": "Every hand measurement in one table"
-   },
-   "tekst": {
-    "sr": "Nedelja 3 donosi merenja pravih ruku. Sabrati merenja svih timova u jednu tabelu i pročitati raspon — najmanja, najveća, i da li propisana mera pokriva svakog.",
-    "en": "Week 3 brings measurements of real hands. Gather every team's measurements into one table and read the spread — smallest, largest, and whether the required dimension covers everyone."
-   },
-   "izvor": "Zadatak „Ruka koja drži” (materijal nedelje 2, izvor teacher-2026-10-09-week-02); dopuna oblaka po nalogu voditelja predmeta od 10.10.2026.",
-   "datum": "2026-10-11"
-  },
-  {
-   "id": "a3-listovi-u-prostoru-udruzenja",
-   "naslov": {
-    "sr": "A3 listovi u prostoru udruženja",
-    "en": "The A3 sheets in the association's room"
-   },
-   "tekst": {
-    "sr": "Kad se nakupi nekoliko nedeljnih A3 listova, poneti ih u udruženje i rasporediti na sto — da korisnici vide ceo semestar odjednom i kažu šta im je najviše pomoglo.",
-    "en": "When several weekly A3 sheets have accumulated, bring them to the association and lay them on the table — so users see the whole semester at once and say what helped them most."
-   },
-   "izvor": "Poseta udruženja „Živimo zajedno” na prvom času (02.10.2026, zapis w01); dopuna oblaka po nalogu voditelja predmeta od 10.10.2026.",
-   "datum": "2026-10-11"
-  },
-  {
-   "id": "nedeljni-a3-list-radne-sveske",
-   "naslov": {
-    "sr": "Nedeljni A3 list radne sveske",
-    "en": "The weekly A3 sheet of the workbook"
-   },
-   "tekst": {
-    "sr": "Zamisao da svaki čas doprinosi jednim A3 listom radne sveske predmeta — gradi se na času i potpisuje. Prikaz „A3 list nedelje” na strani održanih časova povučen je 12.10. jer voditelj predmeta nije definisao taj prikaz; ideja ostaje u oblaku dok se ne potvrdi.",
-    "en": "The idea that each class contributes one A3 sheet to the course workbook — built in class and signed. The “week's A3 sheet” display on the held-classes page was withdrawn on 12 October because the course lead had not defined it; the idea stays in the cloud until confirmed."
-   },
-   "izvor": "Nalog voditelja predmeta, 12.10.2026. (sređivanje strane održanih časova).",
-   "datum": "2026-10-12"
-  },
-  {
-   "id": "ruka-koja-drzi-predlog-treceg-casa",
-   "naslov": {
-    "sr": "Ruka koja drži — predlog trećeg časa",
-    "en": "The hand that holds — a third-class proposal"
-   },
-   "tekst": {
-    "sr": "Predlog iz „Sledećeg lista” gradiva druge nedelje: jedan A3, dva dela — tri stvarne ruke × pet mera i tri broja tolerancije, dole tabela fakulteta. Nije potvrđen; strana sledećeg časa ostaje prazna dok voditelj predmeta ne upiše plan.",
-    "en": "A proposal from the week-2 material's “Next sheet”: one A3, two parts — three real hands × five measurements and three tolerance numbers, with the faculty table below. Not confirmed; the next-class page stays empty until the course lead enters a plan."
-   },
-   "izvor": "Sledeći list u gradivu nedelje 2 (data/material/w02.json); sklonjeno sa strane sledećeg časa nalogom voditelja predmeta, 12.10.2026 — čeka potvrdu.",
-   "datum": "2026-10-12"
-  },
-  {
-   "id": "probavanje-prototipa-u-udruzenju",
-   "naslov": {
-    "sr": "Probavanje prototipa u udruženju",
-    "en": "Trying the prototypes at the association"
-   },
-   "tekst": {
-    "sr": "Protokol probavanja: bezbednosna kapija pre ruku, „tuđe ruke” bez objašnjenja, merenje po korisniku, bez simulacije i bez objave bez odobrenja. Susret u udruženju i snimanje još nisu dogovoreni; prva poseta radi povratne informacije je obavljena, fotografije se očekuju.",
-    "en": "A trying-out protocol: the safety gate before hands, “other hands” without explanation, per-user measurement, no simulation and no publication without approval. The association visit and photography are not yet agreed; the first feedback visit has happened, photographs are expected."
-   },
-   "izvor": "Protokol probavanja prototipova u udruženju (docs/probavanje-u-udruzenju.md); sa strane sledećeg časa sklonjeno nalogom voditelja predmeta, 12.10.2026.",
-   "datum": "2026-10-12"
-  },
-  {
-   "id": "tim-upisuje-jedan-red-o-igracki",
-   "naslov": {
-    "sr": "Svaki tim upisuje jedan red — pokret ruke i radnja na prostoru",
-    "en": "Each team writes one row — hand movement and action in space"
-   },
-   "tekst": {
-    "sr": "Idea sa zapisnika prvog časa: svaki tim upisuje jedan red o pokretu ruke i radnji na prostoru koje njihova igračka vežba. Pojavila se u zapisu, ali voditelj predmeta je nije potvrdio; čeka njegovu odluku.",
-    "en": "An idea from the first class's record: each team writes one row about the hand movement and the action in space their toy practises. It appeared in the record, but the course lead has not confirmed it; awaiting his decision."
-   },
-   "izvor": "Pojavilo se u zapisu materijala nedelje 1 (blok „Odluka koja se upisuje”); voditelj predmeta 12.10.2026. nije potvrdio — sklonjeno sa strane održanih časova.",
-   "datum": "2026-10-12"
-  },
-  {
-   "id": "sledeca-verzija-v2-i-prvi",
-   "naslov": {
-    "sr": "Sledeći čas: verzija 2 za one koji su doneli, prvi prototip za one koji nisu",
-    "en": "Next class: Version 2 for those who brought, a first prototype for those who did not"
-   },
-   "tekst": {
-    "sr": "Ko je doneo prototip, donosi unapređenu verziju pročitanu kroz nalaze posete udruženju; ko nije doneo, donosi prvi prototip. Materijal posete (zapažanja, fotografije, analiza) služi kao prilog tog časa — zapis stvarnih ruku, ne izveštaj.",
-    "en": "Whoever brought a prototype brings the improved version, read against the findings of the association visit; whoever did not, brings a first prototype. The visit material (observations, photographs, analysis) serves as the appendix of that class — a record of real hands, not a report."
-   },
-   "izvor": "Nalog voditelja predmeta, 12.10.2026. (uz pregled objavljene analize posete).",
-   "datum": "2026-10-12"
-  },
-  {
-   "id": "obavestenja-sekcija-ceka-aktivaciju",
-   "naslov": {
-    "sr": "Obaveštenja na sajtu — sekcija čeka aktivaciju",
-    "en": "Notices on the site — the section awaits activation"
-   },
-   "tekst": {
-    "sr": "Oglasna sekcija sa tri stavke postoji u kodu sajta (podaci potiču iz izjava voditelja od 02.10.), ali je 12.10.2026. izbačena iz prikaza nalogom voditelja — sadržaj još nije potvrđen za objavu. Vraća se tek kad voditelj potvrdi šta sekcija tačno nosi.",
-    "en": "A board section with three items exists in the site code (the data come from the course lead's statements of 2 October), but on 12 October 2026 the course lead ordered it out of the display — the content is not yet confirmed for publication. It returns only when the course lead confirms what the section carries."
-   },
-   "izvor": "Nalog voditelja predmeta, 12.10.2026. — izbaciti do daljeg; podaci ostaju u assets/course.js (notices).",
-   "datum": "2026-10-12"
-  },
-  {
-   "id": "pristupacnost-i-etika-veke-cekaju",
-   "naslov": {
-    "sr": "Veze „Pristupačnost” i „Kako sarađujemo” — povučene, čekaju",
-    "en": "The “Accessibility” and “How we work” links — withdrawn, waiting"
-   },
-   "tekst": {
-    "sr": "Dve veze su 12.10.2026. povučene iz podnožja svake strane nalogom voditelja predmeta. Strane „Kako sarađujemo” (etika.html) i „Pristupačnost ovog sajta” (pristupacnost.html) ostaju objavljene na svojim adresama; veze se vraćaju kad voditelj potvrdi njihovo mesto.",
-    "en": "On 12 October 2026 the course lead ordered two links withdrawn from the footer of every page. The pages “Kako sarađujemo” (etika.html) and “Pristupačnost ovog sajta” (pristupacnost.html) stay published at their addresses; the links return when the lead confirms their place."
-   },
-   "izvor": "Nalog voditelja predmeta, 12.10.2026. (uz dva snimka ekrana podnožja).",
-   "datum": "2026-10-12"
-  }
- ]
+  ]
 }

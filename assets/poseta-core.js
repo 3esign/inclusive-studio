@@ -38,7 +38,11 @@ export function validateVisit(visit) {
   if (visit.photos !== undefined) fail(Array.isArray(visit.photos), 'Visit photos must be a list.');
   for (const p of visit?.photos || []) {
     const label = 'Visit photo ' + (p?.id || '?');
-    fail(keys(p, ['id', 'src', 'sha256', 'width', 'height', 'alt', 'caption', 'sourceId']), label + ': unknown photo fields.');
+    fail(keys(p, ['id', 'src', 'sha256', 'width', 'height', 'alt', 'caption', 'sourceId', 'radovi']), label + ': unknown photo fields.');
+    // 24.10.2026: a frame names the work or works recognised in it, so the visit and the
+    // work register point at each other. Recognition is a human claim about the picture —
+    // the fingerprint proves the file, never what the picture shows.
+    fail(p?.radovi === undefined || (Array.isArray(p.radovi) && p.radovi.length > 0 && p.radovi.every(id => ID.test(id || ''))), label + ': radovi must be a non-empty list of work ids.');
     fail(ID.test(p?.id || ''), label + ': id required.');
     fail(PHOTO.test(p?.src || '') && !sceneSrc.has(p.src), label + ': unique local photograph path required.');
     sceneSrc.add(p.src);
@@ -51,8 +55,11 @@ export function validateVisit(visit) {
     fail(Array.isArray(visit.findings), 'Visit findings must be a list.');
     const photoIds = new Set((visit.photos || []).map(p => p.id));
     for (const f of visit.findings || []) {
-      fail(keys(f, ['title', 'photoIds', 'seen', 'next']) && bilingual(f.title) && bilingual(f.seen) && bilingual(f.next), 'Finding needs bilingual title, observation and proposed next step.');
+      fail(keys(f, ['title', 'photoIds', 'seen', 'next', 'work']) && bilingual(f.title) && bilingual(f.seen) && bilingual(f.next), 'Finding needs bilingual title, observation and proposed next step.');
       fail(Array.isArray(f.photoIds) && f.photoIds.length > 0 && f.photoIds.every(id => photoIds.has(id)), 'Finding must cite photographs in this visit.');
+      // A finding about one work names it; a finding across the set names none.
+      fail(f.work === undefined || ID.test(f.work || ''), 'A finding about one work names it by its work id.');
+      fail(f.work === undefined || f.photoIds.every(id => ((visit.photos || []).find(p => p.id === id)?.radovi || []).includes(f.work)), 'A work finding may only cite frames in which that work was recognised.');
     }
   }
   return problems;

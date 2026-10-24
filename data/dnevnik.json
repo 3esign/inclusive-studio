@@ -1,0 +1,13 @@
+{
+  "schema": "course-journal/v1",
+  "lists": [
+    { "file": "data/cas-03/spisak.json", "page": "cas-03.html", "nedelja": 3 },
+    { "file": "data/cas-04/spisak.json", "page": "cas-04.html", "nedelja": 4 }
+  ],
+  "visits": [
+    { "file": "data/poseta.json", "page": "poseta.html" },
+    { "file": "data/poseta-w03.json", "page": "cas-03.html" },
+    { "file": "data/poseta-2026-10-23.json", "page": "poseta-w04.html" }
+  ],
+  "weeks": [1, 2, 3, 4]
+}

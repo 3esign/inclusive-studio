@@ -19,7 +19,10 @@ const MODULES = {
   'igracka.html': 'toy.js', 'godista.html': 'ages.js',
   'naslovna.html': 'naslovna.js', 'udruzenje.html': 'udruzenje.js',
   'sledeci.html': 'sledeci.js', 'oblak.html': 'oblak.js', 'prototipovi.html': 'prototipovi.js',
-  'poseta.html': 'poseta.js', 'cas-03.html': 'cas.js', 'cas-04.html': 'classlist.js'
+  'poseta.html': 'poseta.js', 'cas-03.html': 'cas.js', 'cas-04.html': 'classlist.js',
+  // 24.10.2026: the visit dossier and the journal are their own lean surfaces — one page
+  // names its visit register, the other the manifest of registers it joins.
+  'poseta-w04.html': 'visit-page.js', 'dnevnik.html': 'dnevnik.js'
 };
 
 test('the established primary destinations and lecture/source routes cannot disappear together with generated shells', () => {

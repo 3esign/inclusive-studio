@@ -27,10 +27,25 @@ const listByFile = Object.fromEntries(Object.values(classLists).map(entry => [en
 const cas03 = classLists['cas-03.html'].data;
 // A visit roster stands on the held page, the visit page, or the class page whose own
 // register names that visit — and nowhere else.
-const visitSurfaces = record => ['index.html', 'poseta.html', ...Object.entries(classLists)
-  .filter(([, entry]) => entry.data.posetaRegistar && visitByFile[entry.data.posetaRegistar] === record)
-  .map(([page]) => page)];
-const GALLERY_SURFACES = new Set(['cas-03.html', 'naslovna.html', 'index.html', 'sledeci.html']);
+// 24.10.2026: a dossier page names its own visit, exactly as a class page names its
+// register — the roster follows the register, never a hand-kept list of pages.
+const DOSSIERS = { 'poseta-w04.html': 'data/poseta-2026-10-23.json' };
+const visitSurfaces = record => ['index.html', 'poseta.html', 'dnevnik.html',
+  ...Object.entries(classLists)
+    .filter(([, entry]) => entry.data.posetaRegistar && visitByFile[entry.data.posetaRegistar] === record)
+    .map(([page]) => page),
+  ...Object.entries(DOSSIERS).filter(([, file]) => visitByFile[file] === record).map(([page]) => page)];
+const GALLERY_SURFACES = new Set(['cas-03.html', 'naslovna.html', 'index.html', 'sledeci.html', 'poseta-w04.html']);
+// The journal joins the registers on the student number. It may publish exactly the two
+// fields those registers already publish, and only inside its own marked record.
+const JOURNAL_SURFACE = 'dnevnik.html';
+const journalPeople = () => {
+  const rows = [];
+  for (const source of [...registry.items, ...(registry.galleries || []), ...(registry.cekaju || [])]) rows.push(source.author);
+  for (const record of visits) rows.push(...record.participants);
+  for (const entry of Object.values(classLists)) for (const row of entry.data.radovi) if (row.ime) rows.push({ name: row.ime, studentNumber: row.indeks || undefined });
+  return rows;
+};
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 function attributionRows(data) {
@@ -133,6 +148,15 @@ function withoutAuthorizedAttribution(file, text, data) {
     const expected = recorded.participants.map(person => `<li><span data-participant-name>${escape(person.name)}</span><span data-participant-number>${escape(person.studentNumber)}</span></li>`).join('');
     assert.equal(inner.trim(), expected, 'participant list must match the exact authorized fields');
     return '<ul>[visit-participant-fields]</ul>';
+  }).replace(/<header\b[^>]*\bdata-dnevnik-student="[^"]*"[^>]*>([\s\S]*?)<\/header>/g, (whole, inner) => {
+    assert.equal(file, JOURNAL_SURFACE, 'only the journal publishes a student record');
+    const people = journalPeople();
+    const fields = inner.match(/^<h3><span data-author-name>([\s\S]*?)<\/span><span data-author-number>([\s\S]*?)<\/span><\/h3>$/);
+    assert.ok(fields, 'a journal record publishes the name and the number, nothing else');
+    const [, name, studentNumber] = fields;
+    assert.ok(people.some(person => escape(person.name) === name), 'a journal record must name a person a register already names');
+    if (studentNumber !== '\u2014') assert.ok(people.some(person => escape(person.studentNumber || '') === studentNumber), 'a journal number must come from a register');
+    return '<header>[journal-record-fields]</header>';
   }).replace(/<li\b[^>]*\bdata-cas03-row="(\d+)"[^>]*>([\s\S]*?)<\/li>/g, (whole, rb, inner) => {
     assert.ok(classLists[file], 'only a class-list page publishes class rows');
     const row = classLists[file].data.radovi.find(item => item.rb === Number(rb));

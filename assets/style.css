@@ -834,7 +834,10 @@ body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width
 .prototype-meta{display:flex;gap:.8rem;align-items:center;font-size:.76rem;color:var(--muted);margin:0 0 .55rem}.prototype-meta>span{font-variant-numeric:tabular-nums;font-size:1.1rem;color:var(--ink)}
 .prototype-card h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(1.5rem,2.5vw,2.2rem);line-height:1.15;letter-spacing:-.025em;margin:.35rem 0 .75rem}
 .prototype-author{display:flex;flex-direction:column;gap:.15rem;line-height:1.5;margin:0 0 1.1rem;font-size:.95rem}.prototype-author [data-author-number]{font-variant-numeric:tabular-nums;font-size:.82rem;color:var(--muted)}
-.prototype-photo{margin:0 0 1rem;min-width:0}.prototype-photo a{display:block;background:var(--wash);outline-offset:4px}.prototype-photo img{display:block;width:100%;height:auto;aspect-ratio:721/1280;object-fit:contain}.prototype-photo figcaption{font-size:.78rem;line-height:1.5;color:var(--muted);margin-top:.65rem}
+/* 24.10.2026: frames come portrait and landscape; the width/height attributes reserve
+   the space, so no ratio is assumed here — a fixed one left a blank band twice the height
+   of every landscape picture. */
+.prototype-photo{margin:0 0 1rem;min-width:0}.prototype-photo a{display:block;background:var(--wash);outline-offset:4px}.prototype-photo img{display:block;width:100%;height:auto;object-fit:contain}.prototype-photo figcaption{font-size:.78rem;line-height:1.5;color:var(--muted);margin-top:.65rem}
 .prototype-description{font-size:.96rem;line-height:1.65;margin:.75rem 0}.prototype-status{font-size:.76rem;color:var(--muted);border-top:1px solid var(--line);padding-top:.8rem;line-height:1.6}
 .prototype-context{border-top:1px solid var(--line);margin-top:3rem;padding-top:2rem;max-width:76ch}.prototype-context h2{font-family:Georgia,'Times New Roman',serif;font-size:1.8rem;font-weight:400}.prototype-context p{line-height:1.75}
 .prototype-sources{font-size:.85rem;margin:2rem 0;color:var(--muted);overflow-wrap:anywhere}.prototype-sources span{display:block}
@@ -1004,3 +1007,42 @@ body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width
 @media(max-width:400px){.work-gallery-tile>span{display:block}.work-awaited,.work-trial{padding:1.1rem}.work-gallery-tile small{display:block;margin-top:.25rem}.cover-workbook{padding:1.25rem}.work-gallery-grid{gap:.75rem}}
 @media(prefers-reduced-motion:reduce){.work-gallery-tile img{transition:none}}
 @media print{.cover-exhibit,.cover-latest,.cover-stage,.cover-doors{display:none!important}.gallery-detail{display:block}.gallery-detail figure{break-inside:avoid;margin:1rem 0}.work-gallery-grid{grid-template-columns:repeat(3,1fr)}}
+/* ---------- the visit attachment, the dossier and the journal (24.10.2026) ---------- */
+/* The attachment opens a class: four covers, the roster, one door to the whole visit. */
+.visit-attachment{margin:2rem 0 3rem;padding:1.6rem 1.6rem 1.8rem;background:var(--wash);border:1px solid var(--line);border-radius:var(--radius)}
+.visit-attachment .section-heading{margin-top:0}
+.visit-cover{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.6rem;margin:1.1rem 0 1.3rem}
+.visit-cover-frame{display:block;aspect-ratio:1;overflow:hidden;border-radius:calc(var(--radius) / 1.5);background:var(--paper);outline-offset:3px}
+.visit-cover-frame img{display:block;width:100%;height:100%;object-fit:cover}
+@media(max-width:600px){.visit-cover{grid-template-columns:repeat(2,minmax(0,1fr))}.visit-attachment{padding:1.2rem}}
+
+/* The dossier: one block per work — the reading first, then the frames it rests on. */
+.visit-work{border-top:1px solid var(--line);padding:2rem 0 1rem}
+.visit-work-head{margin-bottom:.8rem}
+.visit-work-head h3{margin:.2rem 0 .1rem;font-size:1.5rem}
+.visit-work-head .work-author{color:var(--muted);display:flex;gap:.5rem}
+.visit-reading{max-width:70ch;margin:0 0 1.2rem}
+.visit-reading h4{margin:0 0 .5rem;font-size:1.05rem}
+.visit-reading p{margin:.4rem 0}
+.visit-label{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.work-association{border-top:1px solid var(--line);padding-top:1.5rem}
+.work-samehand{border-top:1px solid var(--line);padding-top:1.5rem}
+.work-trail{list-style:none;padding:0;margin:.8rem 0;display:grid;gap:.5rem}
+.work-trail li{padding:.5rem .8rem;background:var(--wash);border-radius:var(--radius)}
+.work-trail small{color:var(--muted);margin-left:.4rem}
+
+/* The journal: one card per person, newest week first. */
+.dnevnik-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem;margin-top:1.5rem;align-items:start}
+.dnevnik-student{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:1.1rem 1.2rem 1.2rem}
+.dnevnik-student h3{margin:0;font-size:1.12rem;display:flex;flex-wrap:wrap;gap:.2rem .6rem;align-items:baseline}
+.dnevnik-student h3 [data-author-number]{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums;font-weight:400}
+.dnevnik-summary{margin:.3rem 0 .9rem;font-size:.82rem;color:var(--muted)}
+.dnevnik-week,.dnevnik-visit{border-top:1px solid var(--line);padding-top:.7rem;margin-top:.7rem}
+.dnevnik-week-head{margin:0 0 .4rem;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.dnevnik-works{list-style:none;padding:0;margin:0;display:grid;gap:.35rem}
+.dnevnik-works li{font-size:.92rem}
+.dnevnik-works small{color:var(--muted);font-size:.8rem}
+.dnevnik-awaited{color:var(--muted)}
+.dnevnik-note{margin:.3rem 0 0;font-size:.8rem;color:var(--muted)}
+.dnevnik-open{border-left:2px solid var(--line);padding-left:.6rem}
+@media(max-width:480px){.dnevnik-list{grid-template-columns:1fr}}
