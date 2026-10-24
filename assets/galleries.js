@@ -58,7 +58,7 @@ export function galleryTiles(galleries, limit = Infinity) {
 export function awaitedList(data, week) {
   const waiting = (data.cekaju || []).filter(w => w.documentedWeek === week);
   if (!waiting.length) return '';
-  return `<div class="work-awaited"><h3>${tr('On the list, photographs still to come', 'Na spisku, fotografije tek stižu')}</h3><ul>${waiting.map(w => `<li><b>${esc(tx(w.title))}</b> ${authorMarkup(w, 'work-author')}${w.expectedPhotos ? ` <small>${w.expectedPhotos} ${tr('images expected', 'slika se očekuje')}</small>` : ''}</li>`).join('')}</ul><p class="note">${tr('These works were photographed in class; the frames have not reached the site yet.', 'Ovi radovi su slikani na času; kadrovi još nisu stigli do sajta.')}</p></div>`;
+  return `<div class="work-awaited"><h3>${tr('On the list, photographs still to come', 'Na spisku, fotografije tek stižu')}</h3><ul>${waiting.map(w => `<li><b>${esc(tx(w.title))}</b> ${authorMarkup(w, 'work-author')}${w.expectedPhotos ? ` <small>${tr('photographs expected', 'očekuje se fotografija')}: ${w.expectedPhotos}</small>` : ''}</li>`).join('')}</ul><p class="note">${tr('These names stand on the class list without a photographed work: the work was not brought, was not photographed, or its frames are still being sought.', 'Ova imena stoje na spisku časa bez fotografisanog rada: rad nije donet, nije slikan, ili se njegovi kadrovi još traže.')}</p></div>`;
 }
 
 export function gallerySection(data, week = null) {

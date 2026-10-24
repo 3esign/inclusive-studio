@@ -86,8 +86,8 @@
     }
   ],
   "summary": {
-    "sr": "Druga poseta udruženju, u petak 23.10.2026, istog dana kad je održan četvrti čas. Sedamnaest studenata je ponelo prototipe u udruženje i tamo ih razrađivalo, dokumentovalo i testiralo sa korisnicima. Šesnaest imena sa ovog spiska stoji i u spisku radova četvrtog časa; jedno ne stoji — to je osamnaesto zavedeno prisustvo tog dana, bez zavedenog rada. Na trideset jednom kadru prepoznato je osam radova; uz svaki kadar stoji šta se iz njega čita, a uz svaki rad zaseban nalaz i sledeća proba.",
-    "en": "The second association visit, on Friday 23 October 2026, the same day the fourth class was held. Seventeen students brought their prototypes to the association and there developed, documented and tested them with users. Sixteen names on this list also stand in the fourth class’s list of works; one does not — that is the eighteenth recorded attendance of the day, without a recorded work. Eight works are recognised across thirty-one frames; each frame carries what can be read from it, and each work its own finding and next trial."
+    "sr": "Druga poseta udruženju, u petak 23.10.2026, istog dana kad je održan četvrti čas. Sedamnaest studenata je ponelo prototipe u udruženje i tamo ih razrađivalo, dokumentovalo i testiralo sa korisnicima. Šesnaest imena sa ovog spiska stoji i u spisku radova četvrtog časa; jedno ne stoji — to je osamnaesto zavedeno prisustvo tog dana, bez zavedenog rada. Na trideset jednom kadru prepoznato je osam radova i svaki kadar nosi bar jedan; uz svaki kadar stoji šta se iz njega čita, a uz svaki rad zaseban nalaz i sledeća proba.",
+    "en": "The second association visit, on Friday 23 October 2026, the same day the fourth class was held. Seventeen students brought their prototypes to the association and there developed, documented and tested them with users. Sixteen names on this list also stand in the fourth class’s list of works; one does not — that is the eighteenth recorded attendance of the day, without a recorded work. Eight works are recognised across thirty-one frames and every frame carries at least one; each frame carries what can be read from it, and each work its own finding and next trial."
   },
   "photos": [
     {
@@ -154,16 +154,15 @@
       "width": 1280,
       "height": 721,
       "alt": {
-        "sr": "Ruke okreću okrugli karton sa isečenim poljima od rebrastog papira u žutoj, ljubičastoj i narandžastoj boji; iza njega bela kutija sa odštampanim geometrijskim pejzažom.",
-        "en": "Hands turn a round cardboard disc with fields of corrugated paper in yellow, purple and orange; behind it a white box with a printed geometric landscape."
+        "sr": "Ruke okreću diskove u boji na bočnoj strani bele kutije; uz nju stoji ploča sa odštampanim geometrijskim oblicima.",
+        "en": "Hands turn the coloured discs on the side of a white box; a panel with printed geometric shapes stands beside it."
       },
       "caption": {
-        "sr": "Tri koncentrična diska okreću se jedan preko drugog: boja se poklopi ili ne, i to se vidi bez ijedne reči uputstva.",
-        "en": "Three concentric discs turn over one another: the colour either lines up or it does not, and that is visible without a word of instruction."
+        "sr": "Brojčanik taktilne kutije u upotrebi: diskovi se okreću jedan preko drugog dok se polja ne poklope. Povratna informacija stiže iz istog ugla iz kog se okreće, bez reči uputstva.",
+        "en": "The tactile box’s dial in use: the discs turn one over another until the fields line up. The feedback arrives from the same angle the hand turns from, with no word of instruction."
       },
       "sourceId": "teacher-2026-10-23-poseta",
       "radovi": [
-        "w4-demiri",
         "w4-taktilna-kutija"
       ]
     },
@@ -193,14 +192,17 @@
       "width": 1280,
       "height": 721,
       "alt": {
-        "sr": "Dve osobe nad stolom; tamna kutija sa zlatnim zvezdama podiže se sa radne površine.",
-        "en": "Two people over the table; a dark box with golden stars is lifted off the work surface."
+        "sr": "Dve osobe nad stolom; ruka ulazi u tamnu kutiju sa zlatnim zvezdama i pridržava njenu unutrašnju stranu.",
+        "en": "Two people over a table; a hand reaches into a dark box with gold stars and steadies its inner wall."
       },
       "caption": {
-        "sr": "Kutija sa zvezdama je transportna kutija radova — vidi se i na snimcima sa časa. Nije prototip i ne pripisuje se nikome.",
-        "en": "The starred box is the carrying box the works travelled in — it is visible in the class frames too. It is not a prototype and is attributed to no one."
+        "sr": "Tamna kutija sa zlatnim zvezdama je kućište rada „putanja” — isti karton vidi se kao okvir na kadrovima tog rada sa časa. Rad se ne spušta na sto nego se drži uspravno, pa jedna ruka ostaje zauzeta.",
+        "en": "The dark box with gold stars is the housing of the work “putanja” — the same card shows as the frame in that work’s class photographs. It is not set down on the table but held upright, so one hand stays occupied."
       },
-      "sourceId": "teacher-2026-10-23-poseta"
+      "sourceId": "teacher-2026-10-23-poseta",
+      "radovi": [
+        "w4-putanja"
+      ]
     },
     {
       "id": "w04-camera-07",
@@ -741,8 +743,8 @@
     },
     {
       "title": {
-        "sr": "Jedini rad koji je ceo sistem, a ne jedna igra",
-        "en": "The only work that is a whole system, not one game"
+        "sr": "Jedini rad koji je ceo sistem — i jedini sa četiri različita ulaza",
+        "en": "The only work that is a whole system — and the only one with four different ways in"
       },
       "photoIds": [
         "w04-camera-04",
@@ -752,12 +754,12 @@
         "w04-camera-25"
       ],
       "seen": {
-        "sr": "Odštampana slika na poklopcu služi kao uzorak, fioka drži zalihu delova, a ram na vrhu je prazno polje za slaganje; isti pejzaž postoji i kao zaseban panel (kadar 05), pa se poređenje radi jedno uz drugo. U kadrovima 14 i 25 korisnik radi po slici, bez ijedne izgovorene reči. Tri ručice su namerno različite — okrugla crvena, okrugla žuta, plosnat plavi jezičak — i u kadru 25 korisnik prvo poseže za crvenom. Dve stvari se ne slažu: slagalica u ramu i sitni oblici u žutoj fioci su dva različita kompleta sa dva različita hvata, a ram u kadru 14 stoji u krilu, gde delovi klize.",
-        "en": "The printed picture on the lid serves as the sample, the drawer holds the stock of parts, and the frame on top is the empty field to build in; the same landscape exists as a separate panel (frame 05), so comparison can be made side by side. In frames 14 and 25 the user works from the picture without a spoken word. The three pulls are deliberately different — round red, round yellow, flat blue clip — and in frame 25 the user reaches for the red one first. Two things do not match: the puzzle in the frame and the small shapes in the yellow drawer are two different kits with two different grips, and in frame 14 the frame rests on a lap, where pieces slide."
+        "sr": "Rad se u kadrovima pojavljuje iz četiri različita ugla i svaki pokazuje drugi ulaz: slika na poklopcu je uputstvo, fioka je zaliha oblika, ram na prednjoj strani je polje za uklapanje, a brojčanik od tri diska na bočnoj strani radi i bez ijedne reči — okreće se dok se polja ne poklope, a poklapanje se vidi iz istog ugla iz kog ruka okreće. Tri ručice su namerno različite na dodir. U kadru 04 obe ruke su na radu: jedna drži osovinu, druga okreće gornji disk.",
+        "en": "The work appears from four different angles and each shows another way in: the picture on the lid is the instruction, the drawer is the stock of shapes, the frame on the front is the fitting field, and the three-disc dial on the side works without a single word — it turns until the fields line up, and the match is seen from the same angle the hand turns from. The three handles are deliberately different to the touch. In frame 04 both hands are on the work: one holds the axis, the other turns the top disc."
       },
       "next": {
-        "sr": "Označiti koja fioka pripada kom zadatku. Probati ram na stolu i u krilu i prebrojati izgubljene delove u oba položaja — to je jedina mera koja razlikuje grešku dizajna od greške postavke.",
-        "en": "Mark which drawer belongs to which task. Try the frame on a table and on a lap and count the lost pieces in both — that is the only measure that separates a design fault from a setup fault."
+        "sr": "Razdvojiti ulaze i probati ih jedan po jedan: koliko okreta prođe do prvog poklapanja na brojčaniku, i da li korisnik posle fioke sam pređe na ram. Rebrasti papir daje i razliku na dodir — proveriti da li se polja prepoznaju zatvorenih očiju.",
+        "en": "Separate the ways in and try them one at a time: how many turns pass before the first match on the dial, and whether the user moves from the drawer to the frame unprompted. The ribbed paper also gives a difference to the touch — check whether the fields are recognised with the eyes closed."
       },
       "work": "w4-taktilna-kutija"
     },
@@ -781,24 +783,6 @@
         "en": "Settle the colour question: if it is free, write that beside the work. Add a parking row for cubes out of play and count how many end up outside the tray after ten minutes."
       },
       "work": "w4-brojkice"
-    },
-    {
-      "work": "w4-demiri",
-      "title": {
-        "sr": "Tri diska, jedan zavrtanj — rad koji objašnjava sam sebe za jedan okret",
-        "en": "Three discs, one screw — a work that explains itself in one turn"
-      },
-      "photoIds": [
-        "w04-camera-04"
-      ],
-      "seen": {
-        "sr": "Jedan kadar, ali jasan: tri kartonska diska opadajućeg prečnika nanizana su na isti zavrtanj i okreću se nezavisno. Na svakom disku je isečeno polje od rebrastog papira — žuto, ljubičasto, narandžasto. Obe ruke su na radu: jedna drži osovinu, druga okreće gornji disk. Poklapanje polja je vidljivo iz istog ugla iz kog se okreće, pa povratna informacija stiže bez posrednika.",
-        "en": "One frame, but a clear one: three cardboard discs of decreasing diameter are threaded on the same screw and turn independently. Each disc carries a cut field of corrugated paper — yellow, purple, orange. Both hands are on the work: one holds the axis, the other turns the top disc. Whether the fields line up is visible from the same angle you turn from, so the feedback arrives without a go-between."
-      },
-      "next": {
-        "sr": "Rad ima samo jedan kadar sa posete, pa se o trajanju i samostalnosti ništa ne zna. Sledeći put ga ponuditi sam, bez drugih radova na stolu, i izmeriti koliko okreta prođe do prvog poklapanja. Rebrasti papir daje i razliku na dodir — proveriti da li se polja prepoznaju zatvorenih očiju.",
-        "en": "The work has only one frame from the visit, so nothing is known about duration or independent use. Next time offer it alone, with no other works on the table, and measure how many turns pass before the first match. The corrugated paper also gives a difference to the touch — check whether the fields can be told apart with the eyes closed."
-      }
     },
     {
       "title": {
@@ -862,6 +846,24 @@
       "work": "w4-zmijica"
     },
     {
+      "work": "w4-putanja",
+      "title": {
+        "sr": "Rad koji se u udruženju nije ni spustio na sto",
+        "en": "The work that was never even set down on the table"
+      },
+      "photoIds": [
+        "w04-camera-06"
+      ],
+      "seen": {
+        "sr": "Jedan kadar, i na njemu rad još nije u igri: kućište sa zlatnim zvezdama drži se uspravno dok ruka pridržava unutrašnju stranu. Staze, kosine i čaše su unutra, ali se iz ovog ugla ne vide — rad koji traži uspravan položaj nije dobio nijednu površinu da na njoj stoji sam.",
+        "en": "One frame, and in it the work is not yet in play: the gold-starred housing is held upright while a hand steadies the inner wall. The routes, ramps and cups are inside but invisible from this angle — a work that needs to stand upright was given no surface to stand on by itself."
+      },
+      "next": {
+        "sr": "Postaviti ga uz zid ili u nosač i tek onda pustiti lopticu: meriti da li stigne do čaše bez ruke koja drži kućište. Dok se drži, rukom se menja i nagib, pa ista staza svaki put nije ista.",
+        "en": "Stand it against a wall or in a holder and only then release the ball: measure whether it reaches the cup without a hand holding the housing. While it is held, the hand also changes the tilt, so the same route is not the same twice."
+      }
+    },
+    {
       "title": {
         "sr": "Osnova, a ne mehanizam, ponavlja se kao slabo mesto",
         "en": "The base, not the mechanism, repeats as the weak point"
@@ -904,19 +906,19 @@
     {
       "title": {
         "sr": "Osam od dvadeset jednog fotografisanog rada stiglo je do korisnika",
-        "en": "Eight of twenty-one photographed works reached the users"
+        "en": "Eight of the twenty-one photographed works reached the users"
       },
       "photoIds": [
         "w04-camera-06",
         "w04-camera-27"
       ],
       "seen": {
-        "sr": "Spisak časa nosi dvadeset jedan fotografisan rad; u kadrovima iz udruženja prepoznato ih je osam. Jedan od tih osam je rad iz treće nedelje, ne iz ove. Na kadrovima se vidi i transportna kutija sa zlatnim zvezdama — ista stoji i na snimcima sa časa — ali ona nije prototip i ne pripisuje se nikome. Nijedan rad u setu nema kraj: ni rezultat, ni poen, ni stanje koje kaže da je igra gotova.",
-        "en": "The class list carries twenty-one photographed works; eight of them are recognised in the association frames. One of those eight is a work from the third week, not this one. The frames also show the starred carrying box — the same one appears in the class frames — but it is not a prototype and is attributed to no one. No work in the set has an ending: no result, no score, no state that says the game is over."
+        "sr": "Spisak časa nosi dvadeset jedan fotografisan rad; u kadrovima iz udruženja prepoznato ih je osam. Jedan od tih osam je rad iz treće nedelje, ne iz ove. Posle prepoznavanja od 24.10.2026. nijedan kadar ne stoji bez rada: kutija sa zvezdama, koja je bila zavedena kao transportna, kućište je rada „putanja”. Trinaest fotografisanih radova nije stiglo do korisnika — to nije greška, ali nije ni odluka: nigde nije zapisano koji radovi idu.",
+        "en": "The class list carries twenty-one photographed works; eight of them are recognised in the association frames. One of those eight is a work from the third week, not this one. After the recognition of 24 October 2026 no frame stands without a work: the starred box, filed as a transport box, is the housing of the work “putanja”. Thirteen photographed works did not reach the users — that is not a mistake, but neither is it a decision: nowhere is it written down which works go."
       },
       "next": {
-        "sr": "Pre sledeće posete odlučiti koji radovi idu i zapisati to unapred, da se izbor vidi kao odluka, a ne kao ishod. Uz svaki rad doneti i jednu rečenicu o tome kada je igra gotova.",
-        "en": "Before the next visit decide which works go and write that down in advance, so the selection reads as a decision and not as an outcome. Bring with each work one sentence about when the game is over."
+        "sr": "Pred sledeću posetu zapisati unapred koji radovi idu i zašto, pa posle uporediti spisak sa kadrovima.",
+        "en": "Before the next visit write down in advance which works go and why, then afterwards compare the list with the frames."
       }
     }
   ]

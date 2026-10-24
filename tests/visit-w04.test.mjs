@@ -52,9 +52,12 @@ test('a frame names a work the register holds, and a work finding cites only its
     assert.ok(bound.has(f.work), 'a work finding names a recognised work');
     for (const id of f.photoIds) assert.ok((v.photos.find(p => p.id === id).radovi || []).includes(f.work), f.work + ' cites a frame it was not recognised in');
   }
+  assert.deepEqual(v.photos.filter(p => !(p.radovi || []).length), [], 'after 24.10 every frame names the work recognised in it');
   // The rule must bite: a finding moved onto a frame of another work is refused.
   const broken = structuredClone(v);
-  broken.findings.find(f => f.work).photoIds = [broken.photos.find(p => !(p.radovi || []).length).id];
+  const stripped = broken.photos.at(-1);
+  stripped.radovi = [];
+  broken.findings.find(f => f.work).photoIds = [stripped.id];
   assert.ok(validateVisit(broken).length, 'a finding may not cite a frame without its work');
 });
 

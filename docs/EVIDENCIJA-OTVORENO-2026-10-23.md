@@ -135,3 +135,30 @@ samostalnost, razumevanje pravila ni uspešan ishod.
    registra radova, i to je na strani izričito napisano.
 5. **Trinaest od dvadeset jednog fotografisanog rada nije stiglo do korisnika.** Nije
    greška, ali nije ni odluka — pred sledeću posetu treba unapred zapisati koji radovi idu.
+
+## Dopuna 24.10.2026 (drugi prolaz) — isti rad iz više uglova
+
+Nastavnik je uz tri snimka objavljene strane ispravio prepoznavanje. Jedna greška se
+ponovila na tri mesta: **predmet snimljen iz drugog ugla zaveden je kao drugi rad.**
+
+**Zatvoreno:**
+
+| šta je stajalo otvoreno | kako je zatvoreno |
+|---|---|
+| kadar sa tri diska na zavrtnju vođen kao zaseban rad (i u spisku i u prilogu posete) | to je „taktilna kutija” zapisa 25, snimljena sa bočne strane; kadar premešten, dva zapisa spojena u jedan rad |
+| tamna kutija sa zlatnim zvezdama = „transportna kutija, nije prototip” | **netačno** — to je kućište rada „putanja” zapisa 4; isti karton se vidi kao okvir na kadrovima tog rada sa časa. Kadar pripisan radu, dobio svoje čitanje |
+| drugi kadar zapisa 26 | ista ploča sa žlebom i zvezdom kao oba kadra zapisa 27, snimljena četiri sekunde pre njih; premešten tamo |
+| „nijedan kadar posete nije bez rada”? | sada je tako: svih 31 kadar nosi bar jedan rad, odeljak „Kadrovi bez rada” je nestao sa strane |
+
+Brojevi posle reza: zapis 25 ima **10** kadrova, zapis 27 ima **3**, zapis 26 **nijedan**.
+Pet redova četvrtog časa sada ima drugačiji broj od rukom zapisanog; ukupno je i dalje 87.
+
+**Novo otvoreno:**
+
+1. **Zapis 26 nema nijedan kadar**, a spisak mu daje tri. Kandidat su **kadrovi 5 i 6
+   zapisa 25**: beli ram sa uklopljenim pločicama i ključem od pet oblika u boji — predmet
+   drugačije izrade od ostatka tog niza i bez mesta na plakatu „taktilne kutije”. Nije
+   pripisan bez potvrde.
+2. Pravilo koje iz ovoga sledi: **rez niza se proverava po predmetu iz svih uglova, ne po
+   jednom kadru po radu.** Isti predmet snimljen izbliza, sa strane i odozgo tri puta je
+   izgledao kao tri rada.
