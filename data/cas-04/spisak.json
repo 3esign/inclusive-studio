@@ -305,25 +305,25 @@
       "ime": "Hana Demiri",
       "indeks": "22/24",
       "rad": null,
-      "slike": 0,
+      "slike": 3,
       "razjasni": "bez-naziva-c04",
       "napomena": {
-        "sr": "naziv rada nije zabeležen; posle prepoznavanja od 24.10.2026. zapis je bez fotografisanog rada — oba ranija kadra prikazuju radove suseda",
-        "en": "the work’s title was not recorded; after the recognition of 24 October 2026 the entry has no photographed work — both earlier frames show the neighbours’ works"
+        "sr": "naziv rada nije zabeležen. Sva tri kadra ovog dela niza pripisana su 24.10.2026. ovom zapisu po nastavnikovoj ispravci; isti predmet vodi se i u trećoj nedelji, tada sa nacrtanom stazom.",
+        "en": "the work’s title was not recorded. All three frames of this stretch were assigned to this entry on 24 October 2026 on the teacher’s correction; the same object appears in the third week as well, with the route then only drawn."
       },
-      "ceka": true
+      "galerija": "w4-demiri"
     },
     {
       "rb": 27,
       "ime": "Iva Mijanović",
       "indeks": "28/24",
       "rad": "fliper",
-      "slike": 3,
+      "slike": 0,
       "napomena": {
-        "sr": "broj indeksa ispravljen 23.10.2026. po nastavnikovoj potvrdi: danas je zapisan sa zamenjenim delovima, godište je 2024 kao kod cele generacije.",
-        "en": "the student number was corrected on 23 October 2026 on the teacher’s confirmation: today it was written with its parts swapped; the year is 2024, as for the whole cohort."
+        "sr": "broj indeksa ispravljen 23.10.2026. po nastavnikovoj potvrdi. Kadrovi ranije zavedeni uz ovaj zapis pripisani su 24.10.2026. zapisu 26; rad „fliper” ovog zapisa nije fotografisan.",
+        "en": "the student number was corrected on 23 October 2026 on the teacher’s confirmation. The frames earlier filed beside this entry were assigned to entry 26 on 24 October 2026; this entry’s “fliper” was not photographed."
       },
-      "galerija": "w4-fliper"
+      "ceka": true
     }
   ],
   "razjasni": [
@@ -337,8 +337,8 @@
     {
       "id": "bez-naziva-c04",
       "sta": {
-        "sr": "Zapisi 15 i 26 nemaju zabeležen naziv rada. Zapis 15 ima jednu fotografiju (doneta skica); zapis 26 posle provere od 24.10.2026. nema nijednu.",
-        "en": "Entries 15 and 26 carry no recorded work title. Entry 15 has one photograph (a sketch was brought); entry 26, after the check of 24 October 2026, has none."
+        "sr": "Zapisi 15 i 26 nemaju zabeležen naziv rada. Zapis 15 ima jednu fotografiju (doneta skica); zapis 26 ima tri, pa mu nedostaje samo ime — prugasta kutija sa izrezanom stazom i zvezdom na kraju.",
+        "en": "Entries 15 and 26 carry no recorded work title. Entry 15 has one photograph (a sketch was brought); entry 26 has three, so only its name is missing — a striped box with a cut-out route and a star at the end."
       }
     },
     {
@@ -360,13 +360,6 @@
       "sta": {
         "sr": "Zapis 6 je jedini rad ovog časa koji nije fizički predmet, ali nije ni slabije dokumentovan. Tri kadra sa časa pokazuju autora kako svira pokretom ruke pred kamerom i sam interfejs: tri težine, pedalu, pesmicu, snimanje i puštanje, i klavijaturu sa imenovanim tonovima. Dva kadra iz udruženja pokazuju isti rad u upotrebi na stolu. U registru je upisan kao digitalan rad — to je opis medija, ne manjak građe.",
         "en": "Entry 6 is the only work of this class that is not a physical object, but it is not less documented either. Three frames from the class show the author playing by hand movement in front of the camera, and the interface itself: three difficulty levels, a pedal, a tune, recording and playback, and a keyboard with named notes. Two frames from the association show the same work in use on a table. The register records it as a digital work — that describes the medium, not a shortage of material."
-      }
-    },
-    {
-      "id": "demiri-bez-kadrova",
-      "sta": {
-        "sr": "Zapis 26: u spisku stoje tri fotografije, a posle prepoznavanja od 24.10.2026. nijedan kadar iz niza ne pripada tom zapisu — oba ranije objavljena prikazuju radove suseda. Kandidat su kadrovi 5 i 6 zapisa 25: na njima je beli ram sa uklopljenim pločicama i ključem od pet oblika u boji, predmet drugačije izrade od ostatka tog niza i bez mesta na plakatu „taktilne kutije”. Ne pripisujem ga bez potvrde — pitanje je da li je taj ram rad zapisa 26.",
-        "en": "Entry 26: the list gives three photographs, and after the recognition of 24 October 2026 no frame in the sequence belongs to that entry — both previously published frames show the neighbours’ works. Frames 5 and 6 of entry 25 are the candidate: a white frame of interlocking tiles with a key of five coloured shapes, an object made differently from the rest of that sequence and with no place on the “taktilna kutija” poster. I do not attribute it without confirmation — the question is whether that frame is the work of entry 26."
       }
     }
   ],
@@ -493,10 +486,18 @@
     },
     {
       "id": "fliper-treci-kadar",
-      "izvor": "Nastavnik predmeta, 24.10.2026.",
+      "izvor": "Nastavnik predmeta, 24.10.2026 (druga ispravka istog dana).",
       "sta": {
-        "sr": "Posledica iste provere: drugi kadar objavljen uz zapis 26 prikazuje ploču sa izrezanim žlebom, zelenim pomponom i izrezanom zvezdom — isti predmet kao oba kadra zapisa 27, snimljen četiri sekunde pre njih. Kadar je premešten tamo; zapis 27 sada ima tri fotografije.",
-        "en": "A consequence of the same check: the second frame published beside entry 26 shows the board with the cut groove, the green pompom and the cut star — the same object as both frames of entry 27, taken four seconds before them. The frame has moved there; entry 27 now has three photographs."
+        "sr": "Ispravljeno dvaput istog dana. Prvo je drugi kadar zapisa 26 premešten u zapis 27, pa je nastavnik uz dve nove fotografije potvrdio da je ceo taj deo niza (13:07–13:10) jedan te isti predmet i da pripada zapisu 26: prugasta kutija sa stazom izrezanom kroz karton, zelenim pomponom na koncu i zvezdom na kraju. Sva tri kadra sada stoje uz zapis 26 — tačno onoliko koliko spisak za njega navodi. Zapis 27 ostaje bez ijedne fotografije i prelazi među imena koja čekaju; time otpada i ranije pitanje o dva predmeta pod istim imenom.",
+        "en": "Corrected twice on the same day. First the second frame of entry 26 was moved to entry 27; then, with two further photographs, the teacher confirmed that the whole stretch (13:07–13:10) is one and the same object and belongs to entry 26: a striped box with the route cut clean through the card, a green pompom on a thread and a star at the end. All three frames now stand beside entry 26 — exactly as many as its list row states. Entry 27 is left without a single photograph and moves to the names still awaited; the earlier question about two objects under one name falls away with it."
+      }
+    },
+    {
+      "id": "demiri-ista-kutija-dve-nedelje",
+      "izvor": "Čitanje kadrova uz nastavnikovu ispravku, 24.10.2026.",
+      "sta": {
+        "sr": "Isti predmet stoji u obe nedelje. Kutija zapisa 26 je ista ona iz trećeg časa: tada je sa jedne strane poklopca bila kutija za brojanje — pet prozora rastuće dužine, obeleženih 1–5, sa onoliko pufni koliko broj kaže — a sa druge strane staza samo nacrtana, uz zvezdu već izrezanu kroz karton. Na četvrtom času staza je probijena kroz karton, pomponu je dodat konac, a iza zvezde je stavljena ljubičasta podloga. To je jedini zapis ovog časa kod koga se nedeljni napredak vidi na istom komadu materijala, a ne na novom predmetu.",
+        "en": "One object stands in both weeks. The box of entry 26 is the very box of the third class: then one face of its lid was a counting box — five windows of increasing length, marked 1–5, each holding as many pompoms as the number says — while the other face carried the route only drawn, with the star already cut through the card. In the fourth class the route is cut clean through, a thread is added to the pompom, and a purple backing is placed behind the star. It is the only entry of this class where the week’s progress shows on the same piece of material rather than on a new object."
       }
     }
   ],

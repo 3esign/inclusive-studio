@@ -247,8 +247,12 @@
     },
     {
       "rb": 26,
-      "folder": null,
-      "izvori": [],
+      "folder": "26-demiri",
+      "izvori": [
+        "20261023_130752.jpg",
+        "20261023_130756.jpg",
+        "20261023_131003.jpg"
+      ],
       "ispravljeno": {
         "bilo": 3,
         "sada": 2
@@ -256,12 +260,8 @@
     },
     {
       "rb": 27,
-      "folder": "27-fliper",
-      "izvori": [
-        "20261023_130752.jpg",
-        "20261023_130756.jpg",
-        "20261023_131003.jpg"
-      ]
+      "folder": null,
+      "izvori": []
     }
   ],
   "poseta": [

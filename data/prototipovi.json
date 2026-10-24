@@ -144,6 +144,14 @@
         "sr": "Nastavnikova ispravka prepoznavanja predmeta na kadrovima, 24.10.2026, uz tri snimka objavljene strane: kadar zaveden kao zaseban rad sa diskovima prikazuje „taktilnu kutiju” iz drugog ugla; tamna kutija sa zlatnim zvezdama nije transportna, nego kućište rada „putanja”; kadar objavljen uz zapis 26 četvrtog časa takođe prikazuje „taktilnu kutiju”. Nastavnik je izričito naveo da isti rad nije prepoznat iz više uglova.",
         "en": "The teacher’s correction of object recognition in the frames, 24 October 2026, with three screenshots of the published page: a frame filed as a separate work with discs shows the “taktilna kutija” from another angle; the dark box with gold stars is not a transport box but the housing of the work “putanja”; the frame published beside entry 26 of the fourth class also shows the “taktilna kutija”. The teacher stated explicitly that the same work was not recognised across its several angles."
       }
+    },
+    {
+      "id": "teacher-2026-10-24-demiri",
+      "recordedOn": "2026-10-24",
+      "description": {
+        "sr": "Nastavnikova ispravka uz dve dostavljene fotografije, 24.10.2026: prugasta kutija sa izrezanom stazom, zelenim pomponom na koncu i zvezdom na kraju je rad zapisa 26 četvrtog časa, a ne „fliper” zapisa 27. Nastavnik je naveo i da autorka tog zapisa ima rad iz ranije nedelje — kutija za brojanje sa trećeg časa je isti predmet, sa drugom stranom poklopca.",
+        "en": "The teacher’s correction with two supplied photographs, 24 October 2026: the striped box with the cut-out route, a green pompom on a thread and a star at the end is the work of entry 26 of the fourth class, not the “fliper” of entry 27. The teacher also stated that the author of that entry has a work from an earlier week — the counting box of the third class is the same object, on the other face of its lid."
+      }
     }
   ],
   "items": [
@@ -1778,8 +1786,8 @@
           "width": 721,
           "height": 1280,
           "alt": {
-            "sr": "Bez naziva — prugasta kutija sa obojenim pregradama i pufnama razvrstanim po boji; prikaz 1 od 5.",
-            "en": "Untitled — a striped box with colored compartments holding pompoms sorted by color; view 1 of 5."
+            "sr": "Bez naziva — Poklopac odozgo: pet prozora rastuće dužine, svaki u svojoj boji i obeležen brojem 1–5, sa onoliko pufni koliko broj kaže. Žuta zvezda sa peticom stoji uz najduži red. Prikaz 1 od 5.",
+            "en": "Untitled — The lid from above: five windows of increasing length, each in its own colour and marked 1–5, holding as many pompoms as the number says. A yellow star with a five sits beside the longest row. View 1 of 5."
           },
           "caption": {
             "sr": "1 / 5",
@@ -1794,8 +1802,8 @@
           "width": 721,
           "height": 1280,
           "alt": {
-            "sr": "Bez naziva — prugasta kutija sa obojenim pregradama i pufnama razvrstanim po boji; prikaz 2 od 5.",
-            "en": "Untitled — a striped box with colored compartments holding pompoms sorted by color; view 2 of 5."
+            "sr": "Bez naziva — Isti poklopac iz kosog ugla — dužina reda i broj pufni čitaju se kao ista količina dvaput, okom i prstom. Prikaz 2 od 5.",
+            "en": "Untitled — The same lid at an angle — the length of the row and the count of pompoms read as the same quantity twice, by eye and by finger. View 2 of 5."
           },
           "caption": {
             "sr": "2 / 5",
@@ -1810,8 +1818,8 @@
           "width": 721,
           "height": 1280,
           "alt": {
-            "sr": "Bez naziva — prugasta kutija sa obojenim pregradama i pufnama razvrstanim po boji; prikaz 3 od 5.",
-            "en": "Untitled — a striped box with colored compartments holding pompoms sorted by color; view 3 of 5."
+            "sr": "Bez naziva — Kutija otvorena: pregrade od kartona drže pufne na mestu, pa se broj ne menja kad se kutija podigne. Prikaz 3 od 5.",
+            "en": "Untitled — The box opened: card dividers hold the pompoms in place, so the count does not change when the box is lifted. View 3 of 5."
           },
           "caption": {
             "sr": "3 / 5",
@@ -1826,8 +1834,8 @@
           "width": 721,
           "height": 1280,
           "alt": {
-            "sr": "Bez naziva — prugasta kutija sa obojenim pregradama i pufnama razvrstanim po boji; prikaz 4 od 5.",
-            "en": "Untitled — a striped box with colored compartments holding pompoms sorted by color; view 4 of 5."
+            "sr": "Bez naziva — Unutrašnja strana poklopca u istom kadru — kroz nju je već izrezana zvezda, ista ona koja je na drugoj strani kraj staze. Prikaz 4 od 5.",
+            "en": "Untitled — The inner face of the lid in the same frame — a star is already cut through it, the very one that marks the end of the route on the other face. View 4 of 5."
           },
           "caption": {
             "sr": "4 / 5",
@@ -1842,8 +1850,8 @@
           "width": 721,
           "height": 1280,
           "alt": {
-            "sr": "Bez naziva — prugasta kutija sa obojenim pregradama i pufnama razvrstanim po boji; prikaz 5 od 5.",
-            "en": "Untitled — a striped box with colored compartments holding pompoms sorted by color; view 5 of 5."
+            "sr": "Bez naziva — Druga strana poklopca: staza je zasad samo nacrtana, zvezda je izrezana. Ovo je rad koji se na četvrtom času vraća sa stazom probijenom kroz karton. Prikaz 5 od 5.",
+            "en": "Untitled — The other face of the lid: the route is so far only drawn, the star is cut. This is the work that returns in the fourth class with the route cut clean through the card. View 5 of 5."
           },
           "caption": {
             "sr": "5 / 5",
@@ -5206,66 +5214,66 @@
       ]
     },
     {
-      "id": "w4-fliper",
+      "id": "w4-demiri",
       "title": {
-        "sr": "fliper",
-        "en": "fliper"
+        "sr": "Bez naziva",
+        "en": "Untitled"
       },
       "documentedWeek": 4,
-      "sourceId": "teacher-2026-10-23-cas-04",
+      "sourceId": "teacher-2026-10-24-demiri",
       "author": {
-        "name": "Iva Mijanović",
-        "studentNumber": "28/24"
+        "name": "Hana Demiri",
+        "studentNumber": "22/24"
       },
-      "listOrder": 27,
+      "listOrder": 26,
       "photos": [
         {
-          "id": "w4-fliper-01",
-          "src": "data/prototipovi/w4-fliper/01.jpg",
+          "id": "w4-demiri-01",
+          "src": "data/prototipovi/w4-demiri/01.jpg",
           "sha256": "22e58eb144ab33f4663bf0efee98c302af66d953a31cad58afd21cabe2e45a79",
           "width": 721,
           "height": 1280,
           "alt": {
-            "sr": "fliper — Kutija obložena papirom sa prugama i zvezdicama; u ploči je izrezan vijugav žleb, zeleni pompon na igli stoji na početku. Prikaz 1 od 3.",
-            "en": "fliper — A box covered in striped, star-dotted paper; a winding groove is cut into the board, a green pompom on a pin at the start. View 1 of 3."
+            "sr": "Bez naziva — Ruka drži zeleni pompon na ljubičastom koncu iznad poklopca; konac ulazi u izrezanu stazu, pa se pompon vuče, ne gura. Prikaz 1 od 3.",
+            "en": "Untitled — A hand holds a green pompom on a lilac thread above the lid; the thread enters the cut route, so the pompom is pulled, not pushed. View 1 of 3."
           },
           "caption": {
             "sr": "1 / 3",
             "en": "1 / 3"
           },
-          "sourceId": "teacher-2026-10-23-cas-04"
+          "sourceId": "teacher-2026-10-24-demiri"
         },
         {
-          "id": "w4-fliper-02",
-          "src": "data/prototipovi/w4-fliper/02.jpg",
+          "id": "w4-demiri-02",
+          "src": "data/prototipovi/w4-demiri/02.jpg",
           "sha256": "b895ab521a3d1346762851a8c93245640d37aad7265a2974387ef31c3ac9b207",
           "width": 1280,
           "height": 721,
           "alt": {
-            "sr": "fliper — Isti žleb odozgo, cela staza u kadru: na kraju je izrezana zvezda kroz koju se vidi ljubičasta podloga. Prikaz 2 od 3.",
-            "en": "fliper — The same groove from above, the whole route in frame: a star is cut at the end with a purple surface showing through. View 2 of 3."
+            "sr": "Bez naziva — Cela staza odozgo: izrezana linija ide od pompona u gornjem levom uglu do ljubičaste zvezde u donjem desnom — jedini rad četvrtog časa koji ima označen kraj. Po bočnoj ivici stoji red izrezanih otvora. Prikaz 2 od 3.",
+            "en": "Untitled — The whole route from above: the cut line runs from the pompom at the upper left to the purple star at the lower right — the only fourth-class work with a marked finish. A row of cut openings runs along the side edge. View 2 of 3."
           },
           "caption": {
             "sr": "2 / 3",
             "en": "2 / 3"
           },
-          "sourceId": "teacher-2026-10-23-cas-04"
+          "sourceId": "teacher-2026-10-24-demiri"
         },
         {
-          "id": "w4-fliper-03",
-          "src": "data/prototipovi/w4-fliper/03.jpg",
+          "id": "w4-demiri-03",
+          "src": "data/prototipovi/w4-demiri/03.jpg",
           "sha256": "eef5afb845da4fa95fba14860afa472eef6bd7a12a38b956eee19313f5871884",
           "width": 721,
           "height": 1280,
           "alt": {
-            "sr": "fliper — Ista ploča sa kraćeg rastojanja, bez ruke u kadru; po ivici se vide urezani otvori. Prikaz 3 od 3.",
-            "en": "fliper — The same board from closer in, with no hand in frame; cut openings show along the edge. View 3 of 3."
+            "sr": "Bez naziva — Ista ploča iz niskog ugla: prorez je probijen kroz karton do dna, a otvori na bočnoj strani vide se kao niz rupa u ivici kutije. Prikaz 3 od 3.",
+            "en": "Untitled — The same board from a low angle: the slot is cut clean through the card, and the side openings read as a row of holes in the box’s edge. View 3 of 3."
           },
           "caption": {
             "sr": "3 / 3",
             "en": "3 / 3"
           },
-          "sourceId": "teacher-2026-10-24-prepoznavanje"
+          "sourceId": "teacher-2026-10-24-demiri"
         }
       ]
     }
@@ -5405,22 +5413,22 @@
       }
     },
     {
-      "id": "w4-demiri",
+      "id": "w4-fliper",
       "title": {
-        "sr": "Bez naziva",
-        "en": "Untitled"
+        "sr": "fliper",
+        "en": "fliper"
       },
       "author": {
-        "name": "Hana Demiri",
-        "studentNumber": "22/24"
+        "name": "Iva Mijanović",
+        "studentNumber": "28/24"
       },
       "documentedWeek": 4,
-      "sourceId": "teacher-2026-10-24-prepoznavanje",
-      "listOrder": 26,
+      "sourceId": "teacher-2026-10-24-demiri",
+      "listOrder": 27,
       "expectedPhotos": 3,
       "reason": {
-        "sr": "Nastavnikov spisak uz ovaj zapis navodi tri fotografije, a posle prepoznavanja od 24.10.2026. nijedan kadar iz niza ne pripada mu: oba objavljena kadra prikazuju radove suseda. Prisustvo je zavedeno; rad i njegovi kadrovi se traže. Kandidat su kadrovi 5 i 6 zapisa 25 — na njima je beli ram sa uklopljenim pločicama, predmet drugačije izrade od ostatka tog niza; to pitanje stoji otvoreno u spisku.",
-        "en": "The teacher’s list gives three photographs for this entry, but after the recognition of 24 October 2026 no frame in the sequence belongs to it: both published frames show the neighbours’ works. The attendance is recorded; the work and its frames are sought. Frames 5 and 6 of entry 25 are the candidate — a white frame of interlocking tiles, an object made differently from the rest of that sequence; the question stands open on the list."
+        "sr": "Nastavnikov spisak uz ovaj zapis navodi tri fotografije, ali sva tri kadra iz tog dela niza (13:07–13:10) prikazuju prugastu kutiju zapisa 26. Rad „fliper” ovog zapisa nije fotografisan; ranije otvoreno pitanje o dva predmeta pod istim imenom time otpada.",
+        "en": "The teacher’s list gives three photographs for this entry, but all three frames from that stretch of the sequence (13:07–13:10) show the striped box of entry 26. This entry’s “fliper” was not photographed; the earlier open question about two objects under one name falls away."
       }
     }
   ],
