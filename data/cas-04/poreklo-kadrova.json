@@ -80,14 +80,14 @@
       "folder": "08-3d-lavirint",
       "izvori": [
         "20261023_115826.jpg",
-        "20261023_115852.jpg",
-        "20261023_120103.jpg"
+        "20261023_115852.jpg"
       ]
     },
     {
       "rb": 9,
       "folder": "09-brojkice",
       "izvori": [
+        "20261023_120103.jpg",
         "20261023_120105.jpg",
         "20261023_120108.jpg",
         "20261023_120112.jpg",
@@ -98,18 +98,17 @@
         "20261023_120307.jpg",
         "20261023_120311.jpg",
         "20261023_120320.jpg",
-        "20261023_120324.jpg",
-        "20261023_120340.jpg"
+        "20261023_120324.jpg"
       ]
     },
     {
       "rb": 10,
       "folder": "10-zekino-polje",
       "izvori": [
+        "20261023_120340.jpg",
         "20261023_120352.jpg",
         "20261023_120356.jpg",
-        "20261023_120416.jpg",
-        "20261023_121100.jpg"
+        "20261023_120416.jpg"
       ]
     },
     {
@@ -121,9 +120,9 @@
       "rb": 12,
       "folder": "12-sound-box",
       "izvori": [
+        "20261023_121100.jpg",
         "20261023_121102.jpg",
-        "20261023_121125.jpg",
-        "20261023_121747.jpg"
+        "20261023_121125.jpg"
       ]
     },
     {
@@ -135,6 +134,7 @@
       "rb": 14,
       "folder": "14-edukativna",
       "izvori": [
+        "20261023_121747.jpg",
         "20261023_121751.jpg"
       ],
       "ispravljeno": {
@@ -304,6 +304,6 @@
   },
   "ispravka": {
     "datum": "2026-10-24",
-    "sta": "Niz je ponovo presečen po predmetu: kadar 130731 pripada zapisu 25 (taktilna kutija iz bočnog ugla), kadar 130752 zapisu 27 (ista ploča sa žlebom kao 130756). Zapis 26 ostaje bez kadrova. Sirovi prijem u data/cas-04/slike prati isti rez; bajtovi i otisci su nepromenjeni."
+    "sta": "Niz je ponovo presečen po predmetu na kadru. Četiri kadra stajala su uz prethodni zapis iako prikazuju rad koji sledi: 120103 → zapis 9, 120340 → zapis 10, 121100 → zapis 12, 121747 → zapis 14. Raniji rez pratio je broj iz spiska, pa se pomeraj prenosio lancem od zapisa 8 do zapisa 14. Bajtovi i otisci kadrova su nepromenjeni; promenjeni su folder i redni broj. Raniji zapis ispravke od 23.10.2026. o kadrovima 130731 i 130752 nije bio primenjen na foldere i povlači se: zapis 26 zadržava sva tri svoja kadra."
   }
 }

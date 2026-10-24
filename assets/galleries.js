@@ -1,4 +1,7 @@
-import { esc, tx, tr } from './core.js';
+import { esc, tx, tr, plural } from './core.js';
+
+// Broj kadrova uz naziv rada ide kroz množinu: „4 slike”, ne „4 slika”.
+const slike = n => tr(`${n} image${n === 1 ? '' : 's'}`, plural(n, 'slika', 'slike', 'slika'));
 
 export const galleryHref = g => `galerija-${g.id}.html`;
 
@@ -41,7 +44,7 @@ function sameHand(data, work) {
   const others = (data.galleries || []).filter(g => g.id !== work.id && mine(g)).sort((a, b) => b.documentedWeek - a.documentedWeek);
   const awaited = (data.cekaju || []).filter(mine);
   if (!others.length && !awaited.length) return '';
-  const rows = others.map(g => `<li><a href="${galleryHref(g)}"><b>${esc(tx(g.title))}</b></a> <small>${tr('week', 'nedelja')} ${g.documentedWeek} · ${g.photos.length} ${tr('images', 'slika')}</small></li>`).join('')
+  const rows = others.map(g => `<li><a href="${galleryHref(g)}"><b>${esc(tx(g.title))}</b></a> <small>${tr('week', 'nedelja')} ${g.documentedWeek} · ${slike(g.photos.length)}</small></li>`).join('')
     + awaited.map(w => `<li><b>${esc(tx(w.title))}</b> <small>${tr('week', 'nedelja')} ${w.documentedWeek} · ${tr('photographs still to come', 'fotografije tek stižu')}</small></li>`).join('');
   return `<section class="work-week work-samehand"><h2>${tr('The same hand, other weeks', 'Ista ruka, ostale nedelje')}</h2><ul class="work-trail">${rows}</ul><p class="note"><a href="dnevnik.html">${tr('The whole record of this student in the journal', 'Ceo zapis ovog studenta u dnevniku')} ↗</a></p></section>`;
 }
@@ -49,7 +52,7 @@ function sameHand(data, work) {
 export function galleryTiles(galleries, limit = Infinity) {
   return `<div class="work-gallery-grid">${galleries.slice(0, limit).map(g => {
     const p = coverPhoto(g);
-    return `<a class="work-gallery-tile" href="${galleryHref(g)}"><img src="${esc(p.src)}" width="${p.width}" height="${p.height}" alt="${esc(tx(p.alt))}" loading="lazy" decoding="async"><span><b>${esc(tx(g.title))}</b>${authorMarkup(g, 'work-author')}<small>${g.photos.length} ${tr('images', 'slika')} ↗</small></span></a>`;
+    return `<a class="work-gallery-tile" href="${galleryHref(g)}"><img src="${esc(p.src)}" width="${p.width}" height="${p.height}" alt="${esc(tx(p.alt))}" loading="lazy" decoding="async"><span><b>${esc(tx(g.title))}</b>${authorMarkup(g, 'work-author')}<small>${slike(g.photos.length)} ↗</small></span></a>`;
   }).join('')}</div>`;
 }
 
@@ -83,7 +86,7 @@ export function galleryDetail(data, id, visits = []) {
   const earlierTrials = earlier ? (data.observations || []).filter(o => o.prototypeId === earlier.id) : [];
 
   const head = `<p class="eyebrow"><a href="prototipovi.html#${anchor}">${tr('Works and examples', 'Radovi i primeri')}</a> / ${tr('Class', 'Čas')} ${g.documentedWeek}</p><h1>${esc(tx(g.title))}</h1>${authorMarkup(g, 'work-identity', 'p')}`;
-  const thisWeek = `<section class="work-week"><h2>${tr('Class', 'Čas')} ${g.documentedWeek}</h2><p class="lede">${g.photos.length} ${tr('views of the work', 'prikaza rada')} · <a href="index.html?w=${g.documentedWeek}">${tr('Class material', 'Gradivo časa')}</a></p>${photoGrid(g.photos)}</section>`;
+  const thisWeek = `<section class="work-week"><h2>${tr('Class', 'Čas')} ${g.documentedWeek}</h2><p class="lede">${tr(`${g.photos.length} view${g.photos.length === 1 ? '' : 's'} of the work`, plural(g.photos.length, 'prikaz', 'prikaza', 'prikaza') + ' rada')} · <a href="index.html?w=${g.documentedWeek}">${tr('Class material', 'Gradivo časa')}</a></p>${photoGrid(g.photos)}</section>`;
 
   const trial = g.probanje ? `<section class="work-week work-trial"><h2>${tr('Tried by users', 'Probali korisnici')} · ${esc(g.probanje.occurredOn.split('-').reverse().join('.'))}.</h2><p class="lede">${esc(tx(g.probanje.sta))}</p><p class="note"><a href="cas-03.html#poseta-w03">${tr('Photographs from the third-class visit', 'Fotografije posete sa trećeg časa')} ↗</a></p></section>` : '';
   let history = '';

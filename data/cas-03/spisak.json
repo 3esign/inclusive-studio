@@ -176,10 +176,14 @@
   {
    "rb": 19,
    "ime": "Sanja Hornjaček",
-   "indeks": "84/24",
+   "indeks": "74/2024",
    "rad": "3d lavirint",
    "slike": 4,
-   "galerija": "w3-brza-putanja"
+   "galerija": "w3-brza-putanja",
+   "napomena": {
+    "sr": "broj indeksa objedinjen 24.10.2026: isti autor vodio se i u registru posete trećeg časa, pod drugim brojem; važi prvobitno uneti broj iz tog registra",
+    "en": "student number merged on 24 October 2026: the same author also stood in the third-class visit register under a different number; the originally entered number from that register holds"
+   }
   },
   {
    "rb": 20,
@@ -312,6 +316,13 @@
    "sta": {
     "sr": "Evidencija prisustva na predavanju nije vođena. Ovaj spisak zavodi one čiji je rad fotografisan; ko je bio na času a nema rad na spisku, iz njega se ne vidi.",
     "en": "Attendance at the lecture was not kept. This list records those whose work was photographed; whoever was in class without a work on the list is not visible here."
+   }
+  },
+  {
+   "id": "hornjacek-jedan-dosije",
+   "sta": {
+    "sr": "Zatvoreno 24.10.2026: red 19 ovog spiska i jedan zapis iz registra posete istog dana pripadaju istoj osobi, koja se do sada vodila u dva dosijea. Dosije je jedan, pod prvobitno unetim brojem iz registra posete; broj dostavljen uz spisak 21.10. ostaje u istoriji registra.",
+    "en": "Closed on 24 October 2026: row 19 of this list and one record in the visit register of the same day belong to the same person, who until now stood in two dossiers. The dossier is one, under the originally entered number from the visit register; the number supplied with the list on 21 October stays in the register history."
    }
   }
  ],

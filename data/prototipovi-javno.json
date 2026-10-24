@@ -3034,7 +3034,7 @@
    ],
    "author": {
     "name": "Sanja Hornjaček",
-    "studentNumber": "84/24"
+    "studentNumber": "74/2024"
    },
    "listOrder": 19,
    "probanje": {
@@ -4031,7 +4031,7 @@
    "sourceId": "teacher-2026-10-23-cas-04",
    "author": {
     "name": "Sanja Hornjaček",
-    "studentNumber": "84/24"
+    "studentNumber": "74/2024"
    },
    "listOrder": 8,
    "photos": [
@@ -4042,12 +4042,12 @@
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "3d lavirint — crtež lavirinta u aksonometriji, sa numerisanim poljima i strelicama smera; prikaz 1 od 3.",
-      "en": "3d lavirint — an axonometric drawing of a maze, with numbered fields and direction arrows; view 1 of 3."
+      "sr": "3d lavirint — Crtež lavirinta u aksonometriji na belom listu: zatvorena petlja sa dve prilazne rampe, polja numerisana od 1 do 18 i strelice smera u crvenoj, roze i zelenoj; prikaz 1 od 2.",
+      "en": "3d lavirint — An axonometric drawing of a maze on a white sheet: a closed loop with two approach ramps, fields numbered 1 to 18 and direction arrows in red, pink and green; view 1 of 2."
      },
      "caption": {
-      "sr": "1 / 3",
-      "en": "1 / 3"
+      "sr": "1 / 2",
+      "en": "1 / 2"
      },
      "sourceId": "teacher-2026-10-23-cas-04"
     },
@@ -4058,28 +4058,12 @@
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "3d lavirint — crtež lavirinta u aksonometriji, sa numerisanim poljima i strelicama smera; prikaz 2 od 3.",
-      "en": "3d lavirint — an axonometric drawing of a maze, with numbered fields and direction arrows; view 2 of 3."
+      "sr": "3d lavirint — Isti crtež izbliza, donji desni ugao: numerisana polja 14 do 18, zelena ivica staze uz žutu podlogu i oštar prelom putanje; prikaz 2 od 2.",
+      "en": "3d lavirint — The same drawing up close, lower right corner: fields numbered 14 to 18, the green edge of the path against its yellow bed and a sharp turn; view 2 of 2."
      },
      "caption": {
-      "sr": "2 / 3",
-      "en": "2 / 3"
-     },
-     "sourceId": "teacher-2026-10-23-cas-04"
-    },
-    {
-     "id": "w4-3d-lavirint-03",
-     "src": "data/prototipovi/w4-3d-lavirint/03.jpg",
-     "sha256": "328f11e9cef069d1f5955b59154f320ac4a512341f4649c1fc870cad89cf3fb5",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "3d lavirint — crtež lavirinta u aksonometriji, sa numerisanim poljima i strelicama smera; prikaz 3 od 3.",
-      "en": "3d lavirint — an axonometric drawing of a maze, with numbered fields and direction arrows; view 3 of 3."
-     },
-     "caption": {
-      "sr": "3 / 3",
-      "en": "3 / 3"
+      "sr": "2 / 2",
+      "en": "2 / 2"
      },
      "sourceId": "teacher-2026-10-23-cas-04"
     }
@@ -4102,12 +4086,12 @@
     {
      "id": "w4-brojkice-01",
      "src": "data/prototipovi/w4-brojkice/01.jpg",
-     "sha256": "ceadb9f40e3df439a2e312e6786b30bedf6bc4adda42b374e46531435c183e10",
+     "sha256": "328f11e9cef069d1f5955b59154f320ac4a512341f4649c1fc870cad89cf3fb5",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Brojkice — svetla podloga sa udubljenjima i kockice u boji sa ispupčenim tačkama i brojevima; prikaz 1 od 12.",
-      "en": "Brojkice — a light tray with recesses and coloured cubes bearing raised dots and numerals; view 1 of 12."
+      "sr": "Brojkice — Ruka drži tamnoplavu kocku sa belom trojkom iznad svetle ploče sa devet udubljenja u koja su složene kocke sa ispupčenim tačkama; prikaz 1 od 12.",
+      "en": "Brojkice — A hand holds a dark blue cube bearing a white 3 above a light tray of nine recesses filled with cubes of raised dots; view 1 of 12."
      },
      "caption": {
       "sr": "1 / 12",
@@ -4118,12 +4102,12 @@
     {
      "id": "w4-brojkice-02",
      "src": "data/prototipovi/w4-brojkice/02.jpg",
-     "sha256": "731044ded3b38b0ff0c2f05ccc58dc0f32cefbeed7dcc0d221d313a51ed40971",
+     "sha256": "ceadb9f40e3df439a2e312e6786b30bedf6bc4adda42b374e46531435c183e10",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Brojkice — svetla podloga sa udubljenjima i kockice u boji sa ispupčenim tačkama i brojevima; prikaz 2 od 12.",
-      "en": "Brojkice — a light tray with recesses and coloured cubes bearing raised dots and numerals; view 2 of 12."
+      "sr": "Brojkice — Ploča sa devet udubljenja odozgo: kocke u plavoj, lila i sivoj sa tačkama, a kocka sa trojkom stoji uz crno polje poklopca; prikaz 2 od 12.",
+      "en": "Brojkice — The tray of nine recesses from above: blue, lilac and grey cubes of dots, with the cube bearing the 3 beside the black field of the lid; view 2 of 12."
      },
      "caption": {
       "sr": "2 / 12",
@@ -4134,12 +4118,12 @@
     {
      "id": "w4-brojkice-03",
      "src": "data/prototipovi/w4-brojkice/03.jpg",
-     "sha256": "9fa828b92b57ce695437d7bb57e9914fcaf06c818582f30fe74a0813440e8008",
+     "sha256": "731044ded3b38b0ff0c2f05ccc58dc0f32cefbeed7dcc0d221d313a51ed40971",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Brojkice — svetla podloga sa udubljenjima i kockice u boji sa ispupčenim tačkama i brojevima; prikaz 3 od 12.",
-      "en": "Brojkice — a light tray with recesses and coloured cubes bearing raised dots and numerals; view 3 of 12."
+      "sr": "Brojkice — Kocke sa tačkama u udubljenjima, snimljene odozgo iz blizine, uz svetlo polje poklopca sa strane; prikaz 3 od 12.",
+      "en": "Brojkice — The dotted cubes in their recesses, photographed closely from above, with the light field of the lid at the side; view 3 of 12."
      },
      "caption": {
       "sr": "3 / 12",
@@ -4150,12 +4134,12 @@
     {
      "id": "w4-brojkice-04",
      "src": "data/prototipovi/w4-brojkice/04.jpg",
-     "sha256": "4504208c24a0cfcb09a2492b63e62596f0e8efbe53c5b1e720e260de68132b7b",
+     "sha256": "9fa828b92b57ce695437d7bb57e9914fcaf06c818582f30fe74a0813440e8008",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Brojkice — svetla podloga sa udubljenjima i kockice u boji sa ispupčenim tačkama i brojevima; prikaz 4 od 12.",
-      "en": "Brojkice — a light tray with recesses and coloured cubes bearing raised dots and numerals; view 4 of 12."
+      "sr": "Brojkice — Pločice sa krupnim ciframa složene u mrežu tri sa tri, podignute iznad ploče sa kockama; pored njih kocka sa četvorkom; prikaz 4 od 12.",
+      "en": "Brojkice — Tiles with large numerals laid in a three-by-three grid, lifted above the tray of cubes; a cube bearing a 4 lies beside them; view 4 of 12."
      },
      "caption": {
       "sr": "4 / 12",
@@ -4166,12 +4150,12 @@
     {
      "id": "w4-brojkice-05",
      "src": "data/prototipovi/w4-brojkice/05.jpg",
-     "sha256": "7cd639bb62ad87fe94a82359c4ecbc6d1d01fa99b2147415bb9a8d4f4c2099a0",
+     "sha256": "4504208c24a0cfcb09a2492b63e62596f0e8efbe53c5b1e720e260de68132b7b",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Brojkice — svetla podloga sa udubljenjima i kockice u boji sa ispupčenim tačkama i brojevima; prikaz 5 od 12.",
-      "en": "Brojkice — a light tray with recesses and coloured cubes bearing raised dots and numerals; view 5 of 12."
+      "sr": "Brojkice — Otvorena kutija sa dva bela odeljka na školskoj klupi; ruke slažu kocke sa ciframa, a sa strane stoje mreža cifara i mreža tačaka; prikaz 5 od 12.",
+      "en": "Brojkice — The open box with its two white compartments on a school desk; hands set the numeral cubes in place, with the grid of numerals and the grid of dots at the side; view 5 of 12."
      },
      "caption": {
       "sr": "5 / 12",
@@ -4182,12 +4166,12 @@
     {
      "id": "w4-brojkice-06",
      "src": "data/prototipovi/w4-brojkice/06.jpg",
-     "sha256": "4805de88719afb6e847e04e1603a58c8ad4928ae728aa10a6f96f9ff7e712f1d",
+     "sha256": "7cd639bb62ad87fe94a82359c4ecbc6d1d01fa99b2147415bb9a8d4f4c2099a0",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Brojkice — svetla podloga sa udubljenjima i kockice u boji sa ispupčenim tačkama i brojevima; prikaz 6 od 12.",
-      "en": "Brojkice — a light tray with recesses and coloured cubes bearing raised dots and numerals; view 6 of 12."
+      "sr": "Brojkice — Unutrašnjost kutije: kocke sa ciframa 3, 9, 8 i 2 u donjem odeljku, a uz ivicu stoje mreža cifara i crna mreža tačaka; prikaz 6 od 12.",
+      "en": "Brojkice — Inside the box: cubes bearing 3, 9, 8 and 2 in the lower compartment, with the grid of numerals and the black grid of dots along the edge; view 6 of 12."
      },
      "caption": {
       "sr": "6 / 12",
@@ -4198,12 +4182,12 @@
     {
      "id": "w4-brojkice-07",
      "src": "data/prototipovi/w4-brojkice/07.jpg",
-     "sha256": "c796a59a3cc3058145f68684b5269e11b7cd2816decee81a12e65c7477e75f3a",
+     "sha256": "4805de88719afb6e847e04e1603a58c8ad4928ae728aa10a6f96f9ff7e712f1d",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Brojkice — svetla podloga sa udubljenjima i kockice u boji sa ispupčenim tačkama i brojevima; prikaz 7 od 12.",
-      "en": "Brojkice — a light tray with recesses and coloured cubes bearing raised dots and numerals; view 7 of 12."
+      "sr": "Brojkice — Ruke podižu poklopac sa uzdužnim prorezima iznad kocki poređanih u kutiji; prikaz 7 od 12.",
+      "en": "Brojkice — Hands lift the lid with its lengthwise slots above the cubes ranged in the box; view 7 of 12."
      },
      "caption": {
       "sr": "7 / 12",
@@ -4214,12 +4198,12 @@
     {
      "id": "w4-brojkice-08",
      "src": "data/prototipovi/w4-brojkice/08.jpg",
-     "sha256": "a1542f3170bbf3dd02ef9baea6d71efc6bf021c72d86c51d0362c92c146df36e",
+     "sha256": "c796a59a3cc3058145f68684b5269e11b7cd2816decee81a12e65c7477e75f3a",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Brojkice — svetla podloga sa udubljenjima i kockice u boji sa ispupčenim tačkama i brojevima; prikaz 8 od 12.",
-      "en": "Brojkice — a light tray with recesses and coloured cubes bearing raised dots and numerals; view 8 of 12."
+      "sr": "Brojkice — Ruka drži belu kutiju sa devet crnih kvadratnih udubljenja na licu; prikaz 8 od 12.",
+      "en": "Brojkice — A hand holds the white box with nine black square recesses on its face; view 8 of 12."
      },
      "caption": {
       "sr": "8 / 12",
@@ -4230,12 +4214,12 @@
     {
      "id": "w4-brojkice-09",
      "src": "data/prototipovi/w4-brojkice/09.jpg",
-     "sha256": "fa4fc57ad0de20c846f3ab75cff96b39e10feb990b66456ad5c73efacd4e435e",
+     "sha256": "a1542f3170bbf3dd02ef9baea6d71efc6bf021c72d86c51d0362c92c146df36e",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Brojkice — svetla podloga sa udubljenjima i kockice u boji sa ispupčenim tačkama i brojevima; prikaz 9 od 12.",
-      "en": "Brojkice — a light tray with recesses and coloured cubes bearing raised dots and numerals; view 9 of 12."
+      "sr": "Brojkice — Zatvorena bela kutija stoji uspravno na stolu, sa devet crnih polja na prednjoj strani; prikaz 9 od 12.",
+      "en": "Brojkice — The closed white box stands upright on the table, nine black fields on its front; view 9 of 12."
      },
      "caption": {
       "sr": "9 / 12",
@@ -4246,12 +4230,12 @@
     {
      "id": "w4-brojkice-10",
      "src": "data/prototipovi/w4-brojkice/10.jpg",
-     "sha256": "cd377716a4ecf46db0ed531efadbc5959829030f899ee8532f2776fab17799a9",
+     "sha256": "fa4fc57ad0de20c846f3ab75cff96b39e10feb990b66456ad5c73efacd4e435e",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Brojkice — svetla podloga sa udubljenjima i kockice u boji sa ispupčenim tačkama i brojevima; prikaz 10 od 12.",
-      "en": "Brojkice — a light tray with recesses and coloured cubes bearing raised dots and numerals; view 10 of 12."
+      "sr": "Brojkice — Ruke otvaraju belu kutiju sa devet polja; prikaz 10 od 12.",
+      "en": "Brojkice — Hands open the white box with its nine fields; view 10 of 12."
      },
      "caption": {
       "sr": "10 / 12",
@@ -4262,12 +4246,12 @@
     {
      "id": "w4-brojkice-11",
      "src": "data/prototipovi/w4-brojkice/11.jpg",
-     "sha256": "7d62abf3ab303251586b8774c4e9dc2537d5695432c63813f4689ae4cf0cfb9d",
+     "sha256": "cd377716a4ecf46db0ed531efadbc5959829030f899ee8532f2776fab17799a9",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Brojkice — svetla podloga sa udubljenjima i kockice u boji sa ispupčenim tačkama i brojevima; prikaz 11 od 12.",
-      "en": "Brojkice — a light tray with recesses and coloured cubes bearing raised dots and numerals; view 11 of 12."
+      "sr": "Brojkice — Ugao zatvorene kutije izbliza: drveni jezičak drži razmak, a kroz prorez se vide kocke sa ciframa; prikaz 11 od 12.",
+      "en": "Brojkice — A corner of the closed box up close: a wooden tab holds the gap open and the numeral cubes show through the slot; view 11 of 12."
      },
      "caption": {
       "sr": "11 / 12",
@@ -4278,12 +4262,12 @@
     {
      "id": "w4-brojkice-12",
      "src": "data/prototipovi/w4-brojkice/12.jpg",
-     "sha256": "8ca1b2a41d62a0b4fbf0fb717ee40a9522403ff3a1e7ff8cf5e03cbdb791b83a",
+     "sha256": "7d62abf3ab303251586b8774c4e9dc2537d5695432c63813f4689ae4cf0cfb9d",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Brojkice — svetla podloga sa udubljenjima i kockice u boji sa ispupčenim tačkama i brojevima; prikaz 12 od 12.",
-      "en": "Brojkice — a light tray with recesses and coloured cubes bearing raised dots and numerals; view 12 of 12."
+      "sr": "Brojkice — Zadnja strana kutije sa dve mesingane šarke; prikaz 12 od 12.",
+      "en": "Brojkice — The back of the box with its two brass hinges; view 12 of 12."
      },
      "caption": {
       "sr": "12 / 12",
@@ -4310,12 +4294,12 @@
     {
      "id": "w4-zekino-polje-01",
      "src": "data/prototipovi/w4-zekino-polje/01.jpg",
-     "sha256": "79c27bcbc5a9b43db61d4ee7891e0d5081c7cfec6a626d4ad742cb4ae6c5a8b6",
+     "sha256": "8ca1b2a41d62a0b4fbf0fb717ee40a9522403ff3a1e7ff8cf5e03cbdb791b83a",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "zekino polje — kvadratne pločice oivičene tkaninom, oslikane livadom i delovima staze; prikaz 1 od 4.",
-      "en": "zekino polje — square tiles bound with fabric, painted with a meadow and segments of a path; view 1 of 4."
+      "sr": "zekino polje — Žute pločice oivičene tamnom tkaninom, oslikane sitnim cvetovima i krstićima, rasute po stolu; u uglu kartonska ploča sa belim krugovima; prikaz 1 od 4.",
+      "en": "zekino polje — Yellow tiles bound with dark fabric, painted with small flowers and crosses, spread across the table; a cardboard board with white circles lies in the corner; view 1 of 4."
      },
      "caption": {
       "sr": "1 / 4",
@@ -4326,12 +4310,12 @@
     {
      "id": "w4-zekino-polje-02",
      "src": "data/prototipovi/w4-zekino-polje/02.jpg",
-     "sha256": "0776da6417f661bcc2ecadd9080cdc42c54707330d66584a878d666a6757d3d4",
+     "sha256": "79c27bcbc5a9b43db61d4ee7891e0d5081c7cfec6a626d4ad742cb4ae6c5a8b6",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "zekino polje — kvadratne pločice oivičene tkaninom, oslikane livadom i delovima staze; prikaz 2 od 4.",
-      "en": "zekino polje — square tiles bound with fabric, painted with a meadow and segments of a path; view 2 of 4."
+      "sr": "zekino polje — Ruke biraju među pločicama; pločice sa narandžastim delom staze stoje uz one sa samim cvetovima; prikaz 2 od 4.",
+      "en": "zekino polje — Hands choose among the tiles; those carrying an orange segment of the path stand beside those with flowers alone; view 2 of 4."
      },
      "caption": {
       "sr": "2 / 4",
@@ -4342,12 +4326,12 @@
     {
      "id": "w4-zekino-polje-03",
      "src": "data/prototipovi/w4-zekino-polje/03.jpg",
-     "sha256": "226c08eff3452107699b0ee891bebd5a21a0dc58a157ea4567ab6e9cffe95ac3",
+     "sha256": "0776da6417f661bcc2ecadd9080cdc42c54707330d66584a878d666a6757d3d4",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "zekino polje — kvadratne pločice oivičene tkaninom, oslikane livadom i delovima staze; prikaz 3 od 4.",
-      "en": "zekino polje — square tiles bound with fabric, painted with a meadow and segments of a path; view 3 of 4."
+      "sr": "zekino polje — Ruka drži pločicu sa delom staze iznad kartonske ploče sa belim krugovima; prikaz 3 od 4.",
+      "en": "zekino polje — A hand holds a tile carrying a segment of the path above the cardboard board with white circles; view 3 of 4."
      },
      "caption": {
       "sr": "3 / 4",
@@ -4358,12 +4342,12 @@
     {
      "id": "w4-zekino-polje-04",
      "src": "data/prototipovi/w4-zekino-polje/04.jpg",
-     "sha256": "43c3f98bf05016b5c1780150867e1fbb7aa64047c74d48f87bbce6c55e72f8e7",
+     "sha256": "226c08eff3452107699b0ee891bebd5a21a0dc58a157ea4567ab6e9cffe95ac3",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "zekino polje — kvadratne pločice oivičene tkaninom, oslikane livadom i delovima staze; prikaz 4 od 4.",
-      "en": "zekino polje — square tiles bound with fabric, painted with a meadow and segments of a path; view 4 of 4."
+      "sr": "zekino polje — Pločica se spušta uz ivicu ploče sa belim krugovima, dok ostale čekaju sa strane; prikaz 4 od 4.",
+      "en": "zekino polje — A tile comes down along the edge of the board with white circles while the rest wait at the side; view 4 of 4."
      },
      "caption": {
       "sr": "4 / 4",
@@ -4390,12 +4374,12 @@
     {
      "id": "w4-sound-box-01",
      "src": "data/prototipovi/w4-sound-box/01.jpg",
-     "sha256": "c394353e08d638e59403a4ff3bdfb36ccede00f783a3f029471852d33e5e4f7f",
+     "sha256": "43c3f98bf05016b5c1780150867e1fbb7aa64047c74d48f87bbce6c55e72f8e7",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "sound box — kartonska kutija sa kosinama, aluminijumskom folijom i papirnom rolnom unutra; prikaz 1 od 3.",
-      "en": "sound box — a cardboard box with ramps, aluminium foil and a paper tube inside; view 1 of 3."
+      "sr": "sound box — Otvorena kartonska kutija sa dve kose ravni jedna iznad druge i dnom obloženim zgužvanom aluminijumskom folijom; u bočnom zidu je izrezan prozor; prikaz 1 od 3.",
+      "en": "sound box — An open cardboard box with two inclined planes one above the other and a floor lined with crumpled aluminium foil; a window is cut into the side wall; view 1 of 3."
      },
      "caption": {
       "sr": "1 / 3",
@@ -4406,12 +4390,12 @@
     {
      "id": "w4-sound-box-02",
      "src": "data/prototipovi/w4-sound-box/02.jpg",
-     "sha256": "eb5834482786354df6f39d93b15008f745be54f6121a36623dfc4e2cef71d1f6",
+     "sha256": "c394353e08d638e59403a4ff3bdfb36ccede00f783a3f029471852d33e5e4f7f",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "sound box — kartonska kutija sa kosinama, aluminijumskom folijom i papirnom rolnom unutra; prikaz 2 od 3.",
-      "en": "sound box — a cardboard box with ramps, aluminium foil and a paper tube inside; view 2 of 3."
+      "sr": "sound box — Ista kutija iz šireg ugla, na klupi: obe kosine, folija na dnu i papirna rolna uz levi zid; prikaz 2 od 3.",
+      "en": "sound box — The same box from a wider angle on the desk: both ramps, the foil on the floor and a paper tube against the left wall; view 2 of 3."
      },
      "caption": {
       "sr": "2 / 3",
@@ -4422,12 +4406,12 @@
     {
      "id": "w4-sound-box-03",
      "src": "data/prototipovi/w4-sound-box/03.jpg",
-     "sha256": "cd8c4f7430a671f179d242e78685040fb4ade99f60a99dafc29da4bc8c833515",
+     "sha256": "eb5834482786354df6f39d93b15008f745be54f6121a36623dfc4e2cef71d1f6",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "sound box — kartonska kutija sa kosinama, aluminijumskom folijom i papirnom rolnom unutra; prikaz 3 od 3.",
-      "en": "sound box — a cardboard box with ramps, aluminium foil and a paper tube inside; view 3 of 3."
+      "sr": "sound box — Kutija odozgo: papirna rolna leži uz levi zid, a traka folije pokriva dno ispod obe kosine; prikaz 3 od 3.",
+      "en": "sound box — The box from above: the paper tube lies against the left wall and a band of foil covers the floor beneath both ramps; view 3 of 3."
      },
      "caption": {
       "sr": "3 / 3",
@@ -4454,16 +4438,32 @@
     {
      "id": "w4-edukativna-01",
      "src": "data/prototipovi/w4-edukativna/01.jpg",
+     "sha256": "cd8c4f7430a671f179d242e78685040fb4ade99f60a99dafc29da4bc8c833515",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "edukativna — Bela limenka sa izrezanim i obojenim oblicima — zelenim trouglom, narandžastim krstom i šestouglom — a pred njom obojeni oblici od pene: ljubičasta kocka, zeleni trougao, žuti šestougao i narandžasti krst; prikaz 1 od 2.",
+      "en": "edukativna — A white tin with cut-out, coloured shapes — a green triangle, an orange cross and a hexagon — and before it coloured foam shapes: a purple cube, a green triangle, a yellow hexagon and an orange cross; view 1 of 2."
+     },
+     "caption": {
+      "sr": "1 / 2",
+      "en": "1 / 2"
+     },
+     "sourceId": "teacher-2026-10-23-cas-04"
+    },
+    {
+     "id": "w4-edukativna-02",
+     "src": "data/prototipovi/w4-edukativna/02.jpg",
      "sha256": "bc47010b3b49187fa3effb069a1674d37c48e947238c22daf07716d51a521b79",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "edukativna — bela plastična posuda sa izrezanim geometrijskim oblicima u boji i pertlom provučenom kroz poklopac; prikaz 1 od 1.",
-      "en": "edukativna — a white plastic container with cut-out coloured geometric shapes and a lace threaded through the lid; view 1 of 1."
+      "sr": "edukativna — Ista limenka izbliza: tamna tkanina i bele pertle preko otvora, a na omotu zeleni trougao i narandžasti krst uz izrezane rupe; prikaz 2 od 2.",
+      "en": "edukativna — The same tin up close: dark fabric and white laces across the opening, with the green triangle and orange cross on the wrap beside the cut-out holes; view 2 of 2."
      },
      "caption": {
-      "sr": "1 / 1",
-      "en": "1 / 1"
+      "sr": "2 / 2",
+      "en": "2 / 2"
      },
      "sourceId": "teacher-2026-10-23-cas-04"
     }

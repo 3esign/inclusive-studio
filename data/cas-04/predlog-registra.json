@@ -5,8 +5,8 @@
    "id": "teacher-2026-10-23-cas-04",
    "recordedOn": "2026-10-23",
    "description": {
-    "sr": "Nastavnikov spisak četvrtog časa (23.10.2026), zapisivan redom vođenja spiska; broj uz zapis je broj fotografija tog rada. Čas je nastavak rada na prototipovima: razrada, dokumentovanje i testiranje u udruženju. Fotografije su na telefonu nastavnika (Galaxy S23 FE, /Internal storage/DCIM/Camera); niz počinje snimkom 20261023_112141.jpg. Prvo idu fotografije prototipa, pa fotografije iz udruženja. Uz spisak su zavedene i ispravke ranijih zapisa trećeg časa.",
-    "en": "The teacher’s list of the fourth class (23 October 2026), recorded in the order the list was kept; the number beside an entry is that work’s photograph count. The class continued the prototype work: development, documentation and testing at the association. The photographs are on the teacher’s phone (Galaxy S23 FE, /Internal storage/DCIM/Camera); the sequence begins with 20261023_112141.jpg. The prototype photographs come first, then those from the association. Corrections to earlier third-class records are filed with the list."
+    "sr": "Nastavnikov spisak četvrtog časa (23.10.2026), zapisivan redom vođenja spiska; broj uz zapis je broj fotografija tog rada. Uz spisak su zavedene i ispravke ranijih zapisa trećeg časa.",
+    "en": "The teacher’s list of the fourth class (23 October 2026), recorded in the order the list was kept; the number beside an entry is that work’s photograph count. Corrections to earlier third-class records are filed with the list."
    }
   }
  ],
@@ -583,7 +583,7 @@
    "documentedWeek": 4,
    "author": {
     "name": "Sanja Hornjaček",
-    "studentNumber": "84/24"
+    "studentNumber": "74/2024"
    },
    "attribution": {
     "sourceId": "teacher-2026-10-23-cas-04",
@@ -629,22 +629,6 @@
       "en": "Frame 2 in the photographic sequence."
      },
      "sourceId": "teacher-2026-10-23-cas-04"
-    },
-    {
-     "id": "08-3d-lavirint-foto-03",
-     "src": "data/prototipovi/08-3d-lavirint/03.jpg",
-     "sha256": "328f11e9cef069d1f5955b59154f320ac4a512341f4649c1fc870cad89cf3fb5",
-     "width": 721,
-     "height": 1280,
-     "alt": {
-      "sr": "Fotografija prototipa „3d lavirint”",
-      "en": "Photograph of the “3d lavirint” prototype"
-     },
-     "caption": {
-      "sr": "Red 3 u nizu slikanja.",
-      "en": "Frame 3 in the photographic sequence."
-     },
-     "sourceId": "teacher-2026-10-23-cas-04"
     }
    ]
   },
@@ -676,7 +660,7 @@
     {
      "id": "09-brojkice-foto-01",
      "src": "data/prototipovi/09-brojkice/01.jpg",
-     "sha256": "ceadb9f40e3df439a2e312e6786b30bedf6bc4adda42b374e46531435c183e10",
+     "sha256": "328f11e9cef069d1f5955b59154f320ac4a512341f4649c1fc870cad89cf3fb5",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -692,7 +676,7 @@
     {
      "id": "09-brojkice-foto-02",
      "src": "data/prototipovi/09-brojkice/02.jpg",
-     "sha256": "731044ded3b38b0ff0c2f05ccc58dc0f32cefbeed7dcc0d221d313a51ed40971",
+     "sha256": "ceadb9f40e3df439a2e312e6786b30bedf6bc4adda42b374e46531435c183e10",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -708,7 +692,7 @@
     {
      "id": "09-brojkice-foto-03",
      "src": "data/prototipovi/09-brojkice/03.jpg",
-     "sha256": "9fa828b92b57ce695437d7bb57e9914fcaf06c818582f30fe74a0813440e8008",
+     "sha256": "731044ded3b38b0ff0c2f05ccc58dc0f32cefbeed7dcc0d221d313a51ed40971",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -724,7 +708,7 @@
     {
      "id": "09-brojkice-foto-04",
      "src": "data/prototipovi/09-brojkice/04.jpg",
-     "sha256": "4504208c24a0cfcb09a2492b63e62596f0e8efbe53c5b1e720e260de68132b7b",
+     "sha256": "9fa828b92b57ce695437d7bb57e9914fcaf06c818582f30fe74a0813440e8008",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -740,7 +724,7 @@
     {
      "id": "09-brojkice-foto-05",
      "src": "data/prototipovi/09-brojkice/05.jpg",
-     "sha256": "7cd639bb62ad87fe94a82359c4ecbc6d1d01fa99b2147415bb9a8d4f4c2099a0",
+     "sha256": "4504208c24a0cfcb09a2492b63e62596f0e8efbe53c5b1e720e260de68132b7b",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -756,7 +740,7 @@
     {
      "id": "09-brojkice-foto-06",
      "src": "data/prototipovi/09-brojkice/06.jpg",
-     "sha256": "4805de88719afb6e847e04e1603a58c8ad4928ae728aa10a6f96f9ff7e712f1d",
+     "sha256": "7cd639bb62ad87fe94a82359c4ecbc6d1d01fa99b2147415bb9a8d4f4c2099a0",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -772,7 +756,7 @@
     {
      "id": "09-brojkice-foto-07",
      "src": "data/prototipovi/09-brojkice/07.jpg",
-     "sha256": "c796a59a3cc3058145f68684b5269e11b7cd2816decee81a12e65c7477e75f3a",
+     "sha256": "4805de88719afb6e847e04e1603a58c8ad4928ae728aa10a6f96f9ff7e712f1d",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -788,7 +772,7 @@
     {
      "id": "09-brojkice-foto-08",
      "src": "data/prototipovi/09-brojkice/08.jpg",
-     "sha256": "a1542f3170bbf3dd02ef9baea6d71efc6bf021c72d86c51d0362c92c146df36e",
+     "sha256": "c796a59a3cc3058145f68684b5269e11b7cd2816decee81a12e65c7477e75f3a",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -804,7 +788,7 @@
     {
      "id": "09-brojkice-foto-09",
      "src": "data/prototipovi/09-brojkice/09.jpg",
-     "sha256": "fa4fc57ad0de20c846f3ab75cff96b39e10feb990b66456ad5c73efacd4e435e",
+     "sha256": "a1542f3170bbf3dd02ef9baea6d71efc6bf021c72d86c51d0362c92c146df36e",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -820,7 +804,7 @@
     {
      "id": "09-brojkice-foto-10",
      "src": "data/prototipovi/09-brojkice/10.jpg",
-     "sha256": "cd377716a4ecf46db0ed531efadbc5959829030f899ee8532f2776fab17799a9",
+     "sha256": "fa4fc57ad0de20c846f3ab75cff96b39e10feb990b66456ad5c73efacd4e435e",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -836,7 +820,7 @@
     {
      "id": "09-brojkice-foto-11",
      "src": "data/prototipovi/09-brojkice/11.jpg",
-     "sha256": "7d62abf3ab303251586b8774c4e9dc2537d5695432c63813f4689ae4cf0cfb9d",
+     "sha256": "cd377716a4ecf46db0ed531efadbc5959829030f899ee8532f2776fab17799a9",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -852,7 +836,7 @@
     {
      "id": "09-brojkice-foto-12",
      "src": "data/prototipovi/09-brojkice/12.jpg",
-     "sha256": "8ca1b2a41d62a0b4fbf0fb717ee40a9522403ff3a1e7ff8cf5e03cbdb791b83a",
+     "sha256": "7d62abf3ab303251586b8774c4e9dc2537d5695432c63813f4689ae4cf0cfb9d",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -895,7 +879,7 @@
     {
      "id": "10-zekino-polje-foto-01",
      "src": "data/prototipovi/10-zekino-polje/01.jpg",
-     "sha256": "79c27bcbc5a9b43db61d4ee7891e0d5081c7cfec6a626d4ad742cb4ae6c5a8b6",
+     "sha256": "8ca1b2a41d62a0b4fbf0fb717ee40a9522403ff3a1e7ff8cf5e03cbdb791b83a",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -911,7 +895,7 @@
     {
      "id": "10-zekino-polje-foto-02",
      "src": "data/prototipovi/10-zekino-polje/02.jpg",
-     "sha256": "0776da6417f661bcc2ecadd9080cdc42c54707330d66584a878d666a6757d3d4",
+     "sha256": "79c27bcbc5a9b43db61d4ee7891e0d5081c7cfec6a626d4ad742cb4ae6c5a8b6",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -927,7 +911,7 @@
     {
      "id": "10-zekino-polje-foto-03",
      "src": "data/prototipovi/10-zekino-polje/03.jpg",
-     "sha256": "226c08eff3452107699b0ee891bebd5a21a0dc58a157ea4567ab6e9cffe95ac3",
+     "sha256": "0776da6417f661bcc2ecadd9080cdc42c54707330d66584a878d666a6757d3d4",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -943,7 +927,7 @@
     {
      "id": "10-zekino-polje-foto-04",
      "src": "data/prototipovi/10-zekino-polje/04.jpg",
-     "sha256": "43c3f98bf05016b5c1780150867e1fbb7aa64047c74d48f87bbce6c55e72f8e7",
+     "sha256": "226c08eff3452107699b0ee891bebd5a21a0dc58a157ea4567ab6e9cffe95ac3",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -986,7 +970,7 @@
     {
      "id": "12-sound-box-foto-01",
      "src": "data/prototipovi/12-sound-box/01.jpg",
-     "sha256": "c394353e08d638e59403a4ff3bdfb36ccede00f783a3f029471852d33e5e4f7f",
+     "sha256": "43c3f98bf05016b5c1780150867e1fbb7aa64047c74d48f87bbce6c55e72f8e7",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -1002,7 +986,7 @@
     {
      "id": "12-sound-box-foto-02",
      "src": "data/prototipovi/12-sound-box/02.jpg",
-     "sha256": "eb5834482786354df6f39d93b15008f745be54f6121a36623dfc4e2cef71d1f6",
+     "sha256": "c394353e08d638e59403a4ff3bdfb36ccede00f783a3f029471852d33e5e4f7f",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -1018,7 +1002,7 @@
     {
      "id": "12-sound-box-foto-03",
      "src": "data/prototipovi/12-sound-box/03.jpg",
-     "sha256": "cd8c4f7430a671f179d242e78685040fb4ade99f60a99dafc29da4bc8c833515",
+     "sha256": "eb5834482786354df6f39d93b15008f745be54f6121a36623dfc4e2cef71d1f6",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -1061,7 +1045,7 @@
     {
      "id": "14-edukativna-foto-01",
      "src": "data/prototipovi/14-edukativna/01.jpg",
-     "sha256": "bc47010b3b49187fa3effb069a1674d37c48e947238c22daf07716d51a521b79",
+     "sha256": "cd8c4f7430a671f179d242e78685040fb4ade99f60a99dafc29da4bc8c833515",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -1071,6 +1055,22 @@
      "caption": {
       "sr": "Red 1 u nizu slikanja.",
       "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-23-cas-04"
+    },
+    {
+     "id": "14-edukativna-foto-02",
+     "src": "data/prototipovi/14-edukativna/02.jpg",
+     "sha256": "bc47010b3b49187fa3effb069a1674d37c48e947238c22daf07716d51a521b79",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „edukativna”",
+      "en": "Photograph of the “edukativna” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
      },
      "sourceId": "teacher-2026-10-23-cas-04"
     }
@@ -1849,6 +1849,22 @@
       "en": "Frame 9 in the photographic sequence."
      },
      "sourceId": "teacher-2026-10-23-cas-04"
+    },
+    {
+     "id": "25-taktilna-kutija-foto-10",
+     "src": "data/prototipovi/25-taktilna-kutija/10.jpg",
+     "sha256": "bc45bfcf4a9c10273a9054398730608ea6de2e0d282f1d4417733d0b25b35085",
+     "width": 721,
+     "height": 1280,
+     "alt": {
+      "sr": "Fotografija prototipa „taktilna kutija”",
+      "en": "Photograph of the “taktilna kutija” prototype"
+     },
+     "caption": {
+      "sr": "Red 10 u nizu slikanja.",
+      "en": "Frame 10 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-10-23-cas-04"
     }
    ]
   },
@@ -1880,7 +1896,7 @@
     {
      "id": "26-hana-demiri-foto-01",
      "src": "data/prototipovi/26-hana-demiri/01.jpg",
-     "sha256": "bc45bfcf4a9c10273a9054398730608ea6de2e0d282f1d4417733d0b25b35085",
+     "sha256": "22e58eb144ab33f4663bf0efee98c302af66d953a31cad58afd21cabe2e45a79",
      "width": 721,
      "height": 1280,
      "alt": {
@@ -1896,9 +1912,9 @@
     {
      "id": "26-hana-demiri-foto-02",
      "src": "data/prototipovi/26-hana-demiri/02.jpg",
-     "sha256": "eef5afb845da4fa95fba14860afa472eef6bd7a12a38b956eee19313f5871884",
-     "width": 721,
-     "height": 1280,
+     "sha256": "b895ab521a3d1346762851a8c93245640d37aad7265a2974387ef31c3ac9b207",
+     "width": 1280,
+     "height": 721,
      "alt": {
       "sr": "Fotografija prototipa „Bez naziva”",
       "en": "Photograph of the “Bez naziva” prototype"
@@ -1908,63 +1924,20 @@
       "en": "Frame 2 in the photographic sequence."
      },
      "sourceId": "teacher-2026-10-23-cas-04"
-    }
-   ]
-  },
-  {
-   "id": "27-fliper",
-   "title": "fliper",
-   "kind": "prototype",
-   "authorRole": "student",
-   "medium": "physical",
-   "status": "documented",
-   "documentedWeek": 4,
-   "author": {
-    "name": "Iva Mijanović",
-    "studentNumber": "28/24"
-   },
-   "attribution": {
-    "sourceId": "teacher-2026-10-23-cas-04",
-    "fields": [
-     "name",
-     "studentNumber"
-    ]
-   },
-   "sourceId": "teacher-2026-10-23-cas-04",
-   "description": {
-    "sr": "Prototip sa časa 23.10.2026. (nedelja 4), zapis nastavnika.",
-    "en": "Prototype from the class of 2026-10-23 (week 4), teacher's record."
-   },
-   "photos": [
+    },
     {
-     "id": "27-fliper-foto-01",
-     "src": "data/prototipovi/27-fliper/01.jpg",
-     "sha256": "22e58eb144ab33f4663bf0efee98c302af66d953a31cad58afd21cabe2e45a79",
+     "id": "26-hana-demiri-foto-03",
+     "src": "data/prototipovi/26-hana-demiri/03.jpg",
+     "sha256": "eef5afb845da4fa95fba14860afa472eef6bd7a12a38b956eee19313f5871884",
      "width": 721,
      "height": 1280,
      "alt": {
-      "sr": "Fotografija prototipa „fliper”",
-      "en": "Photograph of the “fliper” prototype"
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
      },
      "caption": {
-      "sr": "Red 1 u nizu slikanja.",
-      "en": "Frame 1 in the photographic sequence."
-     },
-     "sourceId": "teacher-2026-10-23-cas-04"
-    },
-    {
-     "id": "27-fliper-foto-02",
-     "src": "data/prototipovi/27-fliper/02.jpg",
-     "sha256": "b895ab521a3d1346762851a8c93245640d37aad7265a2974387ef31c3ac9b207",
-     "width": 1280,
-     "height": 721,
-     "alt": {
-      "sr": "Fotografija prototipa „fliper”",
-      "en": "Photograph of the “fliper” prototype"
-     },
-     "caption": {
-      "sr": "Red 2 u nizu slikanja.",
-      "en": "Frame 2 in the photographic sequence."
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
      },
      "sourceId": "teacher-2026-10-23-cas-04"
     }

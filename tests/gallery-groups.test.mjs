@@ -32,7 +32,7 @@ const LIST=[
   [16,'w3-padalica','161/24','Ivana Cvetković','padalica',4],
   [17,'w3-obojilica','85/24','Anja Bukurović','obojilica',6],
   [18,'w3-putanja','79/24','Katarina Petrović','putanja',6],
-  [19,'w3-brza-putanja','84/24','Sanja Hornjaček','3d lavirint',4],
+  [19,'w3-brza-putanja','74/2024','Sanja Hornjaček','3d lavirint',4],
   [20,'w3-2d-lavirint','70/21','Aleksa Vasić','2d lavirint',2],
   [21,'w3-lukic','58/24','Lukić Miljana','brza putanja',null],
   [22,'w3-vijugava-staza','36/24','Aleksa Tašković','vijugava staza',2],

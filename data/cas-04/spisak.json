@@ -118,12 +118,12 @@
     {
       "rb": 8,
       "ime": "Sanja Hornjaček",
-      "indeks": "84/24",
+      "indeks": "74/2024",
       "rad": "3d lavirint",
-      "slike": 3,
+      "slike": 2,
       "napomena": {
-        "sr": "broj indeksa ispravljen 23.10.2026: važi onaj iz spiska trećeg časa; danas je zapisan sa zamenjenim ciframa",
-        "en": "student number corrected on 23 October 2026: the one from the third-class list holds; today it was written with the digits swapped"
+        "sr": "broj indeksa objedinjen 24.10.2026: važi prvobitno uneti broj iz registra posete trećeg časa; broj sa nastavnikovog spiska bio je drugi zapis iste osobe",
+        "en": "student number merged on 24 October 2026: the originally entered number from the third-class visit register holds; the number on the teacher’s list was a second record of the same person"
       },
       "galerija": "w4-3d-lavirint"
     },
@@ -184,7 +184,7 @@
       "ime": "Katarina Ušjak",
       "indeks": "86/24",
       "rad": "edukativna",
-      "slike": 1,
+      "slike": 2,
       "galerija": "w4-edukativna"
     },
     {
@@ -498,6 +498,14 @@
       "sta": {
         "sr": "Isti predmet stoji u obe nedelje. Kutija zapisa 26 je ista ona iz trećeg časa: tada je sa jedne strane poklopca bila kutija za brojanje — pet prozora rastuće dužine, obeleženih 1–5, sa onoliko pufni koliko broj kaže — a sa druge strane staza samo nacrtana, uz zvezdu već izrezanu kroz karton. Na četvrtom času staza je probijena kroz karton, pomponu je dodat konac, a iza zvezde je stavljena ljubičasta podloga. To je jedini zapis ovog časa kod koga se nedeljni napredak vidi na istom komadu materijala, a ne na novom predmetu.",
         "en": "One object stands in both weeks. The box of entry 26 is the very box of the third class: then one face of its lid was a counting box — five windows of increasing length, marked 1–5, each holding as many pompoms as the number says — while the other face carried the route only drawn, with the star already cut through the card. In the fourth class the route is cut clean through, a thread is added to the pompom, and a purple backing is placed behind the star. It is the only entry of this class where the week’s progress shows on the same piece of material rather than on a new object."
+      }
+    },
+    {
+      "id": "hornjacek-jedan-dosije",
+      "izvor": "Nastavnik predmeta, 24.10.2026.",
+      "sta": {
+        "sr": "Autorka zapisa 8 vodila se u dva dosijea: jednom iz registra posete 16.10.2026. i jednom sa nastavnikovog spiska, pod različitim brojevima indeksa. Dosijei su spojeni u jedan: važi prvobitno uneti broj iz registra posete, a poseta i oba rada („3d lavirint”, nedelja 3 i 4) stoje pod istim imenom. Raniji broj ostaje u istoriji registra.",
+        "en": "The author of entry 8 stood in two dossiers: one from the visit register of 16 October 2026 and one from the teacher’s list, under different student numbers. The dossiers are merged into one: the originally entered number from the visit register holds, and the visit together with both works (“3d lavirint”, weeks 3 and 4) stand under the same name. The earlier number stays in the register history."
       }
     }
   ],

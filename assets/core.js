@@ -104,6 +104,9 @@ export let lang = read('language', 'sr') === 'en' ? 'en' : 'sr';
 export let role = read('role', 'student') === 'partner' ? 'partner' : 'student';
 export const tr = (en, sr) => (lang === 'sr' ? sr : en);
 export const tx = object => (object && typeof object === 'object' ? object[lang] ?? object.en ?? '' : object ?? '');
+// Srpska množina ide po poslednjoj cifri: 1 slika, 2–4 slike, 5+ slika. Broj uz imenicu bez
+// ovoga laže na skoro svakoj trećoj vrednosti, a brojevi ovde stoje uz radove i kadrove.
+export const plural = (n, one, few, many) => `${n} ${n % 10 === 1 && n % 100 !== 11 ? one : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? few : many}`;
 export function setLanguage(next) { lang = next === 'sr' ? 'sr' : 'en'; save('language', lang); return lang; }
 export function setRole(next) { role = next === 'partner' ? 'partner' : 'student'; save('role', role); return role; }
 
