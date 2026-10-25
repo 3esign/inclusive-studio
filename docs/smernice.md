@@ -39,6 +39,21 @@ Ulaz za novi um je [AGENTS.md](../AGENTS.md). Ove smernice su živi ugovor; star
 | Predmetni sajt vodi računa o kompoziciji i preglednosti: fotografije i prilozi dobijaju smiren okvir i ravan raspored (crtež kao tabla dokumenta, galerija sa tri fotografije bez kosog rasporeda), bez nakupljanja natpisa uz sliku. | Preglednost je deo pouke predmeta: stranica koja uči o univerzalnom dizajnu mora sama biti čitka. | pregled stvarne strane (320 px i veći ekrani) |
 | Prikaz koji nastavnik nije definisao ne postavlja se sam: nedorečene zamisli (npr. „A3 list nedelje") idu u oblak ideja sa izvorom, a ne na stranu održanih časova. | Izmišljen prikaz izgleda kao nastavnička odluka. | `tests/tok.test.mjs` (oblak nosi izvor) |
 
+## Jedna traka, jedan broj · 24.10.2026
+
+Nalog nastavnika: „komponovanje mora da je savršeno — uklapanje, alignments, kompaktnost". Izmereno na 1920 px pre ispravke: zaglavlje, telo i podnožje počinjali su na 271 px, red predmeta na 352 px, traka toka na 35 px — tri leve ivice na istoj strani; zapis časa bez fotografija držao je kolonu od 780 px unutar trake od 1378 px, a broj časa stajao je 800 px daleko od svog naslova.
+
+| Smernica | Zašto | Ko brani |
+|---|---|---|
+| Svaka traka strane (zaglavlje, red predmeta, traka toka, telo, podnožje) uzima širinu iz `--rail` i uvlačenje iz `--gutter`. Drugi broj se ne uvodi; uži ekran menja `--gutter`, ne pojedinačno pravilo. | Dve mere za istu ivicu uvek se raziđu; čitalac vidi tri početka jedne strane. | `tests/kompozicija.test.mjs` |
+| Podloga pune širine (traka toka) zadržava pozadinu i liniju preko celog ekrana, a svoj sadržaj uvlači računom `max(--gutter, (100% − --rail)/2 + --gutter)`. | Puna podloga je deo rastera, ne izuzetak od njega. | `tests/kompozicija.test.mjs` |
+| Kolona se ne zakucava brojem koji je uži od trake u kojoj stoji. Ako sadržaja ima za jednu meru čitanja, ostatak širine nosi stvaran sadržaj (ishodi u dve kolone, prilozi u redu) — ne praznina. | Prazna polovina nije „vazduh" nego neiskorišćen raspored; strana je dvostruko duža bez razloga. | `tests/kompozicija.test.mjs`, merenje `.lesson-spread` |
+| Broj, oznaka ili datum stoje uz ono što označavaju. `justify-content:space-between` preko cele trake razdvaja par koji se čita zajedno. | Blizina je veza; razmak od 800 px je prekid veze. | `tests/kompozicija.test.mjs` |
+
+Provera je merenje, ne utisak: pravougaonici traka i rešetki čitaju se iz stvarnog prikaza na 1920, 1440, 768 i 390 px pre nego što se kompozicija proglasi složenom.
+
+**Dopuna 25.10.2026 — uski ekran i uvećan tekst se mere posebno.** Na 320 px i na 390 px pri dvostrukom tekstu red predmeta je počinjao 2 px levo od ostalih traka, a prva stavka trake toka 2 px desno: `@media(max-width:600px)` je `#course-line` dao `padding:.55rem 1rem`, a `@media(max-width:760px)` prvoj stavci trake toka `1rem` umesto `.9rem` koliko traka oduzme. Na 1440 px oba su bila tačna. Otuda dva pravila: (1) uži ekran menja `--gutter`, a pravilo u media upitu ga i dalje mora zvati — zakucan broj tamo je isti kvar, samo nevidljiv na širokom ekranu; (2) kad se jedno uvlačenje negde oduzima, a drugde dodaje, to mora biti **isti broj**, i test ih poredi, ne gleda svaki za sebe. Test koji spaja sva pravila jednog selektora u jedan tekst propušta ovo — gleda se svako pojavljivanje.
+
 ## Pet stabilnih odredišta i tok nastave
 
 - **Naslovna (`naslovna.html`)** — odobrena uvodna kompozicija i ulaz u predmet; nova nastavna građa ne zahteva njeno ponovno osmišljavanje.
