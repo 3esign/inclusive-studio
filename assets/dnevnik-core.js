@@ -63,7 +63,7 @@ export function buildJournal({ lists = [], visits = [], prototypes = {} } = {}) 
       if (!row.ime && !row.indeks) continue;
       const found = person(row.ime, row.indeks, true);
       const week = weekOf(found, list.nedelja ?? 3);
-      week.rows.push({ list: list.id, cas: list.cas, page: list.page, rb: row.rb, rad: row.rad, slike: row.slike, ceka: row.ceka === true, napomena: row.napomena ? tx(row.napomena) : '', galerija: row.galerija || null, odrzan: list.odrzan });
+      week.rows.push({ list: list.id, cas: list.cas, page: list.page, kotva: list.kotva || '', rb: row.rb, rad: row.rad, slike: row.slike, ceka: row.ceka === true, napomena: row.napomena ? tx(row.napomena) : '', galerija: row.galerija || null, odrzan: list.odrzan });
     }
   }
   // Visits: who went, and how many frames of their own work came back from that day.
@@ -137,7 +137,7 @@ function weekBlock(entry) {
     if (work.kind === 'item') return `<li><b>${esc(work.title)}</b> <small>${photoCount(work.photos)}</small> <a href="prototipovi.html#${esc(work.id)}">${tr('in the register', 'u registru')} ↗</a></li>`;
     return `<li><b>${esc(work.title)}</b> <small>${photoCount(work.photos)}</small> <a href="galerija-${esc(work.id)}.html">${tr('open the work', 'otvori rad')} ↗</a></li>`;
   }).join('');
-  const listLink = row && row.page ? ` · <a href="${esc(row.page)}#cas03-rows-title">${tr('entry', 'zapis')} ${row.rb}</a>` : '';
+  const listLink = row && row.page ? ` · <a href="${esc(row.page)}${row.kotva ? '#' + esc(row.kotva) : ''}">${tr('entry', 'zapis')} ${row.rb}</a>` : '';
   const note = row && row.napomena ? `<p class="dnevnik-note">${esc(row.napomena)}</p>` : '';
   const empty = !works ? `<p class="dnevnik-note">${tr('Attendance recorded, no photographed work this week.', 'Prisustvo zavedeno, bez fotografisanog rada te nedelje.')}</p>` : '';
   return `<div class="dnevnik-week"><p class="dnevnik-week-head">${tr('Week', 'Nedelja')} ${entry.week}${row && row.odrzan ? ` · <time datetime="${esc(row.odrzan)}">${esc(srDate(row.odrzan))}.</time>` : ''}${listLink}</p>${works ? `<ul class="dnevnik-works">${works}</ul>` : ''}${empty}${note}</div>`;
