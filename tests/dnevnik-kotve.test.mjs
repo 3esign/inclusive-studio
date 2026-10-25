@@ -44,6 +44,23 @@ test('dnevnik ne zakucava kotvu u kod — cita je iz podatka', () => {
   assert.match(core, /row\.kotva/, 'dnevnik-core.js ne cita kotvu iz podatka');
 });
 
+test('odstampana strana nosi kotvu iz manifesta — alat je ne sme izgubiti', () => {
+  /* tools/dnevnik-baseline.mjs je nekad prepisivao samo page i nedelju, pa bi
+     regeneracija tihom vratila golu stranu iako manifest i render kotvu znaju. */
+  const page = read('dnevnik.html');
+  assert.ok(/zapis \d/.test(page), 'na strani nema nijedne veze „zapis N" — provera bi bila prazna');
+  const bad = [];
+  for (const list of journal.lists) {
+    const want = list.page + (list.kotva ? '#' + list.kotva : '');
+    const esc2 = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const withKotva = [...page.matchAll(new RegExp('href="' + esc2(want) + '"', 'g'))].length;
+    const bare = [...page.matchAll(new RegExp('href="' + esc2(list.page) + '">zapis ', 'g'))].length;
+    if (list.kotva && withKotva === 0) bad.push('nema nijedne veze sa kotvom: ' + want);
+    if (list.kotva && bare > 0) bad.push(bare + ' golih veza na ' + list.page + ' umesto ' + want);
+  }
+  assert.deepEqual(bad, [], bad.join('; '));
+});
+
 test('kotve poseta (#poseta-<id>) postoje na strani posete', () => {
   const bad = [];
   let checked = 0;

@@ -18,7 +18,7 @@ for (const entry of manifest.lists) {
   const list = await json(entry.file);
   const problems = validateCas03(list);
   if (problems.length) throw Error(entry.file + ':\n' + problems.join('\n'));
-  lists.push(Object.assign(list, { page: entry.page, nedelja: entry.nedelja }));
+  lists.push(Object.assign(list, { page: entry.page, nedelja: entry.nedelja, kotva: entry.kotva || '' }));
 }
 const visits = [];
 for (const entry of manifest.visits) {
