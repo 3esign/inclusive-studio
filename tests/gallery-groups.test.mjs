@@ -30,7 +30,7 @@ const LIST=[
   [14,'w3-kubismo','138/24','Sofia Ocanto Jovičić','kubismo',3],
   [15,'w3-koncici','126/24','Marija Stojković','končići',1],
   [16,'w3-padalica','161/24','Ivana Cvetković','padalica',4],
-  [17,'w3-obojilica','85/24','Anja Bukurović','obojilica',6],
+  [17,'w3-obojilica','85/24','Anja Bukorović','obojilica',6],
   [18,'w3-putanja','79/24','Katarina Petrović','putanja',6],
   [19,'w3-brza-putanja','74/2024','Sanja Hornjaček','3d lavirint',4],
   [20,'w3-2d-lavirint','70/21','Aleksa Vasić','2d lavirint',2],
@@ -43,7 +43,7 @@ const LIST=[
   [27,'w3-grujic','108/23','Jana Grujić',null,1],
   [28,'w3-fliper','28/24','Iva Mijanović','fliper',3],
   [29,'w3-stilopol','131/24','Lena Dukić','stilopol',2],
-  [30,'w3-castle',null,'Filip Doljanovič','Castle',3]
+  [30,'w3-castle','191/25','Filip Maslovarić','Castle',3]
 ];
 // The twelve frames that stand in front of the sequence: trousers caught by the camera, then
 // the degree presentations. Cutting the list from frame one instead of from the box is the
@@ -97,7 +97,7 @@ test('the identity line reads as student number, name, and the title the teacher
   const demiri=data.galleries.find(g=>g.id==='w3-demiri');
   assert.equal(demiri.title.sr,'Bez naziva','a work with no title is marked, never invented');
   const castle=data.galleries.find(g=>g.id==='w3-castle');
-  assert.equal(authorLine(castle.author),'Filip Doljanovič','no student number was supplied for Castle');
+  assert.equal(authorLine(castle.author),'191/25 — Filip Maslovarić','the student number was supplied on 31.10.2026 (teacher, fifth-class list)');
   // A title or number that nobody supplied must not be inferred from a neighbour on the list.
   const bad=structuredClone(data);bad.galleries[0].author.studentNumber='pogodjeno';
   assert.ok(validatePrototypes(bad).length);

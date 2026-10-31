@@ -152,6 +152,22 @@
         "sr": "Nastavnikova ispravka uz dve dostavljene fotografije, 24.10.2026: prugasta kutija sa izrezanom stazom, zelenim pomponom na koncu i zvezdom na kraju je rad zapisa 26 četvrtog časa, a ne „fliper” zapisa 27. Nastavnik je naveo i da autorka tog zapisa ima rad iz ranije nedelje — kutija za brojanje sa trećeg časa je isti predmet, sa drugom stranom poklopca.",
         "en": "The teacher’s correction with two supplied photographs, 24 October 2026: the striped box with the cut-out route, a green pompom on a thread and a star at the end is the work of entry 26 of the fourth class, not the “fliper” of entry 27. The teacher also stated that the author of that entry has a work from an earlier week — the counting box of the third class is the same object, on the other face of its lid."
       }
+    },
+    {
+      "id": "teacher-2026-10-30-cas-05",
+      "recordedOn": "2026-10-30",
+      "description": {
+        "sr": "Nastavnikov spisak petog časa (30.10.2026), zapisivan redom vođenja; broj uz zapis je broj fotografija. Fotografije: telefon nastavnika, 11:44–14:08. Nastavnik je naveo da na kraju spiska verovatno nedostaje jedan zapis.",
+        "en": "The teacher’s list of the fifth class (30 October 2026), recorded in the order it was kept; the number beside an entry is its photograph count. Photographs: the teacher’s phone, 11:44–14:08. The teacher noted that one entry is probably missing near the end of the list."
+      }
+    },
+    {
+      "id": "teacher-2026-10-31-imena",
+      "recordedOn": "2026-10-31",
+      "description": {
+        "sr": "Nastavnikova potvrda imena, 31.10.2026: važeći oblici imena zapisa 1, 3 i 17 petog časa; zapis 17 petog i zapis 30 trećeg časa su isti student.",
+        "en": "The teacher’s confirmation of names, 31 October 2026: the valid name forms of entries 1, 3 and 17 of the fifth class; entry 17 of the fifth and entry 30 of the third class are the same student."
+      }
     }
   ],
   "items": [
@@ -2881,7 +2897,7 @@
         }
       ],
       "author": {
-        "name": "Anja Bukurović",
+        "name": "Anja Bukorović",
         "studentNumber": "85/24"
       },
       "listOrder": 17
@@ -3561,7 +3577,8 @@
         }
       ],
       "author": {
-        "name": "Filip Doljanovič"
+        "name": "Filip Maslovarić",
+        "studentNumber": "191/25"
       },
       "listOrder": 30
     },
@@ -5276,6 +5293,1606 @@
           "sourceId": "teacher-2026-10-24-demiri"
         }
       ]
+    },
+    {
+      "id": "w5-bukorovic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Anja Bukorović",
+        "studentNumber": "85/24"
+      },
+      "listOrder": 1,
+      "photos": [
+        {
+          "id": "w5-bukorovic-01",
+          "src": "data/prototipovi/w5-bukorovic/01.jpg",
+          "sha256": "a7813fa8cfd355c7ef8c08eacbe7694979c78c07241c51694ff06a6640d113ab",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 4.",
+            "en": "Untitled — view 1 of 4."
+          },
+          "caption": {
+            "sr": "1 / 4",
+            "en": "1 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-bukorovic-02",
+          "src": "data/prototipovi/w5-bukorovic/02.jpg",
+          "sha256": "8c2c71eb703a3efe1061dc3681fd92f53bc3373b142a538b08cd8e87da577729",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 4.",
+            "en": "Untitled — view 2 of 4."
+          },
+          "caption": {
+            "sr": "2 / 4",
+            "en": "2 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-bukorovic-03",
+          "src": "data/prototipovi/w5-bukorovic/03.jpg",
+          "sha256": "23c4a6fb64188eb29d814be18b832a8efc3e453bc94dc447b84c4c2b495003ba",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 3 od 4.",
+            "en": "Untitled — view 3 of 4."
+          },
+          "caption": {
+            "sr": "3 / 4",
+            "en": "3 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-bukorovic-04",
+          "src": "data/prototipovi/w5-bukorovic/04.jpg",
+          "sha256": "fe51078ee9d717513300d2d8158f35977556a0d6924263087c7fcd4a2dacadfb",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 4 od 4.",
+            "en": "Untitled — view 4 of 4."
+          },
+          "caption": {
+            "sr": "4 / 4",
+            "en": "4 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-boskovic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Andrija Bošković",
+        "studentNumber": "26/24"
+      },
+      "listOrder": 3,
+      "photos": [
+        {
+          "id": "w5-boskovic-01",
+          "src": "data/prototipovi/w5-boskovic/01.jpg",
+          "sha256": "3308a285a89a233acdf9e5a3dea455da39afa77567d7ed97f73bbcad796e4860",
+          "width": 1280,
+          "height": 720,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 2.",
+            "en": "Untitled — view 1 of 2."
+          },
+          "caption": {
+            "sr": "1 / 2",
+            "en": "1 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-boskovic-02",
+          "src": "data/prototipovi/w5-boskovic/02.jpg",
+          "sha256": "18b0b60aff52823001a94ab8a26f6aba9cdaf5842e346af627e42f118c08c0d0",
+          "width": 1280,
+          "height": 720,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 2.",
+            "en": "Untitled — view 2 of 2."
+          },
+          "caption": {
+            "sr": "2 / 2",
+            "en": "2 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-usjak",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Katarina Ušjak",
+        "studentNumber": "86/24"
+      },
+      "listOrder": 4,
+      "photos": [
+        {
+          "id": "w5-usjak-01",
+          "src": "data/prototipovi/w5-usjak/01.jpg",
+          "sha256": "c269c74ae86949dc61d6ba70a850a80f41be4b2550f8afdfbcbcb278e286d447",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 3.",
+            "en": "Untitled — view 1 of 3."
+          },
+          "caption": {
+            "sr": "1 / 3",
+            "en": "1 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-usjak-02",
+          "src": "data/prototipovi/w5-usjak/02.jpg",
+          "sha256": "2ec65bdcdba3af185f150c124a9b7f9c6e7d139ff7ee83fda117884dfd61a59f",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 3.",
+            "en": "Untitled — view 2 of 3."
+          },
+          "caption": {
+            "sr": "2 / 3",
+            "en": "2 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-usjak-03",
+          "src": "data/prototipovi/w5-usjak/03.jpg",
+          "sha256": "6af589096ba1b7f1f4c7a97674498142041f13f1c7cfd754f3686ce4a06d3d63",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 3 od 3.",
+            "en": "Untitled — view 3 of 3."
+          },
+          "caption": {
+            "sr": "3 / 3",
+            "en": "3 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-janjic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Nataša Janjić",
+        "studentNumber": "152/24"
+      },
+      "listOrder": 5,
+      "photos": [
+        {
+          "id": "w5-janjic-01",
+          "src": "data/prototipovi/w5-janjic/01.jpg",
+          "sha256": "5a15531d5b9cab56ab12d3deadb0a08291e9ab089bb901f2f907c4b7cb6b4e05",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 3.",
+            "en": "Untitled — view 1 of 3."
+          },
+          "caption": {
+            "sr": "1 / 3",
+            "en": "1 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-janjic-02",
+          "src": "data/prototipovi/w5-janjic/02.jpg",
+          "sha256": "c14d977d4eed07437180c8c36d40f82e56ff7ac1e4be6dc0b833848f81604418",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 3.",
+            "en": "Untitled — view 2 of 3."
+          },
+          "caption": {
+            "sr": "2 / 3",
+            "en": "2 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-janjic-03",
+          "src": "data/prototipovi/w5-janjic/03.jpg",
+          "sha256": "f313c1a4995bbd014ea7d063232b86c1596120f260619d0878fe113666dda6f5",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 3 od 3.",
+            "en": "Untitled — view 3 of 3."
+          },
+          "caption": {
+            "sr": "3 / 3",
+            "en": "3 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-lukic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Miljana Lukić",
+        "studentNumber": "58/24"
+      },
+      "listOrder": 6,
+      "photos": [
+        {
+          "id": "w5-lukic-01",
+          "src": "data/prototipovi/w5-lukic/01.jpg",
+          "sha256": "63316c5e4d1aa7cca2a47ec645689473bd45712c50e3d198e56977e5f5a989a7",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 2.",
+            "en": "Untitled — view 1 of 2."
+          },
+          "caption": {
+            "sr": "1 / 2",
+            "en": "1 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-lukic-02",
+          "src": "data/prototipovi/w5-lukic/02.jpg",
+          "sha256": "963a382691c1213792992aaa5eed52118d9057eaa0d67c658a09bf0c55c95e15",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 2.",
+            "en": "Untitled — view 2 of 2."
+          },
+          "caption": {
+            "sr": "2 / 2",
+            "en": "2 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-stojcevic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Nađa Stojčević",
+        "studentNumber": "144/24"
+      },
+      "listOrder": 7,
+      "photos": [
+        {
+          "id": "w5-stojcevic-01",
+          "src": "data/prototipovi/w5-stojcevic/01.jpg",
+          "sha256": "8fd1a018bb20ee0f8ba64a02383bf6ea0eb0d78e5c8fb648d8892cf0bbf64c6e",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 2.",
+            "en": "Untitled — view 1 of 2."
+          },
+          "caption": {
+            "sr": "1 / 2",
+            "en": "1 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-stojcevic-02",
+          "src": "data/prototipovi/w5-stojcevic/02.jpg",
+          "sha256": "0382426ccb125aa25b04166d32a52f134f8e812684bd593462116b691a0e6aaa",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 2.",
+            "en": "Untitled — view 2 of 2."
+          },
+          "caption": {
+            "sr": "2 / 2",
+            "en": "2 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-siljakinjic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Nevena Šiljakinjić",
+        "studentNumber": "116/23"
+      },
+      "listOrder": 8,
+      "photos": [
+        {
+          "id": "w5-siljakinjic-01",
+          "src": "data/prototipovi/w5-siljakinjic/01.jpg",
+          "sha256": "92e4076701af38c7f1164a81d98e06405449b0b3d243ae528e521b6a6fc78d4f",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 6.",
+            "en": "Untitled — view 1 of 6."
+          },
+          "caption": {
+            "sr": "1 / 6",
+            "en": "1 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-siljakinjic-02",
+          "src": "data/prototipovi/w5-siljakinjic/02.jpg",
+          "sha256": "ad3d0b76324bbbfdd59ddcf1f71f6f0a16a8696f0d96db398c360aa92ebfad64",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 6.",
+            "en": "Untitled — view 2 of 6."
+          },
+          "caption": {
+            "sr": "2 / 6",
+            "en": "2 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-siljakinjic-03",
+          "src": "data/prototipovi/w5-siljakinjic/03.jpg",
+          "sha256": "4d48d13535997dd31d70d53ebd8887b035cb120055f6b095dded3a8710e4c2ae",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 3 od 6.",
+            "en": "Untitled — view 3 of 6."
+          },
+          "caption": {
+            "sr": "3 / 6",
+            "en": "3 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-siljakinjic-04",
+          "src": "data/prototipovi/w5-siljakinjic/04.jpg",
+          "sha256": "15d22c3822e2819baf8054cfdd557e96a7a6bffc96f55e5c14dbbc6192a02795",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 4 od 6.",
+            "en": "Untitled — view 4 of 6."
+          },
+          "caption": {
+            "sr": "4 / 6",
+            "en": "4 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-siljakinjic-05",
+          "src": "data/prototipovi/w5-siljakinjic/05.jpg",
+          "sha256": "d5ae30654786705d8604418fffebbc8234a44bce926d7ebdf6dc4f901631cd6a",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 5 od 6.",
+            "en": "Untitled — view 5 of 6."
+          },
+          "caption": {
+            "sr": "5 / 6",
+            "en": "5 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-siljakinjic-06",
+          "src": "data/prototipovi/w5-siljakinjic/06.jpg",
+          "sha256": "e3da3d3b149eecee475a1d8b8beffcb377b37a64054d74855ad712ccf1c577e4",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 6 od 6.",
+            "en": "Untitled — view 6 of 6."
+          },
+          "caption": {
+            "sr": "6 / 6",
+            "en": "6 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-demiri",
+      "title": {
+        "sr": "zvezdana stazica",
+        "en": "zvezdana stazica"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Hana Demiri",
+        "studentNumber": "22/24"
+      },
+      "listOrder": 9,
+      "photos": [
+        {
+          "id": "w5-demiri-01",
+          "src": "data/prototipovi/w5-demiri/01.jpg",
+          "sha256": "cb98651f1cbac41e27d2709c6af4c827c3a0ed397c1c1617383e37c92ced36d7",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "zvezdana stazica — prikaz 1 od 4.",
+            "en": "zvezdana stazica — view 1 of 4."
+          },
+          "caption": {
+            "sr": "1 / 4",
+            "en": "1 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-demiri-02",
+          "src": "data/prototipovi/w5-demiri/02.jpg",
+          "sha256": "a3be778a63278c1885490ec15309354a8dd42e5e2972089523985146348cb0a1",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "zvezdana stazica — prikaz 2 od 4.",
+            "en": "zvezdana stazica — view 2 of 4."
+          },
+          "caption": {
+            "sr": "2 / 4",
+            "en": "2 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-demiri-03",
+          "src": "data/prototipovi/w5-demiri/03.jpg",
+          "sha256": "cb110a4740dfddbaa23da6a9942d02271026172016ad720ae8a7ae46cc5386da",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "zvezdana stazica — prikaz 3 od 4.",
+            "en": "zvezdana stazica — view 3 of 4."
+          },
+          "caption": {
+            "sr": "3 / 4",
+            "en": "3 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-demiri-04",
+          "src": "data/prototipovi/w5-demiri/04.jpg",
+          "sha256": "7cdf37c95c0798ca300d30cbc9da0fb3939dac6b88927fab78a2ef0a5daa14fe",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "zvezdana stazica — prikaz 4 od 4.",
+            "en": "zvezdana stazica — view 4 of 4."
+          },
+          "caption": {
+            "sr": "4 / 4",
+            "en": "4 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-markovic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Maša Marković",
+        "studentNumber": "121/24"
+      },
+      "listOrder": 10,
+      "photos": [
+        {
+          "id": "w5-markovic-01",
+          "src": "data/prototipovi/w5-markovic/01.jpg",
+          "sha256": "42e9a30e7255ed3aeb36e536f89e9939a332bd921429afc00233683a8a51b1a0",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 4.",
+            "en": "Untitled — view 1 of 4."
+          },
+          "caption": {
+            "sr": "1 / 4",
+            "en": "1 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-markovic-02",
+          "src": "data/prototipovi/w5-markovic/02.jpg",
+          "sha256": "88a282ee3485e9eb446d666c24bcc657ee20a56ea5fa24754d7e843057e342be",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 4.",
+            "en": "Untitled — view 2 of 4."
+          },
+          "caption": {
+            "sr": "2 / 4",
+            "en": "2 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-markovic-03",
+          "src": "data/prototipovi/w5-markovic/03.jpg",
+          "sha256": "586392a5afb7115d2365a065e9ada66251d9ce6a5034b4461e95fdb0b56b1ed1",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 3 od 4.",
+            "en": "Untitled — view 3 of 4."
+          },
+          "caption": {
+            "sr": "3 / 4",
+            "en": "3 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-markovic-04",
+          "src": "data/prototipovi/w5-markovic/04.jpg",
+          "sha256": "2c5bc2f1d1cfa15ca2e7c6633c0aa466cd570b2586ca7c3c5a13a67f7e210831",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 4 od 4.",
+            "en": "Untitled — view 4 of 4."
+          },
+          "caption": {
+            "sr": "4 / 4",
+            "en": "4 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-velemir",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Tijana Velemir",
+        "studentNumber": "51/24"
+      },
+      "listOrder": 11,
+      "photos": [
+        {
+          "id": "w5-velemir-01",
+          "src": "data/prototipovi/w5-velemir/01.jpg",
+          "sha256": "56f239e35edd2cd726898cf8e0c2669eb525eb72d37cedcfe4ea59c117edd5a2",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 4.",
+            "en": "Untitled — view 1 of 4."
+          },
+          "caption": {
+            "sr": "1 / 4",
+            "en": "1 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-velemir-02",
+          "src": "data/prototipovi/w5-velemir/02.jpg",
+          "sha256": "bb3520f8f8fdae5a48abd278a16125d9e2ef92c903122e29f5c53692edc34cd7",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 4.",
+            "en": "Untitled — view 2 of 4."
+          },
+          "caption": {
+            "sr": "2 / 4",
+            "en": "2 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-velemir-03",
+          "src": "data/prototipovi/w5-velemir/03.jpg",
+          "sha256": "a27cf95b562776e88b4af3574eb738f0d1397aef7e0a5833e50cef309c109618",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 3 od 4.",
+            "en": "Untitled — view 3 of 4."
+          },
+          "caption": {
+            "sr": "3 / 4",
+            "en": "3 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-velemir-04",
+          "src": "data/prototipovi/w5-velemir/04.jpg",
+          "sha256": "345f3bca017a6830ddd3489d50e231587dd7f733158970264f602d15315c7760",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 4 od 4.",
+            "en": "Untitled — view 4 of 4."
+          },
+          "caption": {
+            "sr": "4 / 4",
+            "en": "4 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-jovanovic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Vasilije Jovanović",
+        "studentNumber": "115/24"
+      },
+      "listOrder": 12,
+      "photos": [
+        {
+          "id": "w5-jovanovic-01",
+          "src": "data/prototipovi/w5-jovanovic/01.jpg",
+          "sha256": "280169c626b0914485e4d8aa3257e181f63b3757b87c4ced28903a2d735dcc74",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 3.",
+            "en": "Untitled — view 1 of 3."
+          },
+          "caption": {
+            "sr": "1 / 3",
+            "en": "1 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-jovanovic-02",
+          "src": "data/prototipovi/w5-jovanovic/02.jpg",
+          "sha256": "10bb67cfb4c1799ef451916e5d2b9d263351bb0c9dbdbe021e097926c82580e0",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 3.",
+            "en": "Untitled — view 2 of 3."
+          },
+          "caption": {
+            "sr": "2 / 3",
+            "en": "2 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-jovanovic-03",
+          "src": "data/prototipovi/w5-jovanovic/03.jpg",
+          "sha256": "f2712d7ec1b3504f6139ffbb898ce3cec41ba7e199bf398cb04ceaa8bcc5b99d",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 3 od 3.",
+            "en": "Untitled — view 3 of 3."
+          },
+          "caption": {
+            "sr": "3 / 3",
+            "en": "3 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-jovicic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Sofia Ocanto Jovičić",
+        "studentNumber": "138/24"
+      },
+      "listOrder": 13,
+      "photos": [
+        {
+          "id": "w5-jovicic-01",
+          "src": "data/prototipovi/w5-jovicic/01.jpg",
+          "sha256": "e4aeaca7608dbd31c37fc57cec7c4dba36d95a95fc4cbd576bcbd6565469b0f7",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 3.",
+            "en": "Untitled — view 1 of 3."
+          },
+          "caption": {
+            "sr": "1 / 3",
+            "en": "1 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-jovicic-02",
+          "src": "data/prototipovi/w5-jovicic/02.jpg",
+          "sha256": "52756198d02a33a7419ed7342f296ce45b2e55ced7d11ee6d4c00861633d0ed0",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 3.",
+            "en": "Untitled — view 2 of 3."
+          },
+          "caption": {
+            "sr": "2 / 3",
+            "en": "2 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-jovicic-03",
+          "src": "data/prototipovi/w5-jovicic/03.jpg",
+          "sha256": "1d2227a37d5e8ef0613709de0113d21b0848081438742ee14243fd54a1b6af6b",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 3 od 3.",
+            "en": "Untitled — view 3 of 3."
+          },
+          "caption": {
+            "sr": "3 / 3",
+            "en": "3 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-stablovic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Igor Stablović",
+        "studentNumber": "6/24"
+      },
+      "listOrder": 14,
+      "photos": [
+        {
+          "id": "w5-stablovic-01",
+          "src": "data/prototipovi/w5-stablovic/01.jpg",
+          "sha256": "9b5c2252a52aad98259c78be7c4a7ebee731929fcc183964c2ddf1633ee1ba22",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 4.",
+            "en": "Untitled — view 1 of 4."
+          },
+          "caption": {
+            "sr": "1 / 4",
+            "en": "1 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-stablovic-02",
+          "src": "data/prototipovi/w5-stablovic/02.jpg",
+          "sha256": "e536e7adc18f61aeba0032cf661a849f28b490883d1e90fbfcb90ff56368abee",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 4.",
+            "en": "Untitled — view 2 of 4."
+          },
+          "caption": {
+            "sr": "2 / 4",
+            "en": "2 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-stablovic-03",
+          "src": "data/prototipovi/w5-stablovic/03.jpg",
+          "sha256": "05960c9a3643b605cf1b9f4335f2865f9c4d5815ab6b669e2750244b01c5c08b",
+          "width": 1280,
+          "height": 720,
+          "alt": {
+            "sr": "Bez naziva — prikaz 3 od 4.",
+            "en": "Untitled — view 3 of 4."
+          },
+          "caption": {
+            "sr": "3 / 4",
+            "en": "3 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-stablovic-04",
+          "src": "data/prototipovi/w5-stablovic/04.jpg",
+          "sha256": "63bf3a6c27e56621824f19638e4e1087bf182116da1590fefdb482eaa7a3088c",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 4 od 4.",
+            "en": "Untitled — view 4 of 4."
+          },
+          "caption": {
+            "sr": "4 / 4",
+            "en": "4 / 4"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-pudar",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Teodora Pudar",
+        "studentNumber": "129/24"
+      },
+      "listOrder": 15,
+      "photos": [
+        {
+          "id": "w5-pudar-01",
+          "src": "data/prototipovi/w5-pudar/01.jpg",
+          "sha256": "a82909cdd99c8cfa7a93b13baadeacf56a64b76c1f2606a5d8b671c1aaf75b36",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 2.",
+            "en": "Untitled — view 1 of 2."
+          },
+          "caption": {
+            "sr": "1 / 2",
+            "en": "1 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-pudar-02",
+          "src": "data/prototipovi/w5-pudar/02.jpg",
+          "sha256": "8f2657eec9357c27e65b5713c891ca1a1f0f230d50cc880d9c3083f6fe4bfcb5",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 2.",
+            "en": "Untitled — view 2 of 2."
+          },
+          "caption": {
+            "sr": "2 / 2",
+            "en": "2 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-mickovic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Anđela Mićković",
+        "studentNumber": "37/24"
+      },
+      "listOrder": 16,
+      "photos": [
+        {
+          "id": "w5-mickovic-01",
+          "src": "data/prototipovi/w5-mickovic/01.jpg",
+          "sha256": "f5c1d251f5da885200800d7d3891e97b5d95098dc8950a41e78f2f4d45d81b65",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 6.",
+            "en": "Untitled — view 1 of 6."
+          },
+          "caption": {
+            "sr": "1 / 6",
+            "en": "1 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-mickovic-02",
+          "src": "data/prototipovi/w5-mickovic/02.jpg",
+          "sha256": "0d7532b8af4bc9ee2baba3d7bff1807fc1e29732b91d21763ef0b3b3071efb6c",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 6.",
+            "en": "Untitled — view 2 of 6."
+          },
+          "caption": {
+            "sr": "2 / 6",
+            "en": "2 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-mickovic-03",
+          "src": "data/prototipovi/w5-mickovic/03.jpg",
+          "sha256": "1732b346086cc8a8e8b41b1d5e3cb613575d03c24aeca349ec70fe88c75904f6",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 3 od 6.",
+            "en": "Untitled — view 3 of 6."
+          },
+          "caption": {
+            "sr": "3 / 6",
+            "en": "3 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-mickovic-04",
+          "src": "data/prototipovi/w5-mickovic/04.jpg",
+          "sha256": "758c6d8342abb3e63d0fe57d6a9da8d30b286889804dd39c45baf705964f6640",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 4 od 6.",
+            "en": "Untitled — view 4 of 6."
+          },
+          "caption": {
+            "sr": "4 / 6",
+            "en": "4 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-mickovic-05",
+          "src": "data/prototipovi/w5-mickovic/05.jpg",
+          "sha256": "d4fac3a05a3269bce288bb152b69dc57da53ff6d2fb395dd62d7714500f2b599",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 5 od 6.",
+            "en": "Untitled — view 5 of 6."
+          },
+          "caption": {
+            "sr": "5 / 6",
+            "en": "5 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-mickovic-06",
+          "src": "data/prototipovi/w5-mickovic/06.jpg",
+          "sha256": "8e28af3136b4eb669de832bbfe8973c6c983cf4b9390646dc4c818cb4d9f109b",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 6 od 6.",
+            "en": "Untitled — view 6 of 6."
+          },
+          "caption": {
+            "sr": "6 / 6",
+            "en": "6 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-maslovaric",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Filip Maslovarić",
+        "studentNumber": "191/25"
+      },
+      "listOrder": 17,
+      "photos": [
+        {
+          "id": "w5-maslovaric-01",
+          "src": "data/prototipovi/w5-maslovaric/01.jpg",
+          "sha256": "048d27061e063d87c44bee92800947f1f9c7ba33a39bbcc37577ffecc99a46ac",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 1.",
+            "en": "Untitled — view 1 of 1."
+          },
+          "caption": {
+            "sr": "1 / 1",
+            "en": "1 / 1"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-kovacic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Lena Kovačić",
+        "studentNumber": "132/24"
+      },
+      "listOrder": 18,
+      "photos": [
+        {
+          "id": "w5-kovacic-01",
+          "src": "data/prototipovi/w5-kovacic/01.jpg",
+          "sha256": "3ceb73c55222695c380c66b8510e5b315b57f70e83fb216fb9a7a260146dac2e",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 2.",
+            "en": "Untitled — view 1 of 2."
+          },
+          "caption": {
+            "sr": "1 / 2",
+            "en": "1 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-kovacic-02",
+          "src": "data/prototipovi/w5-kovacic/02.jpg",
+          "sha256": "b5272afd6e9b2594401f4ba3c346c8b0ac2083d15ada61ef749da5e92304869c",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 2.",
+            "en": "Untitled — view 2 of 2."
+          },
+          "caption": {
+            "sr": "2 / 2",
+            "en": "2 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-sesum",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Viktor Šešum",
+        "studentNumber": "56/24"
+      },
+      "listOrder": 19,
+      "photos": [
+        {
+          "id": "w5-sesum-01",
+          "src": "data/prototipovi/w5-sesum/01.jpg",
+          "sha256": "0c16830ccbfc062490d53e5a3f2a4674308dc58cddb1565e480444cca8af1c70",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 6.",
+            "en": "Untitled — view 1 of 6."
+          },
+          "caption": {
+            "sr": "1 / 6",
+            "en": "1 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-sesum-02",
+          "src": "data/prototipovi/w5-sesum/02.jpg",
+          "sha256": "5295480e4d23d9dc8e82cd207742239f8f3756b7c572f79c3c28218ebdb03745",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 6.",
+            "en": "Untitled — view 2 of 6."
+          },
+          "caption": {
+            "sr": "2 / 6",
+            "en": "2 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-sesum-03",
+          "src": "data/prototipovi/w5-sesum/03.jpg",
+          "sha256": "05efa7eb4726602b5d9aa7803e3e217f425a2514aea94438263ecc297cce8848",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 3 od 6.",
+            "en": "Untitled — view 3 of 6."
+          },
+          "caption": {
+            "sr": "3 / 6",
+            "en": "3 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-sesum-04",
+          "src": "data/prototipovi/w5-sesum/04.jpg",
+          "sha256": "0485afd300f277b81222a580b1f306104f29e619bce80497a77c0291bc85529a",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 4 od 6.",
+            "en": "Untitled — view 4 of 6."
+          },
+          "caption": {
+            "sr": "4 / 6",
+            "en": "4 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-sesum-05",
+          "src": "data/prototipovi/w5-sesum/05.jpg",
+          "sha256": "b43e31e9010a8a6af5da740b8bf5855c52e2debb39d53719b6269c231617dfd9",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 5 od 6.",
+            "en": "Untitled — view 5 of 6."
+          },
+          "caption": {
+            "sr": "5 / 6",
+            "en": "5 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-sesum-06",
+          "src": "data/prototipovi/w5-sesum/06.jpg",
+          "sha256": "49595a3ff40a3794899344e1e8fd4eadbfed47cc30650480877cf5ada274a25b",
+          "width": 1280,
+          "height": 720,
+          "alt": {
+            "sr": "Bez naziva — prikaz 6 od 6.",
+            "en": "Untitled — view 6 of 6."
+          },
+          "caption": {
+            "sr": "6 / 6",
+            "en": "6 / 6"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-pajic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Nikola Pajić",
+        "studentNumber": "49/24"
+      },
+      "listOrder": 20,
+      "photos": [
+        {
+          "id": "w5-pajic-01",
+          "src": "data/prototipovi/w5-pajic/01.jpg",
+          "sha256": "dbdc4b23c27959508a31026a111f23ce286e5c9b7b5f7777baa8c4612676d762",
+          "width": 1280,
+          "height": 720,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 2.",
+            "en": "Untitled — view 1 of 2."
+          },
+          "caption": {
+            "sr": "1 / 2",
+            "en": "1 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-pajic-02",
+          "src": "data/prototipovi/w5-pajic/02.jpg",
+          "sha256": "7ca2277e2d48da32f17b5b1729d7129db1f0d15471ccf439c9e5bd5940052a6d",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 2.",
+            "en": "Untitled — view 2 of 2."
+          },
+          "caption": {
+            "sr": "2 / 2",
+            "en": "2 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-copic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Lazar Leo Ćopić",
+        "studentNumber": "142/24"
+      },
+      "listOrder": 21,
+      "photos": [
+        {
+          "id": "w5-copic-01",
+          "src": "data/prototipovi/w5-copic/01.jpg",
+          "sha256": "f3ba930a4427ea42a348dc9adb40e7a2ad343c477fd3a87c1a3653126c8b5d37",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 3.",
+            "en": "Untitled — view 1 of 3."
+          },
+          "caption": {
+            "sr": "1 / 3",
+            "en": "1 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-copic-02",
+          "src": "data/prototipovi/w5-copic/02.jpg",
+          "sha256": "ef22f970b3207a9454279ac1596ea0c349994b714fb5943f7413d82fadc7353d",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 3.",
+            "en": "Untitled — view 2 of 3."
+          },
+          "caption": {
+            "sr": "2 / 3",
+            "en": "2 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-copic-03",
+          "src": "data/prototipovi/w5-copic/03.jpg",
+          "sha256": "23a21f3597b4035e198b8ce9aac98a073c0e1c724955345352191e712f76c53c",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 3 od 3.",
+            "en": "Untitled — view 3 of 3."
+          },
+          "caption": {
+            "sr": "3 / 3",
+            "en": "3 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-tagkiri",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Elena Tagkiri",
+        "studentNumber": "196/25"
+      },
+      "listOrder": 22,
+      "photos": [
+        {
+          "id": "w5-tagkiri-01",
+          "src": "data/prototipovi/w5-tagkiri/01.jpg",
+          "sha256": "b6fcb65935477d76b9b431495f6886a8811ff7c641228aeb7db7dcdb47ceb89c",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 3.",
+            "en": "Untitled — view 1 of 3."
+          },
+          "caption": {
+            "sr": "1 / 3",
+            "en": "1 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-tagkiri-02",
+          "src": "data/prototipovi/w5-tagkiri/02.jpg",
+          "sha256": "fa8d218923eaabe72f0bf4f4646594d4e88f65fd734eb4fac04eed0ca7b77ef1",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 3.",
+            "en": "Untitled — view 2 of 3."
+          },
+          "caption": {
+            "sr": "2 / 3",
+            "en": "2 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-tagkiri-03",
+          "src": "data/prototipovi/w5-tagkiri/03.jpg",
+          "sha256": "140243f1c5de87f72aa2c31926dcb544d21b14824fa07e503ccc6f0e10e3e1eb",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 3 od 3.",
+            "en": "Untitled — view 3 of 3."
+          },
+          "caption": {
+            "sr": "3 / 3",
+            "en": "3 / 3"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-cvetkovic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Anđela Cvetković",
+        "studentNumber": "125/24"
+      },
+      "listOrder": 23,
+      "photos": [
+        {
+          "id": "w5-cvetkovic-01",
+          "src": "data/prototipovi/w5-cvetkovic/01.jpg",
+          "sha256": "e9628b38a73acc5c1eb39d912ec0989b7bbc51dd20cc4639ab185a32b71ceedb",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 2.",
+            "en": "Untitled — view 1 of 2."
+          },
+          "caption": {
+            "sr": "1 / 2",
+            "en": "1 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-cvetkovic-02",
+          "src": "data/prototipovi/w5-cvetkovic/02.jpg",
+          "sha256": "631d0afced557359a2c2a1f1fd267d6ffd641f0816b992c05f37d61cb0afb207",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 2.",
+            "en": "Untitled — view 2 of 2."
+          },
+          "caption": {
+            "sr": "2 / 2",
+            "en": "2 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-zunic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Iva Žunić",
+        "studentNumber": "110/24"
+      },
+      "listOrder": 24,
+      "photos": [
+        {
+          "id": "w5-zunic-01",
+          "src": "data/prototipovi/w5-zunic/01.jpg",
+          "sha256": "bb441484d6cdd1ee1381c58694ea73b4f33be064a9ec9e8beb9651ae9d92aa5e",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 2.",
+            "en": "Untitled — view 1 of 2."
+          },
+          "caption": {
+            "sr": "1 / 2",
+            "en": "1 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        },
+        {
+          "id": "w5-zunic-02",
+          "src": "data/prototipovi/w5-zunic/02.jpg",
+          "sha256": "a157980c0768c7e3d85184317127361aeb1d8fd11fc6f26c581815eab6ca6238",
+          "width": 720,
+          "height": 1280,
+          "alt": {
+            "sr": "Bez naziva — prikaz 2 od 2.",
+            "en": "Untitled — view 2 of 2."
+          },
+          "caption": {
+            "sr": "2 / 2",
+            "en": "2 / 2"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-mijanovic",
+      "title": {
+        "sr": "чепоflow",
+        "en": "чепоflow"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Iva Mijanović",
+        "studentNumber": "28/24"
+      },
+      "listOrder": 28,
+      "photos": [
+        {
+          "id": "w5-mijanovic-01",
+          "src": "data/prototipovi/w5-mijanovic/01.jpg",
+          "sha256": "c35160ed79d6194acd1cda56eb93629ea2d5b36feeb3f599e660e41f2b3641ca",
+          "width": 1280,
+          "height": 720,
+          "alt": {
+            "sr": "чепоflow — prikaz 1 od 1.",
+            "en": "чепоflow — view 1 of 1."
+          },
+          "caption": {
+            "sr": "1 / 1",
+            "en": "1 / 1"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
+    },
+    {
+      "id": "w5-parezanovic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "author": {
+        "name": "Andrej Parezanović",
+        "studentNumber": "43/24"
+      },
+      "listOrder": 29,
+      "photos": [
+        {
+          "id": "w5-parezanovic-01",
+          "src": "data/prototipovi/w5-parezanovic/01.jpg",
+          "sha256": "cb588cffcb3dcd150df4d2b99ff0610cbf843f526bab03831cfbe80c36287b97",
+          "width": 1280,
+          "height": 720,
+          "alt": {
+            "sr": "Bez naziva — prikaz 1 od 1.",
+            "en": "Untitled — view 1 of 1."
+          },
+          "caption": {
+            "sr": "1 / 1",
+            "en": "1 / 1"
+          },
+          "sourceId": "teacher-2026-10-30-cas-05"
+        }
+      ]
     }
   ],
   "cekaju": [
@@ -5362,7 +6979,7 @@
         "en": "Untitled"
       },
       "author": {
-        "name": "Andreja Bošković",
+        "name": "Andrija Bošković",
         "studentNumber": "26/24"
       },
       "documentedWeek": 4,
@@ -5429,6 +7046,82 @@
       "reason": {
         "sr": "Nastavnikov spisak uz ovaj zapis navodi tri fotografije, ali sva tri kadra iz tog dela niza (13:07–13:10) prikazuju prugastu kutiju zapisa 26. Rad „fliper” ovog zapisa nije fotografisan; ranije otvoreno pitanje o dva predmeta pod istim imenom time otpada.",
         "en": "The teacher’s list gives three photographs for this entry, but all three frames from that stretch of the sequence (13:07–13:10) show the striped box of entry 26. This entry’s “fliper” was not photographed; the earlier open question about two objects under one name falls away."
+      }
+    },
+    {
+      "id": "w5-halas",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "author": {
+        "name": "Imre Halas",
+        "studentNumber": "1/24"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "listOrder": 2,
+      "expectedPhotos": null,
+      "reason": {
+        "sr": "Zapis petog časa bez fotografije: student je bio na konsultacijama.",
+        "en": "A fifth-class entry without a photograph: the student attended for consultation."
+      }
+    },
+    {
+      "id": "w5-spasojevic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "author": {
+        "name": "Natalija Spasojević",
+        "studentNumber": "52/24"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "listOrder": 25,
+      "expectedPhotos": 2,
+      "reason": {
+        "sr": "Kraj spiska petog časa: nastavnik je naveo da pred poslednja dva rada verovatno nedostaje jedan zapis, pa kadrovi tog dela niza čekaju potvrdu studenata pre objave.",
+        "en": "The end of the fifth-class list: the teacher noted that one entry is probably missing before the last two works, so the frames of that stretch await the students’ confirmation before publication."
+      }
+    },
+    {
+      "id": "w5-ljubicic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "author": {
+        "name": "Dunja Ljubičić",
+        "studentNumber": "38/24"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "listOrder": 26,
+      "expectedPhotos": 3,
+      "reason": {
+        "sr": "Kraj spiska petog časa: nastavnik je naveo da pred poslednja dva rada verovatno nedostaje jedan zapis, pa kadrovi tog dela niza čekaju potvrdu studenata pre objave.",
+        "en": "The end of the fifth-class list: the teacher noted that one entry is probably missing before the last two works, so the frames of that stretch await the students’ confirmation before publication."
+      }
+    },
+    {
+      "id": "w5-bajic",
+      "title": {
+        "sr": "Bez naziva",
+        "en": "Untitled"
+      },
+      "author": {
+        "name": "Marija Bajić",
+        "studentNumber": "114/24"
+      },
+      "documentedWeek": 5,
+      "sourceId": "teacher-2026-10-30-cas-05",
+      "listOrder": 27,
+      "expectedPhotos": 3,
+      "reason": {
+        "sr": "Kraj spiska petog časa: nastavnik je naveo da pred poslednja dva rada verovatno nedostaje jedan zapis, pa kadrovi tog dela niza čekaju potvrdu studenata pre objave.",
+        "en": "The end of the fifth-class list: the teacher noted that one entry is probably missing before the last two works, so the frames of that stretch await the students’ confirmation before publication."
       }
     }
   ],

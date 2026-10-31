@@ -12,6 +12,12 @@
       "page": "cas-04.html",
       "nedelja": 4,
       "kotva": "cas03-rows-title"
+    },
+    {
+      "file": "data/cas-05/spisak.json",
+      "page": "cas-05.html",
+      "nedelja": 5,
+      "kotva": "cas03-rows-title"
     }
   ],
   "visits": [
@@ -32,6 +38,7 @@
     1,
     2,
     3,
-    4
+    4,
+    5
   ]
 }

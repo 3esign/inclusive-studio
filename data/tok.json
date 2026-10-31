@@ -194,6 +194,49 @@
         }
       ],
       "izvor": "Nastavnik predmeta, 23.10.2026. (spisak radova četvrtog časa i ispravke ranijih zapisa); prepoznavanje radova na kadrovima posete, 24.10.2026; data/material/w04.json — Zapisano posle časa."
+    },
+    {
+      "id": "cas-w05",
+      "vrsta": "cas",
+      "nedelja": 5,
+      "naslov": {
+        "sr": "Prototipovi u razradi — peti čas",
+        "en": "Prototypes in development — fifth class"
+      },
+      "odrzan": "2026-10-30",
+      "rezultati": [
+        {
+          "sta": {
+            "sr": "Rad na prototipovima je nastavljen. Na spisku časa stoji 29 prisustava, a 28 radova je fotografisano — ukupno 83 fotografije. Objavljeno je 25 radova sa 75 fotografija.",
+            "en": "The prototype work continued. The class list carries 29 attendances, and 28 works were photographed — 83 photographs in all. 25 works are published with 75 photographs."
+          },
+          "izvor": "Nastavnik predmeta, 30.10.2026 (spisak petog časa)."
+        },
+        {
+          "sta": {
+            "sr": "Potvrđeni su važeći oblici tri imena iz ranijih časova; ispravke su zavedene uz spisak petog časa.",
+            "en": "The valid forms of three names from earlier classes are confirmed; the corrections are filed with the fifth-class list."
+          },
+          "izvor": "Nastavnik predmeta, 31.10.2026."
+        }
+      ],
+      "prilog": [
+        {
+          "href": "cas-05.html",
+          "text": {
+            "sr": "Spisak radova petog časa — 29 prisustava, 25 objavljenih radova i deo „Šta se čeka”",
+            "en": "The list of the fifth class — 29 attendances, 25 published works and the „What we wait for” part"
+          }
+        },
+        {
+          "href": "dnevnik.html",
+          "text": {
+            "sr": "Dnevnik — svaki student, svaka nedelja, radovi i posete na jednom mestu",
+            "en": "The journal — every student, every week, works and visits in one place"
+          }
+        }
+      ],
+      "izvor": "Nastavnik predmeta, 30.10.2026. (spisak radova petog časa) i 31.10.2026. (potvrda imena)."
     }
   ],
   "sledeci": [],

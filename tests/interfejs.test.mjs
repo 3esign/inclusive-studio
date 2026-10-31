@@ -20,7 +20,7 @@ const visit = visitByFile['data/poseta.json'];
 const visitW03 = visitByFile['data/poseta-w03.json'];
 // Every class list is gated the same way: the page names its register, the register is the
 // only place a student's name may stand, and the row markup must match it exactly.
-const CLASS_LISTS = { 'cas-03.html': 'data/cas-03/spisak.json', 'cas-04.html': 'data/cas-04/spisak.json' };
+const CLASS_LISTS = { 'cas-03.html': 'data/cas-03/spisak.json', 'cas-04.html': 'data/cas-04/spisak.json', 'cas-05.html': 'data/cas-05/spisak.json' };
 const classLists = {};
 for (const [page, file] of Object.entries(CLASS_LISTS)) classLists[page] = { file, data: JSON.parse(await readFile(new URL(file, root), 'utf8')) };
 const listByFile = Object.fromEntries(Object.values(classLists).map(entry => [entry.file, entry.data]));

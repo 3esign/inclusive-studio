@@ -2,22 +2,59 @@
   "format": "inclusive-studio-material",
   "version": 1,
   "n": 5,
-  "state": "draft",
-  "updated": "2026-10-02",
-  "title": { "en": "Where regulation ends", "sr": "Gde propis prestaje" },
-  "date": null,
-  "dateStatus": "proposed",
+  "state": "published",
+  "updated": "2026-10-31",
+  "title": {
+    "en": "Where regulation ends",
+    "sr": "Gde propis prestaje"
+  },
+  "date": "2026-10-30",
+  "dateStatus": "confirmed",
   "aim": {
     "en": "You can identify the boundary where legal compliance fails user needs and where design begins; prepare for and sit Kolokvijum 1.",
     "sr": "Umeš da prepoznaš granicu gde puko zadovoljenje propisa izneverava potrebe korisnika i gde počinje projektovanje; priprema i polaganje Kolokvijuma 1."
   },
   "bring": [
-    { "en": "A3 portfolio of weeks 1–4, notebook, and drawing equipment.", "sr": "A3 mapa vežbi iz nedelja 1–4, pribor za pisanje i crtanje." }
+    {
+      "en": "A3 portfolio of weeks 1–4, notebook, and drawing equipment.",
+      "sr": "A3 mapa vežbi iz nedelja 1–4, pribor za pisanje i crtanje."
+    }
   ],
   "blocks": [
     {
       "kind": "heading",
-      "text": { "en": "Compliance is the floor, not the ceiling", "sr": "Propis je pod, a ne plafon" }
+      "text": {
+        "sr": "Zapisano posle časa — 30.10.2026.",
+        "en": "Recorded after class — 30 October 2026"
+      }
+    },
+    {
+      "kind": "list",
+      "items": [
+        {
+          "sr": "Nastavak rada na prototipovima. Zavedeno 29 prisustava, 28 radova fotografisano, ukupno 83 fotografije; objavljeno je 25 radova sa 75 fotografija.",
+          "en": "The prototype work continued. 29 attendances recorded, 28 works photographed, 83 photographs in all; 25 works are published with 75 photographs."
+        },
+        {
+          "sr": "Spisak radova sa svim fotografijama stoji na strani petog časa.",
+          "en": "The list of works with every photograph stands on the fifth-class page."
+        }
+      ]
+    },
+    {
+      "kind": "link",
+      "href": "cas-05.html",
+      "text": {
+        "sr": "Nedelja 5 — spisak radova petog časa: 29 zavedenih prisustava, 25 objavljenih radova, deo „Šta se čeka” i ispravke imena iz ranijih zapisa",
+        "en": "Week 5 — the list of the fifth class: 29 recorded attendances, 25 published works, the „What we wait for” part and the name corrections to earlier records"
+      }
+    },
+    {
+      "kind": "heading",
+      "text": {
+        "en": "Compliance is the floor, not the ceiling",
+        "sr": "Propis je pod, a ne plafon"
+      }
     },
     {
       "kind": "text",
@@ -34,13 +71,30 @@
       },
       "source": "Edward Steinfeld & Jordana Maisel, Universal Design: Creating Inclusive Environments (2012)"
     },
-    { "kind": "exercise", "ref": "where-regulation-ends" },
-    { "kind": "lab", "ref": "tastatura" },
+    {
+      "kind": "exercise",
+      "ref": "where-regulation-ends"
+    },
+    {
+      "kind": "lab",
+      "ref": "tastatura"
+    },
     {
       "kind": "decision",
       "text": {
         "en": "Kolokvijum 1 is sat in the first hour: concepts and regulations. The second hour evaluates borderline cases.",
         "sr": "Kolokvijum 1 se radi u prvom satu: pojmovi i propisi. U drugom satu analiziramo granične slučajeve iz prakse."
+      }
+    }
+  ],
+  "revizije": [
+    {
+      "v": 1,
+      "datum": "2026-10-31",
+      "izvor": "Nastavnik predmeta, 30.10.2026. (spisak petog časa).",
+      "sta": {
+        "sr": "Nedelja 5 je održana 30.10.2026. kao nastavak rada na prototipovima; zapis sa časa je spisak radova sa fotografijama. Pripremljeni blokovi ostaju na strani, ispod zapisa sa časa.",
+        "en": "Week 5 was held on 30 October 2026 as a continuation of the prototype work; the record of the class is the list of works with photographs. The prepared blocks remain on the page, below the record of the class."
       }
     }
   ]
