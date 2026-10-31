@@ -42,9 +42,13 @@
       "rb": 1,
       "ime": "Anja Bukorović",
       "indeks": "85/24",
-      "rad": null,
+      "rad": "obojilica",
       "slike": 4,
-      "galerija": "w5-bukorovic"
+      "galerija": "w5-bukorovic",
+      "napomena": {
+        "sr": "naziv iz ranijeg rada istog studenta (čas 3).",
+        "en": "title from the same student’s earlier work (class 3)."
+      }
     },
     {
       "rb": 2,
@@ -70,9 +74,13 @@
       "rb": 4,
       "ime": "Katarina Ušjak",
       "indeks": "86/24",
-      "rad": null,
+      "rad": "edukativna",
       "slike": 3,
-      "galerija": "w5-usjak"
+      "galerija": "w5-usjak",
+      "napomena": {
+        "sr": "naziv iz ranijeg rada istog studenta (čas 4).",
+        "en": "title from the same student’s earlier work (class 4)."
+      }
     },
     {
       "rb": 5,
@@ -118,41 +126,61 @@
       "rb": 10,
       "ime": "Maša Marković",
       "indeks": "121/24",
-      "rad": null,
+      "rad": "lavirint",
       "slike": 4,
-      "galerija": "w5-markovic"
+      "galerija": "w5-markovic",
+      "napomena": {
+        "sr": "naziv iz ranijeg rada istog studenta (čas 4).",
+        "en": "title from the same student’s earlier work (class 4)."
+      }
     },
     {
       "rb": 11,
       "ime": "Tijana Velemir",
       "indeks": "51/24",
-      "rad": null,
+      "rad": "zekino polje",
       "slike": 4,
-      "galerija": "w5-velemir"
+      "galerija": "w5-velemir",
+      "napomena": {
+        "sr": "naziv iz ranijeg rada istog studenta (čas 4).",
+        "en": "title from the same student’s earlier work (class 4)."
+      }
     },
     {
       "rb": 12,
       "ime": "Vasilije Jovanović",
       "indeks": "115/24",
-      "rad": null,
+      "rad": "sound box",
       "slike": 3,
-      "galerija": "w5-jovanovic"
+      "galerija": "w5-jovanovic",
+      "napomena": {
+        "sr": "naziv iz ranijeg rada istog studenta (čas 4).",
+        "en": "title from the same student’s earlier work (class 4)."
+      }
     },
     {
       "rb": 13,
       "ime": "Sofia Ocanto Jovičić",
       "indeks": "138/24",
-      "rad": null,
+      "rad": "kubismo",
       "slike": 3,
-      "galerija": "w5-jovicic"
+      "galerija": "w5-jovicic",
+      "napomena": {
+        "sr": "naziv iz ranijeg rada istog studenta (čas 3).",
+        "en": "title from the same student’s earlier work (class 3)."
+      }
     },
     {
       "rb": 14,
       "ime": "Igor Stablović",
       "indeks": "6/24",
-      "rad": null,
+      "rad": "iggyblox",
       "slike": 4,
-      "galerija": "w5-stablovic"
+      "galerija": "w5-stablovic",
+      "napomena": {
+        "sr": "naziv iz ranijeg rada istog studenta (čas 3).",
+        "en": "title from the same student’s earlier work (class 3)."
+      }
     },
     {
       "rb": 15,
@@ -166,29 +194,37 @@
       "rb": 16,
       "ime": "Anđela Mićković",
       "indeks": "37/24",
-      "rad": null,
+      "rad": "hobotnica",
       "slike": 6,
-      "galerija": "w5-mickovic"
+      "galerija": "w5-mickovic",
+      "napomena": {
+        "sr": "naziv iz ranijeg rada istog studenta (čas 4).",
+        "en": "title from the same student’s earlier work (class 4)."
+      }
     },
     {
       "rb": 17,
       "ime": "Filip Maslovarić",
       "indeks": "191/25",
-      "rad": null,
+      "rad": "Castle",
       "slike": 1,
       "galerija": "w5-maslovaric",
       "napomena": {
-        "sr": "isti student kao zapis 30 trećeg časa; oblik imena ispravljen 31.10.2026.",
-        "en": "the same student as entry 30 of the third class; the form of the name was corrected on 31 October 2026."
+        "sr": "naziv iz ranijeg rada istog studenta (čas 3).",
+        "en": "title from the same student’s earlier work (class 3)."
       }
     },
     {
       "rb": 18,
       "ime": "Lena Kovačić",
       "indeks": "132/24",
-      "rad": null,
+      "rad": "lenin lavirint",
       "slike": 2,
-      "galerija": "w5-kovacic"
+      "galerija": "w5-kovacic",
+      "napomena": {
+        "sr": "naziv iz ranijeg rada istog studenta (čas 3).",
+        "en": "title from the same student’s earlier work (class 3)."
+      }
     },
     {
       "rb": 19,
@@ -202,9 +238,13 @@
       "rb": 20,
       "ime": "Nikola Pajić",
       "indeks": "49/24",
-      "rad": null,
+      "rad": "Music Box",
       "slike": 2,
-      "galerija": "w5-pajic"
+      "galerija": "w5-pajic",
+      "napomena": {
+        "sr": "naziv iz ranijeg rada istog studenta (čas 4).",
+        "en": "title from the same student’s earlier work (class 4)."
+      }
     },
     {
       "rb": 21,
@@ -218,9 +258,13 @@
       "rb": 22,
       "ime": "Elena Tagkiri",
       "indeks": "196/25",
-      "rad": null,
+      "rad": "stubići",
       "slike": 3,
-      "galerija": "w5-tagkiri"
+      "galerija": "w5-tagkiri",
+      "napomena": {
+        "sr": "naziv iz ranijeg rada istog studenta (čas 4).",
+        "en": "title from the same student’s earlier work (class 4)."
+      }
     },
     {
       "rb": 23,
@@ -234,9 +278,13 @@
       "rb": 24,
       "ime": "Iva Žunić",
       "indeks": "110/24",
-      "rad": null,
+      "rad": "praćka",
       "slike": 2,
-      "galerija": "w5-zunic"
+      "galerija": "w5-zunic",
+      "napomena": {
+        "sr": "naziv iz ranijeg rada istog studenta (čas 4).",
+        "en": "title from the same student’s earlier work (class 4)."
+      }
     },
     {
       "rb": 25,
@@ -271,11 +319,11 @@
       "indeks": "28/24",
       "rad": "чепоflow",
       "slike": 1,
-      "galerija": "w5-mijanovic",
       "napomena": {
         "sr": "rad je preimenovan: ranije „fliper”.",
         "en": "the work was renamed: earlier “fliper”."
-      }
+      },
+      "ceka": true
     },
     {
       "rb": 29,
@@ -283,7 +331,7 @@
       "indeks": "43/24",
       "rad": null,
       "slike": 1,
-      "galerija": "w5-parezanovic"
+      "ceka": true
     }
   ],
   "razjasni": [

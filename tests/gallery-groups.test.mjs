@@ -112,7 +112,7 @@ test('a continued work gathers every week the same student handed in',async()=>{
     setLanguage('sr');
     const page=galleryDetail(data,g.id);
     for(const p of [...g.photos,...earlier.photos]) assert.ok(page.includes(`src="${p.src}"`),g.id+' shows '+p.src);
-    assert.ok(page.includes('Čas 3')&&page.includes('Čas '+earlier.documentedWeek),g.id+' separates the weeks');
+    assert.ok(page.includes('Čas '+g.documentedWeek)&&page.includes('Čas '+earlier.documentedWeek),g.id+' separates the weeks');
   }
   // A continuation can only point at a work the register already holds.
   const bad=structuredClone(data);bad.galleries[0].continues='nepostojeci-rad';
