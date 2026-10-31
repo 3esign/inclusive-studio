@@ -165,10 +165,13 @@ export function renderDnevnik(people, { weeks = [] } = {}) {
   const card = p => {
     const weeksSorted = [...p.weeks.values()].sort((a, b) => b.week - a.week);
     const visits = [...p.visits];
-    const total = weeksSorted.reduce((s, w) => s + w.works.reduce((a, x) => a + x.photos, 0), 0);
+    // A visit is a week of work too: the count joins class weeks and visit weeks, photos include recognised visit frames.
+    const weekCount = new Set([...weeksSorted.map(w => w.week), ...visits.map(v => v.week).filter(w => w != null)]).size;
+    const total = weeksSorted.reduce((s, w) => s + w.works.reduce((a, x) => a + x.photos, 0), 0)
+      + visits.reduce((s, v) => s + v.works.reduce((a, w) => a + (w.count || 0), 0), 0);
     const summary = tr(
-      `${weeksSorted.length} week${weeksSorted.length === 1 ? '' : 's'} · ${total} photograph${total === 1 ? '' : 's'} · ${visits.length} visit${visits.length === 1 ? '' : 's'}`,
-      `${plural(weeksSorted.length, 'nedelja', 'nedelje', 'nedelja')} · ${plural(total, 'fotografija', 'fotografije', 'fotografija')} · ${plural(visits.length, 'poseta', 'posete', 'poseta')}`);
+      `${weekCount} week${weekCount === 1 ? '' : 's'} · ${total} photograph${total === 1 ? '' : 's'} · ${visits.length} visit${visits.length === 1 ? '' : 's'}`,
+      `${plural(weekCount, 'nedelja', 'nedelje', 'nedelja')} · ${plural(total, 'fotografija', 'fotografije', 'fotografija')} · ${plural(visits.length, 'poseta', 'posete', 'poseta')}`);
     // One line of time: newest on top. The class of a week stands above that week's visit.
     const timeline = [
       ...weeksSorted.map(w => ({ week: w.week, order: 0, date: w.rows[0]?.odrzan || '', html: weekBlock(w) })),
@@ -189,7 +192,7 @@ export function renderDnevnik(people, { weeks = [] } = {}) {
   return `<div class="page-top flow-intro"><div><p class="eyebrow">${tr('Journal', 'Dnevnik')}</p>
   <h1>${tr('Every name, and everything that stands beside it.', 'Svako ime, i sve što stoji uz njega.')}</h1></div>
   <p class="lede">${tr(`${people.length} people appear in the registers of this course: ${withWork.length} with a photographed work, ${photos} photographs in all. Each record joins the class lists, the register of works and the association visits — open a name and the whole history stands under it.`, `${number(people.length)} osoba pojavljuje se u registrima ovog predmeta: ${number(withWork.length)} sa fotografisanim radom, ukupno ${number(photos)} fotografija. Svaki zapis spaja spiskove časova, registar radova i posete udruženju — otvoriš ime i ispod njega stoji cela istorija.`)}</p></div>
-<p class="notice">${tr('This is not a roll-call. Attendance at the lecture has not been kept, so the journal says who appears in a register — on a class list, in the register of works, on a visit — never who was in the room. If your record is wrong or missing, say so in class.', 'Ovo nije prozivka. Evidencija prisustva na predavanju nije vođena, pa dnevnik govori ko se pojavljuje u registru — na spisku časa, u registru radova, na poseti — a ne ko je bio u sali. Ako je tvoj zapis pogrešan ili ga nema, javi na času.')}</p>
+<p class="notice">${tr('This is not a roll-call. Attendance at the lecture has not been kept, so the journal says who appears in a register — on a class list, in the register of works, on a visit — never who was in the room. Association visits are the exception: their lists are attendance and count as a week. If your record is wrong or missing, say so in class.', 'Ovo nije prozivka. Evidencija prisustva na predavanju nije vođena, pa dnevnik govori ko se pojavljuje u registru — na spisku časa, u registru radova, na poseti — a ne ko je bio u sali. Izuzetak su posete udruženju: njihov spisak je evidencija prisustva i računa se kao nedelja. Ako je tvoj zapis pogrešan ili ga nema, javi na času.')}</p>
 <section aria-labelledby="dnevnik-list-title"><div class="section-heading"><div><p class="eyebrow">${tr('By student number', 'Po broju indeksa')}</p><h2 id="dnevnik-list-title">${tr('The records', 'Zapisi')}</h2></div><p>${tr(`Weeks covered: ${weeks.join(', ')}. Open a name for the whole record, newest first.`, `Obuhvaćene nedelje: ${weeks.join(', ')}. Klik na ime otvara ceo dosije, od najnovijeg ka starijem.`)}</p></div>
   <div class="dnevnik-list">${people.map(card).join('')}</div>
 </section>
