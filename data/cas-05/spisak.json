@@ -13,8 +13,8 @@
     "en": "The list of the fifth class."
   },
   "lede": {
-    "sr": "Rad na prototipovima se nastavlja. Na spisku stoji 29 zapisa; 26 radova je fotografisano i objavljeno sa 81 fotografija. Ispod spiska su kadrovi bez imena i zapisi čije fotografije tek stižu — studenti neka se jave za ispravku.",
-    "en": "The prototype work continues. The list carries 29 entries; 26 works were photographed and published with 81 photographs. Below the list are unnamed frames and entries whose photographs are still to come — students, please get in touch with corrections."
+    "sr": "Rad na prototipovima se nastavlja. Na spisku stoji 29 zapisa; 28 radova je fotografisano i objavljeno sa 83 fotografija. Ispod spiska su kadrovi bez imena — studenti neka se jave za ispravku.",
+    "en": "The prototype work continues. The list carries 29 entries; 28 works were photographed and published with 83 photographs. Below the list are unnamed frames — students, please get in touch with corrections."
   },
   "source": {
     "id": "teacher-2026-10-30-cas-05",
@@ -30,12 +30,12 @@
   },
   "vezaneGalerije": true,
   "presek": {
-    "sr": "Niz od 86 kadrova sa telefona podeljen je redom nastavnikovog spiska. Kadrovi 82–84 (jedan rad, kartice sa tačkama) nemaju zapis na spisku; kadrovi 85–86 su grupni snimci u udruženju. Ivin i Andrejev kadar snimljeni su posle udruženja i tek se prenose.",
-    "en": "The sequence of 86 phone frames was cut in the order of the teacher’s list. Frames 82–84 (one work, cards with dots) have no entry on the list; frames 85–86 are group shots at the association. Iva’s and Andrej’s frames were taken after the association and are still being transferred."
+    "sr": "Niz od 90 kadrova sa telefona podeljen je redom nastavnikovog spiska. Kadrovi 82–84 (jedan rad, kartice sa tačkama) nemaju zapis na spisku; kadrovi 85–88 su grupni snimci u udruženju; Ivin kadar (89) i Andrejev (90) snimljeni su posle udruženja.",
+    "en": "The sequence of 90 phone frames was cut in the order of the teacher’s list. Frames 82–84 (one work, cards with dots) have no entry on the list; frames 85–88 are group shots at the association; Iva’s frame (89) and Andrej’s (90) were taken after the association."
   },
   "analizaUdruzenja": {
-    "sr": "Spisak beleži četiri fotografije iz udruženja; u nizu sa telefona nađene su dve (kadrovi 85–86, grupni snimci). Šest fotografija koje su snimili studenti stoji u zapisu posete ispod.",
-    "en": "The list records four association photographs; two were found in the phone sequence (frames 85–86, group shots). Six photographs taken by students stand in the visit record below."
+    "sr": "Spisak beleži četiri fotografije iz udruženja; sve četiri su nađene (kadrovi 85–88). To su grupni snimci i ne objavljuju se.",
+    "en": "The list records four association photographs; all four were found (frames 85–88). They are group shots and are not published."
   },
   "radovi": [
     {
@@ -324,7 +324,7 @@
         "sr": "rad je preimenovan: ranije „fliper”.",
         "en": "the work was renamed: earlier “fliper”."
       },
-      "ceka": true
+      "galerija": "w5-mijanovic-2"
     },
     {
       "rb": 29,
@@ -332,7 +332,7 @@
       "indeks": "43/24",
       "rad": null,
       "slike": 1,
-      "ceka": true
+      "galerija": "w5-parezanovic-2"
     }
   ],
   "razjasni": [

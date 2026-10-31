@@ -6959,6 +6959,70 @@
      "sourceId": "teacher-2026-10-30-cas-05"
     }
    ]
+  },
+  {
+   "id": "w5-mijanovic-2",
+   "title": {
+    "sr": "чепоflow",
+    "en": "чепоflow"
+   },
+   "documentedWeek": 5,
+   "sourceId": "teacher-2026-10-30-cas-05",
+   "author": {
+    "name": "Iva Mijanović",
+    "studentNumber": "28/24"
+   },
+   "listOrder": 28,
+   "photos": [
+    {
+     "id": "w5-mijanovic-2-01",
+     "src": "data/prototipovi/w5-mijanovic-2/01.jpg",
+     "sha256": "79b1d08c8590b5e04d6b2f0d07dd27514d0c4a5a047dd05d6d1313ea37cf843f",
+     "width": 720,
+     "height": 1280,
+     "alt": {
+      "sr": "чепоflow — prikaz 1 od 1.",
+      "en": "чепоflow — view 1 of 1."
+     },
+     "caption": {
+      "sr": "1 / 1",
+      "en": "1 / 1"
+     },
+     "sourceId": "teacher-2026-10-30-cas-05"
+    }
+   ]
+  },
+  {
+   "id": "w5-parezanovic-2",
+   "title": {
+    "sr": "Bez naziva",
+    "en": "Untitled"
+   },
+   "documentedWeek": 5,
+   "sourceId": "teacher-2026-10-30-cas-05",
+   "author": {
+    "name": "Andrej Parezanović",
+    "studentNumber": "43/24"
+   },
+   "listOrder": 29,
+   "photos": [
+    {
+     "id": "w5-parezanovic-2-01",
+     "src": "data/prototipovi/w5-parezanovic-2/01.jpg",
+     "sha256": "1d8dce6cdf7b1e2f4fd2ada1958da040d01c5e38cf52b8af5a3e0265fca2b1b9",
+     "width": 720,
+     "height": 1280,
+     "alt": {
+      "sr": "Bez naziva — prikaz 1 od 1.",
+      "en": "Untitled — view 1 of 1."
+     },
+     "caption": {
+      "sr": "1 / 1",
+      "en": "1 / 1"
+     },
+     "sourceId": "teacher-2026-10-30-cas-05"
+    }
+   ]
   }
  ],
  "cekaju": [
@@ -7131,44 +7195,6 @@
    "reason": {
     "sr": "Zapis petog časa bez fotografije: student je bio na konsultacijama.",
     "en": "A fifth-class entry without a photograph: the student attended for consultation."
-   }
-  },
-  {
-   "id": "w5-mijanovic",
-   "title": {
-    "sr": "чепоflow",
-    "en": "чепоflow"
-   },
-   "author": {
-    "name": "Iva Mijanović",
-    "studentNumber": "28/24"
-   },
-   "documentedWeek": 5,
-   "sourceId": "teacher-2026-10-30-cas-05",
-   "listOrder": 28,
-   "expectedPhotos": 1,
-   "reason": {
-    "sr": "Kadar je snimljen posle grupnih snimaka u udruženju i još nije prenet sa telefona.",
-    "en": "The frame was taken after the group shots at the association and has not yet been transferred from the phone."
-   }
-  },
-  {
-   "id": "w5-parezanovic",
-   "title": {
-    "sr": "Bez naziva",
-    "en": "Untitled"
-   },
-   "author": {
-    "name": "Andrej Parezanović",
-    "studentNumber": "43/24"
-   },
-   "documentedWeek": 5,
-   "sourceId": "teacher-2026-10-30-cas-05",
-   "listOrder": 29,
-   "expectedPhotos": 1,
-   "reason": {
-    "sr": "Kadar je snimljen posle grupnih snimaka u udruženju i još nije prenet sa telefona.",
-    "en": "The frame was taken after the group shots at the association and has not yet been transferred from the phone."
    }
   }
  ]
