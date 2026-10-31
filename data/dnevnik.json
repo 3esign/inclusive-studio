@@ -32,6 +32,10 @@
     {
       "file": "data/poseta-2026-10-23.json",
       "page": "poseta-w04.html"
+    },
+    {
+      "file": "data/poseta-2026-10-30.json",
+      "page": "cas-05.html"
     }
   ],
   "weeks": [

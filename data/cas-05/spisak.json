@@ -353,5 +353,6 @@
         "en": "The valid name forms of entries 1 and 3 of this list are confirmed; the same forms now stand in the third- and fourth-class lists. Entry 17 of this list and entry 30 of the third class are the same student: the name is corrected and the student number added."
       }
     }
-  ]
+  ],
+  "posetaRegistar": "data/poseta-2026-10-30.json"
 }

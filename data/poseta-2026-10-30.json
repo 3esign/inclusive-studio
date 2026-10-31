@@ -1,0 +1,161 @@
+{
+  "schema": "course-visit/v1",
+  "id": "poseta-udruzenje-2026-10-30",
+  "week": 5,
+  "occurredOn": "2026-10-30",
+  "place": {
+    "sr": "Udruženje „Živimo zajedno”, Beograd",
+    "en": "The Živimo zajedno association, Belgrade"
+  },
+  "source": {
+    "id": "teacher-2026-10-31-poseta",
+    "recordedOn": "2026-10-31",
+    "description": {
+      "sr": "Spisak studenata na poseti udruženju 30.10.2026. poslala je mejlom istog dana jedna od učesnica posete, uz Drive folder sa fotografijama; nastavnik ga je 31.10.2026. zaveo kao spisak posete petog časa. Redosled je kako je spisak poslat. Imena su upisana sa dijakritikom i oblikom koji za isti broj indeksa već stoji u registru; tri broja indeksa se ovde javljaju prvi put. Fotografije posete još nisu prenete.",
+      "en": "The list of students on the association visit of 30 October 2026 was sent by email the same day by one of the visit’s participants, with a Drive folder of photographs; the teacher filed it on 31 October 2026 as the visit list of the fifth class. The order is as the list was sent. Names are written with the diacritics and the form already standing in the register for the same student number; three student numbers appear here for the first time. The visit photographs have not yet been transferred."
+    }
+  },
+  "participants": [
+    {
+      "name": "Ognjen Mijaljević",
+      "studentNumber": "25/24"
+    },
+    {
+      "name": "Boris Vulićević",
+      "studentNumber": "63/24"
+    },
+    {
+      "name": "Lena Kovačić",
+      "studentNumber": "132/24"
+    },
+    {
+      "name": "Sara Janjić",
+      "studentNumber": "4/24"
+    },
+    {
+      "name": "Teodora Todorić",
+      "studentNumber": "39/24"
+    },
+    {
+      "name": "Marco Arjuna Maksimović",
+      "studentNumber": "75/24"
+    },
+    {
+      "name": "Anđela Deurić",
+      "studentNumber": "137/24"
+    },
+    {
+      "name": "Nevena Grkić",
+      "studentNumber": "62/24"
+    },
+    {
+      "name": "Iva Žunić",
+      "studentNumber": "110/24"
+    },
+    {
+      "name": "Anđela Cvetković",
+      "studentNumber": "125/24"
+    },
+    {
+      "name": "Andrija Bošković",
+      "studentNumber": "26/24"
+    },
+    {
+      "name": "Katarina Ušjak",
+      "studentNumber": "86/24"
+    },
+    {
+      "name": "Lena Dukić",
+      "studentNumber": "131/24"
+    },
+    {
+      "name": "Iva Mijanović",
+      "studentNumber": "28/24"
+    },
+    {
+      "name": "Marija Bajić",
+      "studentNumber": "114/24"
+    },
+    {
+      "name": "Petra Nešić",
+      "studentNumber": "94/24"
+    },
+    {
+      "name": "Lazar Leo Ćopić",
+      "studentNumber": "142/24"
+    },
+    {
+      "name": "Maša Jotić",
+      "studentNumber": "134/24"
+    },
+    {
+      "name": "Andrej Rackov",
+      "studentNumber": "41/24"
+    },
+    {
+      "name": "Andrej Parezanović",
+      "studentNumber": "43/24"
+    },
+    {
+      "name": "Natalija Spasojević",
+      "studentNumber": "52/24"
+    },
+    {
+      "name": "Dunja Ljubičić",
+      "studentNumber": "38/24"
+    },
+    {
+      "name": "Emilija Nikolić",
+      "studentNumber": "82/24"
+    },
+    {
+      "name": "Vanja Trkulja",
+      "studentNumber": "124/24"
+    },
+    {
+      "name": "Tijana Velemir",
+      "studentNumber": "51/24"
+    },
+    {
+      "name": "Maša Marković",
+      "studentNumber": "121/24"
+    },
+    {
+      "name": "Igor Stablović",
+      "studentNumber": "6/24"
+    },
+    {
+      "name": "Sofia Ocanto Jovičić",
+      "studentNumber": "138/24"
+    },
+    {
+      "name": "Nevena Šiljakinjić",
+      "studentNumber": "116/23"
+    },
+    {
+      "name": "Nađa Stojčević",
+      "studentNumber": "144/24"
+    },
+    {
+      "name": "Ana Rangelov",
+      "studentNumber": "149/24"
+    },
+    {
+      "name": "Anđela Mićković",
+      "studentNumber": "37/2024"
+    },
+    {
+      "name": "Viktor Šešum",
+      "studentNumber": "56/24"
+    },
+    {
+      "name": "Mihailo Maksimović",
+      "studentNumber": "68/24"
+    }
+  ],
+  "summary": {
+    "sr": "Treća poseta udruženju sa prototipima, u petak 30.10.2026, istog dana kad je održan peti čas. Na spisku posete su trideset četiri studenta; devetnaest od njih ima rad zaveden na spisku petog časa, a petnaest dolazi bez rada zavedenog tog dana. Fotografije iz udruženja još nisu prenete, pa ovaj zapis nosi spisak i ono što se zna, bez nalaza po radu; analiza se piše kad fotografije stignu.",
+    "en": "The third association visit with prototypes, on Friday 30 October 2026, the same day as the fifth class. Thirty-four students stand on the visit list; nineteen of them have a work filed on the fifth-class list, and fifteen come without a work filed that day. The photographs from the association have not yet been transferred, so this record carries the list and what is known, without per-work findings; the analysis is written when the photographs arrive."
+  },
+  "photos": []
+}

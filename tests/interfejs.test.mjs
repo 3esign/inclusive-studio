@@ -12,7 +12,9 @@ import { readFile, readdir } from 'node:fs/promises';
 const root = new URL('../', import.meta.url);
 const registry = JSON.parse(await readFile(new URL('data/prototipovi.json', root), 'utf8'));
 // Each visit has its own register; the roster may stand only where that register is named.
-const VISITS = ['data/poseta.json', 'data/poseta-w03.json', 'data/poseta-2026-10-23.json'];
+// 31.10.2026: the list of visits comes from the journal manifest, not from a hand-kept list —
+// a new visit register is gated the moment it is filed.
+const VISITS = JSON.parse(await readFile(new URL('data/dnevnik.json', root), 'utf8')).visits.map(v => v.file);
 const visitByFile = {};
 for (const file of VISITS) visitByFile[file] = JSON.parse(await readFile(new URL(file, root), 'utf8'));
 const visits = Object.values(visitByFile);
