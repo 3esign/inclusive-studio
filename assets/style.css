@@ -906,7 +906,7 @@ body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width
 .visit-finding{border-top:1px solid var(--line);padding:1.5rem 0;display:grid;gap:.75rem}
 .visit-finding h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem;margin:0}
 .visit-finding .gallery-link{font-size:.88rem;font-weight:400}
-.visit-photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin:.25rem 0}
+.visit-photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem;margin:.25rem 0}
 .visit-photos .prototype-photo{margin:0}
 .visit-no-photo{font-size:.92rem;color:var(--muted)}
 .visit-label{font-weight:700;margin-right:.45rem}
