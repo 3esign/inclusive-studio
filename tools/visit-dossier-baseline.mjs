@@ -31,4 +31,4 @@ const after = before.slice(0, before.indexOf(start) + start.length)
   + before.slice(before.indexOf(end));
 if (before !== after) await writeFile(target, after);
 const bound = new Set(visit.photos.flatMap(p => p.radovi || []));
-console.log(JSON.stringify({ page, changed: before !== after, kadrova: visit.photos.length, radova: bound.size, nalaza: visit.findings.length }));
+console.log(JSON.stringify({ page, changed: before !== after, kadrova: visit.photos.length, radova: bound.size, nalaza: (visit.findings || []).length }));

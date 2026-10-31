@@ -11,8 +11,8 @@
     "id": "teacher-2026-10-31-poseta",
     "recordedOn": "2026-10-31",
     "description": {
-      "sr": "Spisak studenata na poseti udruženju 30.10.2026. poslala je mejlom istog dana jedna od učesnica posete, uz Drive folder sa fotografijama; nastavnik ga je 31.10.2026. zaveo kao spisak posete petog časa. Redosled je kako je spisak poslat. Imena su upisana sa dijakritikom i oblikom koji za isti broj indeksa već stoji u registru; tri broja indeksa se ovde javljaju prvi put. Fotografije posete još nisu prenete.",
-      "en": "The list of students on the association visit of 30 October 2026 was sent by email the same day by one of the visit’s participants, with a Drive folder of photographs; the teacher filed it on 31 October 2026 as the visit list of the fifth class. The order is as the list was sent. Names are written with the diacritics and the form already standing in the register for the same student number; three student numbers appear here for the first time. The visit photographs have not yet been transferred."
+      "sr": "Spisak studenata na poseti udruženju 30.10.2026. poslala je mejlom istog dana jedna od učesnica posete, uz Drive folder sa šest fotografija koje su snimili studenti (14:03–14:11); nastavnik ga je 31.10.2026. zaveo kao spisak i materijal posete petog časa. Redosled spiska je kako je poslat. Imena su upisana sa dijakritikom i oblikom koji za isti broj indeksa već stoji u registru; tri broja indeksa se ovde javljaju prvi put. Fotografije su prevedene iz HEIC u JPG bez metapodataka; originali se čuvaju sa otiskom.",
+      "en": "The list of students on the association visit of 30 October 2026 was sent by email the same day by one of the visit’s participants, with a Drive folder of six photographs taken by students (14:03–14:11); the teacher filed it on 31 October 2026 as the visit list and material of the fifth class. The list order is as sent. Names are written with the diacritics and the form already standing in the register for the same student number; three student numbers appear here for the first time. The photographs were converted from HEIC to JPG without metadata; the originals are kept with fingerprints."
     }
   },
   "participants": [
@@ -154,8 +154,111 @@
     }
   ],
   "summary": {
-    "sr": "Treća poseta udruženju sa prototipima, u petak 30.10.2026, istog dana kad je održan peti čas. Na spisku posete su trideset četiri studenta; devetnaest od njih ima rad zaveden na spisku petog časa, a petnaest dolazi bez rada zavedenog tog dana. Fotografije iz udruženja još nisu prenete, pa ovaj zapis nosi spisak i ono što se zna, bez nalaza po radu; analiza se piše kad fotografije stignu.",
-    "en": "The third association visit with prototypes, on Friday 30 October 2026, the same day as the fifth class. Thirty-four students stand on the visit list; nineteen of them have a work filed on the fifth-class list, and fifteen come without a work filed that day. The photographs from the association have not yet been transferred, so this record carries the list and what is known, without per-work findings; the analysis is written when the photographs arrive."
+    "sr": "Treća poseta udruženju sa prototipima, u petak 30.10.2026, istog dana kad je održan peti čas. Na spisku posete su trideset četiri studenta; devetnaest od njih ima rad zaveden na spisku petog časa, a petnaest dolazi bez rada zavedenog tog dana. Šest fotografija posete snimili su studenti; na dve je prepoznat rad sa spiska petog časa (tabla sa kanapom i tabla sa oblicima), a na jednoj i list sa tačkama čiji autor još nije zaveden. Analiza po radu piše se kad stignu i preostali kadrovi.",
+    "en": "The third association visit with prototypes, on Friday 30 October 2026, the same day as the fifth class. Thirty-four students stand on the visit list; nineteen of them have a work filed on the fifth-class list, and fifteen come without a work filed that day. Six photographs of the visit were taken by students; two show a work recognised from the fifth-class list (the cord board and the shape board), and one also shows the dot sheet whose maker is not yet recorded. The per-work analysis is written when the remaining frames arrive."
   },
-  "photos": []
+  "photos": [
+    {
+      "id": "w05-drive-01",
+      "src": "data/prototipovi/poseta-w05/drive-01.jpg",
+      "sha256": "e600e15c651f2d0bb6b52e9f4d2b53d1383fa2b95080581a1692e6a6efcaf9f4",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Na stolu siva tabla sa belim kanapom uvijenim u petlje i list sa slikama obojenih kocki; student pruža plitku kutiju posetiteljki koja stoji.",
+        "en": "On the table a grey board with white cord wound into loops and a sheet with pictures of coloured cubes; a student hands a shallow tray to a standing visitor."
+      },
+      "caption": {
+        "sr": "Tabla sa kanapom stoji na stolu dok se kutija predaje iz ruke u ruku (14:03).",
+        "en": "The cord board lies on the table while the tray passes from hand to hand (14:03)."
+      },
+      "sourceId": "teacher-2026-10-31-poseta",
+      "radovi": [
+        "w5-usjak"
+      ]
+    },
+    {
+      "id": "w05-drive-02",
+      "src": "data/prototipovi/poseta-w05/drive-02.jpg",
+      "sha256": "121b8a173b878c91cde57f2972d86cbab7ee1f2339b4716abf58889b7e58bf62",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Dvoje studenata stoji uz sto sa raznobojnim kockama i karticama; jedan drži karticu sa nacrtanim slaganjem.",
+        "en": "Two students stand at a table with coloured cubes and cards; one holds a card with a drawn arrangement."
+      },
+      "caption": {
+        "sr": "Kocke i kartice sa zadatim slaganjem na zajedničkom stolu (14:05).",
+        "en": "Cubes and cards with a set arrangement on the shared table (14:05)."
+      },
+      "sourceId": "teacher-2026-10-31-poseta"
+    },
+    {
+      "id": "w05-drive-03",
+      "src": "data/prototipovi/poseta-w05/drive-03.jpg",
+      "sha256": "3510bc59bd161396078de6b5e7ae68c563a42973aa29b9905f546f3bc85e576b",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Studentkinja stoji uz klupu; član udruženja koji sedi drži prsten, a student mu pruža srebrnu kuglu.",
+        "en": "A student stands by a bench; a seated association member holds a ring while another student hands over a silver ball."
+      },
+      "caption": {
+        "sr": "Predmeti se probaju sedeći, iz ruke u ruku (14:05).",
+        "en": "Objects are tried seated, passed hand to hand (14:05)."
+      },
+      "sourceId": "teacher-2026-10-31-poseta"
+    },
+    {
+      "id": "w05-drive-04",
+      "src": "data/prototipovi/poseta-w05/drive-04.jpg",
+      "sha256": "83cbc1dc6442448db8bbba3d139f5e3fc110e27a1216c3ac4dad3cffb8dec80a",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Gužva oko stola sa raznobojnim kockama; više ruku istovremeno slaže.",
+        "en": "A crowd around a table of coloured cubes; several hands build at once."
+      },
+      "caption": {
+        "sr": "Za stolom sa kockama radi više ljudi u isto vreme (14:08).",
+        "en": "Several people work at the cube table at the same time (14:08)."
+      },
+      "sourceId": "teacher-2026-10-31-poseta"
+    },
+    {
+      "id": "w05-drive-05",
+      "src": "data/prototipovi/poseta-w05/drive-05.jpg",
+      "sha256": "a5a64c26df32902d38c811a25f1139ce39d2389e665dee5735ba42b2ee029151",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Širi kadar prostorije: sto sa kockama, drvenom tablom i karticama, studenti i članovi udruženja okolo.",
+        "en": "A wider view of the room: a table with cubes, a wooden board and cards, students and association members around it."
+      },
+      "caption": {
+        "sr": "Prostorija udruženja tokom posete (14:09).",
+        "en": "The association room during the visit (14:09)."
+      },
+      "sourceId": "teacher-2026-10-31-poseta"
+    },
+    {
+      "id": "w05-drive-06",
+      "src": "data/prototipovi/poseta-w05/drive-06.jpg",
+      "sha256": "9720fbf5f40f0a647035efde6a1805c71898ccb1d7372bb594f0fc5438b67818",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "U prvom planu dvoje gledaju list sa mrežom obojenih tačaka i drže male kartice; iza njih drvena tabla sa obojenim oblicima u krilu.",
+        "en": "In front, two people look at a sheet with a grid of coloured dots and hold small cards; behind them a wooden board with coloured shapes rests on a lap."
+      },
+      "caption": {
+        "sr": "Tabla sa oblicima u krilu i list sa tačkama u rukama — list je istog izgleda kao rad sa kadrova 82–84 petog časa, čiji autor još nije zaveden (14:11).",
+        "en": "The shape board on a lap and the dot sheet in hand — the sheet looks like the work in frames 82–84 of the fifth class, whose maker is not yet recorded (14:11)."
+      },
+      "sourceId": "teacher-2026-10-31-poseta",
+      "radovi": [
+        "w5-bajic"
+      ]
+    }
+  ]
 }

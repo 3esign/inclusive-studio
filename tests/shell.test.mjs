@@ -22,7 +22,7 @@ const MODULES = {
   'poseta.html': 'poseta.js', 'cas-03.html': 'cas.js', 'cas-04.html': 'classlist.js', 'cas-05.html': 'classlist.js',
   // 24.10.2026: the visit dossier and the journal are their own lean surfaces — one page
   // names its visit register, the other the manifest of registers it joins.
-  'poseta-w04.html': 'visit-page.js', 'dnevnik.html': 'dnevnik.js'
+  'poseta-w04.html': 'visit-page.js', 'poseta-w05.html': 'visit-page.js', 'dnevnik.html': 'dnevnik.js'
 };
 
 test('the established primary destinations and lecture/source routes cannot disappear together with generated shells', () => {

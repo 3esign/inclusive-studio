@@ -31,13 +31,13 @@ const cas03 = classLists['cas-03.html'].data;
 // register names that visit — and nowhere else.
 // 24.10.2026: a dossier page names its own visit, exactly as a class page names its
 // register — the roster follows the register, never a hand-kept list of pages.
-const DOSSIERS = { 'poseta-w04.html': 'data/poseta-2026-10-23.json' };
+const DOSSIERS = { 'poseta-w04.html': 'data/poseta-2026-10-23.json', 'poseta-w05.html': 'data/poseta-2026-10-30.json' };
 const visitSurfaces = record => ['index.html', 'poseta.html', 'dnevnik.html',
   ...Object.entries(classLists)
     .filter(([, entry]) => entry.data.posetaRegistar && visitByFile[entry.data.posetaRegistar] === record)
     .map(([page]) => page),
   ...Object.entries(DOSSIERS).filter(([, file]) => visitByFile[file] === record).map(([page]) => page)];
-const GALLERY_SURFACES = new Set(['cas-03.html', 'naslovna.html', 'index.html', 'sledeci.html', 'poseta-w04.html']);
+const GALLERY_SURFACES = new Set(['cas-03.html', 'naslovna.html', 'index.html', 'sledeci.html', 'poseta-w04.html', 'poseta-w05.html']);
 // The journal joins the registers on the student number. It may publish exactly the two
 // fields those registers already publish, and only inside its own marked record.
 const JOURNAL_SURFACE = 'dnevnik.html';
