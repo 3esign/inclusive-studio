@@ -4,7 +4,13 @@ import { mount, loadJSON, $, tr } from './core.js';
 import { buildJournal, renderDnevnik } from './dnevnik-core.js';
 
 let html = null;
-function render() { if (html) $('#dnevnik-content').innerHTML = html; }
+// A link to one record (dnevnik.html#dnevnik-28-24) opens that record.
+const openFromHash = () => {
+  const target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (target && target.tagName === 'DETAILS') { target.open = true; target.scrollIntoView({ block: 'start' }); }
+};
+addEventListener('hashchange', openFromHash);
+function render() { if (html) $('#dnevnik-content').innerHTML = html; openFromHash(); }
 mount({ view: 'journal', render, title: () => tr('Journal', 'Dnevnik') });
 
 loadJSON('data/dnevnik.json').then(async manifest => {

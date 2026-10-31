@@ -1042,17 +1042,24 @@ body[data-view=next] :is(.bring-list>li,.plan-list>li,.plan-list>li>*){min-width
 .work-trail small{color:var(--muted);margin-left:.4rem}
 
 /* The journal: one card per person, newest week first. */
-.dnevnik-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem;margin-top:1.5rem;align-items:start}
-.dnevnik-student{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:1.1rem 1.2rem 1.2rem}
-.dnevnik-student h3{margin:0;font-size:1.12rem;display:flex;flex-wrap:wrap;gap:.2rem .6rem;align-items:baseline}
+.dnevnik-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.6rem;margin-top:1.5rem;align-items:start}
+.dnevnik-student{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);min-width:0}
+.dnevnik-student[open]{grid-column:1/-1}
+.dnevnik-student>summary{cursor:pointer;list-style:none;padding:.75rem 1rem;display:grid;gap:.15rem}
+.dnevnik-student>summary::-webkit-details-marker{display:none}
+.dnevnik-student>summary:hover h3 [data-author-name]{text-decoration:underline}
+.dnevnik-student h3{margin:0;font-size:1.05rem;display:flex;flex-wrap:wrap;gap:.2rem .6rem;align-items:baseline}
 .dnevnik-student h3 [data-author-number]{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums;font-weight:400}
-.dnevnik-summary{margin:.3rem 0 .9rem;font-size:.82rem;color:var(--muted)}
-.dnevnik-week,.dnevnik-visit{border-top:1px solid var(--line);padding-top:.7rem;margin-top:.7rem}
+.dnevnik-summary{font-size:.8rem;color:var(--muted)}
+.dnevnik-timeline{list-style:none;margin:0;padding:0 1rem 1rem}
+.dnevnik-entry{border-top:1px solid var(--line);padding-top:.7rem;margin-top:.7rem}
 .dnevnik-week-head{margin:0 0 .4rem;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-.dnevnik-works{list-style:none;padding:0;margin:0;display:grid;gap:.35rem}
+.dnevnik-works{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}
 .dnevnik-works li{font-size:.92rem}
 .dnevnik-works small{color:var(--muted);font-size:.8rem}
 .dnevnik-awaited{color:var(--muted)}
-.dnevnik-note{margin:.3rem 0 0;font-size:.8rem;color:var(--muted)}
+.dnevnik-prilozi{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.4rem}
+.dnevnik-prilozi img{width:auto;height:96px;max-width:160px;object-fit:cover;border-radius:4px;border:1px solid var(--line);display:block}
+.dnevnik-note{margin:0;font-size:.8rem;color:var(--muted)}
 .dnevnik-open{border-left:2px solid var(--line);padding-left:.6rem}
-@media(max-width:480px){.dnevnik-list{grid-template-columns:1fr}}
+@media(max-width:480px){.dnevnik-list{grid-template-columns:minmax(0,1fr)}.dnevnik-prilozi img{height:72px}}

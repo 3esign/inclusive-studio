@@ -20,6 +20,8 @@ export const indexKey = value => {
 const personKey = (name, studentNumber) => indexKey(studentNumber) || `ime:${String(name || '').trim().toLowerCase()}`;
 const srDate = iso => iso.split('-').reverse().join('.');
 
+const thumbs = photos => (photos || []).filter(p => p && p.src).map(p => ({ src: p.src, width: p.width || null, height: p.height || null, alt: p.alt ? tx(p.alt) : '' }));
+
 /* ---------- joining ---------- */
 
 export function buildJournal({ lists = [], visits = [], prototypes = {} } = {}) {
@@ -45,7 +47,7 @@ export function buildJournal({ lists = [], visits = [], prototypes = {} } = {}) 
   // Works first: the register of works is the only place authorship is established.
   for (const g of prototypes.galleries || []) {
     const found = person(g.author?.name, g.author?.studentNumber);
-    weekOf(found, g.documentedWeek).works.push({ kind: 'gallery', id: g.id, title: tx(g.title), photos: (g.photos || []).length });
+    weekOf(found, g.documentedWeek).works.push({ kind: 'gallery', id: g.id, title: tx(g.title), photos: (g.photos || []).length, prilozi: thumbs(g.photos) });
   }
   for (const w of prototypes.cekaju || []) {
     const found = person(w.author?.name, w.author?.studentNumber);
@@ -55,7 +57,7 @@ export function buildJournal({ lists = [], visits = [], prototypes = {} } = {}) 
     // The teacher's own examples are course material, not a student record.
     if (item.authorRole === 'teacher') continue;
     const found = person(item.author?.name, item.author?.studentNumber);
-    weekOf(found, item.documentedWeek).works.push({ kind: 'item', id: item.id, title: item.title, photos: (item.photos || []).length });
+    weekOf(found, item.documentedWeek).works.push({ kind: 'item', id: item.id, title: tx(item.title), photos: (item.photos || []).length, prilozi: thumbs(item.photos) });
   }
   // Class lists add the row number a student looks for, and the note written beside it.
   for (const list of lists) {
@@ -68,15 +70,18 @@ export function buildJournal({ lists = [], visits = [], prototypes = {} } = {}) 
   }
   // Visits: who went, and how many frames of their own work came back from that day.
   for (const visit of visits) {
-    const bound = new Map();
+    const bound = new Map(), framesOf = new Map();
     for (const photo of visit.photos || []) {
-      for (const id of photo.radovi || []) bound.set(id, (bound.get(id) || 0) + 1);
+      for (const id of photo.radovi || []) {
+        bound.set(id, (bound.get(id) || 0) + 1);
+        framesOf.set(id, [...(framesOf.get(id) || []), photo]);
+      }
     }
     for (const p of visit.participants || []) {
       const found = person(p.name, p.studentNumber);
       const mine = [...bound.entries()]
         .filter(([id]) => personKey(galleryById.get(id)?.author?.name, galleryById.get(id)?.author?.studentNumber) === found.key)
-        .map(([id, count]) => ({ id, count, title: tx(galleryById.get(id).title) }));
+        .map(([id, count]) => ({ id, count, title: tx(galleryById.get(id).title), prilozi: thumbs(framesOf.get(id)) }));
       found.visits.push({ id: visit.id, week: visit.week, occurredOn: visit.occurredOn, place: tx(visit.place), page: visit.page, works: mine, bound: bound.size > 0 });
     }
   }
@@ -130,28 +135,27 @@ export function buildJournal({ lists = [], visits = [], prototypes = {} } = {}) 
 const plural = (n, one, few, many) => `${n} ${n % 10 === 1 && n % 100 !== 11 ? one : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? few : many}`;
 const photoCount = n => tr(`${n} photo${n === 1 ? '' : 's'}`, plural(n, 'fotografija', 'fotografije', 'fotografija'));
 
+// One format for every record: a dated head, the work, its attachments. The registers keep
+// their notes and reasons; the record shows only what was done and where it stands.
+const strip = (prilozi, href) => prilozi && prilozi.length
+  ? `<div class="dnevnik-prilozi">${prilozi.map(p => `<a href="${esc(href)}"><img src="${esc(p.src)}" alt="${esc(p.alt)}" loading="lazy" decoding="async"${p.width && p.height ? ` width="${p.width}" height="${p.height}"` : ''}></a>`).join('')}</div>`
+  : '';
+
 function weekBlock(entry) {
   const row = entry.rows[0];
   const works = entry.works.map(work => {
-    if (work.kind === 'awaited') return `<li class="dnevnik-awaited"><b>${esc(work.title)}</b> <span class="dnevnik-note">${tr('photographs still to come', 'fotografije tek stižu')}</span>${work.reason ? `<br><span class="dnevnik-note">${esc(work.reason)}</span>` : ''}</li>`;
-    if (work.kind === 'item') return `<li><b>${esc(work.title)}</b> <small>${photoCount(work.photos)}</small> <a href="prototipovi.html#${esc(work.id)}">${tr('in the register', 'u registru')} ↗</a></li>`;
-    return `<li><b>${esc(work.title)}</b> <small>${photoCount(work.photos)}</small> <a href="galerija-${esc(work.id)}.html">${tr('open the work', 'otvori rad')} ↗</a></li>`;
+    if (work.kind === 'awaited') return `<li class="dnevnik-awaited"><b>${esc(work.title)}</b> <small>${tr('no photograph yet', 'bez fotografije')}</small></li>`;
+    const href = work.kind === 'item' ? `prototipovi.html#${work.id}` : `galerija-${work.id}.html`;
+    return `<li><b>${esc(work.title)}</b> <small>${photoCount(work.photos)}</small> <a href="${esc(href)}">${tr('open', 'otvori')} ↗</a>${strip(work.prilozi, href)}</li>`;
   }).join('');
   const listLink = row && row.page ? ` · <a href="${esc(row.page)}${row.kotva ? '#' + esc(row.kotva) : ''}">${tr('entry', 'zapis')} ${row.rb}</a>` : '';
-  const note = row && row.napomena ? `<p class="dnevnik-note">${esc(row.napomena)}</p>` : '';
-  const empty = !works ? `<p class="dnevnik-note">${tr('Attendance recorded, no photographed work this week.', 'Prisustvo zavedeno, bez fotografisanog rada te nedelje.')}</p>` : '';
-  return `<div class="dnevnik-week"><p class="dnevnik-week-head">${tr('Week', 'Nedelja')} ${entry.week}${row && row.odrzan ? ` · <time datetime="${esc(row.odrzan)}">${esc(srDate(row.odrzan))}.</time>` : ''}${listLink}</p>${works ? `<ul class="dnevnik-works">${works}</ul>` : ''}${empty}${note}</div>`;
+  const date = row && row.odrzan ? `<time datetime="${esc(row.odrzan)}">${esc(srDate(row.odrzan))}.</time> · ` : '';
+  return `<li class="dnevnik-entry"><p class="dnevnik-week-head">${date}${tr('Class', 'Čas')} · ${tr('week', 'nedelja')} ${entry.week}${listLink}</p>${works ? `<ul class="dnevnik-works">${works}</ul>` : `<p class="dnevnik-note">${tr('no work', 'bez rada')}</p>`}</li>`;
 }
 
 function visitBlock(v) {
-  // A visit whose frames were never bound to works says nothing about any one person —
-  // „no frame of theirs was recognised” would read as a finding where none was made.
-  const works = v.works.length
-    ? v.works.map(w => `<a href="${esc(v.page)}#poseta-${esc(w.id)}">${esc(w.title)} · ${plural(w.count, 'kadar', 'kadra', 'kadrova')}</a>`).join(' · ')
-    : v.bound
-      ? `<span class="dnevnik-note">${tr('present; no frame of their own work was recognised that day', 'prisutan/na; tog dana nije prepoznat nijedan kadar njihovog rada')}</span>`
-      : `<span class="dnevnik-note">${tr('present; the frames of that visit are not tied to single works', 'prisutan/na; kadrovi te posete nisu vezani za pojedinačne radove')}</span>`;
-  return `<div class="dnevnik-visit"><p class="dnevnik-week-head">${tr('Association visit', 'Poseta udruženju')} · <time datetime="${esc(v.occurredOn)}">${esc(srDate(v.occurredOn))}.</time> · <a href="${esc(v.page)}">${tr('the visit', 'poseta')} ↗</a></p><p>${works}</p></div>`;
+  const works = v.works.map(w => `<li><b>${esc(w.title)}</b> <small>${plural(w.count, 'kadar', 'kadra', 'kadrova')}</small> <a href="${esc(v.page)}#poseta-${esc(w.id)}">${tr('open', 'otvori')} ↗</a>${strip(w.prilozi, `${v.page}#poseta-${w.id}`)}</li>`).join('');
+  return `<li class="dnevnik-entry dnevnik-visit"><p class="dnevnik-week-head"><time datetime="${esc(v.occurredOn)}">${esc(srDate(v.occurredOn))}.</time> · ${tr('Association visit', 'Poseta udruženju')} · <a href="${esc(v.page)}">${tr('the visit', 'poseta')} ↗</a></p>${works ? `<ul class="dnevnik-works">${works}</ul>` : ''}</li>`;
 }
 
 export function renderDnevnik(people, { weeks = [] } = {}) {
@@ -160,27 +164,33 @@ export function renderDnevnik(people, { weeks = [] } = {}) {
 
   const card = p => {
     const weeksSorted = [...p.weeks.values()].sort((a, b) => b.week - a.week);
-    const visits = [...p.visits].sort((a, b) => String(b.occurredOn).localeCompare(String(a.occurredOn)));
+    const visits = [...p.visits];
     const total = weeksSorted.reduce((s, w) => s + w.works.reduce((a, x) => a + x.photos, 0), 0);
-    const spans = weeksSorted.map(w => w.week);
     const summary = tr(
-      `${spans.length} week${spans.length === 1 ? '' : 's'} · ${total} photograph${total === 1 ? '' : 's'} · ${visits.length} visit${visits.length === 1 ? '' : 's'}`,
-      `${plural(spans.length, 'nedelja', 'nedelje', 'nedelja')} · ${plural(total, 'fotografija', 'fotografije', 'fotografija')} · ${plural(visits.length, 'poseta', 'posete', 'poseta')}`);
-    const conflict = p.problems.length ? `<p class="dnevnik-note dnevnik-open">${tr('The same name also stands under another student number', 'Isto ime stoji i pod drugim brojem indeksa')}: ${p.problems.map(esc).join(', ')} — ${tr('two records for one person; confirmed in class', 'dva zapisa za jednu osobu; potvrđuje se na času')}.</p>` : '';
-    const noNumber = !p.studentNumber ? `<p class="dnevnik-note dnevnik-open">${tr('No student number recorded — the record stands on the name alone.', 'Broj indeksa nije zaveden — zapis stoji samo na imenu.')}</p>` : '';
-    const joined = p.spojenoPoImenu ? `<p class="dnevnik-note">${tr('A list row without a student number was joined to this record by the name alone; the number comes from the register of works.', 'Red spiska bez broja indeksa spojen je sa ovim zapisom samo po imenu; broj dolazi iz registra radova.')}</p>` : '';
-    return `<article class="dnevnik-student" id="dnevnik-${esc(p.key.replace(/[^a-z0-9]+/gi, '-').toLowerCase())}">
-  <header data-dnevnik-student="${esc(p.studentNumber || p.name || '')}"><h3><span data-author-name>${esc(p.name || '—')}</span><span data-author-number>${esc(p.studentNumber || '—')}</span></h3></header>
-  <p class="dnevnik-summary">${summary}</p>${conflict}${noNumber}${joined}
-  ${weeksSorted.map(weekBlock).join('')}${visits.map(visitBlock).join('')}
-</article>`;
+      `${weeksSorted.length} week${weeksSorted.length === 1 ? '' : 's'} · ${total} photograph${total === 1 ? '' : 's'} · ${visits.length} visit${visits.length === 1 ? '' : 's'}`,
+      `${plural(weeksSorted.length, 'nedelja', 'nedelje', 'nedelja')} · ${plural(total, 'fotografija', 'fotografije', 'fotografija')} · ${plural(visits.length, 'poseta', 'posete', 'poseta')}`);
+    // One line of time: newest on top. The class of a week stands above that week's visit.
+    const timeline = [
+      ...weeksSorted.map(w => ({ week: w.week, order: 0, date: w.rows[0]?.odrzan || '', html: weekBlock(w) })),
+      ...visits.map(v => ({ week: v.week ?? 0, order: 1, date: v.occurredOn || '', html: visitBlock(v) }))
+    ].sort((a, b) => b.week - a.week || String(b.date).localeCompare(String(a.date)) || a.order - b.order);
+    const open = [
+      p.problems.length ? `${tr('also under student number', 'isto ime i pod brojem')} ${p.problems.map(esc).join(', ')}` : '',
+      !p.studentNumber ? tr('student number not recorded', 'broj indeksa nije zaveden') : ''
+    ].filter(Boolean);
+    const id = `dnevnik-${p.key.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}`;
+    return `<details class="dnevnik-student" id="${esc(id)}">
+  <summary><header data-dnevnik-student="${esc(p.studentNumber || p.name || '')}"><h3><span data-author-name>${esc(p.name || '—')}</span><span data-author-number>${esc(p.studentNumber || '—')}</span></h3></header>
+  <span class="dnevnik-summary">${summary}</span>${open.length ? `<span class="dnevnik-note dnevnik-open">${open.join(' · ')}</span>` : ''}</summary>
+  <ol class="dnevnik-timeline">${timeline.map(e => e.html).join('')}</ol>
+</details>`;
   };
 
   return `<div class="page-top flow-intro"><div><p class="eyebrow">${tr('Journal', 'Dnevnik')}</p>
   <h1>${tr('Every name, and everything that stands beside it.', 'Svako ime, i sve što stoji uz njega.')}</h1></div>
   <p class="lede">${tr(`${people.length} people appear in the registers of this course: ${withWork.length} with a photographed work, ${photos} photographs in all. Each record joins the class lists, the register of works and the association visits — open a name and the whole history stands under it.`, `${number(people.length)} osoba pojavljuje se u registrima ovog predmeta: ${number(withWork.length)} sa fotografisanim radom, ukupno ${number(photos)} fotografija. Svaki zapis spaja spiskove časova, registar radova i posete udruženju — otvoriš ime i ispod njega stoji cela istorija.`)}</p></div>
 <p class="notice">${tr('This is not a roll-call. Attendance at the lecture has not been kept, so the journal says who appears in a register — on a class list, in the register of works, on a visit — never who was in the room. If your record is wrong or missing, say so in class.', 'Ovo nije prozivka. Evidencija prisustva na predavanju nije vođena, pa dnevnik govori ko se pojavljuje u registru — na spisku časa, u registru radova, na poseti — a ne ko je bio u sali. Ako je tvoj zapis pogrešan ili ga nema, javi na času.')}</p>
-<section aria-labelledby="dnevnik-list-title"><div class="section-heading"><div><p class="eyebrow">${tr('By student number', 'Po broju indeksa')}</p><h2 id="dnevnik-list-title">${tr('The records', 'Zapisi')}</h2></div><p>${tr(`Weeks covered: ${weeks.join(', ')}. Each record is newest week first.`, `Obuhvaćene nedelje: ${weeks.join(', ')}. Svaki zapis ide od najnovije nedelje unazad.`)}</p></div>
+<section aria-labelledby="dnevnik-list-title"><div class="section-heading"><div><p class="eyebrow">${tr('By student number', 'Po broju indeksa')}</p><h2 id="dnevnik-list-title">${tr('The records', 'Zapisi')}</h2></div><p>${tr(`Weeks covered: ${weeks.join(', ')}. Open a name for the whole record, newest first.`, `Obuhvaćene nedelje: ${weeks.join(', ')}. Klik na ime otvara ceo dosije, od najnovijeg ka starijem.`)}</p></div>
   <div class="dnevnik-list">${people.map(card).join('')}</div>
 </section>
 <aside class="prototype-context"><h2>${tr('Sources of this page', 'Izvori ove strane')}</h2><p>${tr('The journal creates no record of its own. It joins the class lists (data/cas-NN/spisak.json), the register of works (data/prototipovi.json) and the visit registers (data/poseta-*.json) on the student number; each of those carries its own source and date.', 'Dnevnik ne stvara nijedan svoj zapis. On spaja spiskove časova (data/cas-NN/spisak.json), registar radova (data/prototipovi.json) i registre poseta (data/poseta-*.json) po broju indeksa; svaki od njih nosi svoj izvor i datum.')}</p></aside>`;
