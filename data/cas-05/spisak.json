@@ -13,8 +13,8 @@
     "en": "The list of the fifth class."
   },
   "lede": {
-    "sr": "Rad na prototipovima se nastavlja. Na spisku stoji 29 zapisa; 25 radova je fotografisano i objavljeno sa 75 fotografija. Kraj spiska čeka potvrdu studenata.",
-    "en": "The prototype work continues. The list carries 29 entries; 25 works were photographed and published with 75 photographs. The end of the list awaits the students’ confirmation."
+    "sr": "Rad na prototipovima se nastavlja. Na spisku stoji 29 zapisa; 26 radova je fotografisano i objavljeno sa 81 fotografija. Ispod spiska su kadrovi bez imena i zapisi čije fotografije tek stižu — studenti neka se jave za ispravku.",
+    "en": "The prototype work continues. The list carries 29 entries; 26 works were photographed and published with 81 photographs. Below the list are unnamed frames and entries whose photographs are still to come — students, please get in touch with corrections."
   },
   "source": {
     "id": "teacher-2026-10-30-cas-05",
@@ -30,12 +30,12 @@
   },
   "vezaneGalerije": true,
   "presek": {
-    "sr": "Niz od 86 kadrova sa telefona podeljen je redom spiska, uz proveru pauza u snimanju i predmeta na kadru. Kraj niza (kadrovi 74–84) nije objavljen dok studenti ne potvrde ko je čiji rad.",
-    "en": "The sequence of 86 phone frames was cut in the order of the list, checked against the pauses in shooting and the object in the frame. The end of the sequence (frames 74–84) is not published until the students confirm whose work is whose."
+    "sr": "Niz od 86 kadrova sa telefona podeljen je redom nastavnikovog spiska. Kadrovi 82–84 (jedan rad, kartice sa tačkama) nemaju zapis na spisku; kadrovi 85–86 su grupni snimci u udruženju. Ivin i Andrejev kadar snimljeni su posle udruženja i tek se prenose.",
+    "en": "The sequence of 86 phone frames was cut in the order of the teacher’s list. Frames 82–84 (one work, cards with dots) have no entry on the list; frames 85–86 are group shots at the association. Iva’s and Andrej’s frames were taken after the association and are still being transferred."
   },
   "analizaUdruzenja": {
-    "sr": "Spisak beleži četiri fotografije iz udruženja; u nizu sa telefona od 11:44 do 14:08 one nisu nađene, pa taj deo čeka prenos.",
-    "en": "The list records four photographs from the association; they were not found in the phone sequence from 11:44 to 14:08, so that part awaits transfer."
+    "sr": "Spisak beleži četiri fotografije iz udruženja; u nizu su nađene dve (kadrovi 85–86), ostale se traže.",
+    "en": "The list records four association photographs; two were found in the sequence (frames 85–86), the rest are being looked for."
   },
   "radovi": [
     {
@@ -292,17 +292,19 @@
       "indeks": "52/24",
       "rad": null,
       "slike": 2,
-      "ceka": true,
-      "razjasni": "kraj-spiska-c05"
+      "galerija": "w5-spasojevic"
     },
     {
       "rb": 26,
       "ime": "Dunja Ljubičić",
       "indeks": "38/24",
-      "rad": null,
+      "rad": "igra sa užetom",
       "slike": 3,
-      "ceka": true,
-      "razjasni": "kraj-spiska-c05"
+      "galerija": "w5-ljubicic",
+      "napomena": {
+        "sr": "naziv iz ranijeg rada istog studenta (čas 4).",
+        "en": "title from the same student’s earlier work (class 4)."
+      }
     },
     {
       "rb": 27,
@@ -310,8 +312,7 @@
       "indeks": "114/24",
       "rad": null,
       "slike": 3,
-      "ceka": true,
-      "razjasni": "kraj-spiska-c05"
+      "galerija": "w5-bajic"
     },
     {
       "rb": 28,
@@ -338,8 +339,8 @@
     {
       "id": "kraj-spiska-c05",
       "sta": {
-        "sr": "Pred poslednja dva rada spiska verovatno nedostaje jedan zapis: kadrovi 74–84 (tri do četiri rada) čekaju da studenti potvrde autore. Četiri fotografije iz udruženja, zapisane na kraju spiska, nisu nađene u nizu.",
-        "en": "One entry is probably missing before the last two works of the list: frames 74–84 (three or four works) await the students’ confirmation of authorship. The four association photographs recorded at the end of the list were not found in the sequence."
+        "sr": "Ko je autor rada sa kadrova 82–84 (kartice sa tačkama na tabli)? Na spisku za njega nema zapisa. Raspored kraja niza (Natalija 74–75, Dunja 76–78, Marija 79–81) sledi spisak; ko vidi grešku, neka se javi.",
+        "en": "Who made the work in frames 82–84 (cards with dots on a board)? The list has no entry for it. The end of the sequence (Natalija 74–75, Dunja 76–78, Marija 79–81) follows the list; anyone who sees a mistake, please get in touch."
       }
     }
   ],

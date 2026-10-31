@@ -4,17 +4,11 @@
   "putanja": "/storage/emulated/0/DCIM/Camera",
   "rez": "ffmpeg, duža strana 1280 px, EXIF orijentacija primenjena, metapodaci uklonjeni",
   "neobjavljeno": [
-    "20261030_140439.jpg",
-    "20261030_140444.jpg",
-    "20261030_140522.jpg",
-    "20261030_140523.jpg",
-    "20261030_140618.jpg",
-    "20261030_140652.jpg",
-    "20261030_140656.jpg",
-    "20261030_140704.jpg",
     "20261030_140745.jpg",
     "20261030_140747.jpg",
-    "20261030_140804.jpg"
+    "20261030_140804.jpg",
+    "20261030_140847.jpg",
+    "20261030_140849.jpg"
   ],
   "radovi": [
     {
@@ -240,6 +234,32 @@
       "galerija": "w5-parezanovic",
       "izvori": [
         "20261030_140849.jpg"
+      ]
+    },
+    {
+      "rb": 25,
+      "galerija": "w5-spasojevic",
+      "izvori": [
+        "20261030_140439.jpg",
+        "20261030_140444.jpg"
+      ]
+    },
+    {
+      "rb": 26,
+      "galerija": "w5-ljubicic",
+      "izvori": [
+        "20261030_140522.jpg",
+        "20261030_140523.jpg",
+        "20261030_140618.jpg"
+      ]
+    },
+    {
+      "rb": 27,
+      "galerija": "w5-bajic",
+      "izvori": [
+        "20261030_140652.jpg",
+        "20261030_140656.jpg",
+        "20261030_140704.jpg"
       ]
     }
   ]
