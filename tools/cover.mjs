@@ -1,0 +1,12 @@
+import { readFile, writeFile } from 'node:fs/promises';
+import { setLanguage } from '../assets/core.js';
+import { renderCover } from '../assets/cover-core.js';
+const root = new URL('../', import.meta.url);
+const json = async p => JSON.parse(await readFile(new URL(p,root),'utf8'));
+setLanguage('sr');
+const url=new URL('naslovna.html',root), before=await readFile(url,'utf8');
+const html=renderCover(await json('data/tok.json'),await json('data/prototipovi-javno.json'));
+const after=before.replace(/<main([^>]*)>[\s\S]*?<\/main>/,'<main$1>'+html+'</main>');
+if(process.argv.includes('--check') && before!==after) throw Error('Regenerate cover');
+if(before!==after) await writeFile(url,after);
+console.log('Cover is generated from course data.');

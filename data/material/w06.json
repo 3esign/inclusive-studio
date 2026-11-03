@@ -1,0 +1,44 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 6,
+  "state": "draft",
+  "updated": "2026-10-02",
+  "title": { "en": "The obstacle record on site", "sr": "Popis prepreka na terenu" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "You can survey the 'Živimo zajedno' terrain with scale photography and geo-coordinates, cataloguing physical and sensory barriers without assumptions.",
+    "sr": "Umeš da snimiš teren udruženja „Živimo zajedno” uz fotografije sa razmernikom i geokoordinate, beležeći fizičke i čulne prepreke bez nagađanja."
+  },
+  "bring": [
+    { "en": "Smartphone with camera and GPS logger, clipboard, printed terrain base, 2 m tape measure, walking shoes.", "sr": "Telefon sa kamerom i GPS beleženjem, podloga za pisanje, odštampana karta lokacije, metar od 2 m, terenska obuća." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "Site visit: the ground does not lie", "sr": "Terenski obilazak: teren ne laže" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "The site of 'Živimo zajedno' presents a 22,5 m vertical drop over 151 m. We record each obstacle: gradient breaks, steps, uneven pavers, narrowings, missing handrails, and spots with no shade or resting places.",
+        "sr": "Lokacija „Živimo zajedno” ima pad od 22,5 m na 151 m dužine. Beležimo svaku prepreku: prelom nagiba, stepenik, neravne ploče, suženja, nedostatak rukohvata i mesta bez hlada ili klupe za odmor."
+      }
+    },
+    {
+      "kind": "measure",
+      "text": { "en": "Maximum observed point slope on the main walking track", "sr": "Maksimalni zabeleženi tačkasti nagib na glavnoj pešačkoj stazi" },
+      "value": "63 % (32°)",
+      "instrument": { "en": "electronic inclinometer / phone gyro ±0,5°", "sr": "elektronski inklinometar / žiroskop telefona ±0,5°" }
+    },
+    { "kind": "exercise", "ref": "field-obstacle-record" },
+    { "kind": "lab", "ref": "visina" },
+    {
+      "kind": "question",
+      "items": [
+        { "en": "Where was the most deceptive obstacle — one that looks harmless from a distance but stops a visitor completely?", "sr": "Gde je bila najvarljivija prepreka — ona koja izdaleka deluje bezazleno, a u hodu potpuno zaustavlja posetioca?" }
+      ]
+    }
+  ]
+}

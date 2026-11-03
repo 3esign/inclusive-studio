@@ -1,0 +1,40 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 15,
+  "state": "draft",
+  "updated": "2026-10-02",
+  "title": { "en": "Accessible handover and AI claim check", "sr": "Pristupačna predaja i provera AI tvrdnji" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "You can prepare a fully accessible project package with screen-reader text and image descriptions, audit AI assertions against regulations, and publicly defend your design.",
+    "sr": "Umeš da pripremiš potpuno pristupačnu predaju sa opisima slika za čitače ekrana, ispitaš tačnost tvrdnji AI alata naspram propisa i javno odbraniš projekat."
+  },
+  "bring": [
+    { "en": "Final B1 presentation boards, signed weekly A3 sheets, text summary for screen readers, AI log.", "sr": "Finalne B1 table za prezentaciju, potpisani nedeljni A3 listovi, tekstualni sažetak za čitače ekrana, dnevnik rada sa AI alatima." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "Public defense and authentic accountability", "sr": "Javna odbrana i stvarna odgovornost" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "Universal design ends with an accessible handover: project deliverables must be readable by screen readers. We also audit where AI models got building codes right or dangerously hallucinated, followed by public defense before faculty and invited community reviewers.",
+        "sr": "Univerzalni dizajn se završava pristupačnom predajom: materijali moraju biti upotrebljivi i za osobe koje koriste čitače ekrana. Takođe analiziramo gde su AI alati pomogli a gde izmislili propise, nakon čega sledi javna odbrana pred nastavnikom i pozvanim recenzentima iz zajednice."
+      }
+    },
+    { "kind": "exercise", "ref": "accessible-handover" },
+    { "kind": "exercise", "ref": "ai-claim-check" },
+    { "kind": "lab", "ref": "vreme" },
+    {
+      "kind": "decision",
+      "text": {
+        "en": "Final marks are awarded based on physical evidence, compliance tables, and defending decisions with measured facts.",
+        "sr": "Konačna ocena se formira na osnovu fizičkih dokaza na tablama, tabela usklađenosti i odbrane projektnih odluka činjenicama i merama."
+      }
+    }
+  ]
+}

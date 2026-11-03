@@ -1,0 +1,172 @@
+import { gallerySection } from './galleries.js';
+import { esc, tr, tx, number } from './core.js';
+import { publishedPrototypes, publicPhoto } from './photo-publication.js';
+
+const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const SHA = /^[a-f0-9]{64}$/;
+const PHOTO = /^data\/prototipovi\/[a-z0-9-]+\/[a-z0-9-]+\.jpg$/;
+const text = v => typeof v === 'string' && v.trim().length > 0;
+const date = v => typeof v === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v) && Number.isFinite(Date.parse(v)) && new Date(v).toISOString().slice(0, 10) === v;
+const bilingual = v => v && text(v.sr) && text(v.en);
+const keys = (obj, allowed) => obj && typeof obj === 'object' && !Array.isArray(obj) && Object.keys(obj).every(k => allowed.includes(k));
+const has = (obj, key) => Object.prototype.hasOwnProperty.call(obj || {}, key);
+
+// Source assertions record the teacher's instruction; they are not authentication.
+// Baseline continuity and asset bytes are checked independently by the release tools.
+export function validatePrototypes(data) {
+  const errors = [], fail = (condition, message) => { if (!condition) errors.push(message); };
+  fail(data?.schema === 'course-prototypes/v1', 'Unknown prototype register.');
+  if (!Array.isArray(data?.sources) || !Array.isArray(data?.items) || !Array.isArray(data?.observations)) return [...errors, 'sources, items and observations must be arrays.'];
+  fail(keys(data, ['schema', 'sources', 'items', 'observations', 'revizije', 'galleries', 'cekaju', 'povuceno']), 'Unknown register fields.');
+  const sources = new Set();
+  for (const s of data.sources) {
+    fail(s && ID.test(s.id || '') && !sources.has(s.id), 'Invalid or duplicate source id.');
+    sources.add(s?.id);
+    fail(keys(s, ['id', 'recordedOn', 'description']) && date(s?.recordedOn) && bilingual(s?.description), 'Source requires a record date and bilingual description.');
+  }
+  const photoIds = new Set(), photoPaths = new Set();
+  function photos(list, label) {
+    fail(Array.isArray(list) && list.length > 0, label + ': photographs required.');
+    for (const p of Array.isArray(list) ? list : []) {
+      fail(keys(p, ['id', 'src', 'sha256', 'width', 'height', 'alt', 'caption', 'sourceId', 'rotation']), label + ': unknown photo fields.');
+      fail(ID.test(p?.id || '') && !photoIds.has(p.id), label + ': unique photo id required.'); photoIds.add(p?.id);
+      fail(PHOTO.test(p?.src || '') && !photoPaths.has(p.src), label + ': unique local photograph path required.'); photoPaths.add(p?.src);
+      fail(SHA.test(p?.sha256 || ''), label + ': photograph fingerprint required.');
+      fail(Number.isInteger(p?.width) && p.width > 0 && Number.isInteger(p?.height) && p.height > 0, label + ': image dimensions required.');
+      fail(!has(p, 'rotation') || [-90, 90, 180].includes(p.rotation), label + ': unknown image rotation.');
+      fail(bilingual(p?.alt) && bilingual(p?.caption), label + ': bilingual image meaning required.');
+      fail(sources.has(p?.sourceId), label + ': unknown photo source.');
+    }
+  }
+  const ids = new Set();
+  for (const item of data.items) {
+    fail(keys(item, ['id', 'title', 'kind', 'author', 'authorRole', 'attribution', 'attributionStatus', 'originWeek', 'documentedWeek', 'medium', 'status', 'sourceId', 'description', 'photos']), 'Unknown prototype fields.');
+    fail(!has(item, 'attributionStatus') || ['confirmed', 'pending'].includes(item.attributionStatus), 'Unknown attribution status: a work is either confirmed or pending its attribution.');
+    fail(ID.test(item?.id || '') && !ids.has(item.id), 'Invalid or duplicate prototype id.'); ids.add(item?.id);
+    fail(text(item?.title) && bilingual(item?.description), 'Prototype title and bilingual description required.');
+    const numbered = has(item?.author, 'studentNumber'), originKnown = has(item, 'originWeek');
+    fail(keys(item?.author, ['name', 'studentNumber']) && text(item?.author?.name) && (!numbered || (typeof item.author.studentNumber === 'string' && /^\d{1,4}\/\d{2}(?:\d{2})?$/.test(item.author.studentNumber))), 'Exact supplied name and, when present, student number required.');
+    fail(keys(item?.attribution, ['sourceId', 'fields']) && sources.has(item?.attribution?.sourceId) && Array.isArray(item?.attribution?.fields) && [...item.attribution.fields].sort().join('|') === (numbered ? 'name|studentNumber' : 'name'), 'Explicit source for exactly the present attribution fields required.');
+    fail(!has(item, 'kind') || ['prototype', 'technical-drawing'].includes(item.kind), 'Unknown work kind.');
+    fail(!has(item, 'authorRole') || ['student', 'teacher'].includes(item.authorRole), 'Unknown author role.');
+    fail(!originKnown || (Number.isInteger(item.originWeek) && item.originWeek > 0), 'Origin week, when known, must be a positive integer.');
+    fail(Number.isInteger(item?.documentedWeek) && item.documentedWeek > 0 && (!originKnown || item.documentedWeek >= item.originWeek), 'Documented week must be a positive integer at or after the origin week.');
+    fail(['physical', 'digital', 'drawing'].includes(item?.medium) && ['brought', 'documented'].includes(item?.status), 'Unknown work medium or documented status.');
+    fail(sources.has(item?.sourceId), 'Unknown prototype source.');
+    photos(item?.photos, item?.id || 'Prototype');
+  }
+  const galleryIds = new Set();
+  fail(data.galleries === undefined || Array.isArray(data.galleries), 'Galleries must be an array.');
+  for (const g of data.galleries || []) {
+    fail(keys(g, ['id', 'title', 'documentedWeek', 'sourceId', 'photos', 'author', 'listOrder', 'continues', 'probanje']) && ID.test(g.id || '') && !galleryIds.has(g.id), 'Invalid or duplicate gallery.');
+    galleryIds.add(g.id);
+    fail(bilingual(g.title) && Number.isInteger(g.documentedWeek) && g.documentedWeek > 0 && sources.has(g.sourceId), 'Gallery title, week and source required.');
+    // A work carries its author's name, and the student number when the teacher supplied one.
+    fail(keys(g.author, ['name', 'studentNumber']) && text(g.author?.name), 'Gallery requires the author exactly as supplied.');
+    fail(!has(g.author, 'studentNumber') || /^\d{1,4}\/\d{2}(?:\d{2})?$/.test(g.author.studentNumber), 'Student number must match the supplied form.');
+    fail(Number.isInteger(g.listOrder) && g.listOrder > 0, 'Gallery keeps its place in the teacher’s list.');
+    photos(g.photos, g.id);
+  }
+  for (const g of data.galleries || []) {
+    fail(!has(g, 'continues') || ids.has(g.continues), 'A continued work must name a prototype already in the register.');
+    // What a user did with the work is an account of frames that were actually looked at:
+    // it needs its own date and source, and it never travels without them.
+    if (has(g, 'probanje')) fail(keys(g.probanje, ['occurredOn', 'sourceId', 'sta']) && date(g.probanje.occurredOn) && sources.has(g.probanje.sourceId) && bilingual(g.probanje.sta), g.id + ': a trial account needs its date, source and bilingual text.');
+  }
+  // Works on the list whose photographs have not arrived: named, counted, never illustrated.
+  fail(data.cekaju === undefined || Array.isArray(data.cekaju), 'Awaited works must be an array.');
+  for (const w of data.cekaju || []) {
+    fail(keys(w, ['id', 'title', 'author', 'documentedWeek', 'sourceId', 'listOrder', 'expectedPhotos', 'reason']) && ID.test(w.id || '') && !galleryIds.has(w.id), 'Invalid or duplicate awaited work.');
+    galleryIds.add(w.id);
+    fail(bilingual(w.title) && bilingual(w.reason) && sources.has(w.sourceId), 'Awaited work needs a title, reason and source.');
+    fail(keys(w.author, ['name', 'studentNumber']) && text(w.author?.name), 'Awaited work requires the author exactly as supplied.');
+    fail(Number.isInteger(w.documentedWeek) && w.documentedWeek > 0 && Number.isInteger(w.listOrder) && w.listOrder > 0, 'Awaited work keeps its class and list place.');
+    fail(w.expectedPhotos === null || (Number.isInteger(w.expectedPhotos) && w.expectedPhotos > 0), 'Expected photograph count is a positive integer or explicitly unknown.');
+  }
+  const events = new Set();
+  for (const event of data.observations) {
+    fail(keys(event, ['id', 'prototypeId', 'kind', 'occurredOn', 'sourceId', 'summary', 'photos', 'publication']), 'Unknown observation fields.');
+    fail(ID.test(event?.id || '') && !events.has(event.id), 'Unique observation id required.'); events.add(event?.id);
+    fail(ids.has(event?.prototypeId) && event?.kind === 'association-use', 'Observation must identify its prototype and context.');
+    fail(date(event?.occurredOn) && sources.has(event?.sourceId) && bilingual(event?.summary), 'Observation needs an actual date, source and bilingual account.');
+    fail(keys(event?.publication, ['sourceId', 'scope']) && sources.has(event?.publication?.sourceId) && event?.publication?.scope === 'association-observation', 'Observation publication context required.');
+    photos(event?.photos, event?.id || 'Observation');
+  }
+  // 21.10.2026: a record may leave the published register, but never quietly. Withdrawal
+  // keeps the whole original row, the date, the source and the reason, so the earlier claim
+  // stays readable and the reason it fell can be checked against the evidence.
+  fail(data.povuceno === undefined || Array.isArray(data.povuceno), 'Withdrawals must be an array.');
+  const withdrawn = new Set();
+  for (const w of data.povuceno || []) {
+    fail(keys(w, ['id', 'vrsta', 'datum', 'sourceId', 'razlog', 'zapis']) && text(w?.id) && !withdrawn.has(w.id), 'Invalid or duplicate withdrawal.');
+    withdrawn.add(w?.id);
+    fail(['item', 'observation', 'revizija'].includes(w?.vrsta), 'A withdrawal must name what kind of record it removed.');
+    fail(date(w?.datum) && sources.has(w?.sourceId) && bilingual(w?.razlog), 'A withdrawal needs its date, source and bilingual reason.');
+    fail(w?.zapis && typeof w.zapis === 'object' && !Array.isArray(w.zapis), 'A withdrawal keeps the whole record it removed.');
+    fail(!ids.has(w?.id) && !events.has(w?.id), 'A withdrawn record may not also stand in the register: ' + w?.id);
+  }
+  fail(data.revizije === undefined || Array.isArray(data.revizije), 'Revision history must be an array.');
+  for (const r of Array.isArray(data.revizije) ? data.revizije : []) {
+    fail(Number.isInteger(r?.v) && r.v > 0 && date(r?.datum) && bilingual(r?.sta) && sources.has(r?.sourceId) && ids.has(r?.prototypeId) && r?.before?.id === r.prototypeId && r?.after?.id === r.prototypeId, 'Revision requires a source, date and before/after for the same prototype.');
+  }
+  return errors;
+}
+
+function ready(data) { const errors = validatePrototypes(data); if (errors.length) throw new Error(errors.join('\n')); }
+function imageMarkup(p, eager = false) {
+  const img = `<img src="${esc(p.src)}" width="${p.width}" height="${p.height}" alt="${esc(tx(p.alt))}" loading="${eager ? 'eager' : 'lazy'}"${eager ? ' fetchpriority="high"' : ''} decoding="async">`;
+  if (!has(p, 'rotation')) return img;
+  const quarterTurn = Math.abs(p.rotation) === 90;
+  const ratio = quarterTurn ? `${p.height}/${p.width}` : `${p.width}/${p.height}`;
+  const width = quarterTurn ? p.width / p.height * 100 : 100, height = quarterTurn ? p.height / p.width * 100 : 100;
+  return `<span class="prototype-image rotated-image" style="aspect-ratio:${ratio};--rotation:${p.rotation}deg;--rotated-width:${width}%;--rotated-height:${height}%">${img}</span>`;
+}
+export function photograph(p, eager = false) {
+  if (!publicPhoto(p)) return '';
+  return `<figure class="prototype-photo"><a href="${esc(p.src)}" aria-label="${tr('Open full image', 'Otvori celu sliku')}">${imageMarkup(p, eager)}</a><figcaption>${esc(tx(p.caption))}</figcaption></figure>`;
+}
+const weekLabel = week => `${tr('Week', 'Nedelja')} ${week}`;
+const weeksOf = (data, field) => [...new Set(data.items.map(item => item[field]).filter(Number.isInteger))].sort((a, b) => a - b);
+function kindLabel(item) {
+  if (item.kind === 'technical-drawing') return tr('Technical drawing', 'Tehnički crtež');
+  return tr(item.medium === 'digital' ? 'Digital prototype' : item.medium === 'drawing' ? 'Prototype drawing' : 'Physical prototype', item.medium === 'digital' ? 'Digitalni prototip' : item.medium === 'drawing' ? 'Crtež prototipa' : 'Fizički prototip');
+}
+function card(item, index) {
+  const role = item.authorRole ? ` · ${item.authorRole === 'teacher' ? tr('Teacher’s example', 'Nastavnikov primer') : tr('Student work', 'Studentski rad')}` : '';
+  const studentNumber = has(item.author, 'studentNumber') ? `<span data-author-number>${esc(item.author.studentNumber)}</span>` : '';
+  // Atribucija može biti nepotvrđena (čeka studentovu potvrdu) — ime i indeks ostaju uz
+  // svoj izvor, ali stranica ne sme da ih tvrdi kao potvrđeno autorstvo.
+  const pending = item.attributionStatus === 'pending' ? `<span data-attribution-pending> · ${tr('attribution pending student confirmation', 'atribucija čeka potvrdu studenta')}</span>` : '';
+  const origin = has(item, 'originWeek') ? ` · ${tr('work begun in week', 'izrada započeta u nedelji')} ${item.originWeek}` : '';
+  const status = item.status === 'documented' ? tr('Documented work', 'Dokumentovan rad') : tr('Brought work', 'Donet rad');
+  return `<article class="prototype-card" id="${esc(item.id)}" data-prototype="${esc(item.id)}" data-work-kind="${esc(item.kind || 'prototype')}"${item.authorRole ? ` data-author-role="${esc(item.authorRole)}"` : ''}><header><p class="prototype-meta"><span>${number(index + 1)}</span> <a href="index.html?w=${item.documentedWeek}">${weekLabel(item.documentedWeek)}</a> · ${kindLabel(item)}${role}</p><h2>${esc(item.title)}</h2><p class="prototype-author" data-prototype-attribution="${esc(item.id)}"${item.attributionStatus ? ` data-attribution-status="${esc(item.attributionStatus)}"` : ''}><span data-author-name>${esc(item.author.name)}</span>${studentNumber}${pending}</p></header><div class="prototype-photos">${item.photos.map((p, j) => photograph(p, index === 0 && j === 0)).join('')}</div><p class="prototype-description">${esc(tx(item.description))}</p><p class="prototype-status">${status}${origin}</p></article>`;
+}
+
+export function renderPrototypes(data, opts) {
+  ready(data);
+  data = publishedPrototypes(data, opts);
+  const n = data.items.length;
+  const documentedWeeks = weeksOf(data, 'documentedWeek'), originWeeks = weeksOf(data, 'originWeek');
+  const materialLinks = documentedWeeks.map(week => `<a class="button secondary" href="index.html?w=${week}">${tr('Documented material', 'Dokumentovano gradivo')} · ${weekLabel(week)}</a>`).join('');
+  const originLinks = originWeeks.filter(week => !documentedWeeks.includes(week)).map(week => `<a class="button secondary" href="index.html?w=${week}">${tr('Starting material', 'Polazno gradivo')} · ${weekLabel(week)}</a>`).join('');
+  const observations = data.observations.length ? `<section class="prototype-observations" aria-labelledby="observation-title"><h2 id="observation-title">${tr('Observations from the association', 'Zapažanja iz udruženja')}</h2>${data.observations.map(e => `<article id="${esc(e.id)}"><h3>${esc(data.items.find(i => i.id === e.prototypeId).title)}</h3><time datetime="${esc(e.occurredOn)}">${esc(e.occurredOn.split('-').reverse().join('.'))}.</time><p>${esc(tx(e.summary))}</p>${e.photos.map(p => photograph(p)).join('')}</article>`).join('')}</section>` : '';
+  return `<div class="prototype-intro"><div><p class="eyebrow">${tr('Course workbook', 'Radna sveska predmeta')}</p><h1>${tr('Works and examples.', 'Radovi i primeri.')}</h1></div><div><p class="lede">${tr('A growing record of drawings, prototypes and teaching examples, with photographs from class.', 'Pregled crteža, prototipova i nastavnih primera, sa fotografijama sa časa.')}</p><p class="prototype-count">${number(n)} ${tr('earlier works', 'ranijih radova')} · ${(data.galleries || []).length} ${tr('photo galleries', 'foto-galerija')} <span>· ${tr('the collection will grow', 'pregled se dopunjuje')}</span></p></div></div>
+  ${gallerySection(data)}
+  <nav class="prototype-index" aria-label="${tr('Find a work', 'Pronađi rad')}">${data.items.map((i, k) => `<a href="#${esc(i.id)}"><span>${number(k + 1)}</span>${esc(i.title)}</a>`).join('')}</nav>
+  <div class="prototype-grid">${data.items.map(card).join('')}</div>${observations}
+  <aside class="prototype-context"><h2>${tr('From the work to use', 'Od rada do korišćenja')}</h2><p>${tr('Photographs and observations of use at the association belong to a separate record for each work. This gallery documents the supplied work and examples; it does not assess their safety, effectiveness or suitability for a particular person.', 'Fotografije i zapažanja o korišćenju u udruženju pripadaju zasebnom zapisu uz svaki rad. Ovaj pregled dokumentuje dostavljene radove i primere; ne predstavlja ocenu njihove bezbednosti, delotvornosti ili pogodnosti za određenu osobu.')}</p><div class="actions">${materialLinks}${originLinks}<a class="button secondary" href="udruzenje.html">${tr('Working with the association', 'Rad sa udruženjem')}</a></div></aside>`;
+}
+
+// Without a week the strip shows every documented work (the next-class page keeps that view);
+// with a week it shows only that week's works, so the held landing never mixes weeks.
+export function prototypeTeaser(data, week = null) {
+  ready(data);
+  data = publishedPrototypes(data);
+  const items = Number.isInteger(week) ? data.items.filter(item => item.documentedWeek === week) : data.items;
+  if (!items.length) return gallerySection(data, week);
+  const headingId = Number.isInteger(week) ? `prototype-teaser-title-w${week}` : 'prototype-teaser-title';
+  const scope = Number.isInteger(week)
+    ? `${tr('Documented in class', 'Dokumentovano na času')}: ${weekLabel(week)}.`
+    : `${tr('Documented', 'Dokumentovano')}: ${weeksOf(data, 'documentedWeek').map(weekLabel).join(' · ')}.`;
+  return `${gallerySection(data, week)}<section class="prototype-teaser" aria-labelledby="${headingId}"><div><p class="eyebrow">${tr('Works and examples', 'Radovi i primeri')} · ${number(items.length)}</p><h2 id="${headingId}">${tr('Course work and examples.', 'Radovi i primeri iz nastave.')}</h2><p>${scope}</p><a class="button" href="prototipovi.html">${tr('View the work', 'Pogledaj radove')} ↗</a></div><div class="prototype-strip" aria-label="${tr('Preview of the collected work', 'Pregled prikupljenih radova')}">${items.map((i, k) => `<a href="prototipovi.html#${esc(i.id)}">${imageMarkup((( { rotation, ...photo } ) => photo)(i.photos[0]))}<span>${number(k + 1)} · ${esc(i.title)}${Number.isInteger(week) ? '' : ` · ${weekLabel(i.documentedWeek)}`}</span></a>`).join('')}</div></section>`;
+}

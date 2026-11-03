@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" style="background:#ffffff;font-family:system-ui,-apple-system,sans-serif;">
+  <defs>
+    <pattern id="grid10" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f0f3f1" stroke-width="1"/>
+    </pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#192e27"/>
+    </marker>
+    <marker id="arr-rev" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 8 1.5 L 0 5 L 8 8.5 z" fill="#192e27"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="700" fill="url(#grid10)"/>
+
+  <!-- Header -->
+  <g transform="translate(40, 45)">
+    <text font-size="20" font-weight="700" fill="#192e27" letter-spacing="-0.02em">ULAZNI VETROBRAN I PRAG / ENTRANCE VESTIBULE &amp; THRESHOLDS</text>
+    <text y="22" font-size="12" fill="#586962">Standardi vetrobranskog prostora: Pravilnik RS 22/2015 i 10/2026 (čl. 13) · EN 17210:2021 (§10)</text>
+  </g>
+
+  <!-- Left: Osnova vetrobrana i radijusi otvaranja -->
+  <g transform="translate(40, 95)">
+    <rect width="530" height="565" rx="6" fill="#f8faf9" stroke="#d5ded9" stroke-width="1.5"/>
+    <text x="25" y="32" font-size="14" font-weight="700" fill="#192e27">1. Osnova vetrobrana i zamah vrata / Vestibule Clearances</text>
+    <text x="25" y="50" font-size="11" fill="#586962">Min. dubina: 200 cm (spolja) / 240 cm (unutra) · Širina: min. 180 cm (čl. 13)</text>
+
+    <!-- Drawing area -->
+    <g transform="translate(45, 75)">
+      <!-- Outer walls of vestibule -->
+      <rect x="30" y="40" width="340" height="380" fill="#ffffff" stroke="#192e27" stroke-width="3"/>
+
+      <!-- Width dimension (min. 180 cm) -->
+      <line x1="30" y1="20" x2="370" y2="20" stroke="#192e27" stroke-width="1.5" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="200" y="14" font-size="11" font-weight="700" fill="#192e27" text-anchor="middle">Čista širina vetrobrana min. 180 cm</text>
+
+      <!-- Depth dimension (min. 240 cm) -->
+      <line x1="15" y1="40" x2="15" y2="420" stroke="#192e27" stroke-width="1.5" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="0" y="230" font-size="11" font-weight="700" fill="#192e27" text-anchor="middle" transform="rotate(-90 0 230)">Dubina min. 200–240 cm</text>
+
+      <!-- Outer door (bottom) opening OUTWARDS -->
+      <line x1="120" y1="420" x2="280" y2="420" stroke="#ffffff" stroke-width="6"/>
+      <line x1="120" y1="420" x2="280" y2="420" stroke="#2e7d32" stroke-width="4"/>
+      <!-- Outer door leaf swinging out -->
+      <line x1="120" y1="420" x2="120" y2="470" stroke="#2e7d32" stroke-width="2.5"/>
+      <path d="M 200 420 A 80 80 0 0 1 120 470" fill="none" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="3 3"/>
+      <text x="200" y="445" font-size="10" font-weight="700" fill="#2e7d32" text-anchor="middle">Spoljna vrata ≥ 90–100 cm</text>
+
+      <!-- Inner door (top) opening INWARDS into vestibule -->
+      <line x1="120" y1="40" x2="280" y2="40" stroke="#ffffff" stroke-width="6"/>
+      <line x1="120" y1="40" x2="280" y2="40" stroke="#2e7d32" stroke-width="4"/>
+      <!-- Inner door leaf swinging into vestibule -->
+      <line x1="120" y1="40" x2="120" y2="100" stroke="#2e7d32" stroke-width="2.5"/>
+      <path d="M 180 40 A 60 60 0 0 1 120 100" fill="none" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="3 3"/>
+      <text x="200" y="32" font-size="10" font-weight="700" fill="#2e7d32" text-anchor="middle">Unutrašnja vrata ≥ 90 cm</text>
+
+      <!-- Free turning zone Ø 150 cm outside door swings -->
+      <circle cx="200" cy="230" r="85" fill="#eaf6ee" opacity="0.65" stroke="#2e7d32" stroke-width="2" stroke-dasharray="4 4"/>
+      <text x="200" y="225" font-size="11" font-weight="700" fill="#2e7d32" text-anchor="middle">Slobodan obrtni krug</text>
+      <text x="200" y="240" font-size="11" font-weight="700" fill="#2e7d32" text-anchor="middle">Ø 150 cm</text>
+      <text x="200" y="258" font-size="9" fill="#586962" text-anchor="middle">Izvan radijusa zamaha krila vrata</text>
+
+      <!-- Entrance Mat Well (Otirač u ravni poda) -->
+      <rect x="70" y="320" width="260" height="70" fill="#f0f5f2" stroke="#8c9e96" stroke-width="1.5"/>
+      <!-- Grid pattern for mat -->
+      <line x1="70" y1="340" x2="330" y2="340" stroke="#8c9e96" stroke-width="1"/>
+      <line x1="70" y1="360" x2="330" y2="360" stroke="#8c9e96" stroke-width="1"/>
+      <text x="200" y="358" font-size="10" font-weight="600" fill="#192e27" text-anchor="middle">Otirač u ravni poda (otvori max 10 × 10 mm)</text>
+    </g>
+  </g>
+
+  <!-- Right Top: Detalj praga i ravni prelaz -->
+  <g transform="translate(590, 95)">
+    <rect width="370" height="270" rx="6" fill="#f8faf9" stroke="#d5ded9" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="13" font-weight="700" fill="#192e27">2. Detalj ulaznog praga (čl. 18)</text>
+
+    <g transform="translate(30, 50)">
+      <!-- Baseline floor -->
+      <line x1="0" y1="140" x2="300" y2="140" stroke="#192e27" stroke-width="2"/>
+      <text x="20" y="160" font-size="9" fill="#586962">Spoljni trotoar</text>
+      <text x="230" y="160" font-size="9" fill="#586962">Pod vetrobrana</text>
+
+      <!-- Beveled threshold max 20 mm -->
+      <path d="M 110 140 L 130 120 L 170 120 L 190 140 Z" fill="#d9f88d" stroke="#2e7d32" stroke-width="2"/>
+      <text x="150" y="112" font-size="10" font-weight="700" fill="#2e7d32" text-anchor="middle">Zakošeni prag</text>
+
+      <!-- Dimension height max 20 mm -->
+      <line x1="205" y1="140" x2="205" y2="120" stroke="#d32f2f" stroke-width="1.5" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="215" y="133" font-size="10" font-weight="700" fill="#d32f2f">max. 2,0 cm</text>
+      <text x="215" y="145" font-size="8" fill="#586962">sa nagibom ≤ 1:2</text>
+
+      <!-- Red Alert: Step barrier -->
+      <g transform="translate(0, 175)">
+        <rect width="310" height="35" rx="4" fill="#fdf2f2" stroke="#d32f2f" stroke-width="1"/>
+        <text x="10" y="22" font-size="9.5" font-weight="700" fill="#d32f2f">Pravilo: Denivelacija > 2 cm je arhitektonska barijera</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Bottom: Pravila projektovanja ulaza -->
+  <g transform="translate(590, 385)">
+    <rect width="370" height="275" rx="6" fill="#f8faf9" stroke="#d5ded9" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="13" font-weight="700" fill="#192e27">3. Ključna pravila za ulazne prostore</text>
+
+    <g transform="translate(20, 45)">
+      <circle cx="10" cy="10" r="4" fill="#2e7d32"/>
+      <text x="22" y="13" font-size="10" font-weight="600" fill="#192e27">Dubina vetrobrana (čl. 13):</text>
+      <text x="22" y="27" font-size="9.5" fill="#586962">Min. 200 cm (ako se vrata ne otvaraju ka unutra); min. 240 cm inače.</text>
+
+      <circle cx="10" cy="50" r="4" fill="#2e7d32"/>
+      <text x="22" y="53" font-size="10" font-weight="600" fill="#192e27">Čista širina vetrobrana:</text>
+      <text x="22" y="67" font-size="9.5" fill="#586962">Najmanje 180 cm za neometano mimoilaženje kolica i pešaka.</text>
+
+      <circle cx="10" cy="90" r="4" fill="#2e7d32"/>
+      <text x="22" y="93" font-size="10" font-weight="600" fill="#192e27">Rešetka za otirač u ravni poda:</text>
+      <text x="22" y="107" font-size="9.5" fill="#586962">Otvori rešetke max. 10 × 10 mm radi bezbednosti belog štapa i točkova.</text>
+
+      <circle cx="10" cy="130" r="4" fill="#2e7d32"/>
+      <text x="22" y="133" font-size="10" font-weight="600" fill="#192e27">Automatsko aktiviranje vrata:</text>
+      <text x="22" y="147" font-size="9.5" fill="#586962">Senzori pokreta ili tasteri na visini 80–100 cm, na 150 cm od ravni vrata.</text>
+
+      <circle cx="10" cy="170" r="4" fill="#d32f2f"/>
+      <text x="22" y="173" font-size="10" font-weight="700" fill="#d32f2f">Greška koju uklanjamo:</text>
+      <text x="22" y="187" font-size="9.5" fill="#d32f2f">Vetrobrani dubine 140 cm gde krilo vrata udara u kolica tokom zatvaranja.</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,161 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 3,
+  "state": "published",
+  "updated": "2026-10-21",
+  "title": {
+    "en": "The hand that holds it",
+    "sr": "Ruka koja drži"
+  },
+  "date": "2026-10-16",
+  "dateStatus": "confirmed",
+  "aim": {
+    "en": "By the end of the session you can build a table of measures in which every row names its instrument and its uncertainty — for a hand and for a building — and you can say which measured values shut which hand out of your object.",
+    "sr": "Na kraju časa umeš da napraviš tabelu mera u kojoj svaki red navodi instrument i nesigurnost — za ruku i za zgradu — i umeš da kažeš koje izmerene vrednosti isključuju koju ruku iz tvog predmeta."
+  },
+  "bring": [
+    {
+      "en": "The object from the last two weeks — prototype or the everyday object you chose to redesign. It travels to every session now.",
+      "sr": "Predmet iz prethodne dve nedelje — prototip ili svakodnevni predmet koji si izabrao za prepravku. Od sada ide na svaki čas."
+    },
+    {
+      "en": "A tape or a ruler, and a string for the grip: the string follows the hand where the ruler cannot.",
+      "sr": "Metar ili lenjir, i konac za hvat: konac prati ruku tamo gde lenjir ne može."
+    },
+    {
+      "en": "One sheet of A3. Both halves of the sheet are born this week: the hand above, the faculty below.",
+      "sr": "Jedan list A3. Ove nedelje nastaju oba dela lista: ruka gore, fakultet dole."
+    }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": {
+        "en": "Recorded after class — 16 October 2026",
+        "sr": "Zapisano posle časa — 16.10.2026."
+      }
+    },
+    {
+      "kind": "list",
+      "items": [
+        {
+          "sr": "Predstavljeni su i fotografisani studentski radovi: skice, igre i prototipovi. Galerije pokazuju različite poglede na pojedinačne radove.",
+          "en": "Student sketches, games and prototypes were presented and photographed. The galleries show different views of individual works."
+        },
+        {
+          "sr": "Iz udruženja su stigle fotografije sa praktičnih vežbi: direktor udruženja pohvalio je studentske prototipe, primetna je želja korisnika da isprobavaju prototipe koje studenti kreiraju, i pomenut je mogući konkurs od strane udruženja.",
+          "en": "Photographs from the association's practical session arrived: the association's director praised the student prototypes, the users' wish to try the prototypes students create was clear, and a possible competition run by the association was mentioned."
+        }
+      ]
+    },
+    {
+      "kind": "link",
+      "href": "prototipovi.html#galerije-w03",
+      "text": {
+        "sr": "Treći čas — galerije radova",
+        "en": "Third class — work galleries"
+      }
+    },
+    {
+      "kind": "link",
+      "href": "cas-03.html#poseta-w03",
+      "text": {
+        "sr": "Poseta udruženju — fotografije, učesnici i zapažanja",
+        "en": "Association visit — photographs, participants and observations"
+      }
+    },
+    {
+      "kind": "heading",
+      "text": {
+        "en": "The hand is the first object we measure",
+        "sr": "Ruka je prvi objekat koji merimo"
+      }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "For two weeks the toy was judged by principles and by material. This week it is judged by hands — the smallest, the largest and the one you design for. A hand is measured, never simulated: three real hands, five measures each, every row with its instrument and its uncertainty.",
+        "sr": "Dve nedelje igračka se sudila po principima i po materijalu. Ove nedelje sudi joj ruka — najmanja, najveća i ona za koju projektuješ. Ruka se meri, nikad ne simulira: tri stvarne ruke, po pet mera, svaki red sa instrumentom i nesigurnošću."
+      }
+    },
+    {
+      "kind": "heading",
+      "text": {
+        "en": "Two halves of one sheet",
+        "sr": "Dva dela jednog lista"
+      }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "The same discipline at two scales: above, the hand around your object at 1:1 or 1:2; below, the first rows of the faculty table — a door, a corridor, a handle. Next week the Rulebook asks for those numbers by article.",
+        "sr": "Ista disciplina na dve razmere: gore, ruka oko tvog predmeta u 1:1 ili 1:2; dole, prvi redovi tabele fakulteta — vrata, hodnik, kvaka. Sledeće nedelje Pravilnik pita za te brojeve po članu."
+      }
+    },
+    {
+      "kind": "exercise",
+      "ref": "hands-and-tolerances"
+    },
+    {
+      "kind": "exercise",
+      "ref": "measure-your-faculty"
+    },
+    {
+      "kind": "heading",
+      "text": {
+        "en": "From the hand to the building",
+        "sr": "Od ruke do zgrade"
+      }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "A door clear width and a grip diameter are the same kind of fact: a number, an instrument, an uncertainty. The course moves between them all semester — the object in the hand and the building around the hand.",
+        "sr": "Svetla širina vrata i prečnik hvata su ista vrsta činjenice: broj, instrument, nesigurnost. Predmet se ceo semestar kreće između njih — predmet u ruci i zgrada oko ruke."
+      }
+    }
+  ],
+  "revizije": [
+    {
+      "v": 1,
+      "datum": "2026-10-01",
+      "sta": {
+        "en": "First draft: the faculty measurement as the whole sheet.",
+        "sr": "Prvi nacrt: merenje fakulteta kao ceo list."
+      }
+    },
+    {
+      "v": 2,
+      "datum": "2026-10-09",
+      "sta": {
+        "en": "Redirected: the hand that holds it is the upper half (continues the prototype; works without one), the faculty table is the lower half. The week 4 Rulebook check keeps its input. The first draft stays in the repository history.",
+        "sr": "Preusmereno: Ruka koja drži je gornji deo (nastavlja prototip; radi i bez njega), tabela fakulteta donji deo. Provera po Pravilniku u 4. nedelji zadržava svoj ulaz. Prvi nacrt ostaje u istoriji repozitorijuma."
+      }
+    },
+    {
+      "v": 3,
+      "datum": "2026-10-18",
+      "sta": {
+        "en": "Held on 16 October 2026 and published: the recorded-after-class section and the link to the third-class list page were added; the date is confirmed.",
+        "sr": "Održano 16.10.2026. i objavljeno: dopunjen je odeljak „Zapisano posle časa” i veza na stranu spiska radova trećeg časa; datum je potvrđen."
+      }
+    },
+    {
+      "v": 4,
+      "datum": "2026-10-21",
+      "sta": {
+        "sr": "Po ispravci nastavnika 21.10: zapis časa sažet na nastavni sadržaj; povučeni spisak i stanje uvoza, dodate galerije bez automatske atribucije. Ostalo gradivo nije menjano.",
+        "en": "Teacher correction, 21 October: class record edited to teaching content; processing roster and import status removed, independent galleries linked. Remaining material unchanged."
+      }
+    },
+    {
+      "v": 5,
+      "datum": "2026-10-21",
+      "sta": {
+        "sr": "Dodat zaseban zapis posete trećeg časa po nalogu nastavnika: fotografije, spisak učesnika i opažanja sa granicama zaključivanja.",
+        "en": "Added the separate third-class visit record as requested by the teacher: photographs, participants and observations with limits of inference."
+      }
+    }
+  ]
+}

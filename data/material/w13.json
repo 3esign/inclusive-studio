@@ -1,0 +1,38 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 13,
+  "state": "draft",
+  "updated": "2026-10-02",
+  "title": { "en": "The detail that carries the project", "sr": "Detalj koji nosi projekat" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "You can resolve critical 1:10 architectural details (curb ramps, threshold drainage, handrail returns, tactile warning fields) with luminance contrast and year-5 durability.",
+    "sr": "Umeš da rešiš ključni izvođački detalj 1:10 (prelaz ivičnjaka, odvodnjavanje praga, završetak rukohvata, taktilna polja pažnje) sa proračunom kontrasta i trajnosti."
+  },
+  "bring": [
+    { "en": "Drafting tools, catalog of tactile pavers and handrail profiles, color swatches.", "sr": "Crtaći pribor, katalog taktilnih ploča i profila rukohvata, uzorci materijala i boja." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "The millimetre where inclusion succeeds or fails", "sr": "Milimetar na kome inkluzija uspeva ili pada" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "A 3 cm unrounded lip at a threshold can defeat an entire accessible ramp. In 1:10 and 1:20 details, we resolve the joint between inside and outside, handrail continuity (30 cm horizontal extension at ends), tactile contrast, and water drainage.",
+        "sr": "Nezaobljena ivica praga od 3 cm može poništiti celu pristupačnu rampu. U detaljima 1:10 i 1:20 rešavamo spoj unutrašnjeg i spoljašnjeg prostora, neprekidnost rukohvata (produžetak od 30 cm na krajevima), kontrast taktilnih traka i odvođenje atmosferske vode."
+      }
+    },
+    { "kind": "exercise", "ref": "threshold-detail" },
+    { "kind": "lab", "ref": "kontrast" },
+    {
+      "kind": "question",
+      "items": [
+        { "en": "What happens to your tactile surface in February under ice and snow, and who clears it?", "sr": "Šta se dešava sa taktilnim pločama u februaru pod ledom i snegom i ko ih čisti?" }
+      ]
+    }
+  ]
+}

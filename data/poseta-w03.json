@@ -1,0 +1,412 @@
+{
+  "schema": "course-visit/v1",
+  "id": "poseta-udruzenje-2026-10-16",
+  "week": 3,
+  "occurredOn": "2026-10-16",
+  "place": {
+    "sr": "Udruženje „Živimo zajedno”, Beograd",
+    "en": "The Živimo zajedno association, Belgrade"
+  },
+  "source": {
+    "id": "teacher-2026-10-21-visit-w03",
+    "recordedOn": "2026-10-21",
+    "description": {
+      "sr": "Nastavnikov spisak i odobrenje objave fotografija trećeg časa, 21.10.2026; fotografski niz posete i sedam dodatnih fotografija iz dostavljenog Drive foldera.",
+      "en": "Teacher’s participant list and permission to publish third-class photographs, 21 October 2026; the visit photo sequence and seven additional photographs from the supplied Drive folder."
+    }
+  },
+  "participants": [
+    {
+      "name": "Petra Nešić",
+      "studentNumber": "94/2024"
+    },
+    {
+      "name": "Jana Grujić",
+      "studentNumber": "108/2023"
+    },
+    {
+      "name": "Petra Kalanj",
+      "studentNumber": "18/2024"
+    },
+    {
+      "name": "Aleksa Vesić",
+      "studentNumber": "70/2021"
+    },
+    {
+      "name": "Tijana Velemir",
+      "studentNumber": "51/2024"
+    },
+    {
+      "name": "Aleksa Tasković",
+      "studentNumber": "36/2024"
+    },
+    {
+      "name": "Marija Bajić",
+      "studentNumber": "114/2024"
+    },
+    {
+      "name": "Sanja Hornjacek",
+      "studentNumber": "74/2024"
+    },
+    {
+      "name": "Ognjen Mijaljević",
+      "studentNumber": "25/2024"
+    }
+  ],
+  "summary": {
+    "sr": "Na praktičnim vežbama 16. oktobra prototipovi su stigli do korisnika udruženja. Prema belešci nastavnika, direktor je pohvalio studentske radove, korisnici su želeli da ih isprobaju, a pomenut je i mogući konkurs udruženja. Konkurs još nije najavljen.",
+    "en": "During the practical session on 16 October, the prototypes reached the association’s users. According to the teacher’s account, the director praised the student work, users wanted to try it, and a possible association competition was mentioned. No competition has been announced."
+  },
+  "photos": [
+    {
+      "id": "w03-camera-13",
+      "src": "data/prototipovi/poseta-w03/camera-13.jpg",
+      "sha256": "103b27d6bc5e35d8880eb6af4e6e9cae1ff0c05828cf81e7a3d503b62b4edd14",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+        "sr": "Ruke na kartonskim pločicama sa cvetovima i kružićima, raspoređenim po stolu.",
+        "en": "Hands on cardboard tiles with flowers and circles, spread across a table."
+      },
+      "caption": {
+        "sr": "Ruke na kartonskim pločicama sa cvetovima i kružićima, raspoređenim po stolu.",
+        "en": "Hands on cardboard tiles with flowers and circles, spread across a table."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-camera-14",
+      "src": "data/prototipovi/poseta-w03/camera-14.jpg",
+      "sha256": "9e82c0847bf2fc9bc2ee72bfd89e526495645f859f2d0c148a410e036d43799f",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+        "sr": "Bliži pogled na dodirivanje kartonskih pločica za stolom.",
+        "en": "A closer view of hands touching the cardboard tiles at the table."
+      },
+      "caption": {
+        "sr": "Bliži pogled na dodirivanje kartonskih pločica za stolom.",
+        "en": "A closer view of hands touching the cardboard tiles at the table."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-camera-15",
+      "src": "data/prototipovi/poseta-w03/camera-15.jpg",
+      "sha256": "2b05fac94e350f80684c4f84ed06ed0b71a427cd77eb01b4fed496a9d283e54e",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+        "sr": "Vijugava staza u plitkoj kutiji, oslonjena na krilo i pridržana rukama.",
+        "en": "A winding track in a shallow box, resting on a lap and held by the hands."
+      },
+      "caption": {
+        "sr": "Vijugava staza u plitkoj kutiji, oslonjena na krilo i pridržana rukama.",
+        "en": "A winding track in a shallow box, resting on a lap and held by the hands."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-camera-16",
+      "src": "data/prototipovi/poseta-w03/camera-16.jpg",
+      "sha256": "cdb4da8612b465a0dbcfdae53fc6f12abf374c8de99e8fb1fbb8c68dee854058",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+        "sr": "Kartonski prostorni prototip pridržan sa više strana; ruke su uz otvore i ivice.",
+        "en": "A spatial cardboard prototype held from several sides, with hands near its openings and edges."
+      },
+      "caption": {
+        "sr": "Kartonski prostorni prototip pridržan sa više strana; ruke su uz otvore i ivice.",
+        "en": "A spatial cardboard prototype held from several sides, with hands near its openings and edges."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-camera-17",
+      "src": "data/prototipovi/poseta-w03/camera-17.jpg",
+      "sha256": "54b713f239fa989071edfe53c46d74bc7eaeefadee88f15b2fc7de19a6c8a1f7",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+        "sr": "Prednji pogled na kartonski prototip koji se drži uspravno.",
+        "en": "A front view of a cardboard prototype held upright."
+      },
+      "caption": {
+        "sr": "Prednji pogled na kartonski prototip koji se drži uspravno.",
+        "en": "A front view of a cardboard prototype held upright."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-camera-18",
+      "src": "data/prototipovi/poseta-w03/camera-18.jpg",
+      "sha256": "d4b3ee6cf5b0a0c766cabae582c1358ab2a0dca05c8892ec26daf8fd1a6bb97b",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+        "sr": "Kartonski prostorni prototip u rukama osobe koja sedi.",
+        "en": "A spatial cardboard prototype in the hands of a seated person."
+      },
+      "caption": {
+        "sr": "Kartonski prostorni prototip u rukama osobe koja sedi.",
+        "en": "A spatial cardboard prototype in the hands of a seated person."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-camera-19",
+      "src": "data/prototipovi/poseta-w03/camera-19.jpg",
+      "sha256": "aed4e4afcdb0f325c519132fd67d34f54aeaf8dd4bdfbd2ea920b96460e00c46",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+        "sr": "Isti prostorni prototip prikazan iz drugog ugla, iznad krila.",
+        "en": "Another angle of the same spatial prototype, held above the lap."
+      },
+      "caption": {
+        "sr": "Isti prostorni prototip prikazan iz drugog ugla, iznad krila.",
+        "en": "Another angle of the same spatial prototype, held above the lap."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-camera-20",
+      "src": "data/prototipovi/poseta-w03/camera-20.jpg",
+      "sha256": "e28429a2d68bccfe826a8202c208df46cceed9633ec153696d95eae09dc53fd5",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+        "sr": "Druga osoba drži kartonski prototip obema rukama, dalje od stola.",
+        "en": "Another person holds the cardboard prototype with both hands, away from the table."
+      },
+      "caption": {
+        "sr": "Druga osoba drži kartonski prototip obema rukama, dalje od stola.",
+        "en": "Another person holds the cardboard prototype with both hands, away from the table."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-camera-21",
+      "src": "data/prototipovi/poseta-w03/camera-21.jpg",
+      "sha256": "eae163891809c4a5fad0d84ce100f82d6125fc8f4c5aee137ab9f8196a2f8d62",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+        "sr": "Detalj hvata na ivicama kartonskog prostornog prototipa.",
+        "en": "A detail of the grip on the edges of the spatial cardboard prototype."
+      },
+      "caption": {
+        "sr": "Detalj hvata na ivicama kartonskog prostornog prototipa.",
+        "en": "A detail of the grip on the edges of the spatial cardboard prototype."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-camera-22",
+      "src": "data/prototipovi/poseta-w03/camera-22.jpg",
+      "sha256": "571fb730412fd0e07241a66da37119c121b26087d027cb0b61b5a2562fa8a872",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+        "sr": "Ravna tabla lavirinta oslonjena na krilo; ruke pridržavaju okvir.",
+        "en": "A flat maze board resting on a lap, with hands holding its frame."
+      },
+      "caption": {
+        "sr": "Ravna tabla lavirinta oslonjena na krilo; ruke pridržavaju okvir.",
+        "en": "A flat maze board resting on a lap, with hands holding its frame."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-camera-23",
+      "src": "data/prototipovi/poseta-w03/camera-23.jpg",
+      "sha256": "c83549da214d1c08e5a4d7febdd4a2b16ad26342b5d476a90b1b6c0ce6948657",
+      "width": 721,
+      "height": 1280,
+      "alt": {
+        "sr": "Pogled na pregrade lavirinta i hvat uz okvir table.",
+        "en": "A view of the maze partitions and the grip along the board’s frame."
+      },
+      "caption": {
+        "sr": "Pogled na pregrade lavirinta i hvat uz okvir table.",
+        "en": "A view of the maze partitions and the grip along the board’s frame."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-drive-01",
+      "src": "data/prototipovi/poseta-w03/drive-01.jpg",
+      "sha256": "3285c39a29a175899fc282d7b32e607f84bf8c00f4ccb36e7fe9a54b111ea45a",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Zajednički rad oko stola sa štapićima, oblicima i karticama.",
+        "en": "People working together around a table with sticks, shapes and cards."
+      },
+      "caption": {
+        "sr": "Zajednički rad oko stola sa štapićima, oblicima i karticama.",
+        "en": "People working together around a table with sticks, shapes and cards."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-drive-02",
+      "src": "data/prototipovi/poseta-w03/drive-02.jpg",
+      "sha256": "3440538179340336220b9856c80df9b92b9c63dd7e62569eb871cde1f449b56e",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Ruke uz kartice i raznobojne štapiće na zajedničkom stolu.",
+        "en": "Hands beside cards and coloured sticks on a shared table."
+      },
+      "caption": {
+        "sr": "Ruke uz kartice i raznobojne štapiće na zajedničkom stolu.",
+        "en": "Hands beside cards and coloured sticks on a shared table."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-drive-03",
+      "src": "data/prototipovi/poseta-w03/drive-03.jpg",
+      "sha256": "2811aed43b8f97a557b0b418f073f1414ed721c69ac51884b5e15db13b7d448d",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Pregled materijala na stolu: štapići, geometrijski oblici i kartice.",
+        "en": "An overview of the materials on the table: sticks, geometric shapes and cards."
+      },
+      "caption": {
+        "sr": "Pregled materijala na stolu: štapići, geometrijski oblici i kartice.",
+        "en": "An overview of the materials on the table: sticks, geometric shapes and cards."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-drive-04",
+      "src": "data/prototipovi/poseta-w03/drive-04.jpg",
+      "sha256": "0edd232b037e908d7f6c9feadd9f930c39e702277f0e185515ba49ed46f7ddcf",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Širi kadar prostorije sa učesnicima posete i materijalima na stolu.",
+        "en": "A wider view of the room, visit participants and materials on the table."
+      },
+      "caption": {
+        "sr": "Širi kadar prostorije sa učesnicima posete i materijalima na stolu.",
+        "en": "A wider view of the room, visit participants and materials on the table."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-drive-05",
+      "src": "data/prototipovi/poseta-w03/drive-05.jpg",
+      "sha256": "829f345f299b2d781dc0630010f85dd516f56c9fcd0a6a55d5eecc7e526193cf",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Prototip na krilu osobe koja sedi na klupi, dok se drugi okupljaju u prostoriji.",
+        "en": "A prototype on the lap of a person seated on a bench, with others gathered in the room."
+      },
+      "caption": {
+        "sr": "Prototip na krilu osobe koja sedi na klupi, dok se drugi okupljaju u prostoriji.",
+        "en": "A prototype on the lap of a person seated on a bench, with others gathered in the room."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-drive-06",
+      "src": "data/prototipovi/poseta-w03/drive-06.jpg",
+      "sha256": "ac2a33bf84a02609ce7843b244a17756855c4366dd4e5f6ec0b7fbc857837a08",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Plitka kutija sa stazom pridržana obema rukama u sedećem položaju.",
+        "en": "A shallow box with a track held with both hands while seated."
+      },
+      "caption": {
+        "sr": "Plitka kutija sa stazom pridržana obema rukama u sedećem položaju.",
+        "en": "A shallow box with a track held with both hands while seated."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    },
+    {
+      "id": "w03-drive-07",
+      "src": "data/prototipovi/poseta-w03/drive-07.jpg",
+      "sha256": "2779bb24f2ed3e68d21eaa594719fbfba2d52907e089a82f00705ee79b923cb4",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Vijugava staza na krilu; jedna ruka je uz putanju, druga uz okvir.",
+        "en": "A winding track on a lap; one hand is near the track and the other at the frame."
+      },
+      "caption": {
+        "sr": "Vijugava staza na krilu; jedna ruka je uz putanju, druga uz okvir.",
+        "en": "A winding track on a lap; one hand is near the track and the other at the frame."
+      },
+      "sourceId": "teacher-2026-10-21-visit-w03"
+    }
+  ],
+  "findings": [
+    {
+      "title": {
+        "sr": "Predmet i oslonac",
+        "en": "The object and its support"
+      },
+      "photoIds": [
+        "w03-camera-15",
+        "w03-camera-18",
+        "w03-camera-22",
+        "w03-drive-07"
+      ],
+      "seen": {
+        "sr": "Više prototipova je na krilu, uz ruke koje pridržavaju okvir ili telo predmeta. U jednom kadru ruka je unutar okvira, a druga ga pridržava.",
+        "en": "Several prototypes rest on laps, with hands holding their frames or bodies. In one frame a hand is inside the frame while the other holds it."
+      },
+      "next": {
+        "sr": "U narednom probanju proveriti da li predmet može stabilno da stoji dok jedna ruka istražuje. Uporediti sto i krilo; zabeležiti klizanje, hvat i potrebu za pomoći.",
+        "en": "In the next trial, check whether the object stays stable while one hand explores it. Compare a table and a lap; record slipping, grip and any need for help."
+      }
+    },
+    {
+      "title": {
+        "sr": "Pristup sa više strana",
+        "en": "Access from several sides"
+      },
+      "photoIds": [
+        "w03-drive-01",
+        "w03-drive-02",
+        "w03-drive-03"
+      ],
+      "seen": {
+        "sr": "Oko istog stola nalazi se više osoba. Štapići, oblici i kartice raspoređeni su po zajedničkoj površini. Fotografije ne pokazuju koja su pravila objašnjena niti ko ih je razumeo.",
+        "en": "Several people gather around the same table. Sticks, shapes and cards share one surface. The photographs do not show which rules were explained or who understood them."
+      },
+      "next": {
+        "sr": "Probati raspored koji dopušta dohvat iz sedećeg položaja i sa različitih strana. Pitati učesnike da pokažu sledeći korak; razlikovati samostalno korišćenje od korišćenja uz objašnjenje.",
+        "en": "Try a layout reachable while seated and from different sides. Ask participants to show the next step; distinguish independent use from use with an explanation."
+      }
+    },
+    {
+      "title": {
+        "sr": "Različiti hvatovi istog predmeta",
+        "en": "Different grips on the same object"
+      },
+      "photoIds": [
+        "w03-camera-16",
+        "w03-camera-17",
+        "w03-camera-19",
+        "w03-camera-20",
+        "w03-camera-21"
+      ],
+      "seen": {
+        "sr": "Kartonski prostorni prototip pojavljuje se u više položaja, sa rukama na različitim ivicama. Niz pokazuje različite načine držanja, ali ne meri lakoću korišćenja ili uspešnost zadatka.",
+        "en": "The spatial cardboard prototype appears in several orientations, with hands on different edges. The sequence shows different ways of holding it, but does not measure ease of use or task success."
+      },
+      "next": {
+        "sr": "Obeležiti mesta hvata i posmatrati koja učesnici zaista biraju. Proveriti dohvat otvora i čvrstinu spojeva pri tim hvatovima, uz mogućnost da se probanje prekine.",
+        "en": "Mark possible grip points and observe which ones participants actually choose. Check access to openings and the strength of joints with these grips, allowing the trial to stop at any time."
+      }
+    }
+  ]
+}

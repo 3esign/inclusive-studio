@@ -1,0 +1,39 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 10,
+  "state": "draft",
+  "updated": "2026-10-02",
+  "title": { "en": "The walkthrough that changes the drawing", "sr": "Participativna provera koja menja crtež" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "You can plan and execute an ethical participatory check with real coauthors without harmful disability simulations, translating findings directly into drawing revisions.",
+    "sr": "Umeš da isplaniraš i izvedeš etičku participativnu proveru sa stvarnim koautorima bez štetnih simulacija invaliditeta, prevodeći nalaze direktno u izmene na crtežu."
+  },
+  "bring": [
+    { "en": "Draft concept drawings at 1:100 / 1:200, interview and observation sheets, notebook.", "sr": "Radni crteži koncepta 1:100 / 1:200, obrasci za razgovor i zapažanja, sveska." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "Co-design: nothing about us without us", "sr": "Ko-dizajn: ništa o nama bez nas" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "Disability simulations (blindfolds, wheelchair obstacle courses) induce artificial fear and pity rather than constructive insight (Nario-Redmond 2017). Real insight comes from structured walkthroughs with disabled coauthors who evaluate the spatial propositions.",
+        "sr": "Simulacije invaliditeta (povezi na očima, poligoni u kolicima) izazivaju veštački strah i sažaljenje umesto konstruktivnog uvida (Nario-Redmond 2017). Pravi uvid nastaje iz strukturisanog obilaska sa osobama sa invaliditetom kao ravnopravnim koautorima koji ocenjuju prostorna rešenja."
+      }
+    },
+    { "kind": "exercise", "ref": "walkthrough" },
+    { "kind": "lab", "ref": "citac" },
+    {
+      "kind": "decision",
+      "text": {
+        "en": "Every team documents at least one architectural change made as a direct consequence of the walkthrough discussion.",
+        "sr": "Svaki tim dokumentuje bar jednu arhitektonsku izmenu koja je neposredna posledica razgovora tokom provere."
+      }
+    }
+  ]
+}

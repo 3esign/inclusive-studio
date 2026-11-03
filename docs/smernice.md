@@ -1,0 +1,181 @@
+# Smernice — kako se ovaj sajt pravi i održava
+
+**21.10.2026 — važeće:** [Prijem nastavnog materijala](prijem-nastave.md) nadjačava starije pravilo povezivanja po spisku i prikaz pitanja iz obrade. Fotografije trećeg časa prikazuju se kao pregledane galerije bez automatske atribucije. Održano: najnoviji datum prvi.
+
+## Hitno povlačenje fotografija · 19.10.2026.
+
+Po nalogu nastavnika da se uklone nepovezani kadrovi, novi fotografski blok trećeg časa privremeno je povučen. Vizuelni pregled je pokazao beleške i stranicu knjige među fotografijama rada, isti predmet pod različitim naslovima i nepouzdanu vezu niza sa spiskom. Prethodno pravilo iz `data/cas-03/uloge-slika.json` (prva/poslednja slika svakog foldera) **nije merodavno** za selekciju ili autorstvo.
+
+`assets/photo-publication.js` određuje tačno povučene zapise i fotografske foldere; `_config.yml` sprečava njihovo služenje kroz GitHub Pages. Registar i izvorni bajtovi ostaju sačuvani kao dokaz, ne kao potvrda atribucije. Spisak trećeg časa i raniji radovi ostaju vidljivi. Fotografije trećeg časa i njegovog segmenta iz udruženja ne pripadaju drugoj nedelji samo zato što su uvežene uz stari registar posete. Vraćanje zahteva pregled svakog kadra, provereno povezivanje sa izvornim nalogom i spiskom, pa usklađeno uklanjanje blokade u prikazu i Pages konfiguraciji. Datum ili naziv foldera nisu dokaz identiteta rada.
+
+> Jedna rečenica: sajt predmeta govori istinu o toku nastave — šta je održano, šta se priprema, šta je tek ideja — na jednom jeziku, sa samo izričito odobrenom javnom atribucijom, uz proveru sadržaja, testova i stvarnog prikaza.
+> Ovaj fajl je veza između tog zakona i veština Svemira iz kojih je izveden. Ako se smernica i veština razilaze, popravi ovde — ili tamo, svesno.
+
+Ulaz za novi um je [AGENTS.md](../AGENTS.md). Ove smernice su živi ugovor; stariji broj testova ili raniji opis navigacije nije dokaz trenutnog stanja.
+
+## Površina i jezik
+
+| Smernica | Zašto | Ko brani |
+|---|---|---|
+| Jedan jezik na površini: srpski („sr-Latn"). Engleski samo iza vidljivog prekidača. | Prvi pogled ne sme da bude mešavina; ljuska, naslovi, traka, podnožje i statični osnovac su svi na istom jeziku. | `tests/shell.test.mjs` (lang, naslovi, natpisi navigacije, brend, podnožje), `tests/recnik.test.mjs` |
+| Statični osnovac svake strane radi bez skripte i kaže ono što kaže i živi prikaz. | Čitalac bez JavaScript-a nije čitalac drugog reda; ni pretraga nije. | `tests/shell.test.mjs`, `tests/tok.test.mjs` (osnovci triju strana toka) |
+| Struktura se zove ono što jeste: održano, sledeći čas, oblak ideja. Bez metafora („zacementirano", „pilot", „polica"). | Rečnik strane je način mišljenja; žargon metafora sakriva stanje stvari. Citat tuđeg naslova sme da zadrži svoje reči. | `tests/recnik.test.mjs` (skener celog HTML-a + modula koji renderuju ljusku) |
+| Nivo: prva godina fakulteta — akademski, ne telegrafski, ne kič. | Ovo je visoko obrazovanje; rečenica nosi misao, broj nosi izvor. | pregled + recenzija LOG-a |
+
+## Istina toka (data/tok.json, šema v2)
+
+| Smernica | Zašto |
+|---|---|
+| Održano znači: održano + upisani rezultati sa izvorima. Bez rezultata — nije završeno. | „Održano bez upisanih rezultata nije završeno." |
+| Priprema (sledeći) mora da kaže šta čeka (`ceka`) i ne sme da nosi datum održavanja ni rezultate. | Pripremljeno nije održano. |
+| Ideja nema nedelju — samo izvor i datum; nedelju dobija ulaskom u pripremu. | Oblak je red čekanja, ne raspored. |
+| Svaka stavka nosi izvor i datum; preseci delova su zabranjeni; validator je zajednički stranicama, testovima i `tools/shells.mjs`. | Istina se izvodi, ne prepričava. — `assets/tok-core.js` |
+
+## Kompozicija i preglednost · 12.10.2026
+
+| Smernica | Zašto | Ko brani |
+|---|---|---|
+| Strana održanih časova prikazuje isključivo održane časove sa njihovim gradivom; pomoćni materijal se svodi na odobrene kartice (granice po godištima, kako sarađujemo, biblioteka), a standardi žive među izvorima. | Svaka strana ima jedno jasno svojstvo; mešanje sadržaja skriva glavno. | `tests/landing.test.mjs` i pregled |
+| Predmetni sajt vodi računa o kompoziciji i preglednosti: fotografije i prilozi dobijaju smiren okvir i ravan raspored (crtež kao tabla dokumenta, galerija sa tri fotografije bez kosog rasporeda), bez nakupljanja natpisa uz sliku. | Preglednost je deo pouke predmeta: stranica koja uči o univerzalnom dizajnu mora sama biti čitka. | pregled stvarne strane (320 px i veći ekrani) |
+| Prikaz koji nastavnik nije definisao ne postavlja se sam: nedorečene zamisli (npr. „A3 list nedelje") idu u oblak ideja sa izvorom, a ne na stranu održanih časova. | Izmišljen prikaz izgleda kao nastavnička odluka. | `tests/tok.test.mjs` (oblak nosi izvor) |
+
+## Jedna traka, jedan broj · 24.10.2026
+
+Nalog nastavnika: „komponovanje mora da je savršeno — uklapanje, alignments, kompaktnost". Izmereno na 1920 px pre ispravke: zaglavlje, telo i podnožje počinjali su na 271 px, red predmeta na 352 px, traka toka na 35 px — tri leve ivice na istoj strani; zapis časa bez fotografija držao je kolonu od 780 px unutar trake od 1378 px, a broj časa stajao je 800 px daleko od svog naslova.
+
+| Smernica | Zašto | Ko brani |
+|---|---|---|
+| Svaka traka strane (zaglavlje, red predmeta, traka toka, telo, podnožje) uzima širinu iz `--rail` i uvlačenje iz `--gutter`. Drugi broj se ne uvodi; uži ekran menja `--gutter`, ne pojedinačno pravilo. | Dve mere za istu ivicu uvek se raziđu; čitalac vidi tri početka jedne strane. | `tests/kompozicija.test.mjs` |
+| Podloga pune širine (traka toka) zadržava pozadinu i liniju preko celog ekrana, a svoj sadržaj uvlači računom `max(--gutter, (100% − --rail)/2 + --gutter)`. | Puna podloga je deo rastera, ne izuzetak od njega. | `tests/kompozicija.test.mjs` |
+| Kolona se ne zakucava brojem koji je uži od trake u kojoj stoji. Ako sadržaja ima za jednu meru čitanja, ostatak širine nosi stvaran sadržaj (ishodi u dve kolone, prilozi u redu) — ne praznina. | Prazna polovina nije „vazduh" nego neiskorišćen raspored; strana je dvostruko duža bez razloga. | `tests/kompozicija.test.mjs`, merenje `.lesson-spread` |
+| Broj, oznaka ili datum stoje uz ono što označavaju. `justify-content:space-between` preko cele trake razdvaja par koji se čita zajedno. | Blizina je veza; razmak od 800 px je prekid veze. | `tests/kompozicija.test.mjs` |
+
+Provera je merenje, ne utisak: pravougaonici traka i rešetki čitaju se iz stvarnog prikaza na 1920, 1440, 768 i 390 px pre nego što se kompozicija proglasi složenom.
+
+**Dopuna 25.10.2026 — uski ekran i uvećan tekst se mere posebno.** Na 320 px i na 390 px pri dvostrukom tekstu red predmeta je počinjao 2 px levo od ostalih traka, a prva stavka trake toka 2 px desno: `@media(max-width:600px)` je `#course-line` dao `padding:.55rem 1rem`, a `@media(max-width:760px)` prvoj stavci trake toka `1rem` umesto `.9rem` koliko traka oduzme. Na 1440 px oba su bila tačna. Otuda dva pravila: (1) uži ekran menja `--gutter`, a pravilo u media upitu ga i dalje mora zvati — zakucan broj tamo je isti kvar, samo nevidljiv na širokom ekranu; (2) kad se jedno uvlačenje negde oduzima, a drugde dodaje, to mora biti **isti broj**, i test ih poredi, ne gleda svaki za sebe. Test koji spaja sva pravila jednog selektora u jedan tekst propušta ovo — gleda se svako pojavljivanje.
+
+## Pet stabilnih odredišta i tok nastave
+
+- **Naslovna (`naslovna.html`)** — odobrena uvodna kompozicija i ulaz u predmet; nova nastavna građa ne zahteva njeno ponovno osmišljavanje.
+- **Održano (`index.html`)** — samo održani časovi: rezultati, izvori, A3 list nedelje, i materijal koji pomaže. Ništa viška.
+- **Sledeći čas (`sledeci.html`)** — bogata priprema naslonjena na prethodni čas: odakle polazimo, šta se donosi, plan redom, listovi koje čas ostavlja, protokol sa korisnicima, šta strana čeka.
+- **Oblak ideja (`oblak.html`)** — sve što nije u prva dva, redom po datumu.
+- **Izvori (`resources.html`)** — literatura i poreklo tvrdnji/materijala; izvor nije automatski usvojeni zaključak ili zadatak.
+
+Traka toka u zaglavlju svake strane štampa brojeve iz `data/tok.json` — generiše je `tools/shells.mjs`, nikad ručno.
+
+Ovo su sadržinska odredišta; njihov spisak nije nalog da se menjaju postojeće grupe navigacije ili ukloni veza Udruženje. Prototipovi i druge zbirke gradiva su povezane podstranice, a ne novi paralelni tok nastave. Objavljen zapis rada ne menja sam status časa, pripreme ili završnog nastavničkog izdanja.
+
+## Čovek u centru
+
+| Smernica | Zašto | Ko brani |
+|---|---|---|
+| Podrazumevano koristiti uloge umesto identiteta. Izuzetak mora imati izričit nalog, tačan obim podataka i vezu sa konkretnim radom; ovde je odobrena atribucija pet prototipova, opisana ispod. | Ime i indeks uz odobreni rad nisu dozvola za druge identifikatore, kontakte, ocene ili tuđe privatne materijale. | `tests/interfejs.test.mjs` i provera registra prototipova; tačan obuhvat potvrđuje tekući testni izveštaj |
+| Bez simulacije invaliditeta; osoba se ne ocenjuje; prekid u svakom trenutku; objava samo uz izričitu saglasnost. | Pravila u „Kako sarađujemo" i protokolu udruženja su obaveza, ne ukras. | `tests/udruzenje.test.mjs` (strana ih izriče), `docs/probavanje-u-udruzenju.md` (izvor) |
+
+## Veštine Svemira iz kojih smernice izlaze
+
+- **[svemir-lepota](../../../skills/svemir-lepota/SKILL.md)** — zakon i kapija: istina pre ukrasa, jedna rečenica po artefaktu, vidljiva struktura, ekonomija pažnje (jedna porodica pisma, `--signal` kao jedini akcenat), 150–300 ms, DOM je ugovor a canvas prostor, rad bez mreže. Svakom izveštaju o artefaktu: sedam pitanja kapije.
+- **[svemir-design → Academic course sites](../../../skills/svemir-design/references/implementation/academic-course-sites.md)** — ruta za predmetne sajtove: ugovor sadržaja (autoritet/održano/publika), pet odredišta (naslovna, održano gradivo, sledeći čas, oblak, izvori), čitljiva staza, osam merljivih grupa pristupačnosti, dokaz nad stvarnim artefaktom.
+- **[svemir-3esign](../../../skills/svemir-3esign/SKILL.md)** — tri pitanja svakog nacrta: mera, veza, život. Gradivo o merama i tolerancijama (EN 71-1, ⌀ 31,7 mm, ≤ 220 mm) odgovara na njih istim redom.
+- **[svemir-provereno-pisanje](../../../skills/svemir-provereno-pisanje/SKILL.md)** — tvrdnja nosi izvor i datum; izdvojeno opaženo / izvedeno / predloženo / nepoznato.
+- **[univerzitet](../../../skills/univerzitet/SKILL.md)** — institucionalne granice: šta je zvanično, šta nastavničko, šta radna hipoteza.
+
+Veze ka veštinama su lokalni radni lokatori u verifikovanom Svemir workspace-u, ne javne stranice ovog sajta. U samostalnom klonu prvo pronaći aktivni workspace, pa njegov `skills/`; ne kopirati privatni sadržaj da bi lokalna veza proradila.
+
+## Kako se menja sajt
+
+1. Pre izmene proveriti vlasništvo/imenovani diff, zabeležiti početni puni Git SHA i napraviti checkpoint: `node tools/course-checkpoint.mjs capture --root <SITE> --store <PRIVATE_STORE>`. Store je van sajta; [ugovor i ograničenja](checkpoints.md) određuju dozvoljene putanje i zasebnu obnovu.
+2. Podaci prvo: relevantni `data/tok.json` (šema v2), `data/material/wNN.json` ili `data/prototipovi.json`; koristiti zajednički validator. Ne menjati nepovezane izvornike da bi nova kompozicija prošla. Za promenu objavljenog nedeljnog gradiva dodati reviziju, čuvajući prethodnu istoriju i njegov zaseban status odobrenja.
+3. Regenerisati zahvaćeni statični sadržaj postojećim alatima. Za održano: `node tools/held-baseline.mjs`; za prototipove: `node tools/prototipovi.mjs`, pa `node tools/prototipovi.mjs --check` (provera bez upisa). Posle njih po potrebi `node tools/shells.mjs` za ljusku (navigacija, traka, brend, podnožje, naslovi). Novi tip sadržaja koristi svoj zajednički renderer za živi i statični prikaz; ne održavati drugu zbirku podataka ručno.
+4. Pre konačne provere dopuniti `data/verzije.json` (istorija + registar strana), `LOG.md` (append) i ove smernice ako je promenjen ugovor. Na mirnom konačnom stablu: `npm run verify:course -- --base <početni-puni-Git-SHA> --store <privatni-store-van-sajta>`. Alat snima konačan checkpoint, testira zasebnu vraćenu kopiju i proverava da se ni ona ni izvor nisu promenili. Sačuvati stvarni receipt; izmena testa mora biti opravdana, ne utišavanje pada.
+5. Dokaz nad istim stvarnim prikazom: 320/390/768/1440, SR/EN, bez horizontalnog prelivanja, tastatura, bez JavaScript-a, uvećan tekst, konzola čista, slike učitane i tačan autor vezan za tačan rad. Svaka naknadna izmena bajtova zahteva nov odgovarajući dokaz; prethodni receipt ne pokriva novu verziju.
+6. U ovlašćenom obimu objave: pregled imenovanog diff-a → commit tačnih proverenih putanja → push → Pages build → živi dokaz na 3esign.github.io. Lokalni PASS nije završen deploy. Checkpoint nije autentifikacija nastavnika ili apsolutna zaštita od drugog procesa sa istim pravima.
+
+## Kapija pre objave (iz svemir-lepota)
+
+Rečenica · Laž · Oduzimanje · Hijerarhija · Kretanje · Test golog ekrana · Ko može.
+Ako bilo koje pitanje nema odgovora — nije gotovo.
+
+## Slika kao deo gradiva · 09.10.2026.
+
+Prikaz PUD-a je dokumentarna radna sveska: mirna svetla podloga, tamnozelena struktura, boje stvarnih predmeta na fotografijama. Naslovi pojedinačnih lekcija koriste sistemsko serifno pismo, a tekst i kontrole čitljiv sans-serif. Ove dve uloge su namerna projektna odluka; nijedan novi font se ne preuzima. Dobra postojeća 3D naslovna se čuva.
+
+Fotografija gradiva nije proizvoljna dekoracija niti dokaz da je fotografisana na času. Prikazuje se uz originalni opis i natpis, sa vezom ka celom gradivu. Portretni kadar predmeta se čuva bez odsecanja mehanizma. Prva relevantna fotografija ima prednost pri učitavanju. Na telefonu dolazi posle kratke identifikacije časa, pre dugih izveštaja i administrativnih objašnjenja. Postojanje slike na disku ili HTTP 200 ne potvrđuje da je student stvarno vidi.
+
+`assets/held-record.js` izvodi pregled održanog časa iz već postojećih podataka i fotografija. `node tools/held-baseline.mjs` osvežava srpski statični prikaz istim rendererom; zatim se po potrebi pokreće `tools/shells.mjs`. Izvornici `wNN.json` se zbog promene kompozicije ne prepravljaju. Novi datum održavanja se ne izvodi iz današnje objave sajta.
+
+Proveriti stvarni put: početna strana → vidljiva fotografija i njen opis → gradivo → povratak; zasebno proveriti pripremu i označeni radni pregled. Provera uključuje 320 px, srpski i engleski, ugašen JavaScript i uvećan tekst. Tehnički lokatori ostaju u proširivom zapisu izvora; vodeći studentski tekst koristi razumljive nazive.
+
+## Prototipovi kao gradivo · 09.10.2026.
+
+Pet dostavljenih fotografija dokumentuje studentske radove koji su **doneti/predstavljeni**, prema izričitom korisnikovom nalogu. Njime je tražena i javna atribucija imena i indeksa uz baš te radove. Ta precizna iznimka zamenjuje raniju apsolutnu zabranu imena; ne menja podrazumevanu zaštitu drugih ličnih podataka. Ne zaključivati identitet iz lica, rukopisa, naziva slike ili položaja priloga. Nalog za prikaz imena/indeksa nije dokaz zasebne saglasnosti svih fotografisanih osoba.
+
+Registar je `data/prototipovi.json`, šema `course-prototypes/v1`; prikaz i provera dele `assets/prototipovi-core.js` (`validatePrototypes`). `assets/prototipovi.js` povezuje podatke sa stranicom `prototipovi.html`. Ta stranica pripada meniju Materijal, uz prečice iz Održanog i Sledećeg časa. Fotografije i atribucije se ne prepisuju u paralelne registre stranica.
+
+| Polje | Uloga i granica |
+|---|---|
+| `sources[].id`, `recordedOn`, `description.sr/en` | Stabilan izvor i datum upisa u registar. Datum upisa nije datum časa, fotografisanja niti testiranja. Javni sažetak ne iznosi sirov privatni razgovor. |
+| `items[].id`, `title`, `description.sr/en` | Stabilan identitet rada i sadržaj koji potvrđeni izvor podržava. Naslov i opis ne izmišljaju performanse ili odobrenje. |
+| `author.name`, `author.studentNumber` | Tačan zapis autora i indeksa iz naloga, povezan sa tačnim radom. Indeks se čuva kao tekst; ne gubiti prefikse, kose crte ili početne nule. |
+| `attribution.sourceId`, `fields` | Poziv na izričit nalog i tačno dozvoljena polja `['name', 'studentNumber']`. Nije globalni prekidač za sve osobe ili sve buduće radove. |
+| `originWeek: 1`, `medium`, `status: 'brought'`, `sourceId` | Poreklo zadatka je prvi čas; medij je `physical` ili `digital`, prema izvoru. Status znači doneto/predstavljeno, ne testirano ili ocenjeno. Poreklo zadatka ne potvrđuje datum sledećeg časa. |
+| `photos[]` | Svaka fotografija ima jedinstveni `id`, stvarni `src`, `sha256`, `width`, `height`, `alt.sr/en`, `caption.sr/en` i `sourceId`. Hash potvrđuje bajtove, ne identitet, vreme, dozvolu ili kvalitet rada. |
+| `observations` | Odvojeni evidencioni događaji. Sadašnji prazan niz ne dokazuje da je probavanje obavljeno. Budući događaj u udruženju zahteva svoj izvor, stvarni datum i fotografije; njegovu šemu/renderer/test dopuniti zajedno pre upisa. |
+| `revizije` | Dnevnik ispravki: `{v, datum, sta:{sr,en}, sourceId, prototypeId, before, after}`. `before` čuva ceo prethodni zapis rada, `after` novi. Datum je datum ispravke, ne nagađani datum događaja. |
+
+Za ispravku autora, indeksa, opisa, fotografije ili drugog potvrđenog podatka sačuvati ceo stari item u novoj reviziji i navesti izvor korekcije. Ne brisati prethodne `sources`, `observations` ili `revizije`, niti prepisati stare bajtove slike novom fotografijom pod istim lokatorom. Novi važeći prikaz i istorija ispravke imaju različite uloge; stari pogrešan podatak nije drugi aktuelni autor.
+
+Ne prebacivati `w02` u održano zbog galerije ili današnje objave. Ne dodavati datum drugog časa bez potvrde. Buduće probavanje u udruženju može povezati postojeći rad sa novim događajem; ne menja prvobitnu atribuciju, status prezentacije ili istoriju izvora. Opažanje, tumačenje i predlog poboljšanja ostaju različite tvrdnje. Nova fotografija nije sama po sebi dokaz uspešne provere, bezbednosti ili zadovoljstva korisnika.
+
+### Primer sledeće dopune
+
+Primer postupka, **nije podatak za automatski upis**: stigne druga fotografija jednog od ovih pet radova, uz opis nastavnika.
+
+1. Pronaći njegov postojeći `items[].id`; ne otvarati duplikat rada. Proveriti da nova fotografija zaista pripada njemu i šta novi nalog dopušta.
+2. Dodati novi `sources[]` zapis sa stvarnim datumom registracije i sažetkom porekla. Sačuvati raniji izvor i prvobitnu atribuciju.
+3. Dopuniti samo njegov `photos[]` novim ID-jem, tačnom lokalnom putanjom, punim hash-om, stvarnim dimenzijama i sadržinski usklađenim SR/EN opisima. Ne upisivati probne vrednosti, preuzeti hash druge slike ili nagađati identitet.
+4. Ako je to fotografija kasnijeg rada u udruženju, povezati je sa zasebnim potvrđenim događajem u `observations`; ne predstaviti je kao prvobitno donošenje. Ako je događaj još nepoznat, tako ga i označiti u radnoj evidenciji, bez lažne javne tvrdnje.
+5. Pokrenuti `node tools/prototipovi.mjs`, `node tools/prototipovi.mjs --check`, pa potrebnu regeneraciju ljuske i konačni gate redom iz odeljka „Kako se menja sajt“. Pregledati atribuciju i sliku u punoj galeriji i oba pregleda, sa uključenim i isključenim JavaScript-om.
+
+Za šesti rad dodaje se novi `items[]` sa svim potvrđenim podacima i zasebnim odgovarajućim nalogom za atribuciju. Odobrenje ovih pet nije trajna dozvola za svakog budućeg autora. Ako potreban podatak nije poznat, sačuvati ga kao otvoren posao u postojećoj radnoj evidenciji umesto izmišljanja polja koje validator prihvata.
+
+## Materijal na vrhu, navigacija i obaveštenja · 12.10.2026. (drugi nalog istog dana)
+
+- **Pravilo koje stoji:** novi materijal iz udruženja objavljuje se na vrhu strane održanih časova, iznad pregleda radova — sažetak i fotografije prvi, učesnici diskretno (jedan sitan red), sa vratima ka temeljnoj analizi. Svaka buduća poseta dobija svoj registar i ide na isto mesto.
+- **Navigacija vodi kroz četiri odredišta** (Naslovna, Održano, Sledeći čas, Oblak ideja). Strane materijala (radovi, poseta, udruženje, biblioteka i ostale) ostaju objavljene i dohvatljive preko veza u sadržaju i naslovne; nisu navigacijske opcije.
+- **Sekcija „Obaveštenja“ je van prikaza** do potvrde sadržaja; podaci ostaju u kodu (`assets/course.js` — notices), a čekanje je zapisano kao ideja u oblaku sa izvorom i datumom.
+
+## Registar posete · 12.10.2026.
+
+Poseta udruženju je gradivo nedelje kojoj pripada, a ne zaseban „događaj bez casa". Poseta od 09.10.2026. (nedelja 2) nosi dva registra i dve javne površine:
+
+- **`data/poseta.json`** (šema `course-visit/v1`, validator `assets/poseta-core.js`): stvaran datum, mesto, izvor i spisak učesnika — tačno `name` i `studentNumber`, ništa više. Učesnici nisu „autori": njihova imena ne idu u `data/prototipovi.json` i ne nasleđuju izuzetak atribucije radova.
+- **Zapažanja u `data/prototipovi.json`** (`observations`, vrsta `association-use`): događaj korišćenja po radu, sa stvarnim datumom, izvorom, dvojezičnim sažetkom i fotografijama. Lica članova udruženja mogu se objaviti (dopuna naloga voditelja, 12.10.2026. uveče): natpisi „kadar bez lica“ se ukidaju, a snimci se objavljuju na strani analize uz svoje nalaze. Imena korisnika i dalje se ne objavljuju, niti se lice vezuje za nalaz. Zapažanja iz udruženja ostaju append-only dokazi: tekst se sme korigovati samo uz novi zapisan izvor u istoj izmeni, struktura (rad, datum, otisci, redosled fotografija) nikada; nove fotografije ulaze kao nova zapažanja, ne u postojeće. Prikazna polja (natpis, `rotation`) dele isto pravilo: ispravka samo uz novi izvor, bajti i otisci fotografija ostaju netaknuti.
+- **Površine:** panel posete na `index.html` (pod svojom nedeljom, iz `heldSection(tok, weeks, visit)`) i strana `poseta.html` (temeljna analiza, `renderPoseta`). Obe peče `tools/held-baseline.mjs` / `tools/poseta-baseline.mjs` iz istih registara; živi prikaz koristi isti renderer.
+- **Imena učesnika** stoje samo na te dve površine i samo iz registra; `tests/interfejs.test.mjs` dozvoljava tačno `data-visit-participants` markup na `index.html` i `poseta.html` i skenuje sva ostala mesta. Analiza razdvaja viđeno, čitanje i sledeći korak; ne tvrdi testiranje, bezbednost ni odobrenje.
+- Analiza je čitanje materijala, ne ispitivanje: navodi šta se na materijalu vidi i čuje, bez imena korisnika i bez povezivanja lica sa nalazom.
+
+## Dopuna registra · 09.10.2026.
+
+U sledećoj izričitoj nastavnikovoj dopuni dodat je šesti rad **Upadalica**, sa potvrđenom atribucijom, jednom originalnom fotografijom i izvorom `teacher-2026-10-09-upadalica`. Atribucija se čita iz registra rada. Raniji opis pet radova označava prvu isporuku; postojeći postupak i granice važe i za novu dopunu.
+
+## Potvrđena nedelja dokumentovanja · 09.10.2026.
+
+Nastavnik je naknadno potvrdio: svih šest radova i najavljeni naredni krug fotografija pripadaju **nedelji 2**, održanoj **u petak, 09.10.2026.** Nastava je petkom. `originWeek: 1` označava početak izrade; `documentedWeek: 2` označava nedelju dokumentovanja i vodi ka njenom gradivu. Nisu isto polje. Šest before/after revizija čuva prethodno stanje; izvor je `teacher-2026-10-09-week-02`. Nove fotografije iz ovog najavljenog kruga vezati za nedelju 2 i odgovarajući rad, uz proveru stvarnog konteksta. Ovo nije trajno pravilo za sve buduće radove. Zapažanja iz udruženja ostaju zasebni događaji.
+
+Drugi čas sada pripada `odrzano`, a naredni čas je treća nedelja, čiji plan ostaje priprema. Datum održavanja nije datum konačnog odobrenja čitavog gradiva. Redovan petak ne određuje satnicu, trajanje ni tačan termin susreta u udruženju.
+
+`assets/next-class.js` sada izvodi stranicu Sledeći čas iz stvarne naredne nedelje u `data/tok.json` i odgovarajućeg `wNN.json`. Ne vraćati nazive, zadatke ili veze fiksirane za drugu nedelju. Posle promene toka ili narednog gradiva pokrenuti `node tools/next-baseline.mjs` (zatim `--check`), `node tools/held-baseline.mjs`, `node tools/prototipovi.mjs` i `node tools/shells.mjs`; testovi proveravaju isti statični i živi prikaz. Izvor nedelje i status njenog nacrta ostaju vidljivi.
+
+## Različite vrste rada i nove nedelje · 09.10.2026.
+
+Zbirka sada obuhvata i tehnički crtež Lego4ll i nastavnikov prototip zvečke sa četiri fotografije. Oba pripadaju dokumentovanoj nedelji 2. `kind` razdvaja `technical-drawing` i `prototype` (izostavljeno na starim zapisima znači postojeći prototip); `authorRole` može biti `student` ili `teacher`; `status: documented` ne tvrdi donošenje ili testiranje. `medium: drawing` je crtež. `author` sadrži ime i samo dostavljeni indeks, a `attribution.fields` tačno prisutna lična polja. Ne nagađati indeks niti `originWeek`: za nova dva rada nisu dostavljeni. Četiri slike zvečke pripadaju jednom radu.
+
+Originalna fotografija tehničkog crteža ostaje nepromenjena; `photos[].rotation: -90` okreće samo prikaz preko zajedničkog renderer-a i CSS-a. Podržane su -90, 90 i 180 stepeni, bajtovi/SHA i originalne dimenzije ostaju izvorni. Generativna rekonstrukcija se ne koristi kao tehnička dokumentacija. Zapažanja iz udruženja i dalje su zaseban događaj uz potvrđen izvor.
+
+Pregled održanih časova i birač radnih nedelja prikazuju najnovije prvo; ne unositi ručno obrnut HTML niti menjati pedagoški redosled faza A/B/C semestralnog plana. Redosled proveriti sa najmanje tri izmešane nedelje.
+
+## Pozajmljeni primer pripada prvom času · 09.10.2026.
+
+Nastavnik je izričito ispravio poreklo: igračka iz `data/igracka/igracka-01.jpg`, `igracka-02.jpg` i `igracka-03.jpg` pozajmljena je iz udruženja „Živimo zajedno” i doneta na prvi čas da podstakne osmišljavanje studentskih prototipova. Sve tri fotografije pripadaju samo `w01`; to nije studentski rad druge nedelje niti dokaz probavanja u udruženju. Ne zaključivati datum/mesto snimanja, autorstvo, mere, funkciju ili nameru izrađivača iz fotografije. Fotografije druge nedelje moraju odgovarati potvrđenim zapisima te nedelje. Ispravka objavljenog gradiva dobija novu reviziju; njegov važeći publication hash osvežava se uz očuvanje statusa `held-record`, bez proglašavanja konačnog odobrenja. Prethodni bajtovi ostaju u Git istoriji i checkpointu.

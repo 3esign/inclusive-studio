@@ -1,0 +1,3360 @@
+{
+  "schema": "svemir-dozvoljene-slike/v1",
+  "updatedAt": "2026-11-03T10:05:22.519Z",
+  "totalApproved": 479,
+  "approved": [
+    {
+      "file": "assets/atlas-foto/f01-bale-tekstila.jpg",
+      "sha256": "a95e48a92794ce6da7101fe79981d8d76407ada9b87b650590062e900886fe99",
+      "bytes": 138095,
+      "approvedAt": "2026-11-03T10:05:22.221Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f02-trijaza-sortiranje.jpg",
+      "sha256": "419d498b1bddcb342197c2e6a2c1322814e75250706de2bf4db6954eead3b646",
+      "bytes": 90033,
+      "approvedAt": "2026-11-03T10:05:22.222Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f03-kontejneri-tekstil.jpg",
+      "sha256": "b7687b274badb795dde7c644c1a365a74111de0efa3913d4e29a32d1d969a6e1",
+      "bytes": 334252,
+      "approvedAt": "2026-11-03T10:05:22.222Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f04-globalni-tok-bale.jpg",
+      "sha256": "cb287913f22891943ee3cb05dd4d30bc2984332663edbdd45671b9715e099c69",
+      "bytes": 240466,
+      "approvedAt": "2026-11-03T10:05:22.223Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f05-sablon-krojenje.jpg",
+      "sha256": "d1f519e89656c5a491474b4c0e903e73fa8fecaccbf32b7920d2ef58ea477e51",
+      "bytes": 272834,
+      "approvedAt": "2026-11-03T10:05:22.224Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f06-sivaca-stanica.jpg",
+      "sha256": "20569087f9099ea62d39705627eeaf6d4368b1708dd815e13aad1808e13822db",
+      "bytes": 76737,
+      "approvedAt": "2026-11-03T10:05:22.224Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f07-adaptivno-kopcanje.jpg",
+      "sha256": "a969b8998d440de879824352e15f4e50e818f7081c10da89d8edbd4d27065926",
+      "bytes": 191693,
+      "approvedAt": "2026-11-03T10:05:22.225Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f08-radionica-zajednicki-sto.jpg",
+      "sha256": "8f13b113ff62217bcf177588887005bb181d1652c54530289a5054161d108b15",
+      "bytes": 297866,
+      "approvedAt": "2026-11-03T10:05:22.225Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f09-pamuk-vlakno.jpg",
+      "sha256": "57598fd93f39717332754b2bad14bd48dd12a156acc6c39a89518f9614fdba13",
+      "bytes": 97195,
+      "approvedAt": "2026-11-03T10:05:22.226Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f10-vuna-runo.jpg",
+      "sha256": "b68b12eb49e2da03b1ecc0750ce452d874ba0d25bcadae375d317d63cb71f20d",
+      "bytes": 174104,
+      "approvedAt": "2026-11-03T10:05:22.226Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f11-rpet-poliester.jpg",
+      "sha256": "3b133a63f868cadb8f1db4d3e19cffa89962c182afaa02fa42bcb6844596fe59",
+      "bytes": 160477,
+      "approvedAt": "2026-11-03T10:05:22.227Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f12-celulozna-pulpa.jpg",
+      "sha256": "0a80aa44749877d2680b328a4dd932a059d2e4bec21ab00b0fbe74a41997e36c",
+      "bytes": 366278,
+      "approvedAt": "2026-11-03T10:05:22.228Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f13-elastan-niti.jpg",
+      "sha256": "059c89c534b82c7be7b55cc6fa806e5fcb50166b5e1d1087b48a27ef8a314d76",
+      "bytes": 196275,
+      "approvedAt": "2026-11-03T10:05:22.228Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f14-ribarske-mreze-najlon.jpg",
+      "sha256": "a320a86f6c37cb03f2a1c500ae4d08f4563d6784a379cc84917f7b9b123e055b",
+      "bytes": 219139,
+      "approvedAt": "2026-11-03T10:05:22.229Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f15-tkanina-prepletaj.jpg",
+      "sha256": "aed6976a2cc4750bfc606fea2c38ef42eac4bb5200e6d08c0ef1bd1ec85d1ff1",
+      "bytes": 578998,
+      "approvedAt": "2026-11-03T10:05:22.230Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f16-pletenina-petlje.jpg",
+      "sha256": "50dafb9d1f91e64c150bb680ad1886cad216a820e2e6c23f486e542d8d79dfbf",
+      "bytes": 236619,
+      "approvedAt": "2026-11-03T10:05:22.231Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f17-netkani-iglani-filc.jpg",
+      "sha256": "10593a8cf047acb2cadc8a2022de86e0e91159314539a52571fe241dd15f8828",
+      "bytes": 159543,
+      "approvedAt": "2026-11-03T10:05:22.231Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f18-cerada-laminat.jpg",
+      "sha256": "7176861ee38597bfbeff3e59b674d718d5339c9b4231b1900ff816817af096d5",
+      "bytes": 293830,
+      "approvedAt": "2026-11-03T10:05:22.232Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f19-flis-mikrovlakna.jpg",
+      "sha256": "847c43c28f7e4679ce391437eb9f8f72d2aaa9c086ad1d852c1ff536b19600b5",
+      "bytes": 137192,
+      "approvedAt": "2026-11-03T10:05:22.232Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f20-kardiranje-boja-bez-vode.jpg",
+      "sha256": "f4f25be703ec03441c1ff3cdcc61ca87481dbe55c07209f47080b3c012993722",
+      "bytes": 158406,
+      "approvedAt": "2026-11-03T10:05:22.232Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f21-prirodne-boje-kupka.jpg",
+      "sha256": "43a0da812b04e50f2a5c5627e6c39385a1349e8678b6efac2504909602d6bc68",
+      "bytes": 146354,
+      "approvedAt": "2026-11-03T10:05:22.233Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f22-stampa-i-bojenje.jpg",
+      "sha256": "ec199120325987cf70bb8f65ed0e6ad1fc232610e7989a9ddc6b80e685ab011d",
+      "bytes": 163007,
+      "approvedAt": "2026-11-03T10:05:22.233Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f23-boro-sashiko.jpg",
+      "sha256": "17a2fa98c2ec304071dbf0576b65328970df85196398c83e50cadc2748e54bc9",
+      "bytes": 759850,
+      "approvedAt": "2026-11-03T10:05:22.235Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f24-savovi-i-ivica.jpg",
+      "sha256": "aaa1e22f89be93d7b1753858e7a97696e15ad46c2c86ecd5b6517aa7f3be9794",
+      "bytes": 59995,
+      "approvedAt": "2026-11-03T10:05:22.235Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f25-tkanje-trakama.jpg",
+      "sha256": "406158cbcd5a0f963ad3af348aaadd44327b5d41d038e954eebb385485f6bfea",
+      "bytes": 272995,
+      "approvedAt": "2026-11-03T10:05:22.236Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f26-cegeri-torbe-apicklaza.jpg",
+      "sha256": "38ff57167d746859f6383e80eb84ec0dd84de2ab1ed126ad317e73fbf502fb31",
+      "bytes": 10417,
+      "approvedAt": "2026-11-03T10:05:22.236Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f27-zero-waste-kroj.jpg",
+      "sha256": "f810ddb97f6c34e6d6a89220884a2ea1bf4e41f546d33ed0488ca83060c459a4",
+      "bytes": 405050,
+      "approvedAt": "2026-11-03T10:05:22.237Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f28-industrijske-krpe.jpg",
+      "sha256": "9ac948b08a6b227cf24182a03331a2c246faeb77bd70f33fa593cf9ef4d977eb",
+      "bytes": 238619,
+      "approvedAt": "2026-11-03T10:05:22.238Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f29-pamucna-izolacija-zid.jpg",
+      "sha256": "e8783f17497e57a785d9850cdfb853a1970d58027a062d5fa9417cc33593d094",
+      "bytes": 19696,
+      "approvedAt": "2026-11-03T10:05:22.238Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f30-akusticni-paneli-enterijer.jpg",
+      "sha256": "7096b084c4ae937a437f1b51fd485f2b33423eeb6eb13d7ab7b11fca5d942504",
+      "bytes": 276959,
+      "approvedAt": "2026-11-03T10:05:22.238Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f31-zemljani-blokovi-vlakna.jpg",
+      "sha256": "191b876b86b636df824a478221c04d11970fe6a04ad0dc2714f75370bc8e8929",
+      "bytes": 259638,
+      "approvedAt": "2026-11-03T10:05:22.239Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/atlas-foto/f32-tapetarstvo-punjenje.jpg",
+      "sha256": "4b88c2acf945de8557aa86445e7f344045d06156a751b7260636f32826875abd",
+      "bytes": 219274,
+      "approvedAt": "2026-11-03T10:05:22.240Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/aids-memorial-quilt.jpg",
+      "sha256": "3adc658b11836c19db9911ebb8a4a7b53f2ee5d4c38d15a17befc621ecc6825a",
+      "bytes": 463917,
+      "approvedAt": "2026-11-03T10:05:22.241Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/alexandra-kehayoglou.jpg",
+      "sha256": "26499b8c02f880d13f0ca4aaf5f68a978c7b6ec15fc92b3b3b668a60b80e89ec",
+      "bytes": 75365,
+      "approvedAt": "2026-11-03T10:05:22.241Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/ambercycle-cycora.jpg",
+      "sha256": "0e972b6fb27a92fddf79f7c921402a7b78fea31e7a1208d335dcaaf0d41305cf",
+      "bytes": 66240,
+      "approvedAt": "2026-11-03T10:05:22.241Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/arpilleras.jpg",
+      "sha256": "0afe4d2cd83d45189e32213ae40a1d53c110a4fa2e7001108e43953d251c21f1",
+      "bytes": 87014,
+      "approvedAt": "2026-11-03T10:05:22.242Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/artech-engineering-materijal-od-ostataka.jpg",
+      "sha256": "847072bf9c9fedaceee0d6f84b47ded4a8d6f8ce42a23530d98436f6baff9406",
+      "bytes": 248188,
+      "approvedAt": "2026-11-03T10:05:22.243Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/atelier-repairs.jpg",
+      "sha256": "aed6976a2cc4750bfc606fea2c38ef42eac4bb5200e6d08c0ef1bd1ec85d1ff1",
+      "bytes": 578998,
+      "approvedAt": "2026-11-03T10:05:22.244Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/bethany-williams.jpg",
+      "sha256": "f810ddb97f6c34e6d6a89220884a2ea1bf4e41f546d33ed0488ca83060c459a4",
+      "bytes": 405050,
+      "approvedAt": "2026-11-03T10:05:22.245Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/beyond-retro.jpg",
+      "sha256": "3836bc56f8ec68f88167cb0791b8322db6dce88223772d6ad7516e69a554d282",
+      "bytes": 284460,
+      "approvedAt": "2026-11-03T10:05:22.246Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/biro-354c.jpg",
+      "sha256": "874a13cd0b0be59ead8e574a01488a20c2e37e1bcce291bcef1eb6e25448cf6d",
+      "bytes": 70170,
+      "approvedAt": "2026-11-03T10:05:22.246Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/blocktexx.jpg",
+      "sha256": "35147663bf89666e80cf9df4bd6162fbc6bd2663b9e61fcdefc6ceb05e404ea3",
+      "bytes": 1001932,
+      "approvedAt": "2026-11-03T10:05:22.248Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/blue-jeans-go-green.jpg",
+      "sha256": "7b3d0fbc47ca456f796e7c1d1cd71752a965e515a48f2e2c266e72b9a02284a6",
+      "bytes": 258971,
+      "approvedAt": "2026-11-03T10:05:22.249Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/bode.jpg",
+      "sha256": "6680a77f3f8029a47f18ff53642366aed6acd5eaca6d04adfc9477e17c03d622",
+      "bytes": 290019,
+      "approvedAt": "2026-11-03T10:05:22.250Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/bonded-logic-ultratouch.jpg",
+      "sha256": "96b11f00b1739764080c39c3adcd4247eb34d341ccb1098ba72a95acbb8dcfc4",
+      "bytes": 239651,
+      "approvedAt": "2026-11-03T10:05:22.250Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/boro-japan.jpg",
+      "sha256": "17a2fa98c2ec304071dbf0576b65328970df85196398c83e50cadc2748e54bc9",
+      "bytes": 759850,
+      "approvedAt": "2026-11-03T10:05:22.252Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/centar-ponovne-upotrebe-reuse-centre.jpg",
+      "sha256": "53c1d9aa508070d47a5f16c01f0c9c1a115624e4643f2aa579b2e33cbc78ca8e",
+      "bytes": 362575,
+      "approvedAt": "2026-11-03T10:05:22.253Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/christian-boltanski-no-man-s-land.jpg",
+      "sha256": "b03158cc71b5519bd0ed3867a378d61892b3f20df9e1e21e7feb55d76f83bac3",
+      "bytes": 349072,
+      "approvedAt": "2026-11-03T10:05:22.254Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/christopher-raeburn-r-burn.jpg",
+      "sha256": "e9e71b915b74c446e292835fa31da2fe4c3aa8330574221ecd885a81eed96df5",
+      "bytes": 225812,
+      "approvedAt": "2026-11-03T10:05:22.254Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/circ.jpg",
+      "sha256": "dd2d2211f1204a7a84ac7266b621df69a36511229aeed0ceb3a4555ec028c756",
+      "bytes": 63436,
+      "approvedAt": "2026-11-03T10:05:22.254Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/circular-systems-texloop.jpg",
+      "sha256": "2ad2cd4c238d19c507540a789c8de1416738ae7eb049f68b273ff9174be36b2e",
+      "bytes": 49868,
+      "approvedAt": "2026-11-03T10:05:22.255Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/clothes-swap-day-swap-toolkit.jpg",
+      "sha256": "82296c74b1d6ec42faab5aaf3fcb9bb820cfa75f4c2a67df16f35b4fac38b8c3",
+      "bytes": 202074,
+      "approvedAt": "2026-11-03T10:05:22.255Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/derick-melander.jpg",
+      "sha256": "419d498b1bddcb342197c2e6a2c1322814e75250706de2bf4db6954eead3b646",
+      "bytes": 90033,
+      "approvedAt": "2026-11-03T10:05:22.256Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/e-l-v-denim.jpg",
+      "sha256": "12e9b91ef2ae64570fc60f25aa898e4b78493cb61dd0b33b996f9134c2e98639",
+      "bytes": 7830864,
+      "approvedAt": "2026-11-03T10:05:22.280Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/econyl-aquafil.jpg",
+      "sha256": "1cd0281ef2ba90eb53107bd10e227df2b0953ebaabbcf77daad6a9bef82e720d",
+      "bytes": 67046,
+      "approvedAt": "2026-11-03T10:05:22.280Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/eileen-fisher-renew.jpg",
+      "sha256": "6ce27e43a652ee00083fddf758f59aab13bd6606dca6c059c50b04278b6c2c2d",
+      "bytes": 229653,
+      "approvedAt": "2026-11-03T10:05:22.281Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/el-anatsui.jpg",
+      "sha256": "d894ebe2ff878348538ec4ab7fb8fb6a32e86907603a08bd2a68ded5b47ad0d9",
+      "bytes": 272239,
+      "approvedAt": "2026-11-03T10:05:22.281Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/elvis-kresse.jpg",
+      "sha256": "789fdb2cf3fac421db503326f2e91ab616724eb2d0071186f81744194f5809a5",
+      "bytes": 208968,
+      "approvedAt": "2026-11-03T10:05:22.282Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/euromiteks-nis.jpg",
+      "sha256": "9ac948b08a6b227cf24182a03331a2c246faeb77bd70f33fa593cf9ef4d977eb",
+      "bytes": 238619,
+      "approvedAt": "2026-11-03T10:05:22.283Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/evrnu-nucycl.jpg",
+      "sha256": "9d8bb3dedbc6a226d7bef243e681d2a51818b1a10937c1bbdd92ac4ba9b1c41d",
+      "bytes": 140873,
+      "approvedAt": "2026-11-03T10:05:22.283Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/fabbrick.jpg",
+      "sha256": "d7cd9f6961a99f9ea10b8691ba1c919f839e685cdf63ff7d3a2396c64f2cbbc0",
+      "bytes": 2823709,
+      "approvedAt": "2026-11-03T10:05:22.289Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/fabriqa-rs.jpg",
+      "sha256": "8ac4112c3649a39831d56577626c7a7125e25c9c90a04b66b9ce71cd4a56eed2",
+      "bytes": 577488,
+      "approvedAt": "2026-11-03T10:05:22.290Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/fabscrap-materijal.jpg",
+      "sha256": "934c1297336745fa83c06c9acefe1f8585dcf3ac6695680e6fd63c6cb434f72e",
+      "bytes": 233141,
+      "approvedAt": "2026-11-03T10:05:22.291Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/fashion-for-good-sorting-for-circularity.jpg",
+      "sha256": "0828af9365285f5c3c8f9117284a7fd22d0ddb635d9b4194d7f1450e95c53be0",
+      "bytes": 203867,
+      "approvedAt": "2026-11-03T10:05:22.292Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/fashion-revolution-haulternative.jpg",
+      "sha256": "ec199120325987cf70bb8f65ed0e6ad1fc232610e7989a9ddc6b80e685ab011d",
+      "bytes": 163007,
+      "approvedAt": "2026-11-03T10:05:22.292Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/freitag.jpg",
+      "sha256": "0fd7d883d47d665ad77c19e85918eae61f9b1a512128a6f6ea574d24af600001",
+      "bytes": 485349,
+      "approvedAt": "2026-11-03T10:05:22.293Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/gee-s-bend-quilts.jpg",
+      "sha256": "0baea59cdd421fa1e0e4a0b8e5a037be41228ac553a9418b79c3c7f7394ec440",
+      "bytes": 42782,
+      "approvedAt": "2026-11-03T10:05:22.293Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/green-tex-interreg-danube.jpg",
+      "sha256": "0d116495c6f67aa4137776d9aab14e02beb44b2a38d49d6c025f5738deec9d61",
+      "bytes": 125336,
+      "approvedAt": "2026-11-03T10:05:22.294Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/hilaturas-ferre.jpg",
+      "sha256": "b285d3d40cb0c5a2c0a10089bbddb99c2f778ac86aa0ba456429cb00d923e268",
+      "bytes": 82443,
+      "approvedAt": "2026-11-03T10:05:22.294Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/humana-nova.jpg",
+      "sha256": "3d8855ef467d5b1ecbba60d1c91d0493d8b06478f6cfb55ae1b80118647ccf23",
+      "bytes": 137815,
+      "approvedAt": "2026-11-03T10:05:22.294Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/infinited-fiber.jpg",
+      "sha256": "aa2d7ce5e11a3e340fa938f7bcab6941b237419f5e3323f7b79f993a781dc96d",
+      "bytes": 448941,
+      "approvedAt": "2026-11-03T10:05:22.295Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/interface-net-works.jpg",
+      "sha256": "e6ab3fd48dd0fa9f856c9216a4c25b25adc230f1109f494744a721ae77ce5125",
+      "bytes": 28749,
+      "approvedAt": "2026-11-03T10:05:22.295Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/isolina-me-tisse.jpg",
+      "sha256": "e8783f17497e57a785d9850cdfb853a1970d58027a062d5fa9417cc33593d094",
+      "bytes": 19696,
+      "approvedAt": "2026-11-03T10:05:22.296Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/kantha.jpg",
+      "sha256": "0b1fd858c21becdf965859d336098c4c6feedec2011663fba580a449d174277b",
+      "bytes": 753815,
+      "approvedAt": "2026-11-03T10:05:22.297Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/kvadrat-really-raw-edges.jpg",
+      "sha256": "4b88c2acf945de8557aa86445e7f344045d06156a751b7260636f32826875abd",
+      "bytes": 219274,
+      "approvedAt": "2026-11-03T10:05:22.298Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/le-relais.jpg",
+      "sha256": "11a561538e03d107f6e87507db9f781778fad8c507a75a8c503fc2ed9b9a1a36",
+      "bytes": 886275,
+      "approvedAt": "2026-11-03T10:05:22.300Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/lena-fashion-library.jpg",
+      "sha256": "882c1396b13d39076e266ad7f3ceff498f78b699f865b44e8505afbc47a8a622",
+      "bytes": 425496,
+      "approvedAt": "2026-11-03T10:05:22.301Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/lenzing-refibra.jpg",
+      "sha256": "55af07476cda7f63236cca395a7f731b0c03f7780d2e9d738fb33b9b19c5687e",
+      "bytes": 193665,
+      "approvedAt": "2026-11-03T10:05:22.301Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/loop-swap-clothing-swap.jpg",
+      "sha256": "8f8d54262534e2b6b1a7f8df442e1b5870ca22f57e85aa4d8dde01013eef4f02",
+      "bytes": 167812,
+      "approvedAt": "2026-11-03T10:05:22.302Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/looptworks.jpg",
+      "sha256": "885cb1767e085349754ca92054da8e2b32bdd48b8203f8b97531712f2902ad78",
+      "bytes": 1140739,
+      "approvedAt": "2026-11-03T10:05:22.304Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/manteco.jpg",
+      "sha256": "29e0460959b470fa51c81cd2d5ece11d94d0ffda5eb4eda8f21b733057dffbeb",
+      "bytes": 486305,
+      "approvedAt": "2026-11-03T10:05:22.306Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/marine-serre-regenerated.jpg",
+      "sha256": "a3008b5d709e967a35e74b23f0df46c4df95c8cc86d3dd52b79c90858a072eec",
+      "bytes": 267034,
+      "approvedAt": "2026-11-03T10:05:22.306Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/mola.jpg",
+      "sha256": "5858c32e484fe2cc9d1a691449730dc71f6bd71b7f7d8bea55ef210afbd061ba",
+      "bytes": 559608,
+      "approvedAt": "2026-11-03T10:05:22.308Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/mud-jeans.jpg",
+      "sha256": "f98519f792faf0d00f059f370bed070cfed3c1ca84ba7fba33d9ed41bb10f3d0",
+      "bytes": 133234,
+      "approvedAt": "2026-11-03T10:05:22.308Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/nick-cave-soundsuits.jpg",
+      "sha256": "1c6bce2374f798e48cc1fac4233153b3fb5e5af881fdf051002b7754767b4678",
+      "bytes": 613035,
+      "approvedAt": "2026-11-03T10:05:22.309Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/novitet-z-itkovac.jpg",
+      "sha256": "e72c8bec89d17b4261455f3d8619d640284d55aeffafa3c39e64150a77a8671e",
+      "bytes": 734471,
+      "approvedAt": "2026-11-03T10:05:22.311Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/nudie-jeans-popravka.jpg",
+      "sha256": "ba9a509d431df85f79848dee78ee809cd89610b55a5503ee349d59696e4fcb0d",
+      "bytes": 1426927,
+      "approvedAt": "2026-11-03T10:05:22.314Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/patagonia-recrafted.jpg",
+      "sha256": "9be4aba2f1ef05b3fd2085d8e84e3e3b1773dcd29e51d55163367a5fd5ce55ee",
+      "bytes": 20492,
+      "approvedAt": "2026-11-03T10:05:22.314Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/patagonia-worn-wear.jpg",
+      "sha256": "7029180c8dfcca6c25affbb88a34acc86dbd174ddd0e314041a29cf1f5baa21c",
+      "bytes": 37816,
+      "approvedAt": "2026-11-03T10:05:22.314Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/pentatonic.jpg",
+      "sha256": "7d7d5debb791aee0dd95f595e39a0c98ccf47fd1fdb77d11236da43391d67e5d",
+      "bytes": 278370,
+      "approvedAt": "2026-11-03T10:05:22.315Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/prato-cardato-riciclato.jpg",
+      "sha256": "a95e48a92794ce6da7101fe79981d8d76407ada9b87b650590062e900886fe99",
+      "bytes": 138095,
+      "approvedAt": "2026-11-03T10:05:22.316Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/probudi-vjes-tinu-novska.jpg",
+      "sha256": "fd73bde4b62e230683f0bb7941cb3ab3ee32bed372f657167f671dc450424cc6",
+      "bytes": 99828,
+      "approvedAt": "2026-11-03T10:05:22.316Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/pure-waste.jpg",
+      "sha256": "3a908d1ae30af21c0598bb26679a9ee6f9336f8a36d9249cd98e5006356217ab",
+      "bytes": 291600,
+      "approvedAt": "2026-11-03T10:05:22.317Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/rag-rug-krpare.jpg",
+      "sha256": "791930789c026ebda99512429e09d99e6e33345be0f30937c81c63886b692dea",
+      "bytes": 427267,
+      "approvedAt": "2026-11-03T10:05:22.318Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/rave-review.jpg",
+      "sha256": "f4f25be703ec03441c1ff3cdcc61ca87481dbe55c07209f47080b3c012993722",
+      "bytes": 158406,
+      "approvedAt": "2026-11-03T10:05:22.318Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/re-done.jpg",
+      "sha256": "c4b1424c145c4814088f99fe727d54e7e1ab9331b1c46a733c210be02154fe98",
+      "bytes": 693128,
+      "approvedAt": "2026-11-03T10:05:22.320Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/really-kvadrat.jpg",
+      "sha256": "7096b084c4ae937a437f1b51fd485f2b33423eeb6eb13d7ab7b11fca5d942504",
+      "bytes": 276959,
+      "approvedAt": "2026-11-03T10:05:22.320Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/recover.jpg",
+      "sha256": "3fac86ba565da8249e874ad100270d1a48c0640aa12c56c059b2ef9cfbee2d38",
+      "bytes": 76947,
+      "approvedAt": "2026-11-03T10:05:22.321Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/remake-love-your-clothes-wrap.jpg",
+      "sha256": "aaa1e22f89be93d7b1753858e7a97696e15ad46c2c86ecd5b6517aa7f3be9794",
+      "bytes": 59995,
+      "approvedAt": "2026-11-03T10:05:22.321Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/renewal-workshop.jpg",
+      "sha256": "25e86754bd49d4e310149bccf92f4033d9fd18df64dc21d1248849aa6d2c8451",
+      "bytes": 98866,
+      "approvedAt": "2026-11-03T10:05:22.321Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/renewcell-circulose.jpg",
+      "sha256": "585b10ce969507521fd8ef744f516374c51fa3b993a330edca8455b87076bf3f",
+      "bytes": 724666,
+      "approvedAt": "2026-11-03T10:05:22.323Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/rent-the-runway.jpg",
+      "sha256": "160400cf6b21734a4c88065d9755ab17b0f1463a54c8ed9d89fd625d1ad8470a",
+      "bytes": 1628091,
+      "approvedAt": "2026-11-03T10:05:22.326Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/repair-cafe.jpg",
+      "sha256": "8f13b113ff62217bcf177588887005bb181d1652c54530289a5054161d108b15",
+      "bytes": 297866,
+      "approvedAt": "2026-11-03T10:05:22.327Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/resortecs.jpg",
+      "sha256": "bee9ad5ad45f64a91146d518c86629126e020fea9e650823727fb75d8d9012cb",
+      "bytes": 237080,
+      "approvedAt": "2026-11-03T10:05:22.328Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/reverse-resources.jpg",
+      "sha256": "d1f519e89656c5a491474b4c0e903e73fa8fecaccbf32b7920d2ef58ea477e51",
+      "bytes": 272834,
+      "approvedAt": "2026-11-03T10:05:22.328Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/rewoven-retex.jpg",
+      "sha256": "f697baa69b2517dd3358a9b191e6845694ded9acd4046fb0f1d4f089e44ab9ce",
+      "bytes": 672013,
+      "approvedAt": "2026-11-03T10:05:22.330Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/rifo.jpg",
+      "sha256": "c5c5be156cb489e4e7179ba81cf22e5d821f2f297bce99872c5dea82f00bb448",
+      "bytes": 45690,
+      "approvedAt": "2026-11-03T10:05:22.330Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/sashiko.jpg",
+      "sha256": "fc11fdf79ba3d4981358556eb196056dc2108cf7a7aa16f91190f1996e2833b5",
+      "bytes": 124901,
+      "approvedAt": "2026-11-03T10:05:22.331Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/so-dra-oncemore.jpg",
+      "sha256": "0a80aa44749877d2680b328a4dd932a059d2e4bec21ab00b0fbe74a41997e36c",
+      "bytes": 366278,
+      "approvedAt": "2026-11-03T10:05:22.331Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/soex-i-co.jpg",
+      "sha256": "4f0ea6d2af091c208cc724a6f53a0c5e141b5650df92257f8901de8528885d39",
+      "bytes": 210823,
+      "approvedAt": "2026-11-03T10:05:22.332Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/sojo.jpg",
+      "sha256": "a5b6bf84133e5e71f8e50835eabd05bfb5475484be4a5716079fc66a66fc4961",
+      "bytes": 6047354,
+      "approvedAt": "2026-11-03T10:05:22.348Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/somborske-s-najderke.jpg",
+      "sha256": "f60677de052cd6f14507f934f8186a4d1a2f8a83362d8ca29760282d9cb81b9b",
+      "bytes": 125441,
+      "approvedAt": "2026-11-03T10:05:22.348Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/spinnova.jpg",
+      "sha256": "2b1b2d655e4923ba6f4d49cec17ce1ff5fdb88fb46ff38ed86230ac976c6bda9",
+      "bytes": 1167456,
+      "approvedAt": "2026-11-03T10:05:22.351Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/sport-vision-spildpro.jpg",
+      "sha256": "71bfc59eedb6a6efefbfd8a72c0b97b5aeb37652f7d0db082086140cc98656f9",
+      "bytes": 180975,
+      "approvedAt": "2026-11-03T10:05:22.352Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/studio-tjeerd-veenhoven.jpg",
+      "sha256": "f9f91dcb8aebe45b3a459b3ec2df755da0afe7fabc28d9695a20571575eb4deb",
+      "bytes": 198511,
+      "approvedAt": "2026-11-03T10:05:22.353Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/syre.jpg",
+      "sha256": "a3f6cfdacf0d08db089a516034c90d8b782f733e07e2180aefe6395b2d5b949b",
+      "bytes": 1514422,
+      "approvedAt": "2026-11-03T10:05:22.356Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/texaid.jpg",
+      "sha256": "a2866c1101e8b95c03533771309a477d70b1c85e97a224e8542a526adffe8ba4",
+      "bytes": 382389,
+      "approvedAt": "2026-11-03T10:05:22.357Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/the-or-foundation.jpg",
+      "sha256": "cb287913f22891943ee3cb05dd4d30bc2984332663edbdd45671b9715e099c69",
+      "bytes": 240466,
+      "approvedAt": "2026-11-03T10:05:22.358Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/the-realreal.jpg",
+      "sha256": "17e87dd1de2565043177bd8be01d37880a64521ae984c62f2944b7841842b315",
+      "bytes": 1081380,
+      "approvedAt": "2026-11-03T10:05:22.360Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/the-restory.jpg",
+      "sha256": "e72733066d81ad5a4a9afeb5679b1efcb98c11b3677ac2a1c540cc268cfbf4ec",
+      "bytes": 400083,
+      "approvedAt": "2026-11-03T10:05:22.361Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/thredup.jpg",
+      "sha256": "f95f8b3d4ec33d5ea22a861b38fa31d55c594d121f7a2afb4ffb5cd5cad476ef",
+      "bytes": 181293,
+      "approvedAt": "2026-11-03T10:05:22.362Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/toast-repair-circle.jpg",
+      "sha256": "a4569f9e703ed555f329022d23b2f0c4394ed14e538f0306506fd01c4a417489",
+      "bytes": 78552,
+      "approvedAt": "2026-11-03T10:05:22.362Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/tonle.jpg",
+      "sha256": "8487a5f7e9f933f6213b9ed89acee441ef0d6370ba0ede9065e89ba38b7778b4",
+      "bytes": 188217,
+      "approvedAt": "2026-11-03T10:05:22.363Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/uff-humana.jpg",
+      "sha256": "b7687b274badb795dde7c644c1a365a74111de0efa3913d4e29a32d1d969a6e1",
+      "bytes": 334252,
+      "approvedAt": "2026-11-03T10:05:22.363Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/valvan-fibersort.jpg",
+      "sha256": "dc0fa0ac91fec812f4c64d88063e469e50ea5d4d9ef49e5183e349b47b2220c3",
+      "bytes": 212107,
+      "approvedAt": "2026-11-03T10:05:22.364Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/vinted.jpg",
+      "sha256": "df3f60f462304a321d95ba2cfb24f656d07a8119e26771e6cf2c6fe791a6ec1b",
+      "bytes": 68852,
+      "approvedAt": "2026-11-03T10:05:22.364Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/waste-studio-studio-nienke-hoogvliet.jpg",
+      "sha256": "cc8b7a640514825a1fd0e9a5324299b6a99be2ea852601fcd0d1776ccf83b322",
+      "bytes": 81468,
+      "approvedAt": "2026-11-03T10:05:22.364Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/woolcool.jpg",
+      "sha256": "077b2a77eb4bda7fd04438b4e9e868dbca948ca1df185538bbaeb120c2a58c0d",
+      "bytes": 164314,
+      "approvedAt": "2026-11-03T10:05:22.365Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/worn-again.jpg",
+      "sha256": "63bcd5b4a18208f9b86eab1cf0e4b4f4e0d7dc56f6f7d279b3527f9ab3ed2556",
+      "bytes": 120074,
+      "approvedAt": "2026-11-03T10:05:22.365Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/woven-image.jpg",
+      "sha256": "10593a8cf047acb2cadc8a2022de86e0e91159314539a52571fe241dd15f8828",
+      "bytes": 159543,
+      "approvedAt": "2026-11-03T10:05:22.366Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/zadruga-dobrote.jpg",
+      "sha256": "795bd0039b13b454ae0989ebb3dd4d5b743c5c5c5ec0d51baa42c29ed4b1ae3e",
+      "bytes": 315803,
+      "approvedAt": "2026-11-03T10:05:22.366Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/enc-foto/zero-waste-daniel.jpg",
+      "sha256": "74a7607baca50e9ae2685588fae2c37a9a6b36226548660ad865fe7455f42e65",
+      "bytes": 27668,
+      "approvedAt": "2026-11-03T10:05:22.367Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/visit/poseta-2026-10-09-muzicka.mp4",
+      "sha256": "a586d6390e76e01980696ddd37e469ed60a875569462593a0359bf303ea113dc",
+      "bytes": 1119332,
+      "approvedAt": "2026-11-03T10:05:22.369Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/visit/poseta-2026-10-09-upadalica.mp4",
+      "sha256": "c2e1415179c3243e91d8c4163d60018113a01f810797217f9508f934132e0629",
+      "bytes": 2327318,
+      "approvedAt": "2026-11-03T10:05:22.374Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "assets/visit/poseta-2026-10-09-zgradica.mp4",
+      "sha256": "61526c3bfbda89e0e339a6fe1a0c1276b1701bae189242d5e176c4206c9fd089",
+      "bytes": 7359467,
+      "approvedAt": "2026-11-03T10:05:22.391Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/igracka/igracka-01.jpg",
+      "sha256": "6d332ff9b1b23465d3b3eec4e63faeb32e5795f06054275b462473864f39eb12",
+      "bytes": 180931,
+      "approvedAt": "2026-11-03T10:05:22.391Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/igracka/igracka-02.jpg",
+      "sha256": "5270b2d58152a7e1f9e54b5cb29e347a24b7e4a634c2697e1d9ca057a7c69cce",
+      "bytes": 152185,
+      "approvedAt": "2026-11-03T10:05:22.392Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/igracka/igracka-03.jpg",
+      "sha256": "aad6bbf57156cd3116376bb80d3d507456bec7a0e741274c53cad36eaca63a6b",
+      "bytes": 141938,
+      "approvedAt": "2026-11-03T10:05:22.392Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/lego4ll-2026/01.jpg",
+      "sha256": "28c1bedd1eeb78cc0e99acda65bdc4123a0a48fea38b77ee752afd8a9868e8ff",
+      "bytes": 102571,
+      "approvedAt": "2026-11-03T10:05:22.393Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/muzicka-kutija-2026/01.jpg",
+      "sha256": "b287f28a4f0ddf3f036d3ffb4d8e84a61647250836ef7d49cc037ae122205c97",
+      "bytes": 97033,
+      "approvedAt": "2026-11-03T10:05:22.393Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/muzicka-kutija-2026/poseta-2026-10-09-1.jpg",
+      "sha256": "f708629e7c925957a34078bde10b2bfa56bc5fa05d8b7a4fc2443f97bd08c3ab",
+      "bytes": 215510,
+      "approvedAt": "2026-11-03T10:05:22.394Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/muzicka-kutija-2026/poseta-2026-10-09-2.jpg",
+      "sha256": "78f9e670f3d75c714096d12e7c6ec1f384a7f6f6d542d1ea4435190c538e2c17",
+      "bytes": 221040,
+      "approvedAt": "2026-11-03T10:05:22.394Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/muzicka-kutija-2026/poseta-2026-10-09-3.jpg",
+      "sha256": "c920c976247a31f08a0646e055c4ec0ad5e4fb0b445b5af742d8fcaaa6c1c343",
+      "bytes": 198397,
+      "approvedAt": "2026-11-03T10:05:22.395Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/pogodilica-2026/01.jpg",
+      "sha256": "e78005d77caa5ea1ea28b6f755d1518cde2e07070e1cc68bdafe02d6364aa7ac",
+      "bytes": 137511,
+      "approvedAt": "2026-11-03T10:05:22.395Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/camera-13.jpg",
+      "sha256": "103b27d6bc5e35d8880eb6af4e6e9cae1ff0c05828cf81e7a3d503b62b4edd14",
+      "bytes": 41383,
+      "approvedAt": "2026-11-03T10:05:22.395Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/camera-14.jpg",
+      "sha256": "9e82c0847bf2fc9bc2ee72bfd89e526495645f859f2d0c148a410e036d43799f",
+      "bytes": 47101,
+      "approvedAt": "2026-11-03T10:05:22.396Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/camera-15.jpg",
+      "sha256": "2b05fac94e350f80684c4f84ed06ed0b71a427cd77eb01b4fed496a9d283e54e",
+      "bytes": 75829,
+      "approvedAt": "2026-11-03T10:05:22.396Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/camera-16.jpg",
+      "sha256": "cdb4da8612b465a0dbcfdae53fc6f12abf374c8de99e8fb1fbb8c68dee854058",
+      "bytes": 75795,
+      "approvedAt": "2026-11-03T10:05:22.396Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/camera-17.jpg",
+      "sha256": "54b713f239fa989071edfe53c46d74bc7eaeefadee88f15b2fc7de19a6c8a1f7",
+      "bytes": 62611,
+      "approvedAt": "2026-11-03T10:05:22.396Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/camera-18.jpg",
+      "sha256": "d4b3ee6cf5b0a0c766cabae582c1358ab2a0dca05c8892ec26daf8fd1a6bb97b",
+      "bytes": 57009,
+      "approvedAt": "2026-11-03T10:05:22.397Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/camera-19.jpg",
+      "sha256": "aed4e4afcdb0f325c519132fd67d34f54aeaf8dd4bdfbd2ea920b96460e00c46",
+      "bytes": 84742,
+      "approvedAt": "2026-11-03T10:05:22.397Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/camera-20.jpg",
+      "sha256": "e28429a2d68bccfe826a8202c208df46cceed9633ec153696d95eae09dc53fd5",
+      "bytes": 84144,
+      "approvedAt": "2026-11-03T10:05:22.397Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/camera-21.jpg",
+      "sha256": "eae163891809c4a5fad0d84ce100f82d6125fc8f4c5aee137ab9f8196a2f8d62",
+      "bytes": 82635,
+      "approvedAt": "2026-11-03T10:05:22.397Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/camera-22.jpg",
+      "sha256": "571fb730412fd0e07241a66da37119c121b26087d027cb0b61b5a2562fa8a872",
+      "bytes": 95609,
+      "approvedAt": "2026-11-03T10:05:22.398Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/camera-23.jpg",
+      "sha256": "c83549da214d1c08e5a4d7febdd4a2b16ad26342b5d476a90b1b6c0ce6948657",
+      "bytes": 79177,
+      "approvedAt": "2026-11-03T10:05:22.398Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/drive-01.jpg",
+      "sha256": "3285c39a29a175899fc282d7b32e607f84bf8c00f4ccb36e7fe9a54b111ea45a",
+      "bytes": 269016,
+      "approvedAt": "2026-11-03T10:05:22.399Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/drive-02.jpg",
+      "sha256": "3440538179340336220b9856c80df9b92b9c63dd7e62569eb871cde1f449b56e",
+      "bytes": 298273,
+      "approvedAt": "2026-11-03T10:05:22.399Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/drive-03.jpg",
+      "sha256": "2811aed43b8f97a557b0b418f073f1414ed721c69ac51884b5e15db13b7d448d",
+      "bytes": 131993,
+      "approvedAt": "2026-11-03T10:05:22.400Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/drive-04.jpg",
+      "sha256": "0edd232b037e908d7f6c9feadd9f930c39e702277f0e185515ba49ed46f7ddcf",
+      "bytes": 279660,
+      "approvedAt": "2026-11-03T10:05:22.400Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/drive-05.jpg",
+      "sha256": "829f345f299b2d781dc0630010f85dd516f56c9fcd0a6a55d5eecc7e526193cf",
+      "bytes": 427267,
+      "approvedAt": "2026-11-03T10:05:22.402Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/drive-06.jpg",
+      "sha256": "ac2a33bf84a02609ce7843b244a17756855c4366dd4e5f6ec0b7fbc857837a08",
+      "bytes": 387539,
+      "approvedAt": "2026-11-03T10:05:22.402Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w03/drive-07.jpg",
+      "sha256": "2779bb24f2ed3e68d21eaa594719fbfba2d52907e089a82f00705ee79b923cb4",
+      "bytes": 405768,
+      "approvedAt": "2026-11-03T10:05:22.403Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-01.jpg",
+      "sha256": "741667be6f183428e4e867e6eccdac59b9034b3743b4a769e543b4e5ce8f897c",
+      "bytes": 64221,
+      "approvedAt": "2026-11-03T10:05:22.404Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-02.jpg",
+      "sha256": "711407b28d4e38ef8809b810d050d36c91e4d14c7f4f826a4f182b8d1c5a707f",
+      "bytes": 77628,
+      "approvedAt": "2026-11-03T10:05:22.404Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-03.jpg",
+      "sha256": "b1bbf694b5c0a2d83c0edc7f8191189a24150fe1fe18af066628d32436adfa18",
+      "bytes": 141101,
+      "approvedAt": "2026-11-03T10:05:22.404Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-04.jpg",
+      "sha256": "1339cef11eee7603b00c96d4e6fcb64b25d98ef8ed18371ead6a223c80cf8d99",
+      "bytes": 84204,
+      "approvedAt": "2026-11-03T10:05:22.405Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-05.jpg",
+      "sha256": "ab3ccda64a5f460c44072f05ecd559575361b9530673ba08970b7163648d90c3",
+      "bytes": 94413,
+      "approvedAt": "2026-11-03T10:05:22.405Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-06.jpg",
+      "sha256": "63b06644e64ff99097bc2a3f4d2a40531b02a5b929e006d40c83f2bbcad6eb02",
+      "bytes": 131396,
+      "approvedAt": "2026-11-03T10:05:22.405Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-07.jpg",
+      "sha256": "e31154d9fd3010166bc13e8f745e5b9bd16d48f1cb27c1541d2aa5d0703f3096",
+      "bytes": 131192,
+      "approvedAt": "2026-11-03T10:05:22.406Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-08.jpg",
+      "sha256": "b7b1fdf16eb32d46ba07d60b189d71ad2405617b54f0a020685ec733a9eb11f2",
+      "bytes": 73488,
+      "approvedAt": "2026-11-03T10:05:22.406Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-09.jpg",
+      "sha256": "e84423ee11e8058695a54c11d787a76de00f2c4a698220e3631abb2295db4d61",
+      "bytes": 97520,
+      "approvedAt": "2026-11-03T10:05:22.406Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-10.jpg",
+      "sha256": "e7019db0fdfd559344f812bd0b61d49a1599342d4a72511d199654864fc67443",
+      "bytes": 121690,
+      "approvedAt": "2026-11-03T10:05:22.407Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-11.jpg",
+      "sha256": "8b769d9c3677ba81f604c54fd43d46f0d131faad881cee9fa4ad56ea366d7660",
+      "bytes": 93848,
+      "approvedAt": "2026-11-03T10:05:22.407Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-12.jpg",
+      "sha256": "fbe3d837238030274cfd4aa26288262a749723fb889f8ec97610a20bc72c07ab",
+      "bytes": 63961,
+      "approvedAt": "2026-11-03T10:05:22.407Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-13.jpg",
+      "sha256": "e54b98d083f89ed8a760858671a6fe621f0528cfa53b3cf3d188a45dc1fd18e7",
+      "bytes": 130519,
+      "approvedAt": "2026-11-03T10:05:22.407Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-14.jpg",
+      "sha256": "99db7c681ed7168bfb041f286d70b80ef08f9d035cb59e48458318cd7dcb6470",
+      "bytes": 85788,
+      "approvedAt": "2026-11-03T10:05:22.408Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-15.jpg",
+      "sha256": "562bf4a628041c4e21a7dbb32cb0a87cd10364168aa55020df6335d8dcc87cae",
+      "bytes": 61047,
+      "approvedAt": "2026-11-03T10:05:22.408Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-16.jpg",
+      "sha256": "5d42221cc42144804cf09084885e3018d62783b80d7c779051f68ec96572bfd9",
+      "bytes": 57933,
+      "approvedAt": "2026-11-03T10:05:22.408Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-17.jpg",
+      "sha256": "70556b2fa21559798ed1666c163bde5d38c8fa73f82743080dc4d93e1319fb5d",
+      "bytes": 70614,
+      "approvedAt": "2026-11-03T10:05:22.408Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-18.jpg",
+      "sha256": "3a9cb382a2699caeba96bd50ada229612e51fbd3dc5a093ac4f32a94f74d71c4",
+      "bytes": 83684,
+      "approvedAt": "2026-11-03T10:05:22.409Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-19.jpg",
+      "sha256": "dc13a1f85314770135a27489fb96a1b5f5882ed287c5f2fc9bcbf5d1a3bf4383",
+      "bytes": 76924,
+      "approvedAt": "2026-11-03T10:05:22.409Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-20.jpg",
+      "sha256": "1c649160a6dbce62f58d70c441174166301be0b87d554c292f5f7c970be63f84",
+      "bytes": 80971,
+      "approvedAt": "2026-11-03T10:05:22.409Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-21.jpg",
+      "sha256": "90c21e6be55276c3168f81147b7faf5e400fefa86b4f51a017fd7a188bed5a13",
+      "bytes": 89681,
+      "approvedAt": "2026-11-03T10:05:22.409Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-22.jpg",
+      "sha256": "868e592dee6082ba7ffa05acd7cef414da4c6a6cdd8227a7d53c1e9c309dbcd8",
+      "bytes": 69637,
+      "approvedAt": "2026-11-03T10:05:22.410Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-23.jpg",
+      "sha256": "8cd4f894b82ed0070026fcdc78aa17315c6a2fc74c8e4af16647bae44487e89d",
+      "bytes": 92710,
+      "approvedAt": "2026-11-03T10:05:22.410Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-24.jpg",
+      "sha256": "293faaafffbae2a137278657182dbdb68e0b51d397052d18c94fce15c189e4ff",
+      "bytes": 55584,
+      "approvedAt": "2026-11-03T10:05:22.410Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-25.jpg",
+      "sha256": "e32e83cce9fa1e47e9623e94e6c593bdd8888ebf9c5dbe984cee644c5d874105",
+      "bytes": 128459,
+      "approvedAt": "2026-11-03T10:05:22.410Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-26.jpg",
+      "sha256": "77304a50cff32127135ec4b22670ba7cc7ada44ab773f09ab509ae96874958fc",
+      "bytes": 109481,
+      "approvedAt": "2026-11-03T10:05:22.411Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-27.jpg",
+      "sha256": "8444ce6809ea51937762a95e901171fa10e905a40233edc0c43077304e91dc10",
+      "bytes": 94509,
+      "approvedAt": "2026-11-03T10:05:22.411Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-28.jpg",
+      "sha256": "9187e996af83486c7fc8dc01735aadd25bf0d1c946553e6a736316db926e4e98",
+      "bytes": 45426,
+      "approvedAt": "2026-11-03T10:05:22.411Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-29.jpg",
+      "sha256": "b080ee6d24332ef250df26327eceb1c3db1d4cd291cf5602c48c65893178a68d",
+      "bytes": 196712,
+      "approvedAt": "2026-11-03T10:05:22.412Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-30.jpg",
+      "sha256": "254e17920b9c3ae2bab26abd0e51e12e16570046a31c309f0917fbd1dfa7c70a",
+      "bytes": 48656,
+      "approvedAt": "2026-11-03T10:05:22.412Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w04/camera-31.jpg",
+      "sha256": "50cf554a501b9897e43e26c6b1959eb3d842288c61177a095355e565af0e8b91",
+      "bytes": 79523,
+      "approvedAt": "2026-11-03T10:05:22.412Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w05/drive-01.jpg",
+      "sha256": "e600e15c651f2d0bb6b52e9f4d2b53d1383fa2b95080581a1692e6a6efcaf9f4",
+      "bytes": 262737,
+      "approvedAt": "2026-11-03T10:05:22.413Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w05/drive-02.jpg",
+      "sha256": "121b8a173b878c91cde57f2972d86cbab7ee1f2339b4716abf58889b7e58bf62",
+      "bytes": 332267,
+      "approvedAt": "2026-11-03T10:05:22.414Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w05/drive-03.jpg",
+      "sha256": "3510bc59bd161396078de6b5e7ae68c563a42973aa29b9905f546f3bc85e576b",
+      "bytes": 269694,
+      "approvedAt": "2026-11-03T10:05:22.414Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w05/drive-04.jpg",
+      "sha256": "83cbc1dc6442448db8bbba3d139f5e3fc110e27a1216c3ac4dad3cffb8dec80a",
+      "bytes": 302838,
+      "approvedAt": "2026-11-03T10:05:22.415Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w05/drive-05.jpg",
+      "sha256": "a5a64c26df32902d38c811a25f1139ce39d2389e665dee5735ba42b2ee029151",
+      "bytes": 332234,
+      "approvedAt": "2026-11-03T10:05:22.416Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w05/drive-06.jpg",
+      "sha256": "9720fbf5f40f0a647035efde6a1805c71898ccb1d7372bb594f0fc5438b67818",
+      "bytes": 350061,
+      "approvedAt": "2026-11-03T10:05:22.417Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w05/telefon-85.jpg",
+      "sha256": "c35160ed79d6194acd1cda56eb93629ea2d5b36feeb3f599e660e41f2b3641ca",
+      "bytes": 134702,
+      "approvedAt": "2026-11-03T10:05:22.417Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w05/telefon-86.jpg",
+      "sha256": "cb588cffcb3dcd150df4d2b99ff0610cbf843f526bab03831cfbe80c36287b97",
+      "bytes": 147744,
+      "approvedAt": "2026-11-03T10:05:22.418Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w05/telefon-87.jpg",
+      "sha256": "8965e5c5a795c8331393e4ab09d5190a749cecb09a6b2987cd83b070848f727e",
+      "bytes": 124332,
+      "approvedAt": "2026-11-03T10:05:22.418Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/poseta-w05/telefon-88.jpg",
+      "sha256": "4c0a6bfc5c9878c317c5399abb479470a79cc10676f937eda148843c3b3de42a",
+      "bytes": 129419,
+      "approvedAt": "2026-11-03T10:05:22.418Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/sudoku-2026/01.jpg",
+      "sha256": "0f8dbac6f927a3d4ca052830609b41231fb119b77b4f4b6d3827f138faeecf2a",
+      "bytes": 132245,
+      "approvedAt": "2026-11-03T10:05:22.419Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/sudoku-2026/poseta-2026-10-09-1.jpg",
+      "sha256": "f08d3c11251a1d646881a4cf32c4b55d247e3bfe28ae902c898da1ef4ba6e7eb",
+      "bytes": 226273,
+      "approvedAt": "2026-11-03T10:05:22.420Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/sudoku-2026/poseta-2026-10-09-2.jpg",
+      "sha256": "ff19952c2c702dfc72ac57b217e5f20a8f44ccab3cb425ec282f5e994691e661",
+      "bytes": 221606,
+      "approvedAt": "2026-11-03T10:05:22.421Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/upadalica-2026/01.jpg",
+      "sha256": "538bef7a7700254940f36d6044f3d38f938bbb0609f1849072ac5a602b09c32b",
+      "bytes": 82047,
+      "approvedAt": "2026-11-03T10:05:22.421Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/upadalica-2026/poseta-2026-10-09-1.jpg",
+      "sha256": "a82b6e89e5ae075dc1e73188da227ae5ae7afa2ca37a79f7afeca281a0a74dc7",
+      "bytes": 192584,
+      "approvedAt": "2026-11-03T10:05:22.422Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-2d-lavirint/01.jpg",
+      "sha256": "1b98d138110fffa0b86a1266998d0c3dfd938f674375aa12dbe1607cb9ff46e9",
+      "bytes": 58559,
+      "approvedAt": "2026-11-03T10:05:22.422Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-2d-lavirint/02.jpg",
+      "sha256": "78c111552a8b71a8d5c6410a407ec48e257ac189671fe6a8ba79f72814743ce3",
+      "bytes": 60439,
+      "approvedAt": "2026-11-03T10:05:22.422Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-amaze/01.jpg",
+      "sha256": "409f2668f753a32801065a08b4fd4725f714558e038b789edc073ff40197ed66",
+      "bytes": 79635,
+      "approvedAt": "2026-11-03T10:05:22.422Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-brza-putanja/01.jpg",
+      "sha256": "789dc692195acd3e5df157d60e105440d4b6852cbc4c4e43a4c2a716a0af4348",
+      "bytes": 82470,
+      "approvedAt": "2026-11-03T10:05:22.423Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-brza-putanja/02.jpg",
+      "sha256": "ff62203b4e3eeef4c20880030d856f035193956be139b3193f77100e13c6d8f2",
+      "bytes": 82066,
+      "approvedAt": "2026-11-03T10:05:22.423Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-brza-putanja/03.jpg",
+      "sha256": "f23d5025969389c04c231f8f9fc394123aebe722df0641751d35295f91ff35e9",
+      "bytes": 67805,
+      "approvedAt": "2026-11-03T10:05:22.423Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-brza-putanja/04.jpg",
+      "sha256": "437ca12925497095230fd9a580a732eeeb2d21e2c65405fb3e3f5ddb308d8dda",
+      "bytes": 70749,
+      "approvedAt": "2026-11-03T10:05:22.423Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-castle/01.jpg",
+      "sha256": "1d9613e3cd82324836bfb28aa498a66d062f7793930a9ce96a903e8d980bf2ae",
+      "bytes": 996802,
+      "approvedAt": "2026-11-03T10:05:22.426Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-castle/02.jpg",
+      "sha256": "6b9844bb705ba81aebfeed0a0289d7737d6cd3ef99e7d04b59606f7bea9ff2f0",
+      "bytes": 1316198,
+      "approvedAt": "2026-11-03T10:05:22.429Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-castle/03.jpg",
+      "sha256": "430f4847ff4ba3e3f0c7fa0d83f91aea16b0cc055ee4fadcf435e8cb9e976479",
+      "bytes": 1305462,
+      "approvedAt": "2026-11-03T10:05:22.432Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-demiri/01.jpg",
+      "sha256": "e7b227d0b6a928c8ffd8607a94b1875ca9ff7fc683de92286f9087fbe10d7e9a",
+      "bytes": 122949,
+      "approvedAt": "2026-11-03T10:05:22.432Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-demiri/02.jpg",
+      "sha256": "6ee38e0d58a25450a874265a2c49144c3b388e5188a877eaaa390f2845007f37",
+      "bytes": 140628,
+      "approvedAt": "2026-11-03T10:05:22.432Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-demiri/03.jpg",
+      "sha256": "a6ec13c565abd91501b1565fe9a1c891cce5c63d6019c6b35f91ffbaa6221dc1",
+      "bytes": 111583,
+      "approvedAt": "2026-11-03T10:05:22.433Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-demiri/04.jpg",
+      "sha256": "51c5936de1975c2ad2c24a1e85e9aab770fd998fd0972d101afce6b13aa4657f",
+      "bytes": 136789,
+      "approvedAt": "2026-11-03T10:05:22.433Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-demiri/05.jpg",
+      "sha256": "4b92eba134a198b2941a2d474ec03df60c3f0cdd72a6e3f355580f5fd60954b3",
+      "bytes": 113269,
+      "approvedAt": "2026-11-03T10:05:22.433Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-edukativna/01.jpg",
+      "sha256": "b98af6e65021d3e68c41a3abaee9b036797fb7255241f6ed99ae91279f9feff8",
+      "bytes": 102631,
+      "approvedAt": "2026-11-03T10:05:22.434Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-edukativna/02.jpg",
+      "sha256": "0a8473fab7393325dba1b0a6a8d228fe92d3f7fc312358c6c5a90a4265a77df7",
+      "bytes": 105357,
+      "approvedAt": "2026-11-03T10:05:22.434Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-fliper/01.jpg",
+      "sha256": "60571f38b00d2ba737ec9c0150af5f96238c455e422b125d6d126c7799aea4a3",
+      "bytes": 99136,
+      "approvedAt": "2026-11-03T10:05:22.434Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-fliper/02.jpg",
+      "sha256": "7b5161f7a66eba2451ec92c856422e6b58926ce2d90b32440ce34bcbee243498",
+      "bytes": 70730,
+      "approvedAt": "2026-11-03T10:05:22.435Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-fliper/03.jpg",
+      "sha256": "dc0e76343d64f192e7147a370f95846bb98f64353ff0fdf94c218e0d4ec34854",
+      "bytes": 50719,
+      "approvedAt": "2026-11-03T10:05:22.435Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-grujic/01.jpg",
+      "sha256": "b03c1045f3645a1a275e0493187355b0ab42940baf112a26460f80b0a6697167",
+      "bytes": 105494,
+      "approvedAt": "2026-11-03T10:05:22.435Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-hansgadget/01.jpg",
+      "sha256": "e0dbf2c2dbbb901b00d10e18233ebb389c1e66965d79c435f1d1c03dd3098280",
+      "bytes": 100105,
+      "approvedAt": "2026-11-03T10:05:22.435Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-hansgadget/02.jpg",
+      "sha256": "86924032b725aa4075ac0bc109534e1c29245b82153185d44ee2fd52f6fd1b0a",
+      "bytes": 69739,
+      "approvedAt": "2026-11-03T10:05:22.436Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-hansgadget/03.jpg",
+      "sha256": "8716dc28c77783c867bca9bd7f6c501644acff488c869f9ebd8fcdb788bb4b18",
+      "bytes": 98519,
+      "approvedAt": "2026-11-03T10:05:22.436Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-hansgadget/04.jpg",
+      "sha256": "b008d1d4a41abd34a49fb27076a1b57d464c26c832870aaaecbb07eabfeb6d39",
+      "bytes": 95916,
+      "approvedAt": "2026-11-03T10:05:22.436Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-hansgadget/05.jpg",
+      "sha256": "804450223a378d007c1b397dd4cf40aed35e1398dface15d996428fcbc1d9fe3",
+      "bytes": 67439,
+      "approvedAt": "2026-11-03T10:05:22.436Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-hansgadget/06.jpg",
+      "sha256": "4737a596e66acf5d52822358ed65cebd71891a76c5281e8afc9f9e55e9fc1c62",
+      "bytes": 97356,
+      "approvedAt": "2026-11-03T10:05:22.437Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-iggyblox/01.jpg",
+      "sha256": "4ce0f837e1a613c57540694d188dce39428134b2915f0d3d37669b612ae3831b",
+      "bytes": 111525,
+      "approvedAt": "2026-11-03T10:05:22.437Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-iggyblox/02.jpg",
+      "sha256": "4da5e476aa87dc8def1897d91cc38476389e565914d0dd612b54d67bc50e3103",
+      "bytes": 51623,
+      "approvedAt": "2026-11-03T10:05:22.437Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-kocic/01.jpg",
+      "sha256": "9c750fada067caa2890e3418705fc48f90dc66efb879c3a1a0f37829c6dc837a",
+      "bytes": 114249,
+      "approvedAt": "2026-11-03T10:05:22.438Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-kocic/02.jpg",
+      "sha256": "74316ba22fd8feecbe7ff998268cdadec5f98660f0c7a2745ced6d234e180cee",
+      "bytes": 65841,
+      "approvedAt": "2026-11-03T10:05:22.438Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-kocic/03.jpg",
+      "sha256": "38e8946c163ff4624a71c918f621fa1c16bab726e016e06a4708cac9034c0d72",
+      "bytes": 86093,
+      "approvedAt": "2026-11-03T10:05:22.438Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-kocic/04.jpg",
+      "sha256": "e5d3b855c66c1051f027544a82130994522ce1ae984bb71dcde655d8c56c90b5",
+      "bytes": 55013,
+      "approvedAt": "2026-11-03T10:05:22.438Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-kocic/05.jpg",
+      "sha256": "c5bcc1366312959369111e5b6987670767803c70718a6dcb71c712a2e9f0d84a",
+      "bytes": 60190,
+      "approvedAt": "2026-11-03T10:05:22.439Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-kocic/06.jpg",
+      "sha256": "fe5c716f7f70447e58f45def572112b3ff7ed11bd93e7d1abe7581e9cf234437",
+      "bytes": 78178,
+      "approvedAt": "2026-11-03T10:05:22.439Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-kocic/07.jpg",
+      "sha256": "7798ba28210fd5274166b7a40f9d737dedcc0421145cdedd9e7f4b9b18597a2e",
+      "bytes": 93608,
+      "approvedAt": "2026-11-03T10:05:22.439Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-koncici/01.jpg",
+      "sha256": "5aeac46e12f0ee1e9d11fa0a27e513e15a18b06176fb34f486976141c063acdf",
+      "bytes": 124242,
+      "approvedAt": "2026-11-03T10:05:22.439Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-kubismo/01.jpg",
+      "sha256": "cb01f8d49f4234f90935272a7a299ee81f180495e96c730d51051c9cccfbf319",
+      "bytes": 61393,
+      "approvedAt": "2026-11-03T10:05:22.440Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-kubismo/02.jpg",
+      "sha256": "f26c494a1b38eeade687f74b24c9cf166e1f5908f4e7174c3cb68e1763ab2510",
+      "bytes": 94261,
+      "approvedAt": "2026-11-03T10:05:22.440Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-kubismo/03.jpg",
+      "sha256": "23325c7c1313369a9ea0b7824917d74de5d55444046115851b2e156f6cc61e62",
+      "bytes": 75032,
+      "approvedAt": "2026-11-03T10:05:22.440Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-lavirint/01.jpg",
+      "sha256": "8340bae4b88d52f6cd3cb319df02205dfca03a2f95b5831404043bf2645c436d",
+      "bytes": 93652,
+      "approvedAt": "2026-11-03T10:05:22.441Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-lavirint/02.jpg",
+      "sha256": "41b71e29362d8a4b375fa5ae63b62dcdbbb5e29c479d52f80edd50f4af054d49",
+      "bytes": 98842,
+      "approvedAt": "2026-11-03T10:05:22.441Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-lavirint/03.jpg",
+      "sha256": "6d1b70e1cfd470808e56eaeb3f874b7965756f0b92a17f929259b2066b2805d2",
+      "bytes": 84914,
+      "approvedAt": "2026-11-03T10:05:22.441Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-lavirint/04.jpg",
+      "sha256": "cefbc554e9a271628e7ed3f994bd11bf8fb2917f254068fc458b87bc7d889a0b",
+      "bytes": 72917,
+      "approvedAt": "2026-11-03T10:05:22.441Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-lavirint/05.jpg",
+      "sha256": "0edca7ae447537d4d4692cb0f11fc92ec6f9e3c1524416ecf3c3abda008b7b33",
+      "bytes": 67139,
+      "approvedAt": "2026-11-03T10:05:22.442Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-lenin-lavirint/01.jpg",
+      "sha256": "4ee4c5fa86b5b6e70d493f9abdcc87383d6609bb38b661afced977014f57556a",
+      "bytes": 76289,
+      "approvedAt": "2026-11-03T10:05:22.442Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-lenin-lavirint/02.jpg",
+      "sha256": "bbb14d90332549bf253dbbea6b2812d524932617e7a4042e7fa8189db12aaa03",
+      "bytes": 55393,
+      "approvedAt": "2026-11-03T10:05:22.442Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-music-box/01.jpg",
+      "sha256": "bf98d8ee81d041d1fdccbcdf5c924e164697874daa096c1660af63d1dccc9af0",
+      "bytes": 57599,
+      "approvedAt": "2026-11-03T10:05:22.442Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-obojilica/01.jpg",
+      "sha256": "b026feed14972b365b46fc918b5de508933eb51b0dd68bf10cedce95eb9f8917",
+      "bytes": 94152,
+      "approvedAt": "2026-11-03T10:05:22.443Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-obojilica/02.jpg",
+      "sha256": "89fb9a278babc0b25a2fb990ebf52e5f4e656181d44c55566f74435f6d931f66",
+      "bytes": 91671,
+      "approvedAt": "2026-11-03T10:05:22.443Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-obojilica/03.jpg",
+      "sha256": "8af6d94fdcdc2b44c51a4fca81e5bde31c3ff30147b9613505b8644f23b990f6",
+      "bytes": 77207,
+      "approvedAt": "2026-11-03T10:05:22.443Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-obojilica/04.jpg",
+      "sha256": "2b00623754b725503ccdc3e2e28d45d1226e2c34d75ae27f868a1cf674dad54b",
+      "bytes": 74645,
+      "approvedAt": "2026-11-03T10:05:22.443Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-obojilica/05.jpg",
+      "sha256": "d7dd1aee650ac79d53fd5f6d5628cc23d362fb391b93348354650379e765f858",
+      "bytes": 57470,
+      "approvedAt": "2026-11-03T10:05:22.444Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-obojilica/06.jpg",
+      "sha256": "7dbde16d9cfcad362c6f8e213912d8e27202fa9ccf81bfb7236bb8fdc296ebcf",
+      "bytes": 75016,
+      "approvedAt": "2026-11-03T10:05:22.444Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-padalica/01.jpg",
+      "sha256": "6bee45d07c69af42cfc79a3f546d6e9df9903ebcf5c41dbb0d0f595c3832b2d2",
+      "bytes": 99608,
+      "approvedAt": "2026-11-03T10:05:22.444Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-padalica/02.jpg",
+      "sha256": "dc147ddfdadc8d38d9120100651d254b9717ac3173abc01ec9f6807370df5e3c",
+      "bytes": 71003,
+      "approvedAt": "2026-11-03T10:05:22.444Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-padalica/03.jpg",
+      "sha256": "35058d4fbd63648e7c186ae8582ea514d7eeb1fb571609aa382757bf3d1f02af",
+      "bytes": 58160,
+      "approvedAt": "2026-11-03T10:05:22.445Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-padalica/04.jpg",
+      "sha256": "d9a41492f77ac5b1541fbd06cdd9393c2a33a183542d32bc335994acd327854d",
+      "bytes": 61991,
+      "approvedAt": "2026-11-03T10:05:22.445Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-putanja/01.jpg",
+      "sha256": "804d94993b70d6f2eddb66c65af68c3aab2e6df1392fa32697b05e91e7df804a",
+      "bytes": 47841,
+      "approvedAt": "2026-11-03T10:05:22.445Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-putanja/02.jpg",
+      "sha256": "6e7358601894ad61d0502e795b6adc68d084561381cee31b277359bef73eb143",
+      "bytes": 69820,
+      "approvedAt": "2026-11-03T10:05:22.445Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-putanja/03.jpg",
+      "sha256": "50be2330ee8edc944bcd7c8c04dda8be0c6a4c4a176b8e0bf84b71283ff28125",
+      "bytes": 70148,
+      "approvedAt": "2026-11-03T10:05:22.446Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-putanja/04.jpg",
+      "sha256": "b07d4139b58262ce6b6db429deb874ad5b9ad0e7a0d61511158ea89354e558ac",
+      "bytes": 63340,
+      "approvedAt": "2026-11-03T10:05:22.446Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-putanja/05.jpg",
+      "sha256": "a9cc2c641492f5f850f805105b202a6859445aee3a21b5be88ffea61516b2382",
+      "bytes": 54085,
+      "approvedAt": "2026-11-03T10:05:22.446Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-putanja/06.jpg",
+      "sha256": "f45a621a4e6597675d310f3d26b63d8bd0e68d8bef45c51bf989db5683981bca",
+      "bytes": 57749,
+      "approvedAt": "2026-11-03T10:05:22.446Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-slovo-prsti/01.jpg",
+      "sha256": "f0157424041ecf6a42e874fdd987ca8cd07d2fd488976f1ad4d947b359d9883e",
+      "bytes": 107683,
+      "approvedAt": "2026-11-03T10:05:22.446Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-slovo-prsti/02.jpg",
+      "sha256": "1d921a58c1002c67c21b2f308b421344f79d1a20dc796331655246ee59d5868b",
+      "bytes": 88643,
+      "approvedAt": "2026-11-03T10:05:22.447Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-slovo-prsti/03.jpg",
+      "sha256": "3e3e645dc96f28b6c6b93677ff094773a1c0d38ddc00cd68841da5e02fd709e3",
+      "bytes": 87119,
+      "approvedAt": "2026-11-03T10:05:22.447Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-slovo-prsti/04.jpg",
+      "sha256": "f2140ef5f2bd354a0721f229dd02d805fa80ef1d68e6cec03ffd0982ef3f78d2",
+      "bytes": 58638,
+      "approvedAt": "2026-11-03T10:05:22.447Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-stapici/01.jpg",
+      "sha256": "8f6bc38c77165704eb3d7350eb4d4f5f711612b9720f6b901891a389c5ad2fdf",
+      "bytes": 116814,
+      "approvedAt": "2026-11-03T10:05:22.448Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-starlight/01.jpg",
+      "sha256": "1f52d8cf4406a197f0adbcc557f4224c3cfce282d7f3c65b6714bbd0be668907",
+      "bytes": 116957,
+      "approvedAt": "2026-11-03T10:05:22.448Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-starlight/02.jpg",
+      "sha256": "c74a92b47437cd0202474facf14c72a4e05de9b7d78957a0c42b105cb48178e9",
+      "bytes": 87626,
+      "approvedAt": "2026-11-03T10:05:22.448Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-starlight/03.jpg",
+      "sha256": "b1a1178812fb7eea1405a1e4d602a259987cab1c9d70e7f522fe5cae3a9b7e03",
+      "bytes": 65164,
+      "approvedAt": "2026-11-03T10:05:22.448Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-stilopol/01.jpg",
+      "sha256": "472a5ec06fea90837f75314f651c62643a1fd63feae0321ad37c4044bfbc70cf",
+      "bytes": 82202,
+      "approvedAt": "2026-11-03T10:05:22.449Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-stilopol/02.jpg",
+      "sha256": "3142bd2f6a75937159917ac8cd3710d342af8b3b3de7f52c1a19fa991dbb7dd2",
+      "bytes": 103577,
+      "approvedAt": "2026-11-03T10:05:22.449Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-sudoku/01.jpg",
+      "sha256": "55e4813d221160b24ed23a4cf90201dbe3ebdb825125c6a34af1ea8766fc8e76",
+      "bytes": 82844,
+      "approvedAt": "2026-11-03T10:05:22.449Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-sudoku/02.jpg",
+      "sha256": "ecda9664124971a828bf0cd6bafc7e3bad484025807f3e618a4c4b107f14d8d3",
+      "bytes": 63420,
+      "approvedAt": "2026-11-03T10:05:22.450Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-touch/01.jpg",
+      "sha256": "2a7f0579edf7ea106b08a2cac64df11e4a8abc0638c94398521bd320ba87cc58",
+      "bytes": 135470,
+      "approvedAt": "2026-11-03T10:05:22.450Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-touch/02.jpg",
+      "sha256": "0e31901eba85de65a2554aedcf0905828b91adc8985871625fc5296d8a2ffb41",
+      "bytes": 125639,
+      "approvedAt": "2026-11-03T10:05:22.450Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-vijugava-staza/01.jpg",
+      "sha256": "9678f07878ba154ee16fa62009e5dd1bb6158369b4089ad2eef42d2a9f73b82b",
+      "bytes": 86212,
+      "approvedAt": "2026-11-03T10:05:22.451Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-vijugava-staza/02.jpg",
+      "sha256": "006d8272b69e50d89f6d86c3f3600eca1cf390d2a116b132b488d2491d045e4b",
+      "bytes": 97782,
+      "approvedAt": "2026-11-03T10:05:22.451Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-zekino-polje/01.jpg",
+      "sha256": "dfc6803d73aab1921d5c4a7af0633cb699e7e281b9248de599367a6408141437",
+      "bytes": 83345,
+      "approvedAt": "2026-11-03T10:05:22.451Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-zekino-polje/02.jpg",
+      "sha256": "deedbe62ec185828518ead659e4e34d913ee2491c711f5452da62e6134445cd8",
+      "bytes": 104154,
+      "approvedAt": "2026-11-03T10:05:22.451Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-zekino-polje/03.jpg",
+      "sha256": "07d34703201465866b33cb89959f3e662f779c07ce992d07ca2753b72c4871ff",
+      "bytes": 101332,
+      "approvedAt": "2026-11-03T10:05:22.452Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-zekino-polje/04.jpg",
+      "sha256": "cefdcc70dfceaa95ba0f8c4dd2b70ca533f6e4d331ed138f0901f593ed446192",
+      "bytes": 63417,
+      "approvedAt": "2026-11-03T10:05:22.452Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-zen-garden/01.jpg",
+      "sha256": "118a83bf9210ba07b642e7c2bc9a6ba5da3f1d6b10b9c94ed789038bb2007ce6",
+      "bytes": 93532,
+      "approvedAt": "2026-11-03T10:05:22.452Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-zen-garden/02.jpg",
+      "sha256": "f99d840a32f90278e68041b07f7fb976a83281c94beafd56bd212f07ef3303cc",
+      "bytes": 118597,
+      "approvedAt": "2026-11-03T10:05:22.453Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-zen-garden/03.jpg",
+      "sha256": "7ee99e3714a031cee2c2f1892d33b08e9991c245b472e17d611f3e89a0cd2c93",
+      "bytes": 98712,
+      "approvedAt": "2026-11-03T10:05:22.453Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-zen-garden/04.jpg",
+      "sha256": "f4996b8b13d457a0dff2def7a7dcb00035fdf57ab85bc6fb5bbe41366e1e4783",
+      "bytes": 138522,
+      "approvedAt": "2026-11-03T10:05:22.453Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w3-zmijica/01.jpg",
+      "sha256": "45b78b674ace53165e8e4d1fa2670671e5c532e1584d4f237478b35adf437b63",
+      "bytes": 97437,
+      "approvedAt": "2026-11-03T10:05:22.454Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-3d-lavirint/01.jpg",
+      "sha256": "62cd3eb4b1bb67ef287d06196bc0e88beb288d35a1d929a68c6b9c67eab05b0a",
+      "bytes": 80581,
+      "approvedAt": "2026-11-03T10:05:22.454Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-3d-lavirint/02.jpg",
+      "sha256": "f223f39e7eeeba712534069427ee8088af059dc734a4a0ed7a8a528c5622eae0",
+      "bytes": 86672,
+      "approvedAt": "2026-11-03T10:05:22.454Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-brojkice/01.jpg",
+      "sha256": "328f11e9cef069d1f5955b59154f320ac4a512341f4649c1fc870cad89cf3fb5",
+      "bytes": 172652,
+      "approvedAt": "2026-11-03T10:05:22.455Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-brojkice/02.jpg",
+      "sha256": "ceadb9f40e3df439a2e312e6786b30bedf6bc4adda42b374e46531435c183e10",
+      "bytes": 111367,
+      "approvedAt": "2026-11-03T10:05:22.455Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-brojkice/03.jpg",
+      "sha256": "731044ded3b38b0ff0c2f05ccc58dc0f32cefbeed7dcc0d221d313a51ed40971",
+      "bytes": 105720,
+      "approvedAt": "2026-11-03T10:05:22.455Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-brojkice/04.jpg",
+      "sha256": "9fa828b92b57ce695437d7bb57e9914fcaf06c818582f30fe74a0813440e8008",
+      "bytes": 113893,
+      "approvedAt": "2026-11-03T10:05:22.456Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-brojkice/05.jpg",
+      "sha256": "4504208c24a0cfcb09a2492b63e62596f0e8efbe53c5b1e720e260de68132b7b",
+      "bytes": 160645,
+      "approvedAt": "2026-11-03T10:05:22.456Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-brojkice/06.jpg",
+      "sha256": "7cd639bb62ad87fe94a82359c4ecbc6d1d01fa99b2147415bb9a8d4f4c2099a0",
+      "bytes": 107612,
+      "approvedAt": "2026-11-03T10:05:22.456Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-brojkice/07.jpg",
+      "sha256": "4805de88719afb6e847e04e1603a58c8ad4928ae728aa10a6f96f9ff7e712f1d",
+      "bytes": 89566,
+      "approvedAt": "2026-11-03T10:05:22.457Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-brojkice/08.jpg",
+      "sha256": "c796a59a3cc3058145f68684b5269e11b7cd2816decee81a12e65c7477e75f3a",
+      "bytes": 95780,
+      "approvedAt": "2026-11-03T10:05:22.457Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-brojkice/09.jpg",
+      "sha256": "a1542f3170bbf3dd02ef9baea6d71efc6bf021c72d86c51d0362c92c146df36e",
+      "bytes": 111620,
+      "approvedAt": "2026-11-03T10:05:22.457Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-brojkice/10.jpg",
+      "sha256": "fa4fc57ad0de20c846f3ab75cff96b39e10feb990b66456ad5c73efacd4e435e",
+      "bytes": 82507,
+      "approvedAt": "2026-11-03T10:05:22.458Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-brojkice/11.jpg",
+      "sha256": "cd377716a4ecf46db0ed531efadbc5959829030f899ee8532f2776fab17799a9",
+      "bytes": 39645,
+      "approvedAt": "2026-11-03T10:05:22.458Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-brojkice/12.jpg",
+      "sha256": "7d62abf3ab303251586b8774c4e9dc2537d5695432c63813f4689ae4cf0cfb9d",
+      "bytes": 42386,
+      "approvedAt": "2026-11-03T10:05:22.458Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-demiri/01.jpg",
+      "sha256": "22e58eb144ab33f4663bf0efee98c302af66d953a31cad58afd21cabe2e45a79",
+      "bytes": 62255,
+      "approvedAt": "2026-11-03T10:05:22.458Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-demiri/02.jpg",
+      "sha256": "b895ab521a3d1346762851a8c93245640d37aad7265a2974387ef31c3ac9b207",
+      "bytes": 82740,
+      "approvedAt": "2026-11-03T10:05:22.459Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-demiri/03.jpg",
+      "sha256": "eef5afb845da4fa95fba14860afa472eef6bd7a12a38b956eee19313f5871884",
+      "bytes": 51522,
+      "approvedAt": "2026-11-03T10:05:22.459Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-edukativna/01.jpg",
+      "sha256": "cd8c4f7430a671f179d242e78685040fb4ade99f60a99dafc29da4bc8c833515",
+      "bytes": 115337,
+      "approvedAt": "2026-11-03T10:05:22.459Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-edukativna/02.jpg",
+      "sha256": "bc47010b3b49187fa3effb069a1674d37c48e947238c22daf07716d51a521b79",
+      "bytes": 69305,
+      "approvedAt": "2026-11-03T10:05:22.459Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-fliper-2/01.jpg",
+      "sha256": "c518b1f3d9c0474c6e38bc27ed38e9f144cb49c5ed554a7c5affdd5a1be1ddc2",
+      "bytes": 95591,
+      "approvedAt": "2026-11-03T10:05:22.460Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-fliper-2/02.jpg",
+      "sha256": "a7f0250e759f4b22fe077bb51ee3545c40e6bd05b8d6caacc425d0c585f51e70",
+      "bytes": 77566,
+      "approvedAt": "2026-11-03T10:05:22.460Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-fliper-2/03.jpg",
+      "sha256": "67fc3a6fa823ae61bec61b1f9d46daed58ea0022af8f6b6504b1d8180441e880",
+      "bytes": 78635,
+      "approvedAt": "2026-11-03T10:05:22.460Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-fliper-2/04.jpg",
+      "sha256": "fbc42b9e439a94600322e5a231da6d2297c44988f3418e0a836608d853e78a1a",
+      "bytes": 109057,
+      "approvedAt": "2026-11-03T10:05:22.460Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-hobotnica/01.jpg",
+      "sha256": "686e50a90a20c932def00a7fb42afd60083f0a99cf7d56119fb0ae41fb246239",
+      "bytes": 89889,
+      "approvedAt": "2026-11-03T10:05:22.461Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-hobotnica/02.jpg",
+      "sha256": "61409b3f05423b17ecf802f21cbe1161aa6ecc54fbe3af42e8876d1b32a3187f",
+      "bytes": 33280,
+      "approvedAt": "2026-11-03T10:05:22.461Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-hobotnica/03.jpg",
+      "sha256": "7a97d30361527de0195541cecf7da1485cea97e1df485624b6d266b8db58b6f2",
+      "bytes": 112997,
+      "approvedAt": "2026-11-03T10:05:22.462Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-hobotnica/04.jpg",
+      "sha256": "346a68048a52ee849e8664c77c6dc411a159c59bfaa0199a8725acada4271838",
+      "bytes": 105491,
+      "approvedAt": "2026-11-03T10:05:22.462Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-hobotnica/05.jpg",
+      "sha256": "6edba20e44bd2aa61575112738e75ce4f16d070be07590a8c051dea01b64c2fb",
+      "bytes": 41682,
+      "approvedAt": "2026-11-03T10:05:22.462Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-hobotnica/06.jpg",
+      "sha256": "3bcd7094ccc3a325f1afccb2ea5ca2c933726688fac897c88706e49f2089a98d",
+      "bytes": 91616,
+      "approvedAt": "2026-11-03T10:05:22.463Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-igra-sa-uzetom/01.jpg",
+      "sha256": "ff39bad258fed13b56a4c4d616367d7e02127313939b0a74cf1c19e12390491a",
+      "bytes": 83835,
+      "approvedAt": "2026-11-03T10:05:22.463Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-igra-sa-uzetom/02.jpg",
+      "sha256": "ec40f1a139830dad18b18885c1842be950e309bb570962907d55f0d11baecd34",
+      "bytes": 90360,
+      "approvedAt": "2026-11-03T10:05:22.463Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-lavirint/01.jpg",
+      "sha256": "b1591a66380633a52e6bfe5303fe0efa6643de9eba15651e1715a207fd674ab2",
+      "bytes": 171930,
+      "approvedAt": "2026-11-03T10:05:22.464Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-lavirint/02.jpg",
+      "sha256": "38b78ffcf2a7f14d993743e746244b8618141abb0bf918e39c9dab6118fc381a",
+      "bytes": 216742,
+      "approvedAt": "2026-11-03T10:05:22.464Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-lavirint/03.jpg",
+      "sha256": "fae0dfc1a4ee4b277bd81301543e8a25f9644d440113ce0a89133c819b2f8ce9",
+      "bytes": 223838,
+      "approvedAt": "2026-11-03T10:05:22.465Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-mozgalica/01.jpg",
+      "sha256": "cc2f99ca830d9bba20e017642333d951f18120a4545d2188d74bd3c88cd26b0e",
+      "bytes": 63719,
+      "approvedAt": "2026-11-03T10:05:22.465Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-mozgalica/02.jpg",
+      "sha256": "181d7c15f664837fa407978cda6a797d69e1d8a99c45b83b7202efbbd96cdf2c",
+      "bytes": 65770,
+      "approvedAt": "2026-11-03T10:05:22.466Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-mozgalica/03.jpg",
+      "sha256": "6547650ef6edac17240b9359ecdd7b8499355b1f07acc7056194b62f664e51a7",
+      "bytes": 76390,
+      "approvedAt": "2026-11-03T10:05:22.466Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-music-box/01.jpg",
+      "sha256": "063981ce7a6f6b1155bb753fdb7ea6c6c00610788178a5443e98403d2735f715",
+      "bytes": 126295,
+      "approvedAt": "2026-11-03T10:05:22.466Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-music-box/02.jpg",
+      "sha256": "786c6e050d542bf3381f69b01c27d951ee108a9993caa65292f487f00a30886d",
+      "bytes": 155194,
+      "approvedAt": "2026-11-03T10:05:22.467Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-music-box/03.jpg",
+      "sha256": "31430bcdde22bf85ee177dd55658335c970c560beb41494828a2a19b6efed315",
+      "bytes": 147148,
+      "approvedAt": "2026-11-03T10:05:22.467Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-pracka/01.jpg",
+      "sha256": "ff0beeb04964025c57d87188fc9b79d5cca5e0e4519d042824479376e9544b03",
+      "bytes": 152101,
+      "approvedAt": "2026-11-03T10:05:22.468Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-pracka/02.jpg",
+      "sha256": "b40d550157efae228caacbe27440064c70e43efe0fd7e05c4a841392e8ea991b",
+      "bytes": 124596,
+      "approvedAt": "2026-11-03T10:05:22.468Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-pracka/03.jpg",
+      "sha256": "fd32c9b07b6103e87ebb936746ef273240b24cbdcdb68a9a3290494a4437a38b",
+      "bytes": 74190,
+      "approvedAt": "2026-11-03T10:05:22.468Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-pracka/04.jpg",
+      "sha256": "e4a063afdf60b5eb29bebfce756065a53ff63b4dab22c5fb87783469b63018f0",
+      "bytes": 68532,
+      "approvedAt": "2026-11-03T10:05:22.469Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-pracka/05.jpg",
+      "sha256": "3f5ca98e18b4af7c24ae73d50c1472c17c34edf4e7b1d7ba28551cf506cf0451",
+      "bytes": 76985,
+      "approvedAt": "2026-11-03T10:05:22.469Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-pracka/06.jpg",
+      "sha256": "37663a59ef170dd256bb3448acfef7bc80edb7cd5fbdf2a56424702d83a04c25",
+      "bytes": 79425,
+      "approvedAt": "2026-11-03T10:05:22.469Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-pracka/07.jpg",
+      "sha256": "949a42a661182034f5868104ee1a16842e8c41f3ffe2a965fd2e9d1d55a2c75b",
+      "bytes": 77246,
+      "approvedAt": "2026-11-03T10:05:22.469Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-putanja/01.jpg",
+      "sha256": "4d3c7f4da96dc3bd097f9a59343d2d20a1b302cbebcc2a8929b01933e90a1b75",
+      "bytes": 93950,
+      "approvedAt": "2026-11-03T10:05:22.470Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-putanja/02.jpg",
+      "sha256": "d06dffbbf28524bc5087c1f796dc939b0e2b5051fb84d55a5c8f0406188d1823",
+      "bytes": 82661,
+      "approvedAt": "2026-11-03T10:05:22.470Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-putanja/03.jpg",
+      "sha256": "74ffcf725a710a62072f21472f333418378e5b56a5ba3900d4e6657f41b3feef",
+      "bytes": 85554,
+      "approvedAt": "2026-11-03T10:05:22.470Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-putanja/04.jpg",
+      "sha256": "b5cb11d90db49a287608d4e96f6af40c323a7decdf1d70edb9ecb99d838e5069",
+      "bytes": 78408,
+      "approvedAt": "2026-11-03T10:05:22.470Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-sound-box/01.jpg",
+      "sha256": "43c3f98bf05016b5c1780150867e1fbb7aa64047c74d48f87bbce6c55e72f8e7",
+      "bytes": 150937,
+      "approvedAt": "2026-11-03T10:05:22.471Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-sound-box/02.jpg",
+      "sha256": "c394353e08d638e59403a4ff3bdfb36ccede00f783a3f029471852d33e5e4f7f",
+      "bytes": 148287,
+      "approvedAt": "2026-11-03T10:05:22.471Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-sound-box/03.jpg",
+      "sha256": "eb5834482786354df6f39d93b15008f745be54f6121a36623dfc4e2cef71d1f6",
+      "bytes": 136151,
+      "approvedAt": "2026-11-03T10:05:22.472Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-stanisic/01.jpg",
+      "sha256": "1d96b8d489e45221a1450ef03cd7c4320066b8425e070aefa45c461713dc019c",
+      "bytes": 99505,
+      "approvedAt": "2026-11-03T10:05:22.472Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-stubici/01.jpg",
+      "sha256": "81565f090f95c9735fbea8a9f1cd2d43d0c7385d455731a56628145d3d578919",
+      "bytes": 150481,
+      "approvedAt": "2026-11-03T10:05:22.472Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-stubici/02.jpg",
+      "sha256": "9210b3986e803903581a42ec69322bd084d7f7058ee3d6f84cbfbb463505b614",
+      "bytes": 83430,
+      "approvedAt": "2026-11-03T10:05:22.473Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-stubici/03.jpg",
+      "sha256": "16db06e28e75a5ddc86b37e3781c311bd222106023a093e66b73ad2df0471e97",
+      "bytes": 114452,
+      "approvedAt": "2026-11-03T10:05:22.473Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-taktilna-kutija/01.jpg",
+      "sha256": "25f32983b34006526e67286a55d47ba85de74bec8c913af6a99bf93f101e4fbe",
+      "bytes": 79475,
+      "approvedAt": "2026-11-03T10:05:22.473Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-taktilna-kutija/02.jpg",
+      "sha256": "3ed48feea1f0fbc101a3b1b3f32e0ac6cafc2b41b2085d1e1a5d09a7b810978f",
+      "bytes": 100936,
+      "approvedAt": "2026-11-03T10:05:22.474Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-taktilna-kutija/03.jpg",
+      "sha256": "b21f53b8cda39dc6397930b1f78902493f51e8fd09e4b6af915c3febbdcde63e",
+      "bytes": 58232,
+      "approvedAt": "2026-11-03T10:05:22.474Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-taktilna-kutija/04.jpg",
+      "sha256": "a0c3d400629a3afe07be15d8103b2e9e40c47a180f69e77eed2892e6777dc6de",
+      "bytes": 89992,
+      "approvedAt": "2026-11-03T10:05:22.474Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-taktilna-kutija/05.jpg",
+      "sha256": "e1452975c8d6b5031f35ebd01f9ee2683626dee1678e129894e730f290129f1b",
+      "bytes": 97905,
+      "approvedAt": "2026-11-03T10:05:22.475Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-taktilna-kutija/06.jpg",
+      "sha256": "b8d397e8ea862c44b614218359427d05601ec295fbf1e968726b432d35af7388",
+      "bytes": 60525,
+      "approvedAt": "2026-11-03T10:05:22.475Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-taktilna-kutija/07.jpg",
+      "sha256": "bfcc545a80fc201e4453cbd58c01397d2effe48f479c10b382f272cab6970a54",
+      "bytes": 69168,
+      "approvedAt": "2026-11-03T10:05:22.475Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-taktilna-kutija/08.jpg",
+      "sha256": "60e467f09433b828232d5fbca5536bab10364733a4220ce3f4fb74725aeec56b",
+      "bytes": 166602,
+      "approvedAt": "2026-11-03T10:05:22.475Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-taktilna-kutija/09.jpg",
+      "sha256": "79fc833f30d7df1ac5cfdfaa2d3581dc317bcc02266a09de749d950e3ff5d7fa",
+      "bytes": 199472,
+      "approvedAt": "2026-11-03T10:05:22.476Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-taktilna-kutija/10.jpg",
+      "sha256": "bc45bfcf4a9c10273a9054398730608ea6de2e0d282f1d4417733d0b25b35085",
+      "bytes": 96489,
+      "approvedAt": "2026-11-03T10:05:22.476Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-tragovi-boja/01.jpg",
+      "sha256": "d70be8840d6f25818ede84ae5833c5d130f0a0d6f50d025c428e108714c81f51",
+      "bytes": 159394,
+      "approvedAt": "2026-11-03T10:05:22.477Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-tragovi-boja/02.jpg",
+      "sha256": "71f07a60abfaf8ffb37f5b7a6219da0ebb8c72fc16b866e01ee170a64bd5d767",
+      "bytes": 103479,
+      "approvedAt": "2026-11-03T10:05:22.477Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-tragovi-boja/03.jpg",
+      "sha256": "cc3143243db26eea0eef3e7cae668d8ae5a2666421feededcc2e3a63b272bb33",
+      "bytes": 142655,
+      "approvedAt": "2026-11-03T10:05:22.477Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-tragovi-boja/04.jpg",
+      "sha256": "64bcb1b3fd745f28c7694f9839f8e5f5bd40338c24eed8fd2c8e535de2074379",
+      "bytes": 104773,
+      "approvedAt": "2026-11-03T10:05:22.478Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-uklopko/01.jpg",
+      "sha256": "594645780ad9fb05d971ba020839fda96a93418c94128ad1c6f2ca9092c8e760",
+      "bytes": 103012,
+      "approvedAt": "2026-11-03T10:05:22.478Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-uklopko/02.jpg",
+      "sha256": "faf654b1b2f18aa8a5f2b1eb0e7711b507e671f3a4679789c5a18f7a01abfd40",
+      "bytes": 110361,
+      "approvedAt": "2026-11-03T10:05:22.478Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-uklopko/03.jpg",
+      "sha256": "c5272494628e23fed8e57b3e30c29cd491ac9599cd45e58166f44a67a34cdf25",
+      "bytes": 99802,
+      "approvedAt": "2026-11-03T10:05:22.479Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-uklopko/04.jpg",
+      "sha256": "ca4d904ac728d0b8f3f26010a5addadd24d99ff189eaa71b0086a16106f78a14",
+      "bytes": 82067,
+      "approvedAt": "2026-11-03T10:05:22.479Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-uklopko/05.jpg",
+      "sha256": "e82d118e976a1bb9272311e103554e7fb2dd44f1056842388b1f25b6b5a75169",
+      "bytes": 63585,
+      "approvedAt": "2026-11-03T10:05:22.479Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-uklopko/06.jpg",
+      "sha256": "75d34f48337fe35114b953157a7756bb0ab12a74cd20b95012159ecd78a0745a",
+      "bytes": 60234,
+      "approvedAt": "2026-11-03T10:05:22.479Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-uklopko/07.jpg",
+      "sha256": "e8898874ab839a3bd4d465aa381cfa4a8fb615e0a4c2ff2010aa6e7763d26e31",
+      "bytes": 67485,
+      "approvedAt": "2026-11-03T10:05:22.480Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-uklopko/08.jpg",
+      "sha256": "86ebbf9e7cad2e9318efedb93ce8fe458ab98b62d142968d0d624b9e3ae1d138",
+      "bytes": 145204,
+      "approvedAt": "2026-11-03T10:05:22.480Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-zekino-polje/01.jpg",
+      "sha256": "8ca1b2a41d62a0b4fbf0fb717ee40a9522403ff3a1e7ff8cf5e03cbdb791b83a",
+      "bytes": 157493,
+      "approvedAt": "2026-11-03T10:05:22.480Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-zekino-polje/02.jpg",
+      "sha256": "79c27bcbc5a9b43db61d4ee7891e0d5081c7cfec6a626d4ad742cb4ae6c5a8b6",
+      "bytes": 116859,
+      "approvedAt": "2026-11-03T10:05:22.481Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-zekino-polje/03.jpg",
+      "sha256": "0776da6417f661bcc2ecadd9080cdc42c54707330d66584a878d666a6757d3d4",
+      "bytes": 99907,
+      "approvedAt": "2026-11-03T10:05:22.481Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-zekino-polje/04.jpg",
+      "sha256": "226c08eff3452107699b0ee891bebd5a21a0dc58a157ea4567ab6e9cffe95ac3",
+      "bytes": 121995,
+      "approvedAt": "2026-11-03T10:05:22.481Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-zmijica/01.jpg",
+      "sha256": "9b3f12dc37adc3b1c3be6ec49c26f9557fa516aa1c1efd94b551af07f9595b56",
+      "bytes": 132457,
+      "approvedAt": "2026-11-03T10:05:22.482Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-zmijica/02.jpg",
+      "sha256": "3d6032df73f032ff35c379f44d94cda92bbd74c3271ede2a30f943e616a4be88",
+      "bytes": 62265,
+      "approvedAt": "2026-11-03T10:05:22.482Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w4-zmijica/03.jpg",
+      "sha256": "5202c3bf290c166eb356ec795bcd19498e867b3e2207e186c549f130e4484090",
+      "bytes": 62387,
+      "approvedAt": "2026-11-03T10:05:22.482Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-bajic/01.jpg",
+      "sha256": "95aeef41003fd241529d0244119dfaaff05a271ba25b89135abe3e2489fb74f0",
+      "bytes": 109643,
+      "approvedAt": "2026-11-03T10:05:22.483Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-bajic/02.jpg",
+      "sha256": "df0434019b608fb7bec832c76749ef12eba0babee192769c07706afa3891c521",
+      "bytes": 109441,
+      "approvedAt": "2026-11-03T10:05:22.483Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-bajic/03.jpg",
+      "sha256": "5802517e748b88f1b57b97cebc1fc874bb4cec72ed26b91f21a8bd6659456be2",
+      "bytes": 129735,
+      "approvedAt": "2026-11-03T10:05:22.483Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-boskovic/01.jpg",
+      "sha256": "3308a285a89a233acdf9e5a3dea455da39afa77567d7ed97f73bbcad796e4860",
+      "bytes": 109120,
+      "approvedAt": "2026-11-03T10:05:22.484Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-boskovic/02.jpg",
+      "sha256": "18b0b60aff52823001a94ab8a26f6aba9cdaf5842e346af627e42f118c08c0d0",
+      "bytes": 75338,
+      "approvedAt": "2026-11-03T10:05:22.484Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-bukorovic/01.jpg",
+      "sha256": "a7813fa8cfd355c7ef8c08eacbe7694979c78c07241c51694ff06a6640d113ab",
+      "bytes": 115527,
+      "approvedAt": "2026-11-03T10:05:22.485Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-bukorovic/02.jpg",
+      "sha256": "8c2c71eb703a3efe1061dc3681fd92f53bc3373b142a538b08cd8e87da577729",
+      "bytes": 92898,
+      "approvedAt": "2026-11-03T10:05:22.485Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-bukorovic/03.jpg",
+      "sha256": "23c4a6fb64188eb29d814be18b832a8efc3e453bc94dc447b84c4c2b495003ba",
+      "bytes": 69297,
+      "approvedAt": "2026-11-03T10:05:22.485Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-bukorovic/04.jpg",
+      "sha256": "fe51078ee9d717513300d2d8158f35977556a0d6924263087c7fcd4a2dacadfb",
+      "bytes": 137162,
+      "approvedAt": "2026-11-03T10:05:22.486Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-copic/01.jpg",
+      "sha256": "f3ba930a4427ea42a348dc9adb40e7a2ad343c477fd3a87c1a3653126c8b5d37",
+      "bytes": 110843,
+      "approvedAt": "2026-11-03T10:05:22.487Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-copic/02.jpg",
+      "sha256": "ef22f970b3207a9454279ac1596ea0c349994b714fb5943f7413d82fadc7353d",
+      "bytes": 105419,
+      "approvedAt": "2026-11-03T10:05:22.487Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-copic/03.jpg",
+      "sha256": "23a21f3597b4035e198b8ce9aac98a073c0e1c724955345352191e712f76c53c",
+      "bytes": 112166,
+      "approvedAt": "2026-11-03T10:05:22.487Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-cvetkovic/01.jpg",
+      "sha256": "e9628b38a73acc5c1eb39d912ec0989b7bbc51dd20cc4639ab185a32b71ceedb",
+      "bytes": 73267,
+      "approvedAt": "2026-11-03T10:05:22.487Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-cvetkovic/02.jpg",
+      "sha256": "631d0afced557359a2c2a1f1fd267d6ffd641f0816b992c05f37d61cb0afb207",
+      "bytes": 116697,
+      "approvedAt": "2026-11-03T10:05:22.488Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-demiri/01.jpg",
+      "sha256": "cb98651f1cbac41e27d2709c6af4c827c3a0ed397c1c1617383e37c92ced36d7",
+      "bytes": 108302,
+      "approvedAt": "2026-11-03T10:05:22.488Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-demiri/02.jpg",
+      "sha256": "a3be778a63278c1885490ec15309354a8dd42e5e2972089523985146348cb0a1",
+      "bytes": 66998,
+      "approvedAt": "2026-11-03T10:05:22.488Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-demiri/03.jpg",
+      "sha256": "cb110a4740dfddbaa23da6a9942d02271026172016ad720ae8a7ae46cc5386da",
+      "bytes": 62687,
+      "approvedAt": "2026-11-03T10:05:22.489Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-demiri/04.jpg",
+      "sha256": "7cdf37c95c0798ca300d30cbc9da0fb3939dac6b88927fab78a2ef0a5daa14fe",
+      "bytes": 107147,
+      "approvedAt": "2026-11-03T10:05:22.489Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-janjic/01.jpg",
+      "sha256": "5a15531d5b9cab56ab12d3deadb0a08291e9ab089bb901f2f907c4b7cb6b4e05",
+      "bytes": 73714,
+      "approvedAt": "2026-11-03T10:05:22.489Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-janjic/02.jpg",
+      "sha256": "c14d977d4eed07437180c8c36d40f82e56ff7ac1e4be6dc0b833848f81604418",
+      "bytes": 105340,
+      "approvedAt": "2026-11-03T10:05:22.489Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-janjic/03.jpg",
+      "sha256": "f313c1a4995bbd014ea7d063232b86c1596120f260619d0878fe113666dda6f5",
+      "bytes": 108321,
+      "approvedAt": "2026-11-03T10:05:22.490Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-jovanovic/01.jpg",
+      "sha256": "280169c626b0914485e4d8aa3257e181f63b3757b87c4ced28903a2d735dcc74",
+      "bytes": 101868,
+      "approvedAt": "2026-11-03T10:05:22.490Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-jovanovic/02.jpg",
+      "sha256": "10bb67cfb4c1799ef451916e5d2b9d263351bb0c9dbdbe021e097926c82580e0",
+      "bytes": 124132,
+      "approvedAt": "2026-11-03T10:05:22.491Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-jovanovic/03.jpg",
+      "sha256": "f2712d7ec1b3504f6139ffbb898ce3cec41ba7e199bf398cb04ceaa8bcc5b99d",
+      "bytes": 165636,
+      "approvedAt": "2026-11-03T10:05:22.491Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-jovicic/01.jpg",
+      "sha256": "e4aeaca7608dbd31c37fc57cec7c4dba36d95a95fc4cbd576bcbd6565469b0f7",
+      "bytes": 78034,
+      "approvedAt": "2026-11-03T10:05:22.491Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-jovicic/02.jpg",
+      "sha256": "52756198d02a33a7419ed7342f296ce45b2e55ced7d11ee6d4c00861633d0ed0",
+      "bytes": 86842,
+      "approvedAt": "2026-11-03T10:05:22.492Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-jovicic/03.jpg",
+      "sha256": "1d2227a37d5e8ef0613709de0113d21b0848081438742ee14243fd54a1b6af6b",
+      "bytes": 90036,
+      "approvedAt": "2026-11-03T10:05:22.492Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-kartice-tacke/01.jpg",
+      "sha256": "f4a8a2b1fa02a3d1e388b8c21c31a0a3caaa71e755d27239c73db8478ba4d61f",
+      "bytes": 103725,
+      "approvedAt": "2026-11-03T10:05:22.493Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-kartice-tacke/02.jpg",
+      "sha256": "a50ab533506564eb7bff875b0ae1bf55fbf99f5a30192250143e1c748f37f12c",
+      "bytes": 120790,
+      "approvedAt": "2026-11-03T10:05:22.493Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-kartice-tacke/03.jpg",
+      "sha256": "2dc5cd714251267f697e4aac7b8e836a1dcab895b122ac8d5b9cbf98c9f9eae1",
+      "bytes": 112767,
+      "approvedAt": "2026-11-03T10:05:22.493Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-kovacic/01.jpg",
+      "sha256": "3ceb73c55222695c380c66b8510e5b315b57f70e83fb216fb9a7a260146dac2e",
+      "bytes": 86718,
+      "approvedAt": "2026-11-03T10:05:22.494Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-kovacic/02.jpg",
+      "sha256": "b5272afd6e9b2594401f4ba3c346c8b0ac2083d15ada61ef749da5e92304869c",
+      "bytes": 121737,
+      "approvedAt": "2026-11-03T10:05:22.494Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-ljubicic/01.jpg",
+      "sha256": "25796d2e77a859d57409c479032fcad77c24a30397ff6332abca17cc46ec3f15",
+      "bytes": 139333,
+      "approvedAt": "2026-11-03T10:05:22.494Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-ljubicic/02.jpg",
+      "sha256": "436179c85d96a68b4e9c523e2efe025eaf419bc04f2a0d6a21434f948e66a196",
+      "bytes": 143947,
+      "approvedAt": "2026-11-03T10:05:22.495Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-ljubicic/03.jpg",
+      "sha256": "ce09f3aa0dc105e9fe01600160bf8bbf79378f9707f48a5ca5dad2a7a6c11d88",
+      "bytes": 129240,
+      "approvedAt": "2026-11-03T10:05:22.495Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-lukic/01.jpg",
+      "sha256": "63316c5e4d1aa7cca2a47ec645689473bd45712c50e3d198e56977e5f5a989a7",
+      "bytes": 107578,
+      "approvedAt": "2026-11-03T10:05:22.496Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-lukic/02.jpg",
+      "sha256": "963a382691c1213792992aaa5eed52118d9057eaa0d67c658a09bf0c55c95e15",
+      "bytes": 86566,
+      "approvedAt": "2026-11-03T10:05:22.496Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-markovic/01.jpg",
+      "sha256": "42e9a30e7255ed3aeb36e536f89e9939a332bd921429afc00233683a8a51b1a0",
+      "bytes": 122591,
+      "approvedAt": "2026-11-03T10:05:22.496Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-markovic/02.jpg",
+      "sha256": "88a282ee3485e9eb446d666c24bcc657ee20a56ea5fa24754d7e843057e342be",
+      "bytes": 101824,
+      "approvedAt": "2026-11-03T10:05:22.497Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-markovic/03.jpg",
+      "sha256": "586392a5afb7115d2365a065e9ada66251d9ce6a5034b4461e95fdb0b56b1ed1",
+      "bytes": 104453,
+      "approvedAt": "2026-11-03T10:05:22.497Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-markovic/04.jpg",
+      "sha256": "2c5bc2f1d1cfa15ca2e7c6633c0aa466cd570b2586ca7c3c5a13a67f7e210831",
+      "bytes": 132821,
+      "approvedAt": "2026-11-03T10:05:22.497Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-maslovaric/01.jpg",
+      "sha256": "048d27061e063d87c44bee92800947f1f9c7ba33a39bbcc37577ffecc99a46ac",
+      "bytes": 122280,
+      "approvedAt": "2026-11-03T10:05:22.498Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-mickovic/01.jpg",
+      "sha256": "f5c1d251f5da885200800d7d3891e97b5d95098dc8950a41e78f2f4d45d81b65",
+      "bytes": 144588,
+      "approvedAt": "2026-11-03T10:05:22.498Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-mickovic/02.jpg",
+      "sha256": "0d7532b8af4bc9ee2baba3d7bff1807fc1e29732b91d21763ef0b3b3071efb6c",
+      "bytes": 136317,
+      "approvedAt": "2026-11-03T10:05:22.498Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-mickovic/03.jpg",
+      "sha256": "1732b346086cc8a8e8b41b1d5e3cb613575d03c24aeca349ec70fe88c75904f6",
+      "bytes": 72529,
+      "approvedAt": "2026-11-03T10:05:22.499Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-mickovic/04.jpg",
+      "sha256": "758c6d8342abb3e63d0fe57d6a9da8d30b286889804dd39c45baf705964f6640",
+      "bytes": 162060,
+      "approvedAt": "2026-11-03T10:05:22.499Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-mickovic/05.jpg",
+      "sha256": "d4fac3a05a3269bce288bb152b69dc57da53ff6d2fb395dd62d7714500f2b599",
+      "bytes": 141891,
+      "approvedAt": "2026-11-03T10:05:22.499Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-mickovic/06.jpg",
+      "sha256": "8e28af3136b4eb669de832bbfe8973c6c983cf4b9390646dc4c818cb4d9f109b",
+      "bytes": 159287,
+      "approvedAt": "2026-11-03T10:05:22.500Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-mijanovic-2/01.jpg",
+      "sha256": "79b1d08c8590b5e04d6b2f0d07dd27514d0c4a5a047dd05d6d1313ea37cf843f",
+      "bytes": 115545,
+      "approvedAt": "2026-11-03T10:05:22.500Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-pajic/01.jpg",
+      "sha256": "dbdc4b23c27959508a31026a111f23ce286e5c9b7b5f7777baa8c4612676d762",
+      "bytes": 93087,
+      "approvedAt": "2026-11-03T10:05:22.501Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-pajic/02.jpg",
+      "sha256": "7ca2277e2d48da32f17b5b1729d7129db1f0d15471ccf439c9e5bd5940052a6d",
+      "bytes": 84035,
+      "approvedAt": "2026-11-03T10:05:22.501Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-parezanovic-2/01.jpg",
+      "sha256": "1d8dce6cdf7b1e2f4fd2ada1958da040d01c5e38cf52b8af5a3e0265fca2b1b9",
+      "bytes": 83491,
+      "approvedAt": "2026-11-03T10:05:22.501Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-pudar/01.jpg",
+      "sha256": "a82909cdd99c8cfa7a93b13baadeacf56a64b76c1f2606a5d8b671c1aaf75b36",
+      "bytes": 137225,
+      "approvedAt": "2026-11-03T10:05:22.502Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-pudar/02.jpg",
+      "sha256": "8f2657eec9357c27e65b5713c891ca1a1f0f230d50cc880d9c3083f6fe4bfcb5",
+      "bytes": 171066,
+      "approvedAt": "2026-11-03T10:05:22.502Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-sesum/01.jpg",
+      "sha256": "0c16830ccbfc062490d53e5a3f2a4674308dc58cddb1565e480444cca8af1c70",
+      "bytes": 113539,
+      "approvedAt": "2026-11-03T10:05:22.503Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-sesum/02.jpg",
+      "sha256": "5295480e4d23d9dc8e82cd207742239f8f3756b7c572f79c3c28218ebdb03745",
+      "bytes": 105914,
+      "approvedAt": "2026-11-03T10:05:22.504Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-sesum/03.jpg",
+      "sha256": "05efa7eb4726602b5d9aa7803e3e217f425a2514aea94438263ecc297cce8848",
+      "bytes": 144815,
+      "approvedAt": "2026-11-03T10:05:22.504Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-sesum/04.jpg",
+      "sha256": "0485afd300f277b81222a580b1f306104f29e619bce80497a77c0291bc85529a",
+      "bytes": 113542,
+      "approvedAt": "2026-11-03T10:05:22.504Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-sesum/05.jpg",
+      "sha256": "b43e31e9010a8a6af5da740b8bf5855c52e2debb39d53719b6269c231617dfd9",
+      "bytes": 122328,
+      "approvedAt": "2026-11-03T10:05:22.505Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-sesum/06.jpg",
+      "sha256": "49595a3ff40a3794899344e1e8fd4eadbfed47cc30650480877cf5ada274a25b",
+      "bytes": 132149,
+      "approvedAt": "2026-11-03T10:05:22.505Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-siljakinjic/01.jpg",
+      "sha256": "92e4076701af38c7f1164a81d98e06405449b0b3d243ae528e521b6a6fc78d4f",
+      "bytes": 118065,
+      "approvedAt": "2026-11-03T10:05:22.506Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-siljakinjic/02.jpg",
+      "sha256": "ad3d0b76324bbbfdd59ddcf1f71f6f0a16a8696f0d96db398c360aa92ebfad64",
+      "bytes": 148206,
+      "approvedAt": "2026-11-03T10:05:22.506Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-siljakinjic/03.jpg",
+      "sha256": "4d48d13535997dd31d70d53ebd8887b035cb120055f6b095dded3a8710e4c2ae",
+      "bytes": 163300,
+      "approvedAt": "2026-11-03T10:05:22.506Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-siljakinjic/04.jpg",
+      "sha256": "15d22c3822e2819baf8054cfdd557e96a7a6bffc96f55e5c14dbbc6192a02795",
+      "bytes": 175055,
+      "approvedAt": "2026-11-03T10:05:22.507Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-siljakinjic/05.jpg",
+      "sha256": "d5ae30654786705d8604418fffebbc8234a44bce926d7ebdf6dc4f901631cd6a",
+      "bytes": 194724,
+      "approvedAt": "2026-11-03T10:05:22.507Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-siljakinjic/06.jpg",
+      "sha256": "e3da3d3b149eecee475a1d8b8beffcb377b37a64054d74855ad712ccf1c577e4",
+      "bytes": 62100,
+      "approvedAt": "2026-11-03T10:05:22.508Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-spasojevic/01.jpg",
+      "sha256": "ca5a9ea66612d9e932fad958a942f818454628a09820ee6cb156669c6212b26e",
+      "bytes": 69571,
+      "approvedAt": "2026-11-03T10:05:22.508Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-spasojevic/02.jpg",
+      "sha256": "77827c527fbb42ae1bd0b3e0bd22b23df676acefd2458181582ce759b7621033",
+      "bytes": 52176,
+      "approvedAt": "2026-11-03T10:05:22.508Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-stablovic/01.jpg",
+      "sha256": "9b5c2252a52aad98259c78be7c4a7ebee731929fcc183964c2ddf1633ee1ba22",
+      "bytes": 94033,
+      "approvedAt": "2026-11-03T10:05:22.508Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-stablovic/02.jpg",
+      "sha256": "e536e7adc18f61aeba0032cf661a849f28b490883d1e90fbfcb90ff56368abee",
+      "bytes": 113524,
+      "approvedAt": "2026-11-03T10:05:22.509Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-stablovic/03.jpg",
+      "sha256": "05960c9a3643b605cf1b9f4335f2865f9c4d5815ab6b669e2750244b01c5c08b",
+      "bytes": 112319,
+      "approvedAt": "2026-11-03T10:05:22.509Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-stablovic/04.jpg",
+      "sha256": "63bf3a6c27e56621824f19638e4e1087bf182116da1590fefdb482eaa7a3088c",
+      "bytes": 110988,
+      "approvedAt": "2026-11-03T10:05:22.509Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-stojcevic/01.jpg",
+      "sha256": "8fd1a018bb20ee0f8ba64a02383bf6ea0eb0d78e5c8fb648d8892cf0bbf64c6e",
+      "bytes": 118318,
+      "approvedAt": "2026-11-03T10:05:22.510Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-stojcevic/02.jpg",
+      "sha256": "0382426ccb125aa25b04166d32a52f134f8e812684bd593462116b691a0e6aaa",
+      "bytes": 120991,
+      "approvedAt": "2026-11-03T10:05:22.510Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-tagkiri/01.jpg",
+      "sha256": "b6fcb65935477d76b9b431495f6886a8811ff7c641228aeb7db7dcdb47ceb89c",
+      "bytes": 85616,
+      "approvedAt": "2026-11-03T10:05:22.510Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-tagkiri/02.jpg",
+      "sha256": "fa8d218923eaabe72f0bf4f4646594d4e88f65fd734eb4fac04eed0ca7b77ef1",
+      "bytes": 65169,
+      "approvedAt": "2026-11-03T10:05:22.511Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-tagkiri/03.jpg",
+      "sha256": "140243f1c5de87f72aa2c31926dcb544d21b14824fa07e503ccc6f0e10e3e1eb",
+      "bytes": 66396,
+      "approvedAt": "2026-11-03T10:05:22.511Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-usjak/01.jpg",
+      "sha256": "c269c74ae86949dc61d6ba70a850a80f41be4b2550f8afdfbcbcb278e286d447",
+      "bytes": 151215,
+      "approvedAt": "2026-11-03T10:05:22.511Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-usjak/02.jpg",
+      "sha256": "2ec65bdcdba3af185f150c124a9b7f9c6e7d139ff7ee83fda117884dfd61a59f",
+      "bytes": 156887,
+      "approvedAt": "2026-11-03T10:05:22.512Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-usjak/03.jpg",
+      "sha256": "6af589096ba1b7f1f4c7a97674498142041f13f1c7cfd754f3686ce4a06d3d63",
+      "bytes": 167877,
+      "approvedAt": "2026-11-03T10:05:22.512Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-velemir/01.jpg",
+      "sha256": "56f239e35edd2cd726898cf8e0c2669eb525eb72d37cedcfe4ea59c117edd5a2",
+      "bytes": 171988,
+      "approvedAt": "2026-11-03T10:05:22.513Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-velemir/02.jpg",
+      "sha256": "bb3520f8f8fdae5a48abd278a16125d9e2ef92c903122e29f5c53692edc34cd7",
+      "bytes": 160007,
+      "approvedAt": "2026-11-03T10:05:22.513Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-velemir/03.jpg",
+      "sha256": "a27cf95b562776e88b4af3574eb738f0d1397aef7e0a5833e50cef309c109618",
+      "bytes": 124763,
+      "approvedAt": "2026-11-03T10:05:22.513Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-velemir/04.jpg",
+      "sha256": "345f3bca017a6830ddd3489d50e231587dd7f733158970264f602d15315c7760",
+      "bytes": 196472,
+      "approvedAt": "2026-11-03T10:05:22.514Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-zunic/01.jpg",
+      "sha256": "bb441484d6cdd1ee1381c58694ea73b4f33be064a9ec9e8beb9651ae9d92aa5e",
+      "bytes": 95447,
+      "approvedAt": "2026-11-03T10:05:22.514Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/w5-zunic/02.jpg",
+      "sha256": "a157980c0768c7e3d85184317127361aeb1d8fd11fc6f26c581815eab6ca6238",
+      "bytes": 120458,
+      "approvedAt": "2026-11-03T10:05:22.514Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/zgradica-2026/01.jpg",
+      "sha256": "548460e82415964a00ca0ced18618e21db98e1183174cdf199ac60ff1184e4c3",
+      "bytes": 98395,
+      "approvedAt": "2026-11-03T10:05:22.515Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/zgradica-2026/poseta-2026-10-09-1.jpg",
+      "sha256": "83e3aa8a4912a9f221f45de4c236eda2ea9d04998cc5dd3068cab5de49d7e14e",
+      "bytes": 175149,
+      "approvedAt": "2026-11-03T10:05:22.515Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/zmijica-2026/01.jpg",
+      "sha256": "bd720059492d0db434998c7d2f39923e83d4a3e5a316d4bab93ebfa8130eaa9c",
+      "bytes": 114937,
+      "approvedAt": "2026-11-03T10:05:22.516Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/zmijica-2026/poseta-2026-10-09-1.jpg",
+      "sha256": "f486ff6ebf016bdf1d50122050170eeabad4a15b82cfbfe0c4bb2793f309645e",
+      "bytes": 170617,
+      "approvedAt": "2026-11-03T10:05:22.516Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/zmijica-2026/poseta-2026-10-09-2.jpg",
+      "sha256": "9015fc2025f5ae98983b7ea190e4057535f17aa73fca2cadf4fba5e168519d10",
+      "bytes": 235279,
+      "approvedAt": "2026-11-03T10:05:22.517Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/zvecka-2026/01.jpg",
+      "sha256": "1cef4e2cffc66f1a6386fd983a3847a83bafa49571ce96f9f33e795a2f925ab8",
+      "bytes": 141981,
+      "approvedAt": "2026-11-03T10:05:22.517Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/zvecka-2026/02.jpg",
+      "sha256": "d6bda72ee0548dbc375f2116274399e9fec64314ea92998d597430c549c49e65",
+      "bytes": 132096,
+      "approvedAt": "2026-11-03T10:05:22.518Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/zvecka-2026/03.jpg",
+      "sha256": "2d43a12639e565c9a5b5b94b9dd100d0982e844013a785956d3801ddcf0325c9",
+      "bytes": 104927,
+      "approvedAt": "2026-11-03T10:05:22.518Z",
+      "reason": "Verified EXIF-free public asset"
+    },
+    {
+      "file": "data/prototipovi/zvecka-2026/04.jpg",
+      "sha256": "7444c61fa99076d6cb26f7b10f8e722b5ddcdd2528c2a800ceae4daa01e83bd1",
+      "bytes": 113119,
+      "approvedAt": "2026-11-03T10:05:22.518Z",
+      "reason": "Verified EXIF-free public asset"
+    }
+  ]
+}
