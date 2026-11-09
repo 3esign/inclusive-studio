@@ -1,0 +1,446 @@
+{
+  "schema": "course-class-list/v1",
+  "id": "cas-06-radovi-2026-11-06",
+  "cas": "cas-w06",
+  "odrzan": "2026-11-06",
+  "nedelja": 6,
+  "redni": {
+    "sr": "šesti čas",
+    "en": "sixth class"
+  },
+  "naslov": {
+    "sr": "Spisak radova šestog časa.",
+    "en": "The list of the sixth class."
+  },
+  "lede": {
+    "sr": "Dvadeset osam zavedenih prisustava. 19 radova je fotografisano (57 fotografija), 9 zapisa je bez fotografije. Od ovog časa svaki student vodi dva dosijea — prototip igračke i reciklažu tekstila — pa fotografisani radovi stoje u 23 galerije (13 igračka, 10 tekstil). Poseta udruženju istog dana ima svoj dosije.",
+    "en": "Twenty-eight recorded attendances. 19 works were photographed (57 photographs), 9 entries have no photograph. From this class on every student keeps two dossiers — the toy prototype and textile recycling — so the photographed works stand in 23 galleries (13 toy, 10 textile). The association visit of the same day has its own dossier."
+  },
+  "source": {
+    "id": "teacher-2026-11-08-cas-06",
+    "recordedOn": "2026-11-08",
+    "description": {
+      "sr": "Profesorov spisak šestog časa (06.11.2026), zapisan 08.11.2026. redom vođenja spiska; broj uz zapis je broj fotografija tog rada. Čas je nastavak rada na prototipovima i početak tekstilnog zadatka (A3 predlozi i tekstilni prototipi). Fotografije su na telefonu profesora (Galaxy S23 FE, /Internal storage/DCIM/Camera); niz počinje snimkom 20261106_120954.jpg (tekstilni A3 poster) i završava se fotografijom drvenog lavirinta sa crnim i belim perlama; posle nje ide 23 fotografije iz udruženja.",
+      "en": "The professor’s list of the sixth class (6 November 2026), recorded on 8 November 2026 in the order the list was kept; the number beside an entry is that work’s photograph count. The class continues the prototype work and opens the textile task (A3 proposals and textile prototypes). The photographs are on the professor’s phone (Galaxy S23 FE, /Internal storage/DCIM/Camera); the sequence starts with frame 20261106_120954.jpg (a textile A3 poster) and ends with a photograph of a wooden labyrinth with black and white pearls; 23 photographs from the association follow it."
+    }
+  },
+  "napomena": {
+    "sr": "Brojevi su brojevi fotografija po zapisu, ne ocene. Svaki fotografisani zapis otvara stranicu svog rada; zapis sa dva dosijea ima dva linka — „Prototip igračke” i „Reciklaža tekstila”.",
+    "en": "The numbers count photographs per entry, not grades. Every photographed entry opens its work’s page; an entry with two dossiers carries two links — “Toy prototype” and “Textile recycling”."
+  },
+  "analizaUdruzenja": {
+    "sr": "Poseta udruženju istog dana: 21 fotografija kroz hronološku priču događaja i zapažanja o 12 prepoznatih radova u rukama korisnika, na strani posete.",
+    "en": "The association visit of the same day: 21 photographs told as a chronological event story with observations on 12 recognised works in the users’ hands, on the visit page."
+  },
+  "radovi": [
+    {
+      "rb": 1,
+      "ime": "Teodora Radojičić",
+      "indeks": "72/24",
+      "rad": "Zgradica",
+      "slike": 3,
+      "napomena": {
+        "sr": "dva dosijea: prototip igračke „Zgradica” na A3 listu (1 kadar) i tekstil — A3 plakat „Tekstilni otpad” sa patchwork uzorkom (2 kadra).",
+        "en": "two dossiers: the toy prototype “Zgradica” on an A3 sheet (1 frame) and textile — the A3 poster “Tekstilni otpad” with a patchwork swatch (2 frames)."
+      },
+      "galerija": "w6-radojicic",
+      "galerijaTekstil": "w6-radojicic-tekstil"
+    },
+    {
+      "rb": 2,
+      "ime": "Hana Demiri",
+      "indeks": "22/24",
+      "rad": null,
+      "slike": 1,
+      "napomena": {
+        "sr": "tekstil: donet A3 predlog — radionica veza („Šareni tkalački ram”).",
+        "en": "textile: an A3 proposal brought — embroidery workshop (“Šareni tkalački ram”)."
+      },
+      "galerija": "w6-demiri",
+      "razjasni": "nazivi-c06"
+    },
+    {
+      "rb": 3,
+      "ime": "Iva Žunić",
+      "indeks": "110/24",
+      "rad": null,
+      "slike": 1,
+      "napomena": {
+        "sr": "tekstil: donet A3 — radionica žica i tkanina (zajednički zidni ornament).",
+        "en": "textile: A3 brought — wire and fabric workshop (a shared wall ornament)."
+      },
+      "galerija": "w6-zunic",
+      "razjasni": "nazivi-c06"
+    },
+    {
+      "rb": 4,
+      "ime": "Nikola Pajić",
+      "indeks": "49/24",
+      "rad": "Music Box",
+      "slike": 1,
+      "napomena": {
+        "sr": "tekstil: 3D model i skica prototipa za tekstil (posuda, biljka, tekstil) — dogovor za eksperiment.",
+        "en": "textile: 3D model and sketch of the textile prototype (vessel, plant, textile) — the experiment agreed."
+      },
+      "galerija": "w6-pajic"
+    },
+    {
+      "rb": 5,
+      "ime": "Katarina Ušjak",
+      "indeks": "86/24",
+      "rad": "edukativna",
+      "slike": 4,
+      "napomena": {
+        "sr": "dva dosijea: ponovljen prototip igračke „edukativna” (2 kadra) i tekstil — tkalački ram od kartona sa trakama od majica (2 kadra).",
+        "en": "two dossiers: the repeated toy prototype “edukativna” (2 frames) and textile — a cardboard loom with T-shirt strips (2 frames)."
+      },
+      "galerija": "w6-usjak",
+      "galerijaTekstil": "w6-usjak-tekstil",
+      "razjasni": "broj-kadrova-c06"
+    },
+    {
+      "rb": 6,
+      "ime": "Lazović Sara",
+      "indeks": "106/24",
+      "rad": null,
+      "slike": 2,
+      "napomena": {
+        "sr": "tekstil: tekstilni i akustični prototip („1. Текстилне тапете”).",
+        "en": "textile: a textile and acoustic prototype (“1. Textile wallpapers”)."
+      },
+      "galerija": "w6-lazovic",
+      "razjasni": "broj-kadrova-c06"
+    },
+    {
+      "rb": 7,
+      "ime": "Tijana Velemir",
+      "indeks": "51/24",
+      "rad": null,
+      "slike": 1,
+      "napomena": {
+        "sr": "tekstil: skica prototipa za reciklažu tekstila — ram.",
+        "en": "textile: a sketch of the textile-recycling prototype — a frame."
+      },
+      "galerija": "w6-velemir"
+    },
+    {
+      "rb": 8,
+      "ime": "Đurđa Petković",
+      "indeks": "76/24",
+      "rad": null,
+      "slike": 2,
+      "napomena": {
+        "sr": "prototip igračke donet; tekstil sledeće nedelje.",
+        "en": "the toy prototype brought; textile next week."
+      },
+      "galerija": "w6-petkovic",
+      "razjasni": "nazivi-c06"
+    },
+    {
+      "rb": 9,
+      "ime": "Davidović Anđelija",
+      "indeks": "99/24",
+      "rad": "music box",
+      "slike": 2,
+      "napomena": {
+        "sr": "prototip igračke — music box: štipaljke kao udaraljke.",
+        "en": "toy prototype — music box: clothespins as percussion."
+      },
+      "galerija": "w6-davidovic"
+    },
+    {
+      "rb": 10,
+      "ime": "Sofia Ocanto Jovičić",
+      "indeks": "138/24",
+      "rad": null,
+      "slike": 0,
+      "napomena": {
+        "sr": "tekstil: prototip za tekstil — Claude app.",
+        "en": "textile: a textile prototype — Claude app."
+      },
+      "ceka": true
+    },
+    {
+      "rb": 11,
+      "ime": "Nataša Janjić",
+      "indeks": "152/24",
+      "rad": null,
+      "slike": 3,
+      "napomena": {
+        "sr": "prototip igračke: donet unapređen prototip.",
+        "en": "toy prototype: an improved prototype brought."
+      },
+      "galerija": "w6-janjic"
+    },
+    {
+      "rb": 12,
+      "ime": "Viktor Šešum",
+      "indeks": "56/24",
+      "rad": null,
+      "slike": 0,
+      "napomena": {
+        "sr": "tekstil: predata skica tekstilnog prototipa.",
+        "en": "textile: the sketch of a textile prototype was handed in."
+      },
+      "ceka": true
+    },
+    {
+      "rb": 13,
+      "ime": "Dunja Ljubičić",
+      "indeks": "38/24",
+      "rad": "igra sa užetom",
+      "slike": 2,
+      "napomena": {
+        "sr": "prototip igračke unapređen.",
+        "en": "toy prototype improved."
+      },
+      "galerija": "w6-ljubicic"
+    },
+    {
+      "rb": 14,
+      "ime": "Teodora Pudar",
+      "indeks": "129/24",
+      "rad": null,
+      "slike": 5,
+      "napomena": {
+        "sr": "prototip igračke: unapređen prototip („boje i oblici”).",
+        "en": "toy prototype: the improved prototype (“boje i oblici”)."
+      },
+      "galerija": "w6-pudar",
+      "razjasni": "broj-kadrova-c06"
+    },
+    {
+      "rb": 15,
+      "ime": "Andrej Rackov",
+      "indeks": "41/24",
+      "rad": "Fliper 2",
+      "slike": 2,
+      "napomena": {
+        "sr": "prototip igračke unapređen.",
+        "en": "toy prototype improved."
+      },
+      "galerija": "w6-rackov"
+    },
+    {
+      "rb": 16,
+      "ime": "Maša Jotić",
+      "indeks": "134/24",
+      "rad": null,
+      "slike": 3,
+      "napomena": {
+        "sr": "prototip igračke: donet unapređen prototip i ideja za zidni panel (bez fotografije panela).",
+        "en": "toy prototype: an improved prototype brought and an idea for a wall panel (no photograph of the panel)."
+      },
+      "galerija": "w6-jotic",
+      "razjasni": "nazivi-c06"
+    },
+    {
+      "rb": 17,
+      "ime": "Andrej Parezanović",
+      "indeks": "43/24",
+      "rad": null,
+      "slike": 0,
+      "napomena": {
+        "sr": "prototip igračke donet, treba da se ukrasi.",
+        "en": "toy prototype brought; still to be decorated."
+      },
+      "ceka": true,
+      "razjasni": "radovi-u-udruzenju-c06"
+    },
+    {
+      "rb": 18,
+      "ime": "Andrija Bošković",
+      "indeks": "26/24",
+      "rad": null,
+      "slike": 0,
+      "napomena": {
+        "sr": "prototip igračke: 3D model za štampu.",
+        "en": "toy prototype: a 3D model for printing."
+      },
+      "ceka": true
+    },
+    {
+      "rb": 19,
+      "ime": "Mihailo Maksimović",
+      "indeks": "68/24",
+      "rad": null,
+      "slike": 0,
+      "napomena": {
+        "sr": "samo konsultacije.",
+        "en": "consultation only."
+      },
+      "ceka": true
+    },
+    {
+      "rb": 20,
+      "ime": "Lazar Leo Ćopić",
+      "indeks": "142/24",
+      "rad": null,
+      "slike": 0,
+      "napomena": {
+        "sr": "tekstil: igračka od tekstila.",
+        "en": "textile: a toy made of textile."
+      },
+      "ceka": true
+    },
+    {
+      "rb": 21,
+      "ime": "Sanja Hornjaček",
+      "indeks": "74/24",
+      "rad": "3d lavirint",
+      "slike": 2,
+      "napomena": {
+        "sr": "prototip igračke: poslednja verzija prototipa 3D lavirinta.",
+        "en": "toy prototype: the last version of the 3D labyrinth prototype."
+      },
+      "galerija": "w6-hornjacek"
+    },
+    {
+      "rb": 22,
+      "ime": "Nađa Stanić",
+      "indeks": "151/24",
+      "rad": null,
+      "slike": 3,
+      "napomena": {
+        "sr": "tekstil: donet tekstilni prototip („Рециклажа текстила”).",
+        "en": "textile: a textile prototype brought (“Textile recycling”)."
+      },
+      "galerija": "w6-stanic",
+      "razjasni": "nazivi-c06"
+    },
+    {
+      "rb": 23,
+      "ime": "Iva Mijanović",
+      "indeks": "28/24",
+      "rad": "fliper",
+      "slike": 7,
+      "napomena": {
+        "sr": "dva dosijea: fliper, nova verzija, i A3 plakat za fliper (3 kadra) i tekstil — A3 list „Futrola od tekstilnog otpada” i sašivena futrola (4 kadra).",
+        "en": "two dossiers: the pinball in a new version with its A3 poster (3 frames) and textile — the A3 sheet “Futrola od tekstilnog otpada” and the sewn pouch (4 frames)."
+      },
+      "galerija": "w6-mijanovic",
+      "galerijaTekstil": "w6-mijanovic-tekstil",
+      "razjasni": "nazivi-c06"
+    },
+    {
+      "rb": 24,
+      "ime": "Lena Dukić",
+      "indeks": "131/24",
+      "rad": null,
+      "slike": 9,
+      "napomena": {
+        "sr": "dva dosijea: nova verzija prototipa igračke (5 kadrova) i tekstil — skica „tekSTYL” za prenamenu farmerica (4 kadra).",
+        "en": "two dossiers: a new version of the toy prototype (5 frames) and textile — the “tekSTYL” sketch for repurposing jeans (4 frames)."
+      },
+      "galerija": "w6-dukic",
+      "galerijaTekstil": "w6-dukic-tekstil",
+      "razjasni": "nazivi-c06"
+    },
+    {
+      "rb": 25,
+      "ime": "Luka Stanišić",
+      "indeks": "44/24",
+      "rad": null,
+      "slike": 4,
+      "napomena": {
+        "sr": "prototip igračke gotov — vrhunski, fenomenalan.",
+        "en": "toy prototype finished — outstanding, phenomenal."
+      },
+      "galerija": "w6-stanisic"
+    },
+    {
+      "rb": 26,
+      "ime": "Anđela Cvetković",
+      "indeks": "125/24",
+      "rad": null,
+      "slike": 0,
+      "napomena": {
+        "sr": "prototip igračke: donet unapređen prototip.",
+        "en": "toy prototype: the improved prototype was brought."
+      },
+      "ceka": true,
+      "razjasni": "ime-125-24"
+    },
+    {
+      "rb": 27,
+      "ime": "Nikolina Graovac",
+      "indeks": "65/24",
+      "rad": null,
+      "slike": 0,
+      "napomena": {
+        "sr": "prototip igračke donet — ujak sa invaliditetom kao korisnik.",
+        "en": "toy prototype brought — an uncle with a disability as the user."
+      },
+      "ceka": true,
+      "razjasni": "radovi-u-udruzenju-c06"
+    },
+    {
+      "rb": 28,
+      "ime": "Miljana Lukić",
+      "indeks": "58/24",
+      "rad": null,
+      "slike": 0,
+      "napomena": {
+        "sr": "prototip igračke gotov; fotografisan na poseti udruženju.",
+        "en": "toy prototype finished; photographed on the association visit."
+      },
+      "ceka": true,
+      "razjasni": "radovi-u-udruzenju-c06"
+    }
+  ],
+  "razjasni": [
+    {
+      "id": "broj-kadrova-c06",
+      "sta": {
+        "sr": "Zapisi 5, 6 i 14 — razlika između zapisanog i stvarnog broja kadrova na telefonu: uz zapis 5 na spisku stoje 2 slike, a uz zapis 6 stoje 4 slike (zbir 6), dok vizuelni pregled niza pokazuje 4 kadra za zapis 5 (2 kadra tkanog tekstilnog prototipa na kartonu u 12:36 i 2 kadra ponovljenog prototipa „edukativna” u 12:36, pri čemu se na trećem kadru vidi i tkalački karton sa prva dva kadra) i 2 kadra za zapis 6 (A3 list „1. Текстилне тапете” i kesa sa uzorcima u 12:38). Uz zapis 14 na spisku stoje 4 slike, a na telefonu je 5 kadrova istog rada u 13:11 (1 kadar zatvorenog poklopca sa gumicama i 4 kadra otvorene kutije za jaja sa kuglicama, pri čemu su treći i četvrti kadar snimljeni u razmaku od dve sekunde). Zbog tog jednog dodatnog kadra ukupan broj fotografija u učionici je 57 umesto 56.",
+        "en": "Entries 5, 6 and 14 — difference between the written and actual frame counts on the phone: the list gives 2 photos for entry 5 and 4 photos for entry 6 (sum 6), whereas visual inspection of the sequence shows 4 frames for entry 5 (2 frames of the woven textile prototype on cardboard at 12:36 and 2 frames of the repeated “edukativna” prototype at 12:36, with the woven cardboard also visible at the edge of the third frame) and 2 frames for entry 6 (the A3 sheet “1. Textile wallpapers” and sample bag at 12:38). For entry 14 the list gives 4 photos, while the phone holds 5 frames of the same work at 13:11 (1 frame of the closed lid with rubber bands and 4 frames of the open egg carton with balls, the third and fourth taken two seconds apart). That extra frame brings the classroom total to 57 instead of 56."
+      }
+    },
+    {
+      "id": "radovi-u-udruzenju-c06",
+      "sta": {
+        "sr": "Zapisi 17, 26, 27 i 28 (zavedeni sa 0 slika u učionici) i radovi snimljeni u udruženju: gotov prototip zapisa 28 (uspravna kartonska kula sa tri klackalice na drvenim štapićima i tri obojene kutijice u dnu) prepoznat je sa petog časa i objavljen na sedam kadrova posete udruženju (kadrovi 61, 63, 66, 70, 71 i krupni planovi 73–75). Pored toga, u udruženju su snimljena još dva doneta prototipa koja nisu fotografisana u učionici: ručni prototip oblepljen sivom lepljivom trakom sa kartonskim okvirom, preklopnim jezičkom i braon gumicama (kadrovi 67 i 68 posete) i svetlozelena tabla sa nanizanim šarenim perlama i crnom trakom na stolu (kadrovi 70 i 71 posete). Molimo autore zapisa 17, 26 i 27 (ili druge učesnike posete) da jave kome pripadaju ta dva rada kako bismo ih povezali sa njihovim dosijeima.",
+        "en": "Entries 17, 26, 27 and 28 (recorded with 0 classroom photos) and works photographed at the association: the finished prototype of entry 28 (the upright cardboard drop-tower with three tilting baskets on wooden skewers and three coloured boxes at the base) is recognised from the fifth class and published across seven association visit frames (frames 61, 63, 66, 70, 71 and close-ups 73–75). In addition, two more brought prototypes that were not photographed in the classroom appear in the association sequence: a handheld prototype wrapped in grey duct tape with a cardboard loop, hinged flap and brown rubber bands (visit frames 67 and 68) and a light-green board with threaded coloured beads and black ribbon on the table (visit frames 70 and 71). The authors of entries 17, 26 and 27 (or other visit participants) are asked to confirm ownership of those two works so we can link them to their dossiers."
+      }
+    },
+    {
+      "id": "ime-125-24",
+      "sta": {
+        "sr": "Zapis 26: na spisku šestog časa uz taj broj indeksa stoji jedno prezime, a u spisku petog časa isti broj indeksa nosi drugo prezime. Jedan od dva oblika je greška u zapisu; studentkinja neka potvrdi važeći oblik.",
+        "en": "Entry 26: the sixth-class list carries one surname beside that student number, while the fifth-class list carries another surname beside the same number. One of the two forms is a recording error; the student is asked to confirm the valid form."
+      }
+    },
+    {
+      "id": "nazivi-c06",
+      "sta": {
+        "sr": "Naslovi na fotografisanim A3 listovima i raniji nazivi radova: na A3 plakatu zapisa 2 stoji naslov „Šareni tkalački ram”; na A3 listu zapisa 3 stoji „Reciklaža tekstila kroz izradu zajedničkog zidnog ornamenta”; na A3 listu zapisa 6 stoji „1. Текстилне тапете”; rad zapisa 8 (kutija sa prstenovima 1–7) i rad zapisa 14 (kutija za jaja sa obojenim kuglicama) nose radne nazive sa ranijih časova („putanja” i „boje i oblici”); rad zapisa 16 nastavlja drvenu ploču sa trećeg časa („Touch”); na A3 plakatu zapisa 22 stoji „Рециклажа текстила”; uz „Fliper” zapisa 23 priložen je i tekstilni list „Futrola od tekstilnog otpada”; na skici zapisa 24 za prenamenu farmerica stoji naslov „tekSTYL”. Tekstilni dosijei nose naslove sa listova koje su studenti sami napisali (zapis 1 „Tekstilni otpad”, zapis 23 „Futrola od tekstilnog otpada”, zapis 24 „tekSTYL”); tekstilni dosije zapisa 5 (tkalački ram) još nema naslov. Autori mogu potvrditi koje od ovih naslova žele kao zvanične nazive svojih radova u registru.",
+        "en": "Headings on the photographed A3 sheets and earlier work titles: the A3 poster of entry 2 reads “Šareni tkalački ram” (“Colourful weaving frame”); the A3 sheet of entry 3 reads “Reciklaža tekstila kroz izradu zajedničkog zidnog ornamenta” (“Textile recycling through making a shared wall ornament”); the A3 sheet of entry 6 reads “1. Текстилне тапете” (“1. Textile wallpapers”); the work of entry 8 (box with rings 1–7) and the work of entry 14 (egg carton with coloured balls) continue earlier working titles (“putanja” and “boje i oblici”); entry 16 continues the third-class wooden board (“Touch”); the A3 poster of entry 22 reads “Рециклажа текстила” (“Textile recycling”); alongside “Fliper” in entry 23 stands the textile sheet “Futrola od tekstilnog otpada” (“Pouch from textile waste”); the jeans-repurposing sketch in entry 24 carries the title “tekSTYL”. The textile dossiers carry the headings the students wrote on their own sheets (entry 1 “Tekstilni otpad”, entry 23 “Futrola od tekstilnog otpada”, entry 24 “tekSTYL”); the textile dossier of entry 5 (the loom) has no title yet. Authors are welcome to confirm which of these headings they want recorded as official work titles."
+      }
+    }
+  ],
+  "vezaneGalerije": true,
+  "posetaRegistar": "data/poseta-2026-11-06.json",
+  "posetaStrana": "poseta-w06.html",
+  "presek": {
+    "sr": "Kadrovi 1–57 su radovi u učionici, kadrovi 58–80 poseta udruženju (objavljeni kadrovi 59–80 nakon izdvajanja prvog neizoštrenog duplikata).",
+    "en": "Frames 1–57 are the classroom works, frames 58–80 the association visit (frames 59–80 published after setting aside the blurry opening duplicate)."
+  },
+  "ispravke": [
+    {
+      "id": "dva-dosijea-c06",
+      "sta": {
+        "sr": "Od šestog časa svaki student vodi dva dosijea: prototip igračke i reciklažu tekstila. Fotografije šestog časa razvrstane su po dosijeu — četiri zapisa koja su donela oboje (1, 5, 23, 24) dobila su po dve galerije, a šest zapisa koja su donela samo tekstil (2, 3, 4, 6, 7, 22) stoje u tekstilnom dosijeu. U udruženju je kod zapisa 5 isprobavan tkalački ram, pa ti kadrovi stoje uz tekstilni dosije. Ostalo ide dalje kao i ranije: svaki čas se objavljuje na isti način.",
+        "en": "From the sixth class on every student keeps two dossiers: the toy prototype and textile recycling. The sixth-class photographs are sorted by dossier — the four entries that brought both (1, 5, 23, 24) now have two galleries each, and the six entries that brought only textile (2, 3, 4, 6, 7, 22) stand in the textile dossier. At the association it was entry 5’s loom that was tried, so those frames stand with the textile dossier. Everything else continues as before: every class is published the same way."
+      },
+      "izvor": "Profesor predmeta, 08.11.2026."
+    },
+    {
+      "id": "zapis-09-music-box",
+      "sta": {
+        "sr": "Zapis 9: naziv „music box” je tačan — profesor je zadao da štipaljke sa pomponima budu udaraljke, pa bela taktilna tabla sa štipaljkama, plišanim žicama i penastim oblicima jeste taj prototip. Ranije otvoreno pitanje o opisu zapisa 9 je zatvoreno.",
+        "en": "Entry 9: the title “music box” is correct — the professor set the task for the pom-pom clothespins to work as percussion, so the white tactile board with clothespins, chenille stems and foam shapes is that prototype. The earlier open question about entry 9 is closed."
+      },
+      "izvor": "Profesor predmeta, 08.11.2026."
+    }
+  ]
+}

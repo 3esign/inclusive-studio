@@ -1,0 +1,36 @@
+INCLUSIVE STUDIO — ROUTE EVIDENCE SHEET
+One route, several ways of using it. Prepare locally; share only agreed material.
+
+Date / conditions:
+Place (do not include a private home address in public work):
+Activity / destination:
+Question agreed with a coauthor (no diagnosis needed):
+
+For each route segment record:
+1. From / to (use a sequence that also works without a map)
+2. Clear width + unit + method, or NOT MEASURED
+3. Change in level / slope + unit + method, or NOT MEASURED
+4. Surface, crossings, doors, obstacles and turning/pausing space
+5. Light, glare, noise, shade and places to rest
+6. Observation date, conditions and uncertainty
+
+ALTERNATIVE A / ALTERNATIVE B
+What activity does each enable? For whom and under which conditions?
+What additional effort or assistance does each require?
+What remains unknown? What must be checked on site?
+
+SHARED DECISION
+Keep / revise / try next:
+Who disagreed and what changed? Use roles or agreed pseudonyms.
+How will the change be tested, by whom, and with what stop condition?
+
+DRAWING COMPANION
+Orientation, units, scale, key spaces, route sequence, critical dimensions,
+and the design decision the drawing supports. Do not infer accessibility
+from a photograph or a dimension without context.
+
+SOURCE METHOD
+AccessMap, University of Washington Taskar Center:
+https://tcat.cs.washington.edu/accessmap/
+W3C complex images: https://www.w3.org/WAI/tutorials/images/complex/
+This is an educational worksheet, not a building-code checklist.

@@ -1,0 +1,48 @@
+name: "Public project reference / Javna referenca projekta"
+description: "Optionally share approved evidence from a project stage / Neobavezno podeli odobrene dokaze iz faze projekta"
+title: "[Public reference / Javna referenca] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: "Files added to this editor upload immediately, before you submit, and are public. / Fajlovi dodati u ovaj editor šalju se odmah, pre objave, i javno su dostupni."
+  - type: markdown
+    attributes:
+      value: "This is public project sharing, not an official course hand-in or grade. / Ovo je javno deljenje rada, ne zvanična predaja na predmetu ili ocena."
+  - type: dropdown
+    id: stage
+    attributes:
+      label: "Project stage / Faza projekta"
+      options:
+        - "01 — Trace a journey / Istraži putanju"
+        - "02 — Agree the brief / Dogovori projektni zadatak"
+        - "03 — Compare spatial options / Uporedi prostorna rešenja"
+        - "04 — Test at full scale / Proveri u punoj razmeri"
+        - "05 — Resolve the project / Razradi projekat"
+        - "06 — Return it to the community / Vrati rezultat zajednici"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Evidence and question / Dokazi i pitanje"
+      description: "Describe the decision, measurements, changes and uncertainty. Attach drawings here. / Opiši odluku, mere, promene i neizvesnosti. Ovde priloži crteže."
+    validations:
+      required: true
+  - type: textarea
+    id: descriptions
+    attributes:
+      label: "Drawing descriptions / Opisi crteža"
+      description: "Describe the meaning of every attachment in text; include scale, levels and spatial relationships where relevant. / Opiši smisao svakog priloga tekstom; navedi razmeru, kote i prostorne odnose gde su važni."
+  - type: textarea
+    id: credits
+    attributes:
+      label: "Agreed credits (optional) / Dogovoreni potpisi (neobavezno)"
+      description: "Name people only with their permission; roles or agreed pseudonyms are fine. / Navedi ljude samo uz njihovu dozvolu; mogu uloge ili dogovoreni pseudonimi."
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: "Public sharing / Javno deljenje"
+      options:
+        - label: "I removed private information and have permission to publish this material. / Uklonio/la sam privatne podatke i imam dozvolu za objavu ovog materijala."
+          required: true

@@ -1,0 +1,834 @@
+{
+  "schema": "course-visit/v1",
+  "id": "poseta-udruzenje-2026-11-06",
+  "week": 6,
+  "occurredOn": "2026-11-06",
+  "place": {
+    "sr": "Udruženje „Živimo zajedno”, Beograd",
+    "en": "The Živimo zajedno association, Belgrade"
+  },
+  "source": {
+    "id": "teacher-2026-11-08-poseta",
+    "recordedOn": "2026-11-08",
+    "description": {
+      "sr": "Dvadeset jedna objavljena fotografija sa četvrte posete udruženju „Živimo zajedno” (Studentski trg 18, 06.11.2026, 14:23–14:55), posle izdvajanja neizoštrenog početnog duplikata (kadar 58) i zaklonjenog kadra s leđa (kadar 76). Na dvadeset jednom kadru prepoznato je dvanaest radova i zabeležen ceo tok susreta u dvorištu udruženja, uz potpun spisak od dvadeset dvoje prisutnih studenata koji je dostavio profesor.",
+      "en": "Twenty-one published photographs from the fourth visit to the “Živimo zajedno” association (Studentski trg 18, 6 November 2026, 14:23–14:55), after setting aside the blurry opening duplicate (frame 58) and the obstructed over-the-shoulder shot (frame 76). Twelve works are recognised across the twenty-one frames, documenting the full chronological flow of the gathering in the association courtyard alongside the complete roster of twenty-two participating students supplied by the professor."
+    }
+  },
+  "participants": [
+    {
+      "name": "Davidović Anđelija",
+      "studentNumber": "99/24"
+    },
+    {
+      "name": "Đurđa Petković",
+      "studentNumber": "76/24"
+    },
+    {
+      "name": "Ana Rangelov",
+      "studentNumber": "149/24"
+    },
+    {
+      "name": "Anđela Mićković",
+      "studentNumber": "37/24"
+    },
+    {
+      "name": "Maša Jotić",
+      "studentNumber": "134/24"
+    },
+    {
+      "name": "Mihailo Maksimović",
+      "studentNumber": "68/24"
+    },
+    {
+      "name": "Andrej Parezanović",
+      "studentNumber": "43/24"
+    },
+    {
+      "name": "Andrija Bošković",
+      "studentNumber": "26/24"
+    },
+    {
+      "name": "Nataša Janjić",
+      "studentNumber": "152/24"
+    },
+    {
+      "name": "Teodora Pudar",
+      "studentNumber": "129/24"
+    },
+    {
+      "name": "Boris Vulićević",
+      "studentNumber": "63/24"
+    },
+    {
+      "name": "Sanja Hornjaček",
+      "studentNumber": "74/24"
+    },
+    {
+      "name": "Dunja Ljubičić",
+      "studentNumber": "38/24"
+    },
+    {
+      "name": "Elena Tagkiri",
+      "studentNumber": "196/25"
+    },
+    {
+      "name": "Marija Milovanović",
+      "studentNumber": "98/25"
+    },
+    {
+      "name": "Marija Bajić",
+      "studentNumber": "114/24"
+    },
+    {
+      "name": "Lena Dukić",
+      "studentNumber": "131/24"
+    },
+    {
+      "name": "Iva Mijanović",
+      "studentNumber": "28/24"
+    },
+    {
+      "name": "Petra Nešić",
+      "studentNumber": "94/24"
+    },
+    {
+      "name": "Iva Žunić",
+      "studentNumber": "110/24"
+    },
+    {
+      "name": "Nikolina Pavković",
+      "studentNumber": "111/24"
+    },
+    {
+      "name": "Katarina Ušjak",
+      "studentNumber": "86/24"
+    }
+  ],
+  "summary": {
+    "sr": "Četvrta poseta udruženju, petak 06.11.2026, u dvorištu na Studentskom trgu 18 (14:23–14:55). Dvadeset dvoje studenata donelo je unapređene prototipe igračaka i prve radove iz reciklaže tekstila. Kroz 21 fotografiju, poređanu redom kojim se događaj odvijao, pratimo kako su prototipi izašli na zajednički sto na otvorenom, kako su ih korisnici sami birali i isprobavali u rukama, i gde je svaki predmet pokazao svoju snagu ili zatražio sledeću doradu.",
+    "en": "The fourth association visit, Friday 6 November 2026, in the courtyard at Studentski trg 18 (14:23–14:55). Twenty-two students brought improved toy prototypes and the first textile-recycling works. Across 21 photographs in chronological order, the story follows how the prototypes came out onto the shared outdoor table, how users chose and tried them in their own hands, and where each object showed its strength or asked for its next refinement."
+  },
+  "photos": [
+    {
+      "id": "w06-telefon-59",
+      "src": "data/prototipovi/poseta-w06/telefon-59.jpg",
+      "sha256": "8da5b75c2b879d6117a01a5012947c5b42dc1a6d3f96fcfca3c9b92496e613e9",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Za stolom u dvorištu udruženja korisnica obema rukama niže zelene perle na belu plišanu žicu prugaste drvene ploče, dok pored stoje žuti 3D lavirint i zelena kutija sa delovima slagalice dinosaurusa.",
+        "en": "At the table in the association courtyard a user threads green beads with both hands onto a white chenille stem on the striped wooden board, beside the yellow 3D labyrinth and the green box of dinosaur puzzle pieces."
+      },
+      "caption": {
+        "sr": "14:23 · Prvi susret za stolom u dvorištu: čim su radovi spušteni, korisnica bez uputstva obema rukama niže zelene perle na plišane žice drvene ploče, dok pored čekaju 3D lavirint i slagalica dinosaurusa.",
+        "en": "14:23 · First contact at the courtyard table: as soon as the works are set down, a user begins threading green beads onto the chenille stems of the wooden board with both hands, without instruction, beside the 3D labyrinth and dinosaur puzzle."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w6-jotic",
+        "w6-hornjacek",
+        "w6-janjic"
+      ]
+    },
+    {
+      "id": "w06-telefon-60",
+      "src": "data/prototipovi/poseta-w06/telefon-60.jpg",
+      "sha256": "1db9b929a0fe21ee472b96d92f0f97e7ca4d452aa424660b4b675e2a01ed7a55",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Korisnik u stojećem položaju obema rukama drži i naginje kartonsku kutiju sa sedam numerisanih prstenova-tunela (1–7) i crvenom kuglicom.",
+        "en": "A standing user holds and tilts the cardboard box with seven numbered ring tunnels (1–7) and a red ball in both hands."
+      },
+      "caption": {
+        "sr": "14:24 · Igra van stola, u hodu: korisnik uzima kutiju sa sedam numerisanih prstenova (1–7) u obe ruke i stojeći u dvorištu naginjanjem vodi crvenu kuglicu kroz prvi tunel.",
+        "en": "14:24 · Play away from the table: a user takes the box with seven numbered rings (1–7) in both hands and, standing in the courtyard, tilts it to guide the red ball through the first tunnel."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w6-petkovic"
+      ]
+    },
+    {
+      "id": "w06-telefon-61",
+      "src": "data/prototipovi/poseta-w06/telefon-61.jpg",
+      "sha256": "586c865c30392a5c66f6187c7652c37d5394c9d97e61dbd824def497ccf8a165",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Studenti i korisnici udruženja okupljeni oko stola u dvorištu: na stolu su žuti 3D lavirint, tacne sa dinosaurusima, kutija za jaja sa obojenim kuglicama, tkalački karton sa pamučnim trakama i uspravna kartonska kula sa klackalicama.",
+        "en": "Students and association users gathered around the courtyard table: on the table are the yellow 3D labyrinth, dinosaur trays, the egg carton with coloured balls, the cardboard loom with cotton strips and the upright cardboard drop-tower."
+      },
+      "caption": {
+        "sr": "14:24 · Zajednički sto puni se prototipovima: uz 3D lavirint i tacne sa dinosaurusima stižu kutija za jaja sa obojenim kuglicama, tkalački ram sa pamučnim trakama i uspravna kartonska kula.",
+        "en": "14:24 · The shared table fills with prototypes: alongside the 3D labyrinth and dinosaur trays arrive the egg carton with coloured balls, the cardboard loom with cotton strips and the upright drop-tower."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w6-hornjacek",
+        "w6-janjic",
+        "w6-pudar",
+        "w6-usjak-tekstil",
+        "w5-lukic"
+      ]
+    },
+    {
+      "id": "w06-telefon-62",
+      "src": "data/prototipovi/poseta-w06/telefon-62.jpg",
+      "sha256": "c4929098532fd87dcb3488aeef282427a0f952e283a6335771336a8816779e25",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Širi pogled na okupljene studente, profesore i korisnike u dvorištu udruženja ispred ulaza oko stola sa žutim 3D lavirintom i slagalicama.",
+        "en": "Wider view of gathered students, professors and users in the association courtyard in front of the entrance around the table with the yellow 3D labyrinth and puzzles."
+      },
+      "caption": {
+        "sr": "14:24 · Pogled ka ulazu u udruženje: žuti 3D lavirint svojim volumenom i bojom postaje vizuelno središte stola oko kog se spontano okupljaju korisnici i studenti.",
+        "en": "14:24 · View toward the association entrance: with its volume and bright colour, the yellow 3D labyrinth becomes the visual centrepiece of the table where users and students gather."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w6-hornjacek",
+        "w6-janjic"
+      ]
+    },
+    {
+      "id": "w06-telefon-63",
+      "src": "data/prototipovi/poseta-w06/telefon-63.jpg",
+      "sha256": "754beb630d9552b90f6e64af70cc1d9025b9375bde2a206304771d4694964f2f",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Pogled na sto u dvorištu: u prvom planu obojena kutija za jaja sa kuglicama i prugasta drvena ploča sa plišanim žicama, a iza njih uspravna kula sa klackalicama i žuti 3D lavirint.",
+        "en": "View of the courtyard table: in the foreground the painted egg carton with balls and the striped wooden board with chenille stems, behind them the upright drop-tower and the yellow 3D labyrinth."
+      },
+      "caption": {
+        "sr": "14:24 · U prvom planu stola otvorena kutija za jaja sa obojenim ležištima i numerisanim kuglicama: gotovo sve kuglice već su razvrstane po svojim bojama.",
+        "en": "14:24 · In the foreground of the table, the open egg carton with painted hollows and numbered balls: nearly all balls have already been sorted into their matching colours."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w6-pudar",
+        "w6-jotic",
+        "w5-lukic",
+        "w6-hornjacek"
+      ]
+    },
+    {
+      "id": "w06-telefon-64",
+      "src": "data/prototipovi/poseta-w06/telefon-64.jpg",
+      "sha256": "fa73ab4b2058c13f011209b282f9504f80cd771f7d0d35750e6e5e1400387c65",
+      "width": 1280,
+      "height": 720,
+      "alt": {
+        "sr": "Grupni kadar u dvorištu udruženja (Studentski trg 18): studenti, profesori i članovi udruženja okupljeni u krugu oko izložbenog stola.",
+        "en": "Group frame in the association courtyard (Studentski trg 18): students, professors and association members gathered in a circle around the display table."
+      },
+      "caption": {
+        "sr": "14:24 · Krug u dvorištu na Studentskom trgu 18: dvadeset dvoje studenata, profesori i članovi udruženja u otvorenom razgovoru oko zajedničkog stola.",
+        "en": "14:24 · The circle in the courtyard at Studentski trg 18: twenty-two students, professors and association members in open conversation around the shared table."
+      },
+      "sourceId": "teacher-2026-11-08-poseta"
+    },
+    {
+      "id": "w06-telefon-65",
+      "src": "data/prototipovi/poseta-w06/telefon-65.jpg",
+      "sha256": "5c7b2b83e0744972d3e7e1e7b7c9490551e6b230cb3c806c2e1d2d3f75f0bd4b",
+      "width": 1280,
+      "height": 720,
+      "alt": {
+        "sr": "Pogled odozgo na krug studenata i korisnika udruženja okupljenih oko stola sa prototipovima u dvorištu.",
+        "en": "High-angle view of the circle of students and association users gathered around the prototype table in the courtyard."
+      },
+      "caption": {
+        "sr": "14:24 · Pogled sa stepeništa na ceo krug u dvorištu: sto u sredini omogućava da svako priđe sa svoje strane, pogleda šta drugi rade i uključi se kad poželi.",
+        "en": "14:24 · View from the steps across the courtyard circle: the central table lets everyone approach from their own side, watch what others are doing and join in at their own pace."
+      },
+      "sourceId": "teacher-2026-11-08-poseta"
+    },
+    {
+      "id": "w06-telefon-66",
+      "src": "data/prototipovi/poseta-w06/telefon-66.jpg",
+      "sha256": "4792d50557c2d845d85cb0048b4c95b21040d79e5a2f5663278b51ba78664c37",
+      "width": 1280,
+      "height": 720,
+      "alt": {
+        "sr": "Pogled na grupu u dvorištu: sa desne strane studentkinja drži crnu maketu flipera, a na stolu u sredini stoji uspravna kartonska kula sa klackalicama.",
+        "en": "View of the group in the courtyard: on the right a student holds the black pinball model, while the upright cardboard drop-tower stands on the central table."
+      },
+      "caption": {
+        "sr": "14:24 · U krug ulazi i nova verzija crnog flipera sa mehaničkim lanserom, dok na sredini stola dominira uspravna kartonska kula sa klackalicama.",
+        "en": "14:24 · The new version of the black pinball with a mechanical plunger enters the circle, while the upright cardboard drop-tower stands at the centre of the table."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w6-mijanovic",
+        "w5-lukic"
+      ]
+    },
+    {
+      "id": "w06-telefon-67",
+      "src": "data/prototipovi/poseta-w06/telefon-67.jpg",
+      "sha256": "97f5aa19c400c2dc0c56fedaa7229daba5872256f93b9ecde3ce3e226c1e8540",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Ruka u stojećem položaju drži kartonsku ručku oblepljenu sivom lepljivom trakom sa ovalnim kartonskim okvirom, preklopnim jezičkom i braon gumicama.",
+        "en": "A hand in a standing position holds a cardboard handle wrapped in grey duct tape with an oval cardboard loop, a hinged flap and brown rubber bands."
+      },
+      "caption": {
+        "sr": "14:26 · Proba iz ruke, bez oslonca na sto: jednoručni prototip oblepljen sivom trakom sa ovalnim okvirom i preklopnim jezičkom na gumicama ispituje se u stojećem položaju.",
+        "en": "14:26 · Hand-held trial without a table rest: the one-handed prototype wrapped in grey duct tape with an oval loop and rubber-band flap is tested while standing."
+      },
+      "sourceId": "teacher-2026-11-08-poseta"
+    },
+    {
+      "id": "w06-telefon-68",
+      "src": "data/prototipovi/poseta-w06/telefon-68.jpg",
+      "sha256": "d31672b89d40e4064cb35483f07e8d4a592f23a29fc6110d866447b00b5dd6ad",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Krupni plan istog ručnog prototipa: prsti prolaze kroz otvor ručke oblepljene sivom lepljivom trakom, dok braon gumice drže preklopni kartonski jezičak u ovalnom okviru.",
+        "en": "Close-up of the same handheld prototype: fingers pass through the grip wrapped in grey duct tape while brown rubber bands hold the hinged cardboard flap inside the oval frame."
+      },
+      "caption": {
+        "sr": "14:26 · Krupni plan hvata: izrezani prorez u ručki jasno vodi četiri prsta, dok braon gumice vraćaju preklopni kartonski jezičak u početni položaj.",
+        "en": "14:26 · Close-up of the grip: the cut-out slot in the handle guides four fingers naturally, while brown rubber bands return the hinged cardboard flap to its starting position."
+      },
+      "sourceId": "teacher-2026-11-08-poseta"
+    },
+    {
+      "id": "w06-telefon-69",
+      "src": "data/prototipovi/poseta-w06/telefon-69.jpg",
+      "sha256": "06c78fd14c3004daafb8c8c5cac304538879b981c9787daf6fea395611c2e2b0",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Na niskom crnom stočiću u dvorištu stoje bela kutija sa plastičnim čašama „Fliper 2”, ljubičasta kutija sa obručima i kuglama od folije „igra sa užetom” i sivi kvadratni kartonski „2d lavirint” sa trećeg časa na vrhu kutije, dok je u donjem levom uglu kutija sa prstenovima.",
+        "en": "On a low black table in the courtyard stand the white box with plastic cups “Fliper 2”, the purple box with rings and foil balls “igra sa užetom” and the grey square cardboard “2d lavirint” from the third class on top, with the ring box in the bottom-left corner."
+      },
+      "caption": {
+        "sr": "14:31 · Druga stanica u dvorištu: na niskom stočiću čekaju „Fliper 2” pod providnim poklopcem, ljubičasta kutija na tufne sa obručima i kuglama od folije i sivi kartonski „2d lavirint”.",
+        "en": "14:31 · A second station in the courtyard: on the low side table stand “Fliper 2” under its clear cover, the polka-dot purple box with linked rings and foil balls, and the grey cardboard “2d lavirint”."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w6-rackov",
+        "w6-ljubicic",
+        "w3-2d-lavirint",
+        "w6-petkovic"
+      ]
+    },
+    {
+      "id": "w06-telefon-70",
+      "src": "data/prototipovi/poseta-w06/telefon-70.jpg",
+      "sha256": "c2fa91c2d57147c56bebd638b34552deb7c8466881ee8fbc718d26a6a9559854",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Pogled odozgo na glavni sto sa osam prepoznatih radova: bela tabla sa 5 stubića i kockom „Pokušaj ponovo”, pet tacni sa slagalicama dinosaurusa i zelenom kutijom, crni fliper sa plutanim čepovima i gumicama, ležeća kartonska kula sa tri štapića i tri obojene kutijice, žuti 3D lavirint, prugasta ploča sa plišanim žicama, tkalački karton sa pamučnim trakama i kutija za jaja sa kuglicama, uz svetlozelenu tablu sa nanizanim perlama.",
+        "en": "Overhead view of the main table with eight recognised works: the white board with 5 pegs and “Try again” die, five trays of dinosaur puzzles and a green box, the black pinball with cork bumpers and rubber bands, the cardboard drop-tower with three skewers and three coloured boxes, the yellow 3D labyrinth, the striped chenille board, the cardboard loom with cotton strips and the egg carton with balls, beside a light-green board with threaded beads."
+      },
+      "caption": {
+        "sr": "14:31 · Pogled odozgo na glavni sto posle pola sata igre: bela tabla sa pet stubića, kanapom i kockom za zadavanje oblika leži uz crni fliper, 3D lavirint, tacne sa dinosaurusima i tkalački ram.",
+        "en": "14:31 · Overhead view of the main table half an hour into the visit: the white five-peg board with twine and shape die lies beside the black pinball, 3D labyrinth, dinosaur trays and cardboard loom."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w6-dukic",
+        "w6-janjic",
+        "w6-mijanovic",
+        "w5-lukic",
+        "w6-hornjacek",
+        "w6-jotic",
+        "w6-usjak-tekstil",
+        "w6-pudar"
+      ]
+    },
+    {
+      "id": "w06-telefon-71",
+      "src": "data/prototipovi/poseta-w06/telefon-71.jpg",
+      "sha256": "9c50a57d1cc7257751fc2ef6e2b7223b05a92e134df12ec51ccba4483d9cd7b6",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Širi kadar glavnog stola: ruka učesnice pokazuje gumice na crnom fliperu, dok su na stolu raspoređeni ostali radovi, a desno u pozadini vidi se i ljubičasta kutija na tufne.",
+        "en": "Wider frame of the main table: a participant’s hand points to the rubber bands on the black pinball, while the other works lie on the table and the polka-dot purple box is visible in the right background."
+      },
+      "caption": {
+        "sr": "14:31 · Razgovor nad stolom: ruka pokazuje kako su gumice razapete oko plutanih čepova na crnom fliperu, dok devet radova deli istu površinu stola.",
+        "en": "14:31 · Conversation over the table: a hand points to how the rubber bands are stretched around the cork bumpers on the black pinball, with nine works sharing the table."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w6-mijanovic",
+        "w6-janjic",
+        "w6-dukic",
+        "w5-lukic",
+        "w6-hornjacek",
+        "w6-jotic",
+        "w6-usjak-tekstil",
+        "w6-pudar",
+        "w6-ljubicic"
+      ]
+    },
+    {
+      "id": "w06-telefon-72",
+      "src": "data/prototipovi/poseta-w06/telefon-72.jpg",
+      "sha256": "2ee9397c17cbde834f61e40277b893297a1b0f58505416ad3320890fff41844c",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Krupni plan za stolom: ruke korisnika udruženja provlače sivu pamučnu traku kroz niti osnove na kartonskom tkalačkom ramu, dok je u prvom planu žuti 3D lavirint, a u gornjem uglu kutija za jaja sa kuglicama.",
+        "en": "Close-up at the table: an association user’s hands weave a grey cotton strip through the warp threads on the cardboard loom, with the yellow 3D labyrinth in the foreground and the egg carton with balls at the top."
+      },
+      "caption": {
+        "sr": "14:32 · Reciklaža tekstila u rukama korisnika: obema rukama provlači se široka siva traka isečena od pamučne majice kroz razapete niti osnove na kartonskom ramu.",
+        "en": "14:32 · Textile recycling in a user’s hands: both hands weave a wide grey strip cut from a cotton T-shirt through the warp threads on the cardboard loom."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w6-usjak-tekstil",
+        "w6-hornjacek",
+        "w6-pudar"
+      ]
+    },
+    {
+      "id": "w06-telefon-73",
+      "src": "data/prototipovi/poseta-w06/telefon-73.jpg",
+      "sha256": "d7e98a2c137eefdeb24618892f61f2ce48e709f8d581a3cfe6abd13754500597",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Dva para ruku drže uspravnu kartonsku kulu sa tri drvena štapića, tri preklopne kartonske korpice i tri obojene kutijice u dnu — plavom, crvenom i zelenom.",
+        "en": "Two pairs of hands hold the upright cardboard tower with three wooden skewers, three tilting cardboard baskets and three coloured boxes at the bottom — blue, red and green."
+      },
+      "caption": {
+        "sr": "14:33 · Zajedničko ispitivanje uspravne kule: dva para ruku drže visoko kućište dok prate kako drvene osovine okreću korpice na tri nivoa iznad plave, crvene i zelene kutijice.",
+        "en": "14:33 · Joint exploration of the upright tower: two pairs of hands hold the tall housing while following how the wooden axles tip the baskets across three levels above the blue, red and green boxes."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w5-lukic"
+      ]
+    },
+    {
+      "id": "w06-telefon-74",
+      "src": "data/prototipovi/poseta-w06/telefon-74.jpg",
+      "sha256": "fe46d053a14478fb50a6175204cef8ffd9be3654818b06284d7da5c3f01c3402",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Krupni plan unutrašnjosti iste kartonske kule: tri kartonske korpice pričvršćene na drvene štapiće koji prolaze kroz bočne zidove kutije na tri nivoa.",
+        "en": "Close-up of the interior of the same cardboard tower: three cardboard baskets mounted on wooden skewers passing through the side walls at three levels."
+      },
+      "caption": {
+        "sr": "14:33 · Pogled u unutrašnjost mehanizma kule: tri preklopne korpice na drvenim štapićima prenose kuglicu sa sprata na sprat.",
+        "en": "14:33 · Inside the tower mechanism: three tilting baskets on wooden skewers pass the ball from floor to floor."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w5-lukic"
+      ]
+    },
+    {
+      "id": "w06-telefon-75",
+      "src": "data/prototipovi/poseta-w06/telefon-75.jpg",
+      "sha256": "6b447685b56bce0b8f3bf8b45adfaf6e1f298d14f986a6390b67459a13f1f831",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Krupni plan donjeg dela kartonske kule: najniža korpica na drvenom štapiću iznad zelene, crvene i plave kutijice na dnu.",
+        "en": "Close-up of the lower part of the cardboard tower: the lowest basket on its wooden skewer above the green, red and blue boxes at the base."
+      },
+      "caption": {
+        "sr": "14:33 · Završni korak u dnu kule: iz najniže korpice kuglica pada pravo u zelenu, crvenu ili plavu kutijicu.",
+        "en": "14:33 · The final drop at the base of the tower: from the lowest basket the ball falls into the green, red or blue box."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w5-lukic"
+      ]
+    },
+    {
+      "id": "w06-telefon-77",
+      "src": "data/prototipovi/poseta-w06/telefon-77.jpg",
+      "sha256": "61a0250a3d705995871e8cd212bd0a2bb9825ba7fb4a77033a78d023d583113a",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Korisnik udruženja levom rukom pridržava donji levi ugao crnog flipera sa staklenom kuglicom, a desnom rukom povlači dršku mehaničkog lansera; pored flipera na stolu su bela tabla sa stubićima i kockom, žuti 3D lavirint i zelena kutija sa delovima slagalice.",
+        "en": "An association user steadies the bottom-left corner of the black pinball with a glass marble with the left hand and pulls the mechanical plunger handle with the right hand; beside it on the table are the white peg board and die, the yellow 3D labyrinth and the green box of puzzle pieces."
+      },
+      "caption": {
+        "sr": "14:35 · Korisnik udruženja sam prilazi stolu i bez tuđe pomoći priprema udarac na crnom fliperu: leva ruka mirno drži ugao kućišta, dok desna povlači drveni lanser.",
+        "en": "14:35 · An association user approaches the table on his own and sets up a shot on the black pinball unassisted: the left hand steadies the corner of the frame while the right hand pulls the wooden plunger."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w6-mijanovic",
+        "w6-hornjacek",
+        "w6-dukic",
+        "w6-janjic"
+      ]
+    },
+    {
+      "id": "w06-telefon-78",
+      "src": "data/prototipovi/poseta-w06/telefon-78.jpg",
+      "sha256": "ed6a79207c883c997a691a362de00fa23ddcd24f1a03c6dfc8324d48df0b74f2",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Sledeći trenutak igre na crnom fliperu: staklena kuglica je lansirana u polje sa plutanim čepovima i gumicama, dok su u kadru i tabla sa stubićima i kockom, žuti 3D lavirint i tacne sa dinosaurusima.",
+        "en": "Next moment of play on the black pinball: the glass marble is launched into the field with cork bumpers and rubber bands, with the peg board and die, yellow 3D labyrinth and dinosaur trays also in frame."
+      },
+      "caption": {
+        "sr": "14:35 · Sekund kasnije: staklena kuglica izleće iz kanala i odbija se kroz polje sa razapetim gumicama i plutanim čepovima.",
+        "en": "14:35 · One second later: the glass marble shoots out of the launch lane and bounces through the field of stretched rubber bands and cork bumpers."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w6-mijanovic",
+        "w6-hornjacek",
+        "w6-dukic",
+        "w6-janjic"
+      ]
+    },
+    {
+      "id": "w06-telefon-79",
+      "src": "data/prototipovi/poseta-w06/telefon-79.jpg",
+      "sha256": "4de43fbf33042204849689d7c963147034a1f02f0d4bef975723f934b1a60a7b",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Krupni plan na stolu: dve ruke sklapaju zelene reljefne delove slagalice dinosaurusa od glinamola na beloj kartonskoj tacni, pored složenog žutog, narandžastog, plavog i tirkiznog dinosaurusa.",
+        "en": "Close-up on the table: two hands assemble the green relief clay dinosaur puzzle pieces on a white cardboard tray, beside the assembled yellow, orange, blue and turquoise dinosaurs."
+      },
+      "caption": {
+        "sr": "14:55 · Završnica posete: četiri obojena dinosaurusa već su složena na svojim tacnama, a ruke pažljivo primiču reljefne delove petog, zelenog dinosaurusa.",
+        "en": "14:55 · Closing scene of the visit: four coloured dinosaurs are already assembled on their trays as hands carefully bring together the relief pieces of the fifth, green dinosaur."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w6-janjic"
+      ]
+    },
+    {
+      "id": "w06-telefon-80",
+      "src": "data/prototipovi/poseta-w06/telefon-80.jpg",
+      "sha256": "a4c5166c9521f63a67347941f86e3e228d8ce25f84c04c5796525ca917a72c8b",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Završni kadar posete: dva para ruku zajedno uklapaju glavu i telo zelenog dinosaurusa na kartonskoj tacni pored četiri već sklopljene figure dinosaurusa u boji.",
+        "en": "Final frame of the visit: two pairs of hands fit the head and body of the green dinosaur together on the cardboard tray beside four already assembled coloured dinosaur figures."
+      },
+      "caption": {
+        "sr": "14:55 · Poslednji kadar dana: dva para ruku zajedno uklapaju glavu i telo zelenog dinosaurusa i time zaokružuju svih pet figura na stolu.",
+        "en": "14:55 · Final frame of the day: two pairs of hands fit the head and body of the green dinosaur together, completing all five figures on the table."
+      },
+      "sourceId": "teacher-2026-11-08-poseta",
+      "radovi": [
+        "w6-janjic"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "work": "w6-jotic",
+      "title": {
+        "sr": "Teška drvena osnova oslobađa obe ruke za nizanje perli, dok vrhovi plišanih žica traže graničnik",
+        "en": "The heavy wooden base frees both hands for threading beads, while the tips of the chenille stems need a stopper"
+      },
+      "photoIds": [
+        "w06-telefon-59",
+        "w06-telefon-63",
+        "w06-telefon-70",
+        "w06-telefon-71"
+      ],
+      "seen": {
+        "sr": "Odmah na početku posete (kadar 1) korisnica udruženja obema rukama niže zelene, plave i narandžaste perle na plišane žice pričvršćene za prugastu drvenu ploču: masa punoće drveta drži podlogu potpuno mirnom na stolu, pa nijedna ruka nije potrošena na pridržavanje daske.",
+        "en": "Right at the start of the visit (frame 1) an association user threads green, blue and orange beads with both hands onto chenille stems fixed to the striped wooden board: the weight of the solid wood keeps the base steady on the table, so neither hand is wasted holding the board down."
+      },
+      "next": {
+        "sr": "Saviti završnu petlju na vrhu svake bele plišane žice da nanizane perle ne spadaju pri prenošenju i dodati plitko udubljenje ili platneni džepić uz ivicu daske za perle koje čekaju nizanje.",
+        "en": "Fold a terminal loop at the tip of each white chenille stem so threaded beads cannot slip off when carried, and add a shallow recess or fabric pouch along the board edge for loose beads awaiting threading."
+      }
+    },
+    {
+      "work": "w6-petkovic",
+      "title": {
+        "sr": "Kutija sa sedam numerisanih prstenova-tunela radi u stojećem položaju iz ruku korisnika",
+        "en": "The box with seven numbered ring tunnels works in a standing position held in the user’s hands"
+      },
+      "photoIds": [
+        "w06-telefon-60",
+        "w06-telefon-69"
+      ],
+      "seen": {
+        "sr": "Već u drugom minutu posete (kadar 2) korisnik uzima kutiju sa sedam kartonskih prstenova označenih brojevima 1–7 u obe ruke i stojeći u dvorištu naginjanjem vodi crvenu kuglicu kroz prvi prsten: visoki bočni zidovi kutije za cipele sprečavaju ispadanje kuglice na beton dok se predmet naginje u vazduhu.",
+        "en": "In the second minute of the visit (frame 2) a user takes the shoebox with seven cardboard rings numbered 1–7 in both hands and, standing in the courtyard, tilts it to guide the red ball through ring 1: the tall shoebox walls prevent the ball from dropping onto the pavement while tilted in mid-air."
+      },
+      "next": {
+        "sr": "Ojačati spoj prstenova sa dnom kutije i dodati kontrastne strelice na ulazu svakog tunela kako bi redosled 1–7 bio čitljiv i pod plitkim uglom gledanja dok korisnik drži kutiju u visini grudi.",
+        "en": "Reinforce the bond between the rings and the box floor and add high-contrast arrows at each tunnel entrance so the 1–7 sequence stays legible at a shallow viewing angle when held at chest height."
+      }
+    },
+    {
+      "work": "w6-hornjacek",
+      "title": {
+        "sr": "Trodimenzionalna žuta konstrukcija privlači pogled i hvat, ali na otvorenom stolu traži hvatač kuglice na izlazu",
+        "en": "The yellow 3D structure draws the eye and grip, but on an outdoor table it needs a marble catcher at the exit"
+      },
+      "photoIds": [
+        "w06-telefon-59",
+        "w06-telefon-61",
+        "w06-telefon-62",
+        "w06-telefon-63",
+        "w06-telefon-70",
+        "w06-telefon-71",
+        "w06-telefon-72",
+        "w06-telefon-77",
+        "w06-telefon-78"
+      ],
+      "seen": {
+        "sr": "Žuti prostorni lavirint sa svetlucavim brojevima i trouglovima stoji u središtu dvorišnog stola kroz devet kadrova posete: čvrste četvrtaste cevi dobro podnose prenošenje i okretanje u rukama, ali staklena kuglica po izlasku iz završnog kanala nema zatvoreno ležište u kome bi se zadržala.",
+        "en": "The yellow spatial labyrinth with glittery numbers and triangles stands at the centre of the courtyard table across nine visit frames: the rigid square tubes handle carrying and turning well, but once the glass marble exits the final channel there is no closed pocket to retain it."
+      },
+      "next": {
+        "sr": "Dodati plitku mrežicu ili kartonsku čašicu na izlaznom otvoru (polje 18) i polazno ležište za kuglicu kod broja 1 kako kuglica ne bi ispadala na pod pri probi u dvorištu.",
+        "en": "Add a shallow mesh pocket or cardboard cup at the exit opening (field 18) and a starting socket for the marble at number 1 so the marble cannot roll onto the ground during outdoor trials."
+      }
+    },
+    {
+      "work": "w6-pudar",
+      "title": {
+        "sr": "Obojena ležišta u kutiji za jaja vode razvrstavanje kuglica bez ijedne reči objašnjenja",
+        "en": "Painted hollows in the egg carton guide ball sorting without a single word of explanation"
+      },
+      "photoIds": [
+        "w06-telefon-61",
+        "w06-telefon-63",
+        "w06-telefon-70",
+        "w06-telefon-71",
+        "w06-telefon-72"
+      ],
+      "seen": {
+        "sr": "Obojena kutija za jaja sa numerisanim kuglicama u boji stoji otvorena u prvom planu stola (kadar 5), sa gotovo svim kuglicama već složenim u odgovarajuća obojena udubljenja: sama forma udubljenja i boja dna odmah saopštavaju zadatak.",
+        "en": "The painted egg carton with numbered coloured balls stands open in the foreground of the table (frame 5), with nearly all balls already placed into their matching coloured hollows: the recess shape and floor colour state the task immediately."
+      },
+      "next": {
+        "sr": "Iskoristiti unutrašnju stranu poklopca kutije kao ograđeni poslužavnik za kuglice pre početka igre kako se slobodne kuglice ne bi kotrljale po stolu dok korisnik bira sledeću boju i broj.",
+        "en": "Use the inside of the carton lid as a rimmed tray for holding the balls before play begins so loose balls do not roll across the table while the user picks the next colour and number."
+      }
+    },
+    {
+      "title": {
+        "sr": "Jedan zajednički sto u dvorištu pretvara posetu iz pojedinačnog ispitivanja u društveni događaj",
+        "en": "One shared table in the courtyard turns the visit from individual testing into a social event"
+      },
+      "photoIds": [
+        "w06-telefon-64",
+        "w06-telefon-65"
+      ],
+      "seen": {
+        "sr": "U širokim kadrovima dvorišta (kadrovi 6 i 7) dvadeset dvoje studenata, profesori i članovi udruženja stoje u krugu oko istog stola: korisnici ne čekaju da im se dodeli zadatak, već obilaze sto, posmatraju šta drugi drže u rukama i sami preuzimaju sledeći prototip.",
+        "en": "In the wide courtyard frames (frames 6 and 7) twenty-two students, professors and association members stand in a circle around a single table: users do not wait to be assigned a task, but walk around the table, watch what others hold and pick up the next prototype themselves."
+      },
+      "next": {
+        "sr": "Pri svakoj poseti zadržati princip otvorene trpeze na kojoj su svi radovi dostupni istovremeno, ali odvojiti mirniji bočni stočić za radove sa sitnim delovima koji traže dužu koncentraciju u sedećem položaju.",
+        "en": "Keep the open-table setup where all works are reachable at once on future visits, while setting aside a quieter side table for multi-piece works that call for longer seated concentration."
+      }
+    },
+    {
+      "title": {
+        "sr": "Izrezani otvor u ručki odmah vodi šaku, dok preklopni jezičak na gumicama traži čvršću osovinu",
+        "en": "The cut-out grip slot guides the hand immediately, while the rubber-band flap needs a stiffer axle"
+      },
+      "photoIds": [
+        "w06-telefon-67",
+        "w06-telefon-68"
+      ],
+      "seen": {
+        "sr": "U kadrovima 9 i 10 ispituje se ručni prototip oblepljen sivom lepljivom trakom: prorez za prste u dršci omogućava siguran jednoručni hvat u vazduhu bez oslanjanja na sto, dok braon gumice zatežu preklopni kartonski jezičak unutar ovalnog okvira.",
+        "en": "Frames 9 and 10 show a standing trial of the handheld prototype wrapped in grey duct tape: the finger slot in the handle gives a secure one-handed grip in mid-air without a table rest, while brown rubber bands tension a hinged cardboard flap inside the oval loop."
+      },
+      "next": {
+        "sr": "Ojačati prevoj kartonskog jezička drvenom osovinom ili platnenom šarkom kako se karton ne bi zamarao pod zatezanjem gumica i obeležiti pokretni deo kontrastnom bojom.",
+        "en": "Reinforce the fold of the cardboard flap with a wooden axle or fabric hinge so the board does not fatigue under rubber-band tension, and mark the moving flap with a contrasting colour."
+      }
+    },
+    {
+      "work": "w6-rackov",
+      "title": {
+        "sr": "Providni poklopac čuva kuglicu unutar kutije, a čaše na kosini traže kontrastne ivice",
+        "en": "The clear cover keeps the ball inside the box, while the cups on the ramp need high-contrast rims"
+      },
+      "photoIds": [
+        "w06-telefon-69"
+      ],
+      "seen": {
+        "sr": "Na pomoćnom stočiću u dvorištu (kadar 11) bela kutija „Fliper 2” sa plastičnim čašama i providnim poklopcem stoji spremna za igru: zatvorena gornja strana sprečava gubljenje kuglice pri naginjanju.",
+        "en": "On the courtyard side table (frame 11) the white box “Fliper 2” with plastic cups and a transparent cover stands ready for play: the enclosed top prevents losing the ball when tilting."
+      },
+      "next": {
+        "sr": "Obeležiti ivice providnih čaša kontrastnom bojom ili trakom od tkanine kako bi otvori čaša i oznake bodova (+5, +10) bili jasno vidljivi kroz providnu foliju i na jakom dnevnom svetlu.",
+        "en": "Mark the rims of the clear cups with high-contrast colour or fabric tape so the cup openings and point labels (+5, +10) stand out clearly through the transparent cover in bright outdoor daylight."
+      }
+    },
+    {
+      "work": "w6-ljubicic",
+      "title": {
+        "sr": "Ljubičasta kutija čuva obruče i kugle od folije na okupu pri prenošenju u dvorište",
+        "en": "The purple box keeps the rings and foil balls together when carried into the courtyard"
+      },
+      "photoIds": [
+        "w06-telefon-69",
+        "w06-telefon-71"
+      ],
+      "seen": {
+        "sr": "Tri povezana obruča u boji i kugle od aluminijumske folije doneti su u udruženje u sopstvenoj kutiji na tufne obloženoj ljubičastim krep-papirom (kadrovi 11 i 13), čime je rešeno rasipanje slobodnih kuglica primećeno na prethodnoj poseti.",
+        "en": "The three linked coloured rings and aluminium-foil balls were brought to the association in their own polka-dot box lined with purple crepe paper (frames 11 and 13), solving the loose-ball scattering noted on the previous visit."
+      },
+      "next": {
+        "sr": "Učvrstiti obruče na podignuti nosač uz ivicu same kutije kako bi kutija tokom igre služila i kao hvatač bačenih kugli od folije, a ne samo kao ambalaža za prenos.",
+        "en": "Mount the rings onto a raised holder along the rim of the box itself so the box also serves as a catcher for tossed foil balls during play, not only as a carrying case."
+      }
+    },
+    {
+      "work": "w3-2d-lavirint",
+      "title": {
+        "sr": "Ravni kartonski lavirint sa trećeg časa ostaje u igri kao najlakši rad za brzu probu iz ruke",
+        "en": "The flat cardboard maze from the third class stays in play as the lightest work for a quick hand-held trial"
+      },
+      "photoIds": [
+        "w06-telefon-69"
+      ],
+      "seen": {
+        "sr": "Na pomoćnom stočiću uz nove prototipe šestog časa stoji i sivi kvadratni „2d lavirint” sa trećeg časa (kadar 11): mala masa i plitak okvir omogućavaju da se uzme jednom rukom bez pripreme.",
+        "en": "On the side table alongside the new sixth-class prototypes stands the grey square “2d lavirint” from the third class (frame 11): its low weight and shallow frame let it be picked up with one hand without setup."
+      },
+      "next": {
+        "sr": "Obojiti dno putanje svetlim tonom naspram tamnih pregrada kako bi ulaz, izlaz i slepi rukavci bili čitljivi na prvi pogled.",
+        "en": "Paint the path floor in a light tone against dark partitions so the entrance, exit and dead ends read at a glance."
+      }
+    },
+    {
+      "work": "w6-dukic",
+      "title": {
+        "sr": "Kocka jasno zadaje oblik, ali pet malih stubića na beloj tabli traži viši i deblji oslonac za kanap",
+        "en": "The die clearly sets the shape, but the five small pegs on the white board need taller, thicker posts for the twine"
+      },
+      "photoIds": [
+        "w06-telefon-70",
+        "w06-telefon-71",
+        "w06-telefon-77",
+        "w06-telefon-78"
+      ],
+      "seen": {
+        "sr": "Bela tabla sa pet obojenih stubića, kanapom od jute i kartonskom kockom sa nacrtanim oblicima i poljem „Pokušaj ponovo” stoji na glavnom stolu (kadrovi 12, 13, 18 i 19): pri pomeranju table kanap se lako skida sa niskih i tankih stubića.",
+        "en": "The white board with five coloured pegs, jute twine and a cardboard die with drawn shapes and a “Try again” face stands on the main table (frames 12, 13, 18 and 19): when the board shifts, the twine slips easily off the low, thin pegs."
+      },
+      "next": {
+        "sr": "Zameniti sitne eksere višim drvenim tiplovima sa proširenom glavom u boji kako namotani kanap ne bi spadao dok korisnik zateže sledeću stranicu oblika.",
+        "en": "Replace the small nails with taller wooden dowels topped with wider coloured heads so the wound twine cannot slip off while the user pulls the next side of the shape taut."
+      }
+    },
+    {
+      "work": "w6-usjak-tekstil",
+      "title": {
+        "sr": "Široke trake od pamučnih majica omogućavaju pravo tkanje obema rukama bez igle",
+        "en": "Wide cotton T-shirt strips enable genuine two-handed weaving without a needle"
+      },
+      "photoIds": [
+        "w06-telefon-61",
+        "w06-telefon-70",
+        "w06-telefon-71",
+        "w06-telefon-72"
+      ],
+      "seen": {
+        "sr": "U krupnom planu za stolom (kadar 14) korisnik udruženja obema rukama provlači sivu traku od reciklirane pamučne majice kroz razapete niti osnove na kartonskom ramu: mekana i široka traka lako se hvata prstima, a ritam „iznad–ispod” odmah daje vidljiv pleteni red.",
+        "en": "In the close-up at the table (frame 14) an association user weaves a grey strip from a recycled cotton T-shirt with both hands through the warp threads on the cardboard loom: the soft, wide strip is easy to grasp with the fingers, and the over-under rhythm immediately produces a visible woven row."
+      },
+      "next": {
+        "sr": "Ojačati kartonsku podlogu drvenim ili duplim lepenka-ramom i blago odignuti niti osnove poprečnom letvicom kako bi prsti lakše prolazili ispod parnih i neparnih niti bez savijanja kartona.",
+        "en": "Reinforce the cardboard base with a wooden or double-board frame and slightly lift the warp threads with a crossbar so fingers pass more easily under alternating threads without bowing the board."
+      }
+    },
+    {
+      "work": "w5-lukic",
+      "title": {
+        "sr": "Tri obojene kutijice u dnu kule daju jasan cilj, a dugački drveni štapići traže graničnike hoda i zaobljene vrhove",
+        "en": "Three coloured boxes at the tower base give a clear target, while the long wooden skewers need travel stops and rounded tips"
+      },
+      "photoIds": [
+        "w06-telefon-61",
+        "w06-telefon-63",
+        "w06-telefon-66",
+        "w06-telefon-70",
+        "w06-telefon-71",
+        "w06-telefon-73",
+        "w06-telefon-74",
+        "w06-telefon-75"
+      ],
+      "seen": {
+        "sr": "U nizu od tri kadra (kadrovi 15–17) dva para ruku drže uspravnu kartonsku kulu i prate kako se kroz tri nivoa okretnih korpica na drvenim štapićima kuglica spušta do plave, crvene i zelene kutijice na dnu: bočni drveni štapići štrče daleko van zidova kutije i nemaju graničnik protiv izvlačenja.",
+        "en": "Across a three-frame sequence (frames 15–17) two pairs of hands hold the upright cardboard tower and follow how three levels of rotating baskets on wooden skewers drop the ball into the blue, red and green boxes at the bottom: the lateral wooden skewers protrude far past the box walls and lack pull-out stops."
+      },
+      "next": {
+        "sr": "Skratiti bočne krajeve drvenih štapića, zatvoriti ih plutanim čepovima ili drvenim kuglicama radi bezbednog hvata pri okretanju i dodati granične prstenove uz spoljni zid kutije da svaka korpica ostane u osi.",
+        "en": "Shorten the protruding ends of the wooden skewers, cap them with corks or wooden beads for a safe turning grip, and add stop rings against the outer box wall to keep each basket centred."
+      }
+    },
+    {
+      "work": "w6-mijanovic",
+      "title": {
+        "sr": "Mehanički lanser i plutani čepovi sa gumicama rade iz prve u samostalnoj igri korisnika",
+        "en": "The mechanical plunger and cork bumpers with rubber bands work right away in independent user play"
+      },
+      "photoIds": [
+        "w06-telefon-66",
+        "w06-telefon-70",
+        "w06-telefon-71",
+        "w06-telefon-77",
+        "w06-telefon-78"
+      ],
+      "seen": {
+        "sr": "U dva uzastopna kadra (kadrovi 18 i 19) korisnik udruženja sam prilazi stolu, levom rukom pridržava donji levi ugao crne makete flipera, a desnom povlači dršku lansera i šalje staklenu kuglicu u polje sa plutanim čepovima i razapetim gumicama.",
+        "en": "Across two consecutive frames (frames 18 and 19) an association user approaches the table independently, steadies the bottom-left corner of the black pinball model with the left hand, and pulls the plunger handle with the right hand to launch the glass marble into the field of cork bumpers and rubber bands."
+      },
+      "next": {
+        "sr": "Dodati tanku providnu ploču preko polja za igru i neklizajuću podlogu ispod crnog pena-kartona kako bi i leva ruka bila slobodna, a staklena kuglica ostala u polju pri najjačem udaru lansera.",
+        "en": "Add a thin transparent cover over the playfield and a non-slip backing under the black foam board so the left hand is freed from steadying the frame and the glass marble stays inside on the strongest plunger shot."
+      }
+    },
+    {
+      "work": "w6-janjic",
+      "title": {
+        "sr": "Reljefni delovi dinosaurusa u boji jasno vode zajedničko sklapanje na kraju posete, ali glatka tacna traži ležište protiv klizanja",
+        "en": "Coloured relief dinosaur pieces guide collaborative assembly at the close of the visit, while the smooth tray needs an anti-slip recess"
+      },
+      "photoIds": [
+        "w06-telefon-59",
+        "w06-telefon-61",
+        "w06-telefon-62",
+        "w06-telefon-70",
+        "w06-telefon-71",
+        "w06-telefon-77",
+        "w06-telefon-78",
+        "w06-telefon-79",
+        "w06-telefon-80"
+      ],
+      "seen": {
+        "sr": "Pet belih kartonskih tacni sa delovima dinosaurusa od glinamola stoji na stolu tokom cele posete, a u završna dva kadra (kadrovi 20 i 21) dva para ruku zajedno uklapaju glavu i telo petog, zelenog dinosaurusa pored četiri već sklopljene figure: kontrast boja (telo prema stopalima i leđnim pločama) jasno vodi spajanje, ali pri bočnom pritisku prstima delovi klize po glatkom dnu tacne.",
+        "en": "Five white cardboard trays with clay dinosaur pieces stand on the table throughout the visit, and in the final two frames (frames 20 and 21) two pairs of hands fit the head and body of the fifth, green dinosaur together beside four already assembled figures: the colour contrast (body against feet and back plates) guides joining clearly, but under lateral finger pressure the pieces slide across the smooth tray floor."
+      },
+      "next": {
+        "sr": "Ulepiti tanku konturu siluete od filca ili rebrastog kartona na dno svake tacne kako bi svaki reljefni segment imao taktilno ležište koje sprečava pomeranje već složenih delova pri uklapanju poslednjeg komada.",
+        "en": "Glue a thin felt or corrugated-cardboard silhouette contour onto the floor of each tray so every relief segment sits in a tactile recess that prevents already placed pieces from shifting when fitting the final piece."
+      }
+    }
+  ]
+}

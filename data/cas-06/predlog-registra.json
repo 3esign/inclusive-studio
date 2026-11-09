@@ -1,0 +1,1441 @@
+{
+ "schema": "course-prototypes/v1",
+ "sources": [
+  {
+   "id": "teacher-2026-11-08-cas-06",
+   "recordedOn": "2026-11-08",
+   "description": {
+    "sr": "Profesorov spisak šestog časa (06.11.2026), zapisan 08.11.2026. redom vođenja spiska; broj uz zapis je broj fotografija tog rada. Čas je nastavak rada na prototipovima i početak tekstilnog zadatka (A3 predlozi i tekstilni prototipi). Fotografije su na telefonu profesora (Galaxy S23 FE, /Internal storage/DCIM/Camera); niz počinje snimkom 20261106_120954.jpg (tekstilni A3 poster) i završava se fotografijom drvenog lavirinta sa crnim i belim perlama; posle nje ide 23 fotografije iz udruženja.",
+    "en": "The professor’s list of the sixth class (6 November 2026), recorded on 8 November 2026 in the order the list was kept; the number beside an entry is that work’s photograph count. The class continues the prototype work and opens the textile task (A3 proposals and textile prototypes). The photographs are on the professor’s phone (Galaxy S23 FE, /Internal storage/DCIM/Camera); the sequence starts with frame 20261106_120954.jpg (a textile A3 poster) and ends with a photograph of a wooden labyrinth with black and white pearls; 23 photographs from the association follow it."
+   }
+  }
+ ],
+ "items": [
+  {
+   "id": "01-zgradica",
+   "title": "Zgradica",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Teodora Radojičić",
+    "studentNumber": "72/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "01-zgradica-foto-01",
+     "src": "data/prototipovi/01-zgradica/01.jpg",
+     "sha256": "4fb7d839c1bfcdd66021fd2ff9313c43457837175ebad8f189f940fe76dad6a3",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Zgradica”",
+      "en": "Photograph of the “Zgradica” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "01-zgradica-foto-02",
+     "src": "data/prototipovi/01-zgradica/02.jpg",
+     "sha256": "703eba604fa85965898c24e420cd69adf407db2e3ab7b342b4c4809edaed0b5a",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Zgradica”",
+      "en": "Photograph of the “Zgradica” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "01-zgradica-foto-03",
+     "src": "data/prototipovi/01-zgradica/03.jpg",
+     "sha256": "b5826075fd99563b00355301f7280f6c7cfc42b827028a8e8954d90af6849a86",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Zgradica”",
+      "en": "Photograph of the “Zgradica” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "02-hana-demiri",
+   "title": "Bez naziva",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Hana Demiri",
+    "studentNumber": "22/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "02-hana-demiri-foto-01",
+     "src": "data/prototipovi/02-hana-demiri/01.jpg",
+     "sha256": "e73b83ad8cf71cba04e1b13986b614061145b32ac16390326b3eaa15ac05a779",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "03-iva-zunic",
+   "title": "Bez naziva",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Iva Žunić",
+    "studentNumber": "110/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "03-iva-zunic-foto-01",
+     "src": "data/prototipovi/03-iva-zunic/01.jpg",
+     "sha256": "271992df7418f18386757cf227b436c8329592fc7c9536e64a08b6b58288588b",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "04-music-box",
+   "title": "Music Box",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Nikola Pajić",
+    "studentNumber": "49/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "04-music-box-foto-01",
+     "src": "data/prototipovi/04-music-box/01.jpg",
+     "sha256": "df0ba386c5b35302a38eb9404218d494edc10273824d978552e40a4bb1f284b9",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Music Box”",
+      "en": "Photograph of the “Music Box” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "05-edukativna",
+   "title": "edukativna",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Katarina Ušjak",
+    "studentNumber": "86/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "05-edukativna-foto-01",
+     "src": "data/prototipovi/05-edukativna/01.jpg",
+     "sha256": "79b4b8277b7b2de3941c253e61ad4da313bb98382084dfcd8966e8e16bb9d9aa",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „edukativna”",
+      "en": "Photograph of the “edukativna” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "05-edukativna-foto-02",
+     "src": "data/prototipovi/05-edukativna/02.jpg",
+     "sha256": "515a4c4a67eecac06ceedbfdbce542e16ad0bd89065fb197c27c6d913fe7df8c",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „edukativna”",
+      "en": "Photograph of the “edukativna” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "05-edukativna-foto-03",
+     "src": "data/prototipovi/05-edukativna/03.jpg",
+     "sha256": "fae8667138f1534c1b4a2ba4771c51f7e32cc07d0bd56bf0b0523afa8e4721d6",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „edukativna”",
+      "en": "Photograph of the “edukativna” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "05-edukativna-foto-04",
+     "src": "data/prototipovi/05-edukativna/04.jpg",
+     "sha256": "5ab2f19b607906099240437841029ec652f95c0f07028288566f76a3a69f4422",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „edukativna”",
+      "en": "Photograph of the “edukativna” prototype"
+     },
+     "caption": {
+      "sr": "Red 4 u nizu slikanja.",
+      "en": "Frame 4 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "06-lazovic-sara",
+   "title": "Bez naziva",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Lazović Sara",
+    "studentNumber": "106/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "06-lazovic-sara-foto-01",
+     "src": "data/prototipovi/06-lazovic-sara/01.jpg",
+     "sha256": "36ef6f88f4b0c5e223a349b0adbab9770a53feac94248b96023dac5182e2eea9",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "06-lazovic-sara-foto-02",
+     "src": "data/prototipovi/06-lazovic-sara/02.jpg",
+     "sha256": "c4663dcf391b0f20faf467ace0e43e5868fb0f291f99c7dc3bcc3ff68ffa6ee9",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "07-velemir-tijana",
+   "title": "Bez naziva",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Velemir Tijana",
+    "studentNumber": "51/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "07-velemir-tijana-foto-01",
+     "src": "data/prototipovi/07-velemir-tijana/01.jpg",
+     "sha256": "c6ea14370be4d85540d0e3a048fc8d3e72178f69e326db321b4c10de6ca5f700",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "08-ur-a-petkovic",
+   "title": "Bez naziva",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Đurđa Petković",
+    "studentNumber": "76/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "08-ur-a-petkovic-foto-01",
+     "src": "data/prototipovi/08-ur-a-petkovic/01.jpg",
+     "sha256": "24961fca10c95d6592eafb86d8e077bed488696248e2f485d03519b197823a9a",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "08-ur-a-petkovic-foto-02",
+     "src": "data/prototipovi/08-ur-a-petkovic/02.jpg",
+     "sha256": "ebeb0437c34915f3e8de7bdf9d8be59fcfc4d6e4853cbbb4b3a7be1e80aed4a5",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "09-music-box",
+   "title": "music box",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Davidović Anđelija",
+    "studentNumber": "99/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "09-music-box-foto-01",
+     "src": "data/prototipovi/09-music-box/01.jpg",
+     "sha256": "e419dc521717355ebc6f82aece94328790ec72a3f4a144960c645e98681cac76",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „music box”",
+      "en": "Photograph of the “music box” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "09-music-box-foto-02",
+     "src": "data/prototipovi/09-music-box/02.jpg",
+     "sha256": "96ef69be7d6aea13284ee7d39c347b41d01e7ca376819d5c3215ac365d2382c0",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „music box”",
+      "en": "Photograph of the “music box” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "11-natasa-janjic",
+   "title": "Bez naziva",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Nataša Janjić",
+    "studentNumber": "152/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "11-natasa-janjic-foto-01",
+     "src": "data/prototipovi/11-natasa-janjic/01.jpg",
+     "sha256": "558416ee1be33ee941a91e33e9427cb1dd5a34c8d227de6371f06e585d71d81e",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "11-natasa-janjic-foto-02",
+     "src": "data/prototipovi/11-natasa-janjic/02.jpg",
+     "sha256": "22f95ffa7f4ea9fc11409c96e98604f760f27e40cf0082ef58556b044afd7259",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "11-natasa-janjic-foto-03",
+     "src": "data/prototipovi/11-natasa-janjic/03.jpg",
+     "sha256": "04682693e8f7163403355903062cc381a31e1a8a354be0d2b0512db53371a4ec",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "13-igra-sa-uzetom",
+   "title": "igra sa užetom",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Dunja Ljubičić",
+    "studentNumber": "38/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "13-igra-sa-uzetom-foto-01",
+     "src": "data/prototipovi/13-igra-sa-uzetom/01.jpg",
+     "sha256": "7ae113bf13522d7e5f74589f37d16845d47ceac3bb503c483f48537f556d7943",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „igra sa užetom”",
+      "en": "Photograph of the “igra sa užetom” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "13-igra-sa-uzetom-foto-02",
+     "src": "data/prototipovi/13-igra-sa-uzetom/02.jpg",
+     "sha256": "7995a9a5aee08cf188405678bc5b5fede25106b867067e232d50514614d20421",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „igra sa užetom”",
+      "en": "Photograph of the “igra sa užetom” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "14-teodora-pudar",
+   "title": "Bez naziva",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Teodora Pudar",
+    "studentNumber": "129/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "14-teodora-pudar-foto-01",
+     "src": "data/prototipovi/14-teodora-pudar/01.jpg",
+     "sha256": "c9cd78553cb8ac43387c7c159c1f3a554accd27bbfc41ee67ec183cabdacec8d",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "14-teodora-pudar-foto-02",
+     "src": "data/prototipovi/14-teodora-pudar/02.jpg",
+     "sha256": "bbc7a5ad25ec8fd53bbe932ee5cfd951642c738e606e2b94c9237e28c2c434be",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "14-teodora-pudar-foto-03",
+     "src": "data/prototipovi/14-teodora-pudar/03.jpg",
+     "sha256": "e172d79aed86453d434d11fcbf0b7ab27ccc2bdd066e4ac5e11bce6f0b0a969a",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "14-teodora-pudar-foto-04",
+     "src": "data/prototipovi/14-teodora-pudar/04.jpg",
+     "sha256": "b7eb9bfc28e00a526bee6e38d646279bba15d099aee7a6f64ce723dcb8a62458",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 4 u nizu slikanja.",
+      "en": "Frame 4 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "14-teodora-pudar-foto-05",
+     "src": "data/prototipovi/14-teodora-pudar/05.jpg",
+     "sha256": "3f8c5517510d91279d93647f748f2c130db791e8dc01c54325c3b6fa4aeab3f2",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 5 u nizu slikanja.",
+      "en": "Frame 5 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "15-fliper-2",
+   "title": "Fliper 2",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Andrej Rackov",
+    "studentNumber": "41/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "15-fliper-2-foto-01",
+     "src": "data/prototipovi/15-fliper-2/01.jpg",
+     "sha256": "b99dab86aa9c7d2aa54fd61a3fdbff34ef7e07ba26f6734d7767291806ed0ba2",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Fliper 2”",
+      "en": "Photograph of the “Fliper 2” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "15-fliper-2-foto-02",
+     "src": "data/prototipovi/15-fliper-2/02.jpg",
+     "sha256": "7222e48af176467227ea8dac179024f967a02fc64a170c6afff44bebde6f9ebf",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Fliper 2”",
+      "en": "Photograph of the “Fliper 2” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "16-masa-jotic",
+   "title": "Bez naziva",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Maša Jotić",
+    "studentNumber": "134/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "16-masa-jotic-foto-01",
+     "src": "data/prototipovi/16-masa-jotic/01.jpg",
+     "sha256": "6b5cbc0855b69b45da8cecc7449bede1e4036e5fe9698d73c1093e1045f6722b",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "16-masa-jotic-foto-02",
+     "src": "data/prototipovi/16-masa-jotic/02.jpg",
+     "sha256": "302982fa70379151c097cc7d85c422e8e4b7979ecb5a5b249d9f21e209eda65f",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "16-masa-jotic-foto-03",
+     "src": "data/prototipovi/16-masa-jotic/03.jpg",
+     "sha256": "7d3f1abe33f45ad99365502a558bdae7b83bd1d86805748185f0d4fcc577015d",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "21-3d-lavirint",
+   "title": "3d lavirint",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Sanja Hornjaček",
+    "studentNumber": "74/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "21-3d-lavirint-foto-01",
+     "src": "data/prototipovi/21-3d-lavirint/01.jpg",
+     "sha256": "55cabf01dac9f4dfee1bc0af1692223c89257886066327de42169e83d674505f",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „3d lavirint”",
+      "en": "Photograph of the “3d lavirint” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "21-3d-lavirint-foto-02",
+     "src": "data/prototipovi/21-3d-lavirint/02.jpg",
+     "sha256": "35401078c408eb572c17bc6cf95ad4d6e548fada17f233843faca663931f332b",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „3d lavirint”",
+      "en": "Photograph of the “3d lavirint” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "22-na-a-stanic",
+   "title": "Bez naziva",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Nađa Stanić",
+    "studentNumber": "151/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "22-na-a-stanic-foto-01",
+     "src": "data/prototipovi/22-na-a-stanic/01.jpg",
+     "sha256": "11b610ea5cc4b1081b64269c00e4488c83b83d849ffe9561f679191628074e92",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "22-na-a-stanic-foto-02",
+     "src": "data/prototipovi/22-na-a-stanic/02.jpg",
+     "sha256": "c26113fdd0afc75b025fcbef41f93fe8120ea429877fb01657cef35c7ba51f26",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "22-na-a-stanic-foto-03",
+     "src": "data/prototipovi/22-na-a-stanic/03.jpg",
+     "sha256": "c7f4ec226ce04dae96a7b83f92ffb95e9497c0b5310800f685e12ed4cab58492",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "23-fliper",
+   "title": "fliper",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Iva Mijanović",
+    "studentNumber": "28/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "23-fliper-foto-01",
+     "src": "data/prototipovi/23-fliper/01.jpg",
+     "sha256": "7a93cfeedeb4e9d43a0beb97c4a5f1103c646b6a09d142147c37c176f00bb015",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „fliper”",
+      "en": "Photograph of the “fliper” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "23-fliper-foto-02",
+     "src": "data/prototipovi/23-fliper/02.jpg",
+     "sha256": "4dcd3eef1ba2a27ed6f7757d3460af371de98569cbb257d281a63ea18d602f44",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „fliper”",
+      "en": "Photograph of the “fliper” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "23-fliper-foto-03",
+     "src": "data/prototipovi/23-fliper/03.jpg",
+     "sha256": "3603f57d31ad5a8a4ddea26c8eb92f2e94b33a2c89136f9cde6486f77cbfa3e4",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „fliper”",
+      "en": "Photograph of the “fliper” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "23-fliper-foto-04",
+     "src": "data/prototipovi/23-fliper/04.jpg",
+     "sha256": "b76332edeb25d04b2dac698d9796dde7af9e467fed1158846eb3a53ae3310865",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „fliper”",
+      "en": "Photograph of the “fliper” prototype"
+     },
+     "caption": {
+      "sr": "Red 4 u nizu slikanja.",
+      "en": "Frame 4 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "23-fliper-foto-05",
+     "src": "data/prototipovi/23-fliper/05.jpg",
+     "sha256": "c2cf7314f5a9c88f82366df9317094395600d4a982879dd5928f65b9a1557522",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „fliper”",
+      "en": "Photograph of the “fliper” prototype"
+     },
+     "caption": {
+      "sr": "Red 5 u nizu slikanja.",
+      "en": "Frame 5 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "23-fliper-foto-06",
+     "src": "data/prototipovi/23-fliper/06.jpg",
+     "sha256": "8c6b3bbd8b3895839ae0939400365cf7decdebe226b84d03de0707ab2e473063",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „fliper”",
+      "en": "Photograph of the “fliper” prototype"
+     },
+     "caption": {
+      "sr": "Red 6 u nizu slikanja.",
+      "en": "Frame 6 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "23-fliper-foto-07",
+     "src": "data/prototipovi/23-fliper/07.jpg",
+     "sha256": "5ab4c66a432486a32752e56c5026afe80731414f7f5ffaa0ab69299200517327",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „fliper”",
+      "en": "Photograph of the “fliper” prototype"
+     },
+     "caption": {
+      "sr": "Red 7 u nizu slikanja.",
+      "en": "Frame 7 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "24-lena-dukic",
+   "title": "Bez naziva",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Lena Dukić",
+    "studentNumber": "131/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "24-lena-dukic-foto-01",
+     "src": "data/prototipovi/24-lena-dukic/01.jpg",
+     "sha256": "8f836809212ea992f11e52d4d6b8631068cabe2bf9de5d55be245d50e884a4ea",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "24-lena-dukic-foto-02",
+     "src": "data/prototipovi/24-lena-dukic/02.jpg",
+     "sha256": "de1e7ee632346d13a08452cdd689c3305f5468c25881d9e146250571aef7cc43",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "24-lena-dukic-foto-03",
+     "src": "data/prototipovi/24-lena-dukic/03.jpg",
+     "sha256": "296a2af797e9ec13a566182565f9e635d3a6d5503e66b111b1dadcbb95dc77fe",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "24-lena-dukic-foto-04",
+     "src": "data/prototipovi/24-lena-dukic/04.jpg",
+     "sha256": "ada6603a26ebba9df591d092463ffa2934ff5f358cac08601ac0578d35ceaeab",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 4 u nizu slikanja.",
+      "en": "Frame 4 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "24-lena-dukic-foto-05",
+     "src": "data/prototipovi/24-lena-dukic/05.jpg",
+     "sha256": "706d8ca2da487c19d205941a942dad34d974aa8ed1be38e216b9d22b18b28c19",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 5 u nizu slikanja.",
+      "en": "Frame 5 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "24-lena-dukic-foto-06",
+     "src": "data/prototipovi/24-lena-dukic/06.jpg",
+     "sha256": "ecfd7f9c47da280d3ebb7f680d6db472c648bb07d6c0fc92a1eed9ff706cfd9f",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 6 u nizu slikanja.",
+      "en": "Frame 6 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "24-lena-dukic-foto-07",
+     "src": "data/prototipovi/24-lena-dukic/07.jpg",
+     "sha256": "3a1b10c4cf460645b4a7842f2773894eeafd7c9cc171efd05e174644d529d1c2",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 7 u nizu slikanja.",
+      "en": "Frame 7 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "24-lena-dukic-foto-08",
+     "src": "data/prototipovi/24-lena-dukic/08.jpg",
+     "sha256": "ddf771429b50ee723fdaf8dedc291db837b8933ed08beefebac2a91ebc09fff2",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 8 u nizu slikanja.",
+      "en": "Frame 8 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "24-lena-dukic-foto-09",
+     "src": "data/prototipovi/24-lena-dukic/09.jpg",
+     "sha256": "f5858bc939942e54c230ead86828c95e7ab0cdf00cbddf68abfe0e1cb8ddfd69",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 9 u nizu slikanja.",
+      "en": "Frame 9 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  },
+  {
+   "id": "25-luka-stanisic",
+   "title": "Bez naziva",
+   "kind": "prototype",
+   "authorRole": "student",
+   "medium": "physical",
+   "status": "documented",
+   "documentedWeek": 6,
+   "author": {
+    "name": "Luka Stanišić",
+    "studentNumber": "44/24"
+   },
+   "attribution": {
+    "sourceId": "teacher-2026-11-08-cas-06",
+    "fields": [
+     "name",
+     "studentNumber"
+    ]
+   },
+   "sourceId": "teacher-2026-11-08-cas-06",
+   "description": {
+    "sr": "Prototip sa časa 06.11.2026. (nedelja 6), zapis profesora.",
+    "en": "Prototype from the class of 2026-11-06 (week 6), professor's record."
+   },
+   "photos": [
+    {
+     "id": "25-luka-stanisic-foto-01",
+     "src": "data/prototipovi/25-luka-stanisic/01.jpg",
+     "sha256": "5f1c66d3e1873121c98c0a13d934b9e4be7a382acb5ccb39a98875223b72c254",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 1 u nizu slikanja.",
+      "en": "Frame 1 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "25-luka-stanisic-foto-02",
+     "src": "data/prototipovi/25-luka-stanisic/02.jpg",
+     "sha256": "a50888fade382c8b26fa3793f0023948d2712d5ec3dcf880cf8e6e3168838aaf",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 2 u nizu slikanja.",
+      "en": "Frame 2 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "25-luka-stanisic-foto-03",
+     "src": "data/prototipovi/25-luka-stanisic/03.jpg",
+     "sha256": "bf3b79c28baaa11d95cacd977f0105d0e76dfb9585d352f92ed2e38629817d56",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 3 u nizu slikanja.",
+      "en": "Frame 3 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    },
+    {
+     "id": "25-luka-stanisic-foto-04",
+     "src": "data/prototipovi/25-luka-stanisic/04.jpg",
+     "sha256": "51fbc5ebc3a5cfcb479c40b739bf1f7920d5d7df63c4dd28a87954b38a90ed2b",
+     "width": 4000,
+     "height": 2252,
+     "alt": {
+      "sr": "Fotografija prototipa „Bez naziva”",
+      "en": "Photograph of the “Bez naziva” prototype"
+     },
+     "caption": {
+      "sr": "Red 4 u nizu slikanja.",
+      "en": "Frame 4 in the photographic sequence."
+     },
+     "sourceId": "teacher-2026-11-08-cas-06"
+    }
+   ]
+  }
+ ],
+ "observations": []
+}

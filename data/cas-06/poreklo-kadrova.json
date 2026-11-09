@@ -1,0 +1,278 @@
+{
+  "schema": "class-photo-provenance/v1",
+  "uredjaj": "SM-S711B (Galaxy S23 FE)",
+  "putanja": "/storage/emulated/0/DCIM/Camera",
+  "rez": "ffmpeg, duža strana 1280 px, EXIF orijentacija primenjena, metapodaci uklonjeni",
+  "neobjavljeno": [
+    "20261106_142344.jpg"
+  ],
+  "radovi": [
+    {
+      "rb": 1,
+      "galerija": "w6-radojicic",
+      "izvori": [
+        "20261106_121316.jpg"
+      ],
+      "dosije": "igracka"
+    },
+    {
+      "rb": 1,
+      "galerija": "w6-radojicic-tekstil",
+      "dosije": "tekstil",
+      "izvori": [
+        "20261106_120954.jpg",
+        "20261106_120957.jpg"
+      ]
+    },
+    {
+      "rb": 2,
+      "galerija": "w6-demiri",
+      "izvori": [
+        "20261106_122035.jpg"
+      ],
+      "dosije": "tekstil"
+    },
+    {
+      "rb": 3,
+      "galerija": "w6-zunic",
+      "izvori": [
+        "20261106_122118.jpg"
+      ],
+      "dosije": "tekstil"
+    },
+    {
+      "rb": 4,
+      "galerija": "w6-pajic",
+      "izvori": [
+        "20261106_123431.jpg"
+      ],
+      "dosije": "tekstil"
+    },
+    {
+      "rb": 5,
+      "galerija": "w6-usjak",
+      "izvori": [
+        "20261106_123630.jpg",
+        "20261106_123641.jpg"
+      ],
+      "dosije": "igracka"
+    },
+    {
+      "rb": 5,
+      "galerija": "w6-usjak-tekstil",
+      "dosije": "tekstil",
+      "izvori": [
+        "20261106_123605.jpg",
+        "20261106_123623.jpg"
+      ]
+    },
+    {
+      "rb": 6,
+      "galerija": "w6-lazovic",
+      "izvori": [
+        "20261106_123845.jpg",
+        "20261106_123848.jpg"
+      ],
+      "dosije": "tekstil"
+    },
+    {
+      "rb": 7,
+      "galerija": "w6-velemir",
+      "izvori": [
+        "20261106_124434.jpg"
+      ],
+      "dosije": "tekstil"
+    },
+    {
+      "rb": 8,
+      "galerija": "w6-petkovic",
+      "izvori": [
+        "20261106_124803.jpg",
+        "20261106_124815.jpg"
+      ],
+      "dosije": "igracka"
+    },
+    {
+      "rb": 9,
+      "galerija": "w6-davidovic",
+      "izvori": [
+        "20261106_125051.jpg",
+        "20261106_125055.jpg"
+      ],
+      "dosije": "igracka"
+    },
+    {
+      "rb": 11,
+      "galerija": "w6-janjic",
+      "izvori": [
+        "20261106_125933.jpg",
+        "20261106_125937.jpg",
+        "20261106_130139.jpg"
+      ],
+      "dosije": "igracka"
+    },
+    {
+      "rb": 13,
+      "galerija": "w6-ljubicic",
+      "izvori": [
+        "20261106_130918.jpg",
+        "20261106_131009.jpg"
+      ],
+      "dosije": "igracka"
+    },
+    {
+      "rb": 14,
+      "galerija": "w6-pudar",
+      "izvori": [
+        "20261106_131119.jpg",
+        "20261106_131131.jpg",
+        "20261106_131147.jpg",
+        "20261106_131149.jpg",
+        "20261106_131156.jpg"
+      ],
+      "dosije": "igracka"
+    },
+    {
+      "rb": 15,
+      "galerija": "w6-rackov",
+      "izvori": [
+        "20261106_131538.jpg",
+        "20261106_131542.jpg"
+      ],
+      "dosije": "igracka"
+    },
+    {
+      "rb": 16,
+      "galerija": "w6-jotic",
+      "izvori": [
+        "20261106_132007.jpg",
+        "20261106_132236.jpg",
+        "20261106_132306.jpg"
+      ],
+      "dosije": "igracka"
+    },
+    {
+      "rb": 21,
+      "galerija": "w6-hornjacek",
+      "izvori": [
+        "20261106_133908.jpg",
+        "20261106_133910.jpg"
+      ],
+      "dosije": "igracka"
+    },
+    {
+      "rb": 22,
+      "galerija": "w6-stanic",
+      "izvori": [
+        "20261106_134036.jpg",
+        "20261106_134041.jpg",
+        "20261106_134043.jpg"
+      ],
+      "dosije": "tekstil"
+    },
+    {
+      "rb": 23,
+      "galerija": "w6-mijanovic",
+      "izvori": [
+        "20261106_134248.jpg",
+        "20261106_134251.jpg",
+        "20261106_134404.jpg"
+      ],
+      "dosije": "igracka"
+    },
+    {
+      "rb": 23,
+      "galerija": "w6-mijanovic-tekstil",
+      "dosije": "tekstil",
+      "izvori": [
+        "20261106_134439.jpg",
+        "20261106_134441.jpg",
+        "20261106_134454.jpg",
+        "20261106_134456.jpg"
+      ]
+    },
+    {
+      "rb": 24,
+      "galerija": "w6-dukic",
+      "izvori": [
+        "20261106_134639.jpg",
+        "20261106_134641.jpg",
+        "20261106_134729.jpg",
+        "20261106_134732.jpg",
+        "20261106_134738.jpg"
+      ],
+      "dosije": "igracka"
+    },
+    {
+      "rb": 24,
+      "galerija": "w6-dukic-tekstil",
+      "dosije": "tekstil",
+      "izvori": [
+        "20261106_134833.jpg",
+        "20261106_134836.jpg",
+        "20261106_134838.jpg",
+        "20261106_134902.jpg"
+      ]
+    },
+    {
+      "rb": 25,
+      "galerija": "w6-stanisic",
+      "izvori": [
+        "20261106_135239.jpg",
+        "20261106_135243.jpg",
+        "20261106_135249.jpg",
+        "20261106_135259.jpg"
+      ],
+      "dosije": "igracka"
+    }
+  ],
+  "poseta": {
+    "registar": "data/poseta-2026-11-06.json",
+    "izvori": [
+      "20261106_142346.jpg",
+      "20261106_142411.jpg",
+      "20261106_142436.jpg",
+      "20261106_142438.jpg",
+      "20261106_142442.jpg",
+      "20261106_142450.jpg",
+      "20261106_142453.jpg",
+      "20261106_142456.jpg",
+      "20261106_142651.jpg",
+      "20261106_142654.jpg",
+      "20261106_143123.jpg",
+      "20261106_143145.jpg",
+      "20261106_143148.jpg",
+      "20261106_143207.jpg",
+      "20261106_143304.jpg",
+      "20261106_143307.jpg",
+      "20261106_143309.jpg",
+      "20261106_143511.jpg",
+      "20261106_143512.jpg",
+      "20261106_145536.jpg",
+      "20261106_145538.jpg"
+    ],
+    "kadrovi": [
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      77,
+      78,
+      79,
+      80
+    ]
+  }
+}

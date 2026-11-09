@@ -1,0 +1,515 @@
+{
+  "schema": "course-visit/v1",
+  "id": "poseta-udruzenje-2026-10-30",
+  "week": 5,
+  "occurredOn": "2026-10-30",
+  "place": {
+    "sr": "Udruženje „Živimo zajedno”, Beograd",
+    "en": "The Živimo zajedno association, Belgrade"
+  },
+  "source": {
+    "id": "teacher-2026-10-31-poseta",
+    "recordedOn": "2026-10-31",
+    "description": {
+      "sr": "Spisak studenata na poseti udruženju 30.10.2026. poslala je mejlom istog dana jedna od učesnica posete, uz Drive folder sa šest fotografija koje su snimili studenti (14:03–14:11); profesor ga je 31.10.2026. zaveo kao spisak i materijal posete petog časa, a u dosije su uključena i četiri kadra iz udruženja sa telefona profesora (kadrovi 85–88 niza petog časa, 14:08–14:13), ukupno deset fotografija. Uz dopunu od 02.11.2026. prepoznat je unapređeni rad „uklopko” sa četvrtog časa, a ukupno je na deset kadrova prepoznato sedam radova (šest sa spiska petog časa, uključujući rad sa kadrova 82–84 čiji se autor potvrđuje, i unapređeni „uklopko”). Fotografije su prevedene u JPG bez metapodataka; originali se čuvaju sa otiskom.",
+      "en": "The list of students on the association visit of 30 October 2026 was sent by email the same day by one of the visit’s participants, with a Drive folder of six photographs taken by students (14:03–14:11); the professor filed it on 31 October 2026 as the visit list and material of the fifth class, and the dossier also includes the four association frames from the professor’s phone (frames 85–88 of the fifth-class sequence, 14:08–14:13), ten photographs in all. With the addition of 2 November 2026 the improved fourth-class work “uklopko” is recognised, bringing the total to seven recognised works across the ten frames (six from the fifth-class list, including the work from frames 82–84 awaiting author confirmation, plus the improved “uklopko”). The photographs were converted to JPG without metadata; the originals are kept with fingerprints."
+    }
+  },
+  "participants": [
+    {
+      "name": "Ognjen Mijaljević",
+      "studentNumber": "25/24"
+    },
+    {
+      "name": "Boris Vulićević",
+      "studentNumber": "63/24"
+    },
+    {
+      "name": "Lena Kovačić",
+      "studentNumber": "132/24"
+    },
+    {
+      "name": "Sara Janjić",
+      "studentNumber": "4/24"
+    },
+    {
+      "name": "Teodora Todorić",
+      "studentNumber": "39/24"
+    },
+    {
+      "name": "Marco Arjuna Maksimović",
+      "studentNumber": "75/24"
+    },
+    {
+      "name": "Anđela Deurić",
+      "studentNumber": "137/24"
+    },
+    {
+      "name": "Nevena Grkić",
+      "studentNumber": "62/24"
+    },
+    {
+      "name": "Iva Žunić",
+      "studentNumber": "110/24"
+    },
+    {
+      "name": "Anđela Cvetković",
+      "studentNumber": "125/24"
+    },
+    {
+      "name": "Andrija Bošković",
+      "studentNumber": "26/24"
+    },
+    {
+      "name": "Katarina Ušjak",
+      "studentNumber": "86/24"
+    },
+    {
+      "name": "Lena Dukić",
+      "studentNumber": "131/24"
+    },
+    {
+      "name": "Iva Mijanović",
+      "studentNumber": "28/24"
+    },
+    {
+      "name": "Marija Bajić",
+      "studentNumber": "114/24"
+    },
+    {
+      "name": "Petra Nešić",
+      "studentNumber": "94/24"
+    },
+    {
+      "name": "Lazar Leo Ćopić",
+      "studentNumber": "142/24"
+    },
+    {
+      "name": "Maša Jotić",
+      "studentNumber": "134/24"
+    },
+    {
+      "name": "Andrej Rackov",
+      "studentNumber": "41/24"
+    },
+    {
+      "name": "Andrej Parezanović",
+      "studentNumber": "43/24"
+    },
+    {
+      "name": "Natalija Spasojević",
+      "studentNumber": "52/24"
+    },
+    {
+      "name": "Dunja Ljubičić",
+      "studentNumber": "38/24"
+    },
+    {
+      "name": "Emilija Nikolić",
+      "studentNumber": "82/24"
+    },
+    {
+      "name": "Vanja Trkulja",
+      "studentNumber": "124/24"
+    },
+    {
+      "name": "Tijana Velemir",
+      "studentNumber": "51/24"
+    },
+    {
+      "name": "Maša Marković",
+      "studentNumber": "121/24"
+    },
+    {
+      "name": "Igor Stablović",
+      "studentNumber": "6/24"
+    },
+    {
+      "name": "Sofia Ocanto Jovičić",
+      "studentNumber": "138/24"
+    },
+    {
+      "name": "Nevena Šiljakinjić",
+      "studentNumber": "116/23"
+    },
+    {
+      "name": "Nađa Stojčević",
+      "studentNumber": "144/24"
+    },
+    {
+      "name": "Ana Rangelov",
+      "studentNumber": "149/24"
+    },
+    {
+      "name": "Anđela Mićković",
+      "studentNumber": "37/2024"
+    },
+    {
+      "name": "Viktor Šešum",
+      "studentNumber": "56/24"
+    },
+    {
+      "name": "Mihailo Maksimović",
+      "studentNumber": "68/24"
+    }
+  ],
+  "summary": {
+    "sr": "Treća poseta udruženju, petak 30.10.2026, istog dana kad i peti čas (14:03–14:13). Na poseti su trideset četiri studenta; doneti su novi prototipi petog časa i unapređena verzija rada „uklopko” sa četvrtog časa. Kroz deset fotografija u hronološkom redosledu pratimo kako se pravilo „uklopka” preselilo na list u rukama korisnika, i kako su se „edukativna”, „lavirint”, „zekino polje”, obruči sa kuglicama od folije, drveni ram sa oblicima i tabla 4×4 isprobavali za stolovima i u krilu na klupi.",
+    "en": "The third association visit, Friday 30 October 2026, the same day as the fifth class (14:03–14:13). Thirty-four students were on the visit, bringing new fifth-class prototypes and the improved version of the fourth-class work “uklopko”. Across ten photographs in chronological order, the story follows how the rule of “uklopko” moved onto a sheet in the user’s hands, and how “edukativna”, “lavirint”, “zekino polje”, the linked rings with foil balls, the wooden shape frame and the 4×4 board were tried at the tables and on laps on the bench."
+  },
+  "photos": [
+    {
+      "id": "w05-drive-01",
+      "src": "data/prototipovi/poseta-w05/drive-01.jpg",
+      "sha256": "e600e15c651f2d0bb6b52e9f4d2b53d1383fa2b95080581a1692e6a6efcaf9f4",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Na stolu siva tabla sa belim kanapom uvijenim u petlje i odštampani list sa zadatim slaganjima obojenih kocaka rada „uklopko”; student pruža plitku kutiju sa penastim oblicima posetiteljki koja stoji.",
+        "en": "On the table a grey board with white cord wound into loops and a printed sheet with set arrangements of the coloured cubes of “uklopko”; a student hands a shallow tin of foam shapes to a standing visitor."
+      },
+      "caption": {
+        "sr": "Tabla sa kanapom i kutija sa oblicima („edukativna”) uz list sa zadatim rasporedima unapređenog „uklopka” na stolu (14:03).",
+        "en": "The cord board and tin of shapes (“edukativna”) beside the sheet of set arrangements for the improved “uklopko” on the table (14:03)."
+      },
+      "sourceId": "teacher-2026-10-31-poseta",
+      "radovi": [
+        "w5-usjak",
+        "w4-uklopko"
+      ]
+    },
+    {
+      "id": "w05-drive-02",
+      "src": "data/prototipovi/poseta-w05/drive-02.jpg",
+      "sha256": "7f3d409e1079b4f9365f942c04ff274cb977e24e43afc234e931405bb89fa5eb",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Autorka rada i korisnik udruženja stoje uz sto sa obojenim kockama i krovovima rada „uklopko”; korisnik u rukama drži list sa nacrtanim rasporedima za slaganje.",
+        "en": "The work’s author and an association user stand at a table with the coloured cubes and roofs of “uklopko”; the user holds a sheet with drawn arrangements to build."
+      },
+      "caption": {
+        "sr": "Unapređeni „uklopko” na probi: korisnik čita zadati raspored sa odštampanog lista pre slaganja obojenih kocaka i krovova (14:05).",
+        "en": "The improved “uklopko” on trial: a user reads the set arrangement from the printed sheet before building with the coloured cubes and roofs (14:05)."
+      },
+      "sourceId": "teacher-2026-10-31-poseta",
+      "radovi": [
+        "w4-uklopko"
+      ]
+    },
+    {
+      "id": "w05-drive-03",
+      "src": "data/prototipovi/poseta-w05/drive-03.jpg",
+      "sha256": "3510bc59bd161396078de6b5e7ae68c563a42973aa29b9905f546f3bc85e576b",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Studentkinja stoji uz klupu; član udruženja koji sedi drži povezane obruče u boji, a student mu pruža kuglicu od srebrne folije.",
+        "en": "A student stands by a bench; a seated association member holds the linked coloured rings while another student hands over a silver foil ball."
+      },
+      "caption": {
+        "sr": "Tri povezana obruča u boji i kuglice od srebrne folije probaju se sedeći na klupi, iz ruke u ruku (14:05).",
+        "en": "The three linked coloured rings and silver foil balls are tried seated on the bench, passed hand to hand (14:05)."
+      },
+      "sourceId": "teacher-2026-10-31-poseta",
+      "radovi": [
+        "w5-ljubicic"
+      ]
+    },
+    {
+      "id": "w05-drive-04",
+      "src": "data/prototipovi/poseta-w05/drive-04.jpg",
+      "sha256": "7ddc7ebf608c1e9918bc5d4c6e9bec5141f6dd8844b43a772382973bacea5f09",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Za stolom korisnik udruženja obema rukama sklapa i uklapa obojene kocke rada „uklopko”, dok su u prvom planu drveni ram sa svetlucavim oblicima i metalna kutija sa penastim oblicima.",
+        "en": "At the table an association user joins and stacks the coloured cubes of “uklopko” with both hands, while the wooden frame with glittery shapes and the metal tin of foam shapes lie in the foreground."
+      },
+      "caption": {
+        "sr": "Korisnik samostalno uklapa obojene kocke i krovove „uklopka” za stolom u prvom planu (14:08).",
+        "en": "A user independently joins the coloured cubes and roofs of “uklopko” at the table (14:08)."
+      },
+      "sourceId": "teacher-2026-10-31-poseta",
+      "radovi": [
+        "w4-uklopko",
+        "w5-usjak",
+        "w5-bajic"
+      ]
+    },
+    {
+      "id": "w05-telefon-85",
+      "src": "data/prototipovi/poseta-w05/telefon-85.jpg",
+      "sha256": "c35160ed79d6194acd1cda56eb93629ea2d5b36feeb3f599e660e41f2b3641ca",
+      "width": 1280,
+      "height": 720,
+      "alt": {
+        "sr": "Širi pogled: na levom stolu složene svetlozelene pločice rada „zekino polje” uz list „Moguća rešenja”, desno metalna kutija i tabla sa kanapom („edukativna”) i drveni ram sa svetlucavim oblicima, a u pozadini proba rada „uklopko”.",
+        "en": "Wider view: on the left table the light-green tiles of “zekino polje” beside its “Possible solutions” sheet, on the right the metal tin and cord board (“edukativna”) and the wooden frame with glittery shapes, and “uklopko” on trial in the background."
+      },
+      "caption": {
+        "sr": "14:08 · Tri stola u udruženju: „zekino polje” na prednjem levom stolu, „edukativna” i drveni ram sa oblicima desno, dok za zadnjim stolom traje proba „uklopka”.",
+        "en": "14:08 · Three tables in the association room: “zekino polje” on the front-left table, “edukativna” and the wooden shape frame on the right, while the trial of “uklopko” continues at the back table."
+      },
+      "sourceId": "teacher-2026-10-31-poseta",
+      "radovi": [
+        "w5-velemir",
+        "w5-usjak",
+        "w5-bajic",
+        "w4-uklopko"
+      ]
+    },
+    {
+      "id": "w05-telefon-86",
+      "src": "data/prototipovi/poseta-w05/telefon-86.jpg",
+      "sha256": "cb588cffcb3dcd150df4d2b99ff0610cbf843f526bab03831cfbe80c36287b97",
+      "width": 1280,
+      "height": 720,
+      "alt": {
+        "sr": "Uz „zekino polje” na prednjem levom stolu leže i povezani obruči u boji sa kuglicama od srebrne folije, dok se desno i u pozadini vide „edukativna”, drveni ram sa oblicima i „uklopko”.",
+        "en": "Beside “zekino polje” on the front-left table lie the linked coloured rings with silver foil balls, with “edukativna”, the wooden shape frame and “uklopko” to the right and rear."
+      },
+      "caption": {
+        "sr": "14:08 · Pet radova raspoređenih na tri stola tokom razgovora sa korisnicima: obruči sa kuglicama od folije pridružuju se „zekinom polju” na prednjem stolu.",
+        "en": "14:08 · Five works laid out across three tables during conversation with users: the linked rings with foil balls join “zekino polje” on the front table."
+      },
+      "sourceId": "teacher-2026-10-31-poseta",
+      "radovi": [
+        "w5-ljubicic",
+        "w5-velemir",
+        "w5-usjak",
+        "w5-bajic",
+        "w4-uklopko"
+      ]
+    },
+    {
+      "id": "w05-telefon-87",
+      "src": "data/prototipovi/poseta-w05/telefon-87.jpg",
+      "sha256": "8965e5c5a795c8331393e4ab09d5190a749cecb09a6b2987cd83b070848f727e",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "U prvom planu četiri sive kvadratne pločice modularnog „lavirinta” i svetlozelene pločice „zekinog polja”, a iza njih ostali stolovi u udruženju.",
+        "en": "In the foreground the four grey square tiles of the modular “lavirint” and the light-green tiles of “zekino polje”, with the other association tables behind them."
+      },
+      "caption": {
+        "sr": "14:09 · Modularne sive pločice „lavirinta” stižu na prednji sto pored „zekinog polja”.",
+        "en": "14:09 · The modular grey tiles of “lavirint” arrive on the front table beside “zekino polje”."
+      },
+      "sourceId": "teacher-2026-10-31-poseta",
+      "radovi": [
+        "w5-markovic",
+        "w5-velemir",
+        "w5-usjak",
+        "w5-bajic",
+        "w4-uklopko"
+      ]
+    },
+    {
+      "id": "w05-drive-05",
+      "src": "data/prototipovi/poseta-w05/drive-05.jpg",
+      "sha256": "301046db66409f340b6000f39df1a0a59f63cd1fd4e20e19dc3f860731b5129e",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "Širi kadar prostorije: za stolom korisnik sklapa obojene kocke „uklopka”, autorka drži list sa zadatim rasporedima, a na prednjem stolu leži drveni ram sa kanapima i svetlucavim oblicima.",
+        "en": "A wider view of the room: at the table a user stacks the coloured cubes of “uklopko”, the author holds the sheet of set arrangements, and the wooden frame with cords and glittery shapes lies on the front table."
+      },
+      "caption": {
+        "sr": "Nastavak slaganja „uklopka” uz list sa zadatim rasporedima u rukama autorke i drveni ram sa oblicima u prvom planu (14:09).",
+        "en": "Continued building with “uklopko” beside the sheet of set arrangements held by the author and the wooden shape frame in the foreground (14:09)."
+      },
+      "sourceId": "teacher-2026-10-31-poseta",
+      "radovi": [
+        "w4-uklopko",
+        "w5-bajic"
+      ]
+    },
+    {
+      "id": "w05-drive-06",
+      "src": "data/prototipovi/poseta-w05/drive-06.jpg",
+      "sha256": "9ee65baf5f324cd92d193dd0ae2ce635931eead65af78a69bbcbad93d1fd4461",
+      "width": 1200,
+      "height": 1600,
+      "alt": {
+        "sr": "U prvom planu korisnik u krilu drži belu tablu 4×4 sa parovima obojenih tačaka sa trinaest već poklopljenih kartica, dok studentkinja pored njega drži preostale kartice; iza njih drveni ram sa svetlucavim oblicima leži u krilu druge korisnice.",
+        "en": "In the foreground a user holds on his lap the white 4×4 board with pairs of coloured dots with thirteen tiles already placed, while a student beside him holds the remaining tiles; behind them the wooden frame with glittery shapes rests on another user’s lap."
+      },
+      "caption": {
+        "sr": "Tabla 4×4 sa karticama sa parovima tačaka i drveni ram sa svetlucavim oblicima probaju se u krilu na klupi (14:11).",
+        "en": "The 4×4 board with dot-pair tiles and the wooden frame with glittery shapes are tried on laps on the bench (14:11)."
+      },
+      "sourceId": "teacher-2026-10-31-poseta",
+      "radovi": [
+        "w5-kartice-tacke",
+        "w5-bajic"
+      ]
+    },
+    {
+      "id": "w05-telefon-88",
+      "src": "data/prototipovi/poseta-w05/telefon-88.jpg",
+      "sha256": "4c0a6bfc5c9878c317c5399abb479470a79cc10676f937eda148843c3b3de42a",
+      "width": 720,
+      "height": 1280,
+      "alt": {
+        "sr": "Krupni plan: četiri sive kvadratne pločice sa izdignutim zakrivljenim kanalima složene u kvadrat 2×2 na stolu dok ruka korisnika dodiruje ugaonu pločicu.",
+        "en": "Close-up: the four grey square tiles with raised curved channels arranged in a 2×2 square on the table as a user’s hand touches the corner tile."
+      },
+      "caption": {
+        "sr": "14:13 · Završni krupni plan posete: proba modularnog „lavirinta” složenog u polje 2×2 pod prstima korisnika za stolom.",
+        "en": "14:13 · Final close-up of the visit: trying out the modular “lavirint” arranged as a 2×2 field under a user’s fingers at the table."
+      },
+      "sourceId": "teacher-2026-10-31-poseta",
+      "radovi": [
+        "w5-markovic"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "work": "w4-uklopko",
+      "title": {
+        "sr": "Pravilo je prešlo sa drugog čoveka na list u rukama korisnika",
+        "en": "The rule moved from a second person to a sheet in the user’s hands"
+      },
+      "photoIds": [
+        "w05-drive-01",
+        "w05-drive-02",
+        "w05-drive-04",
+        "w05-telefon-85",
+        "w05-telefon-86",
+        "w05-telefon-87",
+        "w05-drive-05"
+      ],
+      "seen": {
+        "sr": "Na prošloj poseti (23.10) šest obojenih kocaka i krovova nosilo je dva koda (boju i izrezani oblik) bez vidljivog zadatka, pa su u tri kadra rad držala tri para ruku dok drugi čovek objašnjava pravilo. Po dogovoru sa profesorom, autorka je za ovu posetu donela unapređeni prototip sa odštampanim listovima zadatih slaganja (ravni nizovi 2×3 pod brojevima 1 i 2 i prostorne kućice sa krovovima pod 3 i 4). U kadru 02 korisnik sam drži list i čita zadatu šemu, a u kadrovima 04 i 05 obema rukama sklapa i uklapa kocke na stolu dok autorka stoji pored bez preuzimanja delova iz njegovih ruku.",
+        "en": "On the previous visit (23 October) the six coloured cubes and roofs carried two codes (colour and cut opening) without a visible task, so in three frames the work was held by three pairs of hands while a second person explained the rule. By agreement with the professor, for this visit the author brought the improved prototype with printed sheets of set arrangements (flat 2×3 grids numbered 1 and 2 and three-dimensional houses with roofs numbered 3 and 4). In frame 02 the user holds the sheet himself and reads the target scheme, and in frames 04 and 05 he joins and stacks the cubes on the table with both hands while the author stands beside him without taking the pieces from his hands."
+      },
+      "next": {
+        "sr": "Razdvojiti četiri zadatka sa zajedničkog lista na pojedinačne čvrste kartice (jedna kartica = jedan zadatak na stolu) kako bi obe ruke korisnika bile slobodne za sklapanje od samog početka, bez držanja fascikle.",
+        "en": "Separate the four tasks from the shared sheet onto individual stiff cards (one card = one task on the table) so that both of the user’s hands stay free for building from the very start, without holding the folder."
+      }
+    },
+    {
+      "work": "w5-usjak",
+      "title": {
+        "sr": "Dva dela istog rada traže zajedničko ležište pri predaji iz ruke u ruku",
+        "en": "Two parts of one work need a shared tray when passed hand to hand"
+      },
+      "photoIds": [
+        "w05-drive-01",
+        "w05-drive-04",
+        "w05-telefon-85",
+        "w05-telefon-86",
+        "w05-telefon-87"
+      ],
+      "seen": {
+        "sr": "U prvom kadru posete siva tabla sa belim kanapom uvijenim u petlje leži na stolu dok se plitka metalna kutija sa penastim oblicima predaje stojeći iz ruke u ruku; u narednim kadrovima oba dela stoje na ivici prednjeg stola kao dva odvojena predmeta.",
+        "en": "In the first visit frame the grey board with white cord loops lies on the table while the shallow metal tin of foam shapes is handed to a standing visitor; in subsequent frames the two parts sit on the edge of the front table as two separate objects."
+      },
+      "next": {
+        "sr": "Povezati tablu sa kanapom i plitku kutiju sa oblicima u jedinstvenu podlogu ili preklopnu kutiju kako se pri probi u stojećem položaju i prenošenju delovi ne bi razdvajali.",
+        "en": "Join the cord board and the shallow shape tin into a single base or hinged case so the parts do not separate when tried standing up or carried between tables."
+      }
+    },
+    {
+      "work": "w5-ljubicic",
+      "title": {
+        "sr": "Povezani obruči drže formu u krilu, ali slobodne kuglice od folije traže drugu osobu",
+        "en": "The linked rings hold together on a lap, but loose foil balls require a second person"
+      },
+      "photoIds": [
+        "w05-drive-03",
+        "w05-telefon-86"
+      ],
+      "seen": {
+        "sr": "U trećem kadru sa Drive-a korisnik koji sedi na klupi drži tri kartonska obruča povezana ružičastim čupavim žicama, dok drugi učesnik mora rukom da mu dodaje kuglicu od srebrne folije jer za kuglice ne postoji džep ni vezica uz obruče.",
+        "en": "In the third Drive frame a seated user on the bench holds the three cardboard rings linked by pink pipe cleaners while another participant has to hand him a silver foil ball because the balls have no pocket or tether on the rings."
+      },
+      "next": {
+        "sr": "Dodati mrežasti džep ili elastičnu vezicu za kuglice uz same obruče kako bi korisnik koji sedi na klupi bez stola ispred sebe mogao sam da uzima i vraća kuglice.",
+        "en": "Add a mesh pocket or elastic tether for the balls on the rings themselves so a user seated on a bench without a table in front can take and return the balls independently."
+      }
+    },
+    {
+      "work": "w5-bajic",
+      "title": {
+        "sr": "Drveni ram daje čvrst oslonac u krilu, a oblici na kanapima se ne osipaju",
+        "en": "The wooden frame gives a firm rest on a lap, and the corded shapes do not scatter"
+      },
+      "photoIds": [
+        "w05-drive-04",
+        "w05-telefon-85",
+        "w05-telefon-86",
+        "w05-telefon-87",
+        "w05-drive-05",
+        "w05-drive-06"
+      ],
+      "seen": {
+        "sr": "Nakon što je stajao na prednjem stolu (kadrovi 04, 85–87 i 05), drveni ram sa razapetim kanapima i nanizanim svetlucavim geometrijskim oblicima u šestom kadru sa Drive-a prelazi u krilo korisnice na klupi: čvrst drveni okvir stoji stabilno bez stola, a nanizani oblici ostaju na kanapima pri svakom nagibu.",
+        "en": "After resting on the front table (frames 04, 85–87 and 05), in the sixth Drive frame the wooden frame with strung cords and threaded glittery geometric shapes moves onto a user’s lap on the bench: the rigid wooden frame rests steadily without a table, and the threaded shapes stay on their cords at every tilt."
+      },
+      "next": {
+        "sr": "Fiksirati ili ojačati poprečne letvice na poleđini rama i dodati taktilne graničnike duž kanapa kako bi svaka traka imala jasan početak i kraj pri pomeranju oblika u krilu.",
+        "en": "Secure or reinforce the crossbars on the back of the frame and add tactile stops along the cords so each strand has a clear start and finish when sliding shapes on a lap."
+      }
+    },
+    {
+      "work": "w5-kartice-tacke",
+      "title": {
+        "sr": "Trinaest poklopljenih kartica u krilu pokazuje čitljiv zadatak, ali glatka tabla traži ležišta protiv klizanja",
+        "en": "Thirteen matched tiles on a lap show a legible task, but the smooth board needs anti-slip recesses"
+      },
+      "photoIds": [
+        "w05-drive-06"
+      ],
+      "seen": {
+        "sr": "U šestom kadru sa Drive-a korisnik na klupi drži u krilu belu tablu 4×4 sa parovima obojenih tačaka spojenih linijama: trinaest od šesnaest kartica je već tačno poklopljeno na svojim poljima, dok studentkinja pored njega pridržava preostale slobodne kartice da ne skliznu sa nagnute table.",
+        "en": "In the sixth Drive frame a user on the bench holds on his lap the white 4×4 board with pairs of coloured dots joined by lines: thirteen of the sixteen tiles are already accurately matched on their cells, while a student beside him holds the remaining loose tiles so they do not slide off the tilted board."
+      },
+      "next": {
+        "sr": "Dodati plitak kartonski ili filcani okvir oko svakog od 16 polja (ili čičak-tačke u središtu polja) i džep za slobodne kartice uz ivicu table kako bi korisnik mogao da slaže u krilu bez pomoći druge osobe.",
+        "en": "Add a shallow cardboard or felt lip around each of the 16 cells (or hook-and-loop dots at cell centres) and a pocket for loose tiles along the board edge so a user can play on a lap without a second person holding the spare cards."
+      }
+    },
+    {
+      "work": "w5-velemir",
+      "title": {
+        "sr": "Devet slobodnih pločica 3×3 i list sa rešenjima traže veliku ravnu površinu stola",
+        "en": "Nine loose 3×3 tiles and the solutions sheet require a wide flat table surface"
+      },
+      "photoIds": [
+        "w05-telefon-85",
+        "w05-telefon-86",
+        "w05-telefon-87"
+      ],
+      "seen": {
+        "sr": "Na tri kadra (85–87) devet svetlozelenih kvadratnih pločica sa smeđim stazama i cvetnim tačkama složeno je u kvadrat 3×3 na prednjem stolu uz list „Moguća rešenja”: pločice nisu međusobno spojene podlogom, pa svako pomeranje rukom pomera i susedne pločice u nizu.",
+        "en": "Across three frames (85–87) the nine light-green square tiles with brown paths and flower dots are arranged in a 3×3 square on the front table beside the “Possible solutions” sheet: the tiles have no shared base Tray, so brushing one tile shifts its neighbours in the grid."
+      },
+      "next": {
+        "sr": "Napraviti plitko ležište 3×3 sa podignutom ivicom (ili neklizajućom filcanom podlogom sa opšivenim poljima) kako bi se pločice pri okretanju zadržavale u mreži i mogle probati i na manjem stolu ili u krilu.",
+        "en": "Build a shallow 3×3 tray with a raised rim (or a non-slip felt mat with stitched grid cells) so the tiles stay aligned when rotated and can also be tried on a smaller table or lap."
+      }
+    },
+    {
+      "work": "w5-markovic",
+      "title": {
+        "sr": "Četiri sive pločice lavirinta čitaju se prstima, ali se pri dodiru razmiču po stolu",
+        "en": "Four grey maze tiles read clearly under the fingers, but slide apart on the table when touched"
+      },
+      "photoIds": [
+        "w05-telefon-87",
+        "w05-telefon-88"
+      ],
+      "seen": {
+        "sr": "U kadru 87 četiri sive kvadratne pločice sa izdignutim zakrivljenim kanalima donete su na prednji sto, a u kadru 88 složene su u kvadrat 2×2 dok ruka korisnika prstima prati kanal na ugaonoj pločici: pri bočnom pritisku prsta pločice se razmiču jer nemaju zajednički okvir ni međusobne kopče.",
+        "en": "In frame 87 the four grey square tiles with raised curved channels are brought to the front table, and in frame 88 they are arranged in a 2×2 square while a user’s hand traces the channel on a corner tile: lateral finger pressure pushes the tiles apart because they lack a shared frame or edge interlocks."
+      },
+      "next": {
+        "sr": "Dodati zajednički okvir 2×2 ili čičak-traku na donjoj strani pločica i povećati kontrast između dna kanala i gornje ivice rebra kako bi putanja bila podjednako čitljiva i okom i prstom bez bežanja podloge.",
+        "en": "Add a shared 2×2 border frame or hook-and-loop backing underneath the tiles and increase the contrast between the channel floor and the top of the ridges so the path reads clearly by eye and finger without the tiles sliding apart."
+      }
+    }
+  ]
+}

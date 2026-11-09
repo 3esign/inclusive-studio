@@ -1,0 +1,125 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 6,
+  "state": "published",
+  "updated": "2026-11-09",
+  "title": {
+    "en": "The obstacle record on site",
+    "sr": "Popis prepreka na terenu"
+  },
+  "date": "2026-11-06",
+  "dateStatus": "confirmed",
+  "aim": {
+    "en": "You can survey the 'Živimo zajedno' terrain with scale photography and geo-coordinates, cataloguing physical and sensory barriers without assumptions.",
+    "sr": "Umeš da snimiš teren udruženja „Živimo zajedno” uz fotografije sa razmernikom i geokoordinate, beležeći fizičke i čulne prepreke bez nagađanja."
+  },
+  "bring": [
+    {
+      "en": "Smartphone with camera and GPS logger, clipboard, printed terrain base, 2 m tape measure, walking shoes.",
+      "sr": "Telefon sa kamerom i GPS beleženjem, podloga za pisanje, odštampana karta lokacije, metar od 2 m, terenska obuća."
+    }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": {
+        "sr": "Zapisano posle časa — 06.11.2026.",
+        "en": "Recorded after class — 6 November 2026"
+      }
+    },
+    {
+      "kind": "list",
+      "items": [
+        {
+          "sr": "Nastavak rada na prototipovima i početak tekstilnog zadatka. Zavedeno 28 prisustava, 19 radova fotografisano, ukupno 57 fotografija; objavljeno je svih 19 fotografisanih radova sa 57 fotografija u učionici i 21 fotografija sa posete udruženju.",
+          "en": "The prototype work continued and the textile task began. 28 attendances recorded, 19 works photographed, 57 photographs in all; all 19 photographed works are published with 57 classroom photographs and 21 photographs from the association visit."
+        },
+        {
+          "sr": "Spisak radova sa svim fotografijama stoji na strani šestog časa, a priča sa posete na strani posete šestog časa.",
+          "en": "The list of works with every photograph stands on the sixth-class page, and the visit story on the sixth-class visit page."
+        }
+      ]
+    },
+    {
+      "kind": "link",
+      "href": "cas-06.html",
+      "text": {
+        "sr": "Nedelja 6 — spisak radova šestog časa: 28 zavedenih prisustava, 19 objavljenih radova i deo „Šta se čeka”",
+        "en": "Week 6 — the list of the sixth class: 28 recorded attendances, 19 published works and the „What we wait for” part"
+      }
+    },
+    {
+      "kind": "heading",
+      "text": {
+        "en": "Site visit: the ground does not lie",
+        "sr": "Terenski obilazak: teren ne laže"
+      }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "The site of 'Živimo zajedno' presents a 22,5 m vertical drop over 151 m. We record each obstacle: gradient breaks, steps, uneven pavers, narrowings, missing handrails, and spots with no shade or resting places.",
+        "sr": "Lokacija „Živimo zajedno” ima pad od 22,5 m na 151 m dužine. Beležimo svaku prepreku: prelom nagiba, stepenik, neravne ploče, suženja, nedostatak rukohvata i mesta bez hlada ili klupe za odmor."
+      }
+    },
+    {
+      "kind": "measure",
+      "text": {
+        "en": "Maximum observed point slope on the main walking track",
+        "sr": "Maksimalni zabeleženi tačkasti nagib na glavnoj pešačkoj stazi"
+      },
+      "value": "63 % (32°)",
+      "instrument": {
+        "en": "electronic inclinometer / phone gyro ±0,5°",
+        "sr": "elektronski inklinometar / žiroskop telefona ±0,5°"
+      }
+    },
+    {
+      "kind": "exercise",
+      "ref": "field-obstacle-record"
+    },
+    {
+      "kind": "lab",
+      "ref": "visina"
+    },
+    {
+      "kind": "question",
+      "items": [
+        {
+          "en": "Where was the most deceptive obstacle — one that looks harmless from a distance but stops a visitor completely?",
+          "sr": "Gde je bila najvarljivija prepreka — ona koja izdaleka deluje bezazleno, a u hodu potpuno zaustavlja posetioca?"
+        }
+      ]
+    }
+  ],
+  "revizije": [
+    {
+      "v": 1,
+      "datum": "2026-11-08",
+      "izvor": "Profesor predmeta, 08.11.2026. (spisak šestog časa i 80 fotografija).",
+      "sta": {
+        "sr": "Nedelja 6 je održana 06.11.2026. kao nastavak rada na prototipovima i početak tekstilnog zadatka; zapis sa časa je spisak radova sa 57 fotografija u učionici i 23 fotografije sa posete udruženju. Pripremljeni blokovi ostaju na strani, ispod zapisa sa časa.",
+        "en": "Week 6 was held on 6 November 2026 as a continuation of the prototype work and the start of the textile task; the record of the class is the list of works with 57 classroom photographs and 23 photographs from the association visit. The prepared blocks remain on the page, below the record of the class."
+      }
+    },
+    {
+      "v": 2,
+      "datum": "2026-11-09",
+      "izvor": "Profesor predmeta, 09.11.2026. (spisak 22 studenta na poseti, uklanjanje prve neizoštrene fotografije i prikaz posete kao priče).",
+      "sta": {
+        "sr": "Dopunjen je spisak 22 studenta na poseti udruženju 06.11.2026, izdvojen je prvi neizoštreni duplikat sa posete (ostaju 22 fotografije), a poseta je prikazana kao hronološka priča događaja sa komentarima superinteligencije.",
+        "en": "The roster of 22 students on the association visit of 6 November 2026 was added, the blurry opening duplicate was set aside (leaving 22 visit photographs), and the visit is presented as a chronological event story with superintelligence commentary."
+      }
+    },
+    {
+      "v": 3,
+      "datum": "2026-11-09",
+      "izvor": "Profesor predmeta, 09.11.2026. (izdvajanje zaklonjenog kadra iz priče posete).",
+      "sta": {
+        "sr": "Iz priče posete udruženju 06.11.2026. izdvojen je jedan zaklonjeni kadar s leđa, pa ostaje 21 pregledna fotografija u hronološkoj priči događaja.",
+        "en": "From the 6 November 2026 association visit story, one obstructed over-the-shoulder frame was set aside, leaving 21 clear photographs in the chronological event story."
+      }
+    }
+  ]
+}

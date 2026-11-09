@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" style="background:#ffffff;font-family:system-ui,-apple-system,sans-serif;">
+  <defs>
+    <pattern id="grid10" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f0f3f1" stroke-width="1"/>
+    </pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#192e27"/>
+    </marker>
+    <marker id="arr-rev" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 8 1.5 L 0 5 L 8 8.5 z" fill="#192e27"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="700" fill="url(#grid10)"/>
+
+  <!-- Header -->
+  <g transform="translate(40, 45)">
+    <text font-size="20" font-weight="700" fill="#192e27" letter-spacing="-0.02em">PRISTUPAČNI LIFT I VERTIKALNE KOMUNIKACIJE / ACCESSIBLE ELEVATOR</text>
+    <text y="22" font-size="12" fill="#586962">Standardi geometrije kabine i komandi: Pravilnik RS 22/2015 i 10/2026 (čl. 21) · ISO 21542:2021 (§15)</text>
+  </g>
+
+  <!-- Left: Osnova lifta i prilaznog platoa -->
+  <g transform="translate(40, 95)">
+    <rect width="520" height="565" rx="6" fill="#f8faf9" stroke="#d5ded9" stroke-width="1.5"/>
+    <text x="25" y="32" font-size="14" font-weight="700" fill="#192e27">1. Osnova kabine i prilaznog prostora / Plan View</text>
+    <text x="25" y="50" font-size="11" fill="#586962">Min. kabina: 110 × 140 cm · Prolazna/okretna: 140 × 140 cm · Vrata ≥ 90 cm</text>
+
+    <!-- Drawing area -->
+    <g transform="translate(50, 80)">
+      <!-- Landing waiting area 150x150 cm -->
+      <rect x="50" y="260" width="240" height="150" fill="#eaf6ee" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <circle cx="170" cy="335" r="55" fill="#d9f88d" opacity="0.3" stroke="#2e7d32" stroke-width="1"/>
+      <text x="170" y="338" font-size="11" font-weight="700" fill="#2e7d32" text-anchor="middle">Slobodan plato ≥ 150 × 150 cm</text>
+      <text x="170" y="352" font-size="9" fill="#586962" text-anchor="middle">Ispred ulaza u lift bez prepreka</text>
+
+      <!-- Shaft walls (Okno lifta) -->
+      <rect x="55" y="30" width="230" height="230" fill="#ffffff" stroke="#192e27" stroke-width="4"/>
+
+      <!-- Cabin 110x140 cm interior -->
+      <rect x="80" y="45" width="180" height="210" fill="#f8faf9" stroke="#192e27" stroke-width="2"/>
+
+      <!-- Automatic sliding door clear width 90 cm -->
+      <line x1="100" y1="255" x2="240" y2="255" stroke="#ffffff" stroke-width="6"/>
+      <line x1="100" y1="255" x2="240" y2="255" stroke="#2e7d32" stroke-width="4"/>
+      <!-- Sliding door panels -->
+      <rect x="70" y="250" width="35" height="8" rx="2" fill="#2e7d32"/>
+      <rect x="235" y="250" width="35" height="8" rx="2" fill="#2e7d32"/>
+
+      <!-- Dimension Door width >= 90 cm -->
+      <line x1="100" y1="275" x2="240" y2="275" stroke="#192e27" stroke-width="1" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="170" y="290" font-size="10" font-weight="700" fill="#192e27" text-anchor="middle">Svetla širina vrata ≥ 90 cm</text>
+
+      <!-- Cabin Width 110 cm -->
+      <line x1="80" y1="20" x2="260" y2="20" stroke="#192e27" stroke-width="1" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="170" y="14" font-size="10" font-weight="700" fill="#192e27" text-anchor="middle">Širina kabine min. 110 cm</text>
+
+      <!-- Cabin Depth 140 cm -->
+      <line x1="60" y1="45" x2="60" y2="255" stroke="#192e27" stroke-width="1" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+      <text x="45" y="155" font-size="10" font-weight="700" fill="#192e27" text-anchor="middle" transform="rotate(-90 45 155)">Dubina min. 140 cm</text>
+
+      <!-- Rear Mirror (Ogledalo) on top wall -->
+      <line x1="85" y1="47" x2="255" y2="47" stroke="#0077b6" stroke-width="3"/>
+      <text x="170" y="62" font-size="9" font-weight="600" fill="#0077b6" text-anchor="middle">Ogledalo na zadnjem zidu (h=30–100 cm)</text>
+
+      <!-- Handrail along 3 walls (Rukohvat na visini 90 cm) -->
+      <path d="M 90 230 L 90 55 L 250 55 L 250 230" fill="none" stroke="#2e7d32" stroke-width="3" stroke-linecap="round"/>
+      <text x="170" y="76" font-size="9" font-weight="600" fill="#2e7d32" text-anchor="middle">Rukohvat h=90 cm (Ø 35–45 mm)</text>
+
+      <!-- Horizontal control panel on side wall -->
+      <rect x="252" y="130" width="6" height="50" fill="#d32f2f" stroke="#192e27" stroke-width="1"/>
+      <text x="270" y="158" font-size="9" font-weight="700" fill="#d32f2f">Tasteri</text>
+    </g>
+  </g>
+
+  <!-- Right Top: Izgled kabine i vertikalne visine -->
+  <g transform="translate(580, 95)">
+    <rect width="380" height="290" rx="6" fill="#f8faf9" stroke="#d5ded9" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="13" font-weight="700" fill="#192e27">2. Presek: visine komandi i opreme (čl. 21)</text>
+
+    <g transform="translate(40, 50)">
+      <!-- Floor line -->
+      <line x1="0" y1="200" x2="290" y2="200" stroke="#192e27" stroke-width="2.5"/>
+      <text x="290" y="215" font-size="9" fill="#586962" text-anchor="end">±0.00 pod kabine</text>
+
+      <!-- Rear mirror -->
+      <rect x="30" y="80" width="80" height="90" fill="#e0f2fe" stroke="#0077b6" stroke-width="1.5"/>
+      <text x="70" y="130" font-size="9" fill="#0077b6" text-anchor="middle">Ogledalo</text>
+      <!-- Mirror heights: lower edge 30 cm, upper 100 cm -->
+      <line x1="20" y1="200" x2="20" y2="170" stroke="#192e27" stroke-width="1"/>
+      <text x="15" y="185" font-size="8" fill="#192e27" text-anchor="end">30 cm</text>
+      <line x1="20" y1="200" x2="20" y2="80" stroke="#192e27" stroke-width="1"/>
+      <text x="15" y="125" font-size="8" fill="#192e27" text-anchor="end">100 cm</text>
+
+      <!-- Side Handrail at 90 cm -->
+      <circle cx="160" cy="110" r="5" fill="#2e7d32" stroke="#192e27" stroke-width="1.5"/>
+      <line x1="160" y1="110" x2="160" y2="200" stroke="#2e7d32" stroke-width="1" stroke-dasharray="3 3"/>
+      <text x="175" y="114" font-size="9" font-weight="700" fill="#2e7d32">Rukohvat: h = 90 cm</text>
+
+      <!-- Control panel on right wall: 90 - 110 cm -->
+      <rect x="230" y="90" width="16" height="45" rx="3" fill="#ffffff" stroke="#192e27" stroke-width="1.5"/>
+      <circle cx="238" cy="100" r="3" fill="#d32f2f"/>
+      <circle cx="238" cy="112" r="3" fill="#192e27"/>
+      <circle cx="238" cy="124" r="3" fill="#2e7d32"/>
+      <line x1="250" y1="90" x2="280" y2="90" stroke="#192e27" stroke-width="1"/>
+      <line x1="250" y1="135" x2="280" y2="135" stroke="#192e27" stroke-width="1"/>
+      <text x="285" y="115" font-size="9" font-weight="700" fill="#192e27">90–110 cm</text>
+      <text x="285" y="127" font-size="8" fill="#586962">(dohvat)</text>
+
+      <!-- Acoustic speaker and voice indicator at ceiling -->
+      <rect x="120" y="10" width="50" height="15" rx="2" fill="#192e27"/>
+      <text x="145" y="21" font-size="8" fill="#ffffff" text-anchor="middle">Zvučni info</text>
+      <text x="145" y="38" font-size="8" fill="#586962" text-anchor="middle">Govorna najava sprata</text>
+    </g>
+  </g>
+
+  <!-- Right Bottom: Zahtevi komandne table i pristupačnosti -->
+  <g transform="translate(580, 400)">
+    <rect width="380" height="260" rx="6" fill="#f8faf9" stroke="#d5ded9" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="13" font-weight="700" fill="#192e27">3. Ključna pravila za projektovanje lifta</text>
+
+    <g transform="translate(20, 45)">
+      <circle cx="10" cy="10" r="4" fill="#2e7d32"/>
+      <text x="22" y="13" font-size="10" font-weight="600" fill="#192e27">Dimenzije kabine (čl. 21):</text>
+      <text x="22" y="27" font-size="9.5" fill="#586962">Min. 110 × 140 cm za jedna kolica i pratioca; 140 × 140 cm za okretanje.</text>
+
+      <circle cx="10" cy="50" r="4" fill="#2e7d32"/>
+      <text x="22" y="53" font-size="10" font-weight="600" fill="#192e27">Vrata i vreme zadržavanja:</text>
+      <text x="22" y="67" font-size="9.5" fill="#586962">Automatska klizna vrata svetle širine ≥ 90 cm; foto-ćelija duž celog otvora.</text>
+
+      <circle cx="10" cy="90" r="4" fill="#2e7d32"/>
+      <text x="22" y="93" font-size="10" font-weight="600" fill="#192e27">Tasteri sa reljefom i Brajevim pismom:</text>
+      <text x="22" y="107" font-size="9.5" fill="#586962">Visina tastera 90–110 cm; reljef visine min. 0,8 mm + Brajeve tačkice.</text>
+
+      <circle cx="10" cy="130" r="4" fill="#2e7d32"/>
+      <text x="22" y="133" font-size="10" font-weight="600" fill="#192e27">Dvostruka signalizacija (akustička + optička):</text>
+      <text x="22" y="147" font-size="9.5" fill="#586962">Govorni sintetizator („prizemlje”, „prvi sprat”) i kontrastni displej.</text>
+
+      <circle cx="10" cy="170" r="4" fill="#d32f2f"/>
+      <text x="22" y="173" font-size="10" font-weight="700" fill="#d32f2f">Greška koju uklanjamo:</text>
+      <text x="22" y="187" font-size="9.5" fill="#d32f2f">Uski liftovi 90 × 120 cm u koje kolica ne mogu ući bez grebanja vrata.</text>
+    </g>
+  </g>
+</svg>

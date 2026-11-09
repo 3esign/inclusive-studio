@@ -1,0 +1,474 @@
+{
+  "schema": "pud/predaje-history@1",
+  "cas": "06",
+  "receipts": [
+    {
+      "depoId": "2026-11-08-pud-01",
+      "at": "2026-11-08T19:26:46.598Z",
+      "source": "telefon profesora",
+      "manifest": "MANIFEST-depo-01.json",
+      "manifestSha256": "29988de681115c3f1257f9df6b6ee8e227dcc16995649550a4d2c2b482339b7a",
+      "novih": 57,
+      "istih": 0,
+      "filesCount": 57,
+      "files": [
+        {
+          "file": "slike/01-zgradica/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_120954.jpg",
+          "rb": 1,
+          "sha256": "4fb7d839c1bfcdd66021fd2ff9313c43457837175ebad8f189f940fe76dad6a3",
+          "bytes": 3212388,
+          "mtime": "2026-11-06T11:09:55.000Z"
+        },
+        {
+          "file": "slike/01-zgradica/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_120957.jpg",
+          "rb": 1,
+          "sha256": "703eba604fa85965898c24e420cd69adf407db2e3ab7b342b4c4809edaed0b5a",
+          "bytes": 2777200,
+          "mtime": "2026-11-06T11:09:58.000Z"
+        },
+        {
+          "file": "slike/01-zgradica/03.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_121316.jpg",
+          "rb": 1,
+          "sha256": "b5826075fd99563b00355301f7280f6c7cfc42b827028a8e8954d90af6849a86",
+          "bytes": 2704057,
+          "mtime": "2026-11-06T11:13:17.000Z"
+        },
+        {
+          "file": "slike/02-hana-demiri/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_122035.jpg",
+          "rb": 2,
+          "sha256": "e73b83ad8cf71cba04e1b13986b614061145b32ac16390326b3eaa15ac05a779",
+          "bytes": 2893739,
+          "mtime": "2026-11-06T11:20:36.000Z"
+        },
+        {
+          "file": "slike/03-iva-zunic/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_122118.jpg",
+          "rb": 3,
+          "sha256": "271992df7418f18386757cf227b436c8329592fc7c9536e64a08b6b58288588b",
+          "bytes": 2570950,
+          "mtime": "2026-11-06T11:21:19.000Z"
+        },
+        {
+          "file": "slike/04-music-box/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_123431.jpg",
+          "rb": 4,
+          "sha256": "df0ba386c5b35302a38eb9404218d494edc10273824d978552e40a4bb1f284b9",
+          "bytes": 2178528,
+          "mtime": "2026-11-06T11:34:31.000Z"
+        },
+        {
+          "file": "slike/05-edukativna/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_123605.jpg",
+          "rb": 5,
+          "sha256": "79b4b8277b7b2de3941c253e61ad4da313bb98382084dfcd8966e8e16bb9d9aa",
+          "bytes": 2382994,
+          "mtime": "2026-11-06T11:36:06.000Z"
+        },
+        {
+          "file": "slike/05-edukativna/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_123623.jpg",
+          "rb": 5,
+          "sha256": "515a4c4a67eecac06ceedbfdbce542e16ad0bd89065fb197c27c6d913fe7df8c",
+          "bytes": 2295414,
+          "mtime": "2026-11-06T11:36:24.000Z"
+        },
+        {
+          "file": "slike/05-edukativna/03.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_123630.jpg",
+          "rb": 5,
+          "sha256": "fae8667138f1534c1b4a2ba4771c51f7e32cc07d0bd56bf0b0523afa8e4721d6",
+          "bytes": 3010804,
+          "mtime": "2026-11-06T11:36:30.000Z"
+        },
+        {
+          "file": "slike/05-edukativna/04.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_123641.jpg",
+          "rb": 5,
+          "sha256": "5ab2f19b607906099240437841029ec652f95c0f07028288566f76a3a69f4422",
+          "bytes": 3105808,
+          "mtime": "2026-11-06T11:36:41.000Z"
+        },
+        {
+          "file": "slike/06-lazovic-sara/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_123845.jpg",
+          "rb": 6,
+          "sha256": "36ef6f88f4b0c5e223a349b0adbab9770a53feac94248b96023dac5182e2eea9",
+          "bytes": 2629677,
+          "mtime": "2026-11-06T11:38:45.000Z"
+        },
+        {
+          "file": "slike/06-lazovic-sara/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_123848.jpg",
+          "rb": 6,
+          "sha256": "c4663dcf391b0f20faf467ace0e43e5868fb0f291f99c7dc3bcc3ff68ffa6ee9",
+          "bytes": 2531417,
+          "mtime": "2026-11-06T11:38:48.000Z"
+        },
+        {
+          "file": "slike/07-velemir-tijana/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_124434.jpg",
+          "rb": 7,
+          "sha256": "c6ea14370be4d85540d0e3a048fc8d3e72178f69e326db321b4c10de6ca5f700",
+          "bytes": 2584870,
+          "mtime": "2026-11-06T11:44:35.000Z"
+        },
+        {
+          "file": "slike/08-ur-a-petkovic/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_124803.jpg",
+          "rb": 8,
+          "sha256": "24961fca10c95d6592eafb86d8e077bed488696248e2f485d03519b197823a9a",
+          "bytes": 2889402,
+          "mtime": "2026-11-06T11:48:04.000Z"
+        },
+        {
+          "file": "slike/08-ur-a-petkovic/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_124815.jpg",
+          "rb": 8,
+          "sha256": "ebeb0437c34915f3e8de7bdf9d8be59fcfc4d6e4853cbbb4b3a7be1e80aed4a5",
+          "bytes": 3141409,
+          "mtime": "2026-11-06T11:48:16.000Z"
+        },
+        {
+          "file": "slike/09-music-box/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_125051.jpg",
+          "rb": 9,
+          "sha256": "e419dc521717355ebc6f82aece94328790ec72a3f4a144960c645e98681cac76",
+          "bytes": 3267109,
+          "mtime": "2026-11-06T11:50:52.000Z"
+        },
+        {
+          "file": "slike/09-music-box/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_125055.jpg",
+          "rb": 9,
+          "sha256": "96ef69be7d6aea13284ee7d39c347b41d01e7ca376819d5c3215ac365d2382c0",
+          "bytes": 2430818,
+          "mtime": "2026-11-06T11:50:55.000Z"
+        },
+        {
+          "file": "slike/11-natasa-janjic/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_125933.jpg",
+          "rb": 11,
+          "sha256": "558416ee1be33ee941a91e33e9427cb1dd5a34c8d227de6371f06e585d71d81e",
+          "bytes": 2249500,
+          "mtime": "2026-11-06T11:59:33.000Z"
+        },
+        {
+          "file": "slike/11-natasa-janjic/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_125937.jpg",
+          "rb": 11,
+          "sha256": "22f95ffa7f4ea9fc11409c96e98604f760f27e40cf0082ef58556b044afd7259",
+          "bytes": 2443259,
+          "mtime": "2026-11-06T11:59:38.000Z"
+        },
+        {
+          "file": "slike/11-natasa-janjic/03.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_130139.jpg",
+          "rb": 11,
+          "sha256": "04682693e8f7163403355903062cc381a31e1a8a354be0d2b0512db53371a4ec",
+          "bytes": 3533560,
+          "mtime": "2026-11-06T12:01:40.000Z"
+        },
+        {
+          "file": "slike/13-igra-sa-uzetom/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_130918.jpg",
+          "rb": 13,
+          "sha256": "7ae113bf13522d7e5f74589f37d16845d47ceac3bb503c483f48537f556d7943",
+          "bytes": 2276192,
+          "mtime": "2026-11-06T12:09:19.000Z"
+        },
+        {
+          "file": "slike/13-igra-sa-uzetom/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_131009.jpg",
+          "rb": 13,
+          "sha256": "7995a9a5aee08cf188405678bc5b5fede25106b867067e232d50514614d20421",
+          "bytes": 2625889,
+          "mtime": "2026-11-06T12:10:10.000Z"
+        },
+        {
+          "file": "slike/14-teodora-pudar/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_131119.jpg",
+          "rb": 14,
+          "sha256": "c9cd78553cb8ac43387c7c159c1f3a554accd27bbfc41ee67ec183cabdacec8d",
+          "bytes": 5085059,
+          "mtime": "2026-11-06T12:11:23.000Z"
+        },
+        {
+          "file": "slike/14-teodora-pudar/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_131131.jpg",
+          "rb": 14,
+          "sha256": "bbc7a5ad25ec8fd53bbe932ee5cfd951642c738e606e2b94c9237e28c2c434be",
+          "bytes": 5013010,
+          "mtime": "2026-11-06T12:11:32.000Z"
+        },
+        {
+          "file": "slike/14-teodora-pudar/03.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_131147.jpg",
+          "rb": 14,
+          "sha256": "e172d79aed86453d434d11fcbf0b7ab27ccc2bdd066e4ac5e11bce6f0b0a969a",
+          "bytes": 5638578,
+          "mtime": "2026-11-06T12:11:49.000Z"
+        },
+        {
+          "file": "slike/14-teodora-pudar/04.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_131149.jpg",
+          "rb": 14,
+          "sha256": "b7eb9bfc28e00a526bee6e38d646279bba15d099aee7a6f64ce723dcb8a62458",
+          "bytes": 2799716,
+          "mtime": "2026-11-06T12:11:50.000Z"
+        },
+        {
+          "file": "slike/14-teodora-pudar/05.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_131156.jpg",
+          "rb": 14,
+          "sha256": "3f8c5517510d91279d93647f748f2c130db791e8dc01c54325c3b6fa4aeab3f2",
+          "bytes": 6129970,
+          "mtime": "2026-11-06T12:11:58.000Z"
+        },
+        {
+          "file": "slike/15-fliper-2/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_131538.jpg",
+          "rb": 15,
+          "sha256": "b99dab86aa9c7d2aa54fd61a3fdbff34ef7e07ba26f6734d7767291806ed0ba2",
+          "bytes": 5708103,
+          "mtime": "2026-11-06T12:15:41.000Z"
+        },
+        {
+          "file": "slike/15-fliper-2/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_131542.jpg",
+          "rb": 15,
+          "sha256": "7222e48af176467227ea8dac179024f967a02fc64a170c6afff44bebde6f9ebf",
+          "bytes": 5631595,
+          "mtime": "2026-11-06T12:15:44.000Z"
+        },
+        {
+          "file": "slike/16-masa-jotic/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_132007.jpg",
+          "rb": 16,
+          "sha256": "6b5cbc0855b69b45da8cecc7449bede1e4036e5fe9698d73c1093e1045f6722b",
+          "bytes": 2378716,
+          "mtime": "2026-11-06T12:20:07.000Z"
+        },
+        {
+          "file": "slike/16-masa-jotic/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_132236.jpg",
+          "rb": 16,
+          "sha256": "302982fa70379151c097cc7d85c422e8e4b7979ecb5a5b249d9f21e209eda65f",
+          "bytes": 2346768,
+          "mtime": "2026-11-06T12:22:36.000Z"
+        },
+        {
+          "file": "slike/16-masa-jotic/03.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_132306.jpg",
+          "rb": 16,
+          "sha256": "7d3f1abe33f45ad99365502a558bdae7b83bd1d86805748185f0d4fcc577015d",
+          "bytes": 2579321,
+          "mtime": "2026-11-06T12:23:07.000Z"
+        },
+        {
+          "file": "slike/21-3d-lavirint/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_133908.jpg",
+          "rb": 21,
+          "sha256": "55cabf01dac9f4dfee1bc0af1692223c89257886066327de42169e83d674505f",
+          "bytes": 3173846,
+          "mtime": "2026-11-06T12:39:09.000Z"
+        },
+        {
+          "file": "slike/21-3d-lavirint/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_133910.jpg",
+          "rb": 21,
+          "sha256": "35401078c408eb572c17bc6cf95ad4d6e548fada17f233843faca663931f332b",
+          "bytes": 3202693,
+          "mtime": "2026-11-06T12:39:11.000Z"
+        },
+        {
+          "file": "slike/22-na-a-stanic/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134036.jpg",
+          "rb": 22,
+          "sha256": "11b610ea5cc4b1081b64269c00e4488c83b83d849ffe9561f679191628074e92",
+          "bytes": 3303662,
+          "mtime": "2026-11-06T12:40:37.000Z"
+        },
+        {
+          "file": "slike/22-na-a-stanic/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134041.jpg",
+          "rb": 22,
+          "sha256": "c26113fdd0afc75b025fcbef41f93fe8120ea429877fb01657cef35c7ba51f26",
+          "bytes": 1454030,
+          "mtime": "2026-11-06T12:40:42.000Z"
+        },
+        {
+          "file": "slike/22-na-a-stanic/03.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134043.jpg",
+          "rb": 22,
+          "sha256": "c7f4ec226ce04dae96a7b83f92ffb95e9497c0b5310800f685e12ed4cab58492",
+          "bytes": 2011065,
+          "mtime": "2026-11-06T12:40:44.000Z"
+        },
+        {
+          "file": "slike/23-fliper/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134248.jpg",
+          "rb": 23,
+          "sha256": "7a93cfeedeb4e9d43a0beb97c4a5f1103c646b6a09d142147c37c176f00bb015",
+          "bytes": 2676710,
+          "mtime": "2026-11-06T12:42:49.000Z"
+        },
+        {
+          "file": "slike/23-fliper/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134251.jpg",
+          "rb": 23,
+          "sha256": "4dcd3eef1ba2a27ed6f7757d3460af371de98569cbb257d281a63ea18d602f44",
+          "bytes": 2347671,
+          "mtime": "2026-11-06T12:42:52.000Z"
+        },
+        {
+          "file": "slike/23-fliper/03.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134404.jpg",
+          "rb": 23,
+          "sha256": "3603f57d31ad5a8a4ddea26c8eb92f2e94b33a2c89136f9cde6486f77cbfa3e4",
+          "bytes": 3338726,
+          "mtime": "2026-11-06T12:44:04.000Z"
+        },
+        {
+          "file": "slike/23-fliper/04.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134439.jpg",
+          "rb": 23,
+          "sha256": "b76332edeb25d04b2dac698d9796dde7af9e467fed1158846eb3a53ae3310865",
+          "bytes": 2697737,
+          "mtime": "2026-11-06T12:44:40.000Z"
+        },
+        {
+          "file": "slike/23-fliper/05.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134441.jpg",
+          "rb": 23,
+          "sha256": "c2cf7314f5a9c88f82366df9317094395600d4a982879dd5928f65b9a1557522",
+          "bytes": 2146197,
+          "mtime": "2026-11-06T12:44:42.000Z"
+        },
+        {
+          "file": "slike/23-fliper/06.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134454.jpg",
+          "rb": 23,
+          "sha256": "8c6b3bbd8b3895839ae0939400365cf7decdebe226b84d03de0707ab2e473063",
+          "bytes": 2919526,
+          "mtime": "2026-11-06T12:44:55.000Z"
+        },
+        {
+          "file": "slike/23-fliper/07.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134456.jpg",
+          "rb": 23,
+          "sha256": "5ab4c66a432486a32752e56c5026afe80731414f7f5ffaa0ab69299200517327",
+          "bytes": 3668234,
+          "mtime": "2026-11-06T12:44:57.000Z"
+        },
+        {
+          "file": "slike/24-lena-dukic/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134639.jpg",
+          "rb": 24,
+          "sha256": "8f836809212ea992f11e52d4d6b8631068cabe2bf9de5d55be245d50e884a4ea",
+          "bytes": 2597075,
+          "mtime": "2026-11-06T12:46:40.000Z"
+        },
+        {
+          "file": "slike/24-lena-dukic/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134641.jpg",
+          "rb": 24,
+          "sha256": "de1e7ee632346d13a08452cdd689c3305f5468c25881d9e146250571aef7cc43",
+          "bytes": 1906032,
+          "mtime": "2026-11-06T12:46:41.000Z"
+        },
+        {
+          "file": "slike/24-lena-dukic/03.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134729.jpg",
+          "rb": 24,
+          "sha256": "296a2af797e9ec13a566182565f9e635d3a6d5503e66b111b1dadcbb95dc77fe",
+          "bytes": 2456603,
+          "mtime": "2026-11-06T12:47:29.000Z"
+        },
+        {
+          "file": "slike/24-lena-dukic/04.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134732.jpg",
+          "rb": 24,
+          "sha256": "ada6603a26ebba9df591d092463ffa2934ff5f358cac08601ac0578d35ceaeab",
+          "bytes": 2753666,
+          "mtime": "2026-11-06T12:47:33.000Z"
+        },
+        {
+          "file": "slike/24-lena-dukic/05.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134738.jpg",
+          "rb": 24,
+          "sha256": "706d8ca2da487c19d205941a942dad34d974aa8ed1be38e216b9d22b18b28c19",
+          "bytes": 2432180,
+          "mtime": "2026-11-06T12:47:38.000Z"
+        },
+        {
+          "file": "slike/24-lena-dukic/06.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134833.jpg",
+          "rb": 24,
+          "sha256": "ecfd7f9c47da280d3ebb7f680d6db472c648bb07d6c0fc92a1eed9ff706cfd9f",
+          "bytes": 2666417,
+          "mtime": "2026-11-06T12:48:34.000Z"
+        },
+        {
+          "file": "slike/24-lena-dukic/07.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134836.jpg",
+          "rb": 24,
+          "sha256": "3a1b10c4cf460645b4a7842f2773894eeafd7c9cc171efd05e174644d529d1c2",
+          "bytes": 2743885,
+          "mtime": "2026-11-06T12:48:37.000Z"
+        },
+        {
+          "file": "slike/24-lena-dukic/08.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134838.jpg",
+          "rb": 24,
+          "sha256": "ddf771429b50ee723fdaf8dedc291db837b8933ed08beefebac2a91ebc09fff2",
+          "bytes": 2763931,
+          "mtime": "2026-11-06T12:48:39.000Z"
+        },
+        {
+          "file": "slike/24-lena-dukic/09.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_134902.jpg",
+          "rb": 24,
+          "sha256": "f5858bc939942e54c230ead86828c95e7ab0cdf00cbddf68abfe0e1cb8ddfd69",
+          "bytes": 2421338,
+          "mtime": "2026-11-06T12:49:02.000Z"
+        },
+        {
+          "file": "slike/25-luka-stanisic/01.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_135239.jpg",
+          "rb": 25,
+          "sha256": "5f1c66d3e1873121c98c0a13d934b9e4be7a382acb5ccb39a98875223b72c254",
+          "bytes": 2990585,
+          "mtime": "2026-11-06T12:52:40.000Z"
+        },
+        {
+          "file": "slike/25-luka-stanisic/02.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_135243.jpg",
+          "rb": 25,
+          "sha256": "a50888fade382c8b26fa3793f0023948d2712d5ec3dcf880cf8e6e3168838aaf",
+          "bytes": 3064116,
+          "mtime": "2026-11-06T12:52:43.000Z"
+        },
+        {
+          "file": "slike/25-luka-stanisic/03.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_135249.jpg",
+          "rb": 25,
+          "sha256": "bf3b79c28baaa11d95cacd977f0105d0e76dfb9585d352f92ed2e38629817d56",
+          "bytes": 2936752,
+          "mtime": "2026-11-06T12:52:50.000Z"
+        },
+        {
+          "file": "slike/25-luka-stanisic/04.jpg",
+          "izvorFile": "raw/cas-06-sirovo/20261106_135259.jpg",
+          "rb": 25,
+          "sha256": "51fbc5ebc3a5cfcb479c40b739bf1f7920d5d7df63c4dd28a87954b38a90ed2b",
+          "bytes": 3000473,
+          "mtime": "2026-11-06T12:52:59.000Z"
+        }
+      ]
+    }
+  ]
+}

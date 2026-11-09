@@ -1,0 +1,59 @@
+{
+  "schema": "course-journal/v1",
+  "lists": [
+    {
+      "file": "data/cas-03/spisak.json",
+      "page": "cas-03.html",
+      "nedelja": 3,
+      "kotva": "galerije-w03"
+    },
+    {
+      "file": "data/cas-04/spisak.json",
+      "page": "cas-04.html",
+      "nedelja": 4,
+      "kotva": "cas03-rows-title"
+    },
+    {
+      "file": "data/cas-05/spisak.json",
+      "page": "cas-05.html",
+      "nedelja": 5,
+      "kotva": "cas03-rows-title"
+    },
+    {
+      "file": "data/cas-06/spisak.json",
+      "page": "cas-06.html",
+      "nedelja": 6,
+      "kotva": "cas03-rows-title"
+    }
+  ],
+  "visits": [
+    {
+      "file": "data/poseta.json",
+      "page": "poseta.html"
+    },
+    {
+      "file": "data/poseta-w03.json",
+      "page": "cas-03.html"
+    },
+    {
+      "file": "data/poseta-2026-10-23.json",
+      "page": "poseta-w04.html"
+    },
+    {
+      "file": "data/poseta-2026-10-30.json",
+      "page": "poseta-w05.html"
+    },
+    {
+      "file": "data/poseta-2026-11-06.json",
+      "page": "poseta-w06.html"
+    }
+  ],
+  "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ]
+}

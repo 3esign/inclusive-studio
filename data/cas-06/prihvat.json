@@ -1,0 +1,682 @@
+{
+ "provereno": "2026-11-08T19:26:47.701Z",
+ "cas": "06",
+ "izvorSlika": "C:\\Svemir\\data\\karantin-slika\\inclusive-studio\\cas-06\\slike",
+ "manifesti": [
+  "MANIFEST-depo-01.json"
+ ],
+ "nalazi": [
+  {
+   "rb": 1,
+   "folder": "data/cas-06/slike/01-zgradica",
+   "ocekovano": 3,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 3212388,
+     "sha256": "4fb7d839c1bfcdd66021fd2ff9313c43457837175ebad8f189f940fe76dad6a3",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 2777200,
+     "sha256": "703eba604fa85965898c24e420cd69adf407db2e3ab7b342b4c4809edaed0b5a",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "03.jpg",
+     "bytes": 2704057,
+     "sha256": "b5826075fd99563b00355301f7280f6c7cfc42b827028a8e8954d90af6849a86",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 2,
+   "folder": "data/cas-06/slike/02-hana-demiri",
+   "ocekovano": 1,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 2893739,
+     "sha256": "e73b83ad8cf71cba04e1b13986b614061145b32ac16390326b3eaa15ac05a779",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 3,
+   "folder": "data/cas-06/slike/03-iva-zunic",
+   "ocekovano": 1,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 2570950,
+     "sha256": "271992df7418f18386757cf227b436c8329592fc7c9536e64a08b6b58288588b",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 4,
+   "folder": "data/cas-06/slike/04-music-box",
+   "ocekovano": 1,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 2178528,
+     "sha256": "df0ba386c5b35302a38eb9404218d494edc10273824d978552e40a4bb1f284b9",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 5,
+   "folder": "data/cas-06/slike/05-edukativna",
+   "ocekovano": 4,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 2382994,
+     "sha256": "79b4b8277b7b2de3941c253e61ad4da313bb98382084dfcd8966e8e16bb9d9aa",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 2295414,
+     "sha256": "515a4c4a67eecac06ceedbfdbce542e16ad0bd89065fb197c27c6d913fe7df8c",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "03.jpg",
+     "bytes": 3010804,
+     "sha256": "fae8667138f1534c1b4a2ba4771c51f7e32cc07d0bd56bf0b0523afa8e4721d6",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "04.jpg",
+     "bytes": 3105808,
+     "sha256": "5ab2f19b607906099240437841029ec652f95c0f07028288566f76a3a69f4422",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 6,
+   "folder": "data/cas-06/slike/06-lazovic-sara",
+   "ocekovano": 2,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 2629677,
+     "sha256": "36ef6f88f4b0c5e223a349b0adbab9770a53feac94248b96023dac5182e2eea9",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 2531417,
+     "sha256": "c4663dcf391b0f20faf467ace0e43e5868fb0f291f99c7dc3bcc3ff68ffa6ee9",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 7,
+   "folder": "data/cas-06/slike/07-velemir-tijana",
+   "ocekovano": 1,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 2584870,
+     "sha256": "c6ea14370be4d85540d0e3a048fc8d3e72178f69e326db321b4c10de6ca5f700",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 8,
+   "folder": "data/cas-06/slike/08-ur-a-petkovic",
+   "ocekovano": 2,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 2889402,
+     "sha256": "24961fca10c95d6592eafb86d8e077bed488696248e2f485d03519b197823a9a",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 3141409,
+     "sha256": "ebeb0437c34915f3e8de7bdf9d8be59fcfc4d6e4853cbbb4b3a7be1e80aed4a5",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 9,
+   "folder": "data/cas-06/slike/09-music-box",
+   "ocekovano": 2,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 3267109,
+     "sha256": "e419dc521717355ebc6f82aece94328790ec72a3f4a144960c645e98681cac76",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 2430818,
+     "sha256": "96ef69be7d6aea13284ee7d39c347b41d01e7ca376819d5c3215ac365d2382c0",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 10,
+   "folder": "data/cas-06/slike/10-sofia-ocanto-jovicic",
+   "ocekovano": 0,
+   "postoji": false,
+   "slike": []
+  },
+  {
+   "rb": 11,
+   "folder": "data/cas-06/slike/11-natasa-janjic",
+   "ocekovano": 3,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 2249500,
+     "sha256": "558416ee1be33ee941a91e33e9427cb1dd5a34c8d227de6371f06e585d71d81e",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 2443259,
+     "sha256": "22f95ffa7f4ea9fc11409c96e98604f760f27e40cf0082ef58556b044afd7259",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "03.jpg",
+     "bytes": 3533560,
+     "sha256": "04682693e8f7163403355903062cc381a31e1a8a354be0d2b0512db53371a4ec",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 12,
+   "folder": "data/cas-06/slike/12-viktor-sesum",
+   "ocekovano": 0,
+   "postoji": false,
+   "slike": []
+  },
+  {
+   "rb": 13,
+   "folder": "data/cas-06/slike/13-igra-sa-uzetom",
+   "ocekovano": 2,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 2276192,
+     "sha256": "7ae113bf13522d7e5f74589f37d16845d47ceac3bb503c483f48537f556d7943",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 2625889,
+     "sha256": "7995a9a5aee08cf188405678bc5b5fede25106b867067e232d50514614d20421",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 14,
+   "folder": "data/cas-06/slike/14-teodora-pudar",
+   "ocekovano": 5,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 5085059,
+     "sha256": "c9cd78553cb8ac43387c7c159c1f3a554accd27bbfc41ee67ec183cabdacec8d",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 5013010,
+     "sha256": "bbc7a5ad25ec8fd53bbe932ee5cfd951642c738e606e2b94c9237e28c2c434be",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "03.jpg",
+     "bytes": 5638578,
+     "sha256": "e172d79aed86453d434d11fcbf0b7ab27ccc2bdd066e4ac5e11bce6f0b0a969a",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "04.jpg",
+     "bytes": 2799716,
+     "sha256": "b7eb9bfc28e00a526bee6e38d646279bba15d099aee7a6f64ce723dcb8a62458",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "05.jpg",
+     "bytes": 6129970,
+     "sha256": "3f8c5517510d91279d93647f748f2c130db791e8dc01c54325c3b6fa4aeab3f2",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 15,
+   "folder": "data/cas-06/slike/15-fliper-2",
+   "ocekovano": 2,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 5708103,
+     "sha256": "b99dab86aa9c7d2aa54fd61a3fdbff34ef7e07ba26f6734d7767291806ed0ba2",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 5631595,
+     "sha256": "7222e48af176467227ea8dac179024f967a02fc64a170c6afff44bebde6f9ebf",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 16,
+   "folder": "data/cas-06/slike/16-masa-jotic",
+   "ocekovano": 3,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 2378716,
+     "sha256": "6b5cbc0855b69b45da8cecc7449bede1e4036e5fe9698d73c1093e1045f6722b",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 2346768,
+     "sha256": "302982fa70379151c097cc7d85c422e8e4b7979ecb5a5b249d9f21e209eda65f",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "03.jpg",
+     "bytes": 2579321,
+     "sha256": "7d3f1abe33f45ad99365502a558bdae7b83bd1d86805748185f0d4fcc577015d",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 17,
+   "folder": "data/cas-06/slike/17-andrej-parezanovic",
+   "ocekovano": 0,
+   "postoji": false,
+   "slike": []
+  },
+  {
+   "rb": 18,
+   "folder": "data/cas-06/slike/18-andrija-boskovic",
+   "ocekovano": 0,
+   "postoji": false,
+   "slike": []
+  },
+  {
+   "rb": 19,
+   "folder": "data/cas-06/slike/19-mihailo-maksimovic",
+   "ocekovano": 0,
+   "postoji": false,
+   "slike": []
+  },
+  {
+   "rb": 20,
+   "folder": "data/cas-06/slike/20-lazar-leo-copic",
+   "ocekovano": 0,
+   "postoji": false,
+   "slike": []
+  },
+  {
+   "rb": 21,
+   "folder": "data/cas-06/slike/21-3d-lavirint",
+   "ocekovano": 2,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 3173846,
+     "sha256": "55cabf01dac9f4dfee1bc0af1692223c89257886066327de42169e83d674505f",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 3202693,
+     "sha256": "35401078c408eb572c17bc6cf95ad4d6e548fada17f233843faca663931f332b",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 22,
+   "folder": "data/cas-06/slike/22-na-a-stanic",
+   "ocekovano": 3,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 3303662,
+     "sha256": "11b610ea5cc4b1081b64269c00e4488c83b83d849ffe9561f679191628074e92",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 1454030,
+     "sha256": "c26113fdd0afc75b025fcbef41f93fe8120ea429877fb01657cef35c7ba51f26",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "03.jpg",
+     "bytes": 2011065,
+     "sha256": "c7f4ec226ce04dae96a7b83f92ffb95e9497c0b5310800f685e12ed4cab58492",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 23,
+   "folder": "data/cas-06/slike/23-fliper",
+   "ocekovano": 7,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 2676710,
+     "sha256": "7a93cfeedeb4e9d43a0beb97c4a5f1103c646b6a09d142147c37c176f00bb015",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 2347671,
+     "sha256": "4dcd3eef1ba2a27ed6f7757d3460af371de98569cbb257d281a63ea18d602f44",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "03.jpg",
+     "bytes": 3338726,
+     "sha256": "3603f57d31ad5a8a4ddea26c8eb92f2e94b33a2c89136f9cde6486f77cbfa3e4",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "04.jpg",
+     "bytes": 2697737,
+     "sha256": "b76332edeb25d04b2dac698d9796dde7af9e467fed1158846eb3a53ae3310865",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "05.jpg",
+     "bytes": 2146197,
+     "sha256": "c2cf7314f5a9c88f82366df9317094395600d4a982879dd5928f65b9a1557522",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "06.jpg",
+     "bytes": 2919526,
+     "sha256": "8c6b3bbd8b3895839ae0939400365cf7decdebe226b84d03de0707ab2e473063",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "07.jpg",
+     "bytes": 3668234,
+     "sha256": "5ab4c66a432486a32752e56c5026afe80731414f7f5ffaa0ab69299200517327",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 24,
+   "folder": "data/cas-06/slike/24-lena-dukic",
+   "ocekovano": 9,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 2597075,
+     "sha256": "8f836809212ea992f11e52d4d6b8631068cabe2bf9de5d55be245d50e884a4ea",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 1906032,
+     "sha256": "de1e7ee632346d13a08452cdd689c3305f5468c25881d9e146250571aef7cc43",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "03.jpg",
+     "bytes": 2456603,
+     "sha256": "296a2af797e9ec13a566182565f9e635d3a6d5503e66b111b1dadcbb95dc77fe",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "04.jpg",
+     "bytes": 2753666,
+     "sha256": "ada6603a26ebba9df591d092463ffa2934ff5f358cac08601ac0578d35ceaeab",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "05.jpg",
+     "bytes": 2432180,
+     "sha256": "706d8ca2da487c19d205941a942dad34d974aa8ed1be38e216b9d22b18b28c19",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "06.jpg",
+     "bytes": 2666417,
+     "sha256": "ecfd7f9c47da280d3ebb7f680d6db472c648bb07d6c0fc92a1eed9ff706cfd9f",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "07.jpg",
+     "bytes": 2743885,
+     "sha256": "3a1b10c4cf460645b4a7842f2773894eeafd7c9cc171efd05e174644d529d1c2",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "08.jpg",
+     "bytes": 2763931,
+     "sha256": "ddf771429b50ee723fdaf8dedc291db837b8933ed08beefebac2a91ebc09fff2",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "09.jpg",
+     "bytes": 2421338,
+     "sha256": "f5858bc939942e54c230ead86828c95e7ab0cdf00cbddf68abfe0e1cb8ddfd69",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 25,
+   "folder": "data/cas-06/slike/25-luka-stanisic",
+   "ocekovano": 4,
+   "postoji": true,
+   "slike": [
+    {
+     "file": "01.jpg",
+     "bytes": 2990585,
+     "sha256": "5f1c66d3e1873121c98c0a13d934b9e4be7a382acb5ccb39a98875223b72c254",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "02.jpg",
+     "bytes": 3064116,
+     "sha256": "a50888fade382c8b26fa3793f0023948d2712d5ec3dcf880cf8e6e3168838aaf",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "03.jpg",
+     "bytes": 2936752,
+     "sha256": "bf3b79c28baaa11d95cacd977f0105d0e76dfb9585d352f92ed2e38629817d56",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    },
+    {
+     "file": "04.jpg",
+     "bytes": 3000473,
+     "sha256": "51fbc5ebc3a5cfcb479c40b739bf1f7920d5d7df63c4dd28a87954b38a90ed2b",
+     "width": 4000,
+     "height": 2252,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "rb": 26,
+   "folder": "data/cas-06/slike/26-an-ela-petkovic",
+   "ocekovano": 0,
+   "postoji": false,
+   "slike": []
+  },
+  {
+   "rb": 27,
+   "folder": "data/cas-06/slike/27-nikolina-graovac",
+   "ocekovano": 0,
+   "postoji": false,
+   "slike": []
+  },
+  {
+   "rb": 28,
+   "folder": "data/cas-06/slike/28-lukic-miljana",
+   "ocekovano": 0,
+   "postoji": false,
+   "slike": []
+  }
+ ],
+ "evidencija": []
+}
