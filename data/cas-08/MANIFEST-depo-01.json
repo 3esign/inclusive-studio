@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "at": "2026-11-27T01:47:42.577Z",
+  "source": "depo 2026-11-27-pud-01: Downloads/PUD: 8 kolokvijumskih predaja studenata (20-26.11.2026)",
+  "cas": "08",
+  "depoId": "2026-11-27-pud-01",
+  "files": [
+    {
+      "file": "slike/01-planeta-i-godisnja-doba/01.zip",
+      "izvorFile": "raw/PUD/1/drive-download-20261121T211142Z-1-001.zip",
+      "rb": 1,
+      "sha256": "97cea5e9e7f9d154e39cea24b656281535991e4b56dad93349211f00b539e8f3",
+      "bytes": 8913399,
+      "mtime": "2026-11-21T21:11:53.978Z"
+    },
+    {
+      "file": "slike/02-planeta-boja/01.zip",
+      "izvorFile": "raw/PUD/2/predajaradovakolokvijum.zip",
+      "rb": 2,
+      "sha256": "28a4e9c46aa3e7e779803c5912633e8bfb97e18b37916eda228a9fdf39b8494e",
+      "bytes": 10790600,
+      "mtime": "2026-11-21T21:15:21.044Z"
+    },
+    {
+      "file": "slike/03-edukativno-senzorna-tabla/01.pdf",
+      "izvorFile": "raw/PUD/3/PUD.KOLOKVIJUM.pdf",
+      "rb": 3,
+      "sha256": "6c14d81f3dc1f1a1df35dfd867fc0f73bcf29193dcb88d95ba4629776b91e594",
+      "bytes": 14799074,
+      "mtime": "2026-11-21T22:14:15.124Z"
+    },
+    {
+      "file": "slike/04-pracka-slagalica/01.jpg",
+      "izvorFile": "raw/PUD/4/1000106843.jpg",
+      "rb": 4,
+      "sha256": "f2eb4fb162a1532e5154b105934373feaad3200df9e2f98c15bebb42df1acf91",
+      "bytes": 2509182,
+      "mtime": "2026-11-23T22:13:55.617Z"
+    },
+    {
+      "file": "slike/04-pracka-slagalica/02.jpg",
+      "izvorFile": "raw/PUD/4/1000106846.jpg",
+      "rb": 4,
+      "sha256": "297e91ae92ef347d929966ec6a1cbd19476b7dd7075a5a42be9e7cb56ac55d8b",
+      "bytes": 2561860,
+      "mtime": "2026-11-23T22:13:58.441Z"
+    },
+    {
+      "file": "slike/05-interaktivna-tekstilna-knjiga/01.jpg",
+      "izvorFile": "raw/PUD/5/1.jpg",
+      "rb": 5,
+      "sha256": "a74444854fbf9a94c5c1387e35db6c87277a55a093b1d1a3c64bfe7ffd23cb3b",
+      "bytes": 511154,
+      "mtime": "2026-11-23T22:16:47.652Z"
+    },
+    {
+      "file": "slike/05-interaktivna-tekstilna-knjiga/02.jpg",
+      "izvorFile": "raw/PUD/5/2.jpg",
+      "rb": 5,
+      "sha256": "05b0481ce69ce49a21119275a779701a01818668079f4806f6cdef7afd579c89",
+      "bytes": 78337,
+      "mtime": "2026-11-23T22:16:40.913Z"
+    },
+    {
+      "file": "slike/05-interaktivna-tekstilna-knjiga/03.jpg",
+      "izvorFile": "raw/PUD/5/3.jpg",
+      "rb": 5,
+      "sha256": "524a0d6305ae6a26bf2f1c28291d2df4d8cedfb2877fc1da28024bf9eeae8844",
+      "bytes": 90150,
+      "mtime": "2026-11-23T22:16:44.892Z"
+    },
+    {
+      "file": "slike/06-tobolav/01.jpeg",
+      "izvorFile": "raw/PUD/6/WhatsApp Image 2026-11-22 at 12.46.41 PM.jpeg",
+      "rb": 6,
+      "sha256": "6489ac079539f4437f063bf28f552bff447e3a51d98e399f4791dba040b82132",
+      "bytes": 324601,
+      "mtime": "2026-11-23T22:30:24.749Z"
+    },
+    {
+      "file": "slike/06-tobolav/02.zip",
+      "izvorFile": "raw/PUD/6/WhatsApp Unknown 2026-11-23 at 11.30.10 PM.zip",
+      "rb": 6,
+      "sha256": "28206b99a7e9e09a7c2b5c212539f1353a7f477272ab103580d4a79a1023ce6e",
+      "bytes": 3790522,
+      "mtime": "2026-11-23T22:30:19.684Z"
+    },
+    {
+      "file": "slike/07-kockice/01.jpg",
+      "izvorFile": "raw/PUD/7/7.jpg",
+      "rb": 7,
+      "sha256": "f557660854c19d31146549b6c8cdbd8fbefa34e6b5150758a666ebbd9572b40c",
+      "bytes": 3629312,
+      "mtime": "2026-11-24T20:05:40.250Z"
+    },
+    {
+      "file": "slike/08-dekorativni-jastuk/01.jpeg",
+      "izvorFile": "raw/PUD/8/IMG_5153.jpeg",
+      "rb": 8,
+      "sha256": "37851d19a6400d29a4f0406b8bc5df142f6a6299c4bbe91ec2fad6a41ac8a17c",
+      "bytes": 3090523,
+      "mtime": "2026-11-26T20:35:56.618Z"
+    },
+    {
+      "file": "slike/08-dekorativni-jastuk/02.jpeg",
+      "izvorFile": "raw/PUD/8/IMG_5154.jpeg",
+      "rb": 8,
+      "sha256": "68ba651475f5def212eb1c9368d0fad3eadec96e3eb41e95505d67690535033c",
+      "bytes": 3090646,
+      "mtime": "2026-11-26T20:35:50.100Z"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" style="background:#ffffff;font-family:system-ui,-apple-system,sans-serif;">
+  <defs>
+    <pattern id="grid10" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f0f3f1" stroke-width="1"/>
+    </pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#192e27"/>
+    </marker>
+    <marker id="arr-rev" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 8 1.5 L 0 5 L 8 8.5 z" fill="#192e27"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="700" fill="url(#grid10)"/>
+
+  <!-- Header -->
+  <g transform="translate(40, 45)">
+    <text font-size="20" font-weight="700" fill="#192e27" letter-spacing="-0.02em">DEAFSPACE ARHITEKTONSKA GEOMETRIJA / DEAFSPACE PRINCIPLES</text>
+    <text y="22" font-size="12" fill="#586962">Prostorni obrasci: Gallaudet University DeafSpace Design Guidelines · Hansel Bauman</text>
+  </g>
+
+  <!-- Left: Space & Proximity (Razgovor u hodu) -->
+  <g transform="translate(40, 95)">
+    <rect width="440" height="420" rx="6" fill="#f8faf9" stroke="#d5ded9" stroke-width="1.5"/>
+    <text x="25" y="30" font-size="14" font-weight="700" fill="#192e27">1. Prostor i distanca / Space &amp; Proximity</text>
+    <text x="25" y="48" font-size="11" fill="#586962">Dvoje ljudi koji hodaju i razgovaraju na znakovnom jeziku traže širinu 210–240 cm</text>
+
+    <!-- Comparison graphic: Standard 120 cm vs DeafSpace 240 cm -->
+    <g transform="translate(30, 80)">
+      <!-- Standard Corridor 120 cm (FAIL) -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="380" height="85" fill="#fcf4f4" stroke="#d32f2f" stroke-width="1.5"/>
+        <line x1="0" y1="0" x2="380" y2="0" stroke="#192e27" stroke-width="3"/>
+        <line x1="0" y1="85" x2="380" y2="85" stroke="#192e27" stroke-width="3"/>
+        <!-- 2 Persons crowded -->
+        <circle cx="160" cy="42" r="14" fill="#ffffff" stroke="#192e27" stroke-width="2"/>
+        <circle cx="210" cy="42" r="14" fill="#ffffff" stroke="#192e27" stroke-width="2"/>
+        <path d="M 175 42 L 195 42" stroke="#d32f2f" stroke-width="2"/>
+        <text x="10" y="48" font-size="11" font-weight="700" fill="#d32f2f">120 cm</text>
+        <text x="370" y="48" font-size="10" font-weight="700" fill="#d32f2f" text-anchor="end">PREUSKO ZA ZNAKOVNI GOVOR</text>
+      </g>
+
+      <!-- DeafSpace Corridor 240 cm (PASS) -->
+      <g transform="translate(0, 115)">
+        <rect x="0" y="0" width="380" height="150" fill="#eaf6ee" stroke="#2e7d32" stroke-width="2"/>
+        <line x1="0" y1="0" x2="380" y2="0" stroke="#192e27" stroke-width="3"/>
+        <line x1="0" y1="150" x2="380" y2="150" stroke="#192e27" stroke-width="3"/>
+
+        <!-- 2 Persons walking side-by-side with arm span -->
+        <g transform="translate(140, 75)">
+          <circle cx="0" cy="0" r="16" fill="#ffffff" stroke="#192e27" stroke-width="2"/>
+          <!-- Signing gesture zone -->
+          <ellipse cx="25" cy="0" rx="18" ry="12" fill="#fff9c4" stroke="#fbc02d" stroke-width="1.5"/>
+        </g>
+        <g transform="translate(230, 75)">
+          <circle cx="0" cy="0" r="16" fill="#ffffff" stroke="#192e27" stroke-width="2"/>
+          <ellipse cx="-25" cy="0" rx="18" ry="12" fill="#fff9c4" stroke="#fbc02d" stroke-width="1.5"/>
+        </g>
+
+        <!-- Eye contact line -->
+        <line x1="140" y1="75" x2="230" y2="75" stroke="#2e7d32" stroke-width="2" stroke-dasharray="4 2"/>
+        <text x="185" y="60" font-size="10" font-weight="700" fill="#2e7d32" text-anchor="middle">Vizuelni kontakt u hodu</text>
+
+        <!-- Dimension 240 cm -->
+        <line x1="15" y1="0" x2="15" y2="150" stroke="#192e27" stroke-width="1.5" marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+        <text x="25" y="80" font-size="11" font-weight="700" fill="#2e7d32">210–240 cm</text>
+        <text x="185" y="135" font-size="11" font-weight="700" fill="#2e7d32" text-anchor="middle">Optimalna DeafSpace širina hodnika</text>
+      </g>
+    </g>
+
+    <text x="25" y="390" font-size="10" fill="#586962">Omogućava širinu zamaha ruku, periferni vid i mimoilaženje sa trećom osobom.</text>
+  </g>
+
+  <!-- Right: Sensory Reach & Horseshoe Seating -->
+  <g transform="translate(520, 95)">
+    <rect width="440" height="420" rx="6" fill="#f8faf9" stroke="#d5ded9" stroke-width="1.5"/>
+    <text x="25" y="30" font-size="14" font-weight="700" fill="#192e27">2. Vidno polje i sedenje / Sensory Reach &amp; Layout</text>
+    <text x="25" y="48" font-size="11" fill="#586962">Kružni i potkovičasti raspored: nesmetane vidne linije ka svim sagovornicima</text>
+
+    <!-- Circular / Horseshoe Seating arrangement -->
+    <g transform="translate(220, 195)">
+      <!-- Central table / floor arc -->
+      <path d="M -90 -20 A 90 90 0 1 1 90 -20" fill="none" stroke="#2e7d32" stroke-width="2.5" stroke-dasharray="6 4"/>
+      <text x="0" y="20" font-size="11" font-weight="700" fill="#2e7d32" text-anchor="middle">Potkovičasti raspored (U-oblik)</text>
+      <text x="0" y="35" font-size="9" fill="#586962" text-anchor="middle">Bez slepih uglova</text>
+
+      <!-- Chairs and sightlines -->
+      <!-- Center chair -->
+      <circle cx="0" cy="95" r="14" fill="#ffffff" stroke="#192e27" stroke-width="2"/>
+      <!-- Left chairs -->
+      <circle cx="-65" cy="70" r="14" fill="#ffffff" stroke="#192e27" stroke-width="2"/>
+      <circle cx="-95" cy="15" r="14" fill="#ffffff" stroke="#192e27" stroke-width="2"/>
+      <circle cx="-85" cy="-45" r="14" fill="#ffffff" stroke="#192e27" stroke-width="2"/>
+      <!-- Right chairs -->
+      <circle cx="65" cy="70" r="14" fill="#ffffff" stroke="#192e27" stroke-width="2"/>
+      <circle cx="95" cy="15" r="14" fill="#ffffff" stroke="#192e27" stroke-width="2"/>
+      <circle cx="85" cy="-45" r="14" fill="#ffffff" stroke="#192e27" stroke-width="2"/>
+
+      <!-- Sightlines from center -->
+      <line x1="0" y1="95" x2="-85" y2="-45" stroke="#2e7d32" stroke-width="1" stroke-dasharray="2 2"/>
+      <line x1="0" y1="95" x2="85" y2="-45" stroke="#2e7d32" stroke-width="1" stroke-dasharray="2 2"/>
+      <line x1="0" y1="95" x2="-95" y2="15" stroke="#2e7d32" stroke-width="1" stroke-dasharray="2 2"/>
+      <line x1="0" y1="95" x2="95" y2="15" stroke="#2e7d32" stroke-width="1" stroke-dasharray="2 2"/>
+    </g>
+
+    <text x="25" y="355" font-size="11" font-weight="700" fill="#192e27">Svetlo i refleksija (Light &amp; Color):</text>
+    <text x="25" y="375" font-size="10" fill="#333333">• Difuzno indirektno svetlo: zabranjeno jako kontrasvetlo iza leđa predavača.</text>
+    <text x="25" y="392" font-size="10" fill="#333333">• Matirane površine bez odsjaja koji zamara oči pri čitanju sa usana.</text>
+    <text x="25" y="409" font-size="10" fill="#333333">• Akustičko prigušenje: RT60 &lt; 0,6 s (radi korisnika kohlearnih implantata).</text>
+  </g>
+
+  <!-- Bottom: 5 dimenzija DeafSpace -->
+  <g transform="translate(40, 530)">
+    <rect width="920" height="130" rx="6" fill="#f8faf9" stroke="#d5ded9" stroke-width="1.5"/>
+    <text x="25" y="26" font-size="13" font-weight="700" fill="#192e27">3. Pet dimenzija DeafSpace-a (Gallaudet University)</text>
+
+    <g transform="translate(25, 45)">
+      <text x="0" y="15" font-size="10" font-weight="700" fill="#192e27">1. Prostor i blizina:</text>
+      <text x="130" y="15" font-size="10" fill="#586962">Široki koridori (210–240 cm), kružni raspored sedišta.</text>
+
+      <text x="0" y="35" font-size="10" font-weight="700" fill="#192e27">2. Senzorni domet:</text>
+      <text x="130" y="35" font-size="10" fill="#586962">Staklene pregrade, prozirni uglovi, uklanjanje slepih tačaka pri susretu.</text>
+
+      <text x="0" y="55" font-size="10" font-weight="700" fill="#192e27">3. Kretanje i blizina:</text>
+      <text x="130" y="55" font-size="10" fill="#586962">Automatska klizna vrata na učionicama (ruke ostaju slobodne za znakovni govor).</text>
+
+      <text x="0" y="75" font-size="10" font-weight="700" fill="#192e27">4. Svetlo i boja:</text>
+      <text x="130" y="75" font-size="10" fill="#586962">Meko difuzno svetlo koje ističe izraz lica i pokret ruku bez senki.</text>
+
+      <text x="500" y="15" font-size="10" font-weight="700" fill="#192e27">5. Akustika:</text>
+      <text x="580" y="15" font-size="10" fill="#586962">Apsorpcija niskofrekventnih HVAC vibracija i odjeka (RT60 &lt; 0.6s).</text>
+    </g>
+  </g>
+</svg>

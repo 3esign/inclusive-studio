@@ -1,0 +1,185 @@
+{
+  "schema": "course-class-list/v1",
+  "id": "cas-08-radovi-2026-11-20",
+  "cas": "cas-w08",
+  "odrzan": "2026-11-20",
+  "nedelja": 8,
+  "redni": {
+    "sr": "osmi čas · kolokvijum 1",
+    "en": "eighth class · midterm 1"
+  },
+  "naslov": {
+    "sr": "Osmi čas — Kolokvijum 1.",
+    "en": "Eighth class — Midterm 1."
+  },
+  "lede": {
+    "sr": "Prvi kolokvijum: 11 predatih studentskih kompleta, 15 galerija (9 prototipova igračaka i 6 radova iz reciklaže tekstila) i 48 prikaza — od razvojnih skica i tehničkih crteža do gotovih prototipova.",
+    "en": "First midterm: 11 submitted student sets, 15 galleries (9 toy prototypes and 6 textile-recycling works) and 48 views — from developmental sketches and technical drawings to physical prototypes."
+  },
+  "source": {
+    "id": "teacher-2026-11-27-cas-08",
+    "recordedOn": "2026-11-27",
+    "description": {
+      "sr": "Kolokvijumske predaje osmog časa (20.11.2026), prikupljene i zavedene 27.11.2026. za 11 studenata u 15 galerija (9 prototipova igračaka i 6 tekstilnih radova, ukupno 48 fotografija i tabli).",
+      "en": "Midterm submissions of the eighth class (20 November 2026), collected and recorded on 27 November 2026 for 11 students across 15 galleries (9 toy prototypes and 6 textile works, 48 photographs and plates in all)."
+    }
+  },
+  "vezaneGalerije": true,
+  "napomena": {
+    "sr": "Svaki red otvara stranicu rada; zapisi sa oba kolokvijumska zadatka nose dva linka — „Prototip igračke” i „Reciklaža tekstila”.",
+    "en": "Each row opens its work page; entries covering both midterm tasks carry two links — “Toy prototype” and “Textile recycling”."
+  },
+  "udruzenjeNalazi": [
+    {
+      "sr": "Osmi čas je bio posvećen prvom kolokvijumu i predaji dokumentacije razvoja igračaka i prvih tekstilnih prototipova; terenske posete udruženju tog dana nije bilo.",
+      "en": "The eighth class was dedicated to the first midterm and the submission of toy-development documentation and first textile prototypes; there was no field visit to the association that day."
+    },
+    {
+      "sr": "U kolokvijumskim predajama vidljiva su bezbednosna i ergonomska unapređenja nastala iz ranijih proba — zamena teških materijala lakšim, čvršći poklopci i graničnici i taktilna jasnost elemenata.",
+      "en": "The midterm submissions show safety and ergonomic refinements drawn from earlier trials — replacing heavy materials with lighter ones, firmer lids and stops, and clearer tactile differentiation."
+    }
+  ],
+  "analizaUdruzenja": {
+    "sr": "Terensko probanje novih i dorađenih prototipova u udruženju nastavlja se nakon kolokvijumskog preseka; prethodne posete stoje u Dnevniku i na stranama poseta.",
+    "en": "Field trials of the new and refined prototypes at the association continue after the midterm review; earlier visits stand in the Journal and on the visit pages."
+  },
+  "radovi": [
+    {
+      "rb": 1,
+      "ime": "Petra Nešić",
+      "indeks": "94/24",
+      "rad": "Planeta i godišnja doba",
+      "slike": 10,
+      "galerija": "w8-nesic",
+      "galerijaTekstil": "w8-nesic-tekstil",
+      "napomena": {
+        "sr": "dva dosijea: razvojne skice (listovi I–IV) i prototip rotirajućeg globusa sa kontinentima od filca na čičak (7 prikaza) i tekstil — „Abažur — tekstilni otpad” sa uzorcima tkanina i skicama formi (3 prikaza).",
+        "en": "two dossiers: developmental sketches (sheets I–IV) and prototype of a rotating globe with Velcro felt continents (7 views), and textile — “Lampshade — textile waste” with fabric swatches and form sketches (3 views)."
+      }
+    },
+    {
+      "rb": 2,
+      "ime": "Teodora Pudar",
+      "indeks": "129/24",
+      "rad": "Planeta boja",
+      "slike": 6,
+      "galerija": "w8-pudar",
+      "galerijaTekstil": "w8-pudar-tekstil",
+      "napomena": {
+        "sr": "dva dosijea: 4 razvojne table igračke „Planeta boja” (prva ideja, razrada 1–30, poklopac sa gumicama, finalna tabla) i tekstil — 2 table didaktičko-senzorne igre „Kartonko i krpica”.",
+        "en": "two dossiers: 4 development plates for the toy “Planeta boja” (first idea, 1–30 elaboration, lid with rubber bands, final plate) and textile — 2 plates for the sensory matching game “Kartonko i krpica”."
+      }
+    },
+    {
+      "rb": 3,
+      "ime": "Sara Pištinjat",
+      "indeks": "48/24",
+      "rad": "Edukativno-senzorna tabla",
+      "slike": 7,
+      "galerija": "w8-pistinjat",
+      "galerijaTekstil": "w8-pistinjat-tekstil",
+      "napomena": {
+        "sr": "dva dosijea: 5 tabli portfolija za „Edukativno-senzornu tablu” (fotografije prototipa, koncept i 3D prikaz, ručna skica, kotirani crtež, bezbednosna zamena materijala) i tekstil — 2 table rada „Drugi život jeansa” (plakat i kroj nesesera).",
+        "en": "two dossiers: 5 portfolio plates for the “Educational sensory board” (prototype photos, concept and 3D views, hand sketch, dimensioned plan, safety material swap) and textile — 2 plates for “Second life of denim” (poster and toiletry-bag pattern)."
+      }
+    },
+    {
+      "rb": 4,
+      "ime": "Iva Žunić",
+      "indeks": "110/24",
+      "rad": "Praćka slagalica",
+      "slike": 2,
+      "galerija": "w8-zunic",
+      "napomena": {
+        "sr": "prototip igračke: 2 ručno rađene table razvoja — list 1 (koncept i tok nastanka) i list 3 (proces unapređivanja „Praćke slagalice”: troslojna ploča, viši graničnici, X–O igra i poeni).",
+        "en": "toy prototype: 2 hand-drawn development plates — sheet 1 (concept and making process) and sheet 3 (refinement of “Praćka slagalica”: three-layer board, taller stops, tic-tac-toe mode and points)."
+      }
+    },
+    {
+      "rb": 5,
+      "ime": "Vanja Trkulja",
+      "indeks": "124/24",
+      "rad": "Interaktivna tekstilna knjiga",
+      "slike": 3,
+      "galerija": "w8-trkulja",
+      "napomena": {
+        "sr": "tekstil: 3 fotografije sašivene interaktivne tekstilne knjige (korice sa apliciranim životinjama u kadi i unutrašnje strane sa geometrijskim oblicima i ilustrovanim platnom).",
+        "en": "textile: 3 photographs of the sewn interactive textile book (navy cover with appliquéd animals in a bathtub and inner pages with geometric shapes and patterned fabric)."
+      }
+    },
+    {
+      "rb": 6,
+      "ime": "Nikolina Pavković",
+      "indeks": "111/24",
+      "rad": "Tobolav",
+      "slike": 11,
+      "galerija": "w8-pavkovic",
+      "galerijaTekstil": "w8-pavkovic-tekstil",
+      "napomena": {
+        "sr": "dva dosijea: 8 razvojnih tabli lavirinta do konačnog koncepta i fotografija fizičkog prototipa „Tobolav” (9 prikaza) i tekstil — 2 table rada „Vunena družina” (uzorci vunice i postupak izrade pufnica i kapica).",
+        "en": "two dossiers: 8 labyrinth development plates leading to the final concept plus a photograph of the physical “Tobolav” prototype (9 views), and textile — 2 plates for “Woollen crew” (yarn swatches and step-by-step instructions for pom-pom figures and caps)."
+      }
+    },
+    {
+      "rb": 7,
+      "ime": "Ivana Cvetković",
+      "indeks": "161/24",
+      "rad": "Kockice",
+      "slike": 1,
+      "galerija": "w8-cvetkovic",
+      "napomena": {
+        "sr": "prototip igračke: tabla „Kockice” — elementi igračke, kartice sa zadacima slaganja (Igra 1 i Igra 2) i razvojna namena.",
+        "en": "toy prototype: the “Kockice” plate — toy elements, building task cards (Game 1 and Game 2) and developmental purpose."
+      }
+    },
+    {
+      "rb": 8,
+      "ime": "Maša Marković",
+      "indeks": "121/24",
+      "rad": "Dekorativni jastuk",
+      "slike": 2,
+      "galerija": "w8-markovic",
+      "napomena": {
+        "sr": "tekstil: 2 fotografije prvog tekstilnog prototipa — dvobojni žuto-plavi taktilni jastučić od filca sa izrezanim resama unaokolo.",
+        "en": "textile: 2 photographs of the first textile prototype — a two-tone yellow and blue tactile felt pillow with cut fringes around the edge."
+      }
+    },
+    {
+      "rb": 9,
+      "ime": "Marija Bajić",
+      "indeks": "114/24",
+      "rad": "Geometrijska slagalica u mreži",
+      "slike": 2,
+      "galerija": "w8-bajic",
+      "napomena": {
+        "sr": "prototip igračke: 2 fotografije unapređenog prototipa — tamnosmeđa mreža 6×6 (kalup) sa obojenim geometrijskim pločicama za slaganje, snimljene preko razvojnih listova 3. i 4. nedelje.",
+        "en": "toy prototype: 2 photographs of the refined prototype — a dark-brown 6×6 grid frame with coloured geometric puzzle tiles, photographed over the week-3 and week-4 development sheets."
+      }
+    },
+    {
+      "rb": 10,
+      "ime": "Ognjen Mijaljević",
+      "indeks": "25/24",
+      "rad": "Pauk brojalica",
+      "slike": 3,
+      "galerija": "w8-mijaljevic",
+      "napomena": {
+        "sr": "prototip igračke: 2 fotografije prototipa sa nitima, numerisanim prstenovima i pufnicama i list sa početnim i ciljnim stanjem igre.",
+        "en": "toy prototype: 2 photographs of the prototype with strings, numbered rings and pompoms, and a sheet with the start and goal states of the game."
+      }
+    },
+    {
+      "rb": 11,
+      "ime": "Marina Lončar",
+      "indeks": "60/24",
+      "rad": "Taktilna kutija",
+      "slike": 1,
+      "galerija": "w8-loncar",
+      "napomena": {
+        "sr": "prototip igračke: list sa opisom ideje — kuća koja se rasklapa — skicom mreže kutije i sivom kartonskom maketom.",
+        "en": "toy prototype: a sheet describing the idea — a house that unfolds — with a sketch of the box net and a grey cardboard model."
+      }
+    }
+  ],
+  "razjasni": []
+}

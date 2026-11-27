@@ -1,0 +1,287 @@
+{
+ "schema": "course-class-list/v1",
+ "id": "cas-07-radovi-2026-11-13",
+ "cas": "cas-w07",
+ "odrzan": "2026-11-13",
+ "nedelja": 7,
+ "redni": {
+  "sr": "sedmi čas",
+  "en": "seventh class"
+ },
+ "naslov": {
+  "sr": "Sedmi čas u slikama.",
+  "en": "The seventh class in pictures."
+ },
+ "lede": {
+  "sr": "36 studenata na času i 43 rada na 100 fotografija. Otvori rad da vidiš sve njegove prikaze, ili ga nađi pretragom. Radovi još nisu povezani sa imenima: ko prepozna svoj, javlja broj rada na sledećem času.",
+  "en": "36 students in class and 43 works in 100 photographs. Open a work to see every view of it, or find it by search. The works are not yet tied to names: whoever recognises their own reports the number of the work at the next class."
+ },
+ "source": {
+  "id": "teacher-2026-11-14-cas-07",
+  "recordedOn": "2026-11-14",
+  "description": {
+   "sr": "Profesorov spisak prisutnih na sedmom času (13.11.2026), zapisan 14.11.2026. redom vođenja spiska, bez naziva radova i bez broja fotografija po studentu. Fotografije časa snimljene su 13.11.2026. od 11:47 do 14:36 (102 kadra); u kolaž je ušlo 100, dva ponovljena kadra su izostavljena. Podela na celine je čitanje sadržaja kadrova, ne podatak sa spiska.",
+   "en": "The professor’s attendance list of the seventh class (13 November 2026), recorded on 14 November 2026 in the order the list was kept, without work titles or photograph counts per student. The class photographs were taken on 13 November 2026 between 11:47 and 14:36 (102 frames); 100 entered the collage, two repeated frames were left out. The split into pieces is a reading of the frames, not a fact from the list."
+  }
+ },
+ "napomena": {
+  "sr": "Prisutni redom upisa. Ime otvara dosije studenta; rad se upisuje uz ime kada se poveže sa autorom.",
+  "en": "Those present, in the order of the list. A name opens the student record; a work is entered beside the name once it is tied to its author."
+ },
+ "kolazRegistar": "data/cas-07/kolaz.json",
+ "radovi": [
+  {
+   "rb": 1,
+   "ime": "Sara Lazović",
+   "indeks": "106/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 2,
+   "ime": "Aleksa Vesić",
+   "indeks": "70/21",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 3,
+   "ime": "Teodora Radojičić",
+   "indeks": "72/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 4,
+   "ime": "Nikolina Graovac",
+   "indeks": "65/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 5,
+   "ime": "Marija Vasiljevic",
+   "indeks": "59/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 6,
+   "ime": "Vasilije Jovanović",
+   "indeks": "115/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 7,
+   "ime": "Tijana Velemir",
+   "indeks": "51/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 8,
+   "ime": "Ivana Simić",
+   "indeks": "141/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 9,
+   "ime": "Aleksa Tašković",
+   "indeks": "36/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 10,
+   "ime": "Imre Halas",
+   "indeks": "1/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 11,
+   "ime": "Nađa Stanić",
+   "indeks": "151/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 12,
+   "ime": "Katarina Petrović",
+   "indeks": "79/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 13,
+   "ime": "Maša Marković",
+   "indeks": "121/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 14,
+   "ime": "Željana Kljajić",
+   "indeks": "159/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 15,
+   "ime": "Ivana Cvetković",
+   "indeks": "161/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 16,
+   "ime": "Nataša Janjić",
+   "indeks": "152/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 17,
+   "ime": "Jovana Radojković",
+   "indeks": "30/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 18,
+   "ime": "Filip Maslovarić",
+   "indeks": "191/25",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 19,
+   "ime": "Vanja Pejić",
+   "indeks": "194/25",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 20,
+   "ime": "Emilija Nikolić",
+   "indeks": "82/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 21,
+   "ime": "Natalija Spasojević",
+   "indeks": "52/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 22,
+   "ime": "Uroš Pavlović",
+   "indeks": "35/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 23,
+   "ime": "Petra Kalanj",
+   "indeks": "18/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 24,
+   "ime": "Vanja Stanković",
+   "indeks": "15/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 25,
+   "ime": "Mateja Jevtić",
+   "indeks": "27/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 26,
+   "ime": "Nevena Rušnov",
+   "indeks": "102/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 27,
+   "ime": "Iva Žunić",
+   "indeks": "110/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 28,
+   "ime": "Andrija Bošković",
+   "indeks": "26/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 29,
+   "ime": "Luka Stanišić",
+   "indeks": "44/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 30,
+   "ime": "Lazar Leo Ćopić",
+   "indeks": "142/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 31,
+   "ime": "Ksenija Kočić",
+   "indeks": "19/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 32,
+   "ime": "Hana Demiri",
+   "indeks": "22/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 33,
+   "ime": "Vanja Trkulja",
+   "indeks": "124/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 34,
+   "ime": "Mihailo Maksimović",
+   "indeks": "68/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 35,
+   "ime": "Iva Mijanović",
+   "indeks": "28/24",
+   "rad": null,
+   "slike": null
+  },
+  {
+   "rb": 36,
+   "ime": "Nikolina Pavković",
+   "indeks": "111/24",
+   "rad": null,
+   "slike": null
+  }
+ ],
+ "razjasni": []
+}

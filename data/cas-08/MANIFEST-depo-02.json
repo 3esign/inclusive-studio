@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "at": "2026-11-27T09:18:13.682Z",
+  "source": "depo 2026-11-27-pud-02: Dopuna 8. časa (prilog nastavnika, 27.11.2026): naknadna predaja prototipa igračke (2 fotografije)",
+  "cas": "08",
+  "depoId": "2026-11-27-pud-02",
+  "files": [
+    {
+      "file": "slike/09-geometrijska-slagalica-u-mrezi/01.jpg",
+      "izvorFile": "raw/pud-cas08-bajic/IMG-20261127-WA0004.jpg",
+      "rb": 9,
+      "sha256": "0f2ca9ff6081fc8af633d08b5e93173530ced397621853010e2e305f0fbea1e3",
+      "bytes": 469820,
+      "mtime": "2026-11-27T09:12:40.360Z"
+    },
+    {
+      "file": "slike/09-geometrijska-slagalica-u-mrezi/02.jpg",
+      "izvorFile": "raw/pud-cas08-bajic/IMG-20261127-WA0005.jpg",
+      "rb": 9,
+      "sha256": "a794b2dfab5b54bb1f0bc4c7022194b7d826bc18c5388c22cb82ed5002e1b121",
+      "bytes": 460517,
+      "mtime": "2026-11-27T09:12:40.790Z"
+    }
+  ]
+}

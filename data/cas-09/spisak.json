@@ -1,0 +1,309 @@
+{
+  "schema": "course-class-list/v1",
+  "id": "cas-09-radovi-2026-11-27",
+  "cas": "cas-w09",
+  "odrzan": "2026-11-27",
+  "nedelja": 9,
+  "redni": {
+    "sr": "deveti čas",
+    "en": "ninth class"
+  },
+  "naslov": {
+    "sr": "Deveti čas — reciklaža tekstila.",
+    "en": "Ninth class — textile recycling."
+  },
+  "lede": {
+    "sr": "Dvadeset dva zavedena prisustva. 15 radova iz reciklaže tekstila je fotografisano (21 fotografija) — od skica i listova sa idejama do prvih uzoraka i prototipova; 7 zapisa je bez fotografije.",
+    "en": "Twenty-two recorded attendances. 15 textile-recycling works were photographed (21 photographs) — from sketches and idea sheets to first samples and prototypes; 7 entries have no photograph."
+  },
+  "source": {
+    "id": "teacher-2026-11-27-cas-09",
+    "recordedOn": "2026-11-27",
+    "description": {
+      "sr": "Profesorovi zapisi devetog časa (27.11.2026), uneti na samom času redom obilaska: 22 zapisa, 15 fotografisanih radova iz reciklaže tekstila sa 21 fotografijom i 7 zapisa bez fotografije.",
+      "en": "The professor’s records of the ninth class (27 November 2026), entered during the class in the order of the round: 22 entries, 15 photographed textile-recycling works with 21 photographs and 7 entries without a photograph."
+    }
+  },
+  "vezaneGalerije": true,
+  "napomena": {
+    "sr": "Svaki fotografisani zapis otvara stranicu svog rada; brojevi su brojevi fotografija po zapisu, ne ocene.",
+    "en": "Every photographed entry opens its work’s page; the numbers count photographs per entry, not grades."
+  },
+  "udruzenjeNalazi": [
+    {
+      "sr": "Deveti čas je protekao u učionici, u radu na reciklaži tekstila; zapisa iz udruženja za ovaj dan nema.",
+      "en": "The ninth class took place in the classroom, working on textile recycling; there are no records from the association for this day."
+    }
+  ],
+  "analizaUdruzenja": {
+    "sr": "Probanje radova u udruženju i ranije posete stoje u Dnevniku i na stranama poseta.",
+    "en": "Trials of the works at the association and the earlier visits stand in the Journal and on the visit pages."
+  },
+  "radovi": [
+    {
+      "rb": 1,
+      "ime": "Vanja Stanković",
+      "indeks": "15/24",
+      "rad": "Tekstilni ram",
+      "slike": 1,
+      "galerija": "w9-stankovic",
+      "napomena": {
+        "sr": "tekstil: skica rama sa paralelnim trakama i dve provučene trake u boji; očekuje se prototip, a izrada rama još treba da se reši.",
+        "en": "textile: a sketch of a frame with parallel slats and two coloured strips woven through; a prototype is expected, and how the frame is built is still to be resolved."
+      }
+    },
+    {
+      "rb": 2,
+      "ime": "Mateja Jevtić",
+      "indeks": "27/24",
+      "rad": "Podmetači",
+      "slike": 1,
+      "galerija": "w9-jevtic",
+      "napomena": {
+        "sr": "tekstil: list sa crtežom rotirajuće kružne osnove sa stubićima i četiri koraka pletenja tekstilne trake.",
+        "en": "textile: a sheet with a drawing of a rotating round base with pegs and four steps for knitting a textile strip."
+      }
+    },
+    {
+      "rb": 3,
+      "ime": "Željana Kljajić",
+      "indeks": "159/24",
+      "rad": null,
+      "slike": 3,
+      "galerija": "w9-kljajic",
+      "napomena": {
+        "sr": "tekstil: papirna lutka sa preklopima — odeća od ostataka pletiva i tkanine menja se okretanjem preklopa (3 fotografije).",
+        "en": "textile: a paper doll with flaps — clothes made of knit and fabric offcuts change as the flaps are turned (3 photographs)."
+      }
+    },
+    {
+      "rb": 4,
+      "ime": "Ognjen Mijaljević",
+      "indeks": "25/24",
+      "rad": "Modularni jastuk — prostirka",
+      "slike": 1,
+      "galerija": "w9-mijaljevic",
+      "napomena": {
+        "sr": "tekstil: dva odštampana lista — koraci izrade modula i konačni proizvod, prostirka od devet jastučića od recikliranog tekstila.",
+        "en": "textile: two printed sheets — the steps for making the modules and the final product, a mat of nine cushions made from recycled textile."
+      }
+    },
+    {
+      "rb": 5,
+      "ime": "Lena Kovačić",
+      "indeks": "132/24",
+      "rad": null,
+      "slike": 1,
+      "galerija": "w9-kovacic",
+      "napomena": {
+        "sr": "tekstil: dve ideje na listu — akustična tabla od recikliranog tekstila i senzorna podloga; naziv rada još nije izabran.",
+        "en": "textile: two ideas on one sheet — an acoustic panel of recycled textile and a sensory mat; the work has no title yet."
+      }
+    },
+    {
+      "rb": 6,
+      "ime": "Teodora Todorić",
+      "indeks": "39/24",
+      "rad": "Slagalica Srbije",
+      "slike": 1,
+      "galerija": "w9-todoric",
+      "napomena": {
+        "sr": "tekstil: list sa kartom okruga i delovima slagalice u šest boja i šest šara.",
+        "en": "textile: a sheet with the map of districts and puzzle pieces in six colours and six patterns."
+      }
+    },
+    {
+      "rb": 7,
+      "ime": "Marina Lončar",
+      "indeks": "60/24",
+      "rad": "Novogodišnje čarolije iz starog ormara",
+      "slike": 1,
+      "galerija": "w9-loncar",
+      "napomena": {
+        "sr": "tekstil: list sa dva postupka u tri koraka — čarapa od farmerki i rukavice od džempera.",
+        "en": "textile: a sheet with two three-step procedures — a stocking from jeans and mittens from a jumper."
+      }
+    },
+    {
+      "rb": 8,
+      "ime": "Vasilije Jovanović",
+      "indeks": "115/24",
+      "rad": null,
+      "slike": 0,
+      "ceka": true,
+      "napomena": {
+        "sr": "prisustvo zavedeno; za sledeći čas zapisana radionica.",
+        "en": "attendance recorded; a workshop is noted for the next class."
+      }
+    },
+    {
+      "rb": 9,
+      "ime": "Nađa Stanić",
+      "indeks": "151/24",
+      "rad": null,
+      "slike": 1,
+      "galerija": "w9-stanic",
+      "napomena": {
+        "sr": "tekstil: probni uzorci — zvezde i komadi od presovane vlaknaste mase u crvenoj, beloj i crno-beloj boji.",
+        "en": "textile: trial samples — stars and pieces of pressed fibre pulp in red, white and black-and-white."
+      }
+    },
+    {
+      "rb": 10,
+      "ime": "Tijana Velemir",
+      "indeks": "51/24",
+      "rad": "Ram za tkanje",
+      "slike": 1,
+      "galerija": "w9-velemir",
+      "napomena": {
+        "sr": "tekstil: tri kartonska rama za tkanje sa utkanim trakama tkanine.",
+        "en": "textile: three cardboard weaving frames with fabric strips woven in."
+      }
+    },
+    {
+      "rb": 11,
+      "ime": "Sofia Ocanto Jovičić",
+      "indeks": "138/24",
+      "rad": null,
+      "slike": 0,
+      "ceka": true,
+      "napomena": {
+        "sr": "prisustvo zavedeno, bez fotografije na ovom času.",
+        "en": "attendance recorded, no photograph at this class."
+      }
+    },
+    {
+      "rb": 12,
+      "ime": "Nikola Pajić",
+      "indeks": "49/24",
+      "rad": "Hydro-Felt",
+      "slike": 1,
+      "galerija": "w9-pajic",
+      "napomena": {
+        "sr": "tekstil: digitalni trodimenzionalni model — šestougaoni moduli složeni u ostrvo.",
+        "en": "textile: a digital three-dimensional model — hexagonal modules assembled into an island."
+      }
+    },
+    {
+      "rb": 13,
+      "ime": "Igor Stablović",
+      "indeks": "6/24",
+      "rad": null,
+      "slike": 0,
+      "ceka": true,
+      "napomena": {
+        "sr": "prisustvo zavedeno, bez fotografije na ovom času.",
+        "en": "attendance recorded, no photograph at this class."
+      }
+    },
+    {
+      "rb": 14,
+      "ime": "Marija Stojković",
+      "indeks": "126/24",
+      "rad": "Petlja u krug",
+      "slike": 2,
+      "galerija": "w9-stojkovic",
+      "napomena": {
+        "sr": "tekstil: dva kartonska rama za pletenje u krug, sa ciklama i svetloplavim pletivom (2 fotografije).",
+        "en": "textile: two cardboard frames for knitting in the round, with magenta and light-blue knitting (2 photographs)."
+      }
+    },
+    {
+      "rb": 15,
+      "ime": "Ivana Cvetković",
+      "indeks": "161/24",
+      "rad": "Korpica",
+      "slike": 2,
+      "galerija": "w9-cvetkovic",
+      "napomena": {
+        "sr": "tekstil: korpica opletena trakama teksasa preko kartonskog valjka (2 fotografije).",
+        "en": "textile: a small basket woven from denim strips over a cardboard cylinder (2 photographs)."
+      }
+    },
+    {
+      "rb": 16,
+      "ime": "Nevena Grkić",
+      "indeks": "62/24",
+      "rad": "Kutija za odlaganje",
+      "slike": 1,
+      "galerija": "w9-grkic",
+      "napomena": {
+        "sr": "tekstil: skice u svesci — skelet od žice ili štapića sa delovima povezanim tkaninom.",
+        "en": "textile: notebook sketches — a skeleton of wire or sticks with parts joined by fabric."
+      }
+    },
+    {
+      "rb": 17,
+      "ime": "Anđela Deurić",
+      "indeks": "137/24",
+      "rad": "Ram i tkanina",
+      "slike": 1,
+      "galerija": "w9-deuric",
+      "napomena": {
+        "sr": "tekstil: list sa skicom rama i beleškama o šablonima po kojima se od tkanine prave slike.",
+        "en": "textile: a sheet with a sketch of a frame and notes on templates for making pictures out of fabric."
+      }
+    },
+    {
+      "rb": 18,
+      "ime": "Petra Nešić",
+      "indeks": "94/24",
+      "rad": null,
+      "slike": 0,
+      "ceka": true,
+      "napomena": {
+        "sr": "prisustvo zavedeno, bez fotografije na ovom času.",
+        "en": "attendance recorded, no photograph at this class."
+      }
+    },
+    {
+      "rb": 19,
+      "ime": "Luka Stanišić",
+      "indeks": "44/24",
+      "rad": null,
+      "slike": 3,
+      "galerija": "w9-stanisic",
+      "napomena": {
+        "sr": "tekstil: maketa od bele penaste ploče sa plavim valjkom i diskovima (3 fotografije).",
+        "en": "textile: a white foam-board model with a blue roller and discs (3 photographs)."
+      }
+    },
+    {
+      "rb": 20,
+      "ime": "Andrija Bošković",
+      "indeks": "26/24",
+      "rad": null,
+      "slike": 0,
+      "ceka": true,
+      "napomena": {
+        "sr": "prisustvo zavedeno, bez fotografije na ovom času.",
+        "en": "attendance recorded, no photograph at this class."
+      }
+    },
+    {
+      "rb": 21,
+      "ime": "Andrej Parezanović",
+      "indeks": "43/24",
+      "rad": null,
+      "slike": 0,
+      "ceka": true,
+      "napomena": {
+        "sr": "prisustvo zavedeno, bez fotografije na ovom času.",
+        "en": "attendance recorded, no photograph at this class."
+      }
+    },
+    {
+      "rb": 22,
+      "ime": "Lazar Leo Ćopić",
+      "indeks": "142/24",
+      "rad": null,
+      "slike": 0,
+      "ceka": true,
+      "napomena": {
+        "sr": "prisustvo zavedeno, bez fotografije na ovom času.",
+        "en": "attendance recorded, no photograph at this class."
+      }
+    }
+  ],
+  "razjasni": []
+}

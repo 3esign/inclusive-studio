@@ -1,0 +1,1440 @@
+{
+ "schema": "course-class-collage/v1",
+ "id": "cas-07-kolaz-2026-11-13",
+ "odrzan": "2026-11-13",
+ "nedelja": 7,
+ "strana": "cas-07.html",
+ "izbor": [1, 3, 5, 7, 10, 18, 20, 27, 28, 32, 39, 43],
+ "celine": [
+  {
+   "rb": 1,
+   "vreme": "11:47",
+   "naslov": {
+    "sr": "Akustične tapete od tkanine: plakat, uzorak i merenje zvuka",
+    "en": "Acoustic wall panels from fabric: poster, sample and a sound measurement"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/002.jpg",
+     "sha256": "d798b4adf79d27865d1dd6b357d92cb2b8c3f768bf3d2840f615bda0e1cb9cb2",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Akustične tapete od tkanine: plakat, uzorak i merenje zvuka — prikaz 1 od 6",
+      "en": "Acoustic wall panels from fabric: poster, sample and a sound measurement — view 1 of 6"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/001.jpg",
+     "sha256": "c5ede7960ab596bbe88fb1b0cd3b36dc35238904793fd2ba2172fa6cf718641d",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Akustične tapete od tkanine: plakat, uzorak i merenje zvuka — prikaz 2 od 6",
+      "en": "Acoustic wall panels from fabric: poster, sample and a sound measurement — view 2 of 6"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/003.jpg",
+     "sha256": "3c94840a007e245cbf02aa1bc89e044128a01ad9e8abbc86c015685cbf6ac5a8",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Akustične tapete od tkanine: plakat, uzorak i merenje zvuka — prikaz 3 od 6",
+      "en": "Acoustic wall panels from fabric: poster, sample and a sound measurement — view 3 of 6"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/004.jpg",
+     "sha256": "7f45f691da9a711eac155c8f1935241047e9d5f6a777debd8e1b696a577657dc",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Akustične tapete od tkanine: plakat, uzorak i merenje zvuka — prikaz 4 od 6",
+      "en": "Acoustic wall panels from fabric: poster, sample and a sound measurement — view 4 of 6"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/005.jpg",
+     "sha256": "a0f3e2b8ada546e4960110e58bcfac8fa728a71473f554b697144945f682aa4d",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Akustične tapete od tkanine: plakat, uzorak i merenje zvuka — prikaz 5 od 6",
+      "en": "Acoustic wall panels from fabric: poster, sample and a sound measurement — view 5 of 6"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/006.jpg",
+     "sha256": "d9ed83e1e19bbc1071dea6425066bf4efd2fd5831d79b1f03648bf630a6eaf38",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Akustične tapete od tkanine: plakat, uzorak i merenje zvuka — prikaz 6 od 6",
+      "en": "Acoustic wall panels from fabric: poster, sample and a sound measurement — view 6 of 6"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 2,
+   "vreme": "11:53",
+   "naslov": {
+    "sr": "Novčanik od teksasa sa skicom kroja",
+    "en": "A denim wallet with its pattern sketch"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/008.jpg",
+     "sha256": "9a5d74b8fceda94b708668d486585d3b058b9220f6ee75ca8c2b28eb5e4bb262",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Novčanik od teksasa sa skicom kroja — prikaz 1 od 3",
+      "en": "A denim wallet with its pattern sketch — view 1 of 3"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/007.jpg",
+     "sha256": "892ca281c45e2aa90d94c5f63f6b695043a869c47221c62e0317cb754d131a23",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Novčanik od teksasa sa skicom kroja — prikaz 2 od 3",
+      "en": "A denim wallet with its pattern sketch — view 2 of 3"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/009.jpg",
+     "sha256": "4cf329af43e738faa028faadd9c42c392520fe1b971d23f216cbf76003a0a98e",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Novčanik od teksasa sa skicom kroja — prikaz 3 od 3",
+      "en": "A denim wallet with its pattern sketch — view 3 of 3"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 3,
+   "vreme": "11:59",
+   "naslov": {
+    "sr": "Torba od crne tkanine, zebra dezena i pliša",
+    "en": "A bag of black cloth, zebra print and plush"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/013.jpg",
+     "sha256": "ee8c9e09a8a2ce6ab720b027182925fd4cc565c94a1de6f136b51aa684dd9e64",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Torba od crne tkanine, zebra dezena i pliša — prikaz 1 od 4",
+      "en": "A bag of black cloth, zebra print and plush — view 1 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/011.jpg",
+     "sha256": "5959ea78d7432e2c112ba6f0f9814f5f772fecc2be8ec8f22acf5215427ce4ca",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Torba od crne tkanine, zebra dezena i pliša — prikaz 2 od 4",
+      "en": "A bag of black cloth, zebra print and plush — view 2 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/012.jpg",
+     "sha256": "a07c6c27cdcd41ca57f38de194c55e0f31982438464f1da6fc49c0aa62c63266",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Torba od crne tkanine, zebra dezena i pliša — prikaz 3 od 4",
+      "en": "A bag of black cloth, zebra print and plush — view 3 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/014.jpg",
+     "sha256": "35b30688c043ef6b498ec53676ac442c5f1000be9074eb6d9952430bce11e78d",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Torba od crne tkanine, zebra dezena i pliša — prikaz 4 od 4",
+      "en": "A bag of black cloth, zebra print and plush — view 4 of 4"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 4,
+   "vreme": "12:03",
+   "naslov": {
+    "sr": "Pletenica i čvorovi od gaze",
+    "en": "A braid and knots made of gauze"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/015.jpg",
+     "sha256": "9d7a844d2a06e151949a5c2c2bb6a0882ebc263d6aed1133655d47586acb1f55",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Pletenica i čvorovi od gaze — prikaz 1 od 4",
+      "en": "A braid and knots made of gauze — view 1 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/016.jpg",
+     "sha256": "8578673905916db9b60ca059a6373a4a19aa1c06a112e484d091d63d387aa39f",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Pletenica i čvorovi od gaze — prikaz 2 od 4",
+      "en": "A braid and knots made of gauze — view 2 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/017.jpg",
+     "sha256": "a602a3db9b74839f28473c2eb8b541d81f966c747c7e22b05fb1532ce5031d61",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Pletenica i čvorovi od gaze — prikaz 3 od 4",
+      "en": "A braid and knots made of gauze — view 3 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/018.jpg",
+     "sha256": "d41bef5cbca67e2441de6105a88d77d90c23f87a8f551362046921b33a64c960",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Pletenica i čvorovi od gaze — prikaz 4 od 4",
+      "en": "A braid and knots made of gauze — view 4 of 4"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 5,
+   "vreme": "12:07",
+   "naslov": {
+    "sr": "Taktilna kutija: pamuk, sunđer, staklo, školjka",
+    "en": "A tactile box: cotton, sponge, glass, a shell"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/020.jpg",
+     "sha256": "701db683fbe1c610947b2b70949bfe5ecc0ee9d2fae56be120917de055631755",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Taktilna kutija: pamuk, sunđer, staklo, školjka — prikaz 1 od 2",
+      "en": "A tactile box: cotton, sponge, glass, a shell — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/021.jpg",
+     "sha256": "96ff6bd6dd135d988e2fddef64319d511f1539bc6b829e75e0ea2c9fe3070d33",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Taktilna kutija: pamuk, sunđer, staklo, školjka — prikaz 2 od 2",
+      "en": "A tactile box: cotton, sponge, glass, a shell — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 6,
+   "vreme": "12:18",
+   "naslov": {
+    "sr": "Karta uzoraka tkanina na kartonu",
+    "en": "A swatch chart of fabrics on card"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/023.jpg",
+     "sha256": "ff5b4d0b45e889452e865f4b1fd2d60761802ab8ca9af106ddac9e4cdf94fb92",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Karta uzoraka tkanina na kartonu — prikaz 1 od 2",
+      "en": "A swatch chart of fabrics on card — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/022.jpg",
+     "sha256": "370e9b1ca8bab70303169822e07ce1dceb931e6d5aa884d01a54fb36436c655e",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Karta uzoraka tkanina na kartonu — prikaz 2 od 2",
+      "en": "A swatch chart of fabrics on card — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 7,
+   "vreme": "12:23",
+   "naslov": {
+    "sr": "Plakat „Reciklaža tekstila” sa crvenom mrežom",
+    "en": "The poster “Reciklaža tekstila” with a red net"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/027.jpg",
+     "sha256": "3edb56a78d72a9e71be5bf8f559f8e5a99eed24fa369d83393f0001d3d624c5f",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Plakat „Reciklaža tekstila” sa crvenom mrežom — prikaz 1 od 4",
+      "en": "The poster “Reciklaža tekstila” with a red net — view 1 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/024.jpg",
+     "sha256": "7f6d883e6d8c2b7ba30bcd7a2b274d6562475f634dbf0adec049f07529a7a166",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Plakat „Reciklaža tekstila” sa crvenom mrežom — prikaz 2 od 4",
+      "en": "The poster “Reciklaža tekstila” with a red net — view 2 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/025.jpg",
+     "sha256": "52ed37f77a6082b16bb8f3549e8bfd98e1929f5e1b39f032259daeaf412013cf",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Plakat „Reciklaža tekstila” sa crvenom mrežom — prikaz 3 od 4",
+      "en": "The poster “Reciklaža tekstila” with a red net — view 3 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/026.jpg",
+     "sha256": "ea2f0a7a681179390dabff09902bc34a5567ab9b343d0d6dca91a7afcc24555d",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Plakat „Reciklaža tekstila” sa crvenom mrežom — prikaz 4 od 4",
+      "en": "The poster “Reciklaža tekstila” with a red net — view 4 of 4"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 8,
+   "vreme": "12:29",
+   "naslov": {
+    "sr": "Pleteni uzorak od vune i skica stalka",
+    "en": "A knitted wool sample and a sketch of a stand"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/029.jpg",
+     "sha256": "e6262dae536442eef6168a42a649c5df2efddf7c08536390026119bf2bfe8d36",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Pleteni uzorak od vune i skica stalka — prikaz 1 od 2",
+      "en": "A knitted wool sample and a sketch of a stand — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/028.jpg",
+     "sha256": "e62994b1afe0cdf846f17205f8de4322adf769cade2af6281b13a61ad8cc8810",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Pleteni uzorak od vune i skica stalka — prikaz 2 od 2",
+      "en": "A knitted wool sample and a sketch of a stand — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 9,
+   "vreme": "12:32",
+   "naslov": {
+    "sr": "Infografik „Farmerke nisu smeće”",
+    "en": "The infographic “Farmerke nisu smeće”"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/030.jpg",
+     "sha256": "0d78d59008621e828b33c8c70566dfb3de6311ca9d1988c0b3b441c2f521c4e7",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Infografik „Farmerke nisu smeće” — prikaz 1 od 1",
+      "en": "The infographic “Farmerke nisu smeće” — view 1 of 1"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 10,
+   "vreme": "12:36",
+   "naslov": {
+    "sr": "Kartonska staza sa perlom, kockama i zvezdama",
+    "en": "A cardboard track with a pearl, cubes and stars"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/031.jpg",
+     "sha256": "30c8de23c08dee1f434695c16e2a5844764bee9f1fd8f5f9a4827f0c7fd4075c",
+     "width": 1600,
+     "height": 900,
+     "alt": {
+      "sr": "Kartonska staza sa perlom, kockama i zvezdama — prikaz 1 od 3",
+      "en": "A cardboard track with a pearl, cubes and stars — view 1 of 3"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/032.jpg",
+     "sha256": "e9e158416ea71c464bcde8853150f367aab49ce40e1a4ea08a32ece83fcb6a4e",
+     "width": 1600,
+     "height": 900,
+     "alt": {
+      "sr": "Kartonska staza sa perlom, kockama i zvezdama — prikaz 2 od 3",
+      "en": "A cardboard track with a pearl, cubes and stars — view 2 of 3"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/033.jpg",
+     "sha256": "16c94b78f6aca21bfb50824ff009710ca771b366da2a625567dc733e04fa9461",
+     "width": 1600,
+     "height": 900,
+     "alt": {
+      "sr": "Kartonska staza sa perlom, kockama i zvezdama — prikaz 3 od 3",
+      "en": "A cardboard track with a pearl, cubes and stars — view 3 of 3"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 11,
+   "vreme": "12:37",
+   "naslov": {
+    "sr": "Crno-bela masa od tekstilnih vlakana",
+    "en": "A black-and-white mass pressed from textile fibre"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/035.jpg",
+     "sha256": "54ed0cbb70da304f9ec073d4e3e4fe75fefd8ec928b7e5f20e581d3ef9856c78",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Crno-bela masa od tekstilnih vlakana — prikaz 1 od 4",
+      "en": "A black-and-white mass pressed from textile fibre — view 1 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/034.jpg",
+     "sha256": "eee0ad663e4c0adb1db8af796d58d4d25f75d08b6f6ddf3d76f3e329d9a2780d",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Crno-bela masa od tekstilnih vlakana — prikaz 2 od 4",
+      "en": "A black-and-white mass pressed from textile fibre — view 2 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/036.jpg",
+     "sha256": "42de7d034d5ee111f8948455dca1486590a8c2026264550551c5638c4e5d37c3",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Crno-bela masa od tekstilnih vlakana — prikaz 3 od 4",
+      "en": "A black-and-white mass pressed from textile fibre — view 3 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/037.jpg",
+     "sha256": "226d5762fa01136ef36b9b52e799cda9a93f6226d977daf538f23986be6f58e4",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Crno-bela masa od tekstilnih vlakana — prikaz 4 od 4",
+      "en": "A black-and-white mass pressed from textile fibre — view 4 of 4"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 12,
+   "vreme": "12:43",
+   "naslov": {
+    "sr": "Skice: jabuka, list i ruka",
+    "en": "Sketches: an apple, a leaf and a hand"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/039.jpg",
+     "sha256": "18b629f97f388594910619027bc2706f5424d31f732ad1e26957c15f54983f55",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Skice: jabuka, list i ruka — prikaz 1 od 2",
+      "en": "Sketches: an apple, a leaf and a hand — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/038.jpg",
+     "sha256": "c88987f02f904a578b53fe4d8dcb58f48b93fe72710e8aaa3b30602f09700708",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Skice: jabuka, list i ruka — prikaz 2 od 2",
+      "en": "Sketches: an apple, a leaf and a hand — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 13,
+   "vreme": "12:43",
+   "naslov": {
+    "sr": "Skica mehanizma sa trakom i rešenje spoja",
+    "en": "A sketch of a strap mechanism and the joint solution"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/040.jpg",
+     "sha256": "52e54a1bdea35bc4fb7ad52aa794bc830f747e6f467e6fd6b7a8f3c6eb2833bf",
+     "width": 1600,
+     "height": 900,
+     "alt": {
+      "sr": "Skica mehanizma sa trakom i rešenje spoja — prikaz 1 od 2",
+      "en": "A sketch of a strap mechanism and the joint solution — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/041.jpg",
+     "sha256": "88994ff38044d4d6404d2284201688d10c1772a1724d20a238c1a184341fef32",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Skica mehanizma sa trakom i rešenje spoja — prikaz 2 od 2",
+      "en": "A sketch of a strap mechanism and the joint solution — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 14,
+   "vreme": "12:46",
+   "naslov": {
+    "sr": "Plakat razvoja: ideja, prototip 1, prototip 2, finale",
+    "en": "A development poster: idea, prototype 1, prototype 2, final"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/043.jpg",
+     "sha256": "25a6d26b7064833cd9f66957665baea4e9b9a4be8ca61625e157267d0be989f6",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Plakat razvoja: ideja, prototip 1, prototip 2, finale — prikaz 1 od 2",
+      "en": "A development poster: idea, prototype 1, prototype 2, final — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/042.jpg",
+     "sha256": "2b1cadd69e30c0de0552b8513c4fe917f3576d20419c37fcb7ad306cd578b62b",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Plakat razvoja: ideja, prototip 1, prototip 2, finale — prikaz 2 od 2",
+      "en": "A development poster: idea, prototype 1, prototype 2, final — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 15,
+   "vreme": "12:46",
+   "naslov": {
+    "sr": "Crtež „Interaktivni jastuk”",
+    "en": "The drawing “Interaktivni jastuk”"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/045.jpg",
+     "sha256": "9f8f2f27fb647e2c120666939aae17594af1c107b093f5fe690eb1dfdef8dfd7",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Crtež „Interaktivni jastuk” — prikaz 1 od 2",
+      "en": "The drawing “Interaktivni jastuk” — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/044.jpg",
+     "sha256": "778482069baf3cb3cae3c9f4a42049a5e61318ae16cb5e972dec63cb2e788bd2",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Crtež „Interaktivni jastuk” — prikaz 2 od 2",
+      "en": "The drawing “Interaktivni jastuk” — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 16,
+   "vreme": "12:50",
+   "naslov": {
+    "sr": "Skica rasklopive forme u boji",
+    "en": "A coloured sketch of a fold-out form"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/046.jpg",
+     "sha256": "d8531130bb704829382563a7739879be477b1c8cf6f6a1c145c3b56851dae03a",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Skica rasklopive forme u boji — prikaz 1 od 1",
+      "en": "A coloured sketch of a fold-out form — view 1 of 1"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 17,
+   "vreme": "12:53",
+   "naslov": {
+    "sr": "Igra povezivanja tačaka",
+    "en": "A connect-the-dots game"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/048.jpg",
+     "sha256": "78107fab7c207e9a3959ceba0e090a3a1fc26e84385e1b31841a30a63dacb672",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Igra povezivanja tačaka — prikaz 1 od 2",
+      "en": "A connect-the-dots game — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/047.jpg",
+     "sha256": "0c14f439659b59ae638c73e76630d2b8b92b40e264924f0c6c2cc9894f872316",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Igra povezivanja tačaka — prikaz 2 od 2",
+      "en": "A connect-the-dots game — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 18,
+   "vreme": "12:57",
+   "naslov": {
+    "sr": "Kocke u boji sa kartama slaganja",
+    "en": "Coloured cubes with their arrangement cards"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/049.jpg",
+     "sha256": "b0264b8838f4bf8e956b07c0194a48ca3e4d3fc92afad34a71a964849228b5fb",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Kocke u boji sa kartama slaganja — prikaz 1 od 2",
+      "en": "Coloured cubes with their arrangement cards — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/050.jpg",
+     "sha256": "40968071d1a69455b07d7910ef57a1bd7f4e9c9d03f5495653827ea8129b41d9",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Kocke u boji sa kartama slaganja — prikaz 2 od 2",
+      "en": "Coloured cubes with their arrangement cards — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 19,
+   "vreme": "13:00",
+   "naslov": {
+    "sr": "Skica torbe sa džepovima",
+    "en": "A sketch of a bag with pockets"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/051.jpg",
+     "sha256": "accdf6d488afc4090f4460df98a6f1540669b5963f0ad92e68521aa7feef4e99",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Skica torbe sa džepovima — prikaz 1 od 1",
+      "en": "A sketch of a bag with pockets — view 1 of 1"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 20,
+   "vreme": "13:04",
+   "naslov": {
+    "sr": "Knjiga papirnih tela koja se podižu kanapom",
+    "en": "A book of paper solids raised by a string"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/054.jpg",
+     "sha256": "a20a573d240cc7baa282c8856924146e8b0c708059496dd96b56875c2a99c86c",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Knjiga papirnih tela koja se podižu kanapom — prikaz 1 od 6",
+      "en": "A book of paper solids raised by a string — view 1 of 6"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/052.jpg",
+     "sha256": "22322cc445da9a527e9c4129e099503bce06df88bbf85a6cd77364fbcec52cf0",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Knjiga papirnih tela koja se podižu kanapom — prikaz 2 od 6",
+      "en": "A book of paper solids raised by a string — view 2 of 6"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/053.jpg",
+     "sha256": "820ab04251d8418fed40b1b7ccdb337f34f1378615937c36c8054d1f122e5be4",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Knjiga papirnih tela koja se podižu kanapom — prikaz 3 od 6",
+      "en": "A book of paper solids raised by a string — view 3 of 6"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/055.jpg",
+     "sha256": "22a5fcacdac32eab95dd5debad0a6019d632ec74a7dcd9420b1086e1e0a2a557",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Knjiga papirnih tela koja se podižu kanapom — prikaz 4 od 6",
+      "en": "A book of paper solids raised by a string — view 4 of 6"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/056.jpg",
+     "sha256": "d8c548789d5b31429807fd6cc507df353b354c67ee6576069f905a7f85729c1b",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Knjiga papirnih tela koja se podižu kanapom — prikaz 5 od 6",
+      "en": "A book of paper solids raised by a string — view 5 of 6"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/057.jpg",
+     "sha256": "79027cb59324b9f2485f18f43603f02b8913217613c7f196d014544bc240f061",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Knjiga papirnih tela koja se podižu kanapom — prikaz 6 od 6",
+      "en": "A book of paper solids raised by a string — view 6 of 6"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 21,
+   "vreme": "13:05",
+   "naslov": {
+    "sr": "Semafor i trake u boji",
+    "en": "A traffic light and coloured strips"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/058.jpg",
+     "sha256": "321683121fac1787fe7ac15b7125855a79d75687eaa6bb279288d6771445f7c9",
+     "width": 1600,
+     "height": 900,
+     "alt": {
+      "sr": "Semafor i trake u boji — prikaz 1 od 1",
+      "en": "A traffic light and coloured strips — view 1 of 1"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 22,
+   "vreme": "13:12",
+   "naslov": {
+    "sr": "Bela tkanina sa crvenom trakom za provlačenje",
+    "en": "White cloth with a red drawstring"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/060.jpg",
+     "sha256": "b51a19d02f22112f96d60f9df0457258b6de30d9513934df703ca134d777afbc",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Bela tkanina sa crvenom trakom za provlačenje — prikaz 1 od 3",
+      "en": "White cloth with a red drawstring — view 1 of 3"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/059.jpg",
+     "sha256": "591d535d2365fa44a6340d032dfd505502d72c279f423d504e084c90d852daf2",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Bela tkanina sa crvenom trakom za provlačenje — prikaz 2 od 3",
+      "en": "White cloth with a red drawstring — view 2 of 3"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/061.jpg",
+     "sha256": "b81e06c54e1bede31ba80e71cb274ba915f826cec25fec7963a02752d7ff0714",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Bela tkanina sa crvenom trakom za provlačenje — prikaz 3 od 3",
+      "en": "White cloth with a red drawstring — view 3 of 3"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 23,
+   "vreme": "13:14",
+   "naslov": {
+    "sr": "Otisci 3D modela: staza sa prstenom",
+    "en": "Prints of a 3D model: a track with a ring"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/062.jpg",
+     "sha256": "1309d20dda9f02c26e0ad882baa1b9a6811c9b5ad562840d1290e2f1a4289d71",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Otisci 3D modela: staza sa prstenom — prikaz 1 od 2",
+      "en": "Prints of a 3D model: a track with a ring — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/063.jpg",
+     "sha256": "3b2fe95b3d369657a5c370c35f5d2ce2423e2683c8e51f3a1f7736d22ef95c24",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Otisci 3D modela: staza sa prstenom — prikaz 2 od 2",
+      "en": "Prints of a 3D model: a track with a ring — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 24,
+   "vreme": "13:19",
+   "naslov": {
+    "sr": "Lopta od čarape sa čvorićima",
+    "en": "A sock ball with small knots"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/064.jpg",
+     "sha256": "9e8035b01a6185f15befaf09fbf48954e53342589e4a906763a6a2ccd76244dc",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Lopta od čarape sa čvorićima — prikaz 1 od 2",
+      "en": "A sock ball with small knots — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/065.jpg",
+     "sha256": "26ad1c3fc6d2705c71bec51c2deb4bef8a924cd43e3ceb62e63c4c1b6af25085",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Lopta od čarape sa čvorićima — prikaz 2 od 2",
+      "en": "A sock ball with small knots — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 25,
+   "vreme": "13:21",
+   "naslov": {
+    "sr": "Skica rukavice sa različitim teksturama",
+    "en": "A sketch of a glove with different textures"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/066.jpg",
+     "sha256": "d2eb69717cfbe2c25bcbbcc887785f1b3faff29fa71cbcb55694a11af0f918e9",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Skica rukavice sa različitim teksturama — prikaz 1 od 2",
+      "en": "A sketch of a glove with different textures — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/067.jpg",
+     "sha256": "19996fa4734e893ba06149910b2f814520f91357a372cddf6fb1368653430abb",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Skica rukavice sa različitim teksturama — prikaz 2 od 2",
+      "en": "A sketch of a glove with different textures — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 26,
+   "vreme": "13:23",
+   "naslov": {
+    "sr": "Crtež puža sa taktilnim poljima",
+    "en": "A drawing of a snail with tactile fields"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/069.jpg",
+     "sha256": "4c8155672420c753e35f82f7b65bb00cf9f54ad4186a606436aa83f79d02c3e8",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Crtež puža sa taktilnim poljima — prikaz 1 od 2",
+      "en": "A drawing of a snail with tactile fields — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/068.jpg",
+     "sha256": "23be9fd9c9098ed1c9986dc3e7b27b8f2f92ee5263a14e0555f2a00401afad43",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Crtež puža sa taktilnim poljima — prikaz 2 od 2",
+      "en": "A drawing of a snail with tactile fields — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 27,
+   "vreme": "13:25",
+   "naslov": {
+    "sr": "Tabla zakopčavanja: dugmad, rajsferšlus, pertle, kopča",
+    "en": "A fastening board: buttons, zip, laces, buckle"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/070.jpg",
+     "sha256": "152d54d4c7aa02837a5cb0df6f63b62d6df386a32136b4741cb4a9c0838bf75c",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Tabla zakopčavanja: dugmad, rajsferšlus, pertle, kopča — prikaz 1 od 4",
+      "en": "A fastening board: buttons, zip, laces, buckle — view 1 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/071.jpg",
+     "sha256": "0ac4536d783b64593106bbff88ac5f086145a32591077c3e20e261e24d1c77bd",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Tabla zakopčavanja: dugmad, rajsferšlus, pertle, kopča — prikaz 2 od 4",
+      "en": "A fastening board: buttons, zip, laces, buckle — view 2 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/072.jpg",
+     "sha256": "b0ef8b656bd16e34753c136d91dd5adb7bc0d7251c9ada3302c927502e7fcb1c",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Tabla zakopčavanja: dugmad, rajsferšlus, pertle, kopča — prikaz 3 od 4",
+      "en": "A fastening board: buttons, zip, laces, buckle — view 3 of 4"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/073.jpg",
+     "sha256": "f629c5904f072e85d78c8f420e4dfcc7404ccd3333189f7dd25702b7aecc5deb",
+     "width": 1600,
+     "height": 900,
+     "alt": {
+      "sr": "Tabla zakopčavanja: dugmad, rajsferšlus, pertle, kopča — prikaz 4 od 4",
+      "en": "A fastening board: buttons, zip, laces, buckle — view 4 of 4"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 28,
+   "vreme": "13:29",
+   "naslov": {
+    "sr": "Kolaž jedrenjaka od tkanina",
+    "en": "A sailing-boat collage from fabrics"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/074.jpg",
+     "sha256": "7291f39ce0ea380207a6ddea7e8cd4ea6193d62a39d7ddf3a202a1ae918049d4",
+     "width": 1600,
+     "height": 900,
+     "alt": {
+      "sr": "Kolaž jedrenjaka od tkanina — prikaz 1 od 1",
+      "en": "A sailing-boat collage from fabrics — view 1 of 1"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 29,
+   "vreme": "13:34",
+   "naslov": {
+    "sr": "Crna ploča sa čepovima i zelenim kanapom",
+    "en": "A black board with bottle caps and green string"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/075.jpg",
+     "sha256": "92d9dd1d75013a405c4710c46fe1e117557dcefa46d6a7afdb36c3a11f60dd3a",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Crna ploča sa čepovima i zelenim kanapom — prikaz 1 od 2",
+      "en": "A black board with bottle caps and green string — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/076.jpg",
+     "sha256": "b6bd3321025909340704bdc5efaa9c85847f9b347706ecd3617473367ca75ee8",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Crna ploča sa čepovima i zelenim kanapom — prikaz 2 od 2",
+      "en": "A black board with bottle caps and green string — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 30,
+   "vreme": "13:36",
+   "naslov": {
+    "sr": "Plakat o 3D panelima od tekstilnog otpada",
+    "en": "A poster on 3D panels from textile waste"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/077.jpg",
+     "sha256": "0b5bf7b71cffc735b4864932359310f0a5cac6159e7d307e1fa3edf2db8b4945",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Plakat o 3D panelima od tekstilnog otpada — prikaz 1 od 1",
+      "en": "A poster on 3D panels from textile waste — view 1 of 1"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 31,
+   "vreme": "13:39",
+   "naslov": {
+    "sr": "Bela flaša sa notama",
+    "en": "A white bottle with musical notes"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/078.jpg",
+     "sha256": "29847825c520af5b3b8d67fa8f72325328368b27aa502561f858cd2b78fd418d",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Bela flaša sa notama — prikaz 1 od 1",
+      "en": "A white bottle with musical notes — view 1 of 1"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 32,
+   "vreme": "13:40",
+   "naslov": {
+    "sr": "Tkanje vunom na kružnom kartonu",
+    "en": "Wool weaving on a round card loom"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/081.jpg",
+     "sha256": "2173ebd8d9df483510c3b0a7e47f67dd401fc9ae8031c40a125eac25944114e4",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Tkanje vunom na kružnom kartonu — prikaz 1 od 3",
+      "en": "Wool weaving on a round card loom — view 1 of 3"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/079.jpg",
+     "sha256": "b0a77965e07af0e189de691fb2d43365be76208c82556a40e40343c53d47102f",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Tkanje vunom na kružnom kartonu — prikaz 2 od 3",
+      "en": "Wool weaving on a round card loom — view 2 of 3"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/080.jpg",
+     "sha256": "0c028efae0cd2cb3d16caf56f1d53aae9bc38a1ba3b7f226de2b0e9b45806aa6",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Tkanje vunom na kružnom kartonu — prikaz 3 od 3",
+      "en": "Wool weaving on a round card loom — view 3 of 3"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 33,
+   "vreme": "13:43",
+   "naslov": {
+    "sr": "Lica osećanja i mreža tri puta tri",
+    "en": "Faces of feelings and a three-by-three grid"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/082.jpg",
+     "sha256": "fd09ddc5bf2a2fc2a328b42ed01e1d1c430078d7b1e4e0aef09e274b9e7b3f0d",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Lica osećanja i mreža tri puta tri — prikaz 1 od 2",
+      "en": "Faces of feelings and a three-by-three grid — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/083.jpg",
+     "sha256": "7b99d59379c8099127b98a7cb348fc94311800a587029d8dc79078b526c00fc7",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Lica osećanja i mreža tri puta tri — prikaz 2 od 2",
+      "en": "Faces of feelings and a three-by-three grid — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 34,
+   "vreme": "13:46",
+   "naslov": {
+    "sr": "Plakat o spiralama od teksasa",
+    "en": "A poster on denim spirals"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/084.jpg",
+     "sha256": "1e5075fd7c4bcf6965a10f770554d0f3f2dd199416e45b5917ed8c966f662b68",
+     "width": 1600,
+     "height": 900,
+     "alt": {
+      "sr": "Plakat o spiralama od teksasa — prikaz 1 od 1",
+      "en": "A poster on denim spirals — view 1 of 1"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 35,
+   "vreme": "13:48",
+   "naslov": {
+    "sr": "Obruči obmotani tkaninom",
+    "en": "Hoops wrapped in fabric"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/086.jpg",
+     "sha256": "de1a829060c789af30a286709cb7623ad1fd3303e7546e1949aafd26ed2b8413",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Obruči obmotani tkaninom — prikaz 1 od 3",
+      "en": "Hoops wrapped in fabric — view 1 of 3"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/085.jpg",
+     "sha256": "9fa1b7ca577406238f167320bbdcdd4133360f3832dbe6f57ae660f6e2bd1685",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Obruči obmotani tkaninom — prikaz 2 od 3",
+      "en": "Hoops wrapped in fabric — view 2 of 3"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/087.jpg",
+     "sha256": "f55b04932fd4c4137d60b5f6602148325017c411ba88c12f4334834e481849b7",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Obruči obmotani tkaninom — prikaz 3 od 3",
+      "en": "Hoops wrapped in fabric — view 3 of 3"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 36,
+   "vreme": "13:55",
+   "naslov": {
+    "sr": "Skica mašine sa valjkom",
+    "en": "A sketch of a machine with a roller"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/088.jpg",
+     "sha256": "dd5dcf3b0a5ccb1d85557c8207a72fc4096082cdf34217efd7d8b5d6465d8403",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Skica mašine sa valjkom — prikaz 1 od 1",
+      "en": "A sketch of a machine with a roller — view 1 of 1"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 37,
+   "vreme": "14:00",
+   "naslov": {
+    "sr": "Tekstualni predlog taktilne igre od flica",
+    "en": "A written proposal for a tactile felt game"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/089.jpg",
+     "sha256": "85aeab5059c63016322ade81679c8eb6e79718557fb43476fb0768d5dbb93f24",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Tekstualni predlog taktilne igre od flica — prikaz 1 od 2",
+      "en": "A written proposal for a tactile felt game — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/090.jpg",
+     "sha256": "662c2192417bc1a31d5844c1b1f74f127fecb038e1b55d5601b42a6a6462ab58",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Tekstualni predlog taktilne igre od flica — prikaz 2 od 2",
+      "en": "A written proposal for a tactile felt game — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 38,
+   "vreme": "14:03",
+   "naslov": {
+    "sr": "Uputstvo „Pri ruci”: materijali i način upotrebe",
+    "en": "The guide “Pri ruci”: materials and use"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/091.jpg",
+     "sha256": "47bb22a749fc561c243f904c77bf1e62fe2cd5b2b7131a4ed61205152c73392d",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Uputstvo „Pri ruci”: materijali i način upotrebe — prikaz 1 od 2",
+      "en": "The guide “Pri ruci”: materials and use — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/092.jpg",
+     "sha256": "bee190f6e04a9bca60092fcf5077770502c9b46ebab663e3ef7920e545ba8449",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Uputstvo „Pri ruci”: materijali i način upotrebe — prikaz 2 od 2",
+      "en": "The guide “Pri ruci”: materials and use — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 39,
+   "vreme": "14:06",
+   "naslov": {
+    "sr": "Kartice za provlačenje: leptir, krug, jelka, cvet",
+    "en": "Lacing cards: butterfly, circle, fir tree, flower"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/094.jpg",
+     "sha256": "9c7479ade4739e8240ae7935ffe535a3dc77aeb70549a58a6df3d68e69f4f8aa",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Kartice za provlačenje: leptir, krug, jelka, cvet — prikaz 1 od 2",
+      "en": "Lacing cards: butterfly, circle, fir tree, flower — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/093.jpg",
+     "sha256": "20e44f5d224ac0ddd57379f6dbb6526a39e6137001af00ff1000ffa9ee24b041",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Kartice za provlačenje: leptir, krug, jelka, cvet — prikaz 2 od 2",
+      "en": "Lacing cards: butterfly, circle, fir tree, flower — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 40,
+   "vreme": "14:10",
+   "naslov": {
+    "sr": "Skica interaktivne tekstilne igračke",
+    "en": "A sketch of an interactive textile toy"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/095.jpg",
+     "sha256": "4bed0f1596f2f3921ef05050097d4c4ef4e2ca6b42046c0cdd8910e144c62297",
+     "width": 1176,
+     "height": 1600,
+     "alt": {
+      "sr": "Skica interaktivne tekstilne igračke — prikaz 1 od 1",
+      "en": "A sketch of an interactive textile toy — view 1 of 1"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 41,
+   "vreme": "14:22",
+   "naslov": {
+    "sr": "Koncentrični krugovi od kartona",
+    "en": "Concentric rings of card"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/096.jpg",
+     "sha256": "50cb7dab63d7b2959f98cc8af13c0769977014c74a49c7667932f74f0c980e03",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Koncentrični krugovi od kartona — prikaz 1 od 3",
+      "en": "Concentric rings of card — view 1 of 3"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/097.jpg",
+     "sha256": "111dad00fe3b8ac98497a79219fe14ba173aaa3ce0d76e2708e50eb582bfb84a",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Koncentrični krugovi od kartona — prikaz 2 od 3",
+      "en": "Concentric rings of card — view 2 of 3"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/098.jpg",
+     "sha256": "d8c3ff1f07cb6e066207207c36cdd36341e76ce5c1c4ad3297dfae02bd87199c",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Koncentrični krugovi od kartona — prikaz 3 od 3",
+      "en": "Concentric rings of card — view 3 of 3"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 42,
+   "vreme": "14:31",
+   "naslov": {
+    "sr": "Prugasta torbica sa dugmetom",
+    "en": "A striped pouch with a button"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/099.jpg",
+     "sha256": "b81e1fc4e2b44fe728b9d3fd46371913833f3a6ed99076e1d4eeeb2289339f99",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Prugasta torbica sa dugmetom — prikaz 1 od 2",
+      "en": "A striped pouch with a button — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/100.jpg",
+     "sha256": "ab643540293128801df815b6e2e7e35eb883118cf0a5fc667c4d71346e92662b",
+     "width": 900,
+     "height": 1600,
+     "alt": {
+      "sr": "Prugasta torbica sa dugmetom — prikaz 2 od 2",
+      "en": "A striped pouch with a button — view 2 of 2"
+     }
+    }
+   ]
+  },
+  {
+   "rb": 43,
+   "vreme": "14:36",
+   "naslov": {
+    "sr": "Ptice od pompona i pletene kapice",
+    "en": "Pom-pom birds and knitted caps"
+   },
+   "photos": [
+    {
+     "src": "data/cas-07/kolaz/101.jpg",
+     "sha256": "bb6d05fdce69c5ca73f3481671f163852b4199bbfd27eb2ccfd522ba822acf15",
+     "width": 1600,
+     "height": 900,
+     "alt": {
+      "sr": "Ptice od pompona i pletene kapice — prikaz 1 od 2",
+      "en": "Pom-pom birds and knitted caps — view 1 of 2"
+     }
+    },
+    {
+     "src": "data/cas-07/kolaz/102.jpg",
+     "sha256": "6fdd189401a89bb1a3f11b0e36cf831693f534c370facbe03a2ade21deec77ad",
+     "width": 1600,
+     "height": 900,
+     "alt": {
+      "sr": "Ptice od pompona i pletene kapice — prikaz 2 od 2",
+      "en": "Pom-pom birds and knitted caps — view 2 of 2"
+     }
+    }
+   ]
+  }
+ ]
+}

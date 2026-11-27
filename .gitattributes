@@ -1,0 +1,10 @@
+# Fiksiraj LF završetke redova: renderer u assets/*.js i testovi porede tačno
+# (string za string), pa Windows checkout (core.autocrlf=true) mora da vrati
+# iste LF blokove koji su u git-u i u rendereru. Bez ovoga radni fajl postaje
+# CRLF i baseline test puca iako je committovani sadržaj ispravan.
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.mjs  text eol=lf
+*.json text eol=lf
+*.md   text eol=lf

@@ -1,0 +1,110 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 5,
+  "state": "published",
+  "updated": "2026-11-02",
+  "title": {
+    "en": "Where regulation ends",
+    "sr": "Gde propis prestaje"
+  },
+  "date": "2026-10-30",
+  "dateStatus": "confirmed",
+  "aim": {
+    "en": "You can identify the boundary where legal compliance fails user needs and where design begins; prepare for and sit Kolokvijum 1.",
+    "sr": "Umeš da prepoznaš granicu gde puko zadovoljenje propisa izneverava potrebe korisnika i gde počinje projektovanje; priprema i polaganje Kolokvijuma 1."
+  },
+  "bring": [
+    {
+      "en": "A3 portfolio of weeks 1–4, notebook, and drawing equipment.",
+      "sr": "A3 mapa vežbi iz nedelja 1–4, pribor za pisanje i crtanje."
+    }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": {
+        "sr": "Zapisano posle časa — 30.10.2026.",
+        "en": "Recorded after class — 30 October 2026"
+      }
+    },
+    {
+      "kind": "list",
+      "items": [
+        {
+          "sr": "Nastavak rada na prototipovima. Zavedeno 30 prisustava, 29 radova fotografisano, ukupno 86 fotografija; objavljeno je svih 29 radova sa 86 fotografija u učionici i 10 fotografija sa posete udruženju.",
+          "en": "The prototype work continued. 30 attendances recorded, 29 works photographed, 86 photographs in all; all 29 works are published with 86 classroom photographs and 10 photographs from the association visit."
+        },
+        {
+          "sr": "Spisak radova sa svim fotografijama stoji na strani petog časa, a prilog posete na strani posete petog časa.",
+          "en": "The list of works with every photograph stands on the fifth-class page, and the visit attachment on the fifth-class visit page."
+        }
+      ]
+    },
+    {
+      "kind": "link",
+      "href": "cas-05.html",
+      "text": {
+        "sr": "Nedelja 5 — spisak radova petog časa: 30 zavedenih prisustava, 29 objavljenih radova i deo „Šta se čeka”",
+        "en": "Week 5 — the list of the fifth class: 30 recorded attendances, 29 published works and the „What we wait for” part"
+      }
+    },
+    {
+      "kind": "heading",
+      "text": {
+        "en": "Compliance is the floor, not the ceiling",
+        "sr": "Propis je pod, a ne plafon"
+      }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "International standards (UN CRPD Art. 9, EN 17210:2021, ISO 21542:2021) demonstrate that spaces can be completely compliant on paper while failing real users in practice. Design quality begins where the checklist ends.",
+        "sr": "Međunarodni standardi (UN Konvencija čl. 9, EN 17210:2021, ISO 21542:2021) pokazuju da prostor može formalno zadovoljiti propis na papiru, a u praksi biti neprijatan ili neupotrebljiv. Kvalitet projektovanja počinje tamo gde se lista propisa završava."
+      }
+    },
+    {
+      "kind": "quote",
+      "text": {
+        "en": "Accessibility is about making sure people can get in the door. Universal design is about making sure they want to be there.",
+        "sr": "Pristupačnost osigurava da ljudi mogu da uđu na vrata. Univerzalni dizajn osigurava da žele da budu tu."
+      },
+      "source": "Edward Steinfeld & Jordana Maisel, Universal Design: Creating Inclusive Environments (2012)"
+    },
+    {
+      "kind": "exercise",
+      "ref": "where-regulation-ends"
+    },
+    {
+      "kind": "lab",
+      "ref": "tastatura"
+    },
+    {
+      "kind": "decision",
+      "text": {
+        "en": "Kolokvijum 1 is sat in the first hour: concepts and regulations. The second hour evaluates borderline cases.",
+        "sr": "Kolokvijum 1 se radi u prvom satu: pojmovi i propisi. U drugom satu analiziramo granične slučajeve iz prakse."
+      }
+    }
+  ],
+  "revizije": [
+    {
+      "v": 1,
+      "datum": "2026-10-31",
+      "izvor": "Profesor predmeta, 30.10.2026. (spisak petog časa).",
+      "sta": {
+        "sr": "Nedelja 5 je održana 30.10.2026. kao nastavak rada na prototipovima; zapis sa časa je spisak radova sa fotografijama. Pripremljeni blokovi ostaju na strani, ispod zapisa sa časa.",
+        "en": "Week 5 was held on 30 October 2026 as a continuation of the prototype work; the record of the class is the list of works with photographs. The prepared blocks remain on the page, below the record of the class."
+      }
+    },
+    {
+      "v": 2,
+      "datum": "2026-11-02",
+      "izvor": "Dopuna materijala petog časa i posete udruženju, 02.11.2026.",
+      "sta": {
+        "sr": "Objavljeni su svi preostali kadrovi sa petog časa i posete udruženju: ukupno 30 prisustava, 29 objavljenih radova sa 86 fotografija u učionici i 10 fotografija sa posete udruženju.",
+        "en": "All remaining frames from the fifth class and the association visit are published: 30 attendances in all, 29 published works with 86 classroom photographs and 10 photographs from the association visit."
+      }
+    }
+  ]
+}

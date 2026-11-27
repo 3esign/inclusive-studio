@@ -1,0 +1,13 @@
+{
+  "schema": "course-publication/v1",
+  "note": "This register separates a recorded held class from teacher-finalized material. Published preparation is not an approval. Hashes identify material bytes; they are not signatures or access controls.",
+  "items": [
+    {
+      "week": 1,
+      "kind": "held-record",
+      "materialSha256": "5a30275bb2e5945af9ef44c2ca8b7f1eb83358af3c1e3fc6af1200dba61d0c01",
+      "source": "data/tok.json: cas-w01; data/material/w01.json: revizija 5 — ispravka voditelja predmeta 12.10.2026, „Zmijica” je studentski rad i dokumentuje se u nedelji 2, galerija prvog časa vraća se na tri fotografije pozajmljene igračke; held record, not final material approval",
+      "recordedAt": "2026-10-11T23:22:29.000Z"
+    }
+  ]
+}

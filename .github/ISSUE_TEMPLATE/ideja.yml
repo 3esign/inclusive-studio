@@ -1,0 +1,29 @@
+name: "Idea / Ideja"
+description: "Share a spatial observation or idea / Podeli prostorno zapažanje ili ideju"
+title: "[Idea / Ideja] "
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: "Files added to this editor upload immediately, before you submit, and are public. / Fajlovi dodati u ovaj editor šalju se odmah, pre objave, i javno su dostupni."
+  - type: markdown
+    attributes:
+      value: "This conversation is public. Do not include diagnoses, private interviews or home addresses. / Ovaj razgovor je javan. Ne navodi dijagnoze, privatne razgovore ili kućne adrese."
+  - type: textarea
+    id: idea
+    attributes:
+      label: "What did you notice or propose? / Šta si primetio ili predložio?"
+      description: "Describe the place, situation and question. Text is enough; attach a sketch if useful. / Opiši mesto, situaciju i pitanje. Tekst je dovoljan; priloži skicu ako pomaže."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Attachment description (if any) / Opis priloga (ako postoji)"
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: "Public sharing / Javno deljenje"
+      options:
+        - label: "I removed private information and have permission to publish this material. / Uklonio/la sam privatne podatke i imam dozvolu za objavu ovog materijala."
+          required: true

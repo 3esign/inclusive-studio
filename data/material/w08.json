@@ -1,0 +1,95 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 8,
+  "state": "published",
+  "updated": "2026-11-27",
+  "title": { "en": "The access matrix and public space", "sr": "Matrica pristupa i javni prostor" },
+  "date": "2026-11-20",
+  "dateStatus": "confirmed",
+  "aim": {
+    "en": "You can map pedestrian circulation, tactile guide paths, urban furniture, and calculate total distances and travel times for different user profiles in an access matrix.",
+    "sr": "Umeš da mapiraš pešačke tokove, taktilne staze vodilje, urbani mobilijar i izračunaš dužine putanja i vreme kretanja za različite profile korisnika u matrici pristupa."
+  },
+  "bring": [
+    { "en": "Slope map from week 7, tracing paper or CAD layer, drafting pens.", "sr": "Karta nagiba iz 7. nedelje, paus papir ili CAD sloj, crtaći pribor." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": {
+        "sr": "Zapisano posle časa — 20.11.2026.",
+        "en": "Recorded after class — 20 November 2026"
+      }
+    },
+    {
+      "kind": "list",
+      "items": [
+        {
+          "sr": "Održan je prvi kolokvijum sa predajom razvojnih skica, tehničkih crteža i prototipova iz oba zadatka — prototip igračke i reciklaža tekstila. Zavedeno je 11 studentskih predaja u 15 galerija (9 prototipova igračaka i 6 tekstilnih radova, ukupno 48 fotografija i tabli).",
+          "en": "The first midterm was held with submissions of developmental sketches, technical drawings and prototypes across both tracks — toy prototype and textile recycling. 11 student submissions are recorded in 15 galleries (9 toy prototypes and 6 textile works, 48 photographs and plates in all)."
+        },
+        {
+          "sr": "Svaki predati rad otvara sopstvenu galeriju sa svim prikazima i povezan je sa studentskim dosijeom u Dnevniku.",
+          "en": "Each submitted work opens its own gallery with all views and is linked to the student’s record in the Journal."
+        }
+      ]
+    },
+    {
+      "kind": "link",
+      "href": "cas-08.html",
+      "text": {
+        "sr": "Nedelja 8 — Kolokvijum 1: 11 predaja u 15 galerija (48 prikaza)",
+        "en": "Week 8 — Midterm 1: 11 submissions in 15 galleries (48 views)"
+      }
+    },
+    {
+      "kind": "heading",
+      "text": { "en": "One route for all: computing the access matrix", "sr": "Jedan put za sve: proračun matrice pristupa" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "Equitable use means no segregated entrances or detour tracks. In the access matrix, every user profile is calculated: distance from arrival, vertical rise, rest stops, and travel time. Separate pathways are an automatic design failure.",
+        "sr": "Ravnopravna upotreba znači da nema odvojenih ulaza ni zaobilaznih staza. U matrici pristupa računamo svaki profil: dužinu od dolaska, uspon, odmorišta i vreme kretanja. Razdvajanje staza je automatski pad projekta."
+      }
+    },
+    { "kind": "exercise", "ref": "access-matrix" },
+    { "kind": "lab", "ref": "prolaz" },
+    {
+      "kind": "question",
+      "items": [
+        { "en": "If a wheelchair user must travel 280 m while an ambulatory visitor travels 40 m, can that still be called universal design?", "sr": "Ako korisnik kolica mora da pređe 280 m dok osoba bez teškoća prelazi 40 m, može li se to uopšte nazvati univerzalnim dizajnom?" }
+      ]
+    }
+  ],
+  "revizije": [
+    {
+      "v": 1,
+      "datum": "2026-11-27",
+      "izvor": "Profesor predmeta, 27.11.2026. (kolokvijumske predaje 8 studenata sa osmog časa 20.11.2026).",
+      "sta": {
+        "sr": "Nedelja 8 je održana 20.11.2026. kao prvi kolokvijum; zavedeno je 8 studentskih predaja u 12 galerija (6 prototipova igračaka i 6 radova iz reciklaže tekstila, 42 fotografije i table). Pripremljeni blokovi ostaju na strani, ispod zapisa sa časa.",
+        "en": "Week 8 was held on 20 November 2026 as the first midterm; 8 student submissions are recorded in 12 galleries (6 toy prototypes and 6 textile-recycling works, 42 photographs and plates). The prepared blocks remain on the page, below the record of the class."
+      }
+    },
+    {
+      "v": 2,
+      "datum": "2026-11-27",
+      "izvor": "Profesor predmeta, 27.11.2026. (naknadna kolokvijumska predaja prototipa igračke za osmi čas 20.11.2026).",
+      "sta": {
+        "sr": "Dopunjen je presek osmog časa 9. predajom (galerija „Geometrijska slagalica u mreži”, 2 fotografije) — ukupno 9 studentskih predaja u 13 galerija (7 prototipova igračaka i 6 tekstilnih radova, 44 fotografije i table).",
+        "en": "Updated the eighth-class record with a 9th submission (gallery “Geometric grid puzzle”, 2 photographs) — 9 student submissions in 13 galleries (7 toy prototypes and 6 textile works, 44 photographs and plates in all)."
+      }
+    },
+    {
+      "v": 3,
+      "datum": "2026-11-27",
+      "izvor": "Profesor predmeta, 27.11.2026. (dve naknadne kolokvijumske predaje prototipa igračke, donete na deveti čas).",
+      "sta": {
+        "sr": "Dopunjen je presek osmog časa sa dve naknadne predaje (galerije „Pauk brojalica”, 3 prikaza, i „Taktilna kutija”, 1 prikaz) — ukupno 11 studentskih predaja u 15 galerija (9 prototipova igračaka i 6 tekstilnih radova, 48 fotografija i tabli).",
+        "en": "Updated the eighth-class record with two late submissions (galleries “Counting spider”, 3 views, and “Tactile box”, 1 view) — 11 student submissions in 15 galleries (9 toy prototypes and 6 textile works, 48 photographs and plates in all)."
+      }
+    }
+  ]
+}

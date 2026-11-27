@@ -1,0 +1,38 @@
+{
+  "format": "inclusive-studio-material",
+  "version": 1,
+  "n": 11,
+  "state": "draft",
+  "updated": "2026-10-02",
+  "title": { "en": "Three ways up the hill", "sr": "Tri načina da se savlada padina" },
+  "date": null,
+  "dateStatus": "proposed",
+  "aim": {
+    "en": "You can produce three distinct spatial strategies for negotiating a 22,5 m vertical rise (switchbacks, programmatic elongation, mechanical assist) and compare their trade-offs.",
+    "sr": "Umeš da izradiš tri prostorno različite strategije za savladavanje 22,5 m visinske razlike (serpentine, programsko produženje, mehanički lift) i uporediš njihove kompromise."
+  },
+  "bring": [
+    { "en": "Topographic sections at 1:200, calculation sheet for ramp landings and lengths, markers.", "sr": "Topografski preseci 1:200, proračun dužina i odmorišta rampe, markeri." }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": { "en": "Strategic synthesis: 22,5 metres in section", "sr": "Strateška sinteza: 22,5 metara u preseku" }
+    },
+    {
+      "kind": "text",
+      "text": {
+        "en": "A pure 5 % ramp requires 450 m of travel and cannot fit linearly on the site. Students evaluate three strategies: 1) terraced landscape switchbacks with rest gardens, 2) public building interior circulation extending the path, 3) mechanical lift or funicular with a declared non-mechanical fallback.",
+        "sr": "Čista rampa od 5 % zahteva 450 m hoda i ne staje pravolinijski na parcelu. Studenti razvijaju tri varijante: 1) pejzažne serpentine u terasama sa vrtovima za predah, 2) vođenje kroz unutrašnjost objekta koji programski produžava trasu, 3) mehanički lift ili kosa platforma uz obaveznu rezervnu pešačku trasu."
+      }
+    },
+    { "kind": "exercise", "ref": "three-strategies" },
+    { "kind": "lab", "ref": "visina" },
+    {
+      "kind": "question",
+      "items": [
+        { "en": "What is the maintenance protocol and backup route when the mechanical vertical assist fails during a power outage or storm?", "sr": "Koji je protokol održavanja i rezervna trasa kada mehanički lift otkaže tokom nestanka struje ili oluje?" }
+      ]
+    }
+  ]
+}
